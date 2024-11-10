@@ -63,7 +63,7 @@ jobs:
         run: |
           PACKAGE_FILE=saudi-tourism.all-1.0.1-SNAPSHOT.zip
           echo "PACKAGE_FILE NAME: $PACKAGE_FILE"
-          curl -u $AEM_USERNAME:$AEM_PASSWORD -F package=@"$PACKAGE_FILE" -F force=true "$AEM_HOST/crx/packmgr/service/.json"
+          curl -u $AEM_USERNAME:$AEM_PASSWORD -F package=@"$PACKAGE_FILE" -F force=true "$AEM_HOST/crx/packmgr/service.jsp"
 
       - name: Install package on AEM
         env:
