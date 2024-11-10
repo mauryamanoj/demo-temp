@@ -27,14 +27,25 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
+          cache: maven
 
       - name: Build with Maven
-        run:  mvn clean install -DskipTests -Dcheckstyle.skip
-
+        run: |
+          mvn clean install -DskipTests -Dcheckstyle.skip
+          mkdir staging && cp target/*.jar staging  
+          uses: actions/upload-artifact@v4
+            with:
+              name: buildpkg
+              path: staging
+            
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Download Build Package
+        uses: actions/download-artifact@v4
+        with:
+          name: buildpkg
       - name: Upload package to AEM
         env:
           AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
