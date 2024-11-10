@@ -32,11 +32,13 @@ jobs:
       - name: Build with Maven
         run: |
           mvn clean install -DskipTests -Dcheckstyle.skip
-          mkdir staging && cp target/*.jar staging  
           uses: actions/upload-artifact@v4
             with:
-              name: buildpkg
-              path: staging
+            name: Display structure of all jar/files
+            run: ls -R
+              name: sta-build-artifacts
+              path: target/*.jar
+              compression-level: 0
             
   deploy:
     needs: build
@@ -45,7 +47,8 @@ jobs:
       - name: Download Build Package
         uses: actions/download-artifact@v4
         with:
-          name: buildpkg
+          name: sta-build-artifacts
+          run: ls -R
       - name: Upload package to AEM
         env:
           AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
