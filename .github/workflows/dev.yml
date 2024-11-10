@@ -61,7 +61,7 @@ jobs:
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          PACKAGE_FILE=./all/target/saudi-tourism.all-1.0.1-SNAPSHOT.zip
+          PACKAGE_FILE=$(find . -name "*all.zip" | head -n 1)
           echo "PACKAGE_FILE NAME: $PACKAGE_FILE"
           curl -u $AEM_USERNAME:$AEM_PASSWORD -F package=@"$PACKAGE_FILE" -F force=true "$AEM_HOST/crx/packmgr/service/.json"
 
@@ -71,5 +71,5 @@ jobs:
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          PACKAGE_FILE=saudi-tourism.all-1.0.1-SNAPSHOT.zip
+          PACKAGE_FILE=$(find . -name "*all.zip" | head -n 1)
           curl -u $AEM_USERNAME:$AEM_PASSWORD -F cmd=install "$AEM_HOST/crx/packmgr/service/.json/etc/packages/com.saudi.tourism/$PACKAGE_FILE"
