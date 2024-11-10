@@ -1,0 +1,62 @@
+query getDestinations($locale: String!, $offset: Int!, $limit: Int) {
+  destinationList(_locale: $locale, offset: $offset, limit: $limit) {
+    items {
+      _path
+      title
+      subTitle
+      image {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+          mimeType
+        }
+      }
+      s7image
+      popUpImage {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+          mimeType
+        }
+      }
+      s7popUpImage
+      lat
+      lng
+      id
+      aboutTitle
+      aboutDescription
+      categories {
+        ... on CategoryModel {
+          _path
+          title
+          alt
+          image {
+            ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+              width
+              height
+              mimeType
+            }
+          }
+          s7image
+          icon
+        }
+      }
+      pagePath {
+        ... on PageRef {
+          _path
+          _authorUrl
+          _publishUrl
+        }
+      }
+    }
+  }
+}

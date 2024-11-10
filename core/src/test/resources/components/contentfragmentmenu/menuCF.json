@@ -1,0 +1,44 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "menu",
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/menu",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "evisaTitle": "evisa Title",
+        "searchIcon": "/content/dam/Image placeholder.png",
+        "evisaLink": "/content/sauditourism/en/travel-regulations",
+        "menuItems": [
+          "/content/dam/sauditourism/cf/en/menu/subMenu1",
+          "/content/dam/sauditourism/cf/en/menu/subMenu2"
+        ],
+        "languageItems": [
+          "{\"unAvailableLanLinkLabel\":\"Un Available Lan Link\",\"unAvailableLanLink\":\"/content/en\",\"unAvailableLanMessage\":\"Un Available Lan Message\",\"ctaLabel\":\"fr\",\"ctaLink\":\"/content/sauditourism/fr\"}",
+          "{\"unAvailableLanLinkLabel\":\"Un Available Lan Link\",\"unAvailableLanLink\":\"/content/en\",\"unAvailableLanMessage\":\"\",\"ctaLabel\":\"ar\",\"ctaLink\":\"/content/sauditourism/ar\"}"
+        ],
+        "avatarIcon": "/content/dam/Image placeholder.png",
+        "singUpLabel": "singUp",
+        "logoBasePath": "/content/dam/sauditourism/header/icon/logo1",
+        "saudiLogoUrlPath": "/content/sauditourism/en",
+        "viewAllLabel": "View All",
+        "userSubMenu": [
+          "{\"iconName\":\"icon1\",\"label\":\"label1\",\"url\":\"/content/sauditourism/page1\"}",
+          "{\"iconName\":\"icon2\",\"label\":\"label2\",\"url\":\"/content/sauditourism/page2\"}"
+        ],
+        "singInLabel": "singIn",
+        "registerLabel": "register",
+        "signOutLabel": "signOut",
+        "languages": [
+          "{\"title\":\"fr\",\"link\":\"/content/sauditourism/fr\"}",
+          "{\"title\":\"ar\",\"link\":\"/content/sauditourism/ar\"}"
+        ],
+        "searchLabel": "search",
+        "searchPagePath": "/content/sauditourism/en/search",
+        "searchPlaceholder": "searchPlaceholder"
+      }
+    }
+  }
+}

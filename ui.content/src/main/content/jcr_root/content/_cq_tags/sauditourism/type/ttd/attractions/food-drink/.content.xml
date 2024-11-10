@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Food &amp; Drink"
+          jcr:title.ar="طعام وشراب"
+          jcr:title.de="Essen &amp; Trinken"
+          jcr:title.es="Comida y bebida"
+          jcr:title.fr="Nourriture et boissons"
+          jcr:title.ja="飲食"
+          jcr:title.ru="Еда и напитки"
+          jcr:title.zh="食品与饮料"
+
+          sling:resourceType="cq/tagging/components/tag"/>

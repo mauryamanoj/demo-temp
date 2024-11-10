@@ -1,0 +1,25 @@
+<template data-sly-template.modHero02SecondaryHero="${@ partialBlock, partialModel,
+                withOverlappedBox, brushId}"
+          data-sly-use.fullOverlayTemplate="/apps/sauditourism/components/content/templates/general/full-overlay.html"
+          data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-use.ornaments03BrushesTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-03-brushes.html">
+    <section data-component="mod-hero-02-secondary-hero-wrapper">
+    <div class="inner-wrapper ${withOverlappedBox ? 'with-overlapped-box' : ''}">
+        <div class="visual-wrapper" data-transition-visual>
+            <sly data-sly-call="${fullOverlayTemplate.fullOverlay}"></sly>
+            <sly data-sly-call="${imageTemplate.pictureObj @ imageDesktop=partialModel.image.s7fileReference||
+                                partialModel.image.fileReference,
+                                imageMobile=partialModel.image.s7mobileImageReference || partialModel.image.mobileImageReference,
+                                extraClass='visual', breakpointDesktop='768',
+                                altText=partialModel.image.alt}"></sly>
+        </div>
+        <div class="content-wrapper component-wrapper">
+            <sly data-sly-call="${partialBlock @ partialModel=partialModel}"></sly>
+        </div>
+        <sly data-sly-test="${!brushId || brushId != 'none'}">
+            <sly data-sly-call="${ornaments03BrushesTemplate.ornaments03Brushes @ id=(brushId || '04'),
+                    orientation='horizontal', direction='bottom', class='brush-ornament'}"></sly>
+        </sly>
+    </div>
+    </section>
+</template>

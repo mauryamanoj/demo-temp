@@ -1,0 +1,37 @@
+<template data-sly-template.taglineWinterFeatured="${@ location, days, durationUnit, categorySlug}"
+          data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"
+          data-sly-use.icon="/apps/sauditourism/components/content/templates/general/icon.html">
+    <div class="tagline-wrapper">
+        <div data-component="tagline-winter-featured">
+
+            <sly data-sly-test="${categorySlug}">
+                <sly data-sly-call="${icon.icon @ iconName=categorySlug}"></sly>
+            </sly>
+
+            <sly data-sly-test="${days && days == 1}">
+                <div class="days">
+                    ${days} ${'Day' @ i18n}
+                </div>
+            </sly>
+            <sly data-sly-test="${days && days > 1}">
+                <div class="days">
+                    ${days} ${'Days' @ i18n}
+                </div>
+            </sly>
+            <sly data-sly-test="${(categorySlug || days)}">
+                <div class="tagline">
+                    <sly data-sly-call="${iconTemplate.iconSimple @ name='location', desktopSize='18', mobileSize='18'}"></sly>
+                    ${location}
+                </div>
+            </sly>
+
+
+            <sly data-sly-test="${!(categorySlug || days)}">
+                <div class="tagline no-border">
+                    <sly data-sly-call="${iconTemplate.iconSimple @ name='location', desktopSize='18', mobileSize='18'}"></sly>
+                    ${location}
+                </div>
+            </sly>
+        </div>
+    </div>
+</template>

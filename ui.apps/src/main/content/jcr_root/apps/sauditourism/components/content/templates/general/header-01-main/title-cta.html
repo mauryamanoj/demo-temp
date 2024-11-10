@@ -1,0 +1,10 @@
+<sly data-sly-template.titleCta="${@ isNegative, url, copy, i18nLabel}">
+  <a class="${isNegative ? 'is-negative' : ''}" data-component="title-cta" href="${url}"
+     title="${copy}" itemprop="url" data-sly-test="${!i18nLabel}">
+    <span class="cta-copy cta-text">${copy}</span>
+  </a>
+  <a class="${isNegative ? 'is-negative' : ''}" data-component="title-cta" href="${url}"
+     title="${copy @ i18n}" itemprop="url" data-sly-test="${i18nLabel}">
+    <span class="cta-copy cta-text">${copy @ i18n }</span>
+  </a>
+</sly>

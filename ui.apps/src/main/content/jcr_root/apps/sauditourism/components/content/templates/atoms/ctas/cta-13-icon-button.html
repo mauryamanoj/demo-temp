@@ -1,0 +1,12 @@
+<template data-sly-template.cta13IconButtons="${@ class, variant, background, dataButton, icon}"
+          data-sly-use.icon01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html">
+  <button data-component="cta-13-icon-button"
+          class="cta-13-icon-button ${class}
+          variant-${variant} background-${background}"
+          data-button=${dataButton}>
+  <span class="icon-container">
+    <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name=icon, desktopSize='18',
+            mobileSize='22'}"></sly>
+  </span>
+  </button>
+</template>

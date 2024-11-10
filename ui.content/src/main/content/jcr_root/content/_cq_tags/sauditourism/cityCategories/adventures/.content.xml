@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Adventures"
+          jcr:title.de="Abenteuer"
+          jcr:title.es="Aventuras"
+          jcr:title.ru="Приключения"
+          jcr:title.zh="歷險記"
+          jcr:title.fr="Aventures"
+          jcr:title.ar="مغامرات"
+          jcr:title.ja="冒険"
+          sling:resourceType="cq/tagging/components/tag"/>

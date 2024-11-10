@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-13T22:49:19.711+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-13T22:49:19.711+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="a69b595b-6b6a-3aee-81d4-b49e0a215aab"
+    rep:authorizableId="mt-content"
+    rep:members="{WeakReference}[34b1dab0-97ef-3c19-b8c7-ca6427e49a10,a14be254-9f11-3ad5-b4d0-74c88860c661]"
+    rep:principalName="mt-content">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="mt-content"/>
+</jcr:root>

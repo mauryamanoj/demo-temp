@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Wajh"
+    jcr:title.ar="الوجه"
+    jcr:title.de="Al-Wadschh"
+    jcr:title.es="Al Wajh"
+    jcr:title.fr="Al Wajh"
+    jcr:title.ja="アル・ワジュフ"
+    jcr:title.ru="Эль-Ваджх"
+    jcr:title.zh="沃季赫"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-wajh"/>

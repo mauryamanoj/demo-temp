@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Battaliyah"
+    jcr:title.ar="البطالية"
+    jcr:title.de="Al Batalya"
+    jcr:title.es="Al Batalya"
+    jcr:title.fr="Al Battaliyah"
+    jcr:title.ja="アル・バタリヤ"
+    jcr:title.ru="Эль-Баталья"
+    jcr:title.zh="伯塔利亚"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-batalya"/>

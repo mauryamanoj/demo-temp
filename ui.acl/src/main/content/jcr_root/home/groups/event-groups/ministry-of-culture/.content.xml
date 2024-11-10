@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-13T22:35:18.811+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-13T22:35:18.811+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="085eeb80-8c08-3523-806b-7d4cbd151b0b"
+    rep:members="{WeakReference}[]"
+    rep:authorizableId="ministry-of-culture"
+    rep:principalName="ministry-of-culture">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="ministry-of-culture"/>
+</jcr:root>

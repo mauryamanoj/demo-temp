@@ -1,0 +1,65 @@
+// 20200218125940
+// http://localhost:4502/content/sauditourism/app/en/legal-info-page.infinity.json
+
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 18 2020 11:25:28 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "legal-info-page",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/app-legal-page",
+    "jcr:created": "Tue Feb 18 2020 11:25:28 GMT+1100",
+    "cq:lastModified": "Tue Feb 18 2020 11:42:11 GMT+1100",
+    "image": "/content/sauditourism/app/en/legal-info-page.jpg",
+    "imageCaption": {
+      "copy": "Legal info image caption",
+      "link": "http://legal.info"
+    },
+    "jcr:description": "legal info page description",
+    "pageTitle": "legal-info-page",
+    "sling:resourceType": "sauditourism/components/structure/app-legal-page",
+    "cq:lastModifiedBy": "admin",
+    "navTitle": "legal-info-page",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    },
+    "tabs": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "text 1",
+        "title": "title 1"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "text 2",
+        "title": "title 2"
+      }
+    },
+    "texts": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "text 1",
+        "title": "title 1"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "text 2",
+        "title": "title 2"
+      },
+      "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "text": "text 3",
+        "title": "title 3"
+      }
+    }
+  }
+}

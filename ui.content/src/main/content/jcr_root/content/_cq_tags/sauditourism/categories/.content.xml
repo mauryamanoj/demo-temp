@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Categories"
+          jcr:title.ar="التصنيفات"
+          jcr:title.de="Kategorien"
+          jcr:title.es="Categorías"
+          jcr:title.fr="Catégories"
+          jcr:title.ja="カテゴリ"
+          jcr:title.ru="Категории"
+          jcr:title.zh="分类"
+          sling:resourceType="cq/tagging/components/tag">
+    <nature/>
+    <culture_history/>
+    <entertainment/>
+    <food_drink/>
+    <shopping/>
+    <beauty_relax/>
+    <classes_and_training/>
+    <adventure/>
+    <sports/>
+</jcr:root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Western Sweets"
+          jcr:title.ar="حلويات غربية"
+          jcr:title.de="Westliche Süßigkeiten"
+          jcr:title.es="Dulces occidentales"
+          jcr:title.fr="Douceurs occidentales"
+          jcr:title.ja="洋菓子"
+          jcr:title.ru="Западные сладости"
+          jcr:title.zh="西式甜点"
+          sling:resourceType="cq/tagging/components/tag"/>

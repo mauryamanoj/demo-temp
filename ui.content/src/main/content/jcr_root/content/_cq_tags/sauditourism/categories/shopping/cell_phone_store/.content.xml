@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Cell Phone Store"
+          jcr:title.ar="متجر الهواتف الخلوية"
+          jcr:title.de="Handygeschäft"
+          jcr:title.es="Tienda de teléfonos celulares"
+          jcr:title.fr="Magasin de téléphones portables"
+          jcr:title.ja="携帯電話店"
+          jcr:title.ru="Магазин мобильных телефонов"
+          jcr:title.zh="手机店"
+          sling:resourceType="cq/tagging/components/tag"/>

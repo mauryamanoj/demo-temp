@@ -1,0 +1,14 @@
+<sly data-sly-use.chatBotModel="com.saudi.tourism.core.models.components.Chatbot">
+    <section class="webchat-bottom-container">
+        <div id="webchat" style="display: none;" role="main"></div>
+        <span class="webchat-tooltip">
+            ${chatBotModel.chatbotTitle}
+        </span>
+        <svg class="webchat-bottom-line">
+            <svg x="12%" y="7%" width="100%" height="100%">
+                <path fill="white" fill-opacity="1" d="M 0 0 L 300 0 L 300 50 Q 250 0 0 0 "></path>
+            </svg>
+        </svg>
+        <img id="webchat_toggle" src="https://sahib.visitsaudi.com/images/Group 44.png" alt="chatbot">
+    </section>
+</sly>

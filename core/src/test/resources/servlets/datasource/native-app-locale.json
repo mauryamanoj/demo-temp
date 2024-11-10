@@ -1,0 +1,18 @@
+{
+  "appLocale": {
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "id": "2",
+      "code": "en",
+      "flag": "EN",
+      "value": "English"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "id": "1",
+      "code": "ar",
+      "flag": "AR",
+      "value": "Arabic"
+    }
+  }
+}

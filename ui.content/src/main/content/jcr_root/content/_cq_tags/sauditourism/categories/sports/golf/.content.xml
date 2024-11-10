@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Golf"
+          jcr:title.ar="الجولف"
+          jcr:title.de="Golf"
+          jcr:title.es="Golf"
+          jcr:title.fr="Golf"
+          jcr:title.ja="ゴルフ"
+          jcr:title.ru="Гольф"
+          jcr:title.zh="高尔夫"
+    sling:resourceType="cq/tagging/components/tag"/>

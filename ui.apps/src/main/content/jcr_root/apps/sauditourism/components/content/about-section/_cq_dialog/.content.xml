@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="About Section"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <about-section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="About Section"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <manual-authoring
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable Manual Authoring"
+                                        text="Enable Manual Authoring"
+                                        name="./enableManualAuthoring"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target=".manual-authoring-showhide-target"/>
+                                    </manual-authoring>
+                                    <aboutTitle
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./aboutTitle"
+                                        required="{Boolean}false">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </aboutTitle>
+                                    <aboutDescription
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Description"
+                                        required="{Boolean}false"
+                                        name="./aboutDescription"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                                        <uiSettings
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </aboutDescription>
+                                    <favorite-icon
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Favorite Icon"
+                                        name="./favoriteIcon"
+                                        required="{Boolean}false">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            path="sauditourism/components/content/utils/icons"
+                                            sling:resourceType="sauditourism/generic/datasource"/>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </favorite-icon>
+                                    <share-icon
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Share Icon"
+                                        name="./shareIcon"
+                                        required="{Boolean}false">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            path="sauditourism/components/content/utils/icons"
+                                            sling:resourceType="sauditourism/generic/datasource"/>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </share-icon>
+                                    <hide-read-more
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        text="Hide Read More"
+                                        name="./hideReadMore"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </hide-read-more>
+                                    <read-more-label
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Read More Label"
+                                        name="./readMoreLabel"
+                                        required="{Boolean}false">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </read-more-label>
+                                    <read-less-label
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Read Less Label"
+                                        name="./readLessLabel"
+                                        required="{Boolean}false">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </read-less-label>
+                                    <hide-favorite
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        text="Hide Favorite"
+                                        name="./hideFavorite"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </hide-favorite>
+                                    <hide-share
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        text="Hide Share"
+                                        name="./hideShare"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </hide-share>
+                                    <categories
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                        fieldDescription="Select what this Categories is best suitable for"
+                                        fieldLabel="Category Tags"
+                                        forceSelection="{Boolean}true"
+                                        multiple="{Boolean}true"
+                                        name="./categories"
+                                        required="{Boolean}false"
+                                        rootPath="/content/cq:tags/sauditourism/categories"
+                                        validation="tags.count.validator">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhide-target-value="true"/>
+                                    </categories>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </about-section>
+        </items>
+    </content>
+</jcr:root>
+
+

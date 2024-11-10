@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Baha Region"
+    jcr:title.ar="منطقة الباحة"
+    jcr:title.de="Provinz Al-Baha"
+    jcr:title.es="Provincia de Baha"
+    jcr:title.fr="Province d'Al Bahah"
+    jcr:title.ja="バーハ州"
+    jcr:title.ru="Провинция Эль-Баха"
+    jcr:title.zh="阿尔巴哈地区"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-baha-region"/>

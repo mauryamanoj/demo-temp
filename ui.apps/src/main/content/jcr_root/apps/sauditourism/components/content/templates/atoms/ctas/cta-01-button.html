@@ -1,0 +1,71 @@
+<template data-sly-template.ctaButton="${@ link, linkObj, size, variant, iconName, background, title,
+            noChevron, copy, extraClass, props, newTab, isExpansible, destination, isHyLink, analyticsTitleText, copyAnalytics}"
+          data-sly-use.iconSimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html">
+<sly data-sly-test="${properties.hideCta != 'true'}"><button     data-sly-test="${linkObj || copy || iconName}"
+            data-sly-set.linkRef="${linkObj.urlWithExtension || link}"
+            data-sly-set.copyText="${linkObj.copy || copy}"
+            data-sly-element="${linkObj.urlWithExtension || link ? 'a' : 'button'}"
+            data-sly-attribute.isHyLink="${isHyLink}"
+            data-sly-attribute.href="${linkRef @ context='uri'}"
+            data-sly-attribute.target="${linkObj.targetInNewWindow || newTab ? '_blank' : '_self'}"
+            data-sly-attribute.rel="${linkObj.targetInNewWindow || newTab ? 'noopener noreferrer' : ''}"
+            data-component="cta-01-button"
+			data-track-name="${linkObj.analyticsDataCopy @ context='text'}"
+			data-track-section="${analyticsTitleText @ context='text'}"
+			data-track-packageName="${analyticsTitleText @ context='text'}"
+			data-track-destination="${destination @ context='text'}" 
+			data-track-eventName="${linkObj.analyticsDataCopy || copyAnalytics @ context='text'}"
+            class="${extraClass} size-${size ? size : 'small'} variant-${variant ? variant : 'primary'}
+            background-${background ? background : 'solid'}${isExpansible ? ' is-expansible' : ''}"
+            data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js'
+                @ attributes=[props]}"
+            data-sly-attribute="${attributesHelper.attributes}">
+
+    <sly data-sly-test="${iconName}">
+        <span class="icon-container ">
+            <sly
+                data-sly-call="${iconSimpleTemplate.iconSimple @ name=iconName, desktopSize='18',
+                 mobileSize='22', class=extraClass}"></sly>
+        </span>
+    </sly>
+
+    <span class="button-copy cta-text">
+        <sly>${copyText @ context='html'}</sly>
+    </span>
+
+    <sly data-sly-test="${!noChevron}">
+        <span class="chevron-container">
+            <sly data-sly-call="${iconSimpleTemplate.iconSimple @ name='arrow-right',
+            desktopSize='18', mobileSize='22', class=false}"></sly>
+        </span>
+    </sly>
+</button>
+</sly>
+<sly  data-sly-test="${properties.hideCta=='true'}">
+<button     data-sly-test="${linkObj || copy || iconName}"
+            data-sly-set.linkRef="${linkObj.urlWithExtension || link}"
+            data-sly-set.copyText="${linkObj.copy || copy}"
+            data-sly-element="${linkObj.urlWithExtension || link ? 'a' : 'button'}"
+            data-sly-attribute.href="${linkRef @ context='uri'}"
+            data-sly-attribute.target="${linkObj.targetInNewWindow || newTab ? '_blank' : '_self'}"
+            data-sly-attribute.rel="${linkObj.targetInNewWindow || newTab ? 'noopener noreferrer' : ''}"
+            data-component="cta-01-button"
+            class=""
+            data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js'
+                @ attributes=[props]}"
+            data-sly-attribute="${attributesHelper.attributes}">
+
+
+    <span class="button-copy cta-text">
+        <sly>${copyText @ context='html'}</sly>
+    </span>
+
+    <sly data-sly-test="${!noChevron}">
+        <span class="chevron-container">
+            <sly data-sly-call="${iconSimpleTemplate.iconSimple @ name='arrow-right',
+            desktopSize='18', mobileSize='22', class=false}"></sly>
+        </span>
+    </sly>
+</button>
+</sly>
+</template>

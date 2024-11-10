@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Mobile Page mapping"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties]"
+          helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+          mode="edit">
+    <content
+            granite:class="cq-dialog-content-page"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    granite:class="cq-siteadmin-admin-properties-tabs"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <saudi-tourism-app
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Header  Config"
+                            sling:orderBefore="thumbnail"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <basic
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Basic Infos"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <subtitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Subtitle."
+                                                    fieldLabel="Subtitle"
+                                                    name="./header/titles/subTitle">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/titles/subTitle"/>
+                                            </subtitle>
+                                            <sidetitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Sidetitle."
+                                                    fieldLabel="Sidetitle"
+                                                    name="./header/titles/sideTitle">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/titles/sideTitle"/>
+                                            </sidetitle>
+
+                                            <showMap
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show Map"
+                                                    name="./header/showMap"
+                                                    fieldDescription="if map should be shown"
+                                                    text="Show Map"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/showMap"/>
+                                            </showMap>
+                                            <showSearch
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show search"
+                                                    name="./header/showSearch"
+                                                    fieldDescription="if Search should be shown"
+                                                    text="Show search"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/showSearch"/>
+                                            </showSearch>
+
+
+
+
+
+                                            <headerComponentStyle-componentUIType
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="headerComponentStyle componentUIType"
+                                                    fieldDescription="headerComponentStyle componentUIType"
+                                                    multiple="{Boolean}false"
+                                                    name="./header/headerComponentStyle/componentUIType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <headerBanner
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="HEADER_BANNER"
+                                                            value="HEADER_BANNER"/>
+                                                    <headerInternalPage
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="HEADER_INTERNAL_PAGE"
+                                                            value="HEADER_INTERNAL_PAGE"/>
+                                                </items>
+                                            </headerComponentStyle-componentUIType>
+
+                                        </items>
+                                    </basic>
+
+                                    <tabiconfieldset
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Tab Icon Details"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+
+                                            <showTab
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show Tab"
+                                                    name="./header/tabs/show"
+                                                    fieldDescription="if Tab should be shown"
+                                                    text="Show Tab"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/tabs/show"/>
+                                            </showTab>
+
+                                            <icon
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="Click 'Add' to add an icon item"
+                                                    fieldLabel="Tab/Details">
+                                                <field
+                                                        granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                        name="./header/tabs/items">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Icon Item"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+
+
+                                                                <id
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cq:showOnCreate="{Boolean}true"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Tab Icon Details - Id"
+                                                                        fieldLabel="Tab Icon Details - Id"
+                                                                        name="./id">
+                                                                </id>
+
+                                                                <tab-icon-title
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cq:showOnCreate="{Boolean}true"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Tab Icon Details - Title"
+                                                                        fieldLabel="Tab Icon Details - Title"
+                                                                        name="./title">
+
+                                                                </tab-icon-title>
+
+                                                                <icon-icon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cq:showOnCreate="{Boolean}true"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldDescription="Tab Icon Details - Icon"
+                                                                        rootPath="/content/dam"
+                                                                        fieldLabel="Tab Icon Details - Icon"
+                                                                        name="./icon">
+                                                                </icon-icon>
+
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </icon>
+                                            <!-- Should be of the page ?-->
+
+
+
+
+
+                                        </items>
+                                    </tabiconfieldset>
+                                    <sectionSteps
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Steps"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <stepValue
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Value of the steps"
+                                                    fieldDescription="Value of the steps"
+                                                    fieldLabel="Step Value"
+                                                    name="./header/steps/value"
+                                                    required="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/steps/value"/>
+                                            </stepValue>
+                                            <showStep
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show steps"
+                                                    fieldDescription="if Step should be shown"
+                                                    name="./header/steps/show"
+                                                    text="Show steps"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/steps/show"/>
+                                            </showStep>
+
+                                        </items>
+                                    </sectionSteps>
+                                    <sectionSideActions
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Side Actions"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <showFilter
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show Filter"
+                                                    name="./header/sideActions/showFilter"
+                                                    fieldDescription="if side actions filters should be shown"
+                                                    text="Show Filter"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/showFilter"/>
+                                            </showFilter>
+                                            <showMap
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show Map"
+                                                    name="./header/sideActions/showMap"
+                                                    fieldDescription="if side actions map should be shown"
+                                                    text="Show Map "
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/showMap"/>
+                                            </showMap>
+                                            <showFavorite
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show Favorite"
+                                                    fieldDescription="if side actions favorite should be shown"
+                                                    name="./header/sideActions/showFavorite"
+                                                    text="Show Favorite"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/showFavorite"/>
+                                            </showFavorite>
+                                            <showShare
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldLabel="Show Share"
+                                                name="./header/sideActions/showShare"
+                                                fieldDescription="if side actions Share should be shown"
+                                                text="Show Share"
+                                                value="{Boolean}true"
+                                                uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="header/sideActions/showShare"/>
+                                            </showShare>
+                                            <!-- shareUrl: Path -->
+                                            <shareUrl
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Enter Share URL."
+                                                fieldLabel="Share URL"
+                                                rootPath="/content/sauditourism"
+                                                name="./header/sideActions/shareUrl"/>
+                                        </items>
+                                    </sectionSideActions>
+                                    <sectionCustomAction
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Custom action"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <customActionTitle
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Custom Action - Title"
+                                                    fieldDescription="Custom Action - Title"
+                                                    fieldLabel="Custom Action - Title"
+                                                    name="./header/sideActions/customAction/title"
+                                                    required="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/customAction/title"/>
+                                            </customActionTitle>
+                                            <customActionShow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Custom Action - Show"
+                                                    name="./header/sideActions/customAction/show"
+                                                    fieldDescription="if side actions  should be shown"
+                                                    text="Custom Action - Show"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/customAction/show"/>
+                                            </customActionShow>
+
+                                            <customActionEnable
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Custom Action - Enable"
+                                                    name="./header/sideActions/customAction/enable"
+                                                    fieldDescription="if side actions  should be enabled"
+                                                    text="Custom Action - Enable"
+                                                    value="{Boolean}true"
+                                                    uncheckedValue="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/customAction/enable"/>
+                                            </customActionEnable>
+
+                                            <customActionLeftIcon
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    emptyText="Custom Action - LeftIcon"
+                                                    fieldDescription="Custom Action - LeftIcon"
+                                                    fieldLabel="Custom Action - LeftIcon"
+                                                    name="./header/sideActions/customAction/leftIcon"
+                                                    required="{Boolean}false"
+                                                    rootPath="/content/dam">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/customAction/leftIcon"/>
+                                            </customActionLeftIcon>
+
+                                            <customActionRightIcon
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    emptyText="Custom Action - RightIcon"
+                                                    fieldDescription="Custom Action - RightIcon"
+                                                    fieldLabel="Custom Action - RightIcon"
+                                                    name="./header/sideActions/customAction/rightIcon"
+                                                    required="{Boolean}false"
+                                                    rootPath="/content/dam">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/customAction/rightIcon"/>
+                                            </customActionRightIcon>
+
+                                            <buttonComponentStyle-componentUIType
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="buttonComponentStyle componentUIType"
+                                                    fieldDescription="buttonComponentStyle componentUIType"
+                                                    multiple="{Boolean}false"
+                                                    name="./header/sideActions/customAction/buttonComponentStyle/componentUIType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <primary
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="PRIMARY"
+                                                            value="PRIMARY"/>
+                                                    <secondary
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="SECONDARY"
+                                                            value="SECONDARY"/>
+                                                    <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="LINK"
+                                                            value="LINK"/>
+                                                </items>
+                                            </buttonComponentStyle-componentUIType>
+                                            <CtaType
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Cta Type"
+                                                    fieldDescription="Cta Type"
+                                                    multiple="{Boolean}false"
+                                                    name="./header/sideActions/customAction/cta/type">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <weblink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="WEB"
+                                                            value="WEB"/>
+                                                    <deeplink-screen
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="DEEPLINK_SCREEN"
+                                                            value="DEEPLINK_SCREEN"/>
+                                                    <deeplink-url
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="DEEPLINK_URL"
+                                                        value="DEEPLINK_URL"/>
+                                                    <phone
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="PHONE"
+                                                        value="PHONE"/>
+                                                </items>
+                                            </CtaType>
+
+                                            <customActionCtaValue
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Custom Action - CTA Value"
+                                                    fieldDescription="Custom Action - CTA Value"
+                                                    fieldLabel="Custom Action - CTA value"
+                                                    name="./header/sideActions/customAction/cta/value"
+                                                    required="{Boolean}false">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-msm-lockable="header/sideActions/customAction/cta/value"/>
+                                            </customActionCtaValue>
+
+
+
+
+                                        </items>
+                                    </sectionCustomAction>
+
+                                </items>
+                            </column>
+                        </items>
+                    </saudi-tourism-app>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

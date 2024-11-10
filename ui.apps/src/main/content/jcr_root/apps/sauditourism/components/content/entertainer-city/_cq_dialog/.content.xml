@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="nt:unstructured"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          extraClientlibs="[cq.authoring.dialog,sauditourism.author]"
+          jcr:title="Entertainer City settings"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+      <column
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <location-id
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldDescription="Entertainer ID"
+                    fieldLabel="Entertainer ID"
+                    emptyOption="{Boolean}true"
+                    name="./locationId">
+                <datasource
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sauditourism/datasource/locations"/>
+            </location-id>
+            <longitude
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Longitude of the city"
+                    cq:showOnCreate="{Boolean}true"
+                    validation="regex.validation.float"
+                    name="./longitude"
+                    required="{Boolean}false"/>
+            <latitude
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Latitude of the city"
+                    cq:showOnCreate="{Boolean}true"
+                    validation="regex.validation.float"
+                    name="./latitude"
+                    required="{Boolean}false"/>
+            <radius
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Radius (m)"
+                    cq:showOnCreate="{Boolean}true"
+                    validation="regex.validation.float"
+                    name="./radius"
+                    required="{Boolean}false"/>
+            <disable-entertainer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldLabel="Disable in entertainer cities list"
+                    fieldDescription="Disable in entertainer cities list"
+                    name="./disableEntertainer"
+                    text="Disable in entertainer cities list"
+                    value="{Boolean}true"
+                    uncheckedValue="{Boolean}false"/>
+          <image
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Specify here a path to full sized image for this city"
+              fieldLabel="Image"
+              name="./image"
+              rootPath="/content/dam"/>
+          <destination-category
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+              fieldDescription="Destination categories for this city"
+              fieldLabel="Destination category"
+              forceSelection="{Boolean}true"
+              multiple="{Boolean}true"
+              name="./destinationFeatureTags"
+              required="{Boolean}false"
+              rootPath="/content/cq:tags/sauditourism/destination"/>
+            <polygon-section
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Polygon coordinates"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                <items jcr:primaryType="nt:unstructured">
+                    <coordinates
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            composite="{Boolean}true"
+                            cq:showOnCreate="{Boolean}true"
+                            fieldLabel="Polygon coordinates"
+                            validation="custom.validation.entertainer.polygons"
+                            fieldDescription="Click 'Add' to add a new coordinate">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./coordinates">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Coordinate"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <longitude
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="longitude"
+                                                cq:showOnCreate="{Boolean}true"
+                                                validation="regex.validation.float"
+                                                name="./longitude"
+                                                required="{Boolean}true"/>
+                                        <latitude
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="latitude"
+                                                cq:showOnCreate="{Boolean}true"
+                                                validation="regex.validation.float"
+                                                name="./latitude"
+                                                required="{Boolean}true"/>
+
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </coordinates>
+                </items>
+            </polygon-section>
+
+        </items>
+      </column>
+    </items>
+  </content>
+</jcr:root>

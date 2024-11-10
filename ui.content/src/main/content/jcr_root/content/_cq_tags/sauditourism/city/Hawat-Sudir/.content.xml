@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Hautat Sudair"
+    jcr:title.ar="حوطة سدير"
+    jcr:title.de="H̨awţah Sudayr"
+    jcr:title.es="Hautat Sudair"
+    jcr:title.fr="Hawtat Sudayr"
+    jcr:title.ja="ハウタト・セディール"
+    jcr:title.ru="Хавтат-Саудайр"
+    jcr:title.zh="哈塔萨迪尔"
+    sling:resourceType="cq/tagging/components/tag"
+    city="hawat-sudir"/>

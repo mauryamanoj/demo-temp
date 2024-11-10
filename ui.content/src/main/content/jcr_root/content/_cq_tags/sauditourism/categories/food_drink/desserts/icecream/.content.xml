@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Ice Cream"
+          jcr:title.ar="آيس كريم"
+          jcr:title.de="Eiscreme"
+          jcr:title.es="Helado"
+          jcr:title.fr="Glace"
+          jcr:title.ja="アイスクリーム"
+          jcr:title.ru="Мороженое"
+          jcr:title.zh="冰淇淋"
+          sling:resourceType="cq/tagging/components/tag"/>

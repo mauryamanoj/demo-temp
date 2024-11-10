@@ -1,0 +1,15 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:title":"Title",
+    "jcr:description":"Description",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Nov 18 2019 11:08:10 GMT+0100",
+    "cq:template":"/apps/yourapp/templates/yourtemplate",
+    "sling:resourceType":"yourapp/components/yourcomponent",
+    "navTitle":"Nav Title",
+    "navImage": "/content/dam/yourapp/yourimage.jpg",
+    "s7navImage": "https://scth.scene7.com/is/image/scth/yourimage.jpg"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Art Gallery"
+          jcr:title.ar="معرض فني"
+          jcr:title.de="Kunstgalerie"
+          jcr:title.es="Galería de arte"
+          jcr:title.fr="Galerie d'art"
+          jcr:title.ja="美術館"
+          jcr:title.ru="Художественная галерея"
+          jcr:title.zh="艺术画廊"
+          sling:resourceType="cq/tagging/components/tag"/>

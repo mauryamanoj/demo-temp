@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:mixinTypes="[rep:AccessControllable]"
+          jcr:primaryType="cq:Page">
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <content-default
+                        jcr:description="Policy for editable layout containers"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="sauditourism Default"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,group:sauditourism]"
+                        policyResourceType="wcm/foundation/components/responsivegrid"/>
+                    <content-configuration
+                        jcr:description="Policy for editable layout containers"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Configuration Template configs"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:sauditourism-structure]"
+                        policyResourceType="wcm/foundation/components/responsivegrid">
+                        <cq:authoring jcr:primaryType="nt:unstructured"/>
+                        <jcr:content
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"
+                            mergeList="{Boolean}true"/>
+                    </content-configuration>
+                    <content-search-results
+                        jcr:description="Policy for editable layout containers"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Configuration Template configs"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:sauditourism-search,/apps/sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards,/apps/sauditourism/components/content/breadcrumb,/apps/sauditourism/components/content/c28-destinations-and-map/v1/c28-destinations-and-map]"
+                        policyResourceType="wcm/foundation/components/responsivegrid">
+                        <cq:authoring jcr:primaryType="nt:unstructured"/>
+                        <jcr:content
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"
+                            mergeList="{Boolean}true"/>
+                    </content-search-results>
+                    <app-default
+                        jcr:description="Policy for editable app layout containers"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="sauditourism App Default"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/sauditourism/components/content/image,/apps/sauditourism/components/content/text,/apps/sauditourism/components/content/title]"
+                        policyResourceType="wcm/foundation/components/responsivegrid"/>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+    <sauditourism jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <form jcr:primaryType="nt:unstructured">
+                <container jcr:primaryType="nt:unstructured">
+                    <form-container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="sauditourism Form"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/sauditourism/components/form/button,/apps/sauditourism/components/form/hidden,/apps/sauditourism/components/form/options,/apps/sauditourism/components/form/text]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </form-container>
+                </container>
+            </form>
+            <content jcr:primaryType="nt:unstructured">
+                <latest-stories jcr:primaryType="nt:unstructured">
+                    <policy_1696402582833
+                        jcr:lastModified="{Date}2023-10-04T08:58:53.593+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_latest-stories"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rendition="crop-375x667"
+                                widths="300,750">
+                                <sizes jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        maxWidth="767"
+                                        width="100vw"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        width="31vw"/>
+                                </sizes>
+                            </item0>
+                        </crops>
+                    </policy_1696402582833>
+                </latest-stories>
+                <c04-full-bleed-slider jcr:primaryType="nt:unstructured">
+                    <policy_1571884608740
+                        jcr:lastModified="{Date}2019-10-24T13:37:13.018+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="full-bleed-slider"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Dark"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="is-dark-mode"
+                                        cq:styleId="1571884625736"
+                                        cq:styleLabel="Dark"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1571884608740>
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c04-full-bleed-slider jcr:primaryType="nt:unstructured">
+                            <policy_1571884608740
+                                jcr:lastModified="{Date}2019-10-24T13:37:13.018+11:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="full-bleed-slider"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:styleGroups jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleGroupLabel="Dark"
+                                        jcr:primaryType="nt:unstructured">
+                                        <cq:styles jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                cq:styleClasses="is-dark-mode"
+                                                cq:styleId="1571884625736"
+                                                cq:styleLabel="Dark"
+                                                jcr:primaryType="nt:unstructured"/>
+                                        </cq:styles>
+                                    </item0>
+                                </cq:styleGroups>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="375"
+                                           rendition="crop-360x480"
+                                           imgRelativeWidth="100vw"
+                                           widths="640,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="480"
+                                           rendition="crop-600x600"
+                                           imgRelativeWidth="100vw"
+                                           widths="828,960"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-375x210"
+                                           imgRelativeWidth="100vw"
+                                           widths="768,900,1536,1800"/>
+                                    <item3 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="71vw"
+                                           widths="1024,1200,1600,2000"/>
+                                </crops>
+                            </policy_1571884608740>
+                        </c04-full-bleed-slider>
+                    </v1>
+                </c04-full-bleed-slider>
+                <c03-card jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c03-card jcr:primaryType="nt:unstructured">
+                            <policy_1573616858927
+                                jcr:lastModified="{Date}2019-11-13T14:55:41.929+11:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="card-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:styleGroups jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleGroupLabel="Position"
+                                        jcr:primaryType="nt:unstructured">
+                                        <cq:styles jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                cq:styleClasses="left"
+                                                cq:styleId="1573616864088"
+                                                cq:styleLabel="Left"
+                                                jcr:primaryType="nt:unstructured"/>
+                                            <item1
+                                                cq:styleClasses="right"
+                                                cq:styleId="1573617256026"
+                                                cq:styleLabel="Right"
+                                                jcr:primaryType="nt:unstructured"/>
+                                        </cq:styles>
+                                    </item0>
+                                </cq:styleGroups>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="420"
+                                           rendition="crop-375x210"
+                                           imgRelativeWidth="100vw"
+                                           widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="40vw"
+                                           widths="580,1160"/>
+                                </crops>
+                            </policy_1573616858927>
+                        </c03-card>
+                    </v1>
+                </c03-card>
+                <c09-tabs jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c09-tabs jcr:primaryType="nt:unstructured">
+                            <policy_1571742724092
+                                jcr:lastModified="{Date}2019-10-22T13:12:23.940+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Hero Tab Policy"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/apps/sauditourism/components/content/c01-quick-links/v1/c01-quick-links,/apps/sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards,/apps/sauditourism/components/content/c03-card/v1/c03-card,/apps/sauditourism/components/content/c02-title/v1/c02-title,/apps/sauditourism/components/content/c02-title-intro/v1/c02-title-intro,/apps/sauditourism/components/content/c98-footnote/v1/c98-footnote,/apps/sauditourism/components/content/c02-title-intro/v1/c02-title-intro,/apps/sauditourism/components/content/c12-article-detail/v1/c12-article-detail,/apps/sauditourism/components/content/c13-article-card/v1/c13-article-card,wcm/foundation/components/responsivegrid]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_1571742724092>
+                        </c09-tabs>
+                    </v1>
+                </c09-tabs>
+                <trip-planner jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <city-itinerary jcr:primaryType="nt:unstructured">
+                            <city-itinerary-default
+                                jcr:lastModified="{Date}2020-08-30T21:51:44.701+06:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Trip Planner - City Itinerary Policy"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/apps/sauditourism/components/content/trip-planner/v1/trip-day]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </city-itinerary-default>
+                        </city-itinerary>
+                        <trip-detail jcr:primaryType="nt:unstructured">
+                            <trip-detail-default
+                                jcr:lastModified="{Date}2020-08-30T21:52:22.680+06:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Trip Planner - Trip Detail Policy"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/apps/sauditourism/components/content/trip-planner/v1/city-itinerary]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </trip-detail-default>
+                        </trip-detail>
+                    </v1>
+                </trip-planner>
+                <c25-big-slider jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c25-big-slider jcr:primaryType="nt:unstructured">
+                            <policy_1573111158927
+                                jcr:lastModified="{Date}2019-11-13T14:55:41.929+11:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="big-slider-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:styleGroups jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleGroupLabel="Background"
+                                        jcr:primaryType="nt:unstructured">
+                                        <cq:styles jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                cq:styleClasses=""
+                                                cq:styleId="1573111164088"
+                                                cq:styleLabel="White"
+                                                jcr:primaryType="nt:unstructured"/>
+                                            <item1
+                                                cq:styleClasses="background-grey"
+                                                cq:styleId="1573111156026"
+                                                cq:styleLabel="Grey"
+                                                jcr:primaryType="nt:unstructured"/>
+                                        </cq:styles>
+                                    </item0>
+                                </cq:styleGroups>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="374"
+                                           rendition="crop-375x280"
+                                           imgRelativeWidth="100vw"
+                                           widths="750"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="480"
+                                           rendition="crop-375x210"
+                                           imgRelativeWidth="100vw"
+                                           widths="828,960"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-1920x768"
+                                           imgRelativeWidth="100vw"
+                                           widths="768,900,1024,1536,1800"/>
+                                    <item3 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="71vw"
+                                           widths="762,846,1024,1600,1692,2000"/>
+                                </crops>
+                            </policy_1573111158927>
+                        </c25-big-slider>
+                    </v1>
+                </c25-big-slider>
+                <c02-title jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c02-title jcr:primaryType="nt:unstructured">
+                            <policy_1573222258927
+                                jcr:lastModified="{Date}2019-11-13T14:55:41.929+11:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="c02-title-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:styleGroups jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleGroupLabel="Background"
+                                        jcr:primaryType="nt:unstructured">
+                                        <cq:styles jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                cq:styleClasses=""
+                                                cq:styleId="1573222264088"
+                                                cq:styleLabel="White"
+                                                jcr:primaryType="nt:unstructured"/>
+                                            <item1
+                                                cq:styleClasses="grey"
+                                                cq:styleId="1573222256026"
+                                                cq:styleLabel="Grey"
+                                                jcr:primaryType="nt:unstructured"/>
+                                        </cq:styles>
+                                    </item0>
+                                </cq:styleGroups>
+                            </policy_1573222258927>
+                        </c02-title>
+                    </v1>
+                </c02-title>
+                <c26-secondary-hero-with-weather jcr:primaryType="nt:unstructured">
+                    <policy_1607028173189
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="c26-secondary-hero-with-weather"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured"
+                                   breakpoint="375"
+                                   rendition="crop-600x600"
+                                   imgRelativeWidth="100vw"
+                                   widths="375,750"/>
+                            <item1 jcr:primaryType="nt:unstructured"
+                                   breakpoint="767"
+                                   rendition="crop-760x570"
+                                   imgRelativeWidth="100vw"
+                                   widths="440,880"/>
+                            <item2 jcr:primaryType="nt:unstructured"
+                                   breakpoint=""
+                                   rendition="crop-660x337"
+                                   imgRelativeWidth="100vw"
+                                   widths="768,1024,1200,1536,2000"/>
+                        </crops>
+                    </policy_1607028173189>
+                </c26-secondary-hero-with-weather>
+                <h02-secondary-hero jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <h02-secondary-hero jcr:primaryType="nt:unstructured">
+                            <policy_1611596345855
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="h02-secondary-hero"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="420"
+                                           rendition="crop-375x280"
+                                           imgRelativeWidth="100vw"
+                                           widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-660x337"
+                                           imgRelativeWidth="100vw"
+                                           widths="780,1024,1200,1560,2000"/>
+                                </crops>
+                            </policy_1611596345855>
+                        </h02-secondary-hero>
+                    </v1>
+                </h02-secondary-hero>
+                <m01-full-bleed-video jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <m01-full-bleed-video jcr:primaryType="nt:unstructured">
+                            <policy_1613596421074
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="full-bleed-video"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="480"
+                                           rendition="crop-600x600"
+                                           imgRelativeWidth="100vw"
+                                           widths="750,960"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-1920x768"
+                                           imgRelativeWidth="100vw"
+                                           widths="768,1024,1536,2000"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="100vw"
+                                           widths="1024,1280,1600,2000"/>
+                                </crops>
+                            </policy_1613596421074>
+                        </m01-full-bleed-video>
+                    </v1>
+                </m01-full-bleed-video>
+                <traveller-quotes jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <traveller-quotes jcr:primaryType="nt:unstructured">
+                            <policy_1613596521922
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="travelers-quote"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="480"
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="100vw"
+                                           widths="640,750,828,960"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-460x620"
+                                           imgRelativeWidth="36vw"
+                                           widths="277,324,369,553,648,738"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-460x620"
+                                           imgRelativeWidth="27vw"
+                                           widths="277,324,432,553"/>
+                                </crops>
+                            </policy_1613596521922>
+                        </traveller-quotes>
+                    </v1>
+                </traveller-quotes>
+                <gallery-component jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <gallery-component jcr:primaryType="nt:unstructured">
+                            <policy_1614014599058
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="gallery-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="480"
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="84vw"
+                                           widths="538,630,696"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="48vw"
+                                           widths="369,432,492,738,864,984"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="22vw"
+                                           widths="226,264,317, 352,452,634,704"/>
+                                    <item3 jcr:primaryType="nt:unstructured"
+                                           mode="preview"
+                                           breakpoint="1023"
+                                           rendition="crop-1920x768"
+                                           imgRelativeWidth="90vw"
+                                           widths="692,810,922"/>
+                                    <item4 jcr:primaryType="nt:unstructured"
+                                           mode="preview"
+                                           breakpoint=""
+                                           rendition="crop-1920x768"
+                                           imgRelativeWidth="85vw"
+                                           widths="871,1020,1224,1360,1741,2000"/>
+                                </crops>
+                            </policy_1614014599058>
+                        </gallery-component>
+                    </v1>
+                </gallery-component>
+                <c27-teaser-with-cards jcr:primaryType="nt:unstructured">
+                    <v0 jcr:primaryType="nt:unstructured">
+                        <c27-teaser-with-cards jcr:primaryType="nt:unstructured">
+                            <policy_1614023948995
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="teaser-cards-policy-v0"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="420"
+                                           rendition="crop-375x210"
+                                           imgRelativeWidth="100vw"
+                                           widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="40vw"
+                                           widths="580,1160"/>
+                                </crops>
+                            </policy_1614023948995>
+                        </c27-teaser-with-cards>
+                    </v0>
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c27-teaser-with-cards jcr:primaryType="nt:unstructured">
+                            <policy_1614023948994
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="teaser-cards-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="420"
+                                           rendition="crop-375x210"
+                                           imgRelativeWidth="100vw"
+                                           widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="40vw"
+                                           widths="580,1160"/>
+                                </crops>
+                            </policy_1614023948994>
+                        </c27-teaser-with-cards>
+                    </v1>
+                </c27-teaser-with-cards>
+                <list-component jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <list-component jcr:primaryType="nt:unstructured">
+                            <policy_1614078481131
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="list-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="480"
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="85vw"
+                                           widths="544,638,704"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="44vw"
+                                           widths="338,396,451,676,792,902"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1920x1080"
+                                           imgRelativeWidth="27vw"
+                                           widths="277,324,389,432,553,648,778,864"/>
+                                </crops>
+                            </policy_1614078481131>
+                        </list-component>
+                    </v1>
+                </list-component>
+                <c13-article-card jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c13-article-card jcr:primaryType="nt:unstructured">
+                            <policy_1615996607872
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="c13-article-card-policy"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           breakpoint="479"
+                                           rendition="crop-760x570"
+                                           imgRelativeWidth="100vw"
+                                           widths="640,750,828"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           breakpoint="1023"
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="100vw"
+                                           widths="768,900,1023,1536,1800,2000"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           breakpoint=""
+                                           rendition="crop-1160x650"
+                                           imgRelativeWidth="71vw"
+                                           widths="728,852,1136,1364,1456,1704,1818,2000"/>
+                                </crops>
+                            </policy_1615996607872>
+                        </c13-article-card>
+                    </v1>
+                </c13-article-card>
+                <h01-brand-page-hero jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <h01-brand-page-hero jcr:primaryType="nt:unstructured">
+                            <policy_1666531735382
+                                jcr:lastModified="{Date}2022-10-25T11:00:07.735+04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="h01_brand_page_hero"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        breakpoint="420"
+                                        imgRelativeWidth="100vw"
+                                        rendition="crop-375x280"
+                                        widths="375,750"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        breakpoint=""
+                                        imgRelativeWidth="100vw"
+                                        rendition="crop-1920x1080"
+                                        widths="580,1160"/>
+                                </crops>
+                            </policy_1666531735382>
+                        </h01-brand-page-hero>
+                    </v1>
+                </h01-brand-page-hero>
+                <make-a-reservation jcr:primaryType="nt:unstructured">
+                    <policy_1668248386990
+                        jcr:lastModified="{Date}2022-11-12T14:21:10.700+04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="make_a_reservation"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="420"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-375x280"
+                                widths="375,750"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-1920x1080"
+                                widths="580,1160"/>
+                        </crops>
+                    </policy_1668248386990>
+                </make-a-reservation>
+                <h03-detail-hero jcr:primaryType="nt:unstructured">
+                    <v2 jcr:primaryType="nt:unstructured">
+                        <h03-detail-hero jcr:primaryType="nt:unstructured">
+                            <policy_1669456815547
+                                jcr:lastModified="{Date}2022-11-26T14:00:45.209+04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="h03_detail_hero"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        breakpoint="420"
+                                        imgRelativeWidth="100vw"
+                                        rendition="crop-375x280"
+                                        widths="375,750"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        breakpoint=""
+                                        imgRelativeWidth="100vw"
+                                        rendition="crop-660x337"
+                                        widths="780,1024,1200,1560,2000"/>
+                                </crops>
+                            </policy_1669456815547>
+                        </h03-detail-hero>
+                    </v2>
+                </h03-detail-hero>
+                <c07-evisa jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c07-evisa jcr:primaryType="nt:unstructured">
+                            <policy_1669653301333 jcr:primaryType="nt:unstructured"
+                                                  jcr:lastModified="2022-11-28T17:36:24.774+01:00" jcr:lastModifiedBy="admin"
+                                                  jcr:title="c07_evisa"
+                                                  sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured" breakpoint="420" imgRelativeWidth="100vw"
+                                           rendition="crop-375x280" widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured" imgRelativeWidth="100vw" rendition="crop-660x337"
+                                           widths="780,1024,1200,1560,2000"/>
+                                </crops>
+                            </policy_1669653301333>
+                        </c07-evisa>
+                    </v1>
+                </c07-evisa>
+                <c28-destinations-and-map jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c28-destinations-and-map jcr:primaryType="nt:unstructured">
+                            <policy_1670163947467 jcr:primaryType="nt:unstructured"
+                                                  jcr:lastModified="2022-11-28T17:36:24.774+01:00" jcr:lastModifiedBy="admin"
+                                                  jcr:title="Destinations and Map"
+                                                  sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured" breakpoint="420" imgRelativeWidth="100vw"
+                                           rendition="crop-375x280" widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured" imgRelativeWidth="100vw" rendition="crop-660x337"
+                                           widths="780,1024,1200,1560,2000"/>
+                                </crops>
+                            </policy_1670163947467>
+                        </c28-destinations-and-map>
+                    </v1>
+                </c28-destinations-and-map>
+                <c17-interest-points jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <c17-interest-points jcr:primaryType="nt:unstructured">
+                            <policy_1670778187671 jcr:primaryType="nt:unstructured"
+                                                  jcr:lastModified="2022-11-28T17:36:24.774+01:00" jcr:lastModifiedBy="admin"
+                                                  jcr:title="Destinations and Map"
+                                                  sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured" breakpoint="420" imgRelativeWidth="100vw"
+                                           rendition="crop-375x280" widths="375,750"/>
+                                    <item1 jcr:primaryType="nt:unstructured" imgRelativeWidth="100vw" rendition="crop-660x337"
+                                           widths="780,1024,1200,1560,2000"/>
+                                </crops>
+                            </policy_1670778187671>
+                        </c17-interest-points>
+                    </v1>
+                </c17-interest-points>
+                <essential-links jcr:primaryType="nt:unstructured">
+                    <policy_1670858443414 jcr:primaryType="nt:unstructured"
+                                          jcr:lastModified="2022-11-28T17:36:24.774+01:00" jcr:lastModifiedBy="admin"
+                                          jcr:title="Banner With Links"
+                                          sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured" breakpoint="420" imgRelativeWidth="100vw"
+                                   rendition="crop-375x280" widths="375,750"/>
+                            <item1 jcr:primaryType="nt:unstructured" imgRelativeWidth="100vw" rendition="crop-660x337"
+                                   widths="780,1024,1200,1560,2000"/>
+                        </crops>
+                    </policy_1670858443414>
+                </essential-links>
+                <winter-hero-slider jcr:primaryType="nt:unstructured">
+                    <policy_1673458498942
+                        jcr:lastModified="{Date}2022-11-26T14:00:45.209+04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="winter-hero-slider"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="420"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-375x280"
+                                widths="375,750"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint=""
+                                imgRelativeWidth="100vw"
+                                rendition="crop-660x337"
+                                widths="780,1024,1200,1560,2000"/>
+                        </crops>
+                    </policy_1673458498942>
+                </winter-hero-slider>
+                <guide-cards jcr:primaryType="nt:unstructured">
+                    <policy_1695223714794
+                        jcr:lastModified="{Date}2023-09-20T17:32:52.971+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_guide-cards"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoints=""
+                                rendition="crop-600x600"
+                                widths="300,600">
+                                <sizes jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        maxWidth="767"
+                                        width="180px"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        maxWidth="1023"
+                                        width="17vw"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        width="20vw"/>
+                                </sizes>
+                            </item0>
+                        </crops>
+                    </policy_1695223714794>
+                </guide-cards>
+                <destinations-guide-cards jcr:primaryType="nt:unstructured">
+                    <policy_1695223714800
+                        jcr:lastModified="{Date}2023-09-20T17:32:52.971+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_destinations-guide-cards"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoints=""
+                                rendition="crop-600x600"
+                                widths="1200"/>
+                        </crops>
+                    </policy_1695223714800>
+                </destinations-guide-cards>
+
+                <promotional-section jcr:primaryType="nt:unstructured">
+                    <policy_1695224017073
+                        jcr:lastModified="{Date}2023-09-20T17:33:58.288+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_promotion-section"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoints=""
+                                rendition="crop-275x275"
+                                widths="275"/>
+                        </crops>
+                    </policy_1695224017073>
+                </promotional-section>
+                <banner-slider jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <banner-slider jcr:primaryType="nt:unstructured">
+                            <policy_1696165140508
+                                jcr:lastModified="{Date}2023-10-04T18:38:31.684+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="policy_banner-slider"
+                                sling:resourceType="wcm/core/components/policy/policy">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <crops jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        breakpoint="1023"
+                                        rendition="crop-460x620"
+                                        widths="800"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        breakpoint=""
+                                        rendition="crop-1920x1080"
+                                        widths="1500"/>
+                                </crops>
+                            </policy_1696165140508>
+                        </banner-slider>
+                    </v1>
+                </banner-slider>
+                <all-destinations jcr:primaryType="nt:unstructured">
+                    <policy_1696150900159
+                        jcr:lastModified="{Date}2023-10-01T10:05:21.075+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="all-destinations-smart-crops"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="768"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-375x210"
+                                widths="375"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                imgRelativeWidth="28vw"
+                                rendition="crop-375x210"
+                                widths="375"/>
+                        </crops>
+                    </policy_1696150900159>
+                </all-destinations>
+                <page-banner jcr:primaryType="nt:unstructured">
+                    <policy_1696244643235
+                        jcr:lastModified="{Date}2023-10-02T13:22:56.513+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_page-banner"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="1023"
+                                rendition="crop-460x620"
+                                widths="820"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                rendition="crop-1920x768"
+                                widths="1500"/>
+                        </crops>
+                    </policy_1696244643235>
+                </page-banner>
+                <destinations-map jcr:primaryType="nt:unstructured">
+                    <policy_1696331226181
+                        jcr:lastModified="{Date}2023-10-03T13:08:18.053+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="destinations-map-image-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="768"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-375x210"
+                                widths="375"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                imgRelativeWidth="28vw"
+                                rendition="crop-375x210"
+                                widths="375"/>
+                        </crops>
+                    </policy_1696331226181>
+                </destinations-map>
+                <menu jcr:primaryType="nt:unstructured">
+                    <policy_1696353654060
+                        jcr:lastModified="{Date}2023-10-03T13:08:18.053+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="destinations-map-image-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint=""
+                                imgRelativeWidth="100vw"
+                                rendition="crop-1920x1080"
+                                widths="1920"/>
+                        </crops>
+                    </policy_1696353654060>
+                </menu>
+                <promotional-banner jcr:primaryType="nt:unstructured">
+                    <policy_1696502574566
+                        jcr:lastModified="{Date}2023-10-05T12:45:11.916+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="promotional-banner_policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1696502574566>
+                </promotional-banner>
+                <header-section jcr:primaryType="nt:unstructured">
+                    <policy_1696758093619
+                        jcr:lastModified="{Date}2023-10-08T11:42:00.653+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_header-section"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-1040x200"
+                                widths="800"/>
+
+                        </crops>
+                    </policy_1696758093619>
+                </header-section>
+                <small-stories jcr:primaryType="nt:unstructured">
+                    <policy_1697706495593
+                        jcr:lastModified="{Date}2023-10-19T11:09:45.477+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="small-stories-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rendition="crop-600x600"
+                                widths="1024"/>
+                        </crops>
+                    </policy_1697706495593>
+                </small-stories>
+                <keep-exploring-section jcr:primaryType="nt:unstructured">
+                    <policy_1697706589321
+                        jcr:lastModified="{Date}2023-10-19T11:11:11.431+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="keep-exploring-section-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                rendition="crop-375x210"
+                                widths="1024"/>
+                        </crops>
+                    </policy_1697706589321>
+                </keep-exploring-section>
+                <gallery-section jcr:primaryType="nt:unstructured">
+                    <policy_1698144734728
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="gallery-section-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="1023"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-760x570"
+                                widths="1000"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint=""
+                                imgRelativeWidth="100vw"
+                                rendition="crop-1920x1080"
+                                widths="1920"/>
+                        </crops>
+                    </policy_1698144734728>
+                </gallery-section>
+                <sub-story jcr:primaryType="nt:unstructured">
+                    <policy_1701189543322
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="sub-story-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="480"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-375x210"
+                                widths="750"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint=""
+                                imgRelativeWidth="100vw"
+                                rendition="crop-1920x1080"
+                                widths="1920"/>
+                        </crops>
+                    </policy_1701189543322>
+                </sub-story>
+                <contactus jcr:primaryType="nt:unstructured">
+                    <policy_1698911491665
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="contactus"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoints=""
+                                rendition="crop-460x620"
+                                widths="750"/>
+                        </crops>
+                    </policy_1698911491665>
+                </contactus>
+                <offers_deals jcr:primaryType="nt:unstructured">
+                    <policy_2588911491465
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="contactus"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoints=""
+                                rendition="crop-600x600"
+                                widths="750"/>
+                        </crops>
+                    </policy_2588911491465>
+                </offers_deals>
+                <text-image jcr:primaryType="nt:unstructured">
+                    <policy_1701280445434
+                        jcr:lastModified="{Date}2023-11-29T19:04:42.896+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_text-image"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-1920x1080"
+                                widths="1920"/>
+                        </crops>
+                    </policy_1701280445434>
+                </text-image>
+                <highlights-card jcr:primaryType="nt:unstructured">
+                    <policy_1709144734858
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="highlights-card-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <crops jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint="1023"
+                                imgRelativeWidth="100vw"
+                                rendition="crop-460x620"
+                                widths="420"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                breakpoint=""
+                                imgRelativeWidth="100vw"
+                                rendition="crop-460x620"
+                                widths="1920"/>
+                        </crops>
+                    </policy_1709144734858>
+                </highlights-card>
+                <breadcrumb jcr:primaryType="nt:unstructured">
+                    <policy_1702895362859
+                        jcr:lastModified="{Date}2023-12-18T11:29:47.100+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy_breadcrumb"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="2">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="margin"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="banner-on-top-of-breadcrumbs"
+                                        cq:styleId="1702895368790"
+                                        cq:styleLabel="banner-on-top"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1702895362859>
+                </breadcrumb>
+            </content>
+        </components>
+    </sauditourism>
+</jcr:root>

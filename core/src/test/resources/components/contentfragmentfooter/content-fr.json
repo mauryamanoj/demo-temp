@@ -1,0 +1,179 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Jul 25 2023 08:33:19 GMT+0200",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "fragmentPath": "/content/sauditourism/{language}/footer"
+
+      }
+    }
+  },
+  "footer": {
+    "jcr:primaryType":"dam:Asset",
+    "jcr:mixinTypes":[
+      "mix:referenceable",
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:versionHistory":"ac5f0e6f-c82f-42c8-95cd-7f459f4b22c3",
+    "jcr:predecessors":[
+      "4c71bc22-0dae-448c-85c8-08210cad2f21"
+    ],
+    "jcr:created":"Sun Oct 01 2023 10:36:37 GMT+0200",
+    "jcr:baseVersion":"4c71bc22-0dae-448c-85c8-08210cad2f21",
+    "jcr:isCheckedOut":true,
+    "jcr:uuid":"f73a8e15-ee0e-4cfd-a675-871b7c20e029",
+    "jcr:content":{
+      "jcr:primaryType":"dam:AssetContent",
+      "jcr:title":"Test",
+      "jcr:lastModifiedBy":"admin",
+      "contentFragment":true,
+      "cq:name":"test-4",
+      "theme": "red",
+      "jcr:lastModified":"Sun Oct 01 2023 10:37:07 GMT+0200",
+      "lastFragmentSave":"Sun Oct 01 2023 10:37:07 GMT+0200",
+      "cq:parentPath":"/content/dam/sauditourism/cf/fr",
+      "renditions":{
+        "jcr:primaryType":"nt:folder",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Sun Oct 01 2023 10:36:37 GMT+0200"
+      },
+      "related":{
+        "jcr:primaryType":"nt:unstructured"
+      },
+      "metadata":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable"
+        ]
+      },
+      "data":{
+        "jcr:primaryType":"nt:unstructured",
+        "cq:model":"/conf/sauditourism/settings/dam/cfm/models/category",
+        "master":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:mixinTypes":[
+            "dam:cfVariationNode",
+            "cq:Taggable"
+          ],
+          "newsletterTitle": "SUBSCRIBE TO OUR NEWSLETTER",
+          "newsletterPlaceholder": "Votre email address",
+          "ctaLabel": "SUBSCRIBE to our newsletterLETTER",
+          "invalidEmailMessage": "Invalid Email Address.Invalid Email Address.Invalid Email Address.Invalid Email Address.",
+          "successMessage": "You've been subscribed successfully",
+          "failureMessage": "Error Happened While Registering your email. Please, try again later.",
+          "titleLink":"Discover Saudi",
+          "title@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "saudiMap":"/content/sauditourism/en",
+          "titleLinkCol3":"Business & Partners",
+          "staLogo":"/content/dam/sauditourism/footer/icon/logo2/logo.png",
+          "patternType":"1",
+          "copyrights@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "marketplace@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "poweredBy@LastModified":"Tue Sep 05 2023 12:30:04 GMT+0200",
+          "orientation":"Horizontal",
+          "joinCta":"Click",
+          "destinations":"/content/sauditourism/en",
+          "staLogo@LastModified":"Wed Sep 06 2023 09:04:18 GMT+0200",
+          "visitSaudiLogo@LastModified":"Wed Sep 06 2023 09:04:18 GMT+0200",
+          "ctaCallCenterList":[
+            "{\"ctaLabel\":\"Local Call Center\",\"ctaLink\":\"tel:930\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaLabel\":\"International Call Center\",\"ctaLink\":\"tel:930\",\"openInNewTab\":\"yes\"}"
+          ],
+          "info@ContentType":"text/html",
+          "ctaDownloadList":[
+            "{\"ctaImage\":\"/content/dam/sauditourism/app_store.png\",\"ctaLink\":\"https://apps.apple.com/us/app/visit-saudi/id818179871\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaImage\":\"/content/dam/google-play-blanco-desktop.png\",\"ctaLink\":\"https://play.google.com/store/apps/details?id=sa.gov.apps.sauditourism\",\"openInNewTab\":\"\"}"
+          ],
+          "businessDirectory@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "ctaDiscoverList":[
+            "{\"ctaLabel\":\"See & Do\",\"ctaLink\":\"https://www.visitsaudi.com/en/see-do\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaLabel\":\"Plan Your Trip\",\"ctaLink\":\"https://www.visitsaudi.com/en/plan-your-trip\",\"openInNewTab\":\"\"}",
+            "{\"ctaLabel\":\"Travel Essentials\",\"ctaLink\":\"https://www.visitsaudi.com/en/travel-essentials\",\"openInNewTab\":\"yes\"}"
+          ],
+          "privacyList@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "socialMediaIcons@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "brandPortal":"http://www.google.com",
+          "joinCta@LastModified":"Tue Sep 05 2023 12:30:04 GMT+0200",
+          "ctaDiscoverList@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "titleLinkCol3@LastModified":"Mon Sep 04 2023 15:16:28 GMT+0200",
+          "ctaCallCenterList@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "orientation@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "placeholder@LastModified":"Mon Sep 04 2023 15:14:14 GMT+0200",
+          "info@LastModified":"Tue Sep 05 2023 12:30:04 GMT+0200",
+          "Privacy@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "eLearning":"http://www.google.com",
+          "upArrowCta@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "ctaForAppStore@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "saudiExpert":"http://www.google.com",
+          "callCenterTitle":"Call Center",
+          "thingsToDo":"/content/sauditourism/en",
+          "copyrights":"Copyrights",
+          "titleLink@LastModified":"Mon Sep 04 2023 15:16:28 GMT+0200",
+          "nusuk":"http://www.google.com",
+          "title":"Downloads Banner",
+          "ctaForGooglePlay@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "callCenterTitle@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "saudiExpert@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "marketplace":"http://www.google.com",
+          "ctaForAppGallery":"/content/sauditourism/en",
+          "ctaForAppGallery@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "patternType@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "socialMediaIcons":[
+            "{\"iconLabel\":\"facebook\",\"iconLink\":\"https://facebook.com/VisitSaudi\",\"openInNewTab\":\"yes\"}",
+            "{\"iconLabel\":\"instagram\",\"iconLink\":\"https://instagram.com/VisitSaudi\",\"openInNewTab\":\"yes\"}",
+            "{\"iconLabel\":\"twitter\",\"iconLink\":\"https://twitter.com/VisitSaudi\",\"openInNewTab\":\"yes\"}",
+            "{\"iconLabel\":\"youtube\",\"iconLink\":\"https://www.youtube.com/channel/UCmFRhhc6Gt8b4bSUmTzNIoA\",\"openInNewTab\":\"yes\"}"
+          ],
+          "planYourTrip@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "saudiMap@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "destinations@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "saudiCalendar@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "poweredBy":"Powered by",
+          "thingsToDo@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "cookies":"/content/sauditourism/en",
+          "upArrowCta":"CTA",
+          "ctaDownloadList@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "visitSaudiLogoLink":"https://www.visitsaudi.com/en",
+          "staLogoLink":"https://www.visitsaudi.com/en",
+          "cookies@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "nusuk@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "ctaForAppStore":"/content/sauditourism/en",
+          "termsAndConditions@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "yourEmailAddress@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "planYourTrip":"/content/sauditourism/en",
+          "Privacy":"/content/sauditourism/en",
+          "saudiCalendar":"/content/sauditourism/en",
+          "termsAndConditions":"/content/sauditourism/en",
+          "ctaBusinessList@LastModified":"Wed Sep 06 2023 09:20:24 GMT+0200",
+          "privacyList":[
+            "{\"ctaLabel\":\"Contact Us\",\"ctaLink\":\"https://www.visitsaudi.com/en/help-support\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaLabel\":\"Privacy Policy\",\"ctaLink\":\"https://www.visitsaudi.com/en/help-support\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaLabel\":\"Cookies\",\"ctaLink\":\"https://www.visitsaudi.com/en/help-support\",\"openInNewTab\":\"yes\"}"
+          ],
+          "ctaBusinessList":[
+            "{\"ctaLabel\":\"Aseer Summer Season\",\"ctaLink\":\"https://www.visitsaudi.com/en/calendar/calendar-events/aseer-summer-season\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaLabel\":\"Rethink Summer\",\"ctaLink\":\"https://www.visitsaudi.com/en/calendar/calendar-events/aseer-summer-season\",\"openInNewTab\":\"yes\"}",
+            "{\"ctaLabel\":\"Saudi Toyota Championship 2023\",\"ctaLink\":\"https://www.visitsaudi.com/en/calendar/calendar-events/aseer-summer-season\",\"openInNewTab\":\"yes\"}"
+          ],
+          "businessDirectory":"http://www.google.com",
+          "eLearning@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "visitSaudiLogo":"/content/dam/sauditourism/footer/icon/logo1",
+          "brandPortal@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "newsletterSubscriptionTitle@LastModified":"Mon Sep 04 2023 15:20:42 GMT+0200",
+          "ctaForGooglePlay":"/content/sauditourism/en"
+        }
+      }
+    }
+  }
+}

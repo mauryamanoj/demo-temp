@@ -1,0 +1,58 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Nov 05 2019 18:32:48 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "detail-hero",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:created": "Tue Nov 05 2019 18:32:48 GMT+1100",
+    "cq:lastModified": "Wed Nov 06 2019 11:15:02 GMT+1100",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "h03_detail_hero": {
+          "jcr:primaryType": "nt:unstructured",
+          "subtitle": "Subtitle",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Tue Nov 05 2019 18:33:00 GMT+1100",
+          "title": "Title",
+          "jcr:lastModified": "Wed Nov 06 2019 11:15:02 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/h03-detail-hero/v1/h03-detail-hero",
+          "link": {
+            "jcr:primaryType": "nt:unstructured",
+            "url": "/content/sauditourism/ar",
+            "copy": "Link Title",
+            "targetInNewWindow": "false"
+          },
+          "image": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/sauditourism/card-01.jpg",
+            "alt": "alt",
+            "mobileImageReference": "/content/dam/sauditourism/card-mobile-01.jpg"
+          },
+          "events": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "eventText": "Text1",
+              "eventTitle": "Event1"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "eventText": "Text2",
+              "eventTitle": "Event2"
+            }
+          }
+        }
+      }
+    }
+  }
+}

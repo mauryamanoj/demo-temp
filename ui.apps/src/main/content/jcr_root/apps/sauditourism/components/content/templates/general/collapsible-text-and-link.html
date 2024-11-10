@@ -1,0 +1,14 @@
+<sly data-sly-template.collapsibleTextLink="${@ textContent, readMoreLabel, readLessLabel}">
+<sly data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"></sly>
+<div class="collapsible-text-and-link" data-component="collapsible-text-and-link">
+  <div data-sly-test="${textContent}" class="collapsible-text with-ellipsis" data-text-container>
+    <div class="content copy" data-text-content>${textContent}</div>
+  </div>
+  <div class="read-link-wrapper" data-read-more-button>
+    <span data-sly-test="${readMoreLabel}" class="read-label read-more-link">${readMoreLabel}</span>
+    <span data-sly-test="${readLessLabel}" class="read-label read-less-link">${readLessLabel}</span>
+    <sly
+        data-sly-call="${iconTemplate.icon @ iconName='chevron-down'}"></sly>
+  </div>
+</div>
+</sly>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Header page</title>
+  <meta name="template" content="page-content" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA79bBsHx0zBOtOlknt74mxJUS8RsU3o8I&callback=google.maps.__ib__" async defer></script>
+
+</head>
+
+<body class="page basicpage" data-page-theme="purple">
+  <div class="w-96 p-5 gap-3">
+
+    <div data-component="MapWidget" data-props='
+    {
+      "mapApiKey": "AIzaSyA79bBsHx0zBOtOlknt74mxJUS8RsU3o8I",
+      "title": "Meeting point",
+      "locationLabel": "Location:",
+      "locationValue": "riyadh",
+      "latitude": "24.774265",
+      "longitude": "46.738586",
+      "ctaLabel": "Get directions"
+   }
+    '></div>
+
+  </div>
+
+  <div class="w-96 p-5 gap-3">
+
+    <div data-component="MapWidget" data-props='{
+    "mapApiKey":"AIzaSyA79bBsHx0zBOtOlknt74mxJUS8RsU3o8I",
+    "latitude": "24.774265",
+    "longitude": "46.738586",
+    "ctaLabel": "Get directions"
+    }'></div>
+
+    <div data-component="MapWidget" data-props="{
+      &#34;mapApiKey&#34;: &#34;AIzaSyA79bBsHx0zBOtOlknt74mxJUS8RsU3o8I&#34;,
+      &#34;title&#34;: &#34;meeting poinTG&#34;,
+      &#34;locationLabel&#34;: &#34;location: location&#34;,
+      &#34;locationValue&#34;: &#34;chekka al jadida chekka al jadida chekka al jadida chekka al jadida chekka al jadida chekka al jadidachekka al jadida chekka al jadida chekka al jadida&#34;,
+      &#34;latitude&#34;: &#34;1234.0&#34;,
+      &#34;longitude&#34;: &#34;12.0&#34;,
+      &#34;ctaLabel&#34;: &#34;GET Directions&#34;
+    }"></div>
+
+  </div>
+
+</body>
+
+</html>

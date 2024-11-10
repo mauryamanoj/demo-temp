@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/libs/wcm/msm/templates/blueprint"
+        jcr:description="Saudi Tourism App Blueprint from English source."
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Saudi Tourism App Blueprint"
+        sling:resourceType="wcm/msm/components/blueprint"
+        sitePath="/content/sauditourism/app1/en">
+        <dialog
+            jcr:primaryType="cq:Dialog"
+            title="Blueprint">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabs jcr:primaryType="cq:TabPanel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <tab_lan
+                            jcr:primaryType="cq:Widget"
+                            path="/libs/wcm/msm/templates/blueprint/defaults/language_tab.infinity.json"
+                            xtype="cqinclude"/>
+                        <tab_chap
+                            jcr:primaryType="cq:Widget"
+                            path="/libs/wcm/msm/templates/blueprint/defaults/chapters_tab.infinity.json"
+                            xtype="cqinclude"/>
+                        <tab_lc
+                            jcr:primaryType="cq:Widget"
+                            path="/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab.infinity.json"
+                            xtype="cqinclude"/>
+                    </items>
+                </tabs>
+            </items>
+        </dialog>
+    </jcr:content>
+</jcr:root>

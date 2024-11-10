@@ -1,0 +1,87 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Dec 09 2019 16:53:00 GMT+1100",
+  "jcr:content": {
+    "type": "seasonal-campaign",
+    "jcr:primaryType": "cq:PageContent"
+  },
+  "campaign": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Mon Dec 09 2019 16:53:00 GMT+1100",
+    "jcr:content": {
+      "type": "seasonal-campaign",
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "location page",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "b6aaaff6-f36c-446c-9de4-501c577ef6ee",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/app-seasonal-campaign",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "3a3b6f03-0688-4c7d-995a-cd3cdf0274e4"
+      ],
+      "jcr:created": "Mon Dec 09 2019 16:53:00 GMT+1100",
+      "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+      "cq:lastModified": "Wed Dec 11 2019 18:28:00 GMT+1100",
+      "jcr:baseVersion": "3a3b6f03-0688-4c7d-995a-cd3cdf0274e4",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "d0cb0b50-0521-4c9f-a339-4d02dbc1dea6",
+      "sling:resourceType": "sauditourism/components/structure/app-seasonal-campaign",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "image": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "fileReference": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Dec 11 2019 18:27:16 GMT+1100",
+            "size": "11",
+            "jcr:lastModified": "Wed Dec 11 2019 18:27:34 GMT+1100",
+            "sling:resourceType": "sauditourism/components/content/image"
+          },
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Dec 11 2019 18:27:19 GMT+1100",
+            "text": "<p>text1</p>\r\n",
+            "jcr:lastModified": "Wed Dec 11 2019 18:27:41 GMT+1100",
+            "sling:resourceType": "sauditourism/components/content/text",
+            "textIsRich": "true"
+          },
+          "image_1638881286": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "fileReference": "/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Dec 11 2019 18:27:23 GMT+1100",
+            "size": "321",
+            "jcr:lastModified": "Wed Dec 11 2019 18:27:53 GMT+1100",
+            "sling:resourceType": "sauditourism/components/content/image"
+          },
+          "text_2089222380": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Dec 11 2019 18:27:28 GMT+1100",
+            "text": "<p>text2</p>\n",
+            "jcr:lastModified": "Wed Dec 11 2019 18:28:00 GMT+1100",
+            "sling:resourceType": "sauditourism/components/content/text",
+            "textIsRich": "true"
+          }
+        }
+      },
+      "webMappingPath": "/content/sauditourism/en/break-free-page"
+    }
+  }
+}

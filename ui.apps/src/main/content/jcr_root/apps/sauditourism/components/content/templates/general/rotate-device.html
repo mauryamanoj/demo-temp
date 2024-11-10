@@ -1,0 +1,21 @@
+<sly data-sly-template.viewport="${@ title, copy, desktopTitle}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+  <section class="mod-info-13-rotate-device" data-component="mod-info-13-rotate-device"
+           data-sly-test="${title || copy}">
+    <div class="component-wrapper">
+
+
+      <div data-icon-wrapper>
+        <sly
+            data-sly-call="${iconTemplate.icon @ iconName='rotate-phone', iconClass='rotate-phone-icon white'}"></sly>
+      </div>
+      <div class="heading-4 title white-text" data-mobile-title
+           data-sly-test="${title}">${title}</div>
+      <div class="copy subtitle white-text" data-mobile-subtitle
+           data-sly-test="${copy}">${copy}</div>
+      <div class="heading-4 title white-text" data-desktop-title
+           data-sly-text="${desktopTitle || 'Your window is too small,<br> please expand its size' @ context='html'}">
+      </div>
+    </div>
+  </section>
+</sly>

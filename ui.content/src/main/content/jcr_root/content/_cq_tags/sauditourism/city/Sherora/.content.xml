@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Sharorah"
+    jcr:title.ar="شرورة"
+    jcr:title.de="Sharurah"
+    jcr:title.es="Sharurah"
+    jcr:title.fr="Sharurah"
+    jcr:title.ja="ショロラ"
+    jcr:title.ru="Шарура"
+    jcr:title.zh="沙鲁拉"
+    sling:resourceType="cq/tagging/components/tag"
+    city="sherora"/>

@@ -1,0 +1,37 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "event-page",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/event-page",
+    "searchCategories": [
+      "sauditourism:searchCategories/PlanYourTrip"
+    ],
+    "noLoginModal": "false",
+    "branding": "visitsaudi",
+    "theme": "red",
+    "referencedFragmentPath": "/content/dam/sauditourism/cf/en/events/event1",
+    "pageAuthor": "contentAuthors",
+    "sling:resourceType": "sauditourism/components/structure/event-page",
+    "hideInSiteMap": "false",
+    "searchHighlight": "false",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      },
+      "rightsidebar": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "price_widget": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "sauditourism/components/content/price-widget"
+        }
+      }
+    }
+  }
+}

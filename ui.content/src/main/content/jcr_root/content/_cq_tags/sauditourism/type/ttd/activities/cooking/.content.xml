@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Cooking"
+          jcr:title.ar="طهي الطعام"
+          jcr:title.de="Kochen"
+          jcr:title.es="Cocinar"
+          jcr:title.fr="Cuisine"
+          jcr:title.ja="料理"
+          jcr:title.ru="Кулинария"
+          jcr:title.zh="烹饪"
+          sling:resourceType="cq/tagging/components/tag"/>

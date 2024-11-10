@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Saudi Tourism Specific Section Page"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,sauditourism.author]"
+          helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+          mode="edit">
+  <content
+      granite:class="cq-dialog-content-page"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          granite:class="cq-siteadmin-admin-properties-tabs"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          size="L">
+        <items jcr:primaryType="nt:unstructured">
+            <section-config
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Section Config"
+                    sling:orderBefore="thumbnail"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <section-config-container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <basic
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Section Infos"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <filterType
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="filter Type"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <filterType
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Filter - Type"
+                                                multiple="{Boolean}true"
+                                                name="./section/filterType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""
+                                                        selected="{Boolean}true"/>
+                                                    <attraction
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Attraction"
+                                                        value="attraction"/>
+                                                    <activity
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Activity"
+                                                        value="activity"/>
+                                                    <tour
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tour"
+                                                        value="tour"/>
+                                                    <poi
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="POI"
+                                                        value="poi"/>
+                                                    <event
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Event"
+                                                        value="event"/>
+                                                    <story
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Story"
+                                                        value="story"/>
+                                                </items>
+                                            </filterType>
+                                        </items>
+                                    </filterType>
+                                    <itemComponentStyle-componentUIType
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="itemComponentStyle componentUIType"
+                                            fieldDescription="itemComponentStyle componentUIType"
+                                            multiple="{Boolean}false"
+                                            name="./section/itemComponentStyle/componentUIType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <main
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MAIN"
+                                                    value="MAIN"/>
+                                            <mainBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MAIN_BIG"
+                                                    value="MAIN_BIG"/>
+                                            <banner
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="BANNER"
+                                                    value="BANNER"/>
+                                            <bannerDetailsPage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="BANNER_DETAILS_PAGE"
+                                                    value="BANNER_DETAILS_PAGE"/>
+                                            <offer
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="OFFER"
+                                                    value="OFFER"/>
+                                            <offerBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="OFFER_BIG"
+                                                    value="OFFER_BIG"/>
+                                            <destination
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="DESTINATION"
+                                                    value="DESTINATION"/>
+                                            <destinationBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="DESTINATION_BIG"
+                                                    value="DESTINATION_BIG"/>
+                                            <story
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="STORY"
+                                                    value="STORY"/>
+                                            <neighbourhood
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="NEIGHBOURHOOD"
+                                                    value="NEIGHBOURHOOD"/>
+                                            <patternSeparator
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="PATTERN_SEPARATOR"
+                                                    value="PATTERN_SEPARATOR"/>
+                                            <guide
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="GUIDE"
+                                                    value="GUIDE"/>
+                                            <guideBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="GUIDE_BIG"
+                                                    value="GUIDE_BIG"/>
+                                            <about
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="ABOUT"
+                                                    value="ABOUT"/>
+                                            <expandableText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="EXPANDABLE_TEXT"
+                                                    value="EXPANDABLE_TEXT"/>
+                                            <expandableDate
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="EXPANDABLE_DATE"
+                                                    value="EXPANDABLE_DATE"/>
+                                            <generalInformation
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="GENERAL_INFORMATION"
+                                                    value="GENERAL_INFORMATION"/>
+                                            <map
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MAP"
+                                                    value="MAP"/>
+                                            <event
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="EVENT"
+                                                    value="EVENT"/>
+                                            <itinerary
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="ITINERARY"
+                                                    value="ITINERARY"/>
+                                            <medium
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MEDIUM"
+                                                    value="MEDIUM"/>
+                                            <disclaimer jcr:primaryType="nt:unstructured"
+                                                        text="DISCLAIMER"
+                                                        value="DISCLAIMER"/>
+                                            <highlighted jcr:primaryType="nt:unstructured"
+                                                         text="HIGHLIGHTED"
+                                                         value="HIGHLIGHTED"/>
+                                            <logo jcr:primaryType="nt:unstructured"
+                                                  text="LOGO"
+                                                  value="LOGO"/>
+                                            <payment_option
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="PAYMENT_OPTION"
+                                                    value="PAYMENT_OPTION"/>
+                                            <personalized_banner jcr:primaryType="nt:unstructured"
+                                                                 text="PERSONALIZED_BANNER"
+                                                                 value="PERSONALIZED_BANNER"/>
+
+                                            <getting_around_big jcr:primaryType="nt:unstructured"
+                                                                text="GETTING_AROUND_BIG"
+                                                                value="GETTING_AROUND_BIG"/>
+
+                                            <getting_around_small jcr:primaryType="nt:unstructured"
+                                                                  text="GETTING_AROUND_SMALL"
+                                                                  value="GETTING_AROUND_SMALL"/>
+
+                                            <promo jcr:primaryType="nt:unstructured"
+                                                   text="PROMO"
+                                                   value="PROMO"/>
+
+                                            <weather_big jcr:primaryType="nt:unstructured"
+                                                         text="WEATHER_BIG"
+                                                         value="WEATHER_BIG"/>
+
+                                            <weather_small jcr:primaryType="nt:unstructured"
+                                                           text="WEATHER_SMALL"
+                                                           value="WEATHER_SMALL"/>
+
+                                            <visa_type jcr:primaryType="nt:unstructured"
+                                                       text="VISA_TYPE"
+                                                       value="VISA_TYPE"/>
+
+                                            <app_ad_download jcr:primaryType="nt:unstructured"
+                                                             text="APP_AD_DOWNLOAD"
+                                                             value="APP_AD_DOWNLOAD"/>
+
+                                            <tabs jcr:primaryType="nt:unstructured"
+                                                  text="TABS"
+                                                  value="TABS"/>
+
+                                            <emergency jcr:primaryType="nt:unstructured"
+                                                       text="EMERGENCY"
+                                                       value="EMERGENCY"/>
+
+                                            <emergency_big jcr:primaryType="nt:unstructured"
+                                                           text="EMERGENCY_BIG"
+                                                           value="EMERGENCY_BIG"/>
+
+                                            <visa_search_select_country jcr:primaryType="nt:unstructured"
+                                                                        text="VISA_SEARCH_SELECT_COUNTRY"
+                                                                        value="VISA_SEARCH_SELECT_COUNTRY"/>
+
+                                            <text_template jcr:primaryType="nt:unstructured"
+                                                           text="TEXT_TEMPLATE"
+                                                           value="TEXT_TEMPLATE"/>
+                                            <restaurant
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="RESTAURANT"
+                                                    value="RESTAURANT"/>
+                                        </items>
+                                    </itemComponentStyle-componentUIType>
+                                    <componentScrollDirection
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Component Scroll Direction"
+                                            fieldDescription="Component Scroll Direction"
+                                            multiple="{Boolean}false"
+                                            name="./section/itemComponentStyle/componentScrollDirection">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="HORIZONTAL"
+                                                    value="HORIZONTAL"/>
+                                            <video
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="VERTICAL"
+                                                    value="VERTICAL"/>
+                                        </items>
+                                    </componentScrollDirection>
+                                    <viewAllItemComponentStyle-componentUIType
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="View All itemComponentStyle componentUIType"
+                                            fieldDescription="View All itemComponentStyle componentUIType"
+                                            multiple="{Boolean}false"
+                                            name="./section/viewAllItemComponentStyle/componentUIType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <main
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MAIN"
+                                                    value="MAIN"/>
+                                            <mainBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MAIN_BIG"
+                                                    value="MAIN_BIG"/>
+                                            <banner
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="BANNER"
+                                                    value="BANNER"/>
+                                            <bannerDetailsPage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="BANNER_DETAILS_PAGE"
+                                                    value="BANNER_DETAILS_PAGE"/>
+                                            <offer
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="OFFER"
+                                                    value="OFFER"/>
+                                            <offerBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="OFFER_BIG"
+                                                    value="OFFER_BIG"/>
+                                            <destination
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="DESTINATION"
+                                                    value="DESTINATION"/>
+                                            <destinationBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="DESTINATION_BIG"
+                                                    value="DESTINATION_BIG"/>
+                                            <story
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="STORY"
+                                                    value="STORY"/>
+                                            <neighbourhood
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="NEIGHBOURHOOD"
+                                                    value="NEIGHBOURHOOD"/>
+                                            <patternSeparator
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="PATTERN_SEPARATOR"
+                                                    value="PATTERN_SEPARATOR"/>
+                                            <guide
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="GUIDE"
+                                                    value="GUIDE"/>
+                                            <guideBig
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="GUIDE_BIG"
+                                                    value="GUIDE_BIG"/>
+                                            <about
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="ABOUT"
+                                                    value="ABOUT"/>
+                                            <expandableText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="EXPANDABLE_TEXT"
+                                                    value="EXPANDABLE_TEXT"/>
+                                            <expandableDate
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="EXPANDABLE_DATE"
+                                                    value="EXPANDABLE_DATE"/>
+                                            <generalInformation
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="GENERAL_INFORMATION"
+                                                    value="GENERAL_INFORMATION"/>
+                                            <map
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MAP"
+                                                    value="MAP"/>
+                                            <event
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="EVENT"
+                                                    value="EVENT"/>
+                                            <itinerary
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="ITINERARY"
+                                                    value="ITINERARY"/>
+                                            <medium
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="MEDIUM"
+                                                    value="MEDIUM"/>
+                                            <disclaimer jcr:primaryType="nt:unstructured"
+                                                        text="DISCLAIMER"
+                                                        value="DISCLAIMER"/>
+                                            <highlighted jcr:primaryType="nt:unstructured"
+                                                         text="HIGHLIGHTED"
+                                                         value="HIGHLIGHTED"/>
+                                            <logo jcr:primaryType="nt:unstructured"
+                                                  text="LOGO"
+                                                  value="LOGO"/>
+                                            <payment_option
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="PAYMENT_OPTION"
+                                                    value="PAYMENT_OPTION"/>
+                                            <personalized_banner jcr:primaryType="nt:unstructured"
+                                                                 text="PERSONALIZED_BANNER"
+                                                                 value="PERSONALIZED_BANNER"/>
+
+                                            <getting_around_big jcr:primaryType="nt:unstructured"
+                                                                text="GETTING_AROUND_BIG"
+                                                                value="GETTING_AROUND_BIG"/>
+
+                                            <getting_around_small jcr:primaryType="nt:unstructured"
+                                                                  text="GETTING_AROUND_SMALL"
+                                                                  value="GETTING_AROUND_SMALL"/>
+
+                                            <promo jcr:primaryType="nt:unstructured"
+                                                   text="PROMO"
+                                                   value="PROMO"/>
+
+                                            <weather_big jcr:primaryType="nt:unstructured"
+                                                         text="WEATHER_BIG"
+                                                         value="WEATHER_BIG"/>
+
+                                            <weather_small jcr:primaryType="nt:unstructured"
+                                                           text="WEATHER_SMALL"
+                                                           value="WEATHER_SMALL"/>
+
+                                            <visa_type jcr:primaryType="nt:unstructured"
+                                                       text="VISA_TYPE"
+                                                       value="VISA_TYPE"/>
+
+                                            <app_ad_download jcr:primaryType="nt:unstructured"
+                                                             text="APP_AD_DOWNLOAD"
+                                                             value="APP_AD_DOWNLOAD"/>
+
+                                            <tabs jcr:primaryType="nt:unstructured"
+                                                  text="TABS"
+                                                  value="TABS"/>
+
+                                            <emergency jcr:primaryType="nt:unstructured"
+                                                       text="EMERGENCY"
+                                                       value="EMERGENCY"/>
+
+                                            <emergency_big jcr:primaryType="nt:unstructured"
+                                                           text="EMERGENCY_BIG"
+                                                           value="EMERGENCY_BIG"/>
+
+                                            <visa_search_select_country jcr:primaryType="nt:unstructured"
+                                                                        text="VISA_SEARCH_SELECT_COUNTRY"
+                                                                        value="VISA_SEARCH_SELECT_COUNTRY"/>
+
+                                            <text_template jcr:primaryType="nt:unstructured"
+                                                           text="TEXT_TEMPLATE"
+                                                           value="TEXT_TEMPLATE"/>
+                                            <restaurant
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="RESTAURANT"
+                                                    value="RESTAURANT"/>
+                                        </items>
+                                    </viewAllItemComponentStyle-componentUIType>
+                                    <viewAllComponentScrollDirection
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Vieww All Component Scroll Direction"
+                                            fieldDescription="View All Component Scroll Direction"
+                                            multiple="{Boolean}false"
+                                            name="./section/viewAllItemComponentStyle/componentScrollDirection">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="HORIZONTAL"
+                                                    value="HORIZONTAL"/>
+                                            <video
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="VERTICAL"
+                                                    value="VERTICAL"/>
+                                        </items>
+                                    </viewAllComponentScrollDirection>
+
+
+                                </items>
+                            </basic>
+
+                            <media-gallery-fieldset
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Media Gallery"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <mediaGallery
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldDescription="Click 'Add' to add a Media Gallery"
+                                            fieldLabel="Media gallery">
+                                        <field
+                                                granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                name="./section/mediaGallery">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Gallery Item"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+
+
+                                                        <url
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Select the url of the media"
+                                                                fieldLabel="Media URL"
+                                                                name="./url"
+                                                                rootPath="/content/dam"/>
+                                                        <media-type
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                fieldLabel="Media type"
+                                                                fieldDescription="Select the type of the media"
+                                                                multiple="{Boolean}false"
+                                                                name="./type">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <image
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="IMAGE"
+                                                                        value="IMAGE"/>
+                                                                <video
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="VIDEO"
+                                                                        value="VIDEO"/>
+                                                                <three-sixty
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="THREE_SIXTY"
+                                                                        value="THREE_SIXTY"/>
+                                                                <ar
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="AR"
+                                                                        value="AR"/>
+                                                                <vr
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="VR"
+                                                                        value="VR"/>
+                                                            </items>
+                                                        </media-type>
+                                                        <thumbnail-url
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Select the thumbnailUrl of the media"
+                                                                fieldLabel="thumbnailUrl URL"
+                                                                name="./thumbnailUrl"
+                                                                rootPath="/content/dam"/>
+                                                        <small-image-url
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Select the smallImageUrl of the media"
+                                                                fieldLabel="Small Image URL"
+                                                                name="./smallImageUrl"
+                                                                rootPath="/content/dam"/>
+                                                        <height
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                                fieldLabel="Height"
+                                                                fieldDescription="Height of the media"
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                min="1"
+                                                                name="./height"
+                                                                required="{Boolean}true">
+                                                        </height>
+
+                                                        <width
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                                fieldLabel="Width"
+                                                                fieldDescription="Width of the media"
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                min="1"
+                                                                name="./width"
+                                                                required="{Boolean}true">
+                                                        </width>
+                                                        <centered-logo-url
+                                                                cq:showOnCreate="{Boolean}true"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Select the centeredLogoUrl URL"
+                                                                fieldLabel="Small centeredLogo URL"
+                                                                name="./centeredLogoUrl"
+                                                                rootPath="/content/dam"/>
+
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </mediaGallery>
+                                </items>
+                            </media-gallery-fieldset>
+
+                            <section-header-fieldset
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Section Header"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                            jcr:primaryType="nt:unstructured"
+                                            cq:showOnCreate="{Boolean}true"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter title."
+                                            fieldLabel="title"
+                                            name="./section/sectionHeader/title">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="section/sectionHeader/title"/>
+                                    </title>
+                                    <subtitle
+                                            jcr:primaryType="nt:unstructured"
+                                            cq:showOnCreate="{Boolean}true"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter subtitle."
+                                            fieldLabel="subtitle"
+                                            name="./section/sectionHeader/subtitle">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="section/sectionHeader/subtitle"/>
+                                    </subtitle>
+                                    <iconTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            cq:showOnCreate="{Boolean}true"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter Icon title."
+                                            fieldLabel="Icon Title"
+                                            name="./section/sectionHeader/iconTitle">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="section/sectionHeader/iconTitle"/>
+                                    </iconTitle>
+
+                                    <showViewAll
+                                            jcr:primaryType="nt:unstructured"
+                                            cq:showOnCreate="{Boolean}true"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldLabel="Show View All"
+                                            name="./section/sectionHeader/showViewAll"
+                                            fieldDescription="if view all should be shown"
+                                            text="Show View All"
+                                            value="{Boolean}true"
+                                            uncheckedValue="{Boolean}false">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="section/sectionHeader/showViewAll"/>
+                                    </showViewAll>
+
+                                    <filter
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Filter"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Filter - Type"
+                                                    name="./section/sectionHeader/filter/typeId">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text=""
+                                                            value=""
+                                                            selected="{Boolean}true"/>
+                                                    <attraction
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Attraction"
+                                                            value="attraction"/>
+                                                    <activity
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Activity"
+                                                            value="activity"/>
+                                                    <tour
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Tour"
+                                                            value="tour"/>
+                                                    <event
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Event"
+                                                            value="event"/>
+                                                    <story
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Story"
+                                                            value="story"/>
+                                                </items>
+                                            </type>
+                                            <startDate
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                    displayedFormat="YYYY-MM-DD"
+                                                    fieldDescription="Enter here the start date"
+                                                    fieldLabel="Filter - Start Date"
+                                                    name="./section/sectionHeader/filter/date/startDate"
+                                                    type="date"/>
+                                            <endDate
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                    displayedFormat="YYYY-MM-DD"
+                                                    fieldDescription="Enter end date."
+                                                    fieldLabel="Filter - End Date"
+                                                    type="date"
+                                                    name="./section/sectionHeader/filter/date/endDate"/>
+                                            <filter-destination
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Filter Destination"
+                                                    multiple="{Boolean}true"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    name="./section/sectionHeader/filter/destinationCFPath">
+                                                <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="sauditourism/datasource/destinations"/>
+                                            </filter-destination>
+                                            <filter-season
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Filter Season"
+                                                    multiple="{Boolean}true"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    name="./section/sectionHeader/filter/seasonCFPath">
+                                                <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="sauditourism/datasource/seasons"/>
+                                            </filter-season>
+                                            <categories
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                    fieldLabel="Filter - Categories"
+                                                    rootPath="/content/cq:tags/sauditourism/categories"
+                                                    multiple="{Boolean}true"
+                                                    name="./section/sectionHeader/filter/categoryTags">
+                                            </categories>
+                                        </items>
+                                    </filter>
+                                    <viewHistoryShow
+                                            jcr:primaryType="nt:unstructured"
+                                            cq:showOnCreate="{Boolean}true"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldLabel="View History - Show"
+                                            name="./section/sectionHeader/viewHistory/show"
+                                            fieldDescription="if view history should be shown"
+                                            text="Show view history"
+                                            value="{Boolean}true"
+                                            uncheckedValue="{Boolean}false">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="section/sectionHeader/viewHistory/show"/>
+                                    </viewHistoryShow>
+                                    <viewHistoryCtaType
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="View history - Cta Type"
+                                            fieldDescription="View history - Cta Type"
+                                            multiple="{Boolean}false"
+                                            name="./section/sectionHeader/viewHistory/cta/type">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <weblink
+                                                jcr:primaryType="nt:unstructured"
+                                                text="WEB"
+                                                value="WEB"/>
+                                            <deeplink-screen
+                                                jcr:primaryType="nt:unstructured"
+                                                text="DEEPLINK_SCREEN"
+                                                value="DEEPLINK_SCREEN"/>
+                                            <deeplink-url
+                                                jcr:primaryType="nt:unstructured"
+                                                text="DEEPLINK_URL"
+                                                value="DEEPLINK_URL"/>
+                                            <phone
+                                                jcr:primaryType="nt:unstructured"
+                                                text="PHONE"
+                                                value="PHONE"/>
+                                        </items>
+                                    </viewHistoryCtaType>
+
+                                    <viewHistoryCtaValue
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="View history - CTA Value"
+                                            fieldDescription="View history - CTA Value"
+                                            fieldLabel="View history- CTA value"
+                                            name="./section/sectionHeader/viewHistory/cta/value"
+                                            required="{Boolean}false">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="section/sectionHeader/viewHistory/cta/value"/>
+                                    </viewHistoryCtaValue>
+
+                                    <categoriesTags
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                        fieldLabel="Category Tags"
+                                        forceSelection="{Boolean}true"
+                                        multiple="{Boolean}true"
+                                        name="./section/sectionHeader/categoriesTags"
+                                        required="{Boolean}false"
+                                        rootPath="/content/cq:tags/sauditourism/categories"
+                                        validation="tags.count.validator">
+                                    </categoriesTags>
+
+                                </items>
+                            </section-header-fieldset>
+
+
+                        </items>
+                    </section-config-container>
+                </items>
+            </section-config>
+            <item-linkers
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Item linkers"
+                sling:orderBefore="thumbnail"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <item-container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <myfield
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}false"
+                                fieldLabel="List of Items"
+                                fieldDescription="Add here a Item ">
+                                <field
+                                    cq:showOnCreate="{Boolean}true"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    required="{Boolean}True"
+                                    fieldLabel="Item Paths"
+                                    rootPath="/content/sauditourism"
+                                    name="./section/itemPaths"/>
+                            </myfield>
+                            <automatic-section-items
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Automatic Section Items"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <filter
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Filter"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <type
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Filter - Type"
+                                                multiple="{Boolean}true"
+                                                name="./section/auto/filter/itemType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""
+                                                        selected="{Boolean}true"/>
+                                                    <experience
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Experience"
+                                                        value="experience"/>
+                                                    <attraction
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Attraction"
+                                                        value="attraction"/>
+                                                    <activity
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Activity"
+                                                        value="activity"/>
+                                                    <tour
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tour"
+                                                        value="tour"/>
+                                                    <event
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Event"
+                                                        value="event"/>
+                                                    <story
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Story"
+                                                            value="story"/>
+                                                </items>
+                                            </type>
+                                            <experience-filters
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Experience Filters"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <experience-warning
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                                        size="S"
+                                                        variant="warning"
+                                                        text="Experience filters should be filled only if experience type selected !"/>
+                                                    <experience-start-date
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="YYYY-MM-DD"
+                                                        fieldDescription="Enter here the start date"
+                                                        fieldLabel="Experience - Start Date"
+                                                        name="./section/auto/experience/filter/date/startDate"
+                                                        type="date">
+                                                    </experience-start-date>
+                                                    <experience-end-date
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="YYYY-MM-DD"
+                                                        fieldDescription="Enter end date."
+                                                        fieldLabel="Experience - End Date"
+                                                        type="date"
+                                                        name="./section/auto/experience/filter/date/endDate">
+                                                    </experience-end-date>
+                                                    <experience-city
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Experience City"
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        name="./section/auto/experience/destinationCFPath">
+                                                        <datasource
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="sauditourism/datasource/destinations"/>
+                                                    </experience-city>
+                                                    <free-experience
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldLabel="Free Experience"
+                                                        name="./section/auto/experience/freeOnly"
+                                                        fieldDescription="if checked only free experiences will be retrieved"
+                                                        text="Free Experience Only"
+                                                        value="{Boolean}true"
+                                                        uncheckedValue="{Boolean}false">
+                                                    </free-experience>
+                                                </items>
+                                            </experience-filters>
+                                            <sort-by
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Sort By"
+                                                multiple="{Boolean}true"
+                                                name="./section/auto/sortBy/sortBy">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                    <period
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="period"
+                                                        value="period"/>
+                                                    <start-date
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="startDate "
+                                                        value="startDate"/>
+                                                    <end-date
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="endDate "
+                                                        value="endDate"/>
+                                                    <recently-added
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="recentlyAdded "
+                                                        value="recentlyAdded"/>
+                                                </items>
+                                            </sort-by>
+                                            <period
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Filter Period"
+                                                name="./section/auto/period/period">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                    <this-month
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="this-month"
+                                                        value="this-month"/>
+                                                    value=""/>
+                                                    <this-week
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="this-week"
+                                                        value="this-week"/>
+                                                    <happening-now
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="happening-now"
+                                                        value="happening-now"/>
+                                                </items>
+                                            </period>
+                                            <startDate
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                displayedFormat="YYYY-MM-DD"
+                                                fieldDescription="Enter here the start date"
+                                                fieldLabel="Filter - Start Date"
+                                                name="./section/auto/filter/date/startDate"
+                                                type="date"/>
+                                            <endDate
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                displayedFormat="YYYY-MM-DD"
+                                                fieldDescription="Enter end date."
+                                                fieldLabel="Filter - End Date"
+                                                type="date"
+                                                name="./section/auto/filter/date/endDate"/>
+                                            <filter-destination
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Filter Destination"
+                                                multiple="{Boolean}true"
+                                                cq:showOnCreate="{Boolean}true"
+                                                name="./section/auto/filter/destinationCFPath">
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="sauditourism/datasource/destinations"/>
+                                            </filter-destination>
+                                            <filter-season
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Filter Season"
+                                                multiple="{Boolean}true"
+                                                cq:showOnCreate="{Boolean}true"
+                                                name="./section/auto/filter/seasonCFPath">
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="sauditourism/datasource/seasons"/>
+                                            </filter-season>
+                                            <categories
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                fieldLabel="Filter - Categories"
+                                                rootPath="/content/cq:tags/sauditourism/categories"
+                                                multiple="{Boolean}true"
+                                                name="./section/auto/filter/categoryTags">
+                                            </categories>
+                                        </items>
+                                    </filter>
+                                </items>
+                            </automatic-section-items>
+                        </items>
+                    </item-container>
+                </items>
+            </item-linkers>
+
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

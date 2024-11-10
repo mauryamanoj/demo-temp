@@ -1,0 +1,103 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"7d3b8c81-5d46-48a1-842d-f267d085f37c",
+  "jcr:predecessors":[
+    "ceb5da12-4e97-4dfa-849a-8f791f3028cb"
+  ],
+  "jcr:created":"Wed Oct 18 2023 18:06:12 GMT+0200",
+  "jcr:baseVersion":"ceb5da12-4e97-4dfa-849a-8f791f3028cb",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"c547af6f-2f21-4aa6-a174-381674ce73c5",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:mixinTypes":[
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title":"alula",
+    "cq:lastReplicationAction":"Activate",
+    "cq:lastReplicated":"Thu Oct 05 2023 12:13:31 GMT+0000",
+    "contentFragment":true,
+    "cq:name":"alula",
+    "jcr:lastModified":"Thu Oct 05 2023 11:52:34 GMT+0000",
+    "lastFragmentSave":"Thu Oct 05 2023 11:52:34 GMT+0000",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/destinations",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Oct 29 2023 08:08:20 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/destination",
+        "@stringArray@variations":[
+
+        ],
+        "string@lat":"26.6166642",
+        "string@lng":"37.916663",
+        "string@s7image":"https://s7e5a.scene7.com/is/image/scth/AlUla",
+        "string@title":"AlUla",
+        "string@id":"alula",
+        "jcr:uuid":"8333d730-487a-41bd-a0db-56fd9864d8f7",
+        "string@s7popUpImage":"https://s7e5a.scene7.com/is/image/scth/AlUla"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/destination",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified":"Thu Oct 05 2023 11:52:34 GMT+0000",
+        "aboutDescription@LastModified":"Tue Oct 03 2023 16:32:18 GMT+0000",
+        "lat@LastModified":"Tue Oct 03 2023 16:37:46 GMT+0000",
+        "lng@LastModified":"Tue Oct 03 2023 16:37:46 GMT+0000",
+        "image@LastModified":"Tue Oct 03 2023 16:37:46 GMT+0000",
+        "pagePath@LastModified":"Tue Oct 03 2023 16:38:36 GMT+0000",
+        "popUpImage":"/content/dam/saudi-tourism/media/AlUla.jpg",
+        "s7popUpImage@LastModified":"Tue Oct 03 2023 16:41:09 GMT+0000",
+        "id":"alula",
+        "lat":"26.6166642",
+        "lng":"37.916663",
+        "image":"/content/dam/saudi-tourism/media/AlUla.jpg",
+        "title":"AlUla + test",
+        "pageBannerTitle":"AlUla + test",
+        "aboutTitle@LastModified":"Tue Oct 03 2023 16:32:18 GMT+0000",
+        "s7image@LastModified":"Tue Oct 03 2023 16:41:09 GMT+0000",
+        "s7image":"https://s7e5a.scene7.com/is/image/scth/AlUla",
+        "subTitle@LastModified":"Tue Oct 03 2023 16:32:18 GMT+0000",
+        "pagePath":"/content/sauditourism/en/see-do/destinations/alula",
+        "id@LastModified":"Tue Oct 03 2023 16:43:32 GMT+0000",
+        "categories@LastModified":"Tue Oct 03 2023 16:38:36 GMT+0000",
+        "categories":[
+          "/content/dam/sauditourism/cf/en/categories/history",
+          "/content/dam/sauditourism/cf/en/categories/culture"
+        ],
+        "s7popUpImage":"https://s7e5a.scene7.com/is/image/scth/AlUla",
+        "popUpImage@LastModified":"Tue Oct 03 2023 16:37:46 GMT+0000"
+      }
+    }
+  }
+}

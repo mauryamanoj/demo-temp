@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    jdbc.password="mysql_1234"
+    jdbc.driver.class="com.mysql.jdbc.Driver"
+    datasource.name="ClientData"
+    jdbc.connection.uri="jdbc:mysql://localhost:3306/sauditourism?characterEncoding\=latin1&amp;useConfigs\=maxPerformance"
+    jdbc.validation.query=""
+    datasource.svc.properties="[]"
+    default.readonly="{Boolean}false"
+    default.autocommit="{Boolean}true"
+    jdbc.username="root"
+    pool.max.wait.msec="{Long}10000"
+    pool.size="{Long}1000" />

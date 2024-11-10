@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Configuration Template to create pages for configuration purposes. Eg: Main Navigation, Footer Navigation, etc."
+    jcr:primaryType="cq:Template"
+    jcr:title="Sauditourism Navigation Link Configuration Page"
+    allowedPaths="[/content/sauditourism/.+]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="sauditourism/components/structure/page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+        </par>
+    </jcr:content>
+</jcr:root>

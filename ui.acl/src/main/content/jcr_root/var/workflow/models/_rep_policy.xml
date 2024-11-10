@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+          jcr:primaryType="rep:ACL">
+    <deny0
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="trip-package-users"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/*"/>
+    </deny0>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="trip-package-users"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/trip_package_approval"/>
+    </allow1>
+    <deny2
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="vendors"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/*"/>
+    </deny2>
+    <allow3
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="vendors"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/trip_package_approval"/>
+    </allow3>
+</jcr:root>

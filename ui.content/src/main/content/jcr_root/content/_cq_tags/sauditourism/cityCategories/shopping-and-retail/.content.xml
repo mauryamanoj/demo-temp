@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Shopping &amp; Retail"
+          jcr:title.de="Einkaufen &amp; Einzelhandel"
+          jcr:title.es="Compras y Venta al Por Menor"
+          jcr:title.ru="Покупки и Розничная Торговля"
+          jcr:title.zh="購物和零售"
+          jcr:title.fr="Shopping et Vente au Détail"
+          jcr:title.ar="التسوق والتجزئة"
+          jcr:title.ja="ショッピング＆小売"
+          sling:resourceType="cq/tagging/components/tag"/>

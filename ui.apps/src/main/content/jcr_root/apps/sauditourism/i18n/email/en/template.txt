@@ -1,0 +1,3 @@
+<HTML><body><div>
+Dear user, please use this code {0} to complete the registration
+</div></body></HTML> 

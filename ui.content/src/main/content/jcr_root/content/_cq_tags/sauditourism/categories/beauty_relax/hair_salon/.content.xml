@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Hair Salon"
+          jcr:title.ar="صالون الشعر"
+          jcr:title.de="Friseursalon"
+          jcr:title.es="Salón de peluquería"
+          jcr:title.fr="Salon de coiffure"
+          jcr:title.ja="ヘアサロン"
+          jcr:title.ru="Парикмахерская"
+          jcr:title.zh="发廊"
+          sling:resourceType="cq/tagging/components/tag"/>

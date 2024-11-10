@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Shopping"
+    sling:resourceType="cq/tagging/components/tag">
+    <shopping_mall/>
+    <strep_center/>
+    <traditional_market/>
+    <farmers_market/>
+    <supermarket/>
+    <mini_market/>
+    <bookstore/>
+    <electronics/>
+    <appliance/>
+    <furniture/>
+    <toys_store/>
+    <gaming_store/>
+    <video_game_store/>
+    <telecommunicationstore/>
+    <traditional_clothingshop/>
+    <cell_phone_store/>
+</jcr:root>

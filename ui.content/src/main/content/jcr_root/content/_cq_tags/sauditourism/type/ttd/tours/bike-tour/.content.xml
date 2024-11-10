@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Bike Tour"
+          jcr:title.ar="جولة بالدراجة"
+          jcr:title.de="Fahrradtour"
+          jcr:title.es="Tour en bicicleta"
+          jcr:title.fr="Visite à vélo"
+          jcr:title.ja="自転車ツアー"
+          jcr:title.ru="Велотур"
+          jcr:title.zh="自行车游"
+          sling:resourceType="cq/tagging/components/tag"/>

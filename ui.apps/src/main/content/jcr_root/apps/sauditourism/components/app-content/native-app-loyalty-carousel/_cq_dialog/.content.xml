@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Loyalty Carousel config"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <sections
+                        jcr:description="carousel sections"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Loyalty Carousel"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <cards
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                    name="./loyaltyCarouselList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Loyalty Carousel List "
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Image"
+                                                    rootPath="/content/dam"
+                                                    name="./image"/>
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Title"
+                                                    name="./title"/>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldLabel="Description"
+                                                    name="./description"/>
+                                                <ctaTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Cta Title"
+                                                    name="./ctaTitle"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </cards>
+                            <termsLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Terms Link"
+                                name="./termsLink"/>
+                            <flag
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Show/Hide Flag"
+                                name="./flag">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <true
+                                        jcr:primaryType="nt:unstructured"
+                                        text="True"
+                                        value="true"/>
+                                    <false
+                                        jcr:primaryType="nt:unstructured"
+                                        text="False"
+                                        value="false"/>
+                                </items>
+                            </flag>
+                            <flagTypeHint
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                ignoreData="\{Boolean}true"
+                                name="./flag@TypeHint"
+                                value="Boolean"/>
+                        </items>
+                    </sections>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

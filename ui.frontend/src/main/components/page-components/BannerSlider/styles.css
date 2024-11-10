@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+    .banner-slider-comp .relative .swiper .swiper-pagination-bullets {
+        bottom: 0 !important;
+        height: 24px !important;
+    }
+    .banner-slider-comp
+        .relative
+        .swiper
+        .swiper-pagination-bullets
+        .swiper-pagination-bullet {
+        bottom: 30px !important;
+    }
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Mountains"
+          jcr:title.ar="الجبال"
+          jcr:title.de="Berge"
+          jcr:title.es="Montaña"
+          jcr:title.fr="Montagne"
+          jcr:title.ja="山"
+          jcr:title.ru="Горы"
+          jcr:title.zh="山地"
+          sling:resourceType="cq/tagging/components/tag"/>

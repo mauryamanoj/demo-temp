@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Header page</title>
+  <meta name="template" content="page-content" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="page basicpage" data-page-theme="green">
+  <div class="px-6 py-3 md:w-96">
+    <div data-component="PriceWidget" data-props='{
+      "ticketType": "bookTicket",
+      "price": "1000 SAR",
+      "priceSuffix": "/ per person",
+      "text": "<p>Minumul number of 3 person<\/p>\n",
+      "buttonLabel": "Buy Now",
+      "url": "/content/sauditourism/app.html"
+   }
+    '></div>
+    <div data-component="PriceWidget" data-props='{
+      "ticketType": "getTicket",
+      "price": "1000 SAR",
+      "priceSuffix": "/ per person",
+      "text": "<p>Tickets information are available on the event main website<\/p>\n",
+      "buttonLabel":"get label",
+      "url": "/content/sauditourism/app.html"
+    }
+    '></div>
+    <div data-component="PriceWidget" data-props='{
+      "ticketType": "noTicket",
+      "price": "1000 SAR",
+      "priceSuffix": "/ per person",
+      "buttonLabel":"Get Tickets",
+      "url": ""
+    }
+    '></div>
+    <div data-component="PriceWidget" data-props="{
+    &#34;ticketType&#34;: &#34;getTicket&#34;,
+    &#34;buttonLabel&#34;: &#34;Get more information&#34;,
+    &#34;url&#34;: &#34;https://sfc.org.sa/sa/En/Event/ActivityTabDetails/1?year\u003d2023&#34;
+  }"></div>
+
+  </div>
+
+</body>
+
+</html>

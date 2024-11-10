@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Mini Market"
+          jcr:title.ar="سوق صغير"
+          jcr:title.de="Minimarkt"
+          jcr:title.es="Minimercado"
+          jcr:title.fr="Mini-marché"
+          jcr:title.ja="ミニマーケット"
+          jcr:title.ru="Мини-рынок"
+          jcr:title.zh="迷你市场"
+          sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Saudi Tourism App Location Page"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,sauditourism.author]"
+          helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+          mode="edit">
+  <content
+      granite:class="cq-dialog-content-page"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          granite:class="cq-siteadmin-admin-properties-tabs"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          size="L">
+        <items jcr:primaryType="nt:unstructured">
+          <saudi-tourism-app
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              jcr:title="App Config"
+              sling:orderBefore="thumbnail"
+              sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+            <items jcr:primaryType="nt:unstructured">
+              <column
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                  <sectionFeatured
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="App Location Information"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                      <name
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                          emptyText="Name"
+                          fieldDescription="Name"
+                          fieldLabel="Name"
+                          name="./name"
+                          required="{Boolean}true">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="name"/>
+                      </name>
+                      <type
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          fieldLabel="Type"
+                          fieldDescription="Type"
+                          multiple="{Boolean}false"
+                          name="./type">
+                        <items jcr:primaryType="nt:unstructured">
+                          <highlight
+                              jcr:primaryType="nt:unstructured"
+                              text="Highlight"
+                              value="highlight"/>
+                          <region
+                              jcr:primaryType="nt:unstructured"
+                              text="Region"
+                              value="Region"/>
+                          <seasonal-campaign
+                              jcr:primaryType="nt:unstructured"
+                              text="Seasonal campaign"
+                              value="seasonal-campaign"/>
+                        </items>
+                      </type>
+                      <region
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                          fieldDescription="Enter region here"
+                          fieldLabel="Region"
+                          name="./region"
+                          required="{Boolean}false">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="region"/>
+                      </region>
+                      <city
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          fieldDescription="Choose city from the list"
+                          fieldLabel="City"
+                          name="./city">
+                        <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="city"/>
+                        <datasource
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="sauditourism/datasource/cities-regions"
+                            saudi-tourism-listtype="city"/>
+                      </city>
+                      <guides-multifield
+                          jcr:primaryType="nt:unstructured"
+                          cq:showOnCreate="{Boolean}true"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                          composite="{Boolean}true"
+                          cq-msm-lockable="guides"
+                          fieldLabel="List of CTA"
+                          fieldDescription="Add here all CTA">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="guides"/>
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            name="./guides"
+                            granite:class="accordion-multifield-item"
+                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                          <items jcr:primaryType="nt:unstructured">
+                            <guide
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="New CTA"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                              <items jcr:primaryType="nt:unstructured">
+                                <ctaText
+                                    granite:class="accordion-multifield-item-title"
+                                    cq:showOnCreate="{Boolean}true"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Enter CTA Text"
+                                    fieldLabel="CTA Text"
+                                    name="./ctaText"
+                                    required="{Boolean}false">
+                                </ctaText>
+                                <ctaUrl
+                                    cq:showOnCreate="{Boolean}true"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldDescription="Enter CTA URL"
+                                    fieldLabel="CTA URL"
+                                    name="./ctaUrl"
+                                    rootPath="/content/dam">
+                                </ctaUrl>
+                              </items>
+                            </guide>
+                          </items>
+                        </field>
+                      </guides-multifield>
+                      <ctaText
+                          jcr:primaryType="nt:unstructured"
+                          sling:hideResource="true">
+                      </ctaText>
+                      <ctaUrl
+                          jcr:primaryType="nt:unstructured"
+                          sling:hideResource="true">
+                      </ctaUrl>
+                      <tags
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                          fieldDescription="Tags"
+                          fieldLabel="Tags"
+                          multiple="{Boolean}true"
+                          required="{Boolean}true"
+                          name="./tags"
+                          rootPath="/content/cq:tags/sauditourism/events">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="tags"/>
+                      </tags>
+                      <thumbnail
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldDescription="Select an Image to be used as Thumbnail image for this Page"
+                          fieldLabel="Thumbnail image"
+                          name="./thumbnail"
+                          rootPath="/content/dam">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="thumbnail"/>
+                      </thumbnail>
+                      <featuredImage
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldDescription="Select an Image to be used as Featured image for this Page"
+                          fieldLabel="Feature image"
+                          name="./featuredImage"
+                          rootPath="/content/dam">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="featuredImage"/>
+                      </featuredImage>
+                      <featured-image-caption
+                          jcr:primaryType="nt:unstructured"
+                          jcr:title="Feature Image Caption"
+                          sling:resourceType="granite/ui/components/coral/foundation/include"
+                          path="/apps/sauditourism/components/commons/image/app/items/featured-image-caption"/>
+                      <featured
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                          fieldDescription="Featured"
+                          fieldLabel="Featured"
+                          name="./featured"
+                          text="Featured"
+                          uncheckedValue="{Boolean}false"
+                          value="{Boolean}true">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="featured"/>
+                      </featured>
+                      <publishDate
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                          displayTimezoneMessage="{Boolean}true"
+                          fieldLabel="Publish date"
+                          name="./publishDate"
+                          required="{Boolean}false"
+                          type="datetime">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="publishDate"/>
+                      </publishDate>
+                      <descriptionTitle
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                          fieldDescription="Description title"
+                          fieldLabel="Description title"
+                          name="./descriptionTitle">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="descriptionTitle"/>
+                      </descriptionTitle>
+                      <shortDescription
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                          fieldDescription="Enter short description for this page"
+                          fieldLabel="Short Description"
+                          name="./shortDescription">
+                        <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="shortDescription"/>
+                      </shortDescription>
+                      <description
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                          fieldDescription="Enter full description for this page"
+                          fieldLabel="Long Description"
+                          name="./description">
+                        <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="description"/>
+                      </description>
+                      <heading-locations
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/heading"
+                          level="{Long}2"
+                          cq:showOnCreate="{Boolean}true"
+                          text="Locations Information"/>
+                      <location-curtain
+                          jcr:primaryType="nt:unstructured"
+                          jcr:title="Cities"
+                          sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                          <location-container
+                              jcr:title="Cities"
+                              sling:resourceType="granite/ui/components/coral/foundation/container"
+                              jcr:primaryType="nt:unstructured">
+                            <items jcr:primaryType="nt:unstructured">
+                              <locations
+                                  granite:class="coral-marker-multifield mf-level-2"
+                                  cq:showOnCreate="{Boolean}true"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                  cq-msm-lockable="cityPaths"
+                                  composite="{Boolean}true"
+                                  fieldDescription="Click 'Add' to add a new City"
+                                  fieldLabel="Cities">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="cityPaths"/>
+                                <field
+                                    granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                    name="./cityPaths">
+                                  <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="New City"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                      <items jcr:primaryType="nt:unstructured">
+
+                                        <cityPath
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Select an city from cities"
+                                            fieldLabel="City references"
+                                            name="./cityPath"
+                                            rootPath="/content/sauditourism/app1"/>
+
+                                      </items>
+                                    </column>
+                                  </items>
+                                </field>
+                              </locations>
+                            </items>
+                          </location-container>
+                        </items>
+                      </location-curtain>
+                      <special-location-curtain
+                          jcr:primaryType="nt:unstructured"
+                          jcr:title="Special Locations"
+                          sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                          <special-location-container
+                              jcr:title="Special Location"
+                              sling:resourceType="granite/ui/components/coral/foundation/container"
+                              jcr:primaryType="nt:unstructured">
+                            <items jcr:primaryType="nt:unstructured">
+                              <special-locations
+                                  granite:class="coral-marker-multifield mf-level-2"
+                                  cq:showOnCreate="{Boolean}true"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                  cq-msm-lockable="specialLocations"
+                                  composite="{Boolean}true"
+                                  fieldDescription="Click 'Add' to add a new Special Location"
+                                  fieldLabel="Special Locations">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="specialLocations"/>
+                                <field
+                                    granite:class="core-wcm-multi-list visual-wrapper accordion-multifield-item"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                    name="./specialLocations">
+                                  <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="New Special Location"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                      <items jcr:primaryType="nt:unstructured">
+                                        <title
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            granite:class="accordion-multifield-item-title"
+                                            fieldDescription="Enter title for this location"
+                                            fieldLabel="Title"
+                                            name="./title"/>
+                                        <description
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            fieldDescription="Enter description for this location"
+                                            fieldLabel="Description"
+                                            name="./description"/>
+                                        <image
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Select an image to be used as a location image"
+                                            fieldLabel="Image"
+                                            name="./image"
+                                            rootPath="/content/dam"/>
+                                        <image-caption
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Image Caption"
+                                            sling:resourceType="granite/ui/components/coral/foundation/include"
+                                            path="/apps/sauditourism/components/commons/image/app-multifield/items/image-caption"/>
+                                        <latitude
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter Latitude GPS coordinate for this location"
+                                            fieldLabel="Latitude"
+                                            name="./latitude"
+                                            required="{Boolean}true"
+                                            typeHint="Decimal"/>
+                                        <longitude
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter Longitude GPS coordinate for this location"
+                                            fieldLabel="Longitude"
+                                            name="./longitude"
+                                            required="{Boolean}true"
+                                            typeHint="Decimal"/>
+                                        <details
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Location Details"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                          <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Title of Location Details"
+                                                fieldLabel="Title"
+                                                name="./details/title"/>
+                                            <detail-items
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Click 'Add' to add a new Location Detail"
+                                                fieldLabel="Location Detail">
+                                              <field
+                                                  jcr:primaryType="nt:unstructured"
+                                                  granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                                                  sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                  name="./details/items">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                  <column
+                                                      jcr:primaryType="nt:unstructured"
+                                                      jcr:title="New Location Detail"
+                                                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                      <title
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                          fieldDescription="Title"
+                                                          granite:class="accordion-multifield-item-title"
+                                                          fieldLabel="Title"
+                                                          name="./title"/>
+                                                      <description
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                          fieldDescription="Description"
+                                                          fieldLabel="Description"
+                                                          name="./description"/>
+                                                      <image
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                          fieldDescription="Select an image to be used as a Location Detail image"
+                                                          fieldLabel="Image"
+                                                          name="./image"
+                                                          rootPath="/content/dam"/>
+                                                    </items>
+                                                  </column>
+                                                </items>
+                                              </field>
+                                            </detail-items>
+                                          </items>
+                                        </details>
+                                        <recommendations
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Location recommendations"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                          <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Title of Location recommendations"
+                                                fieldLabel="Title"
+                                                name="./recommendations/title"/>
+                                            <recommendation-items
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Click 'Add' to add a new Location recommendation"
+                                                fieldLabel="Location recommendation">
+                                              <field
+                                                  jcr:primaryType="nt:unstructured"
+                                                  granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                                                  sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                  name="./recommendations/items">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                  <column
+                                                      jcr:primaryType="nt:unstructured"
+                                                      jcr:title="New Location recommendation"
+                                                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                      <title
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                          fieldDescription="Title"
+                                                          granite:class="accordion-multifield-item-title"
+                                                          fieldLabel="Title"
+                                                          name="./title"/>
+                                                      <description
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                          fieldDescription="Description"
+                                                          fieldLabel="Description"
+                                                          name="./description"/>
+                                                      <links
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                          composite="{Boolean}true"
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          fieldLabel="links"
+                                                          fieldDescription="Click 'Add' to add a new link">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./links">
+                                                          <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Link"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                              <items
+                                                                  jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Title"
+                                                                    fieldLabel="Title"
+                                                                    required="{Boolean}true"
+                                                                    name="./title"/>
+                                                                <linkUrl
+                                                                    sling:orderBefore="description"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldDescription="Link to resource"
+                                                                    rootPath="/content/sauditourism"
+                                                                    fieldLabel="Link"
+                                                                    name="./link"/>
+                                                              </items>
+                                                            </column>
+                                                          </items>
+                                                        </field>
+                                                      </links>
+                                                    </items>
+                                                  </column>
+                                                </items>
+                                              </field>
+                                            </recommendation-items>
+                                          </items>
+                                        </recommendations>
+                                        <sectionRelated
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Related Pages"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                          <items jcr:primaryType="nt:unstructured">
+                                            <pages
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                cq:showOnCreate="{Boolean}true"
+                                                composite="{Boolean}true"
+                                                fieldLabel="List of pages"
+                                                fieldDescription="List of pages"
+                                                required="{Boolean}false">
+                                              <field
+                                                  jcr:primaryType="nt:unstructured"
+                                                  sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                  name="./related/pages">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                  <column
+                                                      jcr:primaryType="nt:unstructured"
+                                                      jcr:title="Path"
+                                                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                      <path
+                                                          cq:showOnCreate="{Boolean}true"
+                                                          jcr:primaryType="nt:unstructured"
+                                                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                          fieldDescription="Path"
+                                                          fieldLabel="Path"
+                                                          name="./path"
+                                                          rootPath="/content/sauditourism"/>
+                                                    </items>
+                                                  </column>
+                                                </items>
+                                              </field>
+                                            </pages>
+                                          </items>
+                                        </sectionRelated>
+                                      </items>
+                                    </column>
+                                  </items>
+                                </field>
+                              </special-locations>
+                            </items>
+                          </special-location-container>
+                        </items>
+                      </special-location-curtain>
+                      <info-items-curtain
+                          jcr:primaryType="nt:unstructured"
+                          jcr:title="Info Items"
+                          sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                        <items jcr:primaryType="nt:unstructured">
+                          <info-items-container
+                              jcr:title="Info Items"
+                              sling:resourceType="granite/ui/components/coral/foundation/container"
+                              jcr:primaryType="nt:unstructured">
+                            <items jcr:primaryType="nt:unstructured">
+                              <info-items
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                  cq-msm-lockable="infoItems"
+                                  composite="{Boolean}true"
+                                  cq:showOnCreate="{Boolean}true"
+                                  fieldLabel="Info Items"
+                                  fieldDescription="Click 'Add' to add a new info item">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="infoItems"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./infoItems"
+                                    granite:class="accordion-multifield-item"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                  <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:title="New Info Item"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                      <items jcr:primaryType="nt:unstructured">
+                                        <itemLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter item label for this info item"
+                                            fieldLabel="Item Label"
+                                            required="{Boolean}true"
+                                            name="./itemLabel"/>
+                                        <itemValue
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter item value for this info item"
+                                            fieldLabel="Item Value"
+                                            required="{Boolean}true"
+                                            name="./itemValue"/>
+                                      </items>
+                                    </column>
+                                  </items>
+                                </field>
+                              </info-items>
+                            </items>
+                          </info-items-container>
+                        </items>
+                      </info-items-curtain>
+                    </items>
+                  </sectionFeatured>
+                  <sectionRelated
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Related Pages"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                      <pages
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                          cq:showOnCreate="{Boolean}true"
+                          cq-msm-lockable="related/pages"
+                          composite="{Boolean}true"
+                          fieldLabel="List of pages"
+                          fieldDescription="List of pages"
+                          required="{Boolean}false">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="related/pages"/>
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            name="./related/pages"
+                            granite:class="accordion-multifield-item"
+                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                          <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Path"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                              <items jcr:primaryType="nt:unstructured">
+                                <path
+                                    cq:showOnCreate="{Boolean}true"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldDescription="Path"
+                                    fieldLabel="Path"
+                                    name="./path"
+                                    rootPath="/content/sauditourism"/>
+                              </items>
+                            </column>
+                          </items>
+                        </field>
+                      </pages>
+                      <relatedTags
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                          fieldLabel="Related tags"
+                          fieldDescription="Related tags"
+                          multiple="{Boolean}true"
+                          cq:showOnCreate="{Boolean}true"
+                          rootPath="/content/cq:tags/sauditourism/events"
+                          name="./related/tags">
+                          <granite:data
+                              jcr:primaryType="nt:unstructured"
+                              cq-msm-lockable="related/tags"/>
+                      </relatedTags>
+                    </items>
+                  </sectionRelated>
+                  <sectionSponsors
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Sponsors"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                      <sponsorTitle
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                          fieldDescription="Enter Sponsors title"
+                          fieldLabel="Title"
+                          name="./sponsors/title"
+                          required="{Boolean}false">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="sponsors/title"/>
+                      </sponsorTitle>
+                      <sponsorPath
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldDescription="Enter Sponsors Paths"
+                          fieldLabel="Paths"
+                          name="./sponsors/path"
+                          rootPath="/content/sauditourism">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="sponsors/path"/>
+                      </sponsorPath>
+                      <sponsorImages
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                          cq-msm-lockable="sponsors/images"
+                          fieldLabel="Images"
+                          fieldDescription="Select sponsors Images"
+                          cq:showOnCreate="{Boolean}true">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="sponsors/images"/>
+                        <field
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldDescription="Enter sponsorship image path"
+                            fieldLabel="Sponsors Image"
+                            name="./sponsors/images"
+                            rootPath="/content/dam">
+                        </field>
+                      </sponsorImages>
+                    </items>
+                  </sectionSponsors>
+                  <sectionSearch
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Search"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                      <search
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                          fieldLabel="Search Tags"
+                          fieldDescription="Tags used for search prompts"
+                          cq:showOnCreate="{Boolean}true">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Search Tags"
+                            name="./search/searchTags"
+                            cq:showOnCreate="{Boolean}true"/>
+                      </search>
+                    </items>
+                  </sectionSearch>
+                  <sectionProduct
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Product Paths"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                      <product
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                          fieldLabel="Product Paths"
+                          fieldDescription="Product Paths"
+                          cq:showOnCreate="{Boolean}true">
+                        <field
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldDescription="Enter Product Paths"
+                            fieldLabel="Product Paths"
+                            name="./productPaths"
+                            rootPath="/content/sauditourism/app1">
+                        </field>
+                      </product>
+                    </items>
+                  </sectionProduct>
+                </items>
+              </column>
+            </items>
+          </saudi-tourism-app>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

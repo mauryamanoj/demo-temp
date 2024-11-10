@@ -1,0 +1,129 @@
+<sly data-sly-template.generalCard="${@ isModalWindow, card, imageIndex, desktopProfile,
+mobileProfile, breakpointDesktop, breakpointMobile, altText, articleImage, favorite, isCarousel,
+         itemCount, class}"
+     data-sly-use.favButtonTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+     data-sly-use.linkTemplate="/apps/sauditourism/components/content/templates/general/link.html"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+     data-sly-use.icon01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"
+     data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+     data-sly-set.carouselClass="${isCarousel ? 'carousel-item cmp-carousel__item' : ''}"
+     data-sly-set.horizontalCardClass="${itemCount == 1 ? 'horizontal-card' : ''}"
+     data-sly-set.linkUrl="${card.link.urlWithExtension || card.link.url @ context='uri'}"
+>
+  <li class="general-card ${carouselClass} ${horizontalCardClass} ${class} ${isModalWindow ? '' : 'no-hover'}"
+      data-component="general-card"
+      data-carousel-item itemscope itemtype="http://schema.org/Thing"
+      data-cmp-hook-carousel="item"
+      data-sly-attribute.data-open-modal="${isModalWindow ? 'data-open-modal' : ''}"
+      data-sly-attribute.item-index="${imageIndex ? imageIndex : ''}">
+    <div class="image-wrapper"
+         data-sly-set.href="${card.link.urlWithExtension || card.link.url @ context='uri'}"
+         data-sly-element="${href ? 'a' : 'div'}"
+         data-sly-attribute.href="${href}"
+         data-sly-set.isVideo="${card.videoPath || card.youtubeReference}">
+      <sly data-sly-test="${isVideo}">
+        <sly data-sly-call="${imageTemplate.pictureObj @
+            imageDesktop=card.videoBackgroundImage.fileReference,
+            imageMobile=card.videoBackgroundImage.mobileImageReference,
+            altText=card.videoBackgroundImage.alt}"></sly>
+        <div class="open-modal-button">
+          <button class="open-modal-button-element">
+            <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name='play',
+            desktopSize='18', mobileSize='22'}"></sly>
+          </button>
+        </div>
+      </sly>
+      <sly data-sly-test="${!isVideo}"
+           data-sly-element="${!card.activities && linkUrl ? 'a' : 'div'}"
+           data-sly-attribute.href="${linkUrl}"
+           data-sly-set.altText="${card.image.alt || card.title || card.description}">
+        <sly
+            data-sly-test.image="${articleImage || card.image.s7fileReference || card.link.s7image
+            || card.image.fileReference || card.link.image}"
+            data-sly-call="${imageTemplate.pictureObj @
+           imageDesktop=image,
+           imageMobile=card.image.s7mobileImageReference||card.image.mobileImageReference,
+           altText=altText,
+           desktopProfile=desktopProfile,
+           mobileProfile=mobileProfile,
+           breakpointDesktop=breakpointDesktop,
+           breakpointMobile=breakpointMobile}"></sly>
+      </sly>
+    </div>
+    ​
+    <sly data-sly-test.favoritePath="${favorite && (card.path || linkUrl)}"
+         data-sly-call="${favButtonTemplate.fav @ path=favoritePath, class='outline-version'}"></sly>
+    ​
+    <div class="expand-image-icon-wrapper" data-sly-test="${isModalWindow}">
+      <sly data-sly-call="${iconTemplate.icon @ iconName='expand-image'}"></sly>
+    </div>
+    ​
+    <div class="copy-inner-wrapper ${card.tableItems ? 'align-content-to-bottom' : ''}">
+      <p class="region-name label-text"
+         data-sly-test="${card.activities}"
+         data-sly-test.region="${card.region || card.city || card.cityRegion}">
+        ${region}
+        <sly data-sly-test="${card.activity}"><span class="divider">|</span>
+          ${card.activity}</sly>
+      </p>
+      <div class="title heading-5" itemprop="name"
+          data-sly-test.title="${card.title}"
+          data-sly-element="${card.titleWeight}">
+        <a href="#"
+           data-sly-unwrap="${!linkUrl}"
+           data-sly-attribute.href="${linkUrl}">
+          <span class="title-icon-wrapper"
+                data-sly-test.icon="${card.icon}">
+            <sly data-sly-call="${iconTemplate.icon @ iconClass='secondary-link-icon',
+                     iconName=icon}"></sly>
+          </span>
+          <span class="title">${title}</span>
+        </a>
+      </div>
+      <div class="description"
+          data-sly-test="${card.description}">
+        <span class="description-copy copy">${card.description}</span>
+        <span class="position-copy label-text" data-sly-test="${card.position}">${card
+        .position}</span>
+      </div>
+      ​
+      <div class="info-wrapper"
+           data-sly-test="${card.calendarStartDate}">
+        <div class="subinfo-wrapper city-wrapper"
+             data-sly-test="${card.city}">
+          <sly data-sly-call="${iconTemplate.icon @ iconName='location-icon',
+              iconClass='location-icon'}"></sly>
+          <span class="favorite-city label-text" itemprop="location">
+            ${card.city}
+          </span>
+        </div>
+        ​
+        <div class="subinfo-wrapper dates-wrapper label-text">
+          <sly data-sly-call="${iconTemplate.icon @ iconName='ico.calendar',
+              iconClass='calendar-event no-fill'}"></sly>
+          <span class="event-date-from date-format-selector">
+            ${card.calendarStartDate}
+          </span>
+          <sly data-sly-test="${card.calendarEndDate}">
+            <span class="event-date-separator">-</span>
+            <span class="event-date-to date-format-selector">${card.calendarEndDate}</span>
+          </sly>
+        </div>
+      </div>
+      ​
+      <div class="link-wrapper"
+           data-sly-test="${linkUrl}">
+        <sly data-sly-call="${linkTemplate.linkObj @ linkClass='small', linkObj=card.link, copy='learnmore'}"></sly>
+      </div>
+      ​
+      <ul class="table-items"
+          data-sly-test="${card.tableItems}"
+          data-sly-list.tableItem="${card.tableItems}">
+        <li class="table-item">
+          <span class="table-item-key label-text">${tableItem.key}</span>
+          <span class="table-item-value label-text">${tableItem.value}</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+</sly>

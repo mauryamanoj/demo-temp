@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Beauty &amp; Relax"
+          jcr:title.ar="الجمال والاسترخاء"
+          jcr:title.de="Schönheit &amp; Entspannung"
+          jcr:title.es="Belleza y Relax"
+          jcr:title.fr="Beauté et Détente"
+          jcr:title.ja="美しさとリラックス"
+          jcr:title.ru="Красота и Релакс"
+          jcr:title.zh="美丽与放松"
+          sling:resourceType="cq/tagging/components/tag">
+    <nail_salon/>
+    <hair_salon/>
+    <spa/>
+</jcr:root>

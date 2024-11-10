@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Abha"
+    jcr:title.ar="أبها"
+    jcr:title.de="Abha"
+    jcr:title.es="Abha"
+    jcr:title.fr="Abha"
+    jcr:title.ja="アブハー"
+    jcr:title.ru="Абха"
+    jcr:title.zh="艾卜哈"
+    sling:resourceType="cq/tagging/components/tag"
+    city="abha"/>

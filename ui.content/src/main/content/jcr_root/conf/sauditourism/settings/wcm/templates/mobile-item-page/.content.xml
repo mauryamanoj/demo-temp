@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2019-10-10T14:42:25.480+02:00"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/sauditourism/settings/wcm/template-types/app-page"
+        jcr:description="This template is used for item Page app content creation purposes."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Item Page Template"
+        allowedPaths="[/content/sauditourism/app/.+,/content/sauditourism/app1/.+,/content/sauditourism/mobile/.+]"
+        ranking="{Long}101"
+        status="enabled"/>
+</jcr:root>

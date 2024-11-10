@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <ACCEPT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ACCEPT"
+        sling:message="Accept"/>
+    <ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ACCOUNT"
+        sling:message="Account"/>
+    <ACTIVITY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ACTIVITY"
+        sling:message="Activity"/>
+    <AFTERNOON
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="AFTERNOON"
+        sling:message="Afternoon"/>
+    <AFTERNOON_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="AFTERNOON_SHORT"
+        sling:message="A"/>
+    <ALL_CONTINENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ALL_CONTINENTS"
+        sling:message="All continents"/>
+    <ALL_LOCATIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ALL_LOCATIONS"
+        sling:message="All locations"/>
+    <APPLIED_FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="APPLIED_FILTERS"
+        sling:message="Applied filters"/>
+    <APPLY_FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="APPLY_FILTERS"
+        sling:message="Apply filters"/>
+    <APPLY_TO_EVISA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="APPLY_TO_EVISA"
+        sling:message="Apply for the eVisa"/>
+    <BE_OUR_GUEST
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BE_OUR_GUEST"
+        sling:message="Be our guest"/>
+    <BOOK_NOW
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOK_NOW"
+        sling:message="Book now"/>
+    <BOOK_TOUR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOK_TOUR"
+        sling:message="Book Now"/>
+    <BOOKING_HEADING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOKING_HEADING"
+        sling:message="Booking ahead for your trip"/>
+    <BOOKING_RESTAURANTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOKING_RESTAURANTS"
+        sling:message="Book Restaurants"/>
+    <CANCEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="CANCEL"
+        sling:message="Cancel"/>
+    <CLEAR_ALL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="CLEAR_ALL"
+        sling:message="Clear all"/>
+    <DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DATE"
+        sling:message="Date"/>
+    <DAY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DAY"
+        sling:message="Day"/>
+    <DETAIL_ABOUT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_ABOUT"
+        sling:message="About"/>
+    <DETAIL_AUDIENCE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_AUDIENCE"
+        sling:message="Audience"/>
+    <DETAIL_DATE_FROM
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_DATE_FROM"
+        sling:message="From"/>
+    <DETAIL_DATE_TO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_DATE_TO"
+        sling:message="To"/>
+    <DETAIL_DIRECTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_DIRECTIONS"
+        sling:message="How to get there"/>
+    <DETAIL_EVENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_EVENT"
+        sling:message="Event details"/>
+    <DETAIL_SIMILAR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_SIMILAR"
+        sling:message="Similar events"/>
+    <DETAIL_SUGGESTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_SUGGESTIONS"
+        sling:message="Suggestions for you"/>
+    <DETAIL_TIME
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_TIME"
+        sling:message="Time"/>
+    <DETAIL_TIME_ENDING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_TIME_ENDING"
+        sling:message="Ending time"/>
+    <DETAIL_TIME_STARTING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_TIME_STARTING"
+        sling:message="Starting time"/>
+    <DISCOVER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DISCOVER"
+        sling:message="Discover"/>
+    <DONT_HAVE_AN_ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DONT_HAVE_AN_ACCOUNT"
+        sling:message="You don't have an account?"/>
+    <E_VISA_MESSAGE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="E_VISA_MESSAGE"
+        sling:message="The Saudi Arabian visa is accessible to all. We look forward to welcoming and hosting you in the Kingdom."/>
+    <EMAIL_ADDRESS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMAIL_ADDRESS"
+        sling:message="Email address"/>
+    <EMAIL_REQUIRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMAIL_REQUIRED"
+        sling:message="Email required"/>
+    <EMBASSY_LIST
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMBASSY_LIST"
+        sling:message="Embassy list"/>
+    <EMERGENCY_NUMBERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMERGENCY_NUMBERS"
+        sling:message="Emergency numbers"/>
+    <EMPTY_EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMPTY_EVENTS"
+        sling:message="In line with global measures to contain the spread of Covid-19, all events have been suspended. Stay tuned for what we have planned next."/>
+    <EVENING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENING"
+        sling:message="Evening"/>
+    <EVENING_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENING_SHORT"
+        sling:message="E"/>
+    <EVENT_FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS"
+        sling:message="Event filters"/>
+    <EVENT_FILTERS_CLEAR_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_CLEAR_DATE"
+        sling:message="Clear date filters"/>
+    <EVENT_FILTERS_END_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_END_DATE"
+        sling:message="End date"/>
+    <EVENT_FILTERS_OPTION_CATEGORIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_CATEGORIES"
+        sling:message="Categories"/>
+    <EVENT_FILTERS_OPTION_CITIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_CITIES"
+        sling:message="Cities"/>
+    <EVENT_FILTERS_OPTION_FREEPAID
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_FREEPAID"
+        sling:message="Cost"/>
+    <EVENT_FILTERS_OPTION_REGIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_REGIONS"
+        sling:message="Regions"/>
+    <EVENT_FILTERS_OPTION_SEASON
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_SEASON"
+        sling:message="Season"/>
+    <EVENT_FILTERS_OPTION_TARGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_TARGET"
+        sling:message="Audience"/>
+    <EVENT_FILTERS_START_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_START_DATE"
+        sling:message="Start date"/>
+    <EVENT_FILTERS_VIEW_N_EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_VIEW_N_EVENTS"
+        sling:message="View {{n}} events"/>
+    <EVENT_FILTERS_VIEW_ONE_EVENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_VIEW_ONE_EVENT"
+        sling:message="View 1 event"/>
+    <EVENT_HAS_PASSED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_HAS_PASSED"
+        sling:message="This event has passed"/>
+    <EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS"
+        sling:message="Events"/>
+    <EVENTS_END_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_END_DATE"
+        sling:message="To: {{date}}"/>
+    <EVENTS_ETA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_ETA"
+        sling:message="Starts in {{n}} days"/>
+    <EVENTS_FILTERS_NO_FOUND_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_FILTERS_NO_FOUND_BODY"
+        sling:message="Try changing some filters to find what you are looking for."/>
+    <EVENTS_FILTERS_NO_FOUND_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_FILTERS_NO_FOUND_TITLE"
+        sling:message="No results were found"/>
+    <EVENTS_FOR_YOU
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_FOR_YOU"
+        sling:message="Events for you"/>
+    <EVENTS_START_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_START_DATE"
+        sling:message="From: {{date}}"/>
+    <EVENTS_SUSPENDED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_SUSPENDED"
+        sling:message="Coming Soon"/>
+    <EVENTS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_TITLE"
+        sling:message="Festivals &amp; Events"/>
+    <EVENTS_TRENDING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_TRENDING"
+        sling:message="Trending events"/>
+    <EVENTS_UPCOMING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_UPCOMING"
+        sling:message="Upcoming events"/>
+    <EVISA_ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVISA_ACCOUNT"
+        sling:message="eVisa Account"/>
+    <FEATURED_TOUR_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FEATURED_TOUR_PACKAGES"
+        sling:message="Popular tour packages"/>
+    <FILTER_OPTION_ALL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTER_OPTION_ALL"
+        sling:message="All"/>
+    <FILTERED_ENTITY_GRID_NO_RESULTS_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTERED_ENTITY_GRID_NO_RESULTS_BODY"
+        sling:message="Try changing your search patterns so we find the best package for you."/>
+    <FILTERED_ENTITY_GRID_NO_RESULTS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTERED_ENTITY_GRID_NO_RESULTS_TITLE"
+        sling:message="No results \ud83d\ude30"/>
+    <FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTERS"
+        sling:message="Filters"/>
+    <FOLLOW_US
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FOLLOW_US"
+        sling:message="Follow us for more updates"/>
+    <FROM_PRICE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FROM_PRICE"
+        sling:message="From {{price}}"/>
+    <GENDER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="GENDER"
+        sling:message="Gender"/>
+    <GET_DIRECTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="GET_DIRECTIONS"
+        sling:message="Get directions"/>
+    <HALF_DAY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HALF_DAY"
+        sling:message="1/2 Day"/>
+    <HOME
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME"
+        sling:message="Home"/>
+    <HOME_GREETINGS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME_GREETINGS"
+        sling:message="Hello"/>
+    <HOME_GREETINGS_SUBTITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME_GREETINGS_SUBTITLE"
+        sling:message="It's time to get inspired"/>
+    <HOME_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME_TITLE"
+        sling:message="DiscovernSaudi Arabia"/>
+    <HOTELS_BANNER_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_BANNER_TITLE"
+        sling:message="Accommodation Promotions"/>
+    <HOTELS_FILTER_TITLE_AREA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_FILTER_TITLE_AREA"
+        sling:message="Destination"/>
+    <HOTELS_FILTER_TITLE_CITIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_FILTER_TITLE_CITIES"
+        sling:message="Cities"/>
+    <HOTELS_HEADER_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_HEADER_TITLE"
+        sling:message="Great summer&#xa;hotel deals"/>
+    <HOTELS_HEADER_TITLE_ONE_LINE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_HEADER_TITLE_ONE_LINE"
+        sling:message="Great summer hotel deals"/>
+    <HOTELS_OFFERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_OFFERS"
+        sling:message="Hotels&#xa;offers"/>
+    <I_AM_TRAVELLING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="I_AM_TRAVELLING"
+        sling:message="I am travelling"/>
+    <INVALID_EMAIL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="INVALID_EMAIL"
+        sling:message="Invalid email"/>
+    <KEEP_EXPLORING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="KEEP_EXPLORING"
+        sling:message="Keep exploring"/>
+    <LANGUAGE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LANGUAGE"
+        sling:message="Language"/>
+    <LEAD_GENERATION_FORM_USER_AGREEMENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LEAD_GENERATION_FORM_USER_AGREEMENT"
+        sling:message="I agree to sharing my information with the selected tour operator"/>
+    <LEARN_MORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LEARN_MORE"
+        sling:message="Learn more"/>
+    <LOG_IN
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LOG_IN"
+        sling:message="Log in"/>
+    <LOG_IN_TO_YOUR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LOG_IN_TO_YOUR"
+        sling:message="Log in to your"/>
+    <MAIN_ATTRACTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MAIN_ATTRACTIONS"
+        sling:message="Main attractions"/>
+    <MORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORE"
+        sling:message="More"/>
+    <MORE_SCREEN_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORE_SCREEN_TITLE"
+        sling:message="All you need to know and more"/>
+    <MORNING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORNING"
+        sling:message="Morning"/>
+    <MORNING_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORNING_SHORT"
+        sling:message="M"/>
+    <MULTIPLE_LOCATIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MULTIPLE_LOCATIONS"
+        sling:message="Multiple locations"/>
+    <MY_INTERESTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_INTERESTS"
+        sling:message="My interests"/>
+    <MY_TRIP
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP"
+        sling:message="My Trip"/>
+    <MY_TRIP_NO_FAVORITES_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_NO_FAVORITES_TITLE"
+        sling:message="You have nonfavorites yet"/>
+    <MY_TRIP_RECENT_FAVORITES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_RECENT_FAVORITES"
+        sling:message="Recent favorites"/>
+    <MY_TRIP_YOU_MAY_LIKE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_YOU_MAY_LIKE"
+        sling:message="You may like"/>
+    <MY_TRIP_YOUR_TRIP_STARTS_HERE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_YOUR_TRIP_STARTS_HERE"
+        sling:message="Your trip to&#xa;Saudi starts here"/>
+    <N_HOTELS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="N_HOTELS"
+        sling:message="\{{n}} Hotels"/>
+    <NO_CONNECTION_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NO_CONNECTION_BODY"
+        sling:message="It seems you do not have a stable connection at the moment.&#xa;Please try again later."/>
+    <NO_CONNECTION_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NO_CONNECTION_TITLE"
+        sling:message="Uh Oh! No connection!"/>
+    <NO_RESULTS_FOUND
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NO_RESULTS_FOUND"
+        sling:message="No results found"/>
+    <NOON
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NOON"
+        sling:message="Noon"/>
+    <NOON_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NOON_SHORT"
+        sling:message="N"/>
+    <ONE_DAY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ONE_DAY"
+        sling:message="1 Day"/>
+    <PASSWORD
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PASSWORD"
+        sling:message="Password"/>
+    <PASSWORD_REQUIRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PASSWORD_REQUIRED"
+        sling:message="Password required"/>
+    <PAST_EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PAST_EVENTS"
+        sling:message="Past Events"/>
+    <PAST_EVENTS_NO_CONNECTION_DISCLAIMER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PAST_EVENTS_NO_CONNECTION_DISCLAIMER"
+        sling:message="It seems you do not have a stable connection at the moment. Please check it to load additional events."/>
+    <PERSONALIZATION_AGE_OPTION_BETWEEN_30_50
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTION_BETWEEN_30_50"
+        sling:message="30-50"/>
+    <PERSONALIZATION_AGE_OPTION_LESS_30
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTION_LESS_30"
+        sling:message="-30"/>
+    <PERSONALIZATION_AGE_OPTION_MORE_50
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTION_MORE_50"
+        sling:message="50"/>
+    <PERSONALIZATION_AGE_OPTIONS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTIONS_TITLE"
+        sling:message="Age group"/>
+    <PERSONALIZATION_AGE_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_QUESTION"
+        sling:message="First, how old are you?"/>
+    <PERSONALIZATION_AGE_QUESTION_RESPONSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_QUESTION_RESPONSE"
+        sling:message="That's great \ud83d\udc4d"/>
+    <PERSONALIZATION_CATEGORY_OPTION_ADVENTURE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_ADVENTURE_LABEL"
+        sling:message="Adventure"/>
+    <PERSONALIZATION_CATEGORY_OPTION_CONVENTIONS_EXHIBITIONS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_CONVENTIONS_EXHIBITIONS_LABEL"
+        sling:message="Conventions and Exhibitions"/>
+    <PERSONALIZATION_CATEGORY_OPTION_CULTURE_ARTS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_CULTURE_ARTS_LABEL"
+        sling:message="Culture &amp; Arts"/>
+    <PERSONALIZATION_CATEGORY_OPTION_DIGITAL_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_DIGITAL_LABEL"
+        sling:message="Digital"/>
+    <PERSONALIZATION_CATEGORY_OPTION_DINING_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_DINING_LABEL"
+        sling:message="Dining"/>
+    <PERSONALIZATION_CATEGORY_OPTION_NATURE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_NATURE_LABEL"
+        sling:message="Nature"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SHOPPING_RETAIL_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SHOPPING_RETAIL_LABEL"
+        sling:message="Shopping and Retail"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SHOWS_PERFORMING_ARTS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SHOWS_PERFORMING_ARTS_LABEL"
+        sling:message="Shows and Performing Arts"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SIGHTSEEING_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SIGHTSEEING_LABEL"
+        sling:message="Sightseeing"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SPORT_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SPORT_LABEL"
+        sling:message="Sport"/>
+    <PERSONALIZATION_CATEGORY_OPTION_THEMED_ATTRACTIONS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_THEMED_ATTRACTIONS_LABEL"
+        sling:message="Themed attractions"/>
+    <PERSONALIZATION_CATEGORY_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_QUESTION"
+        sling:message="What are you looking for in a trip?"/>
+    <PERSONALIZATION_CATEGORY_QUESTION_CHOOSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_QUESTION_CHOOSE"
+        sling:message="Choose what you like from our interests gallery"/>
+    <PERSONALIZATION_GENDER_OPTION_FEMALE_CONTENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_FEMALE_CONTENT"
+        sling:message="\ud83d\udc69"/>
+    <PERSONALIZATION_GENDER_OPTION_FEMALE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_FEMALE_LABEL"
+        sling:message="Female"/>
+    <PERSONALIZATION_GENDER_OPTION_MALE_CONTENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_MALE_CONTENT"
+        sling:message="\ud83d\udc68"/>
+    <PERSONALIZATION_GENDER_OPTION_MALE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_MALE_LABEL"
+        sling:message="Male"/>
+    <PERSONALIZATION_GENDER_OPTION_NOT_SAY_CONTENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_NOT_SAY_CONTENT"
+        sling:message="\ud83e\udd2b"/>
+    <PERSONALIZATION_GENDER_OPTION_NOT_SAY_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_NOT_SAY_LABEL"
+        sling:message="Not say"/>
+    <PERSONALIZATION_GENDER_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_QUESTION"
+        sling:message="How do you identify yourself?"/>
+    <PERSONALIZATION_GENDER_QUESTION_RESPONSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_QUESTION_RESPONSE"
+        sling:message="Awesome! \ud83e\udd17"/>
+    <PERSONALIZATION_INTRODUCTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_INTRODUCTION"
+        sling:message="We'd love to personalise your Saudi Experience."/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_FAMILY_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_FAMILY_LABEL"
+        sling:message="With family"/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_FRIENDS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_FRIENDS_LABEL"
+        sling:message="With friends"/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_OWN_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_OWN_LABEL"
+        sling:message="On my own"/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_PARTNER_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_PARTNER_LABEL"
+        sling:message="With a partner"/>
+    <PERSONALIZATION_TRAVELLING_WITH_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_QUESTION"
+        sling:message="Well, tell me who you will be travelling with..."/>
+    <PERSONALIZATION_TRAVELLING_WITH_QUESTION_RESPONSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_QUESTION_RESPONSE"
+        sling:message="One last question! \ud83e\udd29"/>
+    <PERSONALIZATION_WELCOME
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_WELCOME"
+        sling:message="Hello there!"/>
+    <PRIVACY_POLICY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PRIVACY_POLICY"
+        sling:message="Privacy Policy"/>
+    <RED_SEA_ACTIVITIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ACTIVITIES"
+        sling:message="Activities"/>
+    <RED_SEA_AREA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_AREA"
+        sling:message="Area"/>
+    <RED_SEA_BOOK_PACKAGE_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_BOOK_PACKAGE_CTA"
+        sling:message="Book now"/>
+    <RED_SEA_DURATION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_DURATION"
+        sling:message="Duration"/>
+    <RED_SEA_FILTER_SUBTITLE_BUDGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_SUBTITLE_BUDGET"
+        sling:message="Per person"/>
+    <RED_SEA_FILTER_TITLE_AREA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_AREA"
+        sling:message="Destination"/>
+    <RED_SEA_FILTER_TITLE_BUDGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_BUDGET"
+        sling:message="What budget do you have in mind?"/>
+    <RED_SEA_FILTER_TITLE_CATEGORY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_CATEGORY"
+        sling:message="Interests"/>
+    <RED_SEA_FILTER_TITLE_DURATION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_DURATION"
+        sling:message="Trip Duration"/>
+    <RED_SEA_FILTER_TITLE_TARGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_TARGET"
+        sling:message="Type of Travelers"/>
+    <RED_SEA_HERO_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_HERO_CTA"
+        sling:message="Explore now"/>
+    <RED_SEA_HERO_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_HERO_DESCRIPTION"
+        sling:message="Enjoy all the Summer activities and tour packages Saudi has to offer for you."/>
+    <RED_SEA_HERO_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_HERO_TITLE"
+        sling:message="Explore summer destinations"/>
+    <RED_SEA_N_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_N_PACKAGES"
+        sling:message="\{{n}} packages"/>
+    <RED_SEA_PACKAGES_RECOMMENDED_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_PACKAGES_RECOMMENDED_PACKAGES"
+        sling:message="Recommended packages"/>
+    <RED_SEA_PACKAGES_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_PACKAGES_TITLE"
+        sling:message="Summer&#xa;Tour Packages"/>
+    <RED_SEA_PACKAGES_TITLE_ONE_LINE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_PACKAGES_TITLE_ONE_LINE"
+        sling:message="Summer Tour Packages"/>
+    <RED_SEA_ROUTE_CONTENT_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_CONTENT_TITLE"
+        sling:message="Route details"/>
+    <RED_SEA_ROUTE_DOWNLOAD_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_DOWNLOAD_BODY"
+        sling:message="Your summer guide"/>
+    <RED_SEA_ROUTE_HEADER_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_HEADER_LABEL"
+        sling:message="Break free"/>
+    <RED_SEA_ROUTE_SLIDER_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_SLIDER_TITLE"
+        sling:message="Summer destinations"/>
+    <RED_SEA_ROUTE_SUMMER_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_SUMMER_PACKAGES"
+        sling:message="Explore summer packages"/>
+    <RED_SEA_TRAVELERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_TRAVELERS"
+        sling:message="Travelers"/>
+    <RED_SEA_VENDORS_HEADER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_VENDORS_HEADER"
+        sling:message="This tour is managed by&#xa;{{vendor}}"/>
+    <REGION_SELECTION_ALL_REGIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REGION_SELECTION_ALL_REGIONS"
+        sling:message="All regions"/>
+    <REGION_SELECTION_CHOOSE_REGION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REGION_SELECTION_CHOOSE_REGION"
+        sling:message="Choose a &#xa;Region"/>
+    <REQUEST_QUOTE_ERROR_OVERLAY_BUTTON_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_ERROR_OVERLAY_BUTTON_LABEL"
+        sling:message="Ok"/>
+    <REQUEST_QUOTE_ERROR_OVERLAY_TITLE_ONE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_ERROR_OVERLAY_TITLE_ONE"
+        sling:message="Sorry! \ud83d\ude1e"/>
+    <REQUEST_QUOTE_ERROR_OVERLAY_TITLE_TWO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_ERROR_OVERLAY_TITLE_TWO"
+        sling:message="Error in your request!"/>
+    <REQUEST_QUOTE_FORM_COMMENT_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_COMMENT_LABEL"
+        sling:message="Comments"/>
+    <REQUEST_QUOTE_FORM_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_CTA"
+        sling:message="Submit"/>
+    <REQUEST_QUOTE_FORM_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_DESCRIPTION"
+        sling:message="Fill out the form and the agent will get in touch with you to complete your booking."/>
+    <REQUEST_QUOTE_FORM_EMAIL_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_EMAIL_LABEL"
+        sling:message="Email"/>
+    <REQUEST_QUOTE_FORM_ERROR_FIELD_REQUIRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_ERROR_FIELD_REQUIRED"
+        sling:message="Required field"/>
+    <REQUEST_QUOTE_FORM_ERROR_INVALID_FIELD
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_ERROR_INVALID_FIELD"
+        sling:message="Invalid field"/>
+    <REQUEST_QUOTE_FORM_FIRST_NAME_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_FIRST_NAME_LABEL"
+        sling:message="First name"/>
+    <REQUEST_QUOTE_FORM_LAST_NAME_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_LAST_NAME_LABEL"
+        sling:message="Last name"/>
+    <REQUEST_QUOTE_FORM_NATIONALITY_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_NATIONALITY_LABEL"
+        sling:message="Nationality"/>
+    <REQUEST_QUOTE_FORM_PHONE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_PHONE_LABEL"
+        sling:message="Phone number"/>
+    <REQUEST_QUOTE_FORM_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_TITLE"
+        sling:message="Start booking"/>
+    <REQUEST_QUOTE_SUCCESS_OVERLAY_BUTTON_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_SUCCESS_OVERLAY_BUTTON_LABEL"
+        sling:message="Ok"/>
+    <REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_ONE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_ONE"
+        sling:message="Done! \ud83d\udc4d"/>
+    <REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_TWO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_TWO"
+        sling:message="Thanks for your request!"/>
+    <RETRY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RETRY"
+        sling:message="Retry"/>
+    <SAUDI_ESSENTIALS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SAUDI_ESSENTIALS"
+        sling:message="Saudi Essentials"/>
+    <SAVE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SAVE"
+        sling:message="Save"/>
+    <SAVE_CHANGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SAVE_CHANGES"
+        sling:message="Save changes"/>
+    <SEARCH_FOR_YOUR_EMBASSY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_FOR_YOUR_EMBASSY"
+        sling:message="Search for your embassy"/>
+    <SEARCH_FOUND_N_RESULTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_FOUND_N_RESULTS"
+        sling:message="We found {{n}} results"/>
+    <SEARCH_INPUT_PLACEHOLDER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_INPUT_PLACEHOLDER"
+        sling:message="Type here"/>
+    <SEARCH_NO_RESULTS_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_NO_RESULTS_BODY"
+        sling:message="Try searching for something different."/>
+    <SEARCH_NO_RESULTS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_NO_RESULTS_TITLE"
+        sling:message="No results found"/>
+    <SEARCH_SUGGESTED_SEARCHES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_SUGGESTED_SEARCHES"
+        sling:message="Suggested searches"/>
+    <SEARCH_VISA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_VISA"
+        sling:message="Visa"/>
+    <SEARCH_WHAT_ARE_YOU_LOOGIN_FOR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_ARE_YOU_LOOGIN_FOR"
+        sling:message="Hello,nwhat are you looking for?"/>
+    <SEARCH_WHAT_TO_DO_IN_JEDDAH
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_TO_DO_IN_JEDDAH"
+        sling:message="What to do in Jeddah"/>
+    <SEARCH_WHAT_TO_DO_IN_MAKKAH
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_TO_DO_IN_MAKKAH"
+        sling:message="What to do in Makkah"/>
+    <SEARCH_WHAT_TO_DO_IN_RIYADH
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_TO_DO_IN_RIYADH"
+        sling:message="What to do in Riyadh"/>
+    <SEARCH_YOUR_COUNTRY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_YOUR_COUNTRY"
+        sling:message="Search your country"/>
+    <SEE_AND_DO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO"
+        sling:message="See &amp; Do"/>
+    <SEE_AND_DO_ALL_REGIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_ALL_REGIONS"
+        sling:message="all regions"/>
+    <SEE_AND_DO_EXPLORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_EXPLORE"
+        sling:message="Explore"/>
+    <SEE_AND_DO_ITEMS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_ITEMS"
+        sling:message="\{{items}} items"/>
+    <SEE_AND_DO_OPEN_MAP
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_OPEN_MAP"
+        sling:message="Open map"/>
+    <SEE_AND_DO_TRENDING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_TRENDING"
+        sling:message="Trending"/>
+    <SELECT_A_LANGUAGE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SELECT_A_LANGUAGE"
+        sling:message="Select a language"/>
+    <SKIP
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SKIP"
+        sling:message="Skip"/>
+    <SPEECH_RECOGNITION_ERROR_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SPEECH_RECOGNITION_ERROR_DESCRIPTION"
+        sling:message="Please enable it in your phone settings"/>
+    <SPEECH_RECOGNITION_ERROR_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SPEECH_RECOGNITION_ERROR_TITLE"
+        sling:message="Speech recognition not available"/>
+    <START_DISCOVERING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="START_DISCOVERING"
+        sling:message="Start discovering"/>
+    <START_PLANNING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="START_PLANNING"
+        sling:message="to start planning your next trip"/>
+    <SUMMER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER"
+        sling:message="Summer"/>
+    <SUMMER_DESTINATIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_DESTINATIONS"
+        sling:message="Summer destinations"/>
+    <SUMMER_EXPERIENCE_PAGE_HEADER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_PAGE_HEADER"
+        sling:message="Summer in Saudi"/>
+    <SUMMER_EXPERIENCE_PAGE_SUBTITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_PAGE_SUBTITLE"
+        sling:message="Plan your next adventure"/>
+    <SUMMER_EXPERIENCE_PAGE_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_PAGE_TITLE"
+        sling:message="Summer&#xa;in Saudi"/>
+    <SUMMER_EXPERIENCE_TOURS_FOR_YOU
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_TOURS_FOR_YOU"
+        sling:message="Tours just for you"/>
+    <TELEPHONE_PROVIDERS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TELEPHONE_PROVIDERS_TITLE"
+        sling:message="Telephone providers"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_LABEL"
+        sling:message="Saudi Arabia's country code"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_VALUE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_VALUE"
+        sling:message="966"/>
+    <TERMS_AND_CONDITIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TERMS_AND_CONDITIONS"
+        sling:message="Terms and Conditions"/>
+    <TODAY_HIGHLIGHT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TODAY_HIGHLIGHT"
+        sling:message="Today's highlight"/>
+    <TOUR_DETAILS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_DETAILS"
+        sling:message="Tour details"/>
+    <TOUR_END
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_END"
+        sling:message="End of tour"/>
+    <TOUR_ITINERARY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_ITINERARY"
+        sling:message="The tour itinerary"/>
+    <TOUR_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES"
+        sling:message="Arabian Experiences"/>
+    <TOUR_PACKAGES_2_LINES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_2_LINES"
+        sling:message="Tour&#xa;packages"/>
+    <TOUR_PACKAGES_HERO_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_HERO_CTA"
+        sling:message="View all tours"/>
+    <TOUR_PACKAGES_HERO_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_HERO_DESCRIPTION"
+        sling:message="Make every moment matter with these handcrafted travel packages just for you."/>
+    <TOUR_PACKAGES_HERO_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_HERO_TITLE"
+        sling:message="Discover our Arabian Experiences"/>
+    <UNEXPECTED_ERROR_HAS_OCCURRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="UNEXPECTED_ERROR_HAS_OCCURRED"
+        sling:message="An unexpected error has occurred"/>
+    <USEFUL_CONTACTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="USEFUL_CONTACTS"
+        sling:message="Useful Contacts"/>
+    <USEFUL_NUMBERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="USEFUL_NUMBERS"
+        sling:message="Useful Numbers"/>
+    <VENDOR_SELECTION_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VENDOR_SELECTION_TITLE"
+        sling:message="Choose &#xa;a vendor"/>
+    <VIEW_ALL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIEW_ALL"
+        sling:message="View all"/>
+    <VIEW_LESS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIEW_LESS"
+        sling:message="View less"/>
+    <VIEW_MORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIEW_MORE"
+        sling:message="View more"/>
+    <VISIT_WEBSITE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VISIT_WEBSITE"
+        sling:message="Check their website"/>
+    <WE_ARE_SORRY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="WE_ARE_SORRY"
+        sling:message="We are sorry"/>
+    <YOUR_ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="YOUR_ACCOUNT"
+        sling:message="Your account"/>
+</jcr:root>

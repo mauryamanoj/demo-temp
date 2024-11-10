@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:crx="http://www.day.com/crx/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:ACL">
+    <allow0
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="content-authors"
+        rep:privileges="{Name}[jcr:read]"/>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="readservice"
+        rep:privileges="{Name}[jcr:read]"/>
+    <allow2
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="writeservice"
+        rep:privileges="{Name}[jcr:read,rep:write]"/>
+</jcr:root>

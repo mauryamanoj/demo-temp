@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Fetch Experiences"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <common-setup
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common Setup"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <id
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Component ID"
+                                        name="./componentId"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="title"
+                                        name="./title"
+                                        required="{Boolean}true">
+                                    </title>
+                                    <display-type
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Display Type"
+                                        name="./display/displayType">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            metaType="dropdown"
+                                            showhide-target=".display-type-showhide-target"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <scrollable
+                                                jcr:primaryType="nt:unstructured"
+                                                text="scrollable"
+                                                value="scrollable"/>
+                                            <list-view
+                                                jcr:primaryType="nt:unstructured"
+                                                text="list_view "
+                                                value="list_view"/>
+                                        </items>
+                                    </display-type>
+                                    <display-card-size
+                                        granite:class="display-type-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Display Card Size"
+                                        name="./display/cardSize">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="scrollable"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <small
+                                                jcr:primaryType="nt:unstructured"
+                                                text="small"
+                                                value="small"/>
+                                            <small-details-page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="small details page"
+                                                value="small_2"/>
+                                            <medium
+                                                jcr:primaryType="nt:unstructured"
+                                                text="medium "
+                                                value="medium"/>
+                                            <large
+                                                jcr:primaryType="nt:unstructured"
+                                                text="large "
+                                                value="large"/>
+                                        </items>
+                                    </display-card-size>
+                                    <numberOfCards
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        fieldLabel="Number of cards"
+                                        name="./display/numberOfCards">
+                                    </numberOfCards>
+                                    <ctaText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Text"
+                                        name="./link/text">
+                                    </ctaText>
+                                    <ctaUrl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="CTA Url"
+                                        name="./link/url"
+                                        rootPath="/content">
+                                    </ctaUrl>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </common-setup>
+            <experiences
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Experiences Filter"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <filter-destination
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Experience Destination"
+                                        rootPath="/content/dam/sauditourism/cf"
+                                        name="./filter/destination"/>
+                                    <filterStartDate
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                        fieldLabel="Experience Start Date"
+                                        name="./filter/startDate"
+                                        displayedFormat="YYYY-MM-DD"
+                                        valueFormat="YYYY-MM-DD"
+                                        type="date"
+                                        typeHint="String">
+                                    </filterStartDate>
+                                    <filterEndDate
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                        fieldLabel="Experience End Date"
+                                        name="./filter/endDate"
+                                        displayedFormat="YYYY-MM-DD"
+                                        valueFormat="YYYY-MM-DD"
+                                        type="date"
+                                        typeHint="String">
+                                    </filterEndDate>
+                                    <filter-freeOnly
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldLabel="Experience free only"
+                                        name="./filter/freeOnly"
+                                        text="Experience free only"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                    </filter-freeOnly>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </experiences>
+        </items>
+    </content>
+</jcr:root>
+
+

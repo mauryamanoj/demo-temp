@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Art"
+          jcr:title.ar="الفن"
+          jcr:title.fr="Art"
+          jcr:title.es="Arte"
+          jcr:title.ru="Искусство"
+          jcr:title.de="Kunst"
+          jcr:title.zh="艺术"
+          jcr:title.ja="芸術"
+          sling:resourceType="cq/tagging/components/tag"/>

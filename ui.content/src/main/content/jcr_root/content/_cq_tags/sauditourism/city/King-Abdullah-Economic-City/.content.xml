@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="KAEC"
+    jcr:title.ar="مدينة الملك عبدالله الاقتصادية"
+    jcr:title.de="KAEC"
+    jcr:title.es="KAEC"
+    jcr:title.fr="KAEC"
+    jcr:title.ja="KAEC"
+    jcr:title.ru="KAEC"
+    jcr:title.zh="KAEC"
+    sling:resourceType="cq/tagging/components/tag"/>

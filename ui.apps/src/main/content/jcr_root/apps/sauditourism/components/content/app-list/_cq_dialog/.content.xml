@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="App List"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <app-list
+                jcr:primaryType="nt:unstructured"
+                jcr:title="App List"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <!-- Title -->
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Title to show in top of cards."
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}true"/>
+                                    <!-- View All Label -->
+                                    <view-all-label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="View All Label"
+                                        name="./link/text"
+                                        required="{Boolean}false"/>
+                                    <!-- View All Link -->
+                                    <view-all-link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Link that will be opened when this is clicked"
+                                        rootPath="/content/sauditourism"
+                                        fieldLabel="View All Link"
+                                        name="./link/url"
+                                        required="{Boolean}false"/>
+                                    <!-- Open in New Tab -->
+                                    <open-in-new-tab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check this to open link in new tab"
+                                        name="./link/targetInNewWindow"
+                                        text="Open in New Tab"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <!-- Select small or big variation -->
+                                    <display-card-size
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Display Card Size"
+                                        name="./display/cardSize">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <small
+                                                jcr:primaryType="nt:unstructured"
+                                                text="small"
+                                                value="small"/>
+                                            <big
+                                                jcr:primaryType="nt:unstructured"
+                                                text="big"
+                                                value="big"/>
+                                        </items>
+                                    </display-card-size>
+                                    <!-- App List Cards -->
+                                    <applist-cards
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add' to add a new card"
+                                        fieldLabel="App List Data">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./appListCards">
+                                            <items
+                                                jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="New App Card"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <card-image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            required="{Boolean}True"
+                                                            autoStart="{Boolean}false"
+                                                            granite:class="cq-droptarget s7-image-listener"
+                                                            fieldLabel="Image"
+                                                            fileNameParameter="./image/fileName"
+                                                            fileReferenceParameter="./image/fileReference"
+                                                            fieldDescription="Image size: 600 x 600 - Ratio 1:1. Select an image to be used for desktop view"
+                                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./image/fileName"
+                                                            title="Upload Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <s7fileReference
+                                                            granite:class="s7-fileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:id="s7-fileReference"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./image/s7fileReference"/>
+                                                        <alt-image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter an ALT text for the image."
+                                                            fieldLabel="Alt text of image"
+                                                            required="{Boolean}True"
+                                                            name="./image/alt"
+                                                            emptyText="Image alt text"/>
+                                                        <!-- Pill Label -->
+                                                        <pill-label
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Pill Label"
+                                                            name="./pillLabel"
+                                                            required="{Boolean}false"/>
+                                                        <!-- App Link -->
+                                                        <appLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Link that will be opened when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="App Link"
+                                                            name="./link/url"
+                                                            required="{Boolean}true"/>
+                                                        <!-- Open in New Tab -->
+                                                        <open-in-new-tab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldDescription="Check this to open link in new tab"
+                                                            name="./link/targetInNewWindow"
+                                                            text="Open in New Tab"
+                                                            uncheckedValue="{Boolean}false"
+                                                            value="{Boolean}true"/>
+                                                        <!-- Line 1 : Under the image -->
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title"
+                                                            name="./title"
+                                                            required="{Boolean}false"/>
+                                                        <!-- Line 2 : Under the image -->
+                                                        <subtitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Subtitle"
+                                                            name="./subTitle"
+                                                            required="{Boolean}false"/>
+                                                        <ctaEventName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Card CTA Event Name"
+                                                            name="./ctaData/ctaEventName"
+                                                            required="{Boolean}false"/>
+                                                        <pageCategory
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Card CTA Event page Category"
+                                                            name="./ctaData/pageCategory"
+                                                            required="{Boolean}false"/>
+                                                        <pageSubCategory
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Card CTA Event page Sub Category"
+                                                            name="./ctaData/pageSubCategory"
+                                                            required="{Boolean}false"/>
+                                                        <sectionName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Card CTA Event section Name"
+                                                            name="./ctaData/sectionName"
+                                                            required="{Boolean}false"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </applist-cards>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </app-list>
+        </items>
+    </content>
+</jcr:root>

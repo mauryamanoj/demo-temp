@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description="Destination categories, for cities, packages, places etc."
+          jcr:primaryType="cq:Tag"
+          jcr:title="Destination"
+          jcr:title.ar="المكان المقصود"
+          jcr:title.de="Ziel"
+          jcr:title.es="Destino"
+          jcr:title.fr="Destination"
+          jcr:title.ja="目的地"
+          jcr:title.ru="Направление"
+          jcr:title.zh="旅游胜地"
+          sling:resourceType="cq/tagging/components/tag">
+  <art/>
+  <beach/>
+  <camping/>
+  <cruises/>
+  <culture/>
+  <diving/>
+  <exploring/>
+  <fishing/>
+  <food/>
+  <golfing/>
+  <heritage/>
+  <hike/>
+  <history/>
+  <mountains/>
+  <nature/>
+  <sand-skiing/>
+  <sea/>
+  <shopping/>
+  <snorkeling/>
+  <urban/>
+  <water-activities/>
+</jcr:root>

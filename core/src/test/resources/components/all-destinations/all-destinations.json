@@ -1,0 +1,16 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Wed Sep 27 2023 23:28:36 GMT+0100",
+  "title":"All destinations",
+  "jcr:lastModified":"Thu Sep 28 2023 16:51:12 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/all-destinations",
+  "destinations":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "destinationCFPath":"/content/dam/sauditourism/cf/en/destinations/riyad"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="History"
+          jcr:title.ar="التاريخ"
+          jcr:title.fr="Histoire"
+          jcr:title.es="Historia"
+          jcr:title.ru="История"
+          jcr:title.de="Geschichte"
+          jcr:title.zh="历史"
+          jcr:title.ja="歴史"
+          sling:resourceType="cq/tagging/components/tag"/>

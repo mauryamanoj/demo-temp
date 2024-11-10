@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="512"
+    title="Agent Settings">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabs jcr:primaryType="cq:TabPanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <tabAgent
+            jcr:primaryType="cq:Widget"
+            path="/apps/solr/components/agent/tab_agent.infinity.json"
+            xtype="cqinclude"/>
+        <tabTransport
+            jcr:primaryType="cq:Widget"
+            path="/apps/solr/components/agent/tab_transport.infinity.json"
+            xtype="cqinclude"/>
+        <tabProxy
+            jcr:primaryType="cq:Widget"
+            path="/libs/cq/replication/components/agent/tab_proxy.infinity.json"
+            xtype="cqinclude"/>
+        <tabExtended
+            jcr:primaryType="cq:Widget"
+            path="/libs/cq/replication/components/agent/tab_extended.infinity.json"
+            xtype="cqinclude"/>
+        <tabTriggers
+            jcr:primaryType="cq:Widget"
+            path="/libs/cq/replication/components/agent/tab_triggers.infinity.json"
+            xtype="cqinclude"/>
+        <tabBatch
+            jcr:primaryType="cq:Widget"
+            path="/libs/cq/replication/components/agent/tab_batch.infinity.json"
+            xtype="cqinclude"/>
+      </items>
+    </tabs>
+  </items>
+</jcr:root>

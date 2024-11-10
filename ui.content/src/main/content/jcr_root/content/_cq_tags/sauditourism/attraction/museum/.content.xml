@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description="Types of museums."
+          jcr:primaryType="cq:Tag"
+          jcr:title="Museum"
+          jcr:title.ar="متحف"
+          jcr:title.de="Museum"
+          jcr:title.es="Museo"
+          jcr:title.fr="Musée"
+          jcr:title.ja="博物館"
+          jcr:title.ru="Музей"
+          jcr:title.zh="博物馆"
+          sling:resourceType="cq/tagging/components/tag">
+    <type/>
+</jcr:root>

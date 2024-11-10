@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Qunfudhah"
+    jcr:title.ar="القنفذة"
+    jcr:title.de="Al-Qunfudhah"
+    jcr:title.es="Al Qunfudhah"
+    jcr:title.fr="Al Qunfudhah"
+    jcr:title.ja="アル・クンフダー"
+    jcr:title.ru="Эль-Кунфудха"
+    jcr:title.zh="坎夫達"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-qunfudhah"/>

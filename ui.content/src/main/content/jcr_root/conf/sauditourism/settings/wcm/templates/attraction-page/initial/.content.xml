@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sauditourism/settings/wcm/templates/attraction-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="sauditourism/components/structure/attraction-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid" >
+            </responsivegrid>
+            <promotion_banner
+                jcr:lastModified="{Date}2023-11-05T16:22:50.791Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sauditourism/components/content/promotional-banner"
+                height="small"
+                hideImageBrush="false"
+                logoSize="small"
+                showArrows="false">
+                <logo
+                    jcr:lastModified="{Date}2023-11-05T16:22:50.791Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"/>
+            </promotion_banner>
+            <gallery_section
+                jcr:lastModified="{Date}2023-12-05T14:58:17.103+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sauditourism/components/content/gallery-section"/>
+        </root>
+    </jcr:content>
+</jcr:root>

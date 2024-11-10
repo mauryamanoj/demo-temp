@@ -1,0 +1,30 @@
+<template data-sly-template.ctaLink="${@ background, dataLocation, linkObj, copy, dataId, class, title, cardtitle,type}"
+          data-sly-use.iconSimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html">
+    <a data-sly-element="${ linkObj.urlWithExtension ? 'a' : 'span'}"
+       data-component="cta-02-link"
+       data-track-name="${analyticsDataCopy @ context='text'}"
+      data-track-section="${title @ context='text'}"
+      data-track-packageName="${cardtitle @ context='text'}"
+      data-track-destination=" "
+      data-track-product="${title @ context='text'} ; ${cardtitle @ context='text'}"
+      data-track-eventName="${analyticsDataCopy @ context='text'}"
+       title="${linkObj.copy || copy @ i18n}"
+       itemprop="url"
+       data-sly-attribute.href="${linkObj.urlWithExtension || linkObj.url @ context='uri'}"
+       class="background-${background ? background : 'solid'} ${class ? class : ''}"
+       data-sly-attribute.target="${linkObj.targetInNewWindow ? '_blank' : '_self'}"
+       data-sly-attribute.rel="${linkObj.targetInNewWindow ? 'noopener noreferrer' : ''}"
+       data-sly-attribute.data-location="${dataLocation}"
+       data-sly-attribute.data-id="${dataId}">
+    <span data-sly-test.copyText="${linkObj.copy || copy @ i18n}"
+          class="link-copy cta-text">${copyText}</span>
+        <sly data-sly-test="${type}">
+            <sly data-sly-call="${iconSimpleTemplate.iconSimple @  name='combined-shape', desktopSize='18',
+       mobileSize='22', class='chevron'}"></sly>
+        </sly>
+        <sly data-sly-test="${!type}">
+      <sly data-sly-call="${iconSimpleTemplate.iconSimple @  name='arrow-right', desktopSize='18',
+       mobileSize='22', class='chevron'}"></sly>
+        </sly>
+    </a>
+</template>

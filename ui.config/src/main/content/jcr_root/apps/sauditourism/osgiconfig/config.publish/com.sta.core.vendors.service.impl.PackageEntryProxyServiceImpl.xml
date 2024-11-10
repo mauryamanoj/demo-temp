@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+          getPackageUri="http://localhost:4502/bin/author/api/v1/entry/package?vendor=%s&amp;name=%s"
+          getPackagesUri="http://localhost:4502/bin/author/api/v1/entry/package/list?vendor=%s"
+          postPackageUri="http://localhost:4502/bin/author/api/v1/entry/package?vendor=%s"
+          putPackageUri="http://localhost:4502/bin/author/api/v1/entry/package?vendor=%s&amp;name=%s"
+          deletePackageUri="http://localhost:4502/bin/author/api/v1/entry/package?vendor=%s&amp;name=%s"
+          encodedAuth="YWRtaW46YWRtaW4="/>

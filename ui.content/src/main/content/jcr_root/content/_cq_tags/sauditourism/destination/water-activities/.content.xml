@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Water Activities"
+          jcr:title.ar="الأنشطة المائية"
+          jcr:title.de="Wasserabenteuer"
+          jcr:title.es="Actividades acuáticas"
+          jcr:title.fr="Activités aquatiques"
+          jcr:title.ja="ウォーターアクティビティ"
+          jcr:title.ru="Водные виды спорта"
+          jcr:title.zh="水上活动"
+          sling:resourceType="cq/tagging/components/tag"/>

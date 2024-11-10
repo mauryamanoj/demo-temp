@@ -1,0 +1,12 @@
+<sly
+    data-sly-set.footerComponent="${'sauditourism/components/content/f01-footer/v3/f01-footer'}"></sly>
+
+<sly data-sly-use.configModel="${'com.saudi.tourism.core.models.common.ConfigurationModel'
+     @ resourceType=footerComponent, configPage='Configs/footer-links-configs', isRelativePath=true}"
+     data-sly-set.isAppWebView="${'app' in request.requestPathInfo.selectors}"></sly>
+
+<div data-sly-test="${!isAppWebView}"
+     data-sly-resource="${ configModel.resourcePath || 'f01-footer' @ wcmmode='disabled', resourceType=footerComponent}"
+     data-sly-unwrap></div>
+<sly data-sly-test="${!pageProperties.noLoginModal}" data-sly-include="loginModal.html">
+</sly>

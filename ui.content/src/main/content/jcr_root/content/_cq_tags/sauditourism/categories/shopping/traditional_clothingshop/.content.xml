@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Traditional Clothing Shop"
+          jcr:title.ar="متجر الملابس التقليدية"
+          jcr:title.de="Traditionelles Bekleidungsgeschäft"
+          jcr:title.es="Tienda de ropa tradicional"
+          jcr:title.fr="Boutique de vêtements traditionnels"
+          jcr:title.ja="伝統的な衣料品店"
+          jcr:title.ru="Магазин традиционной одежды"
+          jcr:title.zh="传统服装店"
+          sling:resourceType="cq/tagging/components/tag"/>

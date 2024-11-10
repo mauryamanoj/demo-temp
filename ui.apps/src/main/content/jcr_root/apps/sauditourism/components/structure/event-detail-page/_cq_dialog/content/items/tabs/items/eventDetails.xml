@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}true"
+    granite:class="core-wcm-edetailing dialog-container"
+    jcr:primaryType="cq:Widget"
+    jcr:title="T-16 Event Detail"
+    sling:resourceType="granite/ui/components/foundation/container">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+        margin="{Boolean}false"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <templateType
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Template Type"
+                    name="./templateType"
+                    required="{Boolean}false">
+                    <items jcr:primaryType="nt:unstructured">
+                        <old
+                            jcr:primaryType="nt:unstructured"
+                            selected="{Boolean}true"
+                            text="Old"
+                            value="old"/>
+                        <new
+                            jcr:primaryType="nt:unstructured"
+                            text="New"
+                            value="new"/>
+                    </items>
+                </templateType>
+                <city
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="City"
+                    name="./city"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="city"/>
+                    <datasource
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sauditourism/datasource/cities-regions"
+                        saudi-tourism-listtype="city"/>
+                </city>
+                <region
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldDescription="Enter region for the event"
+                    fieldLabel="Region"
+                    name="./region">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="region"/>
+                </region>
+                <season
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Season"
+                    name="./season">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="season"/>
+                    <datasource
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sauditourism/datasource/seasons"
+                        saudi-tourism-listtype="season"/>
+                </season>
+                <no-season-title
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Title (if no season selected)"
+                    fieldDescription="This Title will display if no season is selected)"
+                    name="./noSeasonTitle"
+                    required="{Boolean}true"/>
+                <priority
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    fieldLabel="Priority"
+                    name="./priority">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="priority"/>
+                    <datasource
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sauditourism/generic/datasource"
+                        path="sauditourism/components/content/utils/priority"/>
+                </priority>
+                <heading-address
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/heading"
+                    level="{Long}2"
+                    text="Address"/>
+                <location-name
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Location name"
+                    name="./locationName"
+                    required="{Boolean}false"/>
+                <street
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Street"
+                    name="./street"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="street"/>
+                </street>
+                <streetNumber
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Number"
+                    name="./streetNumber"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="streetNumber"/>
+                </streetNumber>
+                <showOnMap
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Check the flag to show this event on the map"
+                    name="./showOnMap"
+                    text="Click to show on Map"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true"/>
+                <zipcode
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Zipcode"
+                    name="./zipcode"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="zipcode"/>
+                </zipcode>
+                <latitude
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Latitude"
+                    fieldDescription="Latitude"
+                    fieldLabel="Latitude"
+                    name="./latitude"
+                    typeHint="Decimal"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="latitude"/>
+                </latitude>
+                <longitude
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Longitude"
+                    fieldDescription="Longitude"
+                    fieldLabel="Longitude"
+                    name="./longitude"
+                    typeHint="Decimal"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="longitude"/>
+                </longitude>
+                <mapType
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Map Type"
+                    name="./mapType">
+                    <items jcr:primaryType="nt:unstructured">
+                        <google
+                            jcr:primaryType="nt:unstructured"
+                            selected="{Boolean}true"
+                            text="Google Maps"
+                            value="google"/>
+                        <mapbox
+                            jcr:primaryType="nt:unstructured"
+                            text="Mapbox Maps"
+                            value="mapbox"/>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="mapType"/>
+                </mapType>
+                <zoom
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldDescription="Zoom level"
+                    fieldLabel="Zoom level"
+                    name="./zoom">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="zoom"/>
+                </zoom>
+                <heading-header
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/heading"
+                    level="{Long}2"
+                    text="Header"/>
+                <featureEventImage
+                    cq:showOnCreate="{Boolean}true"
+                    granite:class="s7-image-listener"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    fieldDescription="Image size:1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+                    fieldLabel="Header Banner Image"
+                    name="./featureEventImage"
+                    rootPath="/content/dam">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="featureEventImage"/>
+                </featureEventImage>
+                <s7featureEventImage
+                    granite:class="s7-featureEventImage"
+                    granite:id="s7-featureEventImage"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    name="./s7featureEventImage"/>
+                <event-loaction-icon
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    fieldDescription="Image size: 315 x 236 - Ratio 4:3. Select an image to be used for side overlay on detail page"
+                    fieldLabel="Event location icon"
+                    name="./locationIcon"
+                    rootPath="/content/dam">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="locationIcon"/>
+                </event-loaction-icon>
+                <altImage
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Alt"
+                    name="./altImage">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="altImage"/>
+                </altImage>
+                <heading-event
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/heading"
+                    level="{Long}2"
+                    text="Event"/>
+                <title
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Event Title"
+                    name="./title"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="title"/>
+                </title>
+                <analyticsTitle
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    fieldLabel="Event Title for Analytics in English"
+                    name="./analyticsTitle"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="analyticsTitle"/>
+                </analyticsTitle>
+                <subtitle
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Event subtitle"
+                    name="./eventSubtitle">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="eventSubtitle"/>
+                </subtitle>
+                <headingType
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Heading Type"
+                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                    path="/apps/sauditourism/components/commons/generic/content/items/headingType"/>
+                <copy
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                    fieldLabel="Event Hero Description"
+                    fieldDescription="Event Hero Description."
+                    name="./copy"
+                    required="{Boolean}false"
+                    useFixedInlineToolbar="{Boolean}true">
+                    <rtePlugins
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                    <uiSettings
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="copy"/>
+                </copy>
+                <venueTags
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    fieldLabel="Venue Tags"
+                    forceSelection="{Boolean}true"
+                    multiple="{Boolean}true"
+                    name="./venueTags"
+                    rootPath="/content/cq:tags/sauditourism">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="venueTags"/>
+                </venueTags>
+                <categoryTags
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    fieldLabel="Event Category"
+                    forceSelection="{Boolean}true"
+                    multiple="{Boolean}true"
+                    name="./categoryTags"
+                    required="{Boolean}true"
+                    rootPath="/content/cq:tags/sauditourism/events">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="categoryTags"/>
+                </categoryTags>
+                <targetGroupTags
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    fieldLabel="Target Group"
+                    forceSelection="{Boolean}true"
+                    multiple="{Boolean}true"
+                    name="./targetGroupTags"
+                    rootPath="/content/cq:tags/sauditourism/audience">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="targetGroupTags"/>
+                </targetGroupTags>
+                <freePaid
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Free/Paid"
+                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                    path="/apps/sauditourism/components/commons/generic/content/items/freePaid"/>
+                <heading-date
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/heading"
+                    level="{Long}2"
+                    text="Date"/>
+                <startDate
+                    cq:showOnCreate="{Boolean}true"
+                    granite:class="event-start-date set-default-date"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                    fieldLabel="Start Date"
+                    minDate="today"
+                    name="./calendarStartDate"
+                    required="{Boolean}true"
+                    type="date">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="calendarStartDate"/>
+                </startDate>
+                <endDate
+                    cq:showOnCreate="{Boolean}true"
+                    granite:class="event-end-date set-default-date"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                    fieldLabel="End Date"
+                    minDate="today"
+                    name="./calendarEndDate"
+                    required="{Boolean}true"
+                    type="date">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="calendarEndDate"/>
+                </endDate>
+                <section-working-time
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Working Time"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <workingTimeText
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Working Time Text"
+                            name="./workingTimeText">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="workingTimeText"/>
+                        </workingTimeText>
+                        <round-the-clock
+                            cq:showOnCreate="{Boolean}true"
+                            granite:class="js-dialog-showhide"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            fieldDescription="Check this if the place is opened round the clock (24 hours a day)"
+                            name="./roundTheClock"
+                            text="24 hours"
+                            uncheckedValue="{Boolean}false"
+                            value="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="roundTheClock"
+                                showhide-target=".working-time-showhide-target"/>
+                        </round-the-clock>
+                        <opening-time
+                            cq:showOnCreate="{Boolean}true"
+                            granite:class="working-time-showhide-target showhide-field-required-allow-hidden"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="HH:mm"
+                            fieldDescription="Enter here the daily opening time"
+                            fieldLabel="Opening Time"
+                            name="./startTime"
+                            type="time"
+                            valueFormat="YYYY-MM-DD[T]HH:mm:00.000Z">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="startTime"
+                                showhide-target-value="false"/>
+                        </opening-time>
+                        <closing-time
+                            cq:showOnCreate="{Boolean}true"
+                            granite:class="working-time-showhide-target showhide-field-required-allow-hidden"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="HH:mm"
+                            fieldDescription="Enter here the daily closing time"
+                            fieldLabel="Closing Time"
+                            name="./endTime"
+                            type="time"
+                            valueFormat="YYYY-MM-DD[T]HH:mm:00.000Z">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="endTime"
+                                showhide-target-value="false"/>
+                        </closing-time>
+                    </items>
+                </section-working-time>
+                <average-spend-time
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                    fieldDescription="Average time that can be spend for this event, in hours"
+                    fieldLabel="Average time to spend"
+                    name="./averageTime">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="averageTime"/>
+                </average-spend-time>
+                <event-info
+                    granite:class="coral-marker-multifield mf-level-2"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                    composite="{Boolean}true"
+                    cq-msm-lockable="eventInfo"
+                    fieldDescription="Click 'Add' to add a new info Item"
+                    fieldLabel="Info Items">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="eventInfo"
+                        max="{Long}8"
+                        min="{Long}2"/>
+                    <field
+                        granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                        name="./eventInfo">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Event Info item"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <label
+                                        granite:class="accordion-multifield-item-title"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Item Label"
+                                        name="./label"/>
+                                    <value
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Item Value"
+                                        name="./value"/>
+                                </items>
+                            </column>
+                        </items>
+                    </field>
+                </event-info>
+                <shortDescription
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    fieldLabel="Short Description"
+                    name="./shortDescription"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="shortDescription"/>
+                </shortDescription>
+                <linkTitle
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Link title"
+                    fieldDescription="Please enter the Booking/ register Link title"
+                    fieldLabel="Booking/ Register Link title"
+                    name="./eventLink-copy"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="eventLink-copy"/>
+                </linkTitle>
+                <linkAnalyticsTitle
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Link title"
+                    fieldDescription="Please enter the Booking/ register Link title (Analytics Data)"
+                    fieldLabel="Booking/ Register Link title (Analytics Data must be in English only)"
+                    name="./eventLink-analyticsDataCopy"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="eventLink-analyticsDataCopy"/>
+                </linkAnalyticsTitle>
+                <link
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    emptyText="Link that will be opened when this is clicked"
+                    fieldDescription="Link that will be opened when this is clicked"
+                    fieldLabel="Link"
+                    name="./eventLink-url"
+                    required="{Boolean}false"
+                    rootPath="/content/sauditourism">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="eventLink-url"/>
+                </link>
+                <hylink
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Check this if the booking link is internal"
+                    fieldLabel="Is Internal Booking Link"
+                    name="./isHalaYallaLink"
+                    text="Is Halayalla Link"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="isHalaYallaLink"/>
+                </hylink>
+                <targetInNewWindow
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Opens the link in a new window"
+                    fieldLabel="Target in new window"
+                    name="./eventLink-targetInNewWindow"
+                    text="Target in new window"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="eventLink-targetInNewWindow"/>
+                </targetInNewWindow>
+                <featured
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Featured event"
+                    fieldLabel="Featured event"
+                    name="./featured"
+                    text="Featured event"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true"/>
+                <copyClipboardTooltipText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Copy Clipboard Tooltip Text"
+                    name="./copyClipboardTooltipText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="copyClipboardTooltipText"/>
+                </copyClipboardTooltipText>
+                <readMoreButton
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Read More Button"
+                    name="./readMoreButton">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="readMoreButton"/>
+                </readMoreButton>
+                <readLessButton
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Read Less Button"
+                    name="./readLessButton">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="readLessButton"/>
+                </readLessButton>
+                <addToCalendarText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Add to Calendar Text"
+                    name="./addToCalendarText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="addToCalendarText"/>
+                </addToCalendarText>
+                <priceText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Price Text"
+                    name="./priceText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="priceText"/>
+                </priceText>
+                <priceValue
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Price Value"
+                    name="./priceValue">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="priceValue"/>
+                </priceValue>
+                <activities
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    fieldLabel="Activities"
+                    multiple="{Boolean}true"
+                    name="./activities"
+                    rootPath="/content/cq:tags/sauditourism/activities">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="activities"/>
+                </activities>
+                <accessibilityText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Accessibility Text"
+                    name="./accessibilityText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="accessibilityText"/>
+                </accessibilityText>
+                <accessibiltyValue
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Accessibilty Value"
+                    name="./accessibiltyValue">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="accessibiltyValue"/>
+                </accessibiltyValue>
+                <locationTitle
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Location Title"
+                    name="./locationTitle">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="locationTitle"/>
+                </locationTitle>
+                <addressInfo
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Address Info"
+                    name="./addressInfo">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="addressInfo"/>
+                </addressInfo>
+                <getDirectionCtaText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Get Direction Cta Text"
+                    name="./getDirectionCtaText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="getDirectionCtaText"/>
+                </getDirectionCtaText>
+                <getAnalyticsDirectionCtaText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Get Direction Cta Text (Analytics Data must be in English Only)"
+                    name="./getAnalyticsDirectionCtaText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="getAnalyticsDirectionCtaText"/>
+                </getAnalyticsDirectionCtaText>
+                <getDirectionCtaLink
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    emptyText="Link that will be opened when this is clicked"
+                    fieldDescription="Get Direction Cta Link"
+                    fieldLabel="Get Direction Cta Link"
+                    name="./getDirectionCtaLink"
+                    required="{Boolean}true"
+                    rootPath="/content/sauditourism">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="getDirectionCtaLink"/>
+                </getDirectionCtaLink>
+		<durationText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Duration Text"
+                    name="./durationText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="durationText"/>
+                </durationText>
+                <activitiesText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Activities Text"
+                    name="./activitiesText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="activitiesText"/>
+                </activitiesText>
+                <suitableForText
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Suitable For Text"
+                    name="./suitableForText">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="durationText"/>
+                </suitableForText>
+            </items>
+        </column>
+    </items>
+</jcr:root>

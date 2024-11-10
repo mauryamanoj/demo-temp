@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+          jcr:primaryType="rep:SystemUser"
+          jcr:uuid="7d1d8fd1-644e-3e6a-bd79-7b9db8e5e8cd"
+          rep:authorizableId="writeservice"
+          rep:principalName="writeservice"/>

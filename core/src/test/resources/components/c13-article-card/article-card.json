@@ -1,0 +1,29 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "maren.dethlefsen",
+  "description": "<h5>Ashar Resort</h5>\r\n<p>You\u2019ll find high-end villas, gourmet restaurants and a spa at the Ashar Resort<i> - </i>opening mid 2021. </p>\r\n",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Fri Nov 06 2020 16:55:11 GMT+0100",
+  "titleWeight": "h3",
+  "jcr:lastModified": "Tue Jul 05 2022 11:46:20 GMT+0200",
+  "sling:resourceType": "sauditourism/components/content/c13-article-card/v1/c13-article-card",
+  "textIsRich": "true",
+  "image": {
+    "jcr:primaryType": "nt:unstructured",
+    "s7fileReference": "https://scene7.adobe.com/sauditourism/placeholder.jpg",
+    "fileReference": "/content/dam/sauditourism/placeholder.jpg",
+    "alt": "Ashar Resort",
+    "mobileImageReference": "/content/dam/sauditourism/placeholder.jpg",
+    "s7mobileImageReference": "https://scene7.adobe.com/sauditourism/placeholder.jpg"
+  },
+  "text": {
+    "jcr:primaryType": "nt:unstructured",
+    "description": "Sample title text"
+  },
+  "caption": {
+    "jcr:primaryType": "nt:unstructured",
+    "copy": "Caption Title",
+    "link": "/content/sauditourism/en/events/-bar-masa",
+    "linkType": "internal"
+  }
+}

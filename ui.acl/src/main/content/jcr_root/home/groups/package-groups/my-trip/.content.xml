@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="77545dda-c321-37cf-a37f-1febdc16ea5a"
+    rep:authorizableId="my-trip"
+    rep:principalName="my-trip"/>

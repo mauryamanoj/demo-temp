@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2020-02-03T12:42:38.673+01:00"
+    cq:lastReplicatedBy="maren.dethlefsen"
+    cq:lastReplicationAction="Activate"
+    jcr:lastModified="{Date}2020-02-03T12:42:02.143+01:00"
+    jcr:lastModifiedBy="maren.dethlefsen"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="12 +"
+    jcr:title.ar="12 سنة فما فوق"
+    jcr:title.de="Über 12"
+    jcr:title.es="Mayores de 12 años"
+    jcr:title.fr="Plus de 12 ans"
+    jcr:title.ja="12歳以上"
+    jcr:title.ru="Старше 12"
+    jcr:title.zh="12岁以上"
+    sling:resourceType="cq/tagging/components/tag"/>

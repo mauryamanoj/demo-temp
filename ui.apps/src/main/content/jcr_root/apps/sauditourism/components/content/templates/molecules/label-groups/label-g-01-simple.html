@@ -1,0 +1,20 @@
+<template data-sly-template.labelG01Simple="${@ labelList, taglineColor, copyColor, containerColor,
+                                taglinePosition, tagLine, skipToggle}"
+          data-sly-use.label01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/labels/label-01-simple.html"
+          data-sly-set.toggle="${skipToggle ? 'data-should-skip-toggle' : ''}"
+          data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js'
+                @ attributes=[toggle]}">
+    <div data-component="label-g-01-simple"
+         class="tagline-position-${taglinePosition ? taglinePosition : ''}">
+    <ul class="tags" data-list-container data-sly-attribute="${attributesHelper.attributes}">
+        <li data-sly-test="${tagLine && labelList}"
+            class="tagline label-text color-${taglineColor}">${tagLine}</li>
+        <sly data-sly-list="${labelList}">
+            <li class="tag" data-list-item data-sly-test="${itemList.index < 3}">
+                <sly data-sly-call="${label01SimpleTemplate.label01Simple @ label=item,
+                containerColor=containerColor, copyColor=copyColor}"></sly>
+            </li>
+        </sly>
+    </ul>
+    </div>
+</template>

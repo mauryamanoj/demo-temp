@@ -1,0 +1,7 @@
+<sly data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html"
+     data-sly-use.model="com.saudi.tourism.core.models.components.nav.v1.BreadcrumbModel">
+    <div data-component="Breadcrumbs" data-props="${model.json @context='text'}"></div>
+    <sly data-sly-call="${templates.placeholder @ isEmpty = !title}"></sly>
+</sly>
+
+

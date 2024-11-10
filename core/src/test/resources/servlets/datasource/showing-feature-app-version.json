@@ -1,0 +1,89 @@
+{
+  "features": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "maps"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "search"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "sign in"
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "announcements"
+    },
+    "item4": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "packages"
+    },
+    "item5": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "deals"
+    },
+    "item6": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "saudi calendar"
+    },
+    "item7": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "destiinations"
+    },
+    "item8": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "hotels"
+    },
+    "item9": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "activities"
+    },
+    "item10": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "addtofavourite"
+    },
+    "item11": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "share item"
+    },
+    "item12": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "road trips"
+    },
+    "item13": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "see & do"
+    },
+    "item14": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "calendar"
+    },
+    "item15": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "loyalty"
+    },
+    "item16": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "essentials"
+    },
+    "item17": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "my trip"
+    },
+    "item18": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "booking"
+    },
+    "item19": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "get Directions"
+    },
+    "item20": {
+      "jcr:primaryType": "nt:unstructured",
+      "item": "smart pass"
+    }
+  }
+}

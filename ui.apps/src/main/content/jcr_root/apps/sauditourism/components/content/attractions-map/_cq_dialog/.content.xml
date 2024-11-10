@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:title="Attractions Map"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <all-destinations
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Attractions Map"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <id
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Component ID"
+                                        name="./componentId"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}false">
+                                    </title>
+                                    <subTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Sub Title"
+                                        required="{Boolean}false"
+                                        name="./subTitle"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                                        <uiSettings
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                                    </subTitle>
+                                    <ctaText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Text"
+                                        name="./link/text">
+                                    </ctaText>
+                                    <ctaUrl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="CTA Url"
+                                        name="./link/url"
+                                        rootPath="/content">
+                                    </ctaUrl>
+                                    <allCategoriesFilterLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="All Categories Filter Label"
+                                        name="./categoryFilter/label">
+                                    </allCategoriesFilterLabel>
+                                    <allDestinationsFilterLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="All Destinations Filter Label"
+                                        name="./destinationFilter/label">
+                                    </allDestinationsFilterLabel>
+                                    <noResultsFoundLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="No Results Found Label"
+                                        fieldLabel="No Results Found"
+                                        name="./noResultsFoundLabel">
+                                    </noResultsFoundLabel>
+                                    <manual-authoring
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable Manual Authoring"
+                                        text="Enable Manual Authoring"
+                                        name="./enableManualAuthoring"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target=".manual-authoring-showhide-target"/>
+                                    </manual-authoring>
+                                    <destinations
+                                        granite:class="manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./destinations">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <destination
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <destinationCFPath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            required="{Boolean}True"
+                                                            fieldLabel="Destination CF"
+                                                            rootPath="/content/dam/sauditourism/cf"
+                                                            name="./destinationCFPath"/>
+                                                    </items>
+                                                </destination>
+                                            </items>
+                                        </field>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </destinations>
+                                    <categories
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                        fieldDescription="Select what this Categories is best suitable for"
+                                        fieldLabel="Category Tags"
+                                        forceSelection="{Boolean}true"
+                                        multiple="{Boolean}true"
+                                        name="./categories"
+                                        required="{Boolean}false"
+                                        rootPath="/content/cq:tags/sauditourism/categories"
+                                        validation="tags.count.validator">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </categories>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </all-destinations>
+        </items>
+    </content>
+</jcr:root>
+
+

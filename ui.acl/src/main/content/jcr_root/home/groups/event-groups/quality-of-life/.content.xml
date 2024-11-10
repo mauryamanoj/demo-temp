@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-13T22:48:44.323+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-13T22:48:44.323+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="c9cd1471-ba30-397a-b881-d150a60ce729"
+    rep:authorizableId="quality-of-life"
+    rep:members="{WeakReference}[]"
+    rep:principalName="quality-of-life">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="quality-of-life"/>
+</jcr:root>

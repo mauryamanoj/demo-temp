@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          cq:showOnCreate="{Boolean}true"
+          granite:class="core-wcm-edetailing dialog-container"
+          jcr:primaryType="cq:Widget"
+          jcr:title="Stoch Event Details"
+          sling:resourceType="granite/ui/components/foundation/container">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+        margin="{Boolean}false"/>
+    <items jcr:primaryType="nt:unstructured">
+        <stoch jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <eventType jcr:primaryType="nt:unstructured"
+                               cq:showOnCreate="{Boolean}true"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                               fieldLabel="Event Type" name="./eventType">
+                    <datasource
+                            jcr:primaryType="nt:unstructured"
+                            path="sauditourism/components/content/utils/event-type"
+                            sling:resourceType="sauditourism/generic/datasource"/>
+                </eventType>
+                <image jcr:primaryType="nt:unstructured"
+                       cq:showOnCreate="{Boolean}true"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldLabel="360 Image"
+                       name="./360Image"/>
+                <source jcr:primaryType="nt:unstructured"
+                          cq:showOnCreate="{Boolean}true"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                           multiple="{Boolean}true"
+                        fieldDescription="if none selected will be returned for all channels"
+                        fieldLabel="Channel restriction" name="./channel">
+                    <items jcr:primaryType="nt:unstructured">
+                        <map jcr:primaryType="nt:unstructured" value="map"
+                                text="map"/>
+                        <calendar jcr:primaryType="nt:unstructured" value="calendar"
+                               text="calendar"/>
+                        <vsweb jcr:primaryType="nt:unstructured" value="vsweb"
+                               text="vsweb"/>
+                        <vsapp jcr:primaryType="nt:unstructured" value="vsapp"
+                               text="vsapp"/>
+
+                    </items>
+                </source>
+
+                <mapLink
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                    composite="{Boolean}true"
+                    fieldDescription="Click 'Add' to add GoogleMaps Link"
+                    fieldLabel="Area/Location">
+                    <field
+                        granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                        name="./mapLinks">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Links"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <platform jcr:primaryType="nt:unstructured"
+                                                 cq:showOnCreate="{Boolean}true"
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                 fieldLabel="Map Platform" name="./platform">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <google jcr:primaryType="nt:unstructured" value="google"
+                                                          text="Google"/>
+                                            <baidu jcr:primaryType="nt:unstructured" value="baidu"
+                                                    text="Baidu"/>
+                                            <apple jcr:primaryType="nt:unstructured" value="apple"
+                                                   text="Apple"/>
+                                            <naver jcr:primaryType="nt:unstructured" value="naver"
+                                                   text="Naver"/>
+                                        </items>
+                                    </platform>
+                                    <name
+                                        jcr:primaryType="nt:unstructured"
+                                        cq:showOnCreate="{Boolean}true"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Name"
+                                        fieldLabel="Name"
+                                        name="./name"/>
+                                    <label
+                                        jcr:primaryType="nt:unstructured"
+                                        cq:showOnCreate="{Boolean}true"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Label"
+                                        fieldLabel="Label"
+                                        name="./label"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        cq:showOnCreate="{Boolean}true"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        emptyText="Map Link"
+                                        fieldDescription="Link"
+                                        fieldLabel="Link"
+                                        name="./link"/>
+                                    <active jcr:primaryType="nt:unstructured"
+                                            cq:showOnCreate="{Boolean}true"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                           text="Active" name="./active" uncheckedValue="{Boolean}false"
+                                           value="{Boolean}true"/>
+
+                                    <typeMapLink jcr:primaryType="nt:unstructured"
+                                                 cq:showOnCreate="{Boolean}true"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                          fieldLabel="Link Type" name="./typeMapLink">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <parkingLinks jcr:primaryType="nt:unstructured" value="parkingLinks"
+                                                          text="Parking Links"/>
+                                            <entranceLinks jcr:primaryType="nt:unstructured" value="entranceLinks"
+                                                           text="Entrance Links"/>
+                                        </items>
+                                    </typeMapLink>
+                                </items>
+                            </column>
+                        </items>
+                    </field>
+                </mapLink>
+                <weekendEvent jcr:primaryType="nt:unstructured"
+                              cq:showOnCreate="{Boolean}true"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                              text="Weekend Event" name="./weekendEvent" uncheckedValue="{Boolean}false"
+                              value="{Boolean}true"/>
+                <promoTagText jcr:primaryType="nt:unstructured"
+                              cq:showOnCreate="{Boolean}true"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                              fieldLabel="Promo Tag Text" name="./promoTagText" min="{Double}0" max="{Double}100"/>
+                <featuredInMap jcr:primaryType="nt:unstructured"
+                               cq:showOnCreate="{Boolean}true"
+                               sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                               text="Featured in Map" name="./featuredInMap" uncheckedValue="{Boolean}false"
+                               value="{Boolean}true"/>
+            </items>
+        </stoch>
+
+    </items>
+</jcr:root>

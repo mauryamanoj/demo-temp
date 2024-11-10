@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Hafr Al Batin"
+    jcr:title.ar="حفر الباطن"
+    jcr:title.de="Hafr Al Batin"
+    jcr:title.es="Hafar Al Batin"
+    jcr:title.fr="Hafar Al-Batin"
+    jcr:title.ja="ハフル・アル・バティン"
+    jcr:title.ru="Хафар-эль-Батин"
+    jcr:title.zh="哈夫阿巴廷"
+    sling:resourceType="cq/tagging/components/tag"
+    city="hafr-al-batin"/>

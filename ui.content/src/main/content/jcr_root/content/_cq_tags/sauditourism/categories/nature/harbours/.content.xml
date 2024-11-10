@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Harbours"
+          jcr:title.ar="موانئ"
+          jcr:title.de="Häfen"
+          jcr:title.es="Puertos"
+          jcr:title.fr="Ports"
+          jcr:title.ja="港湾"
+          jcr:title.ru="Гавани"
+          jcr:title.zh="港口"
+          sling:resourceType="cq/tagging/components/tag"/>

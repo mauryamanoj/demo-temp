@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="6 Days"
+          jcr:title.ar="6 أي"
+          jcr:title.fr="6 jours"
+          jcr:title.es="6 días"
+          jcr:title.ru="6 дней"
+          jcr:title.de="6 Tage"
+          jcr:title.zh="六天"
+          jcr:title.ja="6日"
+          sling:resourceType="cq/tagging/components/tag"/>

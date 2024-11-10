@@ -1,0 +1,11 @@
+{
+  "jcr:created": "Mon Dec 18 2023 09:22:06 GMT+0100",
+  "title": "Small Stories",
+  "cardCFPaths": "/content/dam/sauditourism/cf/en/stories/story-2",
+  "jcr:lastModified": "Mon Dec 18 2023 09:22:55 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/small-stories",
+  "link": {
+    "url": "/content/sauditourism/en/abha-festival",
+    "text": "View All"
+  }
+}

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Image"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      jcr:description="Imagery"
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Image"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./caption/copy">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="./caption/copy"/>
+          </copy>
+          <link-type
+              granite:class="js-dialog-showhide"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/select"
+              fieldDescription="Link type: none, internal, external"
+              fieldLabel="Link Type"
+              name="./caption/linkType">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="caption/linkType"
+                metaType="dropdown"
+                showhide-target=".caption-link-type-showhide-target"/>
+            <items jcr:primaryType="nt:unstructured">
+              <none
+                  jcr:primaryType="nt:unstructured"
+                  text="None"
+                  value=""/>
+              <internal
+                  jcr:primaryType="nt:unstructured"
+                  text="Internal"
+                  value="internal"/>
+              <booking
+                  jcr:primaryType="nt:unstructured"
+                  text="External"
+                  value="external"/>
+            </items>
+          </link-type>
+          <link
+              granite:class="caption-link-type-showhide-target"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link that will be opened when Learn More is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./caption/link">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="caption/link"
+                showhide-target-value="internal external"/>
+          </link>
+        </items>
+      </image-caption>
+    </items>
+  </content>
+  <app
+      jcr:description="Imagery"
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Image-related Dialog configs for APP components"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./imageCaption/copy">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="imageCaption/copy"/>
+          </copy>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./imageCaption/link">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="imageCaption/link"/>
+          </link>
+        </items>
+      </image-caption>
+      <featured-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Feature Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./featuredImageCaption/copy">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="featuredImageCaption/copy"/>
+          </copy>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./featuredImageCaption/link">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="featuredImageCaption/link"/>
+          </link>
+        </items>
+      </featured-image-caption>
+      <card-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Card Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./cardImageCaption/copy">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="cardImageCaption/copy"/>
+          </copy>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./cardImageCaption/link">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="cardImageCaption/link"/>
+          </link>
+        </items>
+      </card-image-caption>
+      <preview-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Preview Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./previewImageCaption/copy">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="previewImageCaption/copy"/>
+          </copy>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./previewImageCaption/link">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="previewImageCaption/link"/>
+          </link>
+        </items>
+      </preview-image-caption>
+      <slider-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Slider Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./sliderImageCaption/copy">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="sliderImageCaption/copy"/>
+          </copy>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./sliderImageCaption/link">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="webMappingPath"/>
+          </link>
+        </items>
+      </slider-image-caption>
+    </items>
+  </app>
+  <app-multifield
+      jcr:description="Image captions to be used multifield"
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Image-related Dialog configs for APP components"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./imageCaption/copy"/>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./imageCaption/link"/>
+        </items>
+      </image-caption>
+      <featured-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Feature Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./featuredImageCaption/copy"/>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./featuredImageCaption/link"/>
+        </items>
+      </featured-image-caption>
+      <card-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Card Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./cardImageCaption/copy"/>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./cardImageCaption/link"/>
+        </items>
+      </card-image-caption>
+      <preview-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Preview Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./previewImageCaption/copy"/>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./previewImageCaption/link"/>
+        </items>
+      </preview-image-caption>
+      <slider-image-caption
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Slider Image Caption"
+          sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+        <items jcr:primaryType="nt:unstructured">
+          <copy
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Caption text to display over the image"
+              fieldLabel="Caption Title"
+              name="./sliderImageCaption/copy"/>
+          <link
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+              fieldDescription="Link must be opened when the caption is clicked"
+              rootPath="/content/sauditourism"
+              fieldLabel="Link"
+              name="./sliderImageCaption/link"/>
+        </items>
+      </slider-image-caption>
+    </items>
+  </app-multifield>
+</jcr:root>

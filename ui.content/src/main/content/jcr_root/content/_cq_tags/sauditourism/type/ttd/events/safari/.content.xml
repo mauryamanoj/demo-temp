@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Safari"
+          jcr:title.ar="سفاري"
+          jcr:title.de="Safari"
+          jcr:title.es="Safari"
+          jcr:title.fr="Safari"
+          jcr:title.ja="サファリ"
+          jcr:title.ru="Сафари"
+          jcr:title.zh="野生动物园"
+
+          sling:resourceType="cq/tagging/components/tag"/>
+
+

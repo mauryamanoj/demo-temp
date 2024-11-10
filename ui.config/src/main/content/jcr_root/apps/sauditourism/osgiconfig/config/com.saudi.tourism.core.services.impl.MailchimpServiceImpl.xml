@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          apiKey="d1d269bc605a9e7c2f3dbe7af7eefca1-us10"
+          listId="9c0a110ff6"
+          url="https://us10.api.mailchimp.com/3.0/"
+/>

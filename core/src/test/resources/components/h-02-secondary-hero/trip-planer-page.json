@@ -1,0 +1,639 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Nov 24 2021 07:46:09 GMT+0000",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Trip planner",
+    "cq:lastReplicationAction":"Activate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"bf62cbf3-2d8a-4069-97a0-157735b40f04",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "searchCategories":[
+      "sauditourism:searchCategories/PlanYourTrip"
+    ],
+    "jcr:predecessors":[
+      "5f8aa625-4e26-4ab6-a1ea-691131e2e89d"
+    ],
+    "sling:redirect":"true",
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Wed Nov 24 2021 07:46:09 GMT+0000",
+    "cq:lastReplicated":"Wed Jul 27 2022 10:34:20 GMT+0000",
+    "cq:lastModified":"Wed Jul 27 2022 10:34:11 GMT+0000",
+    "s7featureImage":"https://scth.scene7.com/is/image/scth/gallery_05",
+    "theme":"red",
+    "jcr:description":"Create a fully customized day-by-day itinerary and discover the hidden gems of Saudi.",
+    "jcr:baseVersion":"5f8aa625-4e26-4ab6-a1ea-691131e2e89d",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "pageTitle":"Trip planner: Create Your Own Saudi Itinerary | Visit Saudi Arabia",
+    "jcr:uuid":"945b6179-1c00-4ab8-9ef9-e004716ae40f",
+    "featureImage":"/content/dam/articles/batch-5a/open-air-attractions-in-saudi/full-size-images/gallery_05.jpg",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "navTitle":"Trip planner",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "subtitleWeight":"h3",
+          "createItineraryLabel":"Create Itinerary",
+          "interactiveVideo":"false",
+          "jcr:created":"Thu Dec 03 2020 14:55:46 GMT+0100",
+          "title":"Trip Planner",
+          "showFullHeight":"false",
+          "titleWeight":"h1",
+          "hideFav":"true",
+          "jcr:lastModified":"Tue Mar 09 2021 15:11:41 GMT+0100",
+          "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/gallery_05",
+            "fileReference":"/content/dam/articles/batch-5a/open-air-attractions-in-saudi/full-size-images/gallery_05.jpg",
+            "alt":"Trip Planner",
+            "mobileImageReference":"/content/dam/articles/batch-5a/open-air-attractions-in-saudi/full-size-images/gallery_05.jpg",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/gallery_05"
+          },
+          "link":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "caption":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "c02_title_intro":{
+          "jcr:primaryType":"nt:unstructured",
+          "mainTitleWeight":"h2",
+          "introTitleWeight":"h4",
+          "jcr:created":"Wed Mar 10 2021 13:41:50 GMT+0100",
+          "mainTitle":"Curate Your Very Own Saudi Adventure",
+          "introDescription":"Create a fully customized day-by-day itinerary and discover the hidden gems of Saudi Arabia. Select your destinations, the date of your trip and the local attractions you want to discover. Planning your trip has never been so easy!",
+          "introSubtitleWeight":"h3",
+          "jcr:lastModified":"Wed Jul 27 2022 10:34:11 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/c02-title-intro/v1/c02-title-intro"
+        },
+        "trips_overview":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:created":"Tue Mar 16 2021 16:44:48 GMT+0100",
+          "jcr:lastModified":"Tue Mar 30 2021 15:09:58 GMT+0200",
+          "sling:resourceType":"sauditourism/components/content/trip-planner/v1/trips-overview",
+          "titles":{
+            "jcr:primaryType":"nt:unstructured",
+            "pastTrips":"Past Trips",
+            "upcomingTrips":"Your Trips"
+          },
+          "exploreButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "href":"/content/sauditourism/en/my-trips",
+            "label":"Explore All"
+          },
+          "cardCopies":{
+            "jcr:primaryType":"nt:unstructured",
+            "deleteButtonLabel":"Delete",
+            "multipleSelectionLabel":"Multiple selection ($0)",
+            "featuredLabel":"Featured trip by Suadi"
+          },
+          "deleteModal":{
+            "jcr:primaryType":"nt:unstructured",
+            "firstLine":"Hey! ",
+            "secondLine":"Are you sure you want to remove this trip?",
+            "smallMessage":"This is an irreversible action.",
+            "primaryButton":{
+              "jcr:primaryType":"nt:unstructured",
+              "label":"Yes, remove it"
+            },
+            "secondaryButton":{
+              "jcr:primaryType":"nt:unstructured",
+              "label":"No, keep it"
+            }
+          }
+        },
+        "c25_big_slider_52829":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:mixinTypes":[
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy":"admin",
+          "jcr:lastModifiedBy":"admin",
+          "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+          "jcr:created":"Wed Feb 03 2021 11:02:26 GMT+0100",
+          "variant":"simple",
+          "jcr:lastModified":"Fri Mar 19 2021 14:48:24 GMT+0100",
+          "sling:resourceType":"sauditourism/components/content/c25-big-slider/v1/c25-big-slider",
+          "cq:styleIds":[
+            "1573111156026"
+          ],
+          "componentHeading":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:mixinTypes":[
+              "cq:LiveRelationship"
+            ],
+            "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:mixinTypes":[
+                "cq:LiveRelationship"
+              ],
+              "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+              "weight":"h1",
+              "text":"Trending destinations"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:mixinTypes":[
+                "cq:LiveRelationship"
+              ],
+              "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+              "url":"/content/sauditourism/en/see-do/destinations",
+              "copy":"Explore All",
+              "targetInNewWindow":"false"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:mixinTypes":[
+              "cq:LiveRelationship"
+            ],
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+            "jcr:lastModified":"Fri Mar 19 2021 14:48:24 GMT+0100"
+          },
+          "authorSlides":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:mixinTypes":[
+              "cq:LiveRelationship"
+            ],
+            "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:mixinTypes":[
+                "cq:LiveRelationship"
+              ],
+              "description":"The capital of Saudi Arabia’s Eastern Province, Dammam has tranquil views and a bustling infrastructure. Learn more about the city of Dammam here!",
+              "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+              "title":"Dammam",
+              "hideSlide":"false",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "url":"/content/sauditourism/en/see-do/destinations/dammam",
+                "copy":"Discover",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "s7fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/dammam_break_free_landing_page_winter_campaign_1920x1080_1.jpg",
+                "fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/dammam_break_free_landing_page_winter_campaign_1920x1080_1.jpg",
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "alt":"Dammam"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:mixinTypes":[
+                "cq:LiveRelationship"
+              ],
+              "description":"Offering a unique blend of historic and contemporary experiences, AlUla is a must-stop for people looking to immerse themselves in the culture of Saudi Arabia.",
+              "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+              "title":"AlUla",
+              "hideSlide":"false",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "url":"/content/sauditourism/en/see-do/destinations/alula",
+                "copy":"Discover",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "s7fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg",
+                "fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg",
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "alt":"AlUla"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:mixinTypes":[
+                "cq:LiveRelationship"
+              ],
+              "description":"Often referred to as Saudi’s capital of culture, Riyadh showcases the KSA’s beauty and wonder. Learn more about Riyadh’s history, culture and cuisine.",
+              "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+              "title":"Riyadh",
+              "hideSlide":"false",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "url":"/content/sauditourism/en/see-do/destinations/riyadh",
+                "copy":"Discover",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "s7fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/riyadh_break_free_landing_page_winter_campaign_1920x1080_3.jpg",
+                "fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/riyadh_break_free_landing_page_winter_campaign_1920x1080_3.jpg",
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "alt":"Riyadh"
+              }
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:mixinTypes":[
+                "cq:LiveRelationship"
+              ],
+              "description":"One of the most lavish ports in all of Saudi Arabia, Jeddah showcases the beauty of the KSA. Follow this tourism guide to Jeddah to get the most from your trip!",
+              "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+              "title":"Jeddah",
+              "hideSlide":"false",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "url":"/content/sauditourism/en/see-do/destinations/jeddah",
+                "copy":"Discover",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:LiveRelationship"
+                ],
+                "s7fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/jeddah_break_free_landing_page_winter_campaign_1920x1080_6.jpg",
+                "fileReference":"/content/dam/no-dynamic-media-folder/new-hero-winter/jeddah_break_free_landing_page_winter_campaign_1920x1080_6.jpg",
+                "cq:lastRolledout":"Fri Mar 19 2021 14:48:24 GMT+0100",
+                "alt":"Jeddah"
+              }
+            }
+          }
+        },
+        "c27_teaser_with_card":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "background":"white",
+          "pattern":"01",
+          "jcr:created":"Thu Dec 03 2020 18:36:37 GMT+0100",
+          "title":"Mod-Te-04",
+          "jcr:lastModified":"Tue Mar 09 2021 16:27:12 GMT+0100",
+          "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards",
+          "hideDescription":"false",
+          "backgroundOrnamentId":"06",
+          "textIsRich":[
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "componentType":"a-general-cards",
+          "isColorVariant":"true",
+          "header":{
+            "jcr:primaryType":"nt:unstructured",
+            "showUnderline":"false",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "text":"Best experiences and tours"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "url":"/content/sauditourism/en/do/arabian-experiences",
+              "copy":"Explore All"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModified":"Tue Mar 09 2021 16:27:12 GMT+0100"
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>This package offers you a full tour of the city and takes you on excursions to explore Riyadh's breathtaking surroundings - including a trip to the desert.</p>\r\n",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"4 days",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Four days in Riyadh",
+              "useActivityLink":"false",
+              "simpleTagLines":"Riyadh",
+              "hideFav":"false",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/do/arabian-experiences/paths-to-modern-arabia/four-days-in-riyadh",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/7041-family-enjoy-traditional-arabian-evening-campfire-on-camel-trail-STILLS_6634 x 4976-2",
+                "fileReference":"/content/dam/saudi-tourism/media/tour-packages/riyadh/760x570/7041-family-enjoy-traditional-arabian-evening-campfire-on-camel-trail-STILLS_6634 x 4976.jpg",
+                "alt":"Riyadh"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"This itinerary offers a complete immersion in Al Ahsa and it’s surrounding including a visit to the Yellow Lake.",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"2 days",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Two days in Al Ahsa",
+              "useActivityLink":"false",
+              "simpleTagLines":"Al Ahsa",
+              "hideFav":"false",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/do/arabian-experiences/al-ahsa/two-days-in-al-ahsa",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/SA_0036_kirkland_2016_6314 x 4736-3",
+                "fileReference":"/content/dam/saudi-tourism/media/tour-packages/ahsa/760x570/SA_0036_kirkland_2016_6314 x 4736.jpg",
+                "alt":"Al Ahsa"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"The full Taif experience invites you to head out to the mountain to hike the trails and visit a true natural wonder, the Al Wahbah crater.",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"2 days",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Two days in Taif",
+              "useActivityLink":"false",
+              "simpleTagLines":"Taif",
+              "hideFav":"false",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/do/arabian-experiences/journey-of-the-mystic-rose/two-days-in-taif",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/resized-2-166827 (1)",
+                "fileReference":"/content/dam/saudi-tourism/media/tour-packages/taif/resized-2-166827 (1).jpg",
+                "alt":"Taif"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"Spend a day enjoying Jeddah’s famed Corniche, embraced by the Red Sea on one side and the city’s energy on the other.",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"1 day",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"One day in Jeddah",
+              "useActivityLink":"false",
+              "simpleTagLines":"Jeddah",
+              "hideFav":"false",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/do/arabian-experiences/journey-to-the-seaside-jewel/one-day-in-jeddah",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/161652_5914 x 4436-2",
+                "fileReference":"/content/dam/saudi-tourism/media/tour-packages/jeddah/760x570/161652_5914 x 4436.jpg",
+                "alt":"Jeddah"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        },
+        "c27_teaser_with_card_1421421789":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "background":"white",
+          "pattern":"01",
+          "jcr:created":"Wed Feb 03 2021 11:44:47 GMT+0100",
+          "title":"Mod-Te-04",
+          "jcr:lastModified":"Thu Mar 11 2021 12:26:54 GMT+0100",
+          "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards",
+          "hideDescription":"true",
+          "backgroundOrnamentId":"06",
+          "textIsRich":[
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "componentType":"a-general-cards",
+          "isColorVariant":"true",
+          "header":{
+            "jcr:primaryType":"nt:unstructured",
+            "showUnderline":"false",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "text":"Keep exploring"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModified":"Thu Mar 11 2021 12:26:54 GMT+0100"
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>With 13 international airports, served by a wealth of global carriers, getting to and around the Kingdom couldn’t be easier. A first-rate transportation system connects Saudi Arabia’s provinces and cities, serving millions of people each day.</p>\r\n",
+              "tagline":"Getting Here & Around",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Transportation",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"button without icon",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/plan-your-trip/transportation",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/card-05-102",
+                "fileReference":"/content/dam/saudi-tourism/media/understand/1920x1080/card-05.jpg",
+                "imageSpecial":"/content/dam/saudi-tourism/media/getting-around/1920x1080/card-02.jpg",
+                "alt":"Transportation",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/understand/1920x1080/card-05.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/card-05-102"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Routes, rental cars and local tips: Here's everything you need to know for an unforgettable road trip adventure.</p>\r\n",
+              "tagline":"Buckle up",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Road Trip Guide",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"button without icon",
+              "imagePosition":"right",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/road-trip-essentials",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/getting_around_01_1920x1080",
+                "fileReference":"/content/dam/saudi-tourism/media/getting-around/1920x1080/getting_around_01_1920x1080.jpg",
+                "imageSpecial":"/content/dam/saudi-tourism/media/getting-around/1920x1080/getting_around_01_1920x1080.jpg",
+                "alt":"Road Trip Guide",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/getting-around/1920x1080/getting_around_01_1920x1080.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/getting_around_01_1920x1080"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"About Saudi",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/understand",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/brand-page-hero-1460",
+                "fileReference":"/content/dam/saudi-tourism/media/understand/brand-page-hero.jpg",
+                "alt":"About Saudi",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/understand/brand-page-hero.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/brand-page-hero-1460"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Tourist Visas",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/about-e-visa",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/brand-page-hero-1920-134",
+                "fileReference":"/content/dam/saudi-tourism/media/about-evisa/brand-page-hero-1920.jpg",
+                "alt":"Tourist Visas",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/about-evisa/brand-page-hero-1920.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/brand-page-hero-1920-134"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        }
+      }
+    },
+    "seoKeys":{
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{
+        "jcr:primaryType":"nt:unstructured",
+        "keyword":"trip planner "
+      },
+      "item1":{
+        "jcr:primaryType":"nt:unstructured",
+        "keyword":"saudi arabia itinerary "
+      },
+      "item2":{
+        "jcr:primaryType":"nt:unstructured",
+        "keyword":"travel planner "
+      }
+    }
+  }
+}

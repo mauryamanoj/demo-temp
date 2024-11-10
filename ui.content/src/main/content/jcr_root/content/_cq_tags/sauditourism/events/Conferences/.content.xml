@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2020-02-03T12:51:56.722+01:00"
+    cq:lastReplicatedBy="maren.dethlefsen"
+    cq:lastReplicationAction="Activate"
+    jcr:lastModified="{Date}2020-04-15T18:43:40.336+02:00"
+    jcr:lastModifiedBy="maren.dethlefsen"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Convention &amp; Exhibition"
+    jcr:title.ar="مؤتمرات و معارض"
+    jcr:title.de="Konferenzen und Ausstellungen "
+    jcr:title.es="Convenciones y exposiciones"
+    jcr:title.fr="Conventions et expositions"
+    jcr:title.ja="会議＆展示会"
+    jcr:title.ru="Конференции и выставки"
+    jcr:title.zh="活动及展览"
+    sling:resourceType="cq/tagging/components/tag"/>

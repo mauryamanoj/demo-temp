@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          cq:showOnCreate="{Boolean}True"
+          jcr:primaryType="cq:Widget"
+          jcr:title="Search"
+          granite:class="core-wcm-edetailing dialog-container"
+          sling:resourceType="granite/ui/components/foundation/container">
+  <layout
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+      margin="{Boolean}false"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <searchCategories
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="Select search categories for the page"
+                                fieldLabel="Search categories"
+                                forceSelection="{Boolean}true"
+                                multiple="{Boolean}true"
+                                name="./searchCategories"
+                                required="{Boolean}true"
+                                rootPath="/content/cq:tags/sauditourism/searchCategories"
+                                validation="tags.count.validator">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="searchCategories"/>
+                        </searchCategories>
+                    </items>
+                </section>
+            </items>
+        </column>
+    </items>
+</jcr:root>

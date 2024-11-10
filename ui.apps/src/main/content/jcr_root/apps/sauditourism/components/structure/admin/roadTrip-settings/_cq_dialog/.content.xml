@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Road Trip Configs"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.common.wcm,sauditourism.author]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+            <filters-tab
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                jcr:title="RoadTrip filter settings"
+                jcr:description="RoadTrip filter settings">
+                <items jcr:primaryType="nt:unstructured">
+                    <filters
+                        jcr:description="Configure Halayalla roadtrip filters"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Road Trip Filters"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <filters-multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="List of all Roadtrip Filters"
+                                fieldDescription="Add here all the Roadtrip Filters">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./filters"
+                                    granite:class="accordion-multifield-item"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <filter-item
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Road Trip Filter"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <key
+                                                    granite:class="js-dialog-showhide"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Enter the field or key of the road trip filter"
+                                                    fieldLabel="Filter"
+                                                    required="{Boolean}true"
+                                                    name="./key">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        metaType="dropdown"
+                                                        showhide-target=".filter-key-showhide-target"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None"
+                                                            value=""/>
+                                                        <transport
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Transport"
+                                                            value="transport"/>
+                                                        <category
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Categories"
+                                                            value="categories"/>
+                                                        <startCity
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Start City"
+                                                            value="start_city"/>
+                                                        <duration
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Duration"
+                                                            value="duration"/>
+                                                        <distance
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Distance"
+                                                            value="minDistance,maxDistance"/>
+                                                    </items>
+                                                </key>
+                                                <name
+                                                    granite:class="accordion-multifield-item-title"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter the name of the road trip filter"
+                                                    fieldLabel="Name"
+                                                    required="{Boolean}true"
+                                                    name="./name"/>
+                                                <type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Select the type of the field in road trip filter"
+                                                    fieldLabel="Type"
+                                                    required="{Boolean}true"
+                                                    name="./type">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None"
+                                                            value=""/>
+                                                        <radio
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="RadioButton"
+                                                            value="radioButton"/>
+                                                        <checkbox
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Checkbox"
+                                                            value="checkbox"/>
+                                                        <range
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Range"
+                                                            value="range"/>
+                                                        <dateRange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Date Range"
+                                                            value="dateRange"/>
+                                                        <boolean
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Boolean"
+                                                            value="boolean"/>
+                                                    </items>
+                                                </type>
+                                                <minimum-distance-range
+                                                    granite:class="filter-key-showhide-target"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    fieldDescription="Minimum distance range in km"
+                                                    fieldLabel="Minimum Distance range"
+                                                    min="0"
+                                                    name="./minDistance">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        showhide-target-value="minDistance,maxDistance"/>
+                                                </minimum-distance-range>
+                                                <maximum-distance-range
+                                                    granite:class="filter-key-showhide-target"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    fieldDescription="Maximum distance range in km"
+                                                    fieldLabel="Maximum Distance range"
+                                                    name="./maxDistance">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        showhide-target-value="minDistance,maxDistance"/>
+                                                </maximum-distance-range>
+                                            </items>
+                                        </filter-item>
+                                    </items>
+                                </field>
+                            </filters-multifield>
+                        </items>
+                    </filters>
+                </items>
+            </filters-tab>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

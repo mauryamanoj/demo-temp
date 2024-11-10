@@ -1,0 +1,34 @@
+<sly data-sly-template.linkObj="${@ linkClass, dataTransition, dataLocation, linkObj, copy, link,
+        isCircle, dataId, openNewTab}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+     data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js' @
+         attributes=[dataTransition]}">
+  <a href="#" class="link ${linkClass}"
+     data-sly-attribute.href="${link || linkObj.urlWithExtension || linkObj.url @ context='uri'}"
+     data-sly-attribute.target="${openNewTab || linkObj.targetInNewWindow ? '_blank' : ''}"
+     data-sly-attribute.rel="${openNewTab || linkObj.targetInNewWindow ? 'noopener noreferrer' : ''}"
+     title="${linkObj.copy || copy @ i18n}"
+     itemprop="url"
+     data-sly-attribute="${attributesHelper.attributes}"
+     data-sly-attribute.data-location="${dataLocation}"
+     data-sly-attribute.data-id="${dataId}"
+     data-component="link"
+     data-sly-attribute.data-editor="${wcmmode.edit ? 'true' : 'false'}">
+    <span data-sly-test.copyText="${linkObj.copy || copy @ i18n}"
+         class="link-copy cta-text">${copyText}</span>
+    <span class="icon-wrapper ${isCircle ? 'circle-wrapper' : ''}">
+      <sly data-sly-test="${isCircle}"
+           data-sly-set.isSmall="${linkClass == 'small'}">
+        <sly data-sly-call="${iconTemplate.icon @ iconName= (isSmall ? 'small-circle' : 'circle'),
+          iconClass= (isSmall ? 'animated small circle' : 'animated circle')}"></sly>
+      </sly>
+      <span class="chevron-wrapper ${isCircle ? 'chevron-with-circle-wrapper' :
+          'chevron-without-circle-wrapper'}">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='arrow-right-small',
+            iconClass='chevron'}"></sly>
+        <sly data-sly-call="${iconTemplate.icon @ iconName='arrow-right-small',
+            iconClass='chevron'}"></sly>
+      </span>
+    </span>
+  </a>
+</sly>

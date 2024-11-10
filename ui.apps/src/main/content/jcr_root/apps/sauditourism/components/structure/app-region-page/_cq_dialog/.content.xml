@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Saudi Tourism Region Page"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties]"
+          helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+          mode="edit">
+  <content
+      granite:class="cq-dialog-content-page"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          granite:class="cq-siteadmin-admin-properties-tabs"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          size="L">
+        <items jcr:primaryType="nt:unstructured">
+          <saudi-tourism-region
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              jcr:title="Region Config"
+              sling:orderBefore="thumbnail"
+              sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+            <items jcr:primaryType="nt:unstructured">
+              <column
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                  <title
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                      granite:class="accordion-multifield-item-title"
+                      fieldDescription="Enter title for this location"
+                      fieldLabel="Title"
+                      name="./title"/>
+                  <identifier
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                      emptyOption="{Boolean}true"
+                      fieldDescription="Select the identifier of the region."
+                      fieldLabel="Identifier"
+                      name="./identifier"
+                      ordered="{Boolean}true">
+                      <datasource
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="sauditourism/datasource/cities-regions"
+                          saudi-tourism-listtype="region"/>
+                  </identifier>
+                  <description
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                      fieldDescription="Enter description for this location"
+                      fieldLabel="Description"
+                      name="./description"/>
+                  <strapline
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                      granite:class="accordion-multifield-item-title"
+                      fieldDescription="Enter strapline for this location"
+                      fieldLabel="Strapline"
+                      name="./strapline"/>
+                  <bestForTags
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                      fieldDescription="Select what this City is best suitable for"
+                      fieldLabel="Best for"
+                      forceSelection="{Boolean}true"
+                      multiple="{Boolean}true"
+                      name="./bestForTags"
+                      required="{Boolean}false"
+                      rootPath="/content/cq:tags/sauditourism/packageCategories"
+                      validation="tags.count.validator"/>
+                  <featuredImage
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                      fieldDescription="Select an Image to be used as Featured image for this Page"
+                      fieldLabel="Feature image"
+                      name="./featuredImage"
+                      rootPath="/content/dam">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="featuredImage"/>
+                  </featuredImage>
+                  <preview-image
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                      fieldDescription="Select an image to be used as a preview image"
+                      fieldLabel="Preview image"
+                      name="./previewImage"
+                      rootPath="/content/dam"/>
+                  <image
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                      fieldDescription="Select an image to be used as a location image"
+                      fieldLabel="Image"
+                      name="./image"
+                      rootPath="/content/dam"/>
+                    <mapIcon
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Map Icon"
+                        fieldLabel="Map Icon"
+                        name="./mapIcon"
+                        rootPath="/content/dam"/>
+                  <image-caption
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Caption"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                      <copy
+                          cq:showOnCreate="{Boolean}true"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                          fieldDescription="Caption text to display over the image"
+                          fieldLabel="Caption Title"
+                          name="./imageCaption/copy"/>
+                      <link-type
+                          cq:showOnCreate="{Boolean}true"
+                          granite:class="js-dialog-showhide"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                          fieldDescription="Link type: none, internal, external"
+                          fieldLabel="Link Type"
+                          name="./imageCaption/linkType">
+                        <items jcr:primaryType="nt:unstructured">
+                          <none
+                              jcr:primaryType="nt:unstructured"
+                              text="None"
+                              value=""/>
+                          <internal
+                              jcr:primaryType="nt:unstructured"
+                              text="Internal"
+                              value="internal"/>
+                          <external
+                              jcr:primaryType="nt:unstructured"
+                              text="External"
+                              value="external"/>
+                        </items>
+                      </link-type>
+                      <link
+                          cq:showOnCreate="{Boolean}true"
+                          granite:class="caption-link-type-showhide-target"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldDescription="Link that will be opened when Learn More is clicked"
+                          rootPath="/content/sauditourism"
+                          fieldLabel="Link"
+                          name="./imageCaption/link">
+                      </link>
+                    </items>
+                  </image-caption>
+                  <video-link
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                      fieldDescription="Select an video to be used as a location video"
+                      fieldLabel="Video"
+                      name="./videoLink"
+                      rootPath="/content/dam"/>
+
+                  <detail-items
+                      cq:showOnCreate="{Boolean}true"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                      composite="{Boolean}true"
+                      fieldDescription="Click 'Add' to add a new Location Detail"
+                      fieldLabel="Location Detail">
+                    <field
+                        jcr:primaryType="nt:unstructured"
+                        granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                        name="./details">
+                      <items jcr:primaryType="nt:unstructured">
+                        <column
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="New Location Detail"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                          <items jcr:primaryType="nt:unstructured">
+                            <title
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Title"
+                                granite:class="accordion-multifield-item-title"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <description
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="Description"
+                                fieldLabel="Description"
+                                name="./description"/>
+                            <image
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Select an image to be used as a Location Detail image"
+                                fieldLabel="Image"
+                                name="./image"
+                                rootPath="/content/dam"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                cq:showOnCreate="{Boolean}true"
+                                fieldLabel="links"
+                                fieldDescription="Click 'Add' to add a new link">
+                              <field
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/container"
+                                  name="./links">
+                                <items jcr:primaryType="nt:unstructured">
+                                  <column
+                                      jcr:primaryType="nt:unstructured"
+                                      jcr:title="Link"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                    <items jcr:primaryType="nt:unstructured">
+                                      <title
+                                          cq:showOnCreate="{Boolean}true"
+                                          jcr:primaryType="nt:unstructured"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                          fieldDescription="Title"
+                                          fieldLabel="Title"
+                                          required="{Boolean}true"
+                                          name="./title"/>
+                                      <linkUrl
+                                          cq:showOnCreate="{Boolean}true"
+                                          sling:orderBefore="description"
+                                          jcr:primaryType="nt:unstructured"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                          fieldDescription="Link to resource"
+                                          rootPath="/content/sauditourism"
+                                          fieldLabel="Link"
+                                          name="./link"/>
+                                    </items>
+                                  </column>
+                                </items>
+                              </field>
+                            </links>
+                          </items>
+                        </column>
+                      </items>
+                    </field>
+                  </detail-items>
+
+                </items>
+              </column>
+            </items>
+          </saudi-tourism-region>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

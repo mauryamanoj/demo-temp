@@ -1,0 +1,33 @@
+<sly data-sly-template.sliderStepperBullets="${@ class, id, useBackgroundImage}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+  <div class="carousel-bullets ${class} background-${useBackgroundImage ? 'image' : 'solid'}"
+       data-id="${id ? id : ''}" data-component="carousel-bullets" data-carousel-bullets>
+    <span class="bullet-counter counter-current" data-counter-current
+          data-counter-stepper-current>00</span>
+    <ul class="bullet-list cmp-carousel__indicators" data-cmp-hook-carousel="indicators">
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+    </ul>
+    <span class="bullet-counter counter-total" data-counter-total
+          data-counter-stepper-total>00</span>
+  </div>
+
+</sly>

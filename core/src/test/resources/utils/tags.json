@@ -1,0 +1,219 @@
+{
+  "jcr:primaryType": "cq:Tag",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:title": "Saudi Tourism",
+  "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+  "jcr:description": "Tags for Saudi Site",
+  "sling:resourceType": "cq/tagging/components/tag",
+  "events": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Events",
+    "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+    "jcr:description": "Tags for Events",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "Music": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Music",
+      "jcr:title.ar": "موسيقى",
+      "jcr:title.de": "Musik",
+      "jcr:title.es": "Música",
+      "jcr:title.fr": "Musique",
+      "jcr:title.ja": "音楽",
+      "jcr:title.ru": "Музыка",
+      "jcr:title.zh": "音乐",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "Tours": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tours",
+      "jcr:title.ar": "جولات",
+      "jcr:title.de": "Touren",
+      "jcr:title.es": "Visitas",
+      "jcr:title.fr": "Visites",
+      "jcr:title.ja": "ツアー",
+      "jcr:title.ru": "Туры",
+      "jcr:title.zh": "游览",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "audience": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Target Audience",
+    "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+    "jcr:description": "Tags for Events",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "16+": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "16 +",
+      "jcr:title.ar": "16 سنة فما فوق",
+      "jcr:title.de": "Über 16",
+      "jcr:title.es": "Mayores de 16 años",
+      "jcr:title.fr": "Plus de 16 ans",
+      "jcr:title.ja": "16歳以上",
+      "jcr:title.ru": "Старше 16",
+      "jcr:title.zh": "16岁以上",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "all": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "All",
+      "jcr:title.ar": "الجميع",
+      "jcr:title.de": "Alle",
+      "jcr:title.es": "Todos los públicos",
+      "jcr:title.fr": "Tous publics",
+      "jcr:title.ja": "全員",
+      "jcr:title.ru": "Все категории посетителей",
+      "jcr:title.zh": "不限人群",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "packageCategories": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Package Categories",
+    "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+    "jcr:description": "Tags for Package Categories",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "Hike": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hike",
+      "jcr:title.ar": "المشي",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "Snorkeling": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Snorkeling",
+      "jcr:title.ar": "الغطس",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "packageDuration": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Package Duration Tags",
+    "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+    "jcr:description": "Tags for Package Duration",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "1 day": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "1 Day",
+      "jcr:title.ar": "يوم 1",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "4 days": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "4 Days",
+      "jcr:title.ar": "4 أيام",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "packageTargets": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Package Target Tags",
+    "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+    "jcr:description": "Tags for Package Targets",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "Couples": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Couples",
+      "jcr:title.ar": "زوجان",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "Small Families": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Small Families",
+      "jcr:title.ar": "عائلة صغيرة",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "city": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "City",
+    "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+    "jcr:description": "Tags for Cities",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "fayfa": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Fayfa",
+      "jcr:title.ar": "فيفا",
+      "jcr:title.de": "Fayfa",
+      "jcr:title.es": "Fayfa",
+      "jcr:title.fr": "Fayfa",
+      "jcr:title.ja": "Fayfa",
+      "jcr:title.ru": "Fayfa",
+      "jcr:title.zh": "Fayfa",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "Sharma": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sharma",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:title.ar": "شرما",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "cq:lastReplicated": "Wed Jun 24 2020 18:47:41 GMT+0200",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "Jeddah": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Jeddah",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:title.ar": "شرما",
+      "city": "jeddah",
+      "jcr:created": "Fri Jul 17 2020 15:08:54 GMT+0600",
+      "cq:lastReplicated": "Wed Jun 24 2020 18:47:41 GMT+0200",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  }
+}

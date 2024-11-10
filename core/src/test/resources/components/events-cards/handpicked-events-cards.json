@@ -1,0 +1,38 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Tue Nov 07 2023 21:16:44 GMT+0100",
+  "title":"This month",
+  "jcr:lastModified":"Tue Nov 07 2023 22:57:32 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/events-cards",
+  "display":{
+    "jcr:primaryType":"nt:unstructured",
+    "cardSize":"small",
+    "displayType":"scrollable"
+  },
+  "sort":{
+    "jcr:primaryType":"nt:unstructured",
+    "sortBy":"startDate"
+  },
+  "filter":{
+    "jcr:primaryType":"nt:unstructured",
+    "startDate":"Wed Nov 08 2023 00:00:00 GMT+0300",
+    "endDate":"Thu Nov 30 2023 00:00:00 GMT+0300",
+    "period":"this-month",
+    "season":"/content/dam/sauditourism/cf/en/seasons/riyadh-season",
+    "destination":"/content/dam/sauditourism/cf/en/destinations/makkah"
+  },
+  "link":{
+    "jcr:primaryType":"nt:unstructured",
+    "url":"/content/sauditourism/en/winter-season",
+    "text":"View all"
+  },
+  "handpick":{
+    "jcr:primaryType":"nt:unstructured",
+    "eventCFPaths":[
+      "/content/dam/sauditourism/cf/en/events/sheikh-rouhani",
+      "/content/dam/sauditourism/cf/en/events/novemberevent"
+    ]
+  }
+}

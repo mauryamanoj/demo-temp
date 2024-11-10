@@ -1,0 +1,20 @@
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:EditConfig">
+  <cq:inplaceEditing
+      jcr:primaryType="cq:InplaceEditingConfig"
+      active="{Boolean}true"
+      editorType="hybrid">
+    <cq:childEditors jcr:primaryType="nt:unstructured">
+      <title
+          jcr:primaryType="cq:ChildEditorConfig"
+          title="Title" type="plaintext"/>
+    </cq:childEditors>
+    <config jcr:primaryType="nt:unstructured">
+      <title
+          jcr:primaryType="nt:unstructured"
+          editElementQuery=".cruise-itineraries__cq-title"
+          textPropertyName="./title"/>
+    </config>
+  </cq:inplaceEditing>
+</jcr:root>

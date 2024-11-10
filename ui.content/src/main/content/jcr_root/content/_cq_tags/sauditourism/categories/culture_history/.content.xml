@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Culture &amp; History"
+          jcr:title.ar="الثقافة والتاريخ"
+          jcr:title.de="Kultur &amp; Geschichte"
+          jcr:title.es="Cultura e Historia"
+          jcr:title.fr="Culture et Histoire"
+          jcr:title.ja="文化と歴史"
+          jcr:title.ru="Культура и история"
+          jcr:title.zh="文化与历史"
+          sling:resourceType="cq/tagging/components/tag">
+    <historic_site/>
+    <art_gallery/>
+    <religious_site/>
+    <museum/>
+    <monuments/>
+    <architectural_sites/>
+    <libraries/>
+    <mosques/>
+</jcr:root>

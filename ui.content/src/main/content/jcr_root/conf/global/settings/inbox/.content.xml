@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="sling:Folder"
+    view.configuration="\{&quot;isEndUserConfigurationEnabled&quot;:false,&quot;customBrandingText&quot;:&quot;&quot;,&quot;customLogoPath&quot;:&quot;&quot;,&quot;columns&quot;:[{&quot;name&quot;:&quot;thumbnail&quot;},{&quot;title&quot;:&quot;Title&quot;,&quot;name&quot;:&quot;workflowInstance&quot;},{&quot;title&quot;:&quot;Assigned Team&quot;,&quot;name&quot;:&quot;assignee&quot;},{&quot;title&quot;:&quot;Start Date&quot;,&quot;name&quot;:&quot;startTime&quot;}]}"/>

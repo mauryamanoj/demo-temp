@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Small Stories"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <story-reference
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Small Stories"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}false">
+                                    </title>
+                                    <ctaLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Cta Label"
+                                            name="./link/text"
+                                            required="{Boolean}false">
+                                    </ctaLabel>
+                                    <ctaLink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Link that will be opened when this is clicked"
+                                            rootPath="/content/sauditourism"
+                                            fieldLabel="CTA Link"
+                                            name="./link/url"
+                                            required="{Boolean}false"/>
+
+                                </items>
+                            </column>
+                            <small-stories-container
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fetchLatestStories
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Fetch Latest Stories"
+                                        text="Fetch Latest Stories"
+                                        name="./fetchLatestStories"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target=".fetch-stories-showhide-target"/>
+                                    </fetchLatestStories>
+                                    <numberOfStories
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        fieldLabel="Number of stories"
+                                        name="./numberOfStories"
+                                        granite:class="fetch-stories-showhide-target">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </numberOfStories>
+                                    <filter-categories
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                        fieldLabel="Filter By Categories"
+                                        rootPath="/content/cq:tags/sauditourism/categories"
+                                        multiple="{Boolean}true"
+                                        name="./filter/categories"
+                                        granite:class="fetch-stories-showhide-target">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </filter-categories>
+                                    <filter-destination
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Filter Destination"
+                                        name="./filter/destination"
+                                        granite:class="fetch-stories-showhide-target">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="sauditourism/datasource/destinations"/>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </filter-destination>
+                                    <myfield
+                                            granite:class="fetch-stories-showhide-target"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}false"
+                                            validation="multifield-max-10">
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                required="{Boolean}True"
+                                                fieldLabel="Story CF"
+                                                rootPath="/content/dam/sauditourism/cf"
+                                                name="./cardCFPaths"/>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="false"/>
+                                    </myfield>
+                                </items>
+                            </small-stories-container>
+                        </items>
+                    </columns>
+                </items>
+            </story-reference>
+        </items>
+    </content>
+</jcr:root>
+
+

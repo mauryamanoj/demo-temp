@@ -1,0 +1,26 @@
+<template data-sly-template.winterImages="${@ card, title}"
+   data-sly-use.cta01ButtonTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-01-button.html"
+   data-sly-use.fullOverlayTemplate="/apps/sauditourism/components/content/templates/general/full-overlay.html"
+   data-sly-use.pictureTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+   data-sly-set.bestFor="${'Best for' @ i18n}"
+   data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+   <div data-component="c-15-full-img-winter-card">
+      <a href="${card.link.url}" class="image-wrapper">
+         <sly data-sly-call="${fullOverlayTemplate.fullOverlay}"></sly>
+         <sly data-sly-call="${pictureTemplate.pictureObj @ imageDesktop=card.image.fileReference,
+            imageMobile=card.image.mobileImageReference, altText=card.title,
+            simpleLabelList=card.labelList || card.regionLabelList, componentType='full-image',
+            tagLine=bestFor}"></sly>
+      </a>
+      <a href="${card.link.url}" class="content-wrapper" data-content-wrapper>
+         <div class="themes-icon" data-sly-set.icons="${card.icon}">
+            <sly data-sly-call="${iconTemplate.icon @ iconName=icons}"></sly>
+         </div>
+         <h4 class="title">
+            ${card.title}
+         </h4>
+         <sly data-sly-call="${cta01ButtonTemplate.ctaButton @ copy=card.link.copy, copyAnalytics=card.link.analyticsDataCopy, variant='secondary',
+            background='image', noChevron=false, extraClass='full-image-cta', title=title, destination=card.city || card.region}"></sly>
+      </a>
+   </div>
+</template>

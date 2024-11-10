@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Arabian Winter"
+          jcr:title.ar="الشتاء"
+          jcr:title.fr="L'hiver en Arabie"
+          jcr:title.es="Invierno árabe"
+          jcr:title.ru="Арабская зима"
+          jcr:title.de="Arabischer Winter"
+          jcr:title.zh="阿拉伯冬季"
+          jcr:title.ja="アラビアの冬"
+          sling:resourceType="cq/tagging/components/tag"/>

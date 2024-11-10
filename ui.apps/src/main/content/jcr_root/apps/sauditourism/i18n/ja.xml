@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:language="ja"
+          jcr:mixinTypes="[mix:language]" jcr:primaryType="nt:folder">
+    <startendlabel jcr:primaryType="sling:MessageEntry"
+                   sling:key="startendlabel" sling:message="開始＆終了日" />
+    <pricelowtohigh jcr:primaryType="sling:MessageEntry"
+                    sling:key="eventtype" sling:message="イベントのタイプ" />
+    <citylabel jcr:primaryType="sling:MessageEntry"
+               sling:key="cityLabel" sling:message="市" />
+    <cityOf jcr:primaryType="sling:MessageEntry"
+            sling:key="cityOf" sling:message="州の都市"/>
+    <locationlabel jcr:primaryType="sling:MessageEntry"
+                   sling:key="locationlabel" sling:message="場所" />
+    <targetlabel jcr:primaryType="sling:MessageEntry"
+                 sling:key="targetlabel" sling:message="対象者" />
+    <fromlabel jcr:primaryType="sling:MessageEntry"
+               sling:key="fromlabel" sling:message="から" />
+    <tolabel jcr:primaryType="sling:MessageEntry"
+             sling:key="tolabel" sling:message="まで" />
+    <explorelabel jcr:primaryType="sling:MessageEntry"
+                  sling:key="explorelabel" sling:message="探索する" />
+    <explorelabelNav jcr:primaryType="sling:MessageEntry"
+                   sling:key="explorelabelNav" sling:message="探索する"/>
+    <clearall jcr:primaryType="sling:MessageEntry"
+              sling:key="clearall" sling:message="すべて消去する" />
+    <filterlabel jcr:primaryType="sling:MessageEntry"
+                 sling:key="filterlabel" sling:message="フィルターをかける" />
+    <learnmore jcr:primaryType="sling:MessageEntry"
+               sling:key="learnmore" sling:message="詳しく見る"/>
+    <loadmore jcr:primaryType="sling:MessageEntry"
+              sling:key="loadmore" sling:message="詳しく見る"/>
+    <selectlanguage jcr:primaryType="sling:MessageEntry"
+                    sling:key="selectlanguage" sling:message="言語を選択する"/>
+    <readmore
+            jcr:primaryType="sling:MessageEntry"
+            sling:key="Read More"
+            sling:message="詳細"/>
+    <package-powered-by jcr:primaryType="sling:MessageEntry" sling:key="package-powered-by"
+                        sling:message="パッケージの提供"/>
+    <visitwebsite jcr:primaryType="sling:MessageEntry" sling:key="visitwebsite"
+                  sling:message="ウェブサイトを訪問する"/>
+    <of jcr:primaryType="sling:MessageEntry"
+        sling:key="of" sling:message="の"/>
+    <next jcr:primaryType="sling:MessageEntry"
+          sling:key="next" sling:message="次へ"/>
+    <page jcr:primaryType="sling:MessageEntry"
+          sling:key="page" sling:message="ページ"/>
+  <searchPaginationTotal jcr:primaryType="sling:MessageEntry"
+                         sling:key="searchPaginationTotal" sling:message="の $0"/>
+  <searchPaginationCurrent jcr:primaryType="sling:MessageEntry"
+                           sling:key="searchPaginationCurrent" sling:message="ページ $0"/>
+    <previous jcr:primaryType="sling:MessageEntry"
+              sling:key="previous" sling:message="前へ"/>
+    <event-details jcr:primaryType="sling:MessageEntry"
+                   sling:key="event-details" sling:message="イベントの詳細"/>
+    <Date jcr:primaryType="sling:MessageEntry"
+          sling:key="Date" sling:message="日"/>
+    <Time jcr:primaryType="sling:MessageEntry"
+          sling:key="Time" sling:message="時間"/>
+    <Age jcr:primaryType="sling:MessageEntry"
+         sling:key="Age" sling:message="年齢"/>
+    <afif jcr:primaryType="sling:MessageEntry" sling:key="afif" sling:message="アフィーフ"/>
+    <Al-dwadmi jcr:primaryType="sling:MessageEntry" sling:key="al-dwadmi"
+                 sling:message="アル・ダワドミ"/>
+    <al-sayeeh jcr:primaryType="sling:MessageEntry" sling:key="al-sayeeh"
+               sling:message="アル・サイエ"/>
+    <al-zolfa jcr:primaryType="sling:MessageEntry" sling:key="al-zolfa" sling:message="アル・ズラフィ"/>
+    <al-dulm jcr:primaryType="sling:MessageEntry" sling:key="al-dulm" sling:message="アル・ダラム"/>
+    <al-majmaah jcr:primaryType="sling:MessageEntry" sling:key="al-majmaah"
+                sling:message="アル・ムジャマー"/>
+    <al-mozahmiya jcr:primaryType="sling:MessageEntry" sling:key="al-mozahmiya"
+                  sling:message="アル・ムザヒミヤ"/>
+    <al-quwayiyah jcr:primaryType="sling:MessageEntry" sling:key="al-quwayiyah"
+                  sling:message="アル・クワイヤ"/>
+    <diriyah jcr:primaryType="sling:MessageEntry" sling:key="diriyah" sling:message="ディルイーヤ"/>
+    <hawat-sudir jcr:primaryType="sling:MessageEntry" sling:key="hawat-sudir"
+                 sling:message="ハウタト・セディール"/>
+    <hawta-bani-tamim jcr:primaryType="sling:MessageEntry" sling:key="hawta-bani-tamim"
+                      sling:message="ハウター・バニ ・タミム"/>
+    <laila jcr:primaryType="sling:MessageEntry" sling:key="laila" sling:message="ライラ"/>
+    <ramah jcr:primaryType="sling:MessageEntry" sling:key="ramah" sling:message="ラマー"/>
+    <riyadh jcr:primaryType="sling:MessageEntry" sling:key="riyadh" sling:message="リヤド"/>
+  <riyadh-region jcr:primaryType="sling:MessageEntry"
+                 sling:key="riyadh-region" sling:message="リヤド州"/>
+    <salel jcr:primaryType="sling:MessageEntry" sling:key="salel" sling:message="アル・サリル"/>
+    <shaqraa jcr:primaryType="sling:MessageEntry" sling:key="shaqraa" sling:message="シャクラ"/>
+    <wadi-al-dawasir jcr:primaryType="sling:MessageEntry" sling:key="wadi-al-dawasir"
+                     sling:message="ワディ・アド・ダワシール"/>
+    <al-wajh jcr:primaryType="sling:MessageEntry" sling:key="al-wajh" sling:message="アル・ワジュフ"/>
+  <duba jcr:primaryType="sling:MessageEntry" sling:key="duba" sling:message="ドゥバー"/>
+    <amlaj jcr:primaryType="sling:MessageEntry" sling:key="amlaj" sling:message="アムラージ"/>
+    <Debaa jcr:primaryType="sling:MessageEntry" sling:key="debaa" sling:message="デバー"/>
+    <Haql jcr:primaryType="sling:MessageEntry" sling:key="haql" sling:message="ハグル"/>
+    <Tabuk jcr:primaryType="sling:MessageEntry" sling:key="tabuk" sling:message="タブーク"/>
+    <Taimaa jcr:primaryType="sling:MessageEntry" sling:key="taimaa" sling:message="タイマー"/>
+    <Arar jcr:primaryType="sling:MessageEntry" sling:key="arar" sling:message="アラー"/>
+    <Rafhaa jcr:primaryType="sling:MessageEntry" sling:key="rafhaa" sling:message="ラフハー"/>
+    <Tarif jcr:primaryType="sling:MessageEntry" sling:key="tarif" sling:message="タリーフ"/>
+    <Najran jcr:primaryType="sling:MessageEntry" sling:key="najran" sling:message="ナジュラーン"/>
+    <Sherora jcr:primaryType="sling:MessageEntry" sling:key="sherora" sling:message="ショロラ"/>
+    <Al-Gomom jcr:primaryType="sling:MessageEntry" sling:key="al-gomom" sling:message="アル・ジュムム"/>
+    <Back-To-Top jcr:primaryType="sling:MessageEntry" sling:key="back-to-top" sling:message="トップに戻る"/>
+    <Al-Hawiyah jcr:primaryType="sling:MessageEntry" sling:key="al-hawiyah"
+                sling:message="アル・ハワヤ"/>
+    <Al-Khorma jcr:primaryType="sling:MessageEntry" sling:key="al-khorma"
+               sling:message="アル・コルマ"/>
+    <Al-Laith jcr:primaryType="sling:MessageEntry" sling:key="al-laith" sling:message="アル・レイス"/>
+    <Al-Qawz jcr:primaryType="sling:MessageEntry" sling:key="al-qawz" sling:message="アル・クオズ"/>
+    <Al-Qunfudhah jcr:primaryType="sling:MessageEntry" sling:key="al-qunfudhah"
+                  sling:message="アル・クンフダー"/>
+    <Bahra jcr:primaryType="sling:MessageEntry" sling:key="bahra" sling:message="バーラ"/>
+    <Jeddah jcr:primaryType="sling:MessageEntry" sling:key="jeddah" sling:message="ジェッダ"/>
+    <Khalis jcr:primaryType="sling:MessageEntry" sling:key="khalis" sling:message="クライス"/>
+    <Mecca jcr:primaryType="sling:MessageEntry" sling:key="mecca" sling:message="メッカ"/>
+    <Rabigh jcr:primaryType="sling:MessageEntry" sling:key="rabigh" sling:message="ラービグ"/>
+    <Ranieh jcr:primaryType="sling:MessageEntry" sling:key="ranieh" sling:message="ラニエ"/>
+    <Taif jcr:primaryType="sling:MessageEntry" sling:key="Taif" sling:message="ターイフ"/>
+    <Thoul jcr:primaryType="sling:MessageEntry" sling:key="thoul" sling:message="ソワル"/>
+    <Torba jcr:primaryType="sling:MessageEntry" sling:key="torba" sling:message="トルバ"/>
+    <Alula jcr:primaryType="sling:MessageEntry" sling:key="alula" sling:message="アル・ウラー"/>
+    <Badr jcr:primaryType="sling:MessageEntry" sling:key="badr" sling:message="バドル"/>
+    <Medina jcr:primaryType="sling:MessageEntry" sling:key="medina" sling:message="メディナ"/>
+    <Yanbu jcr:primaryType="sling:MessageEntry" sling:key="yanbu" sling:message="ヤンブー"/>
+    <Abu-Arish jcr:primaryType="sling:MessageEntry" sling:key="abu-arish"
+               sling:message="アブー・アリーシュ"/>
+    <Baish jcr:primaryType="sling:MessageEntry" sling:key="baish" sling:message="ビーシュ"/>
+    <Damad jcr:primaryType="sling:MessageEntry" sling:key="damad" sling:message="ダマド"/>
+    <Jizan jcr:primaryType="sling:MessageEntry" sling:key="jizan" sling:message="ジーザーン"/>
+    <Ohud-Al-Mosareha jcr:primaryType="sling:MessageEntry" sling:key="ohud-al-mosareha"
+                      sling:message="アハド・アル・ムサラハ"/>
+    <Sametah jcr:primaryType="sling:MessageEntry" sling:key="sametah" sling:message="サミタ"/>
+    <Sebyaa jcr:primaryType="sling:MessageEntry" sling:key="sebyaa" sling:message="サビヤ"/>
+    <Hail jcr:primaryType="sling:MessageEntry" sling:key="hail" sling:message="ハーイル"/>
+  <hail-region jcr:primaryType="sling:MessageEntry" sling:key="hail-region"
+               sling:message="ハーイル州"/>
+    <Dumat-al-Jandal jcr:primaryType="sling:MessageEntry" sling:key="dumat-al-jandal"
+                     sling:message="ドゥーマ・アル・ジャンダニ"/>
+    <Qurayyat jcr:primaryType="sling:MessageEntry" sling:key="qurayyat" sling:message="クライヤト"/>
+    <Sakaka jcr:primaryType="sling:MessageEntry" sling:key="sakaka" sling:message="サカーカ"/>
+    <Tabarjal jcr:primaryType="sling:MessageEntry" sling:key="tabarjal" sling:message="タバルジャル"/>
+    <Al-Badea jcr:primaryType="sling:MessageEntry" sling:key="al-badea" sling:message="アル・バデア"/>
+    <Albuqueriya jcr:primaryType="sling:MessageEntry" sling:key="albuqueriya"
+                 sling:message="アル・バケリヤ"/>
+    <Al-Mozanab jcr:primaryType="sling:MessageEntry" sling:key="al-mozanab"
+                sling:message="アル・ムドニブ"/>
+    <Al-Ras jcr:primaryType="sling:MessageEntry" sling:key="al-ras" sling:message="アル・ラス"/>
+    <Annizah jcr:primaryType="sling:MessageEntry" sling:key="annizah" sling:message="アニザ"/>
+    <Buraydah jcr:primaryType="sling:MessageEntry" sling:key="buraydah" sling:message="ブライダ"/>
+    <Abha jcr:primaryType="sling:MessageEntry" sling:key="abha" sling:message="アブハー"/>
+    <Ahad-Rufida jcr:primaryType="sling:MessageEntry" sling:key="ahad-rufida"
+                 sling:message="アハド・ラフィダ"/>
+    <Aleilaya jcr:primaryType="sling:MessageEntry" sling:key="aleilaya" sling:message="アレイラヤ"/>
+    <Al-Namas jcr:primaryType="sling:MessageEntry" sling:key="al-namas" sling:message="アル・ナマス"/>
+    <Bisha jcr:primaryType="sling:MessageEntry" sling:key="bisha" sling:message="ビーシャ"/>
+    <Dhahran-Aljanoub jcr:primaryType="sling:MessageEntry" sling:key="dhahran-aljanoub"
+                      sling:message="ダーラン・アルジャヌーブ"/>
+    <Khamis-Mushait jcr:primaryType="sling:MessageEntry" sling:key="khamis-mushait"
+                    sling:message="ハミース・ムシャイト"/>
+    <Muhayel jcr:primaryType="sling:MessageEntry" sling:key="muhayel" sling:message="ムハイル"/>
+    <Al-Baha jcr:primaryType="sling:MessageEntry" sling:key="al-baha" sling:message="アル・バーハ"/>
+    <Al-Mekhwah jcr:primaryType="sling:MessageEntry" sling:key="al-mekhwah"
+                sling:message="アル・ムハワ"/>
+    <Baljurashi jcr:primaryType="sling:MessageEntry" sling:key="baljurashi"
+                sling:message="バルジュラシー"/>
+    <Al-Awamya jcr:primaryType="sling:MessageEntry" sling:key="al-awamya"
+               sling:message="アル・アワミヤ"/>
+    <Al-Batalya jcr:primaryType="sling:MessageEntry" sling:key="al-batalya"
+                sling:message="アル・バタリヤ"/>
+    <Al-Khafji jcr:primaryType="sling:MessageEntry" sling:key="al-khafji"
+               sling:message="カフジ"/>
+    <Al-Menzlat jcr:primaryType="sling:MessageEntry" sling:key="al-menzlat"
+                sling:message="アル・マンゼラトゥ"/>
+    <Al-Qadeeh jcr:primaryType="sling:MessageEntry" sling:key="al-qadeeh"
+               sling:message="アル・カディーウ"/>
+    <Al-Tarf jcr:primaryType="sling:MessageEntry" sling:key="al-tarf" sling:message="アル・タラフ"/>
+    <Al-Halilah jcr:primaryType="sling:MessageEntry" sling:key="al-halilah"
+                sling:message="アル・ハレイラ"/>
+    <Al-Jubail jcr:primaryType="sling:MessageEntry" sling:key="al-jubail"
+               sling:message="アル・ジュバイル"/>
+    <al-khobar jcr:primaryType="sling:MessageEntry" sling:key="al-khobar" sling:message="アル・コバール"/>
+    <Al-Noayriyah jcr:primaryType="sling:MessageEntry" sling:key="al-noayriyah"
+                  sling:message="アル・ナエリーヒ"/>
+    <Al-Oyoun jcr:primaryType="sling:MessageEntry" sling:key="al-oyoun" sling:message="アル・アイウン"/>
+    <Al-Qatif jcr:primaryType="sling:MessageEntry" sling:key="al-qatif" sling:message="カティーフ"/>
+    <Al-Thuqbah jcr:primaryType="sling:MessageEntry" sling:key="al-thuqbah"
+                sling:message="アル・トゥクバ"/>
+    <Ank jcr:primaryType="sling:MessageEntry" sling:key="ank" sling:message="アンカ"/>
+    <Baqiq jcr:primaryType="sling:MessageEntry" sling:key="baqiq" sling:message="アブカイク"/>
+    <Dammam jcr:primaryType="sling:MessageEntry" sling:key="dammam" sling:message="ダンマーム"/>
+    <Dhahran jcr:primaryType="sling:MessageEntry" sling:key="dhahran" sling:message="ダーラン"/>
+    <Hafr-Al-Batin jcr:primaryType="sling:MessageEntry" sling:key="hafr-al-batin"
+                   sling:message="ハフル・アル・バティン"/>
+    <Hofuf-and-Almabarraz jcr:primaryType="sling:MessageEntry" sling:key="hofuf-and-almabarraz"
+                          sling:message="ホフーフ＆アルムバレズ"/>
+    <Qaisumah jcr:primaryType="sling:MessageEntry" sling:key="qaisumah" sling:message="クアイサマ"/>
+    <Rahima jcr:primaryType="sling:MessageEntry" sling:key="rahima" sling:message="ラヒマ"/>
+    <Safwa jcr:primaryType="sling:MessageEntry" sling:key="safwa" sling:message="サフワー"/>
+    <Saihat jcr:primaryType="sling:MessageEntry" sling:key="saihat" sling:message="サイハート"/>
+    <free jcr:primaryType="sling:MessageEntry" sling:key="free" sling:message="無料"/>
+    <paid jcr:primaryType="sling:MessageEntry" sling:key="paid" sling:message="有料"/>
+    <jeddah-season jcr:primaryType="sling:MessageEntry" sling:key="jeddah-season" sling:message="ジェッダシーズン"/>
+    <riyadh-season jcr:primaryType="sling:MessageEntry" sling:key="riyadh-season" sling:message="リヤド・シーズン"/>
+    <alula-season jcr:primaryType="sling:MessageEntry" sling:key="alula-season" sling:message="アル・ウラー・シーズン"/>
+    <hail-season jcr:primaryType="sling:MessageEntry" sling:key="hail-season" sling:message="ハーイル・シーズン"/>
+    <all-seasons  jcr:primaryType="sling:MessageEntry" sling:key="all-seasons" sling:message="全シーズン"/>
+    <subscribe jcr:primaryType="sling:MessageEntry" sling:key="Subscribe"
+               sling:message="購読する"/>
+    <emailAddress jcr:primaryType="sling:MessageEntry" sling:key="emailAddress"
+                  sling:message="Eメールアドレス"/>
+    <eventslidertitle jcr:primaryType="sling:MessageEntry" sling:key="eventslidertitle"
+                      sling:message="サウジアラビアの他のイベント"/>
+    <getDirections jcr:primaryType="sling:MessageEntry" sling:key="getDirections"
+                   sling:message="行き方を調べる"/>
+    <saveFavLabel jcr:primaryType="sling:MessageEntry" sling:key="saveFavLabel"
+                  sling:message="お気に入りに保存する"/>
+    <saveFavAfterLabel jcr:primaryType="sling:MessageEntry" sling:key="saveFavAfterLabel"
+                       sling:message="お気に入りに保存されました"/>
+    <Min jcr:primaryType="sling:MessageEntry" sling:key="Min"
+         sling:message="Min"/>
+    <Max jcr:primaryType="sling:MessageEntry" sling:key="Max"
+         sling:message="Max"/>
+    <Al-Ahsa jcr:primaryType="sling:MessageEntry" sling:key="al-ahsa"
+             sling:message="アハサー"/>
+    <northern-border-region jcr:primaryType="sling:MessageEntry"
+                            sling:key="the-northern-border-region" sling:message="北部国境地域"/>
+    <madinah-region jcr:primaryType="sling:MessageEntry" sling:key="madinah-region"
+                    sling:message="メディナ州"/>
+    <makkah-region jcr:primaryType="sling:MessageEntry" sling:key="makkah-region"
+                   sling:message="メッカ州"/>
+    <hail-region jcr:primaryType="sling:MessageEntry" sling:key="Hail Region"
+                 sling:message="ハーイル州"/>
+    <baha-region jcr:primaryType="sling:MessageEntry" sling:key="al-baha-region"
+                 sling:message="バーハ州"/>
+    <tarout jcr:primaryType="sling:MessageEntry" sling:key="tarout"
+            sling:message="タルートゥ"/>
+    <al-qassim-region jcr:primaryType="sling:MessageEntry" sling:key="al-qassim-region"
+                      sling:message="カスィーム州"/>
+    <jazan-region jcr:primaryType="sling:MessageEntry" sling:key="jazan-region"
+                  sling:message="ジーザーン州"/>
+    <tabuk-region jcr:primaryType="sling:MessageEntry" sling:key="tabuk-region"
+                  sling:message="タブーク州"/>
+  <al-jouf-region jcr:primaryType="sling:MessageEntry" sling:key="al-jouf-region"
+             sling:message="ジャウフ州"/>
+  <al-jouf jcr:primaryType="sling:MessageEntry" sling:key="al-jouf"
+           sling:message="ジャウフ"/>
+    <najran-region jcr:primaryType="sling:MessageEntry" sling:key="najran-region"
+                   sling:message="ナジュラーン州"/>
+    <eastern-province jcr:primaryType="sling:MessageEntry" sling:key="eastern-region"
+                      sling:message="東部州"/>
+  <asir-region jcr:primaryType="sling:MessageEntry" sling:key="asir-region"
+                sling:message="アスィール州"/>
+  <city-of-tabuk-region jcr:primaryType="sling:MessageEntry" sling:key="A city of tabuk-region"
+                        sling:message="タブーク州の都市"/>
+  <city-of-riyadh-region jcr:primaryType="sling:MessageEntry" sling:key="A city of riyadh-region"
+                         sling:message="リヤード州の都市"/>
+  <city-of-eastern-region jcr:primaryType="sling:MessageEntry" sling:key="A city of eastern-region"
+                          sling:message="東部州の都市"/>
+  <city-of-makkah-region jcr:primaryType="sling:MessageEntry" sling:key="A city of makkah-region"
+                         sling:message="マッカ州の都市"/>
+  <city-of-asir-region jcr:primaryType="sling:MessageEntry" sling:key="A city of asir-region"
+                       sling:message="アスィール州の都市"/>
+  <city-of-madinah-region jcr:primaryType="sling:MessageEntry" sling:key="A city of madinah-region"
+                          sling:message="マディーナ州の都市"/>
+  <city-of-qassim-region jcr:primaryType="sling:MessageEntry" sling:key="A city of al-qassim-region"
+                         sling:message="カスィーム州の都市"/>
+  <city-of-hail-region jcr:primaryType="sling:MessageEntry" sling:key="A city of hail-region"
+                       sling:message="ハーイル州の都市"/>
+  <city-of-the-northern-border-region jcr:primaryType="sling:MessageEntry"
+                                      sling:key="A city of the-northern-border-region"
+                                      sling:message="北部国境州の都市"/>
+  <city-of-jazan-region jcr:primaryType="sling:MessageEntry" sling:key="A city of jazan-region"
+                        sling:message="ジーザーン州の都市"/>
+  <city-of-najran-region jcr:primaryType="sling:MessageEntry" sling:key="A city of najran-region"
+                         sling:message="ナジュラーン州の都市"/>
+  <city-of-al-baha-region jcr:primaryType="sling:MessageEntry" sling:key="A city of al-baha-region"
+                          sling:message="バーハ州の都市"/>
+  <city-of-al-jouf-region jcr:primaryType="sling:MessageEntry" sling:key="A city of al-jouf-region"
+                          sling:message="ジャウフ州の都市"/>
+    <continents jcr:primaryType="sling:MessageEntry" sling:key="Continents"
+                sling:message="大陸"/>
+    <europe jcr:primaryType="sling:MessageEntry" sling:key="Europe"
+            sling:message="ヨーロッパ"/>
+    <asia jcr:primaryType="sling:MessageEntry" sling:key="Asia"
+          sling:message="アジア"/>
+    <north-america jcr:primaryType="sling:MessageEntry" sling:key="North America"
+                   sling:message="北アメリカ"/>
+    <south-america jcr:primaryType="sling:MessageEntry" sling:key="South America"
+                   sling:message="南アメリカ"/>
+    <africa jcr:primaryType="sling:MessageEntry" sling:key="Africa"
+            sling:message="アフリカ"/>
+    <oceania jcr:primaryType="sling:MessageEntry" sling:key="Oceania"
+             sling:message="オセアニア"/>
+    <day1 jcr:primaryType="sling:MessageEntry" sling:key="1-day"
+          sling:message="1日"/>
+    <night1 jcr:primaryType="sling:MessageEntry" sling:key="1-night"
+            sling:message="1泊"/>
+    <day2 jcr:primaryType="sling:MessageEntry" sling:key="2-day"
+          sling:message="2日"/>
+    <night2 jcr:primaryType="sling:MessageEntry" sling:key="2-night"
+            sling:message="2泊"/>
+    <days3 jcr:primaryType="sling:MessageEntry" sling:key="3-day"
+           sling:message="3日"/>
+    <night3 jcr:primaryType="sling:MessageEntry" sling:key="3-night"
+            sling:message="3泊"/>
+    <days4 jcr:primaryType="sling:MessageEntry" sling:key="4-day"
+           sling:message="4日"/>
+    <days5 jcr:primaryType="sling:MessageEntry" sling:key="5-day"
+           sling:message="5日"/>
+    <days6 jcr:primaryType="sling:MessageEntry" sling:key="6-day"
+           sling:message="6日"/>
+    <days7 jcr:primaryType="sling:MessageEntry" sling:key="7-day"
+           sling:message="7日"/>
+    <days12 jcr:primaryType="sling:MessageEntry" sling:key="12-day"
+            sling:message="12日"/>
+    <days15 jcr:primaryType="sling:MessageEntry" sling:key="15-day"
+            sling:message="15日"/>
+    <king-abdullah-economic-city jcr:primaryType="sling:MessageEntry"
+                                 sling:key="king-abdullah-economic-city"
+                                 sling:message="KAEC"/>
+  <afghanistan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Afghanistan"
+      sling:message="アフガニスタン"/>
+  <albania
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Albania"
+      sling:message="アルバニア"/>
+  <algeria
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Algeria"
+      sling:message="アルジェリア"/>
+  <andorra
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Andorra"
+      sling:message="アンドラ"/>
+  <angola
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Angola"
+      sling:message="アンゴラ"/>
+  <antigua-and-barbuda
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Antigua and Barbuda"
+      sling:message="アンティグア・バーブーダ"/>
+  <argentina
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Argentina"
+      sling:message="アルゼンチン"/>
+  <armenia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Armenia"
+      sling:message="アルメニア"/>
+  <australia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Australia"
+      sling:message="オーストラリア"/>
+  <austria
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Austria"
+      sling:message="オーストリア"/>
+  <azerbaijan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Azerbaijan"
+      sling:message="アゼルバイジャン"/>
+  <bahamas
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bahamas"
+      sling:message="バハマ"/>
+  <bahrain
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bahrain"
+      sling:message="バーレーン"/>
+  <bangladesh
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bangladesh"
+      sling:message="バングラデシュ"/>
+  <barbados
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Barbados"
+      sling:message="バルバドス"/>
+  <belarus
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Belarus"
+      sling:message="ベラルーシ"/>
+  <belgium
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Belgium"
+      sling:message="ベルギー"/>
+  <belize
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Belize"
+      sling:message="ベリーズ"/>
+  <benin
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Benin"
+      sling:message="ベナン"/>
+  <bhutan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bhutan"
+      sling:message="ブータン"/>
+  <bolivia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bolivia"
+      sling:message="ボリビア"/>
+  <bolivia-plurinational-state-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bolivia (Plurinational State of)"
+      sling:message="ボリビア"/>
+  <bosnia-and-herzegovina
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bosnia and Herzegovina"
+      sling:message="ボスニア・ヘルツェゴビナ"/>
+  <botswana
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Botswana"
+      sling:message="ボツワナ"/>
+  <brazil
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Brazil"
+      sling:message="ブラジル"/>
+  <brunei-darussalam
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Brunei Darussalam"
+      sling:message="ブルネイ"/>
+  <bulgaria
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Bulgaria"
+      sling:message="ブルガリア"/>
+  <burkina-faso
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Burkina Faso"
+      sling:message="ブルキナファソ"/>
+  <burundi
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Burundi"
+      sling:message="ブルンジ"/>
+  <cabo-verde
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Cabo Verde"
+      sling:message="カーボベルデ"/>
+  <cambodia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Cambodia"
+      sling:message="カンボジア"/>
+  <cameroon
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Cameroon"
+      sling:message="カメルーン"/>
+  <canada
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Canada"
+      sling:message="カナダ"/>
+  <central-african-republic
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Central African Republic"
+      sling:message="中央アフリカ共和国"/>
+  <chad
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Chad"
+      sling:message="チャド"/>
+  <chile
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Chile"
+      sling:message="チリ"/>
+  <china
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="China"
+      sling:message="中国"/>
+  <colombia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Colombia"
+      sling:message="コロンビア"/>
+  <comoros
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Comoros"
+      sling:message="コモロ"/>
+  <congo
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Congo"
+      sling:message="コンゴ民主共和国(キンシャサ)"/>
+  <congo-democratic-republic-of-the
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Congo, Democratic Republic of the"
+      sling:message="コンゴ民主共和国(キンシャサ)"/>
+  <costa-rica
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Costa Rica"
+      sling:message="コスタリカ"/>
+  <cote-d-ivoire
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Côte d'Ivoire"
+      sling:message="コートジボワール"/>
+  <croatia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Croatia"
+      sling:message="クロアチア"/>
+  <cuba
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Cuba"
+      sling:message="キューバ"/>
+  <cyprus
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Cyprus"
+      sling:message="キプロス"/>
+  <czechia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Czechia"
+      sling:message="チェコ共和国"/>
+  <denmark
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Denmark"
+      sling:message="デンマーク"/>
+  <djibouti
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Djibouti"
+      sling:message="ジブチ"/>
+  <dominica
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Dominica"
+      sling:message="ドミニカ国"/>
+  <dominican-republic
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Dominican Republic"
+      sling:message="ドミニカ共和国"/>
+  <ecuador
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Ecuador"
+      sling:message="エクアドル"/>
+  <egypt
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Egypt"
+      sling:message="エジプト"/>
+  <el-salvador
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="El Salvador"
+      sling:message="エルサルバドル"/>
+  <equatorial-guinea
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Equatorial Guinea"
+      sling:message="赤道ギニア"/>
+  <eritrea
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Eritrea"
+      sling:message="エリトリア"/>
+  <estonia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Estonia"
+      sling:message="エストニア"/>
+  <eswatini
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Eswatini"
+      sling:message="エスワティニ"/>
+  <ethiopia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Ethiopia"
+      sling:message="エチオピア"/>
+  <fiji
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Fiji"
+      sling:message="フィジー"/>
+  <finland
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Finland"
+      sling:message="フィンランド"/>
+  <france
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="France"
+      sling:message="フランス"/>
+  <gabon
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Gabon"
+      sling:message="ガボン"/>
+  <gambia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Gambia"
+      sling:message="ガンビア"/>
+  <georgia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Georgia"
+      sling:message="ジョージア"/>
+  <germany
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Germany"
+      sling:message="ドイツ"/>
+  <ghana
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Ghana"
+      sling:message="ガーナ"/>
+  <greece
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Greece"
+      sling:message="ギリシャ"/>
+  <grenada
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Grenada"
+      sling:message="グレナダ"/>
+  <guatemala
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Guatemala"
+      sling:message="グアテマラ"/>
+  <guinea
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Guinea"
+      sling:message="ギニア"/>
+  <guinea-bissau
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Guinea-Bissau"
+      sling:message="ギニアビサウ"/>
+  <guyana
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Guyana"
+      sling:message="ガイアナ"/>
+  <haiti
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Haiti"
+      sling:message="ハイチ"/>
+  <honduras
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Honduras"
+      sling:message="ホンジュラス"/>
+  <hungary
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Hungary"
+      sling:message="ハンガリー"/>
+  <iceland
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Iceland"
+      sling:message="アイスランド"/>
+  <india
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="India"
+      sling:message="インド"/>
+  <indonesia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Indonesia"
+      sling:message="インドネシア"/>
+  <iran
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Iran"
+      sling:message="イラン"/>
+  <iran-islamic-republic-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Iran (Islamic Republic of)"
+      sling:message="イラン"/>
+  <iraq
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Iraq"
+      sling:message="イラク"/>
+  <ireland
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Ireland"
+      sling:message="アイルランド"/>
+  <israel
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Israel"
+      sling:message="イスラエル"/>
+  <italy
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Italy"
+      sling:message="イタリア"/>
+  <jamaica
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Jamaica"
+      sling:message="ジャマイカ"/>
+  <japan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Japan"
+      sling:message="日本"/>
+  <jordan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Jordan"
+      sling:message="ヨルダン"/>
+  <kazakhstan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Kazakhstan"
+      sling:message="カザフスタン"/>
+  <kenya
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Kenya"
+      sling:message="ケニア"/>
+  <kiribati
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Kiribati"
+      sling:message="キリバス"/>
+  <korea
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Korea"
+      sling:message="大韓民国"/>
+  <korea-democratic-peoples-republic-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Korea (Democratic People's Republic of)"
+      sling:message="大韓民国"/>
+  <korea-republic-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Korea, Republic of"
+      sling:message="大韓民国"/>
+  <kuwait
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Kuwait"
+      sling:message="クウェート"/>
+  <kyrgyzstan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Kyrgyzstan"
+      sling:message="キルギス"/>
+  <laos
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Lao"
+      sling:message="ラオス"/>
+  <lao-people-s-democratic-republic
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Lao People's Democratic Republic"
+      sling:message="ラオス"/>
+  <latvia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Latvia"
+      sling:message="ラトビア"/>
+  <lebanon
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Lebanon"
+      sling:message="レバノン"/>
+  <lesotho
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Lesotho"
+      sling:message="レソト"/>
+  <liberia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Liberia"
+      sling:message="リベリア"/>
+  <libya
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Libya"
+      sling:message="リビア"/>
+  <liechtenstein
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Liechtenstein"
+      sling:message="リヒテンシュタイン"/>
+  <lithuania
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Lithuania"
+      sling:message="リトアニア"/>
+  <luxembourg
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Luxembourg"
+      sling:message="ルクセンブルグ"/>
+  <madagascar
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Madagascar"
+      sling:message="マダガスカル"/>
+  <malawi
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Malawi"
+      sling:message="マラウイ"/>
+  <malaysia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Malaysia"
+      sling:message="マレーシア"/>
+  <maldives
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Maldives"
+      sling:message="モルディブ"/>
+  <mali
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Mali"
+      sling:message="マリ"/>
+  <malta
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Malta"
+      sling:message="マルタ"/>
+  <marshall-islands
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Marshall Islands"
+      sling:message="マーシャル諸島"/>
+  <mauritania
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Mauritania"
+      sling:message="モーリタニア"/>
+  <mauritius
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Mauritius"
+      sling:message="モーリシャス"/>
+  <mexico
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Mexico"
+      sling:message="メキシコ"/>
+  <micronesia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Micronesia"
+      sling:message="ミクロネシア連邦"/>
+  <micronesia-federated-states-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Micronesia (Federated States of)"
+      sling:message="ミクロネシア連邦"/>
+  <moldova
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Moldova"
+      sling:message="モルドバ"/>
+  <moldova-republic-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Moldova, Republic of"
+      sling:message="モルドバ"/>
+  <monaco
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Monaco"
+      sling:message="モナコ"/>
+  <mongolia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Mongolia"
+      sling:message="モンゴル"/>
+  <montenegro
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Montenegro"
+      sling:message="モンテネグロ"/>
+  <morocco
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Morocco"
+      sling:message="モロッコ"/>
+  <mozambique
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Mozambique"
+      sling:message="モザンビーク"/>
+  <myanmar
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Myanmar"
+      sling:message="ミャンマー"/>
+  <namibia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Namibia"
+      sling:message="ナミビア"/>
+  <nauru
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Nauru"
+      sling:message="ナウル"/>
+  <nepal
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Nepal"
+      sling:message="ネパール"/>
+  <netherlands
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Netherlands"
+      sling:message="オランダ"/>
+  <new-zealand
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="New Zealand"
+      sling:message="ニュージーランド"/>
+  <nicaragua
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Nicaragua"
+      sling:message="ニカラグア"/>
+  <niger
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Niger"
+      sling:message="ニジェール"/>
+  <nigeria
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Nigeria"
+      sling:message="ナイジェリア"/>
+  <north-macedonia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="North Macedonia"
+      sling:message="北マケドニア"/>
+  <norway
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Norway"
+      sling:message="ノルウェー"/>
+  <oman
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Oman"
+      sling:message="オマーン"/>
+  <pakistan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Pakistan"
+      sling:message="パキスタン"/>
+  <palau
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Palau"
+      sling:message="パラオ"/>
+  <panama
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Panama"
+      sling:message="パナマ"/>
+  <papua-new-guinea
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Papua New Guinea"
+      sling:message="パプアニューギニア"/>
+  <paraguay
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Paraguay"
+      sling:message="パラグアイ"/>
+  <peru
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Peru"
+      sling:message="ペルー"/>
+  <philippines
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Philippines"
+      sling:message="フィリピン"/>
+  <poland
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Poland"
+      sling:message="ポーランド"/>
+  <portugal
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Portugal"
+      sling:message="ポルトガル"/>
+  <qatar
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Qatar"
+      sling:message="カタール"/>
+  <romania
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Romania"
+      sling:message="ルーマニア"/>
+  <russia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Russia"
+      sling:message="ロシア"/>
+  <russian-federation
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Russian Federation"
+      sling:message="ロシア"/>
+  <rwanda
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Rwanda"
+      sling:message="ルワンダ"/>
+  <saint-kitts-and-nevis
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Saint Kitts and Nevis"
+      sling:message="セントクリストファー・ネービス"/>
+  <saint-lucia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Saint Lucia"
+      sling:message="セントルシア"/>
+  <saint-vincent-and-the-grenadines
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Saint Vincent and the Grenadines"
+      sling:message="セントビンセント・グレナディーン諸島"/>
+  <samoa
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Samoa"
+      sling:message="サモア"/>
+  <san-marino
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="San Marino"
+      sling:message="サンマリノ"/>
+  <sao-tome-and-principe
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sao Tome and Principe"
+      sling:message="サントメ・プリンシペ"/>
+  <saudi-arabia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Saudi Arabia"
+      sling:message="サウジアラビア"/>
+  <senegal
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Senegal"
+      sling:message="セネガル"/>
+  <serbia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Serbia"
+      sling:message="セルビア"/>
+  <seychelles
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Seychelles"
+      sling:message="セーシェル"/>
+  <sierra-leone
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sierra Leone"
+      sling:message="シエラレオネ"/>
+  <singapore
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Singapore"
+      sling:message="シンガポール"/>
+  <slovakia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Slovakia"
+      sling:message="スロバキア"/>
+  <slovenia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Slovenia"
+      sling:message="スロベニア"/>
+  <solomon-islands
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Solomon Islands"
+      sling:message="ソロモン諸島"/>
+  <somalia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Somalia"
+      sling:message="ソマリア"/>
+  <south-africa
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="South Africa"
+      sling:message="南アフリカ"/>
+  <south-sudan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="South Sudan"
+      sling:message="南スーダン"/>
+  <spain
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Spain"
+      sling:message="スペイン"/>
+  <sri-lanka
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sri Lanka"
+      sling:message="スリランカ"/>
+  <sudan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sudan"
+      sling:message="スーダン"/>
+  <suriname
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Suriname"
+      sling:message="スリナム"/>
+  <sweden
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sweden"
+      sling:message="スウェーデン"/>
+  <switzerland
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Switzerland"
+      sling:message="スイス"/>
+  <syrian-arab-republic
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Syrian Arab Republic"
+      sling:message="シリア"/>
+  <tajikistan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Tajikistan"
+      sling:message="タジキスタン"/>
+  <tanzania
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Tanzania"
+      sling:message="タンザニア"/>
+  <tanzania-united-republic-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Tanzania, United Republic of"
+      sling:message="タンザニア"/>
+  <thailand
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Thailand"
+      sling:message="タイ"/>
+  <timor-leste
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Timor-Leste"
+      sling:message="東ティモール"/>
+  <togo
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Togo"
+      sling:message="トーゴ"/>
+  <tonga
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Tonga"
+      sling:message="トンガ"/>
+  <trinidad-and-tobago
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Trinidad and Tobago"
+      sling:message="トリニダード・トバゴ"/>
+  <tunisia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Tunisia"
+      sling:message="チュニジア"/>
+  <turkey
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Turkey"
+      sling:message="トルコ"/>
+  <turkmenistan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Turkmenistan"
+      sling:message="トルクメニスタン"/>
+  <tuvalu
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Tuvalu"
+      sling:message="ツバル"/>
+  <uganda
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Uganda"
+      sling:message="ウガンダ"/>
+  <ukraine
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Ukraine"
+      sling:message="ウクライナ"/>
+  <united-arab-emirates
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="United Arab Emirates"
+      sling:message="アラブ首長国連邦"/>
+  <united-kingdom
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="United Kingdom"
+      sling:message="イギリス"/>
+  <united-kingdom-of-great-britain
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="United Kingdom of Great Britain"
+      sling:message="イギリス"/>
+  <united-kingdom-of-great-britain-and-northern-ireland
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="United Kingdom of Great Britain and Northern Ireland"
+      sling:message="イギリス"/>
+  <united-states-of-america
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="United States of America"
+      sling:message="アメリカ合衆国"/>
+  <uruguay
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Uruguay"
+      sling:message="ウルグアイ"/>
+  <uzbekistan
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Uzbekistan"
+      sling:message="ウズベキスタン"/>
+  <vanuatu
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Vanuatu"
+      sling:message="バヌアツ"/>
+  <venezuela
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Venezuela"
+      sling:message="ベネズエラ"/>
+  <venezuela-bolivarian-republic-of
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Venezuela (Bolivarian Republic of)"
+      sling:message="ベネズエラ"/>
+  <vietnam
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Vietnam"
+      sling:message="ベトナム"/>
+  <viet-nam
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Viet Nam"
+      sling:message="ベトナム"/>
+  <yemen
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Yemen"
+      sling:message="イエメン"/>
+  <zambia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Zambia"
+      sling:message="ザンビア"/>
+  <zimbabwe
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Zimbabwe"
+      sling:message="ジンバブエ"/>
+  <visitsaudiwebsite jcr:primaryType="sling:MessageEntry" sling:key="visitsaudiwebsite"
+                     sling:message="公式ウェブサイト Visit Saudi"/>
+  <Travellers jcr:primaryType="sling:MessageEntry" sling:key="Travellers"
+              sling:message="こんな方におすすめ"/>
+  <readless
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Read Less"
+      sling:message="詳細を非表示"/>
+  <Clouds jcr:primaryType="sling:MessageEntry" sling:key="Clouds"
+          sling:message="曇り"/>
+  <Duration jcr:primaryType="sling:MessageEntry" sling:key="Duration"
+            sling:message="旅行期間"/>
+  <Haze jcr:primaryType="sling:MessageEntry" sling:key="Haze"
+        sling:message="かすみ"/>
+  <Clear jcr:primaryType="sling:MessageEntry" sling:key="Clear"
+         sling:message="晴れ"/>
+  <Dust jcr:primaryType="sling:MessageEntry" sling:key="Dust"
+        sling:message="埃っぽい"/>
+  <Snow jcr:primaryType="sling:MessageEntry" sling:key="Snow"
+        sling:message="雪"/>
+  <Rain jcr:primaryType="sling:MessageEntry" sling:key="Rain"
+        sling:message="雨"/>
+  <Drizzle jcr:primaryType="sling:MessageEntry" sling:key="Drizzle"
+           sling:message="霧雨"/>
+  <Thunderstorm jcr:primaryType="sling:MessageEntry" sling:key="Thunderstorm"
+                sling:message="雷雨"/>
+  <Fog jcr:primaryType="sling:MessageEntry" sling:key="Fog"
+       sling:message="霧"/>
+  <Sand jcr:primaryType="sling:MessageEntry" sling:key="Sand"
+        sling:message="砂っぽい"/>
+  <Ash jcr:primaryType="sling:MessageEntry" sling:key="Ash"
+       sling:message="灰"/>
+  <Squall jcr:primaryType="sling:MessageEntry" sling:key="Squall"
+          sling:message="スコール"/>
+  <Tornado jcr:primaryType="sling:MessageEntry" sling:key="Tornado"
+           sling:message="竜巻"/>
+  <Smoke jcr:primaryType="sling:MessageEntry" sling:key="Smoke"
+         sling:message="煙っている"/>
+  <Mist jcr:primaryType="sling:MessageEntry" sling:key="Mist"
+        sling:message="霧・もや"/>
+  <Now jcr:primaryType="sling:MessageEntry" sling:key="Now"
+       sling:message="現在"/>
+  <Feels-like jcr:primaryType="sling:MessageEntry" sling:key="Feels like"
+              sling:message="体感温度"/>
+  <Sunrise jcr:primaryType="sling:MessageEntry" sling:key="Sunrise"
+           sling:message="日の出"/>
+  <High jcr:primaryType="sling:MessageEntry" sling:key="High"
+        sling:message="最高気温"/>
+  <Low jcr:primaryType="sling:MessageEntry" sling:key="Low"
+       sling:message="最低気温"/>
+  <Humidity jcr:primaryType="sling:MessageEntry" sling:key="Humidity"
+            sling:message="湿度"/>
+  <Wind jcr:primaryType="sling:MessageEntry" sling:key="Wind"
+        sling:message="風速"/>
+  <Sunset jcr:primaryType="sling:MessageEntry" sling:key="Sunset"
+          sling:message="日の入"/>
+  <Sun jcr:primaryType="sling:MessageEntry" sling:key="Sun"
+       sling:message="日"/>
+  <Mon jcr:primaryType="sling:MessageEntry" sling:key="Mon"
+       sling:message="月"/>
+  <Tue jcr:primaryType="sling:MessageEntry" sling:key="Tue"
+       sling:message="火"/>
+  <Wed jcr:primaryType="sling:MessageEntry" sling:key="Wed"
+       sling:message="水"/>
+  <Thu jcr:primaryType="sling:MessageEntry" sling:key="Thu"
+       sling:message="木"/>
+  <Fri jcr:primaryType="sling:MessageEntry" sling:key="Fri"
+       sling:message="金"/>
+  <Sat jcr:primaryType="sling:MessageEntry" sling:key="Sat"
+       sling:message="土"/>
+  <January jcr:primaryType="sling:MessageEntry" sling:key="January"
+           sling:message="1月"/>
+  <February jcr:primaryType="sling:MessageEntry" sling:key="February"
+            sling:message="2月"/>
+  <March jcr:primaryType="sling:MessageEntry" sling:key="March"
+         sling:message="3月"/>
+  <April jcr:primaryType="sling:MessageEntry" sling:key="April"
+         sling:message="4月"/>
+  <May jcr:primaryType="sling:MessageEntry" sling:key="May"
+       sling:message="5月"/>
+  <June jcr:primaryType="sling:MessageEntry" sling:key="June"
+        sling:message="6月"/>
+  <July jcr:primaryType="sling:MessageEntry" sling:key="July"
+        sling:message="7月"/>
+  <August jcr:primaryType="sling:MessageEntry" sling:key="August"
+          sling:message="8月"/>
+  <September jcr:primaryType="sling:MessageEntry" sling:key="September"
+             sling:message="9月"/>
+  <October jcr:primaryType="sling:MessageEntry" sling:key="October"
+           sling:message="10月"/>
+  <November jcr:primaryType="sling:MessageEntry" sling:key="November"
+            sling:message="11月"/>
+  <December jcr:primaryType="sling:MessageEntry" sling:key="December"
+            sling:message="12月"/>
+  <importantInfo jcr:primaryType="sling:MessageEntry" sling:key="Important Information"
+                 sling:message="重要な情報"/>
+  <packageInclude jcr:primaryType="sling:MessageEntry" sling:key="Package includes"
+                  sling:message="パッケージに含まれるもの"/>
+  <packageExclude jcr:primaryType="sling:MessageEntry" sling:key="Package excludes"
+                  sling:message="パッケージに含まれないもの"/>
+  <bookexperience
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Book this experience"
+      sling:message="このエクスペリエンスを予約する"/>
+  <Area jcr:primaryType="sling:MessageEntry" sling:key="Area"
+        sling:message="地域"/>
+  <Activities jcr:primaryType="sling:MessageEntry" sling:key="Activities"
+              sling:message="アクティビティ"/>
+  <packagesfound jcr:primaryType="sling:MessageEntry"
+                 sling:key="packagesfound" sling:message="$0 パッケージ"/>
+  <hotelsfound jcr:primaryType="sling:MessageEntry"
+               sling:key="hotelsfound" sling:message="$0 のホテル"/>
+  <apply jcr:primaryType="sling:MessageEntry"
+         sling:key="apply" sling:message="申し込む"/>
+  <multiplelocations jcr:primaryType="sling:MessageEntry"
+                     sling:key="multiplelocations" sling:message="複数の場所"/>
+  <multipledestinations jcr:primaryType="sling:MessageEntry"
+                        sling:key="multipledestinations" sling:message="複数の目的地"/>
+  <viewoffers jcr:primaryType="sling:MessageEntry"
+              sling:key="viewoffers" sling:message="オファーを表示"/>
+  <showall
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="showall"
+      sling:message="すべて表示"/>
+  <showless
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="showless"
+      sling:message="少なく表示"/>
+  <Currencies jcr:primaryType="sling:MessageEntry"
+              sling:key="Currencies" sling:message="通貨"/>
+  <filters jcr:primaryType="sling:MessageEntry"
+           sling:key="filters" sling:message="フィルター"/>
+  <pricePerPerson jcr:primaryType="sling:MessageEntry" sling:key="Price per Person"
+                  sling:message="お一人様あたりの料金"/>
+  <pricePerPerson2 jcr:primaryType="sling:MessageEntry" sling:key="Price Info title, edit me"
+                   sling:message="お一人様あたりの料金"/>
+  <price jcr:primaryType="sling:MessageEntry" sling:key="Price"
+         sling:message="価格"/>
+  <startingFromCapitalLabel
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="startingFromCapitalLabel"
+      sling:message="お一人様 {0} SARから"/>
+  <belowThirty
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="BELOW_THIRTY"
+      sling:message="30-"/>
+  <thirtyToFifty
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="BETWEEN_THIRTY_FIFTY"
+      sling:message="30-50"/>
+  <aboveFifty
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="ABOVE_FIFTY"
+      sling:message="50+"/>
+  <male
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="MALE"
+      sling:message="男性"/>
+  <female
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="FEMALE"
+      sling:message="女性"/>
+  <not-say
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="NOT_SAY"
+      sling:message="回答しない"/>
+  <adventure
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="adventure"
+      sling:message="アドベンチャー"/>
+  <nature
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="nature"
+      sling:message="自然"/>
+  <sightseeing
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="sightseeing"
+      sling:message="観光"/>
+  <themed-attractions
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="themed-attractions"
+      sling:message="テーマのある観光スポット"/>
+  <culture-arts
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="culture-&amp;-visual-arts"
+      sling:message="文化芸術"/>
+  <shows-and-performing-arts
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="shows-&amp;-performing-arts"
+      sling:message="ショーと舞台芸術"/>
+  <conventions-and-exhibitions
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="convention-&amp;-exhibition"
+      sling:message="大会と展示会"/>
+  <sport
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="sport"
+      sling:message="スポーツ"/>
+  <shopping-and-retail
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="shopping-&amp;-retail"
+      sling:message="ショッピングとリテール"/>
+  <dining
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="dining"
+      sling:message="食事"/>
+  <digital
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="digital"
+      sling:message="デジタル"/>
+  <own
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="ON_MY_OWN"
+      sling:message="自分だけ"/>
+  <partner
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="WITH_PARTNER"
+      sling:message="パートナー"/>
+  <friends
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="WITH_FRIENDS"
+      sling:message="友達"/>
+  <family
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="WITH_FAMILY"
+      sling:message="家族"/>
+  <startingFrom2
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="startingFrom2"
+      sling:message="\{0} SARから"/>
+  <startingFrom3
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="startingFrom3"
+      sling:message="\{0} SARから"/>
+  <packageAvailabilityDisclaimer jcr:primaryType="sling:MessageEntry" sling:key="packageAvailabilityDisclaimer"
+                                 sling:message="空き状況に依ります。"/>
+  <termConditionsDisclaimer jcr:primaryType="sling:MessageEntry"
+                            sling:key="termConditionsDisclaimer"
+                            sling:message="規約が適用されます。"/>
+  <je-ab-ri jcr:primaryType="sling:MessageEntry" sling:key="je-ab-ri"
+            sling:message="ジェッダ, アブハー, リヤド"/>
+  <um-ne-ta jcr:primaryType="sling:MessageEntry" sling:key="um-ne-ta"
+            sling:message="ウムルジ, ネオム, タブーク"/>
+  <kaec jcr:primaryType="sling:MessageEntry" sling:key="kaec"
+                  sling:message="キング・アブドゥッラー・エコノミックシティー"/>
+  <ta-sh-ne jcr:primaryType="sling:MessageEntry" sling:key="ta-sh-ne"
+        sling:message="タブーク, シャルマ, ネオム"/>
+  <ab-al-ta jcr:primaryType="sling:MessageEntry" sling:key="ab-al-ta"
+         sling:message="アブハー, アル・バハー, Tasif"/>
+  <umluj jcr:primaryType="sling:MessageEntry" sling:key="umluj"
+          sling:message="ウムルジ"/>
+  <ab-al jcr:primaryType="sling:MessageEntry" sling:key="ab-al"
+         sling:message="アブハー, アル・バハー"/>
+  <ta-du-wa-um-ka-je-ta-al-ab jcr:primaryType="sling:MessageEntry" sling:key="ta-du-wa-um-ka-je-ta-al-ab"
+         sling:message="タブーク, ドゥバー, ワジュ, ウムルジ, KAEC, ジェッダ, ターイフ, アル・バハー, アブハー"/>
+  <je-ta-al jcr:primaryType="sling:MessageEntry" sling:key="je-ta-al"
+          sling:message="ジェッダ, ターイフ, アル・バハー"/>
+  <asir jcr:primaryType="sling:MessageEntry" sling:key="asir"
+                  sling:message="アスィール"/>
+  <ta-al jcr:primaryType="sling:MessageEntry" sling:key="ta-al"
+         sling:message="タブーク, ジャウフ"/>
+  <je-ta-al jcr:primaryType="sling:MessageEntry" sling:key="je-ta-al"
+          sling:message="ジェッダ, ターイフ, アル・バハー"/>
+  <je-ka jcr:primaryType="sling:MessageEntry" sling:key="je-ka"
+                           sling:message="ジェッダ, KAEC"/>
+  <jazan jcr:primaryType="sling:MessageEntry" sling:key="jazan"
+                sling:message="ジーザーン"/>
+  <madinah jcr:primaryType="sling:MessageEntry" sling:key="madinah"
+      sling:message="メディナ"/>
+  <ta-alb jcr:primaryType="sling:MessageEntry" sling:key="ta-alb"
+                              sling:message="ターイフ, アル・バハー"/>
+  <fayfa jcr:primaryType="sling:MessageEntry" sling:key="fayfa"
+         sling:message="フィーファ"/>
+  <ya-um jcr:primaryType="sling:MessageEntry" sling:key="ya-um"
+        sling:message="ヤンブー, ウムルジ"/>
+  <makkah jcr:primaryType="sling:MessageEntry" sling:key="makkah"
+      sling:message="メッカ"/>
+  <ba-ab jcr:primaryType="sling:MessageEntry" sling:key="ba-ab"
+            sling:message="バルジュラシー, アブハー"/>
+  <je-ta jcr:primaryType="sling:MessageEntry" sling:key="je-ta"
+         sling:message="ジェッダ, ターイフ"/>
+  <je-ta-th-ba-ab jcr:primaryType="sling:MessageEntry" sling:key="je-ta-th-ba-ab"
+               sling:message="ジェッダ, ターイフ, Thee Ain, バルジュラシー, アブハー"/>
+  <je-ta-al-ab jcr:primaryType="sling:MessageEntry" sling:key="je-ta-al-ab"
+          sling:message="ジェッダ, ターイフ, アル・バハー, アブハー"/>
+  <Hofuf jcr:primaryType="sling:MessageEntry" sling:key="hofuf"
+                        sling:message="ホフーフ＆アルマバラズ"/>
+  <aljouf jcr:primaryType="sling:MessageEntry" sling:key="aljouf"
+            sling:message="ジャウフ"/>
+  <sharma jcr:primaryType="sling:MessageEntry" sling:key="sharma"
+         sling:message="シャルマ"/>
+  <je-ka-ya jcr:primaryType="sling:MessageEntry" sling:key="je-ka-ya"
+            sling:message="ジェッダ, KAEC, ヤンブー"/>
+  <um-al-sh-ne jcr:primaryType="sling:MessageEntry" sling:key="um-al-sh-ne"
+               sling:message="ウムルジ, アル・ワジュフ, シャルマ, ネオム"/>
+  <ushaiger jcr:primaryType="sling:MessageEntry" sling:key="Ushaiger"
+          sling:message="ウシャイガー"/>
+  <je-ya-um-ta-al jcr:primaryType="sling:MessageEntry" sling:key="je-ya-um-ta-al"
+               sling:message="ジェッダ, ヤンブー, ウムルジ, タブーク, ジャウフ"/>
+  <albaha jcr:primaryType="sling:MessageEntry" sling:key="al-baha"
+            sling:message="アル・バーハ"/>
+  <ta-um-ya-ka-je-ta-al-ab jcr:primaryType="sling:MessageEntry" sling:key="ta-um-ya-ka-je-ta-al-ab"
+            sling:message="タブーク, ウムルジ, ヤンブー, KAEC, ジェッダ, ターイフ, アル・バハー, アブハー"/>
+  <Taif-app-city jcr:primaryType="sling:MessageEntry" sling:key="taif" sling:message="ターイフ"/>
+  <book-now
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Book Now"
+      sling:message="今すぐ予約する"/>
+    <about
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="about"
+        sling:message="について"/>
+    <included
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="included"
+        sling:message="含まれるもの"/>
+    <excluded
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="What's not Included"
+        sling:message="含まれないもの"/>
+    <years-old
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="years old"
+        sling:message="歳"/>
+    <suitable-for
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Suitable For"
+        sling:message="適しています"/>
+    <refund-plicy
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Refund Policy"
+        sling:message="返金ポリシー"/>
+    <you-may-also-like
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="You may also like"
+        sling:message="あなたも好きかもしれません"/>
+  <check-provider-details
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Check provider details at"
+      sling:message="会社の詳細を確認："/>
+  <more-experiences
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="More experiences"
+      sling:message="探索更多"/>
+  <explore-all
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Explore all"
+      sling:message="すべて見る"/>
+  <best-for
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Best for"
+      sling:message="に最適"/>
+  <country
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Country"
+      sling:message="国"/>
+  <king
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="King"
+      sling:message="王"/>
+  <salman-of-saudi-arabia
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Salman of Saudi Arabia"
+      sling:message="サウジアラビアのサルマン"/>
+  <capital
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Capital"
+      sling:message="首都"/>
+  <population
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Population"
+      sling:message="人口"/>
+  <million-3294
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="32.94 million"
+      sling:message="3,294万"/>
+  <currency
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Currency"
+      sling:message="通貨"/>
+  <saudi-riyal
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Saudi Riyal"
+      sling:message="SAR"/>
+  <SAR
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="SAR"
+      sling:message="SAR"/>
+  <region
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Region"
+      sling:message="地域"/>
+  <menu
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Menu"
+      sling:message="メニュー"/>
+  <regions
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Regions"
+      sling:message="地域"/>
+  <our-regions
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Our Regions"
+      sling:message="サウジの州"/>
+  <cities
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Cities"
+      sling:message="都市"/>
+  <al-qassim
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Al-Qassim"
+      sling:message="カスィーム"/>
+  <only-free-events jcr:primaryType="sling:MessageEntry" sling:key="only-free-events"
+                    sling:message="無料イベントのみ"/>
+  <today
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="today"
+      sling:message="今日"/>
+  <this-week
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="this-week"
+      sling:message="今週"/>
+  <this-month
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="this-month"
+      sling:message="今月"/>
+  <custom
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="custom"
+      sling:message="カスタム"/>
+  <eventsfound jcr:primaryType="sling:MessageEntry"
+               sling:key="eventsfound" sling:message="$0 個のイベント"/>
+  <eventfound jcr:primaryType="sling:MessageEntry"
+               sling:key="eventfound" sling:message="$0 イベント"/>
+  <featured
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Featured"
+      sling:message="おすすめ"/>
+  <kaec-navigation jcr:primaryType="sling:MessageEntry" sling:key="kaec-navigation"
+        sling:message="KAEC"/>
+  <photos
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="PHOTOS"
+      sling:message="写真"/>
+  <photo
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="PHOTO"
+      sling:message="写真"/>
+  <tickets
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="TICKETS"
+      sling:message="チケット"/>
+  <events-you-may-like
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="events-you-may-like"
+      sling:message="おすすめのイベント"/>
+  <hey
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="hey"
+      sling:message="確認！"/>
+  <login-or-sign-up-to-save-your-favorite-events
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="login-or-sign-up-to-save-your-favorite-events"
+      sling:message="ログインかサインアップして、お気に入りのイベントを保存してください"/>
+  <login-or-sign-up
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="login-or-sign-up"
+      sling:message="ログインもしくはサインアップ"/>
+  <signin
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sign In"
+      sling:message="ログインまたはサインアップ"/>
+  <signout
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Sign Out"
+      sling:message="ログアウト"/>
+  <callCenter
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Call Center"
+      sling:message="コールセンター"/>
+  <personalInformation
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Personal Information"
+      sling:message="個人情報"/>
+  <myFavorites
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="My Favorites"
+      sling:message="私のお気に入り"/>
+  <myTrips
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="My trips"
+      sling:message="マイトリップ"/>
+  <more-events-like-this
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="more-events-like-this"
+      sling:message="類似のイベント"/>
+  <Related-to
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Related to"
+      sling:message="テーマ"/>
+  <about-this-event
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="About this event"
+      sling:message="このイベントについて"/>
+  <Discover
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Discover"
+      sling:message="見る"/>
+  <package-booking-disclaimer
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="package-booking-disclaimer"
+      sling:message="This link will take you to a third-party booking site"/>
+  <searchLoadMore jcr:primaryType="sling:MessageEntry"
+                  sling:key="searchLoadMore" sling:message="さらに読み込む"/>
+  <searchPlaceholder jcr:primaryType="sling:MessageEntry"
+                     sling:key="searchPlaceholder" sling:message="検索"/>
+  <cancel jcr:primaryType="sling:MessageEntry"
+          sling:key="cancel" sling:message="Cancel"/>
+  <pillBlockTitle jcr:primaryType="sling:MessageEntry"
+                  sling:key="pillBlockTitle" sling:message="検索内容の提案"/>
+  <trendingBlockTitle jcr:primaryType="sling:MessageEntry"
+                      sling:key="trendingBlockTitle" sling:message="トレンド"/>
+    <featuredBlockTitle jcr:primaryType="sling:MessageEntry"
+        sling:key="featuredBlockTitle" sling:message="特集"/>
+  <resultsfound jcr:primaryType="sling:MessageEntry"
+                sling:key="resultsfound" sling:message="検索結果"/>
+  <hoursAbbreviationLabel jcr:primaryType="sling:MessageEntry"
+                          sling:key="hoursAbbreviationLabel" sling:message="h"/>
+  <didYouMeanLabel jcr:primaryType="sling:MessageEntry"
+                   sling:key="didYouMeanLabel" sling:message="もしかして $0?"/>
+  <searchClear jcr:primaryType="sling:MessageEntry"
+               sling:key="searchClear" sling:message="クリア"/>
+  <morePackagesYouMayLike jcr:primaryType="sling:MessageEntry"
+                          sling:key="More packages you may like" sling:message="その他のおすすめパッケージ"/>
+  <viewAll jcr:primaryType="sling:MessageEntry"
+           sling:key="View all" sling:message="すべて見る"/>
+  <welcome jcr:primaryType="sling:MessageEntry" sling:key="welcome" sling:message="ようこそ！"/>
+  <by jcr:primaryType="sling:MessageEntry" sling:key="by" sling:message="による"/>
+  <explore-the-arabian-winter
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Explore the Arabian winter"
+      sling:message="アラビアの冬を探索"/>
+  <discover-the-best-destinations-and-activities
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Discover the best destinations and activities"
+      sling:message="最高の旅先とアクティビティを発見"/>
+  <discover-more
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="Discover more"
+      sling:message="もっと探す"/>
+  <related-events
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="RELATED_EVENTS"
+      sling:message="関連イベント"/>
+  <happening-nearby
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="HAPPENING_NEARBY"
+      sling:message="近くで起こっている"/>
+  <price
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="PRICE"
+      sling:message="価格"/>
+  <duration
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="DURATION"
+      sling:message="日付"/>
+  <working-hours
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="WORKING_HOURS"
+      sling:message="営業時間"/>
+  <category
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="CATEGORY"
+      sling:message="カテゴリー"/>
+  <audience
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="AUDIENCE"
+      sling:message="観客動員数"/>
+  <accessibilty
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="ACCESSIBILTY"
+      sling:message="アクセシビリティ"/>
+  <share-event
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="SHARE_EVENT"
+      sling:message="シェアイベント"/>
+  <copy-link
+      jcr:primaryType="sling:MessageEntry"
+      sling:key="COPY_LINK"
+      sling:message="コピーリンク"/>
+    <video
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIDEO"
+        sling:message="動画"/>
+    <image
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="IMAGE"
+        sling:message="画像"/>
+    <more
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORE"
+        sling:message="もっと"/>
+    <attraction
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="attraction"
+        sling:message="観光スポット"/>
+    <activity
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="activity"
+        sling:message="アクティビティ"/>
+    <tour
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="tour"
+        sling:message="ツアー"/>
+    <event
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="event"
+        sling:message="イベント"/>
+    <experience
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="experience"
+        sling:message="体験"/>
+    <all
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="all"
+        sling:message="すべて"/>
+</jcr:root>

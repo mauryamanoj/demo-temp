@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "baseUrl": "../ui.frontend",
+        "downlevelIteration": true,
+        "removeComments": true,
+        "allowJs": true,
+        "preserveConstEnums": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "outDir": "./",
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ES2017",
+            "es2019",
+            "esnext"
+        ],
+        "strict": true,
+        "types": [
+            "@types/systemjs",
+            "node",
+            "webpack-env"
+        ]
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./types.d.ts",
+        "src/main/vendor/gsap/ThrowPropsPlugin.js"
+    ],
+    "exclude": [
+        "node_modules", "dist"
+    ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Hot Air Balloon Ride"
+          jcr:title.ar="رحلة بالمنطاد"
+          jcr:title.de="Heißluftballonfahrt"
+          jcr:title.es="Paseo en globo aerostático"
+          jcr:title.fr="Vol en montgolfière"
+          jcr:title.ja="熱気球の乗り物"
+          jcr:title.ru="Полет на воздушном шаре"
+          jcr:title.zh="热气球之旅"
+          sling:resourceType="cq/tagging/components/tag"/>

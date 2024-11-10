@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Mekhwah"
+    jcr:title.ar="المخواة"
+    jcr:title.de="Al Makhwah"
+    jcr:title.es="Al Makhwa"
+    jcr:title.fr="Al Makhwah"
+    jcr:title.ja="アル・ムハワ"
+    jcr:title.ru="Эль-Миква"
+    jcr:title.zh="马赫瓦"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-mekhwah"/>

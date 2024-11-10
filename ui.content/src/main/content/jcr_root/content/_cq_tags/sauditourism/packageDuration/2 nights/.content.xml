@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="2 Nights"
+          jcr:title.ar="ليلتان"
+          jcr:title.fr="2 nuits"
+          jcr:title.es="2 noches"
+          jcr:title.ru="2 ночи"
+          jcr:title.de="2 Nächte"
+          jcr:title.zh="两夜"
+          jcr:title.ja="2泊"
+          sling:resourceType="cq/tagging/components/tag"/>

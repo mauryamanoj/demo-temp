@@ -1,0 +1,23 @@
+<template data-sly-template.c08CityCard="${@ card, variant, isCarouselItem}"
+          data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-use.cta02Link="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html"
+          data-sly-set.link="${card.link}">
+<li class="card" data-card="">
+  <a data-sly-element="${variant == 'with-cta' ? 'a' : 'div'}"
+     href="${link.urlWithExtension @ context='uri'}"
+     data-component="c-08-city-card" class="variant-${variant}"
+     data-sly-attribute.data-latitude="${card.latitude}"
+     data-sly-attribute.data-longitude="${card.longitude}"
+     data-sly-attribute.data-editor="${wcmmode.edit ? 'true' : 'false'}">
+    <div class="image-wrapper">
+      <sly data-sly-call="${imageTemplate.pictureObj @ imageDesktop=card.image.s7fileReference||
+                                    card.image.fileReference, altText=link.copy, weatherLabel=card.weatherTemperature,
+                                    weatherIcon=card.weatherIcon, simpleLabelList=card.labelList, componentType='c-08'}"></sly>
+    </div>
+    <div class="content-wrapper">
+      <sly data-sly-test="${variant == 'with-cta'}"
+           data-sly-call="${cta02Link.ctaLink @ copy=link.copy}"></sly>
+    </div>
+  </a>
+</li>
+</template>

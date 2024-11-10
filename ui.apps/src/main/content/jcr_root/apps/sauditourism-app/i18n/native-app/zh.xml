@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:language="zh"
+          jcr:mixinTypes="[mix:language]"
+          jcr:primaryType="nt:folder">
+    <ABOUT jcr:primaryType="sling:MessageEntry" sling:key="ABOUT" sling:message="关于"/>
+    <ACCOUNT_DELETE_ACCOUNT jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_DELETE_ACCOUNT"
+                            sling:message="删除帐户"/>
+    <ACCOUNT_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_DESCRIPTION"
+                         sling:message="您可以删除您的 Visit Saudi 帐户。您的所有帐户信息将被永久删除。"/>
+    <ACCOUNT_NOT_NOW jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_NOT_NOW" sling:message="现在不要"/>
+    <ACCOUNT_TITLE jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_TITLE" sling:message="删除我的账户"/>
+    <ACTIVITY_DETAILS_ADD jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_DETAILS_ADD" sling:message="添加到行程"/>
+    <ACTIVITY_DETAILS_REMOVE jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_DETAILS_REMOVE"
+                             sling:message="从行程中删除"/>
+    <ACTIVITY_DETAILS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_DETAILS_TITLE"
+                            sling:message="活动详情"/>
+    <ACTIVITY_LOCATION_DETAILS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_LOCATION_DETAILS_TITLE"
+                                     sling:message="位置详情"/>
+    <ADVENTURE jcr:primaryType="sling:MessageEntry" sling:key="ADVENTURE" sling:message="冒险"/>
+    <ALL_ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="ALL_ATTRACTIONS" sling:message="所有景点"/>
+    <ALL_CONTINENTS jcr:primaryType="sling:MessageEntry" sling:key="ALL_CONTINENTS" sling:message="各大洲"/>
+    <ALL_DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="ALL_DESTINATIONS" sling:message="所有目的地"/>
+    <ALL_EVENTS jcr:primaryType="sling:MessageEntry" sling:key="ALL_EVENTS" sling:message="所有活动"/>
+    <ALL_HOTELS jcr:primaryType="sling:MessageEntry" sling:key="ALL_HOTELS" sling:message="所有酒店"/>
+    <ALL_PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="ALL_PACKAGES" sling:message="所有体验"/>
+    <AN_ERROR_OCCURRED_WHILE_LOADING_THIS_SECTION jcr:primaryType="sling:MessageEntry"
+                                                  sling:key="AN_ERROR_OCCURRED_WHILE_LOADING_THIS_SECTION"
+                                                  sling:message="加载此部分时出错"/>
+    <APP_LANGUAGE jcr:primaryType="sling:MessageEntry" sling:key="APP_LANGUAGE" sling:message="应用语言"/>
+    <APP_VERSION jcr:primaryType="sling:MessageEntry" sling:key="APP_VERSION" sling:message="应用版本"/>
+    <APPLE_PAY_BUTTON_TITLE jcr:primaryType="sling:MessageEntry" sling:key="APPLE_PAY_BUTTON_TITLE"
+                            sling:message="用苹果支付"/>
+    <APPLY jcr:primaryType="sling:MessageEntry" sling:key="APPLY" sling:message="申请"/>
+    <APPLY_FILTERS jcr:primaryType="sling:MessageEntry" sling:key="APPLY_FILTERS" sling:message="应用过滤器"/>
+    <ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="ATTRACTIONS" sling:message="景点"/>
+    <ATTRACTIONS_BY_TYPE jcr:primaryType="sling:MessageEntry" sling:key="ATTRACTIONS_BY_TYPE" sling:message="景点类型"/>
+    <AUTHOR jcr:primaryType="sling:MessageEntry" sling:key="AUTHOR" sling:message="作者"/>
+    <BACK jcr:primaryType="sling:MessageEntry" sling:key="BACK" sling:message="后退"/>
+    <BACK_TO_HOMEPAGE jcr:primaryType="sling:MessageEntry" sling:key="BACK_TO_HOMEPAGE" sling:message="返回首页"/>
+    <BICYCLE jcr:primaryType="sling:MessageEntry" sling:key="BICYCLE" sling:message="自行车"/>
+    <BLOGGER jcr:primaryType="sling:MessageEntry" sling:key="BLOGGER" sling:message="博主"/>
+    <BOOK_NOW jcr:primaryType="sling:MessageEntry" sling:key="BOOK_NOW" sling:message="现在预订"/>
+    <BOOKING_ADD_TO_WALLET jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ADD_TO_WALLET"
+                           sling:message="添加到 Apple 钱包"/>
+    <BOOKING_CANCELLED jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_CANCELLED" sling:message="取消"/>
+    <BOOKING_CONFIRMATION_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_CONFIRMATION_DESCRIPTION"
+                                      sling:message="包含您的预订详细信息的确认电子邮件已发送至您的电子邮件地址"/>
+    <BOOKING_CONFIRMATION_TITLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_CONFIRMATION_TITLE"
+                                sling:message="感谢您的预订！"/>
+    <BOOKING_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_DETAILS" sling:message="预订详情"/>
+    <BOOKING_DISCOUNT jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_DISCOUNT" sling:message="折扣"/>
+    <BOOKING_EMAIL_CONFIRMATION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_EMAIL_CONFIRMATION"
+                                sling:message="您的付款已完成。包含您的预订详细信息的确认电子邮件已发送至您的电子邮箱"/>
+    <BOOKING_ENTER_PROMO_CODE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ENTER_PROMO_CODE"
+                              sling:message="输入促销代码"/>
+    <BOOKING_ERROR_CODE_1 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_1" sling:message="身份验证失败"/>
+    <BOOKING_ERROR_CODE_100 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_100"
+                            sling:message="交易成本或货币无效"/>
+    <BOOKING_ERROR_CODE_101 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_101"
+                            sling:message="购物车 ID 无效"/>
+    <BOOKING_ERROR_CODE_102 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_102"
+                            sling:message="说明无效"/>
+    <BOOKING_ERROR_CODE_103 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_103"
+                            sling:message="名称无效"/>
+    <BOOKING_ERROR_CODE_104 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_104"
+                            sling:message="地址无效"/>
+    <BOOKING_ERROR_CODE_105 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_105"
+                            sling:message="国家无效"/>
+    <BOOKING_ERROR_CODE_106 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_106"
+                            sling:message="电子邮件无效"/>
+    <BOOKING_ERROR_CODE_107 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_107"
+                            sling:message="电话号码无效"/>
+    <BOOKING_ERROR_CODE_108 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_108"
+                            sling:message="IP 地址无效"/>
+    <BOOKING_ERROR_CODE_109 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_109"
+                            sling:message="交易模式无效"/>
+    <BOOKING_ERROR_CODE_110 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_110"
+                            sling:message="交易类型无效"/>
+    <BOOKING_ERROR_CODE_111 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_111"
+                            sling:message="交易类别无效"/>
+    <BOOKING_ERROR_CODE_112 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_112"
+                            sling:message="不支持方法/类别/货币组合"/>
+    <BOOKING_ERROR_CODE_113 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_113"
+                            sling:message="交易参考无效"/>
+    <BOOKING_ERROR_CODE_114 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_114"
+                            sling:message="金额与原件不同"/>
+    <BOOKING_ERROR_CODE_115 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_115"
+                            sling:message="原始交易未经授权"/>
+    <BOOKING_ERROR_CODE_116 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_116"
+                            sling:message="原始交易已作废"/>
+    <BOOKING_ERROR_CODE_117 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_117"
+                            sling:message="原始交易不匹配"/>
+    <BOOKING_ERROR_CODE_118 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_118"
+                            sling:message="金额大于可用余额"/>
+    <BOOKING_ERROR_CODE_119 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_119"
+                            sling:message="原始交易不能作废"/>
+    <BOOKING_ERROR_CODE_120 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_120"
+                            sling:message="之前的交易被搁置"/>
+    <BOOKING_ERROR_CODE_121 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_121"
+                            sling:message="交易方式与原来不同"/>
+    <BOOKING_ERROR_CODE_122 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_122"
+                            sling:message="参考交易不具备连续权限"/>
+    <BOOKING_ERROR_CODE_2 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_2" sling:message="无效的请求"/>
+    <BOOKING_ERROR_CODE_200 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_200"
+                            sling:message="无效的卡号"/>
+    <BOOKING_ERROR_CODE_201 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_201"
+                            sling:message="卡有效期无效"/>
+    <BOOKING_ERROR_CODE_202 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_202"
+                            sling:message="无效的卡安全码 (CVV)"/>
+    <BOOKING_ERROR_CODE_203 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_203"
+                            sling:message="无效账户"/>
+    <BOOKING_ERROR_CODE_204 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_204"
+                            sling:message="使用中的先前事务"/>
+    <BOOKING_ERROR_CODE_205 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_205"
+                            sling:message="付款方式无效"/>
+    <BOOKING_ERROR_CODE_206 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_206"
+                            sling:message="货币错配"/>
+    <BOOKING_ERROR_CODE_207 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_207"
+                            sling:message="终端无效"/>
+    <BOOKING_ERROR_CODE_208 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_208"
+                            sling:message="返回网址无效"/>
+    <BOOKING_ERROR_CODE_209 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_209"
+                            sling:message="无效的商家令牌"/>
+    <BOOKING_ERROR_CODE_210 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_210"
+                            sling:message="无效的回调地址"/>
+    <BOOKING_ERROR_CODE_3 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_3"
+                          sling:message="配置文件 ID 无效"/>
+    <BOOKING_ERROR_CODE_300 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_300"
+                            sling:message="未授权"/>
+    <BOOKING_ERROR_CODE_301 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_301"
+                            sling:message="需要卡有效期"/>
+    <BOOKING_ERROR_CODE_302 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_302"
+                            sling:message="卡已过期/过期日期不正确"/>
+    <BOOKING_ERROR_CODE_303 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_303"
+                            sling:message="卡仅供 ATM 使用"/>
+    <BOOKING_ERROR_CODE_304 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_304"
+                            sling:message="需要卡安全码 (CVV)"/>
+    <BOOKING_ERROR_CODE_305 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_305"
+                            sling:message="卡安全码 (CVV) 不匹配"/>
+    <BOOKING_ERROR_CODE_306 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_306"
+                            sling:message="地址验证 (AVS) 不匹配"/>
+    <BOOKING_ERROR_CODE_307 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_307"
+                            sling:message="卡安全码 (CVV) 和地址 (AVS) 不匹配"/>
+    <BOOKING_ERROR_CODE_308 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_308"
+                            sling:message="没有为电子商务启用卡"/>
+    <BOOKING_ERROR_CODE_309 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_309"
+                            sling:message="此卡无法使用 3DSecure 身份验证"/>
+    <BOOKING_ERROR_CODE_310 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_310"
+                            sling:message="3DSecure 身份验证被拒绝"/>
+    <BOOKING_ERROR_CODE_311 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_311"
+                            sling:message="卡取消"/>
+    <BOOKING_ERROR_CODE_312 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_312"
+                            sling:message="没有/无效的帐户"/>
+    <BOOKING_ERROR_CODE_313 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_313"
+                            sling:message="发行人不允许的交易"/>
+    <BOOKING_ERROR_CODE_314 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_314"
+                            sling:message="未授权"/>
+    <BOOKING_ERROR_CODE_315 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_315"
+                            sling:message="未授权"/>
+    <BOOKING_ERROR_CODE_316 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_316"
+                            sling:message="不充足的资金"/>
+    <BOOKING_ERROR_CODE_317 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_317"
+                            sling:message="被收购方屏蔽"/>
+    <BOOKING_ERROR_CODE_318 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_318"
+                            sling:message="授权已过期"/>
+    <BOOKING_ERROR_CODE_319 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_319"
+                            sling:message="无法作废"/>
+    <BOOKING_ERROR_CODE_320 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_320"
+                            sling:message="无法退款"/>
+    <BOOKING_ERROR_CODE_321 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_321" sling:message="取消"/>
+    <BOOKING_ERROR_CODE_322 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_322"
+                            sling:message="收单机构不支持"/>
+    <BOOKING_ERROR_CODE_323 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_323"
+                            sling:message="超出卡限额"/>
+    <BOOKING_ERROR_CODE_324 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_324"
+                            sling:message="超出终端限制"/>
+    <BOOKING_ERROR_CODE_325 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_325"
+                            sling:message="超出商家限制"/>
+    <BOOKING_ERROR_CODE_326 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_326"
+                            sling:message="超出帐户限制"/>
+    <BOOKING_ERROR_CODE_327 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_327"
+                            sling:message="OTP 超时"/>
+    <BOOKING_ERROR_CODE_4 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_4" sling:message="重复请求"/>
+    <BOOKING_ERROR_CODE_400 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_400"
+                            sling:message="内部系统错误"/>
+    <BOOKING_ERROR_CODE_401 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_401"
+                            sling:message="没有反应"/>
+    <BOOKING_ERROR_CODE_402 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_402"
+                            sling:message="连接到服务提供商时出错"/>
+    <BOOKING_ERROR_CODE_5 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_5" sling:message="超出请求限制"/>
+    <BOOKING_ERROR_CODE_500 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_500" sling:message="拒绝"/>
+    <BOOKING_ERROR_CODE_501 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_501" sling:message="拒绝"/>
+    <BOOKING_ERROR_CODE_502 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_502" sling:message="拒绝"/>
+    <BOOKING_ERROR_CODE_503 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_503" sling:message="拒绝"/>
+    <BOOKING_ERROR_CODE_600 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_600"
+                            sling:message="待办的"/>
+    <BOOKING_ERROR_CODE_601 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_601"
+                            sling:message="等候接听"/>
+    <BOOKING_ERROR_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_DESCRIPTION"
+                               sling:message="处理您的付款时出错。请确保所有信息都正确，然后再重试。"/>
+    <BOOKING_EXCLUDING_VAT jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_EXCLUDING_VAT"
+                           sling:message="不包括增值税"/>
+    <BOOKING_HELP jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_HELP" sling:message="帮助支持"/>
+    <BOOKING_LOCATION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_LOCATION" sling:message="地点"/>
+    <BOOKING_NUMBER_OF_PEOPLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_NUMBER_OF_PEOPLE"
+                              sling:message="人数"/>
+    <BOOKING_OPTIONS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_OPTIONS_TITLE" sling:message="预订选项"/>
+    <BOOKING_PAST jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_PAST" sling:message="過去的"/>
+    <BOOKING_PRICES_PER_PERSON jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_PRICES_PER_PERSON"
+                               sling:message="每人价格"/>
+    <BOOKING_PROMO_CODE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_PROMO_CODE" sling:message="促銷代碼"/>
+    <BOOKING_REFUND_POLICY jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_REFUND_POLICY" sling:message="退款政策"/>
+    <BOOKING_SCAN_QR_CODE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SCAN_QR_CODE" sling:message="掃描此二維碼"/>
+    <BOOKING_SELECT_DATE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SELECT_DATE" sling:message="選擇日期"/>
+    <BOOKING_SELECT_DATE_AND_TIME jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SELECT_DATE_AND_TIME"
+                                  sling:message="请选择日期与时间"/>
+    <BOOKING_SUBTOTAL jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SUBTOTAL" sling:message="小計"/>
+    <BOOKING_SUMMARY jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SUMMARY" sling:message="预订总结"/>
+    <BOOKING_SUPPORTED_METHODS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SUPPORTED_METHODS_TITLE"
+                                     sling:message="我們支持以下支付方式"/>
+    <BOOKING_TERMS jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_TERMS" sling:message="条款和条件"/>
+    <BOOKING_TOTAL jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_TOTAL" sling:message="全部的"/>
+    <BOOKING_UPCOMING jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_UPCOMING" sling:message="即將到來"/>
+    <BRAND jcr:primaryType="sling:MessageEntry" sling:key="BRAND" sling:message="牌"/>
+    <BUS jcr:primaryType="sling:MessageEntry" sling:key="BUS" sling:message="公共汽車"/>
+    <BUS_STOPS_AND_TAXIS jcr:primaryType="sling:MessageEntry" sling:key="BUS_STOPS_AND_TAXIS" sling:message="巴士站和出租車"/>
+    <BY_BICYCLE jcr:primaryType="sling:MessageEntry" sling:key="BY_BICYCLE" sling:message="騎自行車"/>
+    <BY_CAR jcr:primaryType="sling:MessageEntry" sling:key="BY_CAR" sling:message="坐車"/>
+    <CALENDAR jcr:primaryType="sling:MessageEntry" sling:key="CALENDAR" sling:message="日历"/>
+    <CALL_TOURISM_HOTLINE jcr:primaryType="sling:MessageEntry" sling:key="CALL_TOURISM_HOTLINE"
+                          sling:message="联系我们的 24/7 旅游热线"/>
+    <CANCEL jcr:primaryType="sling:MessageEntry" sling:key="CANCEL" sling:message="取消"/>
+    <CAR jcr:primaryType="sling:MessageEntry" sling:key="CAR" sling:message="車"/>
+    <CATEGORIES jcr:primaryType="sling:MessageEntry" sling:key="CATEGORIES" sling:message="类别"/>
+    <CATEGORY jcr:primaryType="sling:MessageEntry" sling:key="CATEGORY" sling:message="類別"/>
+    <CHAT_TO_US_ON_WHATSAPP jcr:primaryType="sling:MessageEntry" sling:key="CHAT_TO_US_ON_WHATSAPP"
+                            sling:message="在 WhatsApp 上与我们聊天"/>
+    <CHAUFFEUR jcr:primaryType="sling:MessageEntry" sling:key="CHAUFFEUR" sling:message="司機"/>
+    <CITIES jcr:primaryType="sling:MessageEntry" sling:key="CITIES" sling:message="城市"/>
+    <CITIES_OF jcr:primaryType="sling:MessageEntry" sling:key="CITIES_OF" sling:message="的城市"/>
+    <CLEAR_ALL jcr:primaryType="sling:MessageEntry" sling:key="CLEAR_ALL" sling:message="删除一切"/>
+    <CONNECT_TO_INTERNET jcr:primaryType="sling:MessageEntry" sling:key="CONNECT_TO_INTERNET" sling:message="请连接到互联网"/>
+    <CONTENETS jcr:primaryType="sling:MessageEntry" sling:key="CONTENETS" sling:message="大洲"/>
+    <CONTINENTS jcr:primaryType="sling:MessageEntry" sling:key="CONTINENTS" sling:message="大洲"/>
+    <CONTINUE jcr:primaryType="sling:MessageEntry" sling:key="CONTINUE" sling:message="继续"/>
+    <CONVENTIONS_And_EXHIBITIONS jcr:primaryType="sling:MessageEntry" sling:key="CONVENTIONS_And_EXHIBITIONS"
+                                 sling:message="大会议及展会"/>
+    <COUNTRIES jcr:primaryType="sling:MessageEntry" sling:key="COUNTRIES" sling:message="國家"/>
+    <COUNTRY_CODE jcr:primaryType="sling:MessageEntry" sling:key="COUNTRY_CODE" sling:message="国家代号"/>
+    <CREATE_TRIP_CREATE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_CREATE" sling:message="創造"/>
+    <CREATE_TRIP_DRAG_HINT jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_DRAG_HINT"
+                           sling:message="您可以拖放以重新排序城市"/>
+    <CREATE_TRIP_ENTER_NAME jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_ENTER_NAME"
+                            sling:message="輸入您的旅行名稱"/>
+    <CREATE_TRIP_HOW_MANY_DAYS jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_HOW_MANY_DAYS"
+                               sling:message="你住幾天？"/>
+    <CREATE_TRIP_LOADING_SUBTITLE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_LOADING_SUBTITLE"
+                                  sling:message="這將需要一秒鐘..."/>
+    <CREATE_TRIP_LOADING_TITLE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_LOADING_TITLE"
+                               sling:message="加載您的行程"/>
+    <CREATE_TRIP_SELECT_DATE_PLACE_HOLDER jcr:primaryType="sling:MessageEntry"
+                                          sling:key="CREATE_TRIP_SELECT_DATE_PLACE_HOLDER" sling:message="請選擇日期"/>
+    <CREATE_TRIP_SELECT_DATE_TITLE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_SELECT_DATE_TITLE"
+                                   sling:message="選擇旅行的開始日期"/>
+    <CREATE_TRIP_START_DATE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_START_DATE"
+                            sling:message="開始日期"/>
+    <CREATE_TRIP_TRIP_NAME jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_TRIP_NAME" sling:message="行程名稱"/>
+    <CREATE_TRIP_WHERE_ARE_YOU_GOING jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_WHERE_ARE_YOU_GOING"
+                                     sling:message="你要去哪里？"/>
+    <CULTURE_ARTS jcr:primaryType="sling:MessageEntry" sling:key="CULTURE_ARTS" sling:message="文化以及视觉艺术"/>
+    <DAY jcr:primaryType="sling:MessageEntry" sling:key="DAY" sling:message="天"/>
+    <DAY_ITINERARY jcr:primaryType="sling:MessageEntry" sling:key="DAY_ITINERARY" sling:message="一日旅游"/>
+    <DAYS jcr:primaryType="sling:MessageEntry" sling:key="DAYS" sling:message="天"/>
+    <DELETE_TRIP_ALERT_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="DELETE_TRIP_ALERT_MESSAGE"
+                               sling:message="您将被重定向到“我的旅行”。"/>
+    <DELETE_TRIP_ALERT_TITLE jcr:primaryType="sling:MessageEntry" sling:key="DELETE_TRIP_ALERT_TITLE"
+                             sling:message="您确定要删除此行程吗？"/>
+    <DELETE_TRIP_DELETE jcr:primaryType="sling:MessageEntry" sling:key="DELETE_TRIP_DELETE" sling:message="删除"/>
+    <DESTINATION jcr:primaryType="sling:MessageEntry" sling:key="DESTINATION" sling:message="目的地"/>
+    <DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="DESTINATIONS" sling:message="目的地"/>
+    <DETAIL_DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="DETAIL_DIRECTIONS" sling:message="如何前往"/>
+    <DETAILS jcr:primaryType="sling:MessageEntry" sling:key="DETAILS" sling:message="细节"/>
+    <DID_YOU_MEAN jcr:primaryType="sling:MessageEntry" sling:key="DID_YOU_MEAN" sling:message="你的意思"/>
+    <DINING jcr:primaryType="sling:MessageEntry" sling:key="DINING" sling:message="用餐"/>
+    <DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="DIRECTIONS" sling:message="方向"/>
+    <DIRECTIONS_TO jcr:primaryType="sling:MessageEntry" sling:key="DIRECTIONS_TO" sling:message="方向"/>
+    <DISCOVER jcr:primaryType="sling:MessageEntry" sling:key="DISCOVER" sling:message="发现"/>
+    <DISCOVER_ACTIVITIES_ON_MAP_MESSAGE jcr:primaryType="sling:MessageEntry"
+                                        sling:key="DISCOVER_ACTIVITIES_ON_MAP_MESSAGE"
+                                        sling:message="直接在地图上发现最新活动和热门景点"/>
+    <DISCOVER_ROAD_TRIP jcr:primaryType="sling:MessageEntry" sling:key="DISCOVER_ROAD_TRIP" sling:message="发现公路旅行"/>
+    <DONE jcr:primaryType="sling:MessageEntry" sling:key="DONE" sling:message="完毕"/>
+    <DURATION jcr:primaryType="sling:MessageEntry" sling:key="DURATION" sling:message="时长"/>
+    <EDIT_TRIP_ALERT_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="EDIT_TRIP_ALERT_MESSAGE"
+                             sling:message="您所做的更改将影响旅行时间表，包括您可能已经添加的活动或事件"/>
+    <EDIT_TRIP_TITLE jcr:primaryType="sling:MessageEntry" sling:key="EDIT_TRIP_TITLE" sling:message="编辑行程"/>
+    <EDIT_TRIP_UPDATE_BUTTON jcr:primaryType="sling:MessageEntry" sling:key="EDIT_TRIP_UPDATE_BUTTON"
+                             sling:message="更新"/>
+    <EDITORIAL jcr:primaryType="sling:MessageEntry" sling:key="EDITORIAL" sling:message="社論"/>
+    <EMERGENCY_NUMBERS jcr:primaryType="sling:MessageEntry" sling:key="EMERGENCY_NUMBERS" sling:message="紧急号码"/>
+    <END_DATE jcr:primaryType="sling:MessageEntry" sling:key="END_DATE" sling:message="結束日期"/>
+    <ENTER_PHONE_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="ENTER_PHONE_NUMBER" sling:message="请输入电话号码"/>
+    <ENTER_PHONE_NUMBER_PALCEHOLDER jcr:primaryType="sling:MessageEntry" sling:key="ENTER_PHONE_NUMBER_PALCEHOLDER"
+                                    sling:message="輸入電話號碼"/>
+    <ENTER_VERIFICATION_CODE jcr:primaryType="sling:MessageEntry" sling:key="ENTER_VERIFICATION_CODE"
+                             sling:message="请输入验证码"/>
+    <ENTER_YOUR_PHONE_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="ENTER_YOUR_PHONE_NUMBER"
+                             sling:message="请输入您的电话号码"/>
+    <ENTRANCES jcr:primaryType="sling:MessageEntry" sling:key="ENTRANCES" sling:message="入口"/>
+    <ERROR_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="ERROR_MESSAGE" sling:message="出问题了"/>
+    <ESSENTIALS jcr:primaryType="sling:MessageEntry" sling:key="ESSENTIALS" sling:message="基本的"/>
+    <EVENT jcr:primaryType="sling:MessageEntry" sling:key="EVENT" sling:message="精彩活动"/>
+    <EVENT_ABOUT jcr:primaryType="sling:MessageEntry" sling:key="EVENT_ABOUT" sling:message="关于"/>
+    <EVENT_AUDIENCE jcr:primaryType="sling:MessageEntry" sling:key="EVENT_AUDIENCE" sling:message="观众"/>
+    <EVENT_DETAILS_LOCATION jcr:primaryType="sling:MessageEntry" sling:key="EVENT_DETAILS_LOCATION" sling:message="位置"/>
+    <EVENT_END_DATE jcr:primaryType="sling:MessageEntry" sling:key="EVENT_END_DATE" sling:message="至"/>
+    <EVENT_GET_DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="EVENT_GET_DIRECTIONS"
+                          sling:message="获取地图上的路线"/>
+    <EVENT_RELATED_EVENTS jcr:primaryType="sling:MessageEntry" sling:key="EVENT_RELATED_EVENTS" sling:message="有关活动"/>
+    <EVENT_SEASON jcr:primaryType="sling:MessageEntry" sling:key="EVENT_SEASON" sling:message="季节"/>
+    <EVENT_START_DATE jcr:primaryType="sling:MessageEntry" sling:key="EVENT_START_DATE" sling:message="从"/>
+    <EVENT_TIME_ENDING jcr:primaryType="sling:MessageEntry" sling:key="EVENT_TIME_ENDING" sling:message="结束时间"/>
+    <EVENT_TIME_STARTING jcr:primaryType="sling:MessageEntry" sling:key="EVENT_TIME_STARTING" sling:message="起始时间"/>
+    <EVENTS jcr:primaryType="sling:MessageEntry" sling:key="EVENTS" sling:message="精彩活动"/>
+    <EVENTS_BUY_TICKETS jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_BUY_TICKETS" sling:message="买票"/>
+    <EVENTS_FEATURED jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FEATURED" sling:message="精选"/>
+    <EVENTS_FILTERS_NO_FOUND_BODY jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FILTERS_NO_FOUND_BODY"
+                                  sling:message="调整一下筛选项，看看能不能找到您要找的活动"/>
+    <EVENTS_FILTERS_NO_FOUND_TITLE jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FILTERS_NO_FOUND_TITLE"
+                                   sling:message="什么都没有找到"/>
+    <EVENTS_FREE_EVENT jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FREE_EVENT" sling:message="免费活动"/>
+    <EVENTS_GET_TICKETS jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_GET_TICKETS" sling:message="获得门票"/>
+    <EXIT jcr:primaryType="sling:MessageEntry" sling:key="EXIT" sling:message="出口"/>
+    <EXIT_DRIVING_MODE jcr:primaryType="sling:MessageEntry" sling:key="EXIT_DRIVING_MODE" sling:message="结束开车模式"/>
+    <EXPLORE_CITY jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_CITY" sling:message="探索城市"/>
+    <EXPLORE_DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_DESTINATIONS" sling:message="探索目的地"/>
+    <EXPLORE_NOW jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_NOW" sling:message="现在探索"/>
+    <EXPLORE_SAUDI_ARABIA jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_SAUDI_ARABIA" sling:message="探索沙特"/>
+    <EXPLORE_SAUDI_MAP jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_SAUDI_MAP" sling:message="探索沙特地图"/>
+    <EXPLORE_SEASONS jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_SEASONS" sling:message="探索季节"/>
+    <FACILITIES jcr:primaryType="sling:MessageEntry" sling:key="FACILITIES" sling:message="设施"/>
+    <FAVORITE jcr:primaryType="sling:MessageEntry" sling:key="FAVORITE" sling:message="个收藏"/>
+    <FAVORITES jcr:primaryType="sling:MessageEntry" sling:key="FAVORITES" sling:message="个收藏"/>
+    <FAVORITES_SIGNIN_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="FAVORITES_SIGNIN_MESSAGE"
+                              sling:message="登錄或創建帳戶以保存和同步您的收藏夾"/>
+    <FEATURED jcr:primaryType="sling:MessageEntry" sling:key="FEATURED" sling:message="精选"/>
+    <FILTERS jcr:primaryType="sling:MessageEntry" sling:key="FILTERS" sling:message="筛选项"/>
+    <FINDING_AVAILABLE_DATES jcr:primaryType="sling:MessageEntry" sling:key="FINDING_AVAILABLE_DATES"
+                             sling:message="正在查找可用日期..."/>
+    <FOLLOW_STEPS jcr:primaryType="sling:MessageEntry" sling:key="FOLLOW_STEPS" sling:message="按照步骤"/>
+    <FORCE_UPDATE_TO_LATEST_VERSION jcr:primaryType="sling:MessageEntry" sling:key="FORCE_UPDATE_TO_LATEST_VERSION"
+                                    sling:message="我们已经发布了该应用的新版本。 如果要继续使用它，您必须更新到最新版本。"/>
+    <FREE jcr:primaryType="sling:MessageEntry" sling:key="FREE" sling:message="免费"/>
+    <FREE_EVENT jcr:primaryType="sling:MessageEntry" sling:key="FREE_EVENT" sling:message="免费"/>
+    <FROM_PRICE jcr:primaryType="sling:MessageEntry" sling:key="FROM_PRICE" sling:message="起"/>
+    <FROM_PRICE_PACKAGE jcr:primaryType="sling:MessageEntry" sling:key="FROM_PRICE_PACKAGE" sling:message="起"/>
+    <GAME_BUTTON_REDEEM jcr:primaryType="sling:MessageEntry" sling:key="GAME_BUTTON_REDEEM" sling:message="兑换奖励"/>
+    <GAME_CHECK_ARRIVAL_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="GAME_CHECK_ARRIVAL_MESSAGE"
+                                sling:message="你到达\{{1}}了吗？请点击签到按钮解锁您的奖励"/>
+    <GAME_COMPLETED_STATUS jcr:primaryType="sling:MessageEntry" sling:key="GAME_COMPLETED_STATUS" sling:message="完全的"/>
+    <GAME_FINISH_FAIL_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_FAIL_DESCRIPTION"
+                                  sling:message="您似乎不在 \{{1}} 中。要解锁您的奖励，您必须在城市签到！"/>
+    <GAME_FINISH_FAIL_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_FAIL_TITLE"
+                            sling:message="哦哦！"/>
+    <GAME_FINISH_SUCCESS_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_SUCCESS_DESCRIPTION"
+                                     sling:message="您已成功解锁完整的奖励列表。享受餐饮、景点、咖啡馆、美容和健身产品的折扣！"/>
+    <GAME_FINISH_SUCCESS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_SUCCESS_TITLE"
+                               sling:message="恭喜！"/>
+    <GAME_IN_PROGRESS_STATUS jcr:primaryType="sling:MessageEntry" sling:key="GAME_IN_PROGRESS_STATUS"
+                             sling:message="进行中"/>
+    <GAME_INTERMEDIATE_SUCCESS_DESCRIPTION jcr:primaryType="sling:MessageEntry"
+                                           sling:key="GAME_INTERMEDIATE_SUCCESS_DESCRIPTION"
+                                           sling:message="您已成功签入 \{{1}}。您的下一个目的地是 \{{2}}。"/>
+    <GAME_NEXT_DESTINATION_ANNOUNCEMENT jcr:primaryType="sling:MessageEntry"
+                                        sling:key="GAME_NEXT_DESTINATION_ANNOUNCEMENT"
+                                        sling:message="请前往 \{{1}} 并在那里办理登机手续"/>
+    <GAME_START_FAIL_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_START_FAIL_DESCRIPTION"
+                                 sling:message="您似乎已经在 \{{1}}。只有城外的人才能参加。"/>
+    <GAME_START_SUCCESS_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_START_SUCCESS_DESCRIPTION"
+                                    sling:message="您已成功登记入住。请在抵达 \{{1}} 后回来。&#xa;&#xa;安全旅行！"/>
+    <GAME_START_SUCCESS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_START_SUCCESS_TITLE"
+                              sling:message="你的旅行开始了！"/>
+    <GAME_STEP1_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP1_DESCRIPTION"
+                            sling:message="登记您的出发地点，从任何城市开始您的旅程"/>
+    <GAME_STEP1_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP1_TITLE" sling:message="开始你的旅行"/>
+    <GAME_STEP2_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP2_DESCRIPTION"
+                            sling:message="到达您的目的地并通过检查您的位置来验证"/>
+    <GAME_STEP2_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP2_TITLE" sling:message="在目的地办理登机手续"/>
+    <GAME_STEP3_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP3_DESCRIPTION"
+                            sling:message="餐饮、景点、咖啡馆、美容和健身折扣"/>
+    <GAME_STEP3_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP3_TITLE" sling:message="兑换您的奖励"/>
+    <GAMES_HOMEPAGE_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAMES_HOMEPAGE_DESCRIPTION"
+                                sling:message="选择路线继续"/>
+    <GAMES_HOMEPAGE_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAMES_HOMEPAGE_TITLE"
+                          sling:message="在沙特阿拉伯旅行时的独家折扣"/>
+    <GENERAL_LINKS jcr:primaryType="sling:MessageEntry" sling:key="GENERAL_LINKS" sling:message="一般链接"/>
+    <GENERAL_SETTINGS jcr:primaryType="sling:MessageEntry" sling:key="GENERAL_SETTINGS" sling:message="一般设置"/>
+    <GET_DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="GET_DIRECTIONS" sling:message="获取目的地的信息"/>
+    <GET_DIRECTIONS_ON_MAP jcr:primaryType="sling:MessageEntry" sling:key="GET_DIRECTIONS_ON_MAP"
+                           sling:message="在地图上获取路线"/>
+    <GET_THIS_DEAL jcr:primaryType="sling:MessageEntry" sling:key="GET_THIS_DEAL" sling:message="获得此优惠"/>
+    <GO_SAUDI jcr:primaryType="sling:MessageEntry" sling:key="GO_SAUDI" sling:message="访问沙特"/>
+    <GUIDANCE jcr:primaryType="sling:MessageEntry" sling:key="GUIDANCE" sling:message="指导"/>
+    <GUIDED jcr:primaryType="sling:MessageEntry" sling:key="GUIDED" sling:message="引導式"/>
+    <HALA_YALLA jcr:primaryType="sling:MessageEntry" sling:key="HALA_YALLA" sling:message="哈拉亚拉"/>
+    <HALAYALLA_CONTACT jcr:primaryType="sling:MessageEntry" sling:key="HALAYALLA_CONTACT"
+                       sling:message="联系 HalaYalla 支持"/>
+    <HELP_CENTER jcr:primaryType="sling:MessageEntry" sling:key="HELP_CENTER" sling:message="幫助中心"/>
+    <HOTEL jcr:primaryType="sling:MessageEntry" sling:key="HOTEL" sling:message="酒店"/>
+    <HOTEL_CHAIN jcr:primaryType="sling:MessageEntry" sling:key="HOTEL_CHAIN" sling:message="连锁酒店"/>
+    <HOTELS jcr:primaryType="sling:MessageEntry" sling:key="HOTELS" sling:message="酒店"/>
+    <IN_THIS_AREA jcr:primaryType="sling:MessageEntry" sling:key="IN_THIS_AREA" sling:message="在这个地区"/>
+    <IN_THIS_TRIP jcr:primaryType="sling:MessageEntry" sling:key="IN_THIS_TRIP" sling:message="在此旅行"/>
+    <INVALID_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="INVALID_NUMBER" sling:message="无效的电话号码"/>
+    <INVALID_PROMO_CODE jcr:primaryType="sling:MessageEntry" sling:key="INVALID_PROMO_CODE" sling:message="促销代码无效"/>
+    <IT_IS_REQUIRED_TO_COMPLETE_YOUR_BOOKING jcr:primaryType="sling:MessageEntry"
+                                             sling:key="IT_IS_REQUIRED_TO_COMPLETE_YOUR_BOOKING"
+                                             sling:message="为了成功预订旅程，您得填满此处"/>
+    <ITEM jcr:primaryType="sling:MessageEntry" sling:key="ITEM" sling:message="物品"/>
+    <ITEMS jcr:primaryType="sling:MessageEntry" sling:key="ITEMS" sling:message="項目"/>
+    <ITINERARY_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="ITINERARY_DETAILS" sling:message="旅程信息"/>
+    <KILO_METER jcr:primaryType="sling:MessageEntry" sling:key="KILO_METER" sling:message="公里"/>
+    <LANGUAGE jcr:primaryType="sling:MessageEntry" sling:key="LANGUAGE" sling:message="语言"/>
+    <LEARN_MORE jcr:primaryType="sling:MessageEntry" sling:key="LEARN_MORE" sling:message="了解详情"/>
+    <LEGAL jcr:primaryType="sling:MessageEntry" sling:key="LEGAL" sling:message="合法的"/>
+    <LOAD_MORE jcr:primaryType="sling:MessageEntry" sling:key="LOAD_MORE" sling:message="下载更多"/>
+    <LOADING jcr:primaryType="sling:MessageEntry" sling:key="LOADING" sling:message="正在下载中"/>
+    <LOADING_PLEASE_WAIT jcr:primaryType="sling:MessageEntry" sling:key="LOADING_PLEASE_WAIT" sling:message="加載請稍候..."/>
+    <LOCATION_DENIED_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="LOCATION_DENIED_MESSAGE"
+                             sling:message="请确保从您的设置中启用了该位置"/>
+    <LOCATION_DENIED_TITLE jcr:primaryType="sling:MessageEntry" sling:key="LOCATION_DENIED_TITLE"
+                           sling:message="位置已关闭"/>
+    <LOCATION_DETAILS_DIRECTIONS_BUTTON jcr:primaryType="sling:MessageEntry"
+                                        sling:key="LOCATION_DETAILS_DIRECTIONS_BUTTON" sling:message="获取地图上的路线"/>
+    <LOCATION_OPEN_SETTINGS jcr:primaryType="sling:MessageEntry" sling:key="LOCATION_OPEN_SETTINGS"
+                            sling:message="打开设置"/>
+    <LOG_IN jcr:primaryType="sling:MessageEntry" sling:key="LOG_IN" sling:message="登录"/>
+    <LOG_IN_SIGN_UP jcr:primaryType="sling:MessageEntry" sling:key="LOG_IN_SIGN_UP" sling:message="登录"/>
+    <LOG_OUT_ERROR_BODY jcr:primaryType="sling:MessageEntry" sling:key="LOG_OUT_ERROR_BODY" sling:message="请稍后重试"/>
+    <LOG_OUT_ERROR_TITLE jcr:primaryType="sling:MessageEntry" sling:key="LOG_OUT_ERROR_TITLE" sling:message="登出时发生错误"/>
+    <LOGOUT jcr:primaryType="sling:MessageEntry" sling:key="LOGOUT" sling:message="登出"/>
+    <LOGOUT_ALERT_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="LOGOUT_ALERT_DESCRIPTION"
+                              sling:message="您始終可以通過重新登錄來訪問您的帳戶"/>
+    <LOGOUT_ALERT_TITLE jcr:primaryType="sling:MessageEntry" sling:key="LOGOUT_ALERT_TITLE" sling:message="您確定要退出嗎？"/>
+    <MAP jcr:primaryType="sling:MessageEntry" sling:key="MAP" sling:message="地圖"/>
+    <MAP_SEARCH_BODY jcr:primaryType="sling:MessageEntry" sling:key="MAP_SEARCH_BODY" sling:message="嘗試為其他內容更新您的關鍵字"/>
+    <METER jcr:primaryType="sling:MessageEntry" sling:key="METER" sling:message="仪表"/>
+    <METERS jcr:primaryType="sling:MessageEntry" sling:key="METERS" sling:message="米"/>
+    <MINUTES jcr:primaryType="sling:MessageEntry" sling:key="MINUTES" sling:message="分钟"/>
+    <MOBILE_ALREADY_VERIFIED jcr:primaryType="sling:MessageEntry" sling:key="MOBILE_ALREADY_VERIFIED"
+                             sling:message="手機號碼已驗證"/>
+    <MOBILE_USED_BY_ANOTHER_ACCOUNT jcr:primaryType="sling:MessageEntry" sling:key="MOBILE_USED_BY_ANOTHER_ACCOUNT"
+                                    sling:message="手機號已被其他賬號佔用，請更改後重試！"/>
+    <MORE_ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="MORE_ATTRACTIONS" sling:message="更多的景点"/>
+    <MORE_IN_THIS_AREA jcr:primaryType="sling:MessageEntry" sling:key="MORE_IN_THIS_AREA" sling:message="更多在這個領域"/>
+    <MY_BOOKING jcr:primaryType="sling:MessageEntry" sling:key="MY_BOOKING" sling:message="我的預訂"/>
+    <MY_FAVORITES jcr:primaryType="sling:MessageEntry" sling:key="MY_FAVORITES" sling:message="我最喜愛的"/>
+    <MY_SMART_PASS jcr:primaryType="sling:MessageEntry" sling:key="MY_SMART_PASS" sling:message="我的智能通行证"/>
+    <MY_TRIP jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIP" sling:message="我的行程"/>
+    <MY_TRIP_NO_FAVORITES_TITLE jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIP_NO_FAVORITES_TITLE"
+                                sling:message="您还没有收藏"/>
+    <MY_TRIPS jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS" sling:message="我的旅程"/>
+    <MY_TRIPS_EMPTY_ACTION jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS_EMPTY_ACTION" sling:message="創建旅行"/>
+    <MY_TRIPS_EMPTY_BODY jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS_EMPTY_BODY"
+                         sling:message="创建完全定制的日常行程，并发现沙特阿拉伯的隐藏瑰宝"/>
+    <MY_TRIPS_EMPTY_TITLE jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS_EMPTY_TITLE" sling:message="創建行程"/>
+    <NATURE jcr:primaryType="sling:MessageEntry" sling:key="NATURE" sling:message="自然"/>
+    <NETWORK_ERROR jcr:primaryType="sling:MessageEntry" sling:key="NETWORK_ERROR" sling:message="网络错误"/>
+    <NEW_VERSION_AVAILABLE jcr:primaryType="sling:MessageEntry" sling:key="NEW_VERSION_AVAILABLE"
+                           sling:message="应用可更新"/>
+    <NEXT_DAY jcr:primaryType="sling:MessageEntry" sling:key="NEXT_DAY" sling:message="第二天"/>
+    <NO_CANCELLED_BOOKINGS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_CANCELLED_BOOKINGS_FOUND"
+                                 sling:message="未找到已取消的預訂"/>
+    <NO_ITEMS_AVAILABLE jcr:primaryType="sling:MessageEntry" sling:key="NO_ITEMS_AVAILABLE" sling:message="没有可用的项目"/>
+    <NO_PREVIOUS_BOOKINGS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_PREVIOUS_BOOKINGS_FOUND"
+                                sling:message="沒有找到以前的預訂"/>
+    <NO_RESULTS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_RESULTS_FOUND" sling:message="未找到结果"/>
+    <NO_ROUTE_AVAILABLE jcr:primaryType="sling:MessageEntry" sling:key="NO_ROUTE_AVAILABLE" sling:message="无可用路线"/>
+    <NO_TRIPS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_TRIPS_FOUND" sling:message="您没有旅行记录"/>
+    <NO_TRIPS_FOUND_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="NO_TRIPS_FOUND_DESCRIPTION"
+                                sling:message="您的旅行历史记录将显示在这里。"/>
+    <NO_UPCOMING_BOOKINGS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_UPCOMING_BOOKINGS_FOUND"
+                                sling:message="未找到即將到來的預訂"/>
+    <NOT_NOW jcr:primaryType="sling:MessageEntry" sling:key="NOT_NOW" sling:message="现在不要"/>
+    <OF jcr:primaryType="sling:MessageEntry" sling:key="OF" sling:message="的"/>
+    <OFF jcr:primaryType="sling:MessageEntry" sling:key="OFF" sling:message="離開"/>
+    <OK jcr:primaryType="sling:MessageEntry" sling:key="OK" sling:message="好的"/>
+    <ON_FOOT jcr:primaryType="sling:MessageEntry" sling:key="ON_FOOT" sling:message="徒步"/>
+    <OTHER_DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="OTHER_DESTINATIONS" sling:message="其他目的地"/>
+    <PACKAGE jcr:primaryType="sling:MessageEntry" sling:key="PACKAGE" sling:message="套餐"/>
+    <PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="PACKAGES" sling:message="套餐"/>
+    <PAGE_GAME_BANNER_LABEL jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BANNER_LABEL"
+                            sling:message="查看奖励"/>
+    <PAGE_GAME_BANNER_TEXT jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BANNER_TEXT"
+                           sling:message="餐饮、景点、美容、健康等优惠！"/>
+    <PAGE_GAME_BUTTON_CHECKIN jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BUTTON_CHECKIN"
+                              sling:message="签到 \{{1}}"/>
+    <PAGE_GAME_BUTTON_START jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BUTTON_START"
+                            sling:message="签到开始"/>
+    <PAGE_GAME_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_DESCRIPTION"
+                           sling:message="即时访问整个王国的折扣优惠。 有如此多的选择和如此多的方法来拯救它是一件很容易的事 - 你还在等什么？"/>
+    <PAGE_GAME_SECONDARY_TITLE jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_SECONDARY_TITLE"
+                               sling:message="这是里面的味道！"/>
+    <PAGE_GAME_TITLE jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_TITLE" sling:message="如何参与？"/>
+    <PAID_EVENT jcr:primaryType="sling:MessageEntry" sling:key="PAID_EVENT" sling:message="付费活动"/>
+    <PARKINGS jcr:primaryType="sling:MessageEntry" sling:key="PARKINGS" sling:message="停车场"/>
+    <PAY_CREDIT_BUTTON_TITLE jcr:primaryType="sling:MessageEntry" sling:key="PAY_CREDIT_BUTTON_TITLE"
+                             sling:message="使用信用卡付款"/>
+    <PEOPLE jcr:primaryType="sling:MessageEntry" sling:key="PEOPLE" sling:message="人们"/>
+    <PERFORMING_ARTS_And_SHOWS jcr:primaryType="sling:MessageEntry" sling:key="PERFORMING_ARTS_And_SHOWS"
+                               sling:message="艺术表演及戏曲"/>
+    <PHONE_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="PHONE_NUMBER" sling:message="电话号码"/>
+    <PHONE_NUMBER_REQUIRED jcr:primaryType="sling:MessageEntry" sling:key="PHONE_NUMBER_REQUIRED"
+                           sling:message="电话号码为必填项"/>
+    <PHOTO jcr:primaryType="sling:MessageEntry" sling:key="PHOTO" sling:message="照片"/>
+    <PHOTO_GALLERY jcr:primaryType="sling:MessageEntry" sling:key="PHOTO_GALLERY" sling:message="照片库"/>
+    <PHOTOS jcr:primaryType="sling:MessageEntry" sling:key="PHOTOS" sling:message="照片"/>
+    <POWERED_BY_HALAYALLA jcr:primaryType="sling:MessageEntry" sling:key="POWERED_BY_HALAYALLA" sling:message="欢迎让我们走"/>
+    <PREVIOUS_DAY jcr:primaryType="sling:MessageEntry" sling:key="PREVIOUS_DAY" sling:message="前一天"/>
+    <PRIVACY_POLICY jcr:primaryType="sling:MessageEntry" sling:key="PRIVACY_POLICY" sling:message="隐私政策"/>
+    <PROVIDER_CONTACT_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="PROVIDER_CONTACT_NUMBER"
+                             sling:message="提供者聯繫電話"/>
+    <READ_LESS jcr:primaryType="sling:MessageEntry" sling:key="READ_LESS" sling:message="阅读更少的内容"/>
+    <READ_MORE jcr:primaryType="sling:MessageEntry" sling:key="READ_MORE" sling:message="阅读更多的内容"/>
+    <REFUNDED jcr:primaryType="sling:MessageEntry" sling:key="REFUNDED" sling:message="退款"/>
+    <RELATED_PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="RELATED_PACKAGES" sling:message="相关的套餐"/>
+    <RELOAD jcr:primaryType="sling:MessageEntry" sling:key="RELOAD" sling:message="重新下载"/>
+    <REMOVE_CODE jcr:primaryType="sling:MessageEntry" sling:key="REMOVE_CODE" sling:message="重新发送验证码"/>
+    <REMOVE_FROM_TRIP jcr:primaryType="sling:MessageEntry" sling:key="REMOVE_FROM_TRIP" sling:message="从旅行中移除"/>
+    <RESEND_CODE jcr:primaryType="sling:MessageEntry" sling:key="RESEND_CODE" sling:message="重新发验证码"/>
+    <RESULT jcr:primaryType="sling:MessageEntry" sling:key="RESULT" sling:message="结果"/>
+    <RESULTS jcr:primaryType="sling:MessageEntry" sling:key="RESULTS" sling:message="结果"/>
+    <RETRY jcr:primaryType="sling:MessageEntry" sling:key="RETRY" sling:message="再试一次"/>
+    <ROAD_TRIP_Departure_FROM jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_Departure_FROM"
+                              sling:message="出發地"/>
+    <ROAD_TRIP_FACEBOOK jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_FACEBOOK" sling:message="使用脸书"/>
+    <ROAD_TRIP_INSTAGRAM jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_INSTAGRAM" sling:message="照片墙"/>
+    <ROAD_TRIP_LINKEDIN jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_LINKEDIN" sling:message="領英"/>
+    <ROAD_TRIP_NEXT_DAY jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_NEXT_DAY" sling:message="明天"/>
+    <ROAD_TRIP_PREVIOUS_DAY jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_PREVIOUS_DAY"
+                            sling:message="前一天"/>
+    <ROAD_TRIP_TWITTER jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_TWITTER" sling:message="推特"/>
+    <ROAD_TRIPS jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIPS" sling:message="公路旅行"/>
+    <SAR jcr:primaryType="sling:MessageEntry" sling:key="SAR" sling:message="特區"/>
+    <SAUDI_SMART_ID jcr:primaryType="sling:MessageEntry" sling:key="SAUDI_SMART_ID" sling:message="沙特智能通行證"/>
+    <SAVE jcr:primaryType="sling:MessageEntry" sling:key="SAVE" sling:message="保存"/>
+    <SAVE_CHANGES jcr:primaryType="sling:MessageEntry" sling:key="SAVE_CHANGES" sling:message="保存更改"/>
+    <SEARCH_FOR_A_COUNTRY jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_FOR_A_COUNTRY" sling:message="搜索一個國家"/>
+    <SEARCH_FOR_YOUR_COUNTRY jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_FOR_YOUR_COUNTRY"
+                             sling:message="搜索您的國家"/>
+    <SEARCH_FOR_YOUR_EMBASSY jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_FOR_YOUR_EMBASSY"
+                             sling:message="搜索您的大使馆"/>
+    <SEARCH_HERE jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_HERE" sling:message="在這裡搜索"/>
+    <SECURITY_ALERT jcr:primaryType="sling:MessageEntry" sling:key="SECURITY_ALERT" sling:message="安全警报"/>
+    <SECURITY_MSG jcr:primaryType="sling:MessageEntry" sling:key="SECURITY_MSG"
+                  sling:message="出于安全原因，我们的应用暂时不支持使用Root系统的设备,请您使用其他手机下载本应用。"/>
+    <SEE_AND_DO jcr:primaryType="sling:MessageEntry" sling:key="SEE_AND_DO" sling:message="景点&amp;活动"/>
+    <SEE_AND_DO_EXPLORE jcr:primaryType="sling:MessageEntry" sling:key="SEE_AND_DO_EXPLORE" sling:message="探索"/>
+    <SELECT_A_LANGUAGE jcr:primaryType="sling:MessageEntry" sling:key="SELECT_A_LANGUAGE" sling:message="选择语言"/>
+    <SELECT_ALL jcr:primaryType="sling:MessageEntry" sling:key="SELECT_ALL" sling:message="全选"/>
+    <SELECT_COUNTRY jcr:primaryType="sling:MessageEntry" sling:key="SELECT_COUNTRY" sling:message="选择国家"/>
+    <SELF_GUIDED jcr:primaryType="sling:MessageEntry" sling:key="SELF_GUIDED" sling:message="自导"/>
+    <SESSION_EXPIRED_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="SESSION_EXPIRED_MESSAGE"
+                             sling:message="您的會話已過期，請重新登錄"/>
+    <SETTINGS_PRIVACY jcr:primaryType="sling:MessageEntry" sling:key="SETTINGS_PRIVACY" sling:message="設置和隱私"/>
+    <SHARE jcr:primaryType="sling:MessageEntry" sling:key="SHARE" sling:message="分享"/>
+    <SHOPPING jcr:primaryType="sling:MessageEntry" sling:key="SHOPPING" sling:message="购物"/>
+    <SHOPPING_RETAIL jcr:primaryType="sling:MessageEntry" sling:key="SHOPPING_RETAIL" sling:message="购物及零售"/>
+    <SHOW_FAVORITES_ONLY jcr:primaryType="sling:MessageEntry" sling:key="SHOW_FAVORITES_ONLY" sling:message="僅顯示收藏夾"/>
+    <SHOW_FILTERS jcr:primaryType="sling:MessageEntry" sling:key="SHOW_FILTERS" sling:message="顯示過濾器"/>
+    <SHOW_SAUDI_DATE_TIME_TEXT jcr:primaryType="sling:MessageEntry" sling:key="SHOW_SAUDI_DATE_TIME_TEXT"
+                               sling:message="显示沙特日期和时间"/>
+    <SIGHTSEEING jcr:primaryType="sling:MessageEntry" sling:key="SIGHTSEEING" sling:message="城内的景点"/>
+    <SPORT jcr:primaryType="sling:MessageEntry" sling:key="SPORT" sling:message="体育"/>
+    <START jcr:primaryType="sling:MessageEntry" sling:key="START" sling:message="開始"/>
+    <START_DATE jcr:primaryType="sling:MessageEntry" sling:key="START_DATE" sling:message="開始日期"/>
+    <START_DRIVING jcr:primaryType="sling:MessageEntry" sling:key="START_DRIVING" sling:message="开始开车"/>
+    <START_DRIVING_MODE jcr:primaryType="sling:MessageEntry" sling:key="START_DRIVING_MODE" sling:message="开始开车模式"/>
+    <STARTING jcr:primaryType="sling:MessageEntry" sling:key="STARTING" sling:message="开始"/>
+    <STARTS_FROM jcr:primaryType="sling:MessageEntry" sling:key="STARTS_FROM" sling:message="从......开始"/>
+    <STEP jcr:primaryType="sling:MessageEntry" sling:key="STEP" sling:message="步"/>
+    <STEP_1 jcr:primaryType="sling:MessageEntry" sling:key="STEP_1" sling:message="第一步"/>
+    <STEP_2 jcr:primaryType="sling:MessageEntry" sling:key="STEP_2" sling:message="第二步"/>
+    <STEP_3 jcr:primaryType="sling:MessageEntry" sling:key="STEP_3" sling:message="第三步"/>
+    <STEP_OF jcr:primaryType="sling:MessageEntry" sling:key="STEP_OF" sling:message="\{{2}} 的第 \{{1}} 步"/>
+    <SUITABLE_FOR jcr:primaryType="sling:MessageEntry" sling:key="SUITABLE_FOR" sling:message="适合"/>
+    <TELEPHONE_PROVIDERS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TELEPHONE_PROVIDERS_TITLE"
+                               sling:message="电话供应商"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_LABEL jcr:primaryType="sling:MessageEntry"
+                                        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_LABEL" sling:message="沙特阿拉伯的国家代号"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_VALUE jcr:primaryType="sling:MessageEntry"
+                                        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_VALUE" sling:message="966"/>
+    <TERMS_AND_CONDITIONS jcr:primaryType="sling:MessageEntry" sling:key="TERMS_AND_CONDITIONS" sling:message="条款和条件"/>
+    <THE_ADDED_FAVORITES_APPEAR_HERE jcr:primaryType="sling:MessageEntry" sling:key="THE_ADDED_FAVORITES_APPEAR_HERE"
+                                     sling:message="添加的收藏夾將顯示在此處"/>
+    <THEMED_ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="THEMED_ATTRACTIONS" sling:message="主题景点"/>
+    <THIS_BOOKING_IS_BY_OUR_OPERATOR jcr:primaryType="sling:MessageEntry" sling:key="THIS_BOOKING_IS_BY_OUR_OPERATOR"
+                                     sling:message="此預訂由我們的運營商提供"/>
+    <THIS_MONTH jcr:primaryType="sling:MessageEntry" sling:key="THIS_MONTH" sling:message="这个月"/>
+    <THIS_WEEK jcr:primaryType="sling:MessageEntry" sling:key="THIS_WEEK" sling:message="这周"/>
+    <TODAY jcr:primaryType="sling:MessageEntry" sling:key="TODAY" sling:message="今天"/>
+    <TOMORROW jcr:primaryType="sling:MessageEntry" sling:key="TOMORROW" sling:message="明天"/>
+    <TOP_EVENTS_AND_ATTRACTIONS_ALL_IN_ONE_PLACE jcr:primaryType="sling:MessageEntry"
+                                                 sling:key="TOP_EVENTS_AND_ATTRACTIONS_ALL_IN_ONE_PLACE"
+                                                 sling:message="頂級活動和景點，盡在一處"/>
+    <TOP_PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="TOP_PACKAGES" sling:message="最佳的套餐"/>
+    <TOTAL_AMOUNT jcr:primaryType="sling:MessageEntry" sling:key="TOTAL_AMOUNT" sling:message="总价"/>
+    <TOTAL_DISTANCE jcr:primaryType="sling:MessageEntry" sling:key="TOTAL_DISTANCE" sling:message="总距离"/>
+    <TRANSPORTATION jcr:primaryType="sling:MessageEntry" sling:key="TRANSPORTATION" sling:message="交通"/>
+    <TRAVELEXPERT jcr:primaryType="sling:MessageEntry" sling:key="TRAVELEXPERT" sling:message="旅遊專家"/>
+    <TRAVELLER jcr:primaryType="sling:MessageEntry" sling:key="TRAVELLER" sling:message="遊客"/>
+    <TRENDING jcr:primaryType="sling:MessageEntry" sling:key="TRENDING" sling:message="潮流"/>
+    <TRIP jcr:primaryType="sling:MessageEntry" sling:key="TRIP" sling:message="旅行"/>
+    <TRIP_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="TRIP_DETAILS" sling:message="行程詳情"/>
+    <TRIP_HISTORY_BODY jcr:primaryType="sling:MessageEntry" sling:key="TRIP_HISTORY_BODY" sling:message="您之前的行程會顯示在此處"/>
+    <TRIP_HISTORY_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_HISTORY_TITLE" sling:message="旅行歷史"/>
+    <TRIP_INFO jcr:primaryType="sling:MessageEntry" sling:key="TRIP_INFO" sling:message="行程信息"/>
+    <TRIP_NAME_SHOULD_NOT_BE_EMPTY jcr:primaryType="sling:MessageEntry" sling:key="TRIP_NAME_SHOULD_NOT_BE_EMPTY"
+                                   sling:message="行程名稱不能為空"/>
+    <TRIP_OVERVIEW jcr:primaryType="sling:MessageEntry" sling:key="TRIP_OVERVIEW" sling:message="行程概览"/>
+    <TRIP_PLAN_DAY_DELETE_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLAN_DAY_DELETE_DESCRIPTION"
+                                      sling:message="您将被重定向到“我的旅行”。"/>
+    <TRIP_PLAN_DAY_DELETE_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLAN_DAY_DELETE_TITLE"
+                                sling:message="您确定要删除此行程吗？"/>
+    <TRIP_PLAN_DAY_SCHEDULE_ADD_ACTIVITY jcr:primaryType="sling:MessageEntry"
+                                         sling:key="TRIP_PLAN_DAY_SCHEDULE_ADD_ACTIVITY" sling:message="添加活动"/>
+    <TRIP_PLAN_DAY_SCHEDULE_DELETE_ACTIVITY_TITLE jcr:primaryType="sling:MessageEntry"
+                                                  sling:key="TRIP_PLAN_DAY_SCHEDULE_DELETE_ACTIVITY_TITLE"
+                                                  sling:message="您确定要删除此活动吗？"/>
+    <TRIP_PLAN_DAY_SCHEDULE_EMPTY_DESCRIPTION jcr:primaryType="sling:MessageEntry"
+                                              sling:key="TRIP_PLAN_DAY_SCHEDULE_EMPTY_DESCRIPTION"
+                                              sling:message="从这一天开始添加活动。"/>
+    <TRIP_PLAN_DAY_SCHEDULE_EMPTY_TITLE jcr:primaryType="sling:MessageEntry"
+                                        sling:key="TRIP_PLAN_DAY_SCHEDULE_EMPTY_TITLE" sling:message="这天是空的"/>
+    <TRIP_PLAN_DAY_SCHEDULE_FULL_DESCRIPTION jcr:primaryType="sling:MessageEntry"
+                                             sling:key="TRIP_PLAN_DAY_SCHEDULE_FULL_DESCRIPTION"
+                                             sling:message="如果您想添加更多活动，请尝试删除一些活动"/>
+    <TRIP_PLAN_DAY_SCHEDULE_FULL_TITLE jcr:primaryType="sling:MessageEntry"
+                                       sling:key="TRIP_PLAN_DAY_SCHEDULE_FULL_TITLE" sling:message="你的一天很饱"/>
+    <TRIP_PLANNER_CREATE_TRIP jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_CREATE_TRIP"
+                              sling:message="創建行程"/>
+    <TRIP_PLANNER_EXPLORE_TRIPS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_EXPLORE_TRIPS_TITLE"
+                                      sling:message="探索公路旅行"/>
+    <TRIP_PLANNER_MY_TRIPS jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_MY_TRIPS" sling:message="我的旅行"/>
+    <TRIP_PLANNER_SIGNIN_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_SIGNIN_MESSAGE"
+                                 sling:message="登錄或創建帳戶以保存和同步您的行程"/>
+    <TRIP_PLANNER_TRIP_STARTS_HERE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_TRIP_STARTS_HERE"
+                                   sling:message="您的沙特之旅從這裡開始"/>
+    <TRIP_PLANNER_VIEW_HISTORY jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_VIEW_HISTORY"
+                               sling:message="查看歷史"/>
+    <TRIPS jcr:primaryType="sling:MessageEntry" sling:key="TRIPS" sling:message="旅行"/>
+    <TRY_UPDATING_FILTERS jcr:primaryType="sling:MessageEntry" sling:key="TRY_UPDATING_FILTERS"
+                          sling:message="请更新一下您的筛选以获取其他内容"/>
+    <UNEXPECTED_ERROR_HAS_OCCURRED jcr:primaryType="sling:MessageEntry" sling:key="UNEXPECTED_ERROR_HAS_OCCURRED"
+                                   sling:message="出现意外错误"/>
+    <UPCOMING_MONTHS jcr:primaryType="sling:MessageEntry" sling:key="UPCOMING_MONTHS" sling:message="未来几个月"/>
+    <UPDATE jcr:primaryType="sling:MessageEntry" sling:key="UPDATE" sling:message="下载更新"/>
+    <UPDATE_TO_LATEST_VERSION jcr:primaryType="sling:MessageEntry" sling:key="UPDATE_TO_LATEST_VERSION"
+                              sling:message="我们已经发布了我们的应用的新版本。 如果要享受我们添加的最新功能，请点击下面的按钮。"/>
+    <USEFUL_CONTACTS jcr:primaryType="sling:MessageEntry" sling:key="USEFUL_CONTACTS" sling:message="有用的联系方式"/>
+    <VAT jcr:primaryType="sling:MessageEntry" sling:key="VAT" sling:message="增值稅"/>
+    <VAT_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="VAT_NUMBER" sling:message="增值稅號"/>
+    <VAT_VIEW_CERTIFICATE jcr:primaryType="sling:MessageEntry" sling:key="VAT_VIEW_CERTIFICATE" sling:message="查看證書"/>
+    <VERIFICATION_CODE jcr:primaryType="sling:MessageEntry" sling:key="VERIFICATION_CODE" sling:message="验证码"/>
+    <VERIFY_CODE_NOT_VALID jcr:primaryType="sling:MessageEntry" sling:key="VERIFY_CODE_NOT_VALID"
+                           sling:message="验证码有误，请重试"/>
+    <VERIFY_CODE_REQUIRED jcr:primaryType="sling:MessageEntry" sling:key="VERIFY_CODE_REQUIRED"
+                          sling:message="验证码是必须填的"/>
+    <VERIFY_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="VERIFY_NUMBER" sling:message="驗證號碼"/>
+    <VIEW_ALL jcr:primaryType="sling:MessageEntry" sling:key="VIEW_ALL" sling:message="观看全部"/>
+    <VIEW_ALL_RESULTS jcr:primaryType="sling:MessageEntry" sling:key="VIEW_ALL_RESULTS" sling:message="查看所有結果"/>
+    <VIEW_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="VIEW_DETAILS" sling:message="细节"/>
+    <VIEW_OFFER jcr:primaryType="sling:MessageEntry" sling:key="VIEW_OFFER" sling:message="查看优惠"/>
+    <VIEW_ON_MAP jcr:primaryType="sling:MessageEntry" sling:key="VIEW_ON_MAP" sling:message="在地图上查看"/>
+    <VIEW_PROFILE jcr:primaryType="sling:MessageEntry" sling:key="VIEW_PROFILE" sling:message="查看资料"/>
+    <VIEW_THE_TRIP_LOCATIONS_ON_THE_MAP jcr:primaryType="sling:MessageEntry"
+                                        sling:key="VIEW_THE_TRIP_LOCATIONS_ON_THE_MAP" sling:message="在地圖上查看旅行地點"/>
+    <VISIT_SAUDI jcr:primaryType="sling:MessageEntry" sling:key="VISIT_SAUDI" sling:message="访问沙特阿拉伯"/>
+    <VISIT_WEBSITE jcr:primaryType="sling:MessageEntry" sling:key="VISIT_WEBSITE" sling:message="访问网站"/>
+    <WALKING jcr:primaryType="sling:MessageEntry" sling:key="WALKING" sling:message="步行"/>
+    <WE_ARE_SORRY jcr:primaryType="sling:MessageEntry" sling:key="WE_ARE_SORRY" sling:message="对不起"/>
+    <WE_SENT_VERIFICATION_CODE_TO jcr:primaryType="sling:MessageEntry" sling:key="WE_SENT_VERIFICATION_CODE_TO"
+                                  sling:message="我们已经给您发送了验证码"/>
+    <WEATHER jcr:primaryType="sling:MessageEntry" sling:key="WEATHER" sling:message="天气"/>
+    <WELCOME jcr:primaryType="sling:MessageEntry" sling:key="WELCOME" sling:message="欢迎"/>
+    <WHATS_IN jcr:primaryType="sling:MessageEntry" sling:key="WHATS_IN" sling:message="裡面有什麼"/>
+    <WHATS_INCLUDED jcr:primaryType="sling:MessageEntry" sling:key="WHATS_INCLUDED" sling:message="包括什么"/>
+    <WHATS_NOT_INCLUDED jcr:primaryType="sling:MessageEntry" sling:key="WHATS_NOT_INCLUDED" sling:message="不包括什么"/>
+    <YEARS_OLD jcr:primaryType="sling:MessageEntry" sling:key="YEARS_OLD" sling:message="岁"/>
+    <YOU_HAVENT_ADDED_ANY_FAVORITE_YET jcr:primaryType="sling:MessageEntry"
+                                       sling:key="YOU_HAVENT_ADDED_ANY_FAVORITE_YET" sling:message="您尚未添加任何收藏夾"/>
+    <YOU_MIGHT_LIKE jcr:primaryType="sling:MessageEntry" sling:key="YOU_MIGHT_LIKE" sling:message="您也许感兴趣的"/>
+    <YOU_MUST_BE_LOGGED_IN_BOOKINGS jcr:primaryType="sling:MessageEntry" sling:key="YOU_MUST_BE_LOGGED_IN_BOOKINGS"
+                                    sling:message="您必須登錄才能查看您的預訂"/>
+    <YOUR_CANCELLED_BOOKINGS_WILL_APPEAR_HERE jcr:primaryType="sling:MessageEntry"
+                                              sling:key="YOUR_CANCELLED_BOOKINGS_WILL_APPEAR_HERE"
+                                              sling:message="您取消的預訂將顯示在此處"/>
+    <YOUR_PAST_BOOKINGS_WILL_APPEAR_HERE jcr:primaryType="sling:MessageEntry"
+                                         sling:key="YOUR_PAST_BOOKINGS_WILL_APPEAR_HERE" sling:message="您過去的預訂將顯示在此處"/>
+    <YOUR_UPCOMING_BOOKINGS_WILL_APPEAR_HERE jcr:primaryType="sling:MessageEntry"
+                                             sling:key="YOUR_UPCOMING_BOOKINGS_WILL_APPEAR_HERE"
+                                             sling:message="您即將預訂的訂單將顯示在此處"/>
+
+
+</jcr:root>

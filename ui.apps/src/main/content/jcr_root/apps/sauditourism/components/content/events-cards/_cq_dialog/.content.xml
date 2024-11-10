@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Events Cards"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <common-setup
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common Setup"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <id
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Component ID"
+                                        name="./componentId"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="title"
+                                        name="./title"
+                                        required="{Boolean}true">
+                                    </title>
+                                    <display-type
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Display Type"
+                                        name="./display/displayType">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            metaType="dropdown"
+                                            showhide-target=".display-type-showhide-target"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <scrollable
+                                                jcr:primaryType="nt:unstructured"
+                                                text="scrollable"
+                                                value="scrollable"/>
+                                            <list-view
+                                                jcr:primaryType="nt:unstructured"
+                                                text="list_view "
+                                                value="list_view"/>
+                                        </items>
+                                    </display-type>
+                                    <display-card-size
+                                        granite:class="display-type-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Display Card Size"
+                                        name="./display/cardSize">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="scrollable"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <small
+                                                jcr:primaryType="nt:unstructured"
+                                                text="small"
+                                                value="small"/>
+                                            <small-details-page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="small details page"
+                                                value="small_2"/>
+                                            <medium
+                                                jcr:primaryType="nt:unstructured"
+                                                text="medium "
+                                                value="medium"/>
+                                            <large
+                                                jcr:primaryType="nt:unstructured"
+                                                text="large "
+                                                value="large"/>
+                                        </items>
+                                    </display-card-size>
+                                    <ctaText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Text"
+                                        name="./link/text">
+                                    </ctaText>
+                                    <ctaUrl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldLabel="CTA Url"
+                                        name="./link/url"
+                                        rootPath="/content">
+                                    </ctaUrl>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </common-setup>
+            <auto-events
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Auto Events"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <sort-list
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        fieldDescription="Click 'Add' to add sort"
+                                        fieldLabel="Sort List"
+                                        composite="{Boolean}false">
+                                    <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Sort By"
+                                        name="./sort/sortBy">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <none
+                                                jcr:primaryType="nt:unstructured"
+                                                text=""
+                                                value=""/>
+                                            <period
+                                                jcr:primaryType="nt:unstructured"
+                                                text="period"
+                                                value="period"/>
+                                            <start-date
+                                                jcr:primaryType="nt:unstructured"
+                                                text="startDate "
+                                                value="startDate"/>
+                                            <end-date
+                                                jcr:primaryType="nt:unstructured"
+                                                text="endDate "
+                                                value="endDate"/>
+                                            <recently-added
+                                                jcr:primaryType="nt:unstructured"
+                                                text="recentlyAdded "
+                                                value="recentlyAdded"/>
+                                        </items>
+                                    </field>
+                                    </sort-list>
+                                    <filter-period
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Filter Period"
+                                        name="./filter/period">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <none
+                                                jcr:primaryType="nt:unstructured"
+                                                text=""
+                                                value=""/>
+                                            <this-month
+                                                jcr:primaryType="nt:unstructured"
+                                                text="this-month"
+                                                value="this-month"/>
+                                            value=""/>
+                                            <this-week
+                                                jcr:primaryType="nt:unstructured"
+                                                text="this-week"
+                                                value="this-week"/>
+                                            <happening-now
+                                                jcr:primaryType="nt:unstructured"
+                                                text="happening-now"
+                                                value="happening-now"/>
+                                        </items>
+                                    </filter-period>
+                                    <filter-destination
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Filter Destination"
+                                        name="./filter/destination">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="sauditourism/datasource/destinations"/>
+                                    </filter-destination>
+                                    <filter-season
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Filter Season"
+                                        name="./filter/season">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="sauditourism/datasource/seasons"/>
+                                    </filter-season>
+                                    <filter-start-Date
+                                        granite:class="event-start-date set-default-date"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                        fieldLabel="Filter Start Date"
+                                        name="./filter/startDate"
+                                        displayedFormat="YYYY-MM-DD"
+                                        type="date">
+                                    </filter-start-Date>
+                                    <filter-end-Date
+                                        granite:class="event-start-date set-default-date"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                        fieldLabel="Filter End Date"
+                                        name="./filter/endDate"
+                                        displayedFormat="YYYY-MM-DD"
+                                        type="date">
+                                    </filter-end-Date>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </auto-events>
+            <handpicked-events
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Handpicked Events"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <events-container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <handpicked-events
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}false">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    required="{Boolean}True"
+                                    fieldLabel="Event CF"
+                                    rootPath="/content/dam/sauditourism/cf"
+                                    name="./handpick/eventCFPaths"/>
+                            </handpicked-events>
+                        </items>
+                    </events-container>
+                </items>
+            </handpicked-events>
+        </items>
+    </content>
+</jcr:root>
+
+

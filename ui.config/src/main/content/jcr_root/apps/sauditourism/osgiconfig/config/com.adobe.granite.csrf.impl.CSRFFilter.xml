@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    filter.methods="[POST,PUT,DELETE]"
+    filter.enable.safe.user.agents="{Boolean}false"
+    filter.safe.user.agents="[Apache-HttpClient/*,Jakarta Commons-HttpClient/*,Jakarta-Commons-VFS,curl/*,Wget/*,WebDAVFS/*,Microsoft-WebDAV-MiniRedir/*,Ruby,Adobe-Campaign/*,Forms-Mobile *]"
+    filter.excluded.paths="[/libs/dam/gui/content/assets/assetlinkshare,/content/communities/scorm/RecordResults,/content/cq:graphql/global/endpoint,/content/cq:graphql/sauditourism,/content/cq:graphql/sauditourism/endpoint,/content/graphql/sauditourism/endpoint,/content/graphql/endpoint]"
+/>

@@ -1,0 +1,38 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 13:07:56 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Trip Plans",
+    "cq:lastReplicationAction":"Activate",
+    "jcr:versionHistory":"c1a4ccfb-3434-41f8-a497-6f51f478e89d",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:predecessors":[
+      "6a6fc1d2-6473-41ef-8d6a-b81b2d7a8b51"
+    ],
+    "jcr:created":"Tue Sep 26 2023 13:07:56 GMT+0100",
+    "cq:lastReplicated":"Mon Feb 08 2021 21:37:10 GMT+0100",
+    "cq:lastModified":"Mon Sep 21 2020 14:26:14 GMT+0200",
+    "theme":"red",
+    "jcr:baseVersion":"6a6fc1d2-6473-41ef-8d6a-b81b2d7a8b51",
+    "jcr:isCheckedOut":true,
+    "jcr:uuid":"93e10879-89f9-4565-9a0d-97b992101e70",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "cq:lastModifiedBy":"admin",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+<template data-sly-template.c01seasons="${@ card, layout, hideDescription, tagLine}"
+          data-sly-use.favButton="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+          data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html"
+          data-sly-use.cta02Link="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html"
+          data-sly-use.taglineG01SimpleTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-01-simple.html"
+          data-sly-use.taglineG02FeaturedTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-02-featured.html">
+<div data-component="c-01-upcoming-seasons" data-sly-set.link="${card.link}"
+     class="layout-${layout}${card.isFeatured ? ' featured' : ''}${card.description ? '' : ' without-description'}">
+    <div class="image-wrapper">
+        <div class="favorite-button-wrapper" data-sly-test="${link.url && !card.hideFav}">
+            <sly data-sly-call="${favButton.fav @ path=link.urlSlingExporter, variant='white'}"></sly>
+        </div>
+        <a href="${link.url}" class="image-link"
+           data-sly-set.class="${link.urlSlingExporter && !card.hideNav ? 'with-favorite-button' : ''}">
+            <sly data-sly-call="${imageTemplate.pictureObj @ imageDesktop=card.image.s7fileReference||
+                                card.image.fileReference, altText=link.copy, simpleLabelList=card
+                                .simpleLabelList, componentType='c-01', tagLine=tagLine,
+                                extraClass=class}"></sly>
+        </a>
+    </div>
+    <div class="content-wrapper">
+        <div class="ornament-wrapper" data-sly-test="${layout == 'highlight'}">
+            <sly data-sly-call="${ornaments02BarsTemplate.ornaments02Bars @ orientation='horizontal',
+             patternDefault=(card.highlightOrnamentId || '01')}"></sly>
+        </div>
+        <div class="info-wrapper">
+            <div class="inner-wrapper">
+                <h5 class="title">${card.title}</h5>
+                <sly data-sly-test="${card.description && !hideDescription}">
+                    <div class="description copy">${card.description @ context='html'}</div>
+                </sly>
+            </div>
+        </div>
+		<div data-component="count-down">
+		 <div countdown-date="${card.startDate}" class="season-count-down-wrapper season-count-down-timer">
+        <div class="count-down-part">
+          <p class="part-value count-down-days">127</p>
+          <p class="part-name">Days</p>
+        </div>
+        <span class="divider">:</span>
+        <div class="count-down-part">
+          <p class="part-value count-down-hours">12</p>
+          <p class="part-name">Hours</p>
+        </div>
+        <span class="divider">:</span>
+        <div class="count-down-part">
+          <p class="part-value count-down-minutes">15</p>
+          <p class="part-name">Minutes</p>
+        </div>
+        <span class="divider">:</span>
+        <div class="count-down-part">
+          <p class="part-value count-down-seconds">20</p>
+          <p class="part-name">Seconds</p>
+        </div>
+    </div>
+	</div>
+        
+    </div>
+</div>
+
+</template>

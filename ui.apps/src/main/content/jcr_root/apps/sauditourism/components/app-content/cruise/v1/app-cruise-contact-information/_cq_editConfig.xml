@@ -1,0 +1,34 @@
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:EditConfig">
+  <cq:inplaceEditing
+      jcr:primaryType="cq:InplaceEditingConfig"
+      active="{Boolean}true"
+      editorType="hybrid">
+    <cq:childEditors jcr:primaryType="nt:unstructured">
+      <title
+          jcr:primaryType="cq:ChildEditorConfig"
+          title="Title" type="plaintext"/>
+      <message
+          jcr:primaryType="cq:ChildEditorConfig"
+          title="Message" type="plaintext"/>
+      <phone
+          jcr:primaryType="cq:ChildEditorConfig"
+          title="Phone" type="plaintext"/>
+    </cq:childEditors>
+    <config jcr:primaryType="nt:unstructured">
+      <title
+          jcr:primaryType="nt:unstructured"
+          editElementQuery=".cruise-contact-information__cq-title"
+          textPropertyName="./title"/>
+      <message
+          jcr:primaryType="nt:unstructured"
+          editElementQuery=".cruise-contact-information__cq-message"
+          textPropertyName="./message"/>
+      <phone
+          jcr:primaryType="nt:unstructured"
+          editElementQuery=".cruise-contact-information__cq-phone"
+          textPropertyName="./phone"/>
+    </config>
+  </cq:inplaceEditing>
+</jcr:root>

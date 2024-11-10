@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    mobilePath="/content/sauditourism/mobile"
+    appSearchPaths="[/content/sauditourism/{locale}/events,/content/sauditourism/{locale}/packages]"
+    ignoredResourceTypes="[sauditourism/components/content/c28-destinations-and-map/v1/c28-destinations-and-map,sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards,sauditourism/components/content/c03-card/v1/c03-card]"
+    solrCore="aem"
+    solrUrl="http://10.104.2.209:8983/solr/"
+    textProperties="[title,subtitle,jcr:description,pageTitle,jcr:title,componentTitle,copy,description,mainTitle,text,keyword]"
+    titleProperties="[jcr:title,jcr:description,cq:tags]"/>

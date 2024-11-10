@@ -1,0 +1,10 @@
+{
+  "jcr:primaryType":"sling:Folder",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 13:17:03 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:title":"events",
+    "sourcing":"false"
+  }
+}

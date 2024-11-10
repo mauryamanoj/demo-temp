@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Appliance"
+          jcr:title.ar="أجهزة منزلية"
+          jcr:title.de="Haushaltsgerät"
+          jcr:title.es="Electrodoméstico"
+          jcr:title.fr="Appareil électroménager"
+          jcr:title.ja="家電"
+          jcr:title.ru="Бытовая техника"
+          jcr:title.zh="家电"
+          sling:resourceType="cq/tagging/components/tag"/>

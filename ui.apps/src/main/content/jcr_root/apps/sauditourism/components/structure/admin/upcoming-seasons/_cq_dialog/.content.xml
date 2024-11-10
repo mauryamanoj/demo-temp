@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Upcoming Seasons Config"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[sauditourism.author]">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+        margin="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <seasons-multifield
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Add here all the upcoming season dates"
+                        fieldLabel="List of all Seasons">
+                        <field
+                            granite:class="accordion-multifield-item"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                            name="./items">
+                            <items jcr:primaryType="nt:unstructured">
+                                <seasons
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Seasons"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <name
+                                            granite:class="accordion-multifield-item-title"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter the name of this Season"
+                                            fieldLabel="Season Name"
+                                            name="./name"
+                                            required="{Boolean}true"/>
+                                        <date
+                                            granite:class="accordion-multifield-item-title"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                            displayedFormat="YYYY-MM-DD"
+                                            fieldDescription="Enter here the start date of the season"
+                                            fieldLabel="Start Date"
+                                            name="./date"
+                                            required="{Boolean}true"
+                                            type="date"
+                                            typeHint="String"
+                                            valueFormat="YYYY-MM-DD"/>
+                                        <description
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                            fieldLabel="Description (For the variant with button (download) the Char max must be 246.)"
+                                            maxlength="{Long}950"
+                                            name="./description"
+                                            required="{Boolean}false"
+                                            useFixedInlineToolbar="{Boolean}true">
+                                            <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                                            <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                                        </description>
+                                        <imageSpecial
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                            allowUpload="{Boolean}false"
+                                            autoStart="{Boolean}false"
+                                            fieldDescription="Image size:375 x 667 - Ratio 9:16. Select an image to be used for mobile view"
+                                            fieldLabel="Special Image 768"
+                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                            multiple="{Boolean}false"
+                                            name="./imagePath"
+                                            required="{Boolean}false"
+                                            title="Upload Image Special 768 Asset"/>
+                                    </items>
+                                </seasons>
+                            </items>
+                        </field>
+                    </seasons-multifield>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

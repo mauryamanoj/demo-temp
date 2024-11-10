@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Theater"
+          jcr:title.ar="مسرح"
+          jcr:title.de="Theater"
+          jcr:title.es="Teatro"
+          jcr:title.fr="Théâtre"
+          jcr:title.ja="劇場"
+          jcr:title.ru="Театр"
+          jcr:title.zh="剧院"
+          sling:resourceType="cq/tagging/components/tag"/>

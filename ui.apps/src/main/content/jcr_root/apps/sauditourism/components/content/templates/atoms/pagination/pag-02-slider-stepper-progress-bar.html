@@ -1,0 +1,11 @@
+<sly data-sly-template.sliderStepperProgressBar="${@
+useBackgroundImage='boolean whether background image should be displayed or not'}">
+
+  <div class="stepper-progress label-text background-${useBackgroundImage ? 'image' : 'solid'}"
+       data-component="pag-02-slider-stepper-progress-bar">
+    <span class="counter-current" data-counter-current>00</span>
+    <progress class="progress-bar" value="0" max="100" data-slider-progressbar></progress>
+    <span class="counter-total" data-counter-total>00</span>
+  </div>
+
+</sly>

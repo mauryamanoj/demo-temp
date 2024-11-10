@@ -1,0 +1,1604 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Meet Saudi",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "ebacc883-e5f6-4d06-a832-0c64e2b94523",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:predecessors": [
+      "f4803884-3990-4c29-9075-533fd16ab4d6"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "cq:lastReplicated": "Wed Dec 11 2019 13:14:44 GMT+0100",
+    "cq:lastModified": "Tue Dec 17 2019 17:27:15 GMT+0100",
+    "theme": "teal",
+    "jcr:description": "From how to get here, to navigating the currency, climate and culture once you’ve arrived, here’s everything you need to know about visiting Saudi Arabia.",
+    "jcr:baseVersion": "f4803884-3990-4c29-9075-533fd16ab4d6",
+    "jcr:isCheckedOut": true,
+    "pageTitle": "Useful Information - Visit Saudi Official Website",
+    "jcr:uuid": "7d13aaca-8445-4f8d-bee6-bb0b089b811b",
+    "featureImage": "/content/dam/saudi-tourism/media/understand/brand-page-hero.jpg",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap": "false",
+    "cq:lastModifiedBy": "maren.dethlefsen",
+    "navTitle": "MEET SAUDI",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "subtitleWeight": "h1",
+          "jcr:lastModifiedBy": "tess.paul",
+          "jcr:created": "Fri Nov 15 2019 15:54:45 GMT+0000",
+          "title": "Meet Saudi",
+          "titleWeight": "h1",
+          "jcr:lastModified": "Mon Dec 16 2019 14:33:01 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "image": {
+            "jcr:primaryType": "nt:unstructured",
+            "fileReference": "/content/dam/saudi-tourism/media/understand/brand-page-hero.jpg",
+            "alt": "Understand",
+            "mobileImageReference": "/content/dam/saudi-tourism/media/understand/375x667/brand-page-hero.jpg"
+          }
+        },
+        "c02_title_intro": {
+          "jcr:primaryType": "nt:unstructured",
+          "mainTitleWeight": "h1",
+          "jcr:createdBy": "admin",
+          "introTitleWeight": "h1",
+          "jcr:lastModifiedBy": "tess.paul",
+          "jcr:created": "Fri Nov 15 2019 15:57:25 GMT+0000",
+          "mainTitle": "Meet Saudi",
+          "introDescription": "From how to get here, to navigating the currency, climate and culture once you’ve arrived, here’s everything you need to know about visiting Saudi Arabia.",
+          "introSubtitleWeight": "h1",
+          "jcr:lastModified": "Mon Dec 16 2019 14:02:59 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/c02-title-intro/v1/c02-title-intro"
+        },
+        "c01_quick_links": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "maren.dethlefsen",
+          "weight": "h1",
+          "jcr:created": "Fri Nov 15 2019 15:57:55 GMT+0000",
+          "jcr:lastModified": "Wed Dec 11 2019 12:19:36 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/c01-quick-links/v1/c01-quick-links",
+          "componentTitle": "Essential Links",
+          "links": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/about-e-visa",
+              "copy": "VISA ELIGIBILITY",
+              "targetInNewWindow": "false"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/language-and-culture",
+              "copy": "LANGUAGE AND CULTURE",
+              "targetInNewWindow": "false"
+            },
+            "item2": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/getting-around",
+              "copy": "GETTING AROUND THE KINGDOM",
+              "targetInNewWindow": "false"
+            },
+            "item3": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/do",
+              "copy": "THINGS TO DO IN THE KINGDOM",
+              "targetInNewWindow": "false"
+            }
+          }
+        },
+        "c09_tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Wed Nov 20 2019 16:56:11 GMT+0000",
+          "jcr:lastModified": "Wed Nov 20 2019 16:56:59 GMT+0000",
+          "sling:resourceType": "sauditourism/components/content/c09-tabs/v1/c09-tabs",
+          "item_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Tab 1",
+            "subtitleWeight": "h1",
+            "description": "<p>Arabic is the official language of Saudi Arabia and the primary language used in all dealings and public transactions. Saudi Arabia’s rich heritage and traditions have been shaped by its position as a historic trade hub and the birthplace of Islam.</p>\r\n",
+            "cq:panelTitle": "Language and Culture",
+            "jcr:lastModifiedBy": "admin",
+            "title": "Language and Culture",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Fri Dec 06 2019 15:15:33 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/understand/card-01.jpg",
+              "alt": "Language and Culture",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/understand/card-mobile-01.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/language-and-culture",
+              "copy": "Learn More",
+              "targetInNewWindow": "false"
+            }
+          },
+          "item_2": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Tab 2",
+            "subtitleWeight": "h1",
+            "description": "<p>Public etiquette in Saudi Arabia is informed by our cultural heritage and Islamic religion, and underpinned by values that are familiar to people everywhere: respect for others, decorum in public and protection of privacy.</p>\r\n",
+            "cq:panelTitle": " Law and Etiquette",
+            "jcr:lastModifiedBy": "admin",
+            "title": "Laws and Etiquette",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 08:48:18 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/understand/card-02.jpg",
+              "alt": "Laws and Etiquette",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/understand/card-mobile-02.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/laws-and-etiquette",
+              "copy": "Learn More",
+              "targetInNewWindow": "false"
+            }
+          },
+          "item_1574269002456": {
+            "jcr:primaryType": "nt:unstructured",
+            "subtitleWeight": "h1",
+            "description": "<p>Contrary to popular belief, Saudi Arabia has four distinct seasons and a\r\n climate that varies between regions. Read on for a seasonal overview of\r\n the Kingdom’s weather.</p>\r\n",
+            "cq:panelTitle": "Climate and Seasons",
+            "jcr:lastModifiedBy": "admin",
+            "title": "Climate and Seasons",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 08:51:01 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/understand/card-03.jpg",
+              "alt": "Climate and Seasons",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/understand/card-mobile-03.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/climate-and-seasons",
+              "copy": "Learn More",
+              "targetInNewWindow": "false"
+            }
+          }
+        },
+        "c02_title": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "tess.paul",
+          "jcr:created": "Wed Nov 20 2019 17:05:50 GMT+0000",
+          "mainTitle": "Title, Edit me",
+          "introDescription": "Description, Edit me",
+          "jcr:lastModified": "Mon Dec 16 2019 14:03:05 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/c02-title/v1/c02-title",
+          "heading": {
+            "jcr:primaryType": "nt:unstructured",
+            "weight": "h1",
+            "text": "Meet Saudi"
+          },
+          "link": {
+            "jcr:primaryType": "nt:unstructured",
+            "targetInNewWindow": "false"
+          }
+        },
+        "c09_tabs_1205211579": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Wed Nov 20 2019 17:06:20 GMT+0000",
+          "jcr:lastModified": "Wed Nov 20 2019 17:07:03 GMT+0000",
+          "sling:resourceType": "sauditourism/components/content/c09-tabs/v1/c09-tabs",
+          "item_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Tab 1",
+            "subtitleWeight": "h1",
+            "description": "<p>With 13 international airports, served by a wealth of international carriers, getting to and around the Kingdom couldn’t be easier.</p>\r\n",
+            "cq:panelTitle": "Getting Here",
+            "jcr:lastModifiedBy": "admin",
+            "title": "Getting Here",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 08:53:44 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/understand/card-04.jpg",
+              "alt": "Getting Here",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/understand/card-mobile-04.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/getting-here",
+              "copy": "Find out more",
+              "targetInNewWindow": "false"
+            }
+          },
+          "item_2": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Tab 2",
+            "subtitleWeight": "h1",
+            "description": "<p>A first-rate transportation system connects Saudi Arabia’s provinces and cities, serving millions of people each day.</p>\r\n",
+            "cq:panelTitle": " Getting Around",
+            "jcr:lastModifiedBy": "admin",
+            "title": "Getting Around",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 08:54:24 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/understand/card-05.jpg",
+              "alt": "Getting Around",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/understand/card-mobile-05.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/getting-around",
+              "copy": "Find out more",
+              "targetInNewWindow": "false"
+            }
+          },
+          "item_1574269618241": {
+            "jcr:primaryType": "nt:unstructured",
+            "subtitleWeight": "h1",
+            "description": "<p>Saudi Arabia’s national currency is the Saudi riyal (ر.س SAR), which is subdivided into 100 halala. You’ll receive notes in denominations of 5 riyals, 10 riyals, 50 riyals, 100 riyals and 500 riyals; and coins in 1 riyal, 2 riyals, 50 halala, 25 halala, 10 halala, 5 halala and 1 halala.</p>\r\n",
+            "cq:panelTitle": " Currencies and Payments",
+            "jcr:lastModifiedBy": "admin",
+            "title": "Currencies and Payments",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 08:58:32 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/understand/card-06.jpg",
+              "alt": "Currencies and Payments",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/understand/card-mobile-06.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/understand/currencies-and-payments",
+              "copy": "Find out more",
+              "targetInNewWindow": "false"
+            }
+          }
+        },
+        "tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Tue Nov 19 2019 09:25:40 GMT+0000",
+          "jcr:lastModified": "Tue Nov 19 2019 09:25:40 GMT+0000",
+          "sling:resourceType": "sauditourism/components/content/c-09-tabs/v1/tabs",
+          "item_1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Tab 1",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          },
+          "c07_evisa": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "leftDescription": "The simplest and quickest way to issue your visa to the Kingdom. Apply and receive it instantly in your inbox.",
+            "rightDescription": "The Saudi Arabian visa is accessible for all. We look forward to welcome and host you in the Kingdom.",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Nov 19 2019 09:34:04 GMT+0000",
+            "mainTitle": "Visit Visa",
+            "jcr:lastModified": "Tue Nov 19 2019 09:36:01 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c07-evisa/v1/c07-evisa",
+            "leftTitle": "What’s the Visa?",
+            "linkButton": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "#",
+              "copy": "Apply for eVisa",
+              "targetInNewWindow": "false"
+            },
+            "linkLearnMore": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "#",
+              "copy": "Learn more",
+              "targetInNewWindow": "false"
+            }
+          },
+          "item_2": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "Tab 2",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "c07_evisa": {
+          "jcr:primaryType": "nt:unstructured",
+          "mainTitleWeight": "h1",
+          "jcr:createdBy": "admin",
+          "leftDescription": "The simplest and quickest way to issue your visa to the Kingdom. Apply and receive it instantly in your inbox.",
+          "rightDescription": "The Saudi Arabian visa is accessible to all. We look forward to welcoming and hosting you in the Kingdom.",
+          "jcr:lastModifiedBy": "maren.dethlefsen",
+          "jcr:created": "Wed Nov 20 2019 15:18:32 GMT+0000",
+          "mainTitle": "Visit Visa",
+          "leftTitleWeight": "h1",
+          "jcr:lastModified": "Wed Dec 11 2019 12:19:49 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/c07-evisa/v1/c07-evisa",
+          "leftTitle": "What’s the Visa?",
+          "linkButton": {
+            "jcr:primaryType": "nt:unstructured",
+            "url": "https://visa.visitsaudi.com/",
+            "copy": "Apply for eVisa",
+            "targetInNewWindow": "true"
+          },
+          "linkLearnMore": {
+            "jcr:primaryType": "nt:unstructured",
+            "url": "/content/sauditourism/en/about-e-visa",
+            "copy": "Learn more",
+            "targetInNewWindow": "false"
+          }
+        }
+      }
+    }
+  },
+  "language-and-culture": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Language and Culture ",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "15148869-0eb9-4713-8eaa-a60df9fe0129",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-01.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "6b05001c-a814-4691-b6ec-fc6fa30f3ec3"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:31:18 GMT+0100",
+      "jcr:description": "Find out about Saudi Arabia’s rich language, heritage and traditions.\r\n",
+      "jcr:baseVersion": "6b05001c-a814-4691-b6ec-fc6fa30f3ec3",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Language and Culture - Visit Saudi Official Website",
+      "jcr:uuid": "9c44d598-0580-4805-b609-c46207832653",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-01.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-01.jpg",
+      "navTitle": "Language and Culture",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 14:43:45 GMT+0000",
+            "title": "Language and Culture",
+            "jcr:lastModified": "Wed Nov 20 2019 17:18:54 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/language-and-culture/hero-image.jpg",
+              "alt": "Language and Culture",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/language-and-culture/hero-image-mobile.jpg"
+            }
+          },
+          "c03_card": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "description": "<p>Arabic is the official language of Saudi Arabia and the primary language used in all dealings and public transactions. English serves as an informal second language in the Kingdom and is spoken by a large section of its society. All road signs are bilingual, showing information in both Arabic and English.</p>\r\n",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 14:47:31 GMT+0000",
+            "title": "Language",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 09:01:16 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "cq:styleIds": [
+              "1573617256026"
+            ],
+            "imagePosition": "right",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/language-and-culture/card-01.jpg",
+              "alt": "Language and Culture",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/language-and-culture/card-mobile-01.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "targetInNewWindow": "false"
+            }
+          },
+          "c03_card_copy": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "description": "<p>Saudi Arabia’s rich heritage and traditions have been shaped by its position as a historic trade hub and the birthplace of Islam. In recent years, the Kingdom has undergone a significant cultural transformation, evolving century-old customs to fit the contemporary world we live in today.</p>\r\n",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 14:47:31 GMT+0000",
+            "title": "Culture",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Thu Dec 05 2019 09:03:32 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "imagePosition": "left",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/language-and-culture/card-02.jpg",
+              "alt": "Culture",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/language-and-culture/card-mobile-02.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "targetInNewWindow": "false"
+            }
+          }
+        }
+      }
+    }
+  },
+  "laws-and-etiquette": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Laws and Etiquette ",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "831a6863-06d6-48a6-94f6-754e8f9c6cc8",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-02.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "7592a30e-229c-419c-b4d7-561404fdacf9"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:33:54 GMT+0100",
+      "theme": "green",
+      "jcr:description": "Public etiquette in Saudi Arabia is informed by our cultural heritage and Islamic religion, and underpinned by values that are familiar to people everywhere.\r\n",
+      "jcr:baseVersion": "7592a30e-229c-419c-b4d7-561404fdacf9",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Laws and Etiquette - Visit Saudi Official Website",
+      "jcr:uuid": "f10d4668-b9be-4fc9-b763-26864c308036",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-02.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-02.jpg",
+      "navTitle": "Laws and Etiquette",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 15:10:52 GMT+0000",
+            "title": "Laws and Etiquette",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Mon Nov 25 2019 10:56:31 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/hero-image.jpg",
+              "alt": "Laws and Etiquette",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/hero-image-mobile.jpg"
+            }
+          },
+          "c02_title_intro": {
+            "jcr:primaryType": "nt:unstructured",
+            "mainTitleWeight": "h1",
+            "jcr:createdBy": "admin",
+            "introTitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Nov 19 2019 09:57:27 GMT+0000",
+            "mainTitle": "Laws and Etiquette",
+            "introDescription": "Public etiquette in Saudi Arabia is informed by our cultural heritage and Islamic religion, and underpinned by values that are familiar to people everywhere: respect for others, decorum in public and protection of privacy.",
+            "introSubtitleWeight": "h1",
+            "jcr:lastModified": "Mon Dec 02 2019 16:58:44 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c02-title-intro/v1/c02-title-intro"
+          },
+          "tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Thu Nov 14 2019 11:46:20 GMT+0000",
+            "jcr:lastModified": "Thu Nov 14 2019 11:47:07 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c-09-tabs/v1/tabs",
+            "componentHeading": {
+              "jcr:primaryType": "nt:unstructured",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "text": "Tafas"
+              }
+            },
+            "item_1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 1",
+              "cq:panelTitle": "Dress ",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            },
+            "item_2": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 2",
+              "cq:panelTitle": "Public Behaviour",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            }
+          },
+          "c09_tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Nov 20 2019 09:37:55 GMT+0000",
+            "jcr:lastModified": "Sat Dec 07 2019 17:29:45 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c09-tabs/v1/c09-tabs",
+            "item_1574249310277": {
+              "jcr:primaryType": "nt:unstructured",
+              "cq:panelTitle": "Dress",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "c03_card": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "subtitleWeight": "h1",
+                "description": "<p>Both men and women are asked to dress modestly in public, avoiding tight-fitting clothing or clothes with profane language or images. Women should cover shoulders and knees in public.</p>\r\n<p> </p>\r\n",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Wed Nov 20 2019 11:29:35 GMT+0000",
+                "title": "Dress",
+                "titleWeight": "h1",
+                "jcr:lastModified": "Mon Dec 02 2019 16:59:59 GMT+0000",
+                "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+                "textIsRich": "true",
+                "image": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "fileReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/tab-card-01-1920.jpg",
+                  "alt": "Dress",
+                  "mobileImageReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/tab-card-01-720.jpg"
+                },
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "targetInNewWindow": "false"
+                }
+              },
+              "c98_footnote_1184826105": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Wed Nov 20 2019 13:28:59 GMT+0000",
+                "titleWeight": "h1",
+                "heading": "Violations to public decency and penalties",
+                "jcr:lastModified": "Sat Dec 07 2019 16:49:37 GMT+0000",
+                "ctaText": "Book this experience",
+                "sling:resourceType": "sauditourism/components/content/c98-footnote/v1/c98-footnote",
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "url": "/content/dam/saudi-tourism/documents/VIOLATIONSTOPUBLICDECENCYANDPENALTIES_EN.pdf",
+                  "copy": "Click here to download",
+                  "targetInNewWindow": "true"
+                }
+              }
+            },
+            "item_1574249320932": {
+              "jcr:primaryType": "nt:unstructured",
+              "cq:panelTitle": "Public Behaviour",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "c03_card": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "subtitleWeight": "h1",
+                "description": "<p>Public displays of affection are not consistent with local culture and \r\nvisitors should also avoid using profane language or gestures.</p>\r\n",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Wed Nov 20 2019 13:34:02 GMT+0000",
+                "title": "Public Behaviour",
+                "titleWeight": "h1",
+                "jcr:lastModified": "Mon Dec 02 2019 17:01:25 GMT+0000",
+                "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+                "textIsRich": "true",
+                "image": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "fileReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/tab-card-02-1920.jpg",
+                  "alt": "Public Behaviour",
+                  "mobileImageReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/tab-card-02-720.jpg"
+                },
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "targetInNewWindow": "false"
+                }
+              },
+              "c98_footnote_1184826": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Wed Nov 20 2019 13:28:59 GMT+0000",
+                "titleWeight": "h1",
+                "heading": "Violations to public decency and penalties",
+                "jcr:lastModified": "Fri Dec 06 2019 15:26:34 GMT+0000",
+                "ctaText": "Book this experience",
+                "sling:resourceType": "sauditourism/components/content/c98-footnote/v1/c98-footnote",
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "url": "/content/dam/saudi-tourism/documents/VIOLATIONSTOPUBLICDECENCYANDPENALTIES_EN.pdf",
+                  "copy": "Click here to download",
+                  "targetInNewWindow": "true"
+                }
+              }
+            },
+            "item_1575648931703": {
+              "jcr:primaryType": "nt:unstructured",
+              "cq:panelTitle": "Religion",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "c03_card": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "subtitleWeight": "h4",
+                "description": "<p>At prayer time, five times a day, music is turned off in public places and many shops close briefly.  For one month a year, during Ramadan, Muslims fast from dawn to dusk and so it is respectful to avoid eating or drinking in public during the day at this time.</p>\r\n",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Fri Dec 06 2019 16:17:10 GMT+0000",
+                "title": "Religion",
+                "titleWeight": "h3",
+                "jcr:lastModified": "Fri Dec 06 2019 16:19:39 GMT+0000",
+                "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+                "textIsRich": "true",
+                "image": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "fileReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/660x370/tab-card-03-1920.jpg",
+                  "alt": "Religion",
+                  "mobileImageReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/315x236/tab-card-03-1920.jpg"
+                },
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "targetInNewWindow": "false"
+                }
+              },
+              "c98_footnote": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Fri Dec 06 2019 16:19:43 GMT+0000",
+                "titleWeight": "h4",
+                "heading": "Violations to public decency and penalties",
+                "jcr:lastModified": "Fri Dec 06 2019 16:20:39 GMT+0000",
+                "ctaText": "Book this experience",
+                "sling:resourceType": "sauditourism/components/content/c98-footnote/v1/c98-footnote",
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "url": "/content/dam/saudi-tourism/documents/VIOLATIONSTOPUBLICDECENCYANDPENALTIES_EN.pdf",
+                  "copy": "Click here to download",
+                  "targetInNewWindow": "true"
+                }
+              }
+            },
+            "item_1574249346474": {
+              "jcr:primaryType": "nt:unstructured",
+              "cq:panelTitle": "Alcohol and Substances",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "c03_card": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "subtitleWeight": "h1",
+                "description": "<p>The sale, purchase and consumption of alcohol are illegal in Saudi Arabia. It is illegal to bring alcohol or drugs into the country.</p>\r\n",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Wed Nov 20 2019 13:38:12 GMT+0000",
+                "title": "Alcohol and Substances",
+                "titleWeight": "h1",
+                "jcr:lastModified": "Tue Dec 03 2019 08:52:30 GMT+0000",
+                "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+                "textIsRich": "true",
+                "image": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "fileReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/tab-card-04-1920.jpg",
+                  "alt": "Alcohol and Substances",
+                  "mobileImageReference": "/content/dam/saudi-tourism/media/laws-and-etiquette/tab-card-04-720.jpg"
+                },
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "targetInNewWindow": "false"
+                }
+              },
+              "c98_footnote": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Sat Dec 07 2019 16:50:29 GMT+0000",
+                "titleWeight": "h4",
+                "heading": "Violations to public decency and penalties",
+                "jcr:lastModified": "Sat Dec 07 2019 16:51:43 GMT+0000",
+                "ctaText": "Book this experience",
+                "sling:resourceType": "sauditourism/components/content/c98-footnote/v1/c98-footnote",
+                "link": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "url": "/content/dam/saudi-tourism/documents/VIOLATIONSTOPUBLICDECENCYANDPENALTIES_EN.pdf",
+                  "copy": "Click here to download",
+                  "targetInNewWindow": "true"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "getting-here": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Getting Here ",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "bc587358-563b-4990-a9be-f422d98a7f21",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-03.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "b58d888d-44cc-48ff-8ca0-104d2ec7a40e"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:35:52 GMT+0100",
+      "theme": "green",
+      "jcr:description": "With 13 international airports, served by a wealth of international carriers, getting to and around the Kingdom couldn’t be easier.\r\n",
+      "jcr:baseVersion": "b58d888d-44cc-48ff-8ca0-104d2ec7a40e",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Getting Here - Visit Saudi Official Website",
+      "jcr:uuid": "1d486f6f-aa16-4d95-8e82-bf621beab4ad",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-03.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-03.jpg",
+      "navTitle": "Getting Here",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 15:42:01 GMT+0000",
+            "title": "Getting Here",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Mon Nov 25 2019 11:03:57 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/getting-here/hero-image.jpg",
+              "alt": "Getting Here",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/getting-here/760x570/hero-image.jpg"
+            }
+          },
+          "c12_article_detail": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 16:17:25 GMT+0000",
+            "text": {
+              "jcr:primaryType": "nt:unstructured",
+              "description": "Sample title text"
+            },
+            "jcr:lastModified": "Mon Nov 25 2019 11:07:12 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c12-article-detail/v1/c12-article-detail",
+            "textIsRich": "true"
+          }
+        }
+      }
+    }
+  },
+  "getting-around": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Getting Around ",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "a1f88440-da81-4862-86de-a90a29df6210",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-04.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "55e92a12-0ca5-4756-9f65-6986ff6b0eb0"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:37:27 GMT+0100",
+      "theme": "teal",
+      "jcr:description": "A first-rate transportation system connects Saudi Arabia’s provinces and cities, serving millions of people each day.\r\n",
+      "jcr:baseVersion": "55e92a12-0ca5-4756-9f65-6986ff6b0eb0",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Getting Around - Visit Saudi Official Website",
+      "jcr:uuid": "4d4b896c-cf9c-4918-b8b6-cea672aaaea6",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-04.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-04.jpg",
+      "navTitle": "Getting Around",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 16:12:08 GMT+0000",
+            "title": "Getting Around",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 08:54:18 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/getting-around/brand-page-hero.jpg",
+              "alt": "Getting Around",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/getting-around/760x570/brand-page-hero.jpg"
+            }
+          },
+          "c12_article_detail": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 16:19:11 GMT+0000",
+            "text": {
+              "jcr:primaryType": "nt:unstructured",
+              "description": "Sample title text"
+            },
+            "jcr:lastModified": "Tue Dec 03 2019 08:55:19 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c12-article-detail/v1/c12-article-detail",
+            "textIsRich": "true"
+          },
+          "tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 16:20:51 GMT+0000",
+            "jcr:lastModified": "Mon Nov 11 2019 16:20:51 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c-09-tabs/v1/tabs",
+            "item_1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 1",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            },
+            "item_2": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 2",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            }
+          },
+          "c09_tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Nov 20 2019 14:03:26 GMT+0000",
+            "jcr:lastModified": "Wed Nov 20 2019 14:08:50 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c09-tabs/v1/c09-tabs",
+            "item_1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 1",
+              "subtitleWeight": "h1",
+              "description": "<p>Hiring a car is an efficient and cost-effective way to explore Saudi Arabia and visit the country’s many tourist attractions. Cars can be rented at airports, or in most cities, making it easy to get out and explore.<br />\r\n<br />\r\n<i>*In the case of any issue or problem do not hesitate to call 938</i></p>\r\n",
+              "cq:panelTitle": "Car Rentals",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Car Rentals",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Tue Dec 03 2019 08:58:13 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/getting-around/card-01.jpg",
+                "alt": "Car Rentals",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/getting-around/card-mobile-01.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_2": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 2",
+              "subtitleWeight": "h1",
+              "description": "<p>Taxis in Saudi Arabia are easy to find, particularly around busy locations such as shopping malls, hypermarkets and public parks. All are\r\n equipped with a digital meter detailing the fare, together with information on the driver and operating company. Some hotels offer cars \r\nfor private hire too.<br />\r\n<br />\r\n<em>*In the case of any issue or problem do not hesitate to call 938</em></p>\r\n",
+              "cq:panelTitle": "Taxis",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Taxis",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Tue Dec 03 2019 09:35:10 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/getting-around/card-02.jpg",
+                "alt": "Taxis",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/getting-around/card-mobile-02.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_1574258748603": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "description": "<p>A number of ride-hailing apps operate in the Kingdom, including Uber and Careem. Just tap in your pick-up and drop-off locations and track your driver’s arrival online. Payment can be made either by cash or credit card.<br>\r\n<br>\r\n<i>*In the case of any issue or problem do not hesitate to call 938</i></p>\r\n",
+              "cq:panelTitle": " Use a Ride-hailing App",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Use a Ride-hailing App",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Mon Nov 25 2019 11:18:57 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/getting-around/card-03.jpg",
+                "alt": "Use a Ride-hailing App",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/getting-around/card-mobile-03.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_1574258770917": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "description": "<p>Saudi’s railway system operates through three primary train stations:<br>\r\n<br>\r\nRiyadh-Dammam connects Riyadh to the Eastern Region and passes through the following stations: Dammam, Abqaiq, Hofuf and Riyadh.<br>\r\n<a target=\"_blank\"><a title=\"www.saudirailways.org\" href=\"http://www.saudirailways.org\" target=\"_blank\">www.saudirailways.org</a></a><br>\r\n<br>\r\nThe North Train connects Riyadh to the north of Saudi Arabia and serves the following stations: Riyadh, Al Majmaah, Qassim, Ha’il and Al Jouf.<br>\r\n<a target=\"_blank\"><a title=\"www.sar.com.sa\" href=\"http://www.sar.com.sa\" target=\"_blank\">www.sar.com.sa</a></a><br>\r\n<br>\r\nHaramain High-Speed Railway is the latest and fastest train in the Middle East, operating between the holy cities of Makkah and Madinah in western Saudi Arabia. It serves the following stations: Makkah, Jeddah, King Abdullah Economic City and Madinah.<br>\r\n<a target=\"_blank\"><a title=\"www.hhr.sa\" href=\"http://www.hhr.sa\" target=\"_blank\">www.hhr.sa</a></a></p>\r\n<p>&nbsp;</p>\r\n",
+              "cq:panelTitle": "Trains",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Trains",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Sun Dec 08 2019 18:49:14 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/getting-around/card-04.jpg",
+                "alt": "Trains",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/getting-around/card-mobile-04.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_1574258871687": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "description": "<p>The Saudi Public Transport Company (SAPTCO) operates a comprehensive network of bus services across the Kingdom, linking all major cities, towns and villages. For more information and to purchase tickets, please visit:<br>\r\n<br>\r\n<a href=\"https://www.saptco.com.sa/Buses/Home.aspx\">https://www.saptco.com.sa/Buses/Home.aspx</a></p>\r\n<p><a href=\"https://www.saptco.com.sa/Buses/Home.aspx\" title=\"Learn more\">&nbsp;</a><a href=\"https://www.saptco.com.sa/Buses/Home.aspx\" title=\"Learn more\"></a></p>\r\n",
+              "cq:panelTitle": "Buses",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Buses",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Mon Nov 25 2019 11:24:05 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/getting-around/card-05.jpg",
+                "alt": "Buses",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/getting-around/card-mobile-05.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "url": "#",
+                "targetInNewWindow": "false"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "climate-and-seasons": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Climate and Seasons",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "0b4b3ec3-07c6-4555-b98c-bd03362d9e4e",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-05.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "57b5859c-98d5-4309-a66e-a866c694c914"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:39:40 GMT+0100",
+      "jcr:description": "Saudi Arabia has four distinct seasons and a climate that varies between regions. Read on for a seasonal overview of the Kingdom’s weather.\r\n",
+      "jcr:baseVersion": "57b5859c-98d5-4309-a66e-a866c694c914",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Climate and Seasons - Visit Saudi Official Website",
+      "jcr:uuid": "4b4a0442-e0ba-4829-bbbc-a54ddd19ae63",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-05.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-05.jpg",
+      "navTitle": "Climate and Seasons",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 16:23:46 GMT+0000",
+            "title": "Climate and Seasons",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 09:37:29 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "videoPath": "/content/dam/saudi-tourism/video/climate-and-seassons.mp4",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/climate-and-seasons/climate-hero.jpg",
+              "alt": "Climate and Seasons",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/climate-and-seasons/760x570/climate-hero.jpg"
+            }
+          },
+          "c02_title_intro": {
+            "jcr:primaryType": "nt:unstructured",
+            "mainTitleWeight": "h1",
+            "jcr:createdBy": "admin",
+            "introTitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:12:27 GMT+0000",
+            "mainTitle": "Climate and Seasons",
+            "introDescription": "Contrary to popular belief, Saudi Arabia has four distinct seasons and a climate that varies between regions. Read on for a seasonal overview of the Kingdom’s weather.",
+            "introSubtitleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 09:41:59 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c02-title-intro/v1/c02-title-intro"
+          },
+          "tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Nov 19 2019 10:06:23 GMT+0000",
+            "jcr:lastModified": "Tue Nov 19 2019 10:06:23 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c-09-tabs/v1/tabs",
+            "item_1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 1",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            },
+            "item_2": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 2",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            }
+          },
+          "c09_tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Nov 20 2019 14:19:32 GMT+0000",
+            "jcr:lastModified": "Wed Nov 20 2019 17:48:18 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c09-tabs/v1/c09-tabs",
+            "item_1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 1",
+              "subtitleWeight": "h1",
+              "description": "<p>Spring in Saudi Arabia can be brisk, particularly in the north, where the temperature at night can drop to below 15 degrees. The central and southern regions are warmer, averaging around 20 degrees after nightfall. Rainfall is at its highest now, particularly in the central \r\nregion and in the southwest over the Asir Mountains.</p>\r\n",
+              "cq:panelTitle": "Spring",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Spring",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Tue Dec 03 2019 09:47:57 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/climate-and-seasons/card-01.jpg",
+                "alt": "Spring",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/climate-and-seasons/760x570/card-01.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_2": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 2",
+              "subtitleWeight": "h1",
+              "description": "<p>Summer signals the start of rising temperatures across much of the country, with the exception of the comparatively mild highlands in the southwest. The early mornings and long evenings are more temperate with gentle winds, so take advantage of the warm seas to explore Saudi Arabia’s world-class dive sites, or try your hand at other watersports.</p>\r\n",
+              "cq:panelTitle": "Summer",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Summer",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Tue Dec 03 2019 09:50:05 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/climate-and-seasons/card-02.jpg",
+                "alt": "Summer",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/climate-and-seasons/760x570/card-02.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_1574259616964": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "description": "<p>Autumn brings gentler weather and cool breezes in both Saudi Arabia’s \r\nnorthern regions and the southwestern highlands. While daytime \r\ntemperatures remain warm, evenings are mild and perfect for outdoor \r\nstrolling along Jeddah’s waterfront, indulging in al-fresco dining, or \r\nvisiting Al Ahsa’s cool desert springs.</p>\r\n",
+              "cq:panelTitle": "Autumn",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Autumn",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Tue Dec 03 2019 09:53:40 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/climate-and-seasons/card-03.jpg",
+                "alt": "Autumn",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/climate-and-seasons/760x570/card-03.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_1574259624330": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "description": "<p>Take advantage of Saudi Arabia’s beautiful winter weather to explore the Kingdom. The balmy days and cool nights are perfect for camping, rock climbing, or just exploring Saudi Arabia’s bustling cities and verdant highlands. You might even be lucky enough to see snowfall in the mountains of the northern regions, blanketing the slopes and desert sands.</p>\r\n",
+              "cq:panelTitle": "Winter",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Winter",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Tue Dec 03 2019 09:55:10 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/climate-and-seasons/card-04.jpg",
+                "alt": "Winter",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/climate-and-seasons/760x570/card-04.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "currencies-and-payments": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Currencies and Payments",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "40f53b53-6b2c-43ae-a8cd-ed937ef50bd5",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-06.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "f1ed308a-88b7-4163-acc7-f2930f6a6f6d"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:41:50 GMT+0100",
+      "jcr:description": "Currency exchange and transactions are easy in Saudi Arabia. Its national currency is the Saudi riyal (ر.س SAR), which is subdivided into 100 halala.",
+      "jcr:baseVersion": "f1ed308a-88b7-4163-acc7-f2930f6a6f6d",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Currencies and Payments - Visit Saudi Official Website",
+      "jcr:uuid": "f835a542-12f8-4b55-89ed-bc513d3f82d5",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-06.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-06.jpg",
+      "navTitle": "Currencies and Payments",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Mon Nov 11 2019 21:17:06 GMT+0000",
+            "title": "Currencies and Payments",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 10:03:46 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/currenciesandpayments/currencies-poster.jpg",
+              "alt": "Currencies and Payments",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/currenciesandpayments/760x570/currencies-poster.jpg"
+            }
+          },
+          "c02_title_intro": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:14:33 GMT+0000",
+            "mainTitle": "Currencies and Payments",
+            "introDescription": "Currency exchange and transactions are easy in Saudi Arabia.",
+            "jcr:lastModified": "Fri Nov 15 2019 16:14:45 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c02-title-intro/v1/c02-title-intro"
+          },
+          "c03_card": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "description": "<p>Saudi Arabia’s national currency is the Saudi riyal (ر.س SAR), which is subdivided into 100 halala.<br />\r\n<br />\r\nYou’ll receive notes in denominations of five riyals, ten riyals, 50 riyals, 100 riyals and 500 riyals; and coins in one riyal, two riyals, 50 halala, 25 halala, 10 halala, five halala and one halala.</p>\r\n",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:15:09 GMT+0000",
+            "title": "Currency",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 10:05:31 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "cq:styleIds": [
+              "1573617256026"
+            ],
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/currenciesandpayments/currency.jpg",
+              "alt": "Currency",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/currenciesandpayments/currency-mobile.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "targetInNewWindow": "false"
+            }
+          },
+          "c03_card_421433508": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "description": "<p>All banks in the Kingdom offer currency exchange services. Exchange bureaus are located at airports, some shopping centres and various other locations in the country. The US dollar is equivalent to SAR 3.75 (fixed rate). Credit cards, such as Visa, MasterCard and American Express are accepted throughout the Kingdom. ATMs are also widely available.</p>\r\n",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:16:06 GMT+0000",
+            "title": "Currency Exchange",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 10:06:24 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/currenciesandpayments/currency-exchange.jpg",
+              "alt": "Currency exchange",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/currenciesandpayments/currency-exchange-mobile.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "targetInNewWindow": "false"
+            }
+          },
+          "c03_card_1648380055": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "description": "You can send or receive money in Saudi Arabia by transferring funds online, or through a bank that offers fast money transfer services, all of which are subject to the rules and regulations of the Saudi Arabian Monetary Authority (SAMA).",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:16:11 GMT+0000",
+            "title": "Send and Receive Money",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 10:07:17 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "cq:styleIds": [
+              "1573617256026"
+            ],
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/currenciesandpayments/send-and-receive-money.jpg",
+              "alt": "Send and receive money",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/currenciesandpayments/send-and-receive-money-mobile.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "targetInNewWindow": "false"
+            }
+          },
+          "c03_card_778390067": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "description": "Saudi Arabia imposes an indirect tax of 5% (VAT) on all goods and services purchased and sold by enterprises. There are some exceptions.",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:16:15 GMT+0000",
+            "title": "Taxes",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Tue Dec 03 2019 10:07:57 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+            "textIsRich": "true",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/currenciesandpayments/taxes.jpg",
+              "alt": "Taxes",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/currenciesandpayments/taxes-mobile.jpg"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "targetInNewWindow": "false"
+            }
+          }
+        }
+      }
+    }
+  },
+  "test-breadcrumbs": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "test-breadcrumbs",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "e013574c-1421-4478-996d-5aa53766cb8c",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "6d8691d1-f474-4fc9-b31d-53e382e57123"
+      ],
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Oct 29 2019 14:03:22 GMT+1100",
+      "jcr:baseVersion": "6d8691d1-f474-4fc9-b31d-53e382e57123",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "ed255ee1-a994-4a11-a491-ae4d466fa82b",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "n02_breadcrumb": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "startLevel": "3",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Oct 29 2019 13:57:16 GMT+1100",
+            "showHidden": "false",
+            "jcr:lastModified": "Tue Oct 29 2019 14:03:22 GMT+1100",
+            "hideCurrent": "true",
+            "sling:resourceType": "sauditourism/components/content/n02-breadcrumb/v1/n02-breadcrumb"
+          }
+        }
+      }
+    }
+  },
+  "useful-contacts": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Useful Contacts",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "6b6b02d5-a67f-49ee-b81f-9d1f16e1ba0f",
+      "mobileNavImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-07.jpg",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "6a560b9f-9871-4a1e-9217-0ba4159a1a84"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:15:48 GMT+0100",
+      "cq:lastModified": "Tue Dec 17 2019 17:49:04 GMT+0100",
+      "theme": "green",
+      "jcr:description": "To guarantee a safe and hassle-free stay in Saudi, here are the country's most important emergency numbers, useful contacts and telephone codes.",
+      "jcr:baseVersion": "6a560b9f-9871-4a1e-9217-0ba4159a1a84",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Useful Contacts - Visit Saudi Official Website",
+      "jcr:uuid": "6b2a46e6-8063-4165-8cdd-0ec1f7127869",
+      "featureImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-07.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "navImage": "/content/dam/saudi-tourism/media/navigation/560x315/navigation-07.jpg",
+      "navTitle": "Useful Contacts",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "subtitleWeight": "h1",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Fri Nov 15 2019 16:23:50 GMT+0000",
+            "title": "Useful Contacts",
+            "titleWeight": "h1",
+            "jcr:lastModified": "Mon Nov 25 2019 12:32:40 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "videoPath": "/content/dam/saudi-tourism/video/safety.mp4",
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/safety-poster.jpg",
+              "alt": "Useful Contacts",
+              "mobileImageReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/760x570/safety-poster.jpg"
+            }
+          },
+          "c09_tabs": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Wed Nov 20 2019 14:28:15 GMT+0000",
+            "jcr:lastModified": "Wed Nov 20 2019 14:33:25 GMT+0000",
+            "sling:resourceType": "sauditourism/components/content/c09-tabs/v1/c09-tabs",
+            "item_1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 1",
+              "subtitleWeight": "h1",
+              "description": "<p><b>Police:</b> 999<br />\r\n<b>Saudi Ambulance:</b> 997<br />\r\n<b>Civil Defence:</b> 998<br />\r\n<b>For traffic accidents:</b> 993<br />\r\n<b>Highway Patrol:</b> 996<br />\r\n<b>Border Guard:</b> 994</p>\r\n<p> </p>\r\n",
+              "cq:panelTitle": "Emergency Numbers",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Emergency Numbers",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Mon Nov 25 2019 12:34:44 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/card-01.jpg",
+                "alt": "Emergency Numbers",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/card-mobile-01.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_2": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:title": "Tab 2",
+              "subtitleWeight": "h1",
+              "description": "<p><strong>Tourism Call Center:</strong> 19988<br />\r\n <strong>Tourism International Call Center:</strong> 00966112614750<br />\r\n <strong>Najm Company:</strong> 920000560<br />\r\n <strong>Passports:</strong> 992<br />\r\n <strong>Saudi Public Security:</strong> 989<br />\r\n <strong>General enquiries:</strong> 905<br />\r\n <strong>Emergency medical consultation:</strong> 937<br />\r\n <strong>Municipalities:</strong> 940<br />\r\n <strong>Electricity company emergency:</strong> 933<br />\r\n <strong>Ministry of Transport emergency:</strong> 938<br />\r\n <strong>Enquiries related to Ministry of Commerce:</strong> 1900<br />\r\n <strong>Consumer protection:</strong> 935<br />\r\n <strong>General Directorate of Narcotics Control:</strong> 995</p>\r\n<p> </p>\r\n",
+              "cq:panelTitle": " Useful Numbers",
+              "jcr:lastModifiedBy": "admin",
+              "title": "Useful Numbers",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Mon Nov 25 2019 12:36:10 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/card-02.jpg",
+                "alt": "Useful Numbers",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/card-mobile-02.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            },
+            "item_1574260400799": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "description": "<p>Saudi Arabia’s country code is <b>00966</b> There are three mobile network providers in Saudi Arabia. These are:<br />\r\n<br />\r\n<b>STC</b><br />\r\n<b>Mobily</b><br />\r\n<b>Zain</b></p>\r\n",
+              "cq:panelTitle": " Telephone Code and Providers",
+              "jcr:lastModifiedBy": "admin",
+              "title": " Telephone Code and Providers",
+              "titleWeight": "h1",
+              "jcr:lastModified": "Mon Nov 25 2019 12:36:52 GMT+0000",
+              "sling:resourceType": "sauditourism/components/content/c03-card/v1/c03-card",
+              "textIsRich": "true",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/card-03.jpg",
+                "alt": " Telephone Code and Providers",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/safety-useful-numbers/card-mobile-03.jpg"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "targetInNewWindow": "false"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

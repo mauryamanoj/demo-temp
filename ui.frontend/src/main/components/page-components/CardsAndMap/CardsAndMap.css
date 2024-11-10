@@ -1,0 +1,62 @@
+.cardsListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 2px;
+  z-index: 10;
+  position: relative;
+}
+
+.cardsListWrapper::-webkit-scrollbar{
+  display: none;
+}
+
+[dir="rtl"] .cardsListWrapper {
+  padding-right: auto;
+  margin-right: auto;
+
+  padding-left: 2px;
+}
+
+@media (min-width: 768px) {
+  .cardsListWrapper.attraction {
+    height: calc(100% - 65px);
+  }
+}
+
+/* @media (max-width: 1024px) {
+  .cardsListWrapper {
+    width: 31%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .cardsListWrapper {
+    flex-direction: row;
+    gap: 16px;
+    /* width: 100%; */
+    height: auto;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow-x: scroll;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardsListWrapper::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(var(--color-gray-200));
+  }
+
+  .cardsListWrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--color-theme-100));
+    border-radius: 10px;
+  }
+}

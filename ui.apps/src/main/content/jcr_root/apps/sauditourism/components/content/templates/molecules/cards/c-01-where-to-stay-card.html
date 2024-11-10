@@ -1,0 +1,62 @@
+<template data-sly-template.c01whereToStayCards="${@ card, layout, hideDescription, tagLine, title,type}"
+          data-sly-use.favButton="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+          data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html"
+          data-sly-use.cta02Link="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html"
+          data-sly-use.taglineG01SimpleTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-01-simple.html"
+          data-sly-use.taglineG02FeaturedTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-02-featured.html"
+          data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+          data-sly-use.winterTagLine="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-winter-featured.html">
+
+
+			<div data-component="c-01-where-to-stay-card" data-sly-set.link="${card.link}"
+				class="layout-${layout} ${card.isFeatured ? ' featured' : ''}${card.description ? '' : ' without-description'}">
+
+
+			<div class="image-wrapper">
+            <a href="${link.url}" class="image-link"
+               data-sly-attribute.target="${link.targetInNewWindow ? '_blank' : '_self'}"
+               data-sly-attribute.rel="${link.targetInNewWindow ? 'noopener noreferrer' : ''}"
+               data-sly-set.class="${link.urlSlingExporter && !card.hideNav ? 'with-favorite-button' : ''}">
+            <sly data-sly-call="${imageTemplate.pictureObj @ imageDesktop=card.image.s7fileReference||
+                                card.image.fileReference, altText=link.copy,imageMobile=card.image.mobileImageReference || card.image.s7mobileImageReference, componentType='c-01', tagLine=tagLine,
+                                extraClass=class}"></sly>
+
+            <div data-sly-test="${card.discountLabel && card.discountLabel!='null'}" class="discount-section">
+                <div class="deal" data-sly-set.icons="${card.icon}">
+                    <sly data-sly-call="${iconTemplate.icon @ iconName=icons}"></sly>
+                   <div class="deal-text">${card.discountLabel}</div>
+                </div>
+            </div>
+        </a>
+  </div>
+<a href="${link.url}"
+   data-sly-attribute.target="${link.targetInNewWindow ? '_blank' : '_self'}"
+   data-sly-attribute.rel="${link.targetInNewWindow ? 'noopener noreferrer' : ''}"
+   class="content-wrapper">
+        <div class="info-wrapper">
+            <div class="inner-wrapper">
+                <div class="tagline-wrapper">
+					<sly data-sly-test="${card.featuredTagLineFeaturedCopy}"
+                         data-sly-call="${taglineG02FeaturedTemplate.taglineG02Featured @ card=card}">
+                    </sly>
+                    <sly data-sly-test="${!card.featuredTagLineFeaturedCopy && card
+                    .simpleTagLinesList}"
+                         data-sly-call="${taglineG01SimpleTemplate.taglineG01Simple @ card=card}">
+                    </sly>
+                    <sly data-sly-test="${!card.featuredTagLineFeaturedCopy && !card
+                    .simpleTagLinesList && card.location}"
+                         data-sly-call="${winterTagLine.taglineWinterFeatured @ location=card.location}">
+                    </sly>
+                </div>
+                <h5 class="title">${card.title}</h5>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+</template>
+
+
+

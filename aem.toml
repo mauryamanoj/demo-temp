@@ -1,0 +1,666 @@
+#
+# Example .aem config file.
+# Update based on your need
+#
+
+#
+# Configuration schema.
+# Defines which version of the configuration schema is used
+#
+schema="1"
+
+#
+# Enable verbose output
+#
+verbose = false
+
+#
+# Project name
+#
+project-name = "sauditourism"
+
+#
+# When set to true passwords will be stored in your local OS
+# keyring. When disabled the passwords from this config file will be used.
+# This is recomeneded. You don't want passwords in your git repository!
+#
+use-keyring = true
+
+#
+# What is the version used for this artifact build
+#
+version = "1.4.0"
+#
+# What to append as a suffix to the build version.
+#
+# Options:
+#
+# - GIT_LONG - will be replaced git commit hash long
+# - GIT_SHORT - will be replaced with git commit hash short
+# - DATE - it will be replaced with a time stamp
+# - Any other string - will used exactly
+#
+#version-suffix="-GIT_SHORT"
+
+#
+# What parameters to send to maven for this build
+#
+buildCommand = "clean install -P adobe-public -DskipFrontend=false --batch-mode"
+
+#buildCommand = "clean install -P adobe-public -DskipFrontend=true -DskipTests --batch-mode"
+
+#
+# Default AEM version to use for this project.
+# This version will be used when not defined with the instance
+#
+default-version = "6.5.0"
+
+
+#
+# Validate SSL on server when https is used.
+#
+ssl-validate = false
+
+#
+# Project license information.
+# licenses are sensitive material and should not be shared outside of the project
+# or miss used. So be very careful when using this functonality!!!!
+#
+licenseCustomer = "Saudi Commission for Tourism & National Heritage"
+licenseVersion = "6.5.0"
+licenseDownloadID = "6121fb25-adb1-3341-ae64-6ed39ccbe97b"
+
+#
+# Default instance to use if not providing the detail in the command
+#
+defaultInstance = "local-author"
+
+#
+# paths to watch and sync during development.
+# aemsync needs to be installed to use this function
+# npm install aemsync -g
+#
+watchPath = [
+    "ui.apps/src/main/content/jcr_root",
+    "ui.content/src/main/content/jcr_root"
+]
+
+#
+# Path to the dam
+#
+damPath = "/content/dam"
+
+#
+# Content packages to use for this project
+#
+contentPackages = [
+	"content-content:1.0.0",
+	"content-assets:1.0.0"
+]
+
+#
+# Content page paths
+#
+contentBackupPaths = [
+]
+
+#
+# Content page package name
+#
+contentBackupName = "content-download"
+
+#
+# Content page package group
+#
+contentBackupGroup = ""
+
+#
+# Paths to copy when using vlt-sync
+# Prepend path with ! to prevent recursive copy.
+#
+# e.g:
+#   None recursive: "!/content/some-path/"
+#   Recursive:      "/content/some-other-path/"
+#
+vltSyncPaths = [
+]
+
+#
+# Invalidate path's
+# which paths should be send to a dispatcher to invalidate.
+#
+invalidatePaths = [
+    "/content/sauditourism",
+    "/content/sauditourism/en",
+    "/etc.clientlibs",
+]
+
+#
+# Additional packages to auto install.
+# Example given is ACS commons to auto install
+# Urls can have username and password added for basic authentication
+# Example: https://username@password:somedomain.tld/....
+#
+additionalPackages = [
+]
+
+#
+# Which extra arguments to use for oak-run
+#
+oakOptions = [
+    "-mx8G",
+    "-Dtar.memoryMapped=true",
+]
+
+oakDefaultVersion = "1.8.12"
+
+#
+# General JVM options to use when starting AEM
+#
+jvm-options = [
+    "-server",
+    "-Xmx1024m",
+    "-XX:MaxPermSize=512M",
+]
+
+#
+# General JVM debug options to use when starting AEM
+#
+jvm-debug-options = [
+    "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005",
+]
+
+#
+# AEM jar. The AEM jar to start AEM.
+#
+# Can be an user with username and password or without.
+# you can also define a path to a local jar on disk.
+#
+# Urls where to find the AEM jar
+# Example: https://somedomain.tld/aem-author-4502.jar
+#
+# The jarUsername and jarPassword are the
+# HTTP basic credentials that can be used.
+#
+# Beware to not store the AEM jar in a public unprotected path!
+#
+[[aemJar]]
+version = "6.4.0"
+
+[[aemJar]]
+version = "6.5.0"
+
+#
+# Instances for your project.
+# Make sure you have local-author and local-publisher available
+# and you can define as many as you want name needs to be unique.
+#
+#
+# Definitions:
+#   name: instance name
+#   group: group name eg: local, dev, test, stage, prod
+#   aliases: Array of aliasses you want to use (not mandatory)
+#   debug:  true, false to enable the debug parameters  // Author, Publisher only
+#   proto: http, https // Author, Publisher only
+#   hostname: hostname to use
+#   ip: ip address to use
+#   port: port to open
+#   username: for login
+#   ssh-username: username to use for the SSH connection
+#   password: for login if not using keychain  // Author, Publisher only
+#   type: author, publish, dispatch
+#   runmode: Runmodes to be appended when starting  // Author, Publisher only
+#   jvm-options: jvm override options // Author, Publisher only
+#   jvm-debug-options: jvm debug override options // Author, Publisher only
+#   secure-port: What is the port for https // Dispatcher only
+#   author: Used by the dispatcher as the author host
+#   publisher: Publish host to use // Dispatcher only
+#   dispatcher-version: dispatcher version (container) // Dispatcher only
+#
+[[instance]]
+name = "local-author"
+group = "local"
+debug = true
+proto = "http"
+hostname = "127.0.0.1"
+port = 4502
+username = "admin"
+password = "admin"
+type = "author"
+runmode = "crx3,crx3tar,local"
+jvm-options = []
+jvm-debug-options = []
+
+[[instance]]
+name = "local-publish"
+group = "local"
+debug = false
+proto = "http"
+hostname = "127.0.0.1"
+port = 4503
+username = "admin"
+password = "admin"
+type = "publish"
+runmode = "crx3,crx3tar,local"
+jvm-options = []
+jvm-debug-options = []
+
+[[instance]]
+name = "dev-tmp-author"
+group = "dev-tmp"
+debug = false
+proto = "http"
+hostname = "104.40.222.255"
+port = 4502
+username = "admin"
+password = "admin"
+type = "publish"
+runmode = "crx3,crx3tar"
+jvm-options = []
+jvm-debug-options = []
+
+[[instance]]
+name = "author1-dev-visitsaudi"
+aliases = ["author-dev",]
+group = "dev"
+debug = false
+proto = "http"
+hostname = "52.178.39.18"
+port = 4502
+username = "admin"
+password = ""
+type = "author"author1-dev-visitsaudi
+runmode = "crx3,crx3tar,dev"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher1-dev-visitsaudi"
+aliases = ["publish-dev",]
+group = "dev"
+debug = false
+proto = "http"
+hostname = "13.95.223.95"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,dev"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "dispatcher1-dev-visitsaudi"
+aliases = ["dispatch-dev",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "dev"
+hostname = "127.0.0.1"
+ip = "127.0.0.1"
+
+[[instance]]
+name = "author1-qa-visitsaudi"
+aliases = ["author-qa",]
+group = "qa"
+debug = false
+proto = "http"
+hostname = "20.71.109.113"
+port = 4502
+username = "admin"
+password = ""
+type = "author"
+runmode = "crx3,crx3tar,nosamplecontent,qa"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher1-qa-visitsaudi"
+aliases = ["publish-qa",]
+group = "qa"
+debug = false
+proto = "http"
+hostname = "20.126.44.194"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,qa"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "dispatcher1-qa-visitsaudi"
+aliases = ["dispatch-qa",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "qa"
+hostname = "127.0.0.1"
+ip = "127.0.0.1"
+
+[[instance]]
+name = "author1-acc-visitsaudi"
+aliases = ["author-acc",]
+group = "acc"
+debug = false
+proto = "http"
+hostname = "20.126.129.189"
+port = 4502
+username = "admin"
+password = ""
+type = "author"
+runmode = "crx3,crx3tar,nosamplecontent,acc"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher1-acc-visitsaudi"
+aliases = ["publish1-acc",]
+group = "acc"
+debug = false
+proto = "http"
+hostname = "20.126.67.178"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,acc"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher2-acc-visitsaudi"
+aliases = ["publish2-acc",]
+group = "acc"
+debug = false
+proto = "http"
+hostname = "20.107.37.89"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,acc"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+
+[[instance]]
+name = "china-publisher-acc-visitsaudi"
+aliases = ["china-publisher-acc",]
+group = "acc"
+debug = false
+proto = "http"
+hostname = "40.72.102.139"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,acc"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+
+[[instance]]
+name = "publisher2cn-acc-visitsaudi"
+aliases = ["publish2-cn-acc",]
+group = "acc"
+debug = false
+proto = "http"
+hostname = "127.0.0.1"
+port = 4503
+username = "admin"
+password = ""
+type = "author"
+runmode = "crx3,crx3tar,nosamplecontent,acc,dynamicmedia_scene7,cn"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "dispatcher1-acc-visitsaudi"
+aliases = ["dispatch1-acc",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "acc"
+hostname = "127.0.0.1"
+ip = "127.0.0.1"
+
+[[instance]]
+name = "dispatcher2-acc-visitsaudi"
+aliases = ["dispatch2-acc",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "acc"
+hostname = "127.0.0.1"
+ip = "127.0.0.1"
+
+[[instance]]
+name = "dispatcher2-cn-acc-visitsaudi"
+aliases = ["dispatch2-cn-acc",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "acc"
+hostname = "127.0.0.1"
+ip = "127.0.0.1"
+
+
+[[instance]]
+name = "author1-prod-visitsaudi"
+aliases = ["prod-author",]
+group = "prod"
+debug = false
+proto = "http"
+hostname = "13.81.114.94"
+port = 4502
+username = "admin"
+password = ""
+type = "author"
+runmode = "crx3,crx3tar,nosamplecontent,prod"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher1-prod-visitsaudi"
+aliases = ["publish1-prod",]
+group = "prod"
+debug = false
+proto = "http"
+hostname = "13.81.114.202"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,prod"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher2-prod-visitsaudi"
+aliases = ["publish2-prod",]
+group = "prod"
+debug = false
+proto = "http"
+hostname = "40.114.150.155"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,prod"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "publisher2cn-prod-visitsaudi"
+aliases = ["publish2-cn-prod",]
+group = "prod"
+debug = false
+proto = "http"
+hostname = "40.73.67.47"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,prod,dynamicmedia_scene7,cn"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "dispatcher1-prod-visitsaudi"
+aliases = ["dispatch1-prod",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "prod"
+hostname = "40.68.243.158"
+ip = "40.68.243.158"
+
+[[instance]]
+name = "dispatcher2-prod-visitsaudi"
+aliases = ["dispatch2-prod",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "prod"
+hostname = "40.68.247.54"
+ip = "40.68.247.54"
+
+[[instance]]
+name = "dispatcher2-cn-prod-visitsaudi"
+aliases = ["dispatch2-cn-prod",]
+type = "dispatch"
+proto = "https"
+port = 443
+group = "prod"
+hostname = "40.73.66.45"
+ip = "40.73.66.45"
+
+[[instance]]
+name = "AI-Dev-author-visitsaudi"
+aliases = ["ai-author-dev",]
+group = "aidev"
+debug = false
+proto = "http"
+hostname = "20.229.37.51"
+port = 4502
+username = "admin"
+password = ""
+type = "author"
+runmode = "crx3,crx3tar,nosamplecontent,acc"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+[[instance]]
+name = "AI-Dev-publisher-visitsaudi"
+aliases = ["ai-publish-dev",]
+group = "aidev"
+debug = false
+proto = "http"
+hostname = "20.101.101.224"
+port = 4503
+username = "admin"
+password = ""
+type = "publish"
+runmode = "crx3,crx3tar,nosamplecontent,prod"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+
+[[instance]]
+name = "author-dev-perf"
+aliases = ["author-perf",]
+group = "dev"
+debug = false
+proto = "http"
+hostname = "20.86.216.198"
+port = 4502
+username = "admin"
+password = ""
+type = "author"author1-dev-visitsaudi
+runmode = "crx3,crx3tar,dev"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+jvm-debug-options = []
+[[instance]]
+name = "publisher-dev-perf"
+aliases = ["publisher-perf",]
+group = "dev"
+debug = false
+proto = "http"
+hostname = "20.86.219.211"
+port = 4503
+username = "admin"
+password = ""
+type = "author"author1-dev-visitsaudi
+runmode = "crx3,crx3tar,dev"
+jvm-options = [
+  "-server",
+  "-Xmx8192m",
+  "-XX:MaxPermSize=512M",
+]
+
+jvm-debug-options = []
+

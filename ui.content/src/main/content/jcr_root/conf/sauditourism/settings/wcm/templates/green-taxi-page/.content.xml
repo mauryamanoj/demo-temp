@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Template"
+          allowedPaths="[/content/[^/]*(/.*)?]"
+          ranking="{Long}1">
+  <jcr:content
+      cq:templateType="/conf/sauditourism/settings/wcm/template-types/content-page"
+      jcr:description="Green Taxi page for sauditourism"
+      jcr:primaryType="cq:PageContent"
+      jcr:title="Green Taxi Page"
+      allowedPaths="[/content/[^/]*/\\w{2}/Configs/green-taxi(/.*)?]"
+      status="enabled"/>
+</jcr:root>

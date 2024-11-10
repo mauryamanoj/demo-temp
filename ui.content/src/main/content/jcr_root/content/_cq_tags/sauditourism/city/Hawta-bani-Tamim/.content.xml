@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Hautat Bani Tamim"
+    jcr:title.ar="حوطة بني تميم"
+    jcr:title.de="Howtat Bani Tamim"
+    jcr:title.es="Hotat Bani Tamim"
+    jcr:title.fr="Hautat Bani Tamim"
+    jcr:title.ja="ハウター・バニ ・タミム"
+    jcr:title.ru="Хотат-Бану-Тамим"
+    jcr:title.zh="哈塔巴尼塔米姆"
+    sling:resourceType="cq/tagging/components/tag"
+    city="hawta-bani-tamim"/>

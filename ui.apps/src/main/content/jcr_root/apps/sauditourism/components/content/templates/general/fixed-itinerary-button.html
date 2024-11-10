@@ -1,0 +1,10 @@
+<sly data-sly-template.fixedButton="${@ label, type, link, appData, expanded}"
+     data-sly-use.itineraryButton="/apps/sauditourism/components/content/templates/general/create-itinerary-button.html">
+
+  <div class="fixed-itinerary-button" data-component="fixed-itinerary-button">
+    <sly data-sly-call="${itineraryButton.itineraryButton @ type=type, link=link,
+            label=label, class='is-fixed is-inverted is-collapsed', appData=appData,
+            expanded=expanded}"></sly>
+  </div>
+
+</sly>

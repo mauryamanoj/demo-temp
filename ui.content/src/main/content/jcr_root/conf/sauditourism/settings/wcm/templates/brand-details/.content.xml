@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template"
+    allowedPaths="[/content/sauditourism(/.*)?]"
+    ranking="{Long}1">
+    <jcr:content
+        cq:templateType="/conf/sauditourism/settings/wcm/template-types/content-page"
+        jcr:description="Brands page for sauditourism App"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Brand Details"
+        allowedPaths="[/content/sauditourism(/.*)?]"
+        status="enabled"/>
+</jcr:root>

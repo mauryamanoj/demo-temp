@@ -1,0 +1,43 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Wed Jun 29 2022 16:24:27 GMT+0200",
+  "variant":"map",
+  "jcr:lastModified":"Wed Jun 29 2022 17:21:08 GMT+0200",
+  "sling:resourceType":"sauditourism/components/content/c25-big-slider/v1/c25-big-slider",
+  "ornamentId":"07A",
+  "componentHeading":{
+    "jcr:primaryType":"nt:unstructured",
+    "heading":{
+      "jcr:primaryType":"nt:unstructured",
+      "weight":"h2",
+      "text":"Hello I'm a big slider"
+    },
+    "link":{
+      "jcr:primaryType":"nt:unstructured",
+      "url":"/content/sauditourism/en/about-e-visa",
+      "copy":"Open",
+      "targetInNewWindow":"true"
+    }
+  },
+  "mapSlides":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "description":"Description Al Baha",
+      "region":"al-baha-region",
+      "city":"al-baha",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "targetInNewWindow":"true"
+      },
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/content/dam/sauditourism/placeholder.jpg",
+        "fileReference":"/content/dam/sauditourism/placeholder.jpg",
+        "alt":"Alt Text"
+      }
+    }
+  }
+}

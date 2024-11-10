@@ -1,0 +1,537 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "sling:resourceType": "sauditourism/components/structure/app-page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable",
+      "mix:lockable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "en",
+    "cq:lastReplicationAction": "Activate",
+    "noCacheHeaderCdn": "false",
+    "jcr:versionHistory": "8a6dec05-f5fe-44c2-8650-962b1af84363",
+    "noCacheHeaderDispatcher": "false",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/app-homepage",
+    "cq:lastReplicatedBy": "nsaleh@esensesoftware.com",
+    "featuredImage": "/content/dam/660x370_2.jpg",
+    "searchCategories": [
+      "sauditourism:searchCategories/Highlight"
+    ],
+    "jcr:predecessors": [
+      "f843a7bb-588a-4a06-a490-2d19dfb01f12"
+    ],
+    "jcr:created": "Tue Nov 15 2022 18:49:00 GMT+0100",
+    "featured": "false",
+    "cq:lastReplicated": "Mon Nov 07 2022 09:23:13 GMT+0000",
+    "cq:lastModified": "Sun Jun 04 2023 15:10:50 GMT+0200",
+    "city": "riyadh",
+    "name": "Our Winter Season",
+    "tags": [
+      "sauditourism:events/digital"
+    ],
+    "type": "highlight",
+    "jcr:baseVersion": "f843a7bb-588a-4a06-a490-2d19dfb01f12",
+    "jcr:isCheckedOut": true,
+    "pageAuthor": "contentAuthors",
+    "jcr:uuid": "9127d7c3-a3cb-4524-9031-2d5df78fffab",
+    "sling:resourceType": "sauditourism/components/structure/app-homepage",
+    "hideInSiteMap": "false",
+    "searchHighlight": "false",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    },
+    "carousel": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "rismail@esensesoftware.com",
+      "jcr:lastModified": "Sun Oct 30 2022 13:51:34 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/app-hero-carousel",
+      "appPages": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "ctaTitle": "Book Now",
+          "url": "events/mdlbeast-soundstorm",
+          "path": "events/mdlbeast-soundstorm",
+          "type": "event",
+          "title": "MDLBEAST SOUNDSTORM",
+          "backgroundImage": "/content/dam/saudi-tourism/media/events-/midlbest-soundstorm.jpg"
+        }
+      }
+    },
+    "featuredImageCaption": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "sponsors": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "flydeal": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:createdBy": "admin",
+      "description": "Kuwait to Riyadh - 21.9 KWD",
+      "ctaurl": "https://www.flyadeal.com/en/booking/select/?origin1=KWI&destination1=RUH&departure1=2021-10-31&adt1=1&chd1=0&inf1=0&currency=KWD&utm_source=visitsaudi&utm_medium=banner&utm_campaign=kwiruh_129sar_en_10202021",
+      "jcr:lastModifiedBy": "amalyounis@esensesoftware.com",
+      "ctatitle": "Book Now",
+      "jcr:created": "Tue Nov 02 2021 15:44:05 GMT+0100",
+      "image": "/content/dam/saudi-tourism/media/AirlineBanner-en.jpg",
+      "title": "Fly Deal",
+      "jcr:lastModified": "Wed Aug 10 2022 14:18:52 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/app-generic-cards",
+      "cards": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Enjoy summer season with exclusive offers ",
+          "imagePath": "/content/dam/saudi-beach.png",
+          "link": "https://www.visitsaudi.com/en/Partners_Promotions",
+          "title": "Deals for you!",
+          "ctaText": "Discover",
+          "linkType": "external"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Enjoy fun summer with your kids with a 50% discount on their tickets promo code \"KIDS\"",
+          "imagePath": "/content/dam/saudi-tourism/media/events-/saudi-deal-family-mob.jpg",
+          "link": "https://www.saudia.com/travel-with-saudia/book-with-us/offers-and-featured-destinations/offers-and-campaigns/saudia-promotion-for-kids-summer-season",
+          "title": "Saudia",
+          "ctaText": "Book Now",
+          "linkType": "external"
+        }
+      }
+    },
+    "travel-essentials": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:lastModified": "Sun Jun 04 2023 12:08:34 GMT+0200",
+      "sling:resourceType": "sauditourism/components/app-content/app-generic-cards",
+      "cards": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "imagePath": "/content/dam/travel-essentials/travelHealth.png",
+          "iconPath": "/content/dam/travel-essentials/Icon-flight.png",
+          "id": "/content/sauditourism/app1/en/travel-regulations",
+          "link": "/content/sauditourism/app1/en/about-evisa",
+          "type": "travel-essential",
+          "title": "Saudi Visa Requirements !",
+          "linkType": "internal"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Description",
+          "imagePath": "/content/dam/sauditourism/placeholder.jpg",
+          "title": "Title here",
+          "ctaText": "Discover",
+          "linkType": "external"
+        }
+      }
+    },
+    "happeningNow": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+      "jcr:lastModified": "Tue Mar 22 2022 15:46:21 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/app-promotion-cards"
+    },
+    "promotionsHome": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+      "jcr:lastModified": "Wed Mar 23 2022 10:56:25 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/app-generic-cards"
+    },
+    "promotions": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+      "jcr:lastModified": "Tue Mar 22 2022 11:56:48 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/app-promotion-cards",
+      "cards": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Enjoy our Breathtaking views",
+          "imagePath": "/content/dam/saudi-tourism/media/hotels/intercontinental-jeddah.jpg",
+          "id": "configs/hotels/intercontinental/intercontinental-jeddah",
+          "type": "hotels",
+          "title": "InterContinental Jeddah",
+          "linkType": "internal"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Enjoy luxury along the red sea",
+          "imagePath": "/content/dam/saudi-tourism/media/hotels/Ritz.jpg",
+          "id": "configs/hotels/other/the-ritz-carlton--jeddah",
+          "type": "hotels",
+          "title": "The Ritz-Carlton",
+          "linkType": "internal"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Get the celebrity treatment",
+          "imagePath": "/content/dam/saudi-tourism/media/hotels/Le-Meridien.jpg",
+          "id": "configs/hotels/le-meridien/le-meridien-jeddah",
+          "type": "hotels",
+          "title": "Le Meridien Jeddah",
+          "linkType": "internal"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Enjoy a world-class service",
+          "imagePath": "/content/dam/saudi-tourism/media/hotels/Fairmont.jpg",
+          "id": "configs/hotels/other/fairmont-riyadh",
+          "type": "hotels",
+          "title": "Fairmont Riyadh",
+          "linkType": "internal"
+        }
+      }
+    },
+    "homepageOrder": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [],
+      "jcr:lastModifiedBy": "rismail@esensesoftware.com",
+      "jcr:lastModified": "Thu Oct 06 2022 07:26:31 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-homepage-order",
+      "homeSections": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "order": "1",
+          "sectionKey": "CAROUSEL"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": false,
+          "apiUrl": "/app/legal./content/sauditourism/app1/en/alert-page",
+          "order": "2",
+          "sectionKey": "ANNOUNCEMENT"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "apiUrl": "/app/experience?lang=en",
+          "order": "3",
+          "sectionKey": "PACKAGES",
+          "sectionTitle": "What to Experience"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": false,
+          "apiUrl": "/cards?locale=en&type=deals",
+          "order": "4",
+          "sectionKey": "DEALS",
+          "sectionTitle": "Discover Deals"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "apiUrl": "/events?locale=en",
+          "order": "5",
+          "sectionKey": "CALENDER",
+          "sectionTitle": "Saudi Calendar"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "apiUrl": "/app/regions-cities?locale=en",
+          "order": "6",
+          "sectionKey": "DESTINATION",
+          "sectionTitle": "Explore Destinations"
+        },
+        "item6": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": false,
+          "apiUrl": "/hotels?locale=en",
+          "order": "7",
+          "sectionKey": "HOTELS",
+          "sectionTitle": "Hotels"
+        },
+        "item7": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": false,
+          "apiUrl": "/roadtrip?locale=en",
+          "order": "8",
+          "sectionKey": "ROADTRIPS",
+          "sectionTitle": "Discover Saudi by Road"
+        },
+        "item8": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "order": "9",
+          "sectionKey": "ESSENTIALS",
+          "sectionTitle": "Know Before You Go"
+        },
+        "item9": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": false,
+          "apiUrl": "/games?locale=en",
+          "order": "10",
+          "sectionKey": "ENTERTAINMENT",
+          "sectionTitle": "Exclusive discounts when traveling in Saudi Arabia"
+        }
+      }
+    },
+    "nativeAppFeatureApi": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "rsachdeva@sta.gov.sa",
+      "jcr:lastModifiedBy": "rismail@esensesoftware.com",
+      "cq:lastReplicated": "Thu Jul 28 2022 10:06:53 GMT+0000",
+      "jcr:lastModified": "Wed Oct 26 2022 06:50:07 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-feature",
+      "features": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "maps"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "search"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "signIn"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "announcements"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "packages"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "deals"
+        },
+        "item6": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "saudiCalendar"
+        },
+        "item7": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "destinations"
+        },
+        "item8": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "hotels"
+        },
+        "item9": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "activities"
+        },
+        "item10": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "addToFavourite"
+        },
+        "item11": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "shareItem"
+        },
+        "item12": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "seeAndDo"
+        },
+        "item13": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "calendar"
+        },
+        "item14": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "essentials"
+        },
+        "item15": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "myTrip"
+        },
+        "item16": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "booking"
+        },
+        "item17": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "getDirections"
+        },
+        "item18": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "weather"
+        },
+        "item19": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "smartPass"
+        },
+        "item20": {
+          "jcr:primaryType": "nt:unstructured",
+          "item": "viewProfile"
+        }
+      }
+    },
+    "seeDoOrder": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "rismail@esensesoftware.com",
+      "jcr:lastModified": "Sun Oct 23 2022 09:52:59 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-seedo-order",
+      "homeSections": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "apiUrl": "/app/regions-cities?locale=en",
+          "order": "1",
+          "sectionKey": "DESTINATIONS",
+          "sectionTitle": "Destinations"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "apiUrl": "/app/locations./content/sauditourism/app1/en?type=top,highlight",
+          "order": "2",
+          "sectionKey": "ATTRACTIONS",
+          "sectionTitle": "Attractions"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "order": "3",
+          "sectionKey": "MAP"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "order": "4",
+          "sectionKey": "ATTRACTIONSTYPES",
+          "sectionTitle": "Attractions by type"
+        }
+      }
+    },
+    "nativeAppLocales": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "rismail@esensesoftware.com",
+      "jcr:lastModified": "Sun Oct 23 2022 10:03:20 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-locales",
+      "appLocale": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "id": "1",
+          "code": "en",
+          "flag": "US",
+          "value": "English"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "id": "2",
+          "code": "ar",
+          "flag": "SA",
+          "value": "العربية"
+        }
+      }
+    },
+    "nativeAppVersion": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+      "jcr:lastModified": "Mon Nov 07 2022 09:22:33 GMT+0000",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-version",
+      "appVersion": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "label": "ANDROID",
+          "value": "6.1.0",
+          "forceUpdateEnabled": true,
+          "message": "We have released a new update to our app. To continue using it, you must update it to the latest version"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "label": "IOS",
+          "value": "6.1.0",
+          "forceUpdateEnabled": true,
+          "message": "We have released a new update to our app. To continue using it, you must update it to the latest version"
+        }
+      }
+    },
+    "nativeAppOnboarding": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:lastModified": "Wed Dec 14 2022 19:04:12 GMT+0100",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-onboarding",
+      "onboardingCarouselList": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "desc",
+          "image": "/content/dam/core-components-examples/library/adobe-logo.svg",
+          "title": "aa"
+        }
+      }
+    },
+    "rewardsOrder": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "pageTitle": "title",
+      "jcr:lastModified": "Wed Dec 14 2022 19:42:17 GMT+0100",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-rewards-order",
+      "homeSections": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "enabled": true,
+          "apiUrl": "aa",
+          "order": "1",
+          "sectionKey": "aa",
+          "sectionTitle": "aa"
+        }
+      }
+    },
+    "eVisaBanner": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "desc",
+      "ctaUrl": "/content/sauditourism/app1/en/10-dessert-cafes-for-middle-eastern-sweets",
+      "jcr:lastModifiedBy": "admin",
+      "eVisaLogo": "/content/dam/core-components-examples/library/adobe-logo.svg",
+      "jcr:lastModified": "Sun Jan 08 2023 12:07:20 GMT+0100",
+      "ctaText": "ctatext",
+      "sling:resourceType": "sauditourism/components/app-content/app-evisa-banner-config",
+      "poweredByLogo": "aa"
+    },
+    "nativeAppEvisa": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Desc",
+      "jcr:lastModifiedBy": "admin",
+      "link": "link",
+      "image": "aa",
+      "title": "aa",
+      "jcr:lastModified": "Sun Jan 08 2023 13:04:22 GMT+0100",
+      "ctaText": "ctatext",
+      "linkType": "external",
+      "sling:resourceType": "sauditourism/components/app-content/native-app-evisa"
+    },
+    "explore-deals": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:lastModified": "Sun Jun 04 2023 15:10:50 GMT+0200",
+      "sling:resourceType": "sauditourism/components/app-content/app-generic-cards",
+      "cards": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "description": "Explore Deals Description",
+          "imagePath": "/content/dam/sauditourism/placeholder.jpg",
+          "title": "Explore Deals Title",
+          "ctaText": "Explore deals CTA text",
+          "linkType": "internal",
+          "link": "www.abc.cmo"
+        }
+      }
+    }
+  }
+}

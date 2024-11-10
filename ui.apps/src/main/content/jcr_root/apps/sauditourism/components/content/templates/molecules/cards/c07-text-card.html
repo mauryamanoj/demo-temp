@@ -1,0 +1,31 @@
+<template data-sly-template.textCard="${@ card, index}"
+          data-sly-use.cardWrapperTemplate="/apps/sauditourism/components/content/templates/molecules/cards/card-wrapper.html">
+
+    <sly data-sly-call="${cardWrapperTemplate.cardWrapper @ card=card, partialBlock=content,
+    datacomponent='c-07-text-card', index=index}">
+    </sly>
+</template>
+
+<template data-sly-template.content="${@ card}"
+          data-sly-use.iconSimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"
+          data-sly-use.ctaLinkTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html">
+    <header class="card-header" data-card-header>
+        <sly data-sly-call="${iconSimpleTemplate.iconSimple @ name=card.icon, desktopSize='36', mobileSize='28', class='header-icon'}"></sly>
+        <h5 class="title heading-5">${card.title}</h5>
+        <sly data-sly-call="${iconSimpleTemplate.iconSimple @ name='arrow-up', desktopSize='18', mobileSize='22', class='mobile-chevron'}"></sly>
+    </header>
+    <div class="card-body" data-card-body>
+        <div class="card-inner-wrapper" data-card-content>
+            <div class="copy description">${card.description @ context='html'}</div>
+            <sly data-sly-test="${card.linkList}">
+                <ul class="links-wrapper">
+                    <sly data-sly-list.link="${card.linkList}">
+                        <li class="link-item">
+                            <sly data-sly-call="${ctaLinkTemplate.ctaLink @ linkObj=link}"></sly>
+                        </li>
+                    </sly>
+                </ul>
+            </sly>
+        </div>
+    </div>
+</template>

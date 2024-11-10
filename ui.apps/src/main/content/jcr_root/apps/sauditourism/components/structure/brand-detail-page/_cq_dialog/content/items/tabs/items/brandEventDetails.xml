@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}true"
+    granite:class="core-wcm-edetailing dialog-container"
+    jcr:primaryType="cq:Widget"
+    jcr:title="Brand Detail"
+    sling:resourceType="granite/ui/components/foundation/container">
+    <layout
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+        margin="{Boolean}false"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <featuredImage
+                    cq:showOnCreate="{Boolean}true"
+                    granite:class="s7-image-listener"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    fieldDescription="Image size:1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+                    fieldLabel="Header Banner Image"
+                    name="./featuredBrandImage"
+                    rootPath="/content/dam">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="featuredBrandImage"/>
+                </featuredImage>
+                <s7featureImage
+                    granite:class="s7-featureImage"
+                    granite:id="s7-featureImage"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    name="./s7featuredBrandImage">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="s7featuredBrandImage"/>
+                </s7featureImage>
+                <featuredPartnerImage
+                    cq:showOnCreate="{Boolean}true"
+                    granite:class="s7-image-listener"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    fieldDescription="Image size:1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+                    fieldLabel="Brand Partner Image"
+                    name="./featuredPartnerImage"
+                    rootPath="/content/dam">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="featuredPartnerImage"/>
+                </featuredPartnerImage>
+                <s7featurePartnerImage
+                    granite:class="s7-featurePartnerImage"
+                    granite:id="s7-featurePartnerImage"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    name="./s7featuredPartnerImage">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="s7featuredPartnerImage"/>
+                </s7featurePartnerImage>
+                <copy
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                    fieldDescription="Enter the Brand Details Description"
+                    fieldLabel="Brand Details Description"
+                    name="./copy"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="copy"/>
+                </copy>
+                <shortDescription
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    fieldLabel="Short Description"
+                    name="./shortDescription"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="shortDescription"/>
+                </shortDescription>
+                <city
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    fieldLabel="City"
+                    multiple="{Boolean}true"
+                    required="{Boolean}true"
+                    name="./city"
+                    forceSelection="{Boolean}true"
+                    rootPath="/content/cq:tags/sauditourism/city">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="city"/>
+                </city>
+                <category
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    fieldLabel="Category"
+                    multiple="{Boolean}true"
+                    name="./category"
+                    forceSelection="{Boolean}true"
+                    required="{Boolean}true"
+                    rootPath="/content/cq:tags/sauditourism">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="category"/>
+                </category>
+                <creditsToEarn
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Credits to earn"
+                    name="./creditsToEarn"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="creditsToEarn"/>
+                </creditsToEarn>
+                <amountToSpend
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Amount To Spend"
+                    name="./amountToSpend"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="amountToSpend"/>
+                </amountToSpend>
+                <currency
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Currency"
+                    name="./currency"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="currency"/>
+                </currency>
+                <howToCollectCredits
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="How To Collection Credits"
+                    name="./howToCollectCredits"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="partnerInfo"/>
+                </howToCollectCredits>
+                <partnerInfo
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Partner Info"
+                    name="./partnerInfo"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="partnerInfo"/>
+                </partnerInfo>
+                <isNew
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Is New"
+                    fieldLabel="Is New"
+                    name="./isNew"
+                    text="Is New"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true"/>
+                <isPopular
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Is Popular"
+                    fieldLabel="Is Popular"
+                    name="./isPopular"
+                    text="Is Popular"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true"/>
+                <partnerWebsiteLink
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Partner Website Link"
+                    fieldDescription="Partner Website Link"
+                    fieldLabel="Partner Website Link"
+                    name="./partnerWebsiteLink"
+                    required="{Boolean}false">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="partnerWebsiteLink"/>
+                </partnerWebsiteLink>
+                <locations
+                    granite:class="coral-marker-multifield mf-level-2"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                    composite="{Boolean}true"
+                    cq-msm-lockable="locations"
+                    fieldDescription="Click 'Add' to add a new info Item"
+                    fieldLabel="Locations">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="otherLocations"
+                        max="{Long}8"
+                        min="{Long}2"/>
+                    <field
+                        granite:class="core-wcm-multi-list core-wcm-multi-show-hide visual-wrapper accordion-multifield-item"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                        name="./locations">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Items"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <locationName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Location Name"
+                                        required="{Boolean}true"
+                                        name="./locationName"/>
+                                    <coordinates
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Coordinates"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <latitude
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Latitude"
+                                                required="{Boolean}true"
+                                                name="./coordinates/latitude"
+                                                typeHint="Decimal"/>
+                                            <longitude
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Longitude"
+                                                required="{Boolean}true"
+                                                name="./coordinates/longitude"
+                                                typeHint="Decimal"/>
+                                        </items>
+                                    </coordinates>
+                                </items>
+                            </column>
+                        </items>
+                    </field>
+                </locations>
+                <title
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="Brand Title"
+                    name="./title"
+                    required="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="title"/>
+                </title>
+                <rulesAndRegulations
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                    fieldDescription="Rules and regulations"
+                    fieldLabel="Rules and regulations">
+                    <field
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Rules and regulations text"
+                        name="./rulesAndRegulations"/>
+                </rulesAndRegulations>
+            </items>
+        </column>
+    </items>
+</jcr:root>

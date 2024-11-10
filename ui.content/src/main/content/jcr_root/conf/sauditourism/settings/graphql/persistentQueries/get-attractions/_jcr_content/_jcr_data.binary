@@ -1,0 +1,101 @@
+query getAttractions($locale: String! = "en", $offset: Int! = 0, $limit: Int = 10) {
+  attractionList(
+    _locale: $locale
+    offset: $offset
+    limit: $limit
+  ) {
+    items {
+      _path
+      title
+      subtitle
+      image1 {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+          mimeType
+        }
+      }
+      s7image1
+      image2 {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+          mimeType
+        }
+      }
+      s7image2
+      image3 {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+          mimeType
+        }
+      }
+      s7image3
+      lat
+      lng
+      locationValue {
+        ... on DestinationModel {
+          _path
+          title
+          subTitle
+          image {
+            ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+              width
+              height
+              mimeType
+            }
+          }
+          s7image
+          popUpImage {
+            ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+              width
+              height
+              mimeType
+            }
+          }
+          s7popUpImage
+        }
+      }
+      agesLabel
+      agesValue
+      accessibilityLabel
+      accessibilityValue
+      getDirectionsLabel
+      categories {
+        ... on CategoryModel {
+          _path
+          title
+          alt
+          image {
+            ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+              width
+              height
+              mimeType
+            }
+          }
+          s7image
+          icon
+        }
+      }
+    }
+  }
+}

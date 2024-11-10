@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Alula"
+    jcr:title.ar="العُلا"
+    jcr:title.de="al-'Ula"
+    jcr:title.es="Al-Ula"
+    jcr:title.fr="Al-Ula"
+    jcr:title.ja="アル・ウラー"
+    jcr:title.ru="Аль-Ула"
+    jcr:title.zh="欧拉"
+    sling:resourceType="cq/tagging/components/tag"
+    city="alula"/>

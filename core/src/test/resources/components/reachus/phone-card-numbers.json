@@ -1,0 +1,25 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Wed Nov 15 2023 09:36:25 GMT+0100",
+  "cardType": "PHONE_CARD",
+  "title": "Emergency numbers in Saudi",
+  "jcr:lastModified": "Wed Nov 15 2023 09:36:50 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/reach-us",
+  "displayForm": "WITH_NUMBERS",
+  "phoneCard": {
+    "jcr:primaryType": "nt:unstructured",
+    "offlineLabel": "Off line",
+    "callUsCta": "Call Us",
+    "liveLabel": "Live",
+    "contactWithoutFlag": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "phoneNumber": "+12334558976",
+        "contactName": "Saudi Ambulance"
+      }
+    }
+  }
+}

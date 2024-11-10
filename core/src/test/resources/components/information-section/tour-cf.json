@@ -1,0 +1,209 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "4e9944d8-afe3-4ebb-aa14-dee9b8d4c07e",
+  "jcr:predecessors": [
+    "737c3598-adce-4db4-902a-cdb329460aa1"
+  ],
+  "jcr:created": "Sun Dec 10 2023 16:06:12 GMT+0100",
+  "jcr:baseVersion": "737c3598-adce-4db4-902a-cdb329460aa1",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "d1297cdc-d8b8-4dff-bac8-fcedd96d5990",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "First Tour",
+    "jcr:lastModifiedBy": "admin",
+    "contentFragment": true,
+    "cq:name": "first-tour",
+    "jcr:lastModified": "Wed Dec 13 2023 09:20:40 GMT+0100",
+    "lastFragmentSave": "Wed Dec 13 2023 09:02:57 GMT+0100",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/tours",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Dec 10 2023 16:06:12 GMT+0100"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/tour",
+        "double@meetingPointLat": 3,
+        "double@meetingPointLng": 4,
+        "string@authorText": "Ismail Abdelouahab",
+        "string@helpWidgetHeading": "Help & Support",
+        "string@iconAlignment": "Left",
+        "@stringArray@variations": [],
+        "string@qaTitle": "Questions & Answers",
+        "string@type": "Full Day Tour",
+        "boolean@qaHideReadMore": false,
+        "string@helpWidgetDescription": "<p><b>Help widget description</b></p>\n<p>This is a rich text test for tour cf</p>\n",
+        "boolean@hideReadMore": true,
+        "string@aboutDescription": " Lorem ipsum is a placeholder text commonly used in the printing and typesetting industry. It's used to fill space on a page and give an impression of how the final text will look without actually providing meaningful content. The text is typically a scra",
+        "string@typeLabel": "Type",
+        "string@title": "My tour",
+        "string@fieldLabel": "Ages",
+        "double@lat": 3,
+        "double@lng": 5,
+        "stringArray@questionAnswer": [
+          "{\"question\":\"What is the best time to visit saudi ?\",\"answer\":\"<p>This is the answer for the first question</p>\\n\",\"textIsRich\":\"true\"}"
+        ],
+        "boolean@hideShare": false,
+        "boolean@hideFavorite": false,
+        "string@authorCTALabel": "Discover more",
+        "string@aboutTitle": "About",
+        "jcr:uuid": "7593abad-ad19-4860-86df-aab871ce1c2d",
+        "string@getDirectionsLabel": "Get Directions",
+        "string@alertColor": "Red",
+        "string@qaReadMoreLabel": "Read More",
+        "string@s7authorImage": "/content/dam/sauditourism/red-sea.jpeg",
+        "string@ticketType": "bookTicket",
+        "stringArray@images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"s7image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"alt\":\"\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"\"}"
+        ],
+        "string@ticketCtaLabel": "See all"
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/tour",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "authorCTALabel": "Discover more",
+        "title@LastModified": "Wed Dec 13 2023 08:50:27 GMT+0100",
+        "getDirectionsLabel": "Get Directions",
+        "typeLabel@LastModified": "Sun Dec 10 2023 16:25:19 GMT+0100",
+        "durationLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "s7video@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "authorCTALabel@LastModified": "Sun Dec 10 2023 16:16:51 GMT+0100",
+        "helpWidgetHeading@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "hideReadMore@LastModified": "Sun Dec 10 2023 16:22:04 GMT+0100",
+        "ticketPriceSuffix@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "qaReadMoreLabel@LastModified": "Wed Dec 13 2023 09:01:30 GMT+0100",
+        "getDirectionsLabel@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "ticketDetails@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "agesValue": [
+          "sauditourism:audience/12+"
+        ],
+        "authorText": "Ismail Abdelouahab",
+        "languageValue@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "aboutDescription@LastModified": "Sun Dec 10 2023 16:22:44 GMT+0100",
+        "hideShare@LastModified": "Wed Dec 13 2023 09:02:57 GMT+0100",
+        "destination": "/content/dam/sauditourism/cf/en/destinations/al-ahsa",
+        "lat@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "type@LastModified": "Sun Dec 10 2023 16:23:43 GMT+0100",
+        "ticketCtaLabel@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"s7image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"alt\":\"\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"\"}"
+        ],
+        "locationLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "languageLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "authorImage@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "helpWidgetDescription": "<p><b>Help widget description</b></p>\n<p>This is a rich text test for tour cf</p>\n",
+        "hideFavorite@LastModified": "Wed Dec 13 2023 09:02:57 GMT+0100",
+        "ticketCtaLabel": "See all",
+        "lng@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "meetingPointLat": 3,
+        "meetingPointLng": 4,
+        "meetingPointHeader@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "authorCtaLink": "/content/sauditourism/en/abha-festival",
+        "readMoreLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "ticketDetails@ContentType": "text/html",
+        "agesValue@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "fieldLabel@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "destination@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "hideReadMore": true,
+        "s7authorImage": "/content/dam/sauditourism/red-sea.jpeg",
+        "ticketsCtaLink@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "s7authorImage@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "meetingPointValue@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "alert@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "lat": 3,
+        "lng": 5,
+        "type": "Full Day Tour",
+        "qaTitle": "Questions & Answers",
+        "accessibilityValue@LastModified": "Sun Dec 10 2023 16:25:19 GMT+0100",
+        "title": "My tour",
+        "qaHideReadMore": false,
+        "qaHideReadMore@LastModified": "Wed Dec 13 2023 09:01:30 GMT+0100",
+        "meetingPointLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "alert@ContentType": "text/html",
+        "helpWidgetCtaLink@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "aboutTitle@LastModified": "Sun Dec 10 2023 16:22:44 GMT+0100",
+        "s7image@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "accessibilityLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "qaTitle@LastModified": "Wed Dec 13 2023 08:43:44 GMT+0100",
+        "typeLabel": "Type",
+        "fieldLabel": "Ages",
+        "iconAlignment@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "authorImage": "/content/dam/sauditourism/red-sea.jpeg",
+        "authorText@LastModified": "Sun Dec 10 2023 16:16:51 GMT+0100",
+        "hideShare": false,
+        "iconAlignment": "Left",
+        "categories@LastModified": "Sun Dec 10 2023 16:25:19 GMT+0100",
+        "questionAnswer@LastModified": "Wed Dec 13 2023 09:20:40 GMT+0100",
+        "cq:tags": [
+          "sauditourism:categories/entertainment",
+          "sauditourism:audience/12+",
+          "sauditourism:accessibility/ramps-elevators",
+          "sauditourism:categories/culture_history",
+          "sauditourism:categories/nature"
+        ],
+        "helpWidgetDescription@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "ticketsCtaLink": "/content/sauditourism/en/abha-festival",
+        "accessibilityValue": [
+          "sauditourism:accessibility/ramps-elevators"
+        ],
+        "idealForLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "aboutDescription": " Lorem ipsum is a placeholder text commonly used in the printing and typesetting industry. It's used to fill space on a page and give an impression of how the final text will look without actually providing meaningful content. The text is typically a scra",
+        "authorCtaLink@LastModified": "Sun Dec 10 2023 16:16:51 GMT+0100",
+        "helpWidgetHeading": "Help & Support",
+        "categories": [
+          "sauditourism:categories/nature",
+          "sauditourism:categories/culture_history",
+          "sauditourism:categories/entertainment"
+        ],
+        "ticketType@LastModified": "Sun Dec 10 2023 16:25:19 GMT+0100",
+        "aboutTitle": "About",
+        "ticketPrice@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "helpWidgetCtaLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "questionAnswer": [
+          "{\"question\":\"What is the best time to visit saudi ?\",\"answer\":\"<p>This is the answer for the first question</p>\\n\",\"textIsRich\":\"true\"}"
+        ],
+        "meetingPointLat@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "hideFavorite": false,
+        "title@ContentType": "text/plain",
+        "informationLabel@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "qaReadMoreLabel": "Read More",
+        "images@LastModified": "Wed Dec 13 2023 09:20:40 GMT+0100",
+        "alertColor@LastModified": "Sun Dec 10 2023 16:15:50 GMT+0100",
+        "alertColor": "Red",
+        "meetingPointLng@LastModified": "Sun Dec 10 2023 16:21:23 GMT+0100",
+        "durationValue@LastModified": "Sun Dec 10 2023 16:06:12 GMT+0100",
+        "helpWidgetDescription@ContentType": "text/html",
+        "ticketType": "bookTicket"
+      }
+    }
+  }
+}

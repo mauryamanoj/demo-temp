@@ -1,0 +1,22 @@
+<sly data-sly-use.data="com.saudi.tourism.core.models.app.cruise.AppCruiseDetails"></sly>
+<h3>
+  ${'Cruise Details' @ i18n}
+</h3>
+
+<p>${'Title' @ i18n}:
+  <span class="cruise-details__cq-title">${data.title @ context='text'}</span>
+</p>
+
+<h4>${'Items' @ i18n}</h4>
+<ul data-sly-list.detailItem="${data.items}">
+  <li>
+    <span>${detailItem.title}</span>
+    <p>${'Description' @ i18n}: ${detailItem.description @ context='html'}</p>
+    <sly data-sly-test.images="${detailItem.images}">
+      <p>${'Images' @ i18n} (${images.size}):</p>
+      <ul data-sly-list.image="${images}">
+        <li>${image @ context='uri'}</li>
+      </ul>
+    </sly>
+  </li>
+</ul>

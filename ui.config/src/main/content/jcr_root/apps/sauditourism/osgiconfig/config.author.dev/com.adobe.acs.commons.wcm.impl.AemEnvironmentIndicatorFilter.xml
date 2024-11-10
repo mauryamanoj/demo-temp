@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          browser-title-prefix="DEV"
+          excluded-wcm-modes="[&quot;disabled&quot;]"
+          css-color="#6fad6e"
+          css-override=""
+          inner-html="&lt;b style=&quot;color: #6fad6e;font-size: 2em;&quot;&gt;DEV&lt;/b&gt;" />

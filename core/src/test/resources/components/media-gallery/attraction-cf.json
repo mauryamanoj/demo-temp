@@ -1,0 +1,222 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "821055d9-bf90-4c4e-8a31-ad48b0cfaa99",
+  "jcr:predecessors": [
+    "83669049-3e63-442c-b9ee-82e1e7e76da1"
+  ],
+  "jcr:created": "Sun Nov 26 2023 20:55:56 GMT+0100",
+  "jcr:baseVersion": "83669049-3e63-442c-b9ee-82e1e7e76da1",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "ed0a6e51-b00f-48b5-bde1-34c2d2b9281a",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title": "Jeddah BobAttraction",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicated": "Tue Oct 31 2023 10:09:44 GMT+0000",
+    "jcr:description": "this is Jeddah BobAttraction to be used in an Attraction Template",
+    "contentFragment": true,
+    "cq:name": "jeddah-bobattraction",
+    "jcr:lastModified": "Mon Dec 04 2023 11:11:53 GMT+0100",
+    "lastFragmentSave": "Mon Dec 04 2023 11:11:53 GMT+0100",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/attractions",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Nov 26 2023 20:55:56 GMT+0100"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/attraction",
+        "string@authorText": "Bob",
+        "@stringArray@variations": [],
+        "string@alt": "Alt Avatar Image *",
+        "string@qaTitle": "What you need to know",
+        "boolean@qaHideReadMore": false,
+        "boolean@hideReadMore": false,
+        "string@s7image": "/content/dam/horseshow.jpg",
+        "string@aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+        "string@alert": "<p>this is the Yellow Alert</p>\n",
+        "string@title": "Boulevard Riyadh City",
+        "string@informationLabel": "know More About Jeddah",
+        "string@subtitle": "A great experience for everyone",
+        "string@locationLabel": "Location",
+        "string@accessibilityLabel": "Accessibility",
+        "string@s7image1": "https://s7e5a.scene7.com/is/image/scth/Abha_Alsouda-Mountain-3",
+        "string@s7image2": "https://s7e5a.scene7.com/is/image/scth/Al-Muftaha-heritage-village",
+        "string@s7image3": "https://s7e5a.scene7.com/is/image/scth/Abha_Shada-Archaeological-Palace-1",
+        "double@lat": 21.54238,
+        "double@lng": 39.19797,
+        "stringArray@questionAnswer": [
+          "{\"question\":\"Best time to visit\",\"answer\":\"<p>Best time to visit is winter</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}",
+          "{\"question\":\"Best way to get there & where to park\",\"answer\":\"<p>Best way to get there &amp; where to park</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}",
+          "{\"question\":\"Tips for better experience\",\"answer\":\"<p>Tips for better experience</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}"
+        ],
+        "boolean@hideShare": false,
+        "boolean@hideFavorite": false,
+        "string@idealForLabel": "Ideal For ",
+        "string@aboutTitle": "About",
+        "jcr:uuid": "4827fe23-6e21-4b59-bade-6e9a07d2ee23",
+        "string@getDirectionsLabel": "Get Directions ",
+        "string@alertColor": "Yellow",
+        "string@agesLabel": "Ages",
+        "string@readMoreLabel": "Read More",
+        "stringArray@images": [
+          "{\"type\":\"video\",\"image\":\"\",\"s7image\":\"\",\"video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"s7video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"thumbnail\":\"/content/dam/we-retail/en/activities/running/running-desert-woman.jpg\",\"location\":\"Riyadh\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/Jeddah-Season-Festival-1-840x450.jpg\",\"s7image\":\"/content/dam/sauditourism/Jeddah-Season-Festival-1-840x450.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"Abha\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/saudi-culture.jpeg\",\"s7image\":\"/content/dam/sauditourism/saudi-culture.jpeg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"Najrane\",\"featureInSubStory\":\"\"}"
+        ]
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "cq:tags": [
+        "sauditourism:",
+        "default:"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/attraction",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified": "Wed Oct 18 2023 14:25:07 GMT+0000",
+        "subtitle": "A great experience for everyone",
+        "getDirectionsLabel": "Get Directions ",
+        "hideReadMore@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "locationLabel": "Location",
+        "locationValue": "/content/dam/sauditourism/cf/en/destinations/jeddah",
+        "s7image1@LastModified": "Wed Oct 18 2023 11:56:35 GMT+0000",
+        "getDirectionsLabel@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "ticketDetails@LastModified": "Thu Nov 23 2023 07:23:50 GMT+0000",
+        "agesLabel": "Ages",
+        "agesValue": [
+          "sauditourism:audience/all"
+        ],
+        "authorText": "Bob",
+        "locationValue@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "aboutDescription@LastModified": "Wed Oct 18 2023 11:01:47 GMT+0000",
+        "hideShare@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "lat@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "image1": "/content/dam/articles/a-family-outing-at-saudis-summer-capital/Abha_Alsouda-Mountain-3.jpg",
+        "image2": "/content/dam/articles/a-family-outing-at-saudis-summer-capital/Al-Muftaha-heritage-village.jpg",
+        "image3": "/content/dam/articles/a-family-outing-at-saudis-summer-capital/Abha_Shada-Archaeological-Palace-1.jpg",
+        "images": [
+          "{\"type\":\"video\",\"image\":\"\",\"s7image\":\"\",\"video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"s7video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"thumbnail\":\"/content/dam/we-retail/en/activities/running/running-desert-woman.jpg\",\"location\":\"Riyadh\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/Jeddah-Season-Festival-1-840x450.jpg\",\"s7image\":\"/content/dam/sauditourism/Jeddah-Season-Festival-1-840x450.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"Abha\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/saudi-culture.jpeg\",\"s7image\":\"/content/dam/sauditourism/saudi-culture.jpeg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"Najrane\",\"featureInSubStory\":\"\"}"
+        ],
+        "locationLabel@LastModified": "Wed Oct 18 2023 14:22:56 GMT+0000",
+        "hideFavorite@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "s7image1": "https://s7e5a.scene7.com/is/image/scth/Abha_Alsouda-Mountain-3",
+        "s7image2": "https://s7e5a.scene7.com/is/image/scth/Al-Muftaha-heritage-village",
+        "s7image3": "https://s7e5a.scene7.com/is/image/scth/Abha_Shada-Archaeological-Palace-1",
+        "subtitle@LastModified": "Wed Oct 18 2023 11:21:27 GMT+0000",
+        "lng@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "authorCtaLink": "/content/sauditourism/en",
+        "readMoreLabel@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "categoriesIcon@LastModified": "Mon Dec 04 2023 09:51:23 GMT+0100",
+        "idealForLabel": "Ideal For ",
+        "ticketDetails@ContentType": "text/html",
+        "image@LastModified": "Wed Oct 18 2023 14:25:58 GMT+0000",
+        "alt@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "pagePath@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "placeholder@LastModified": "Wed Oct 18 2023 10:14:44 GMT+0000",
+        "agesValue@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "hideReadMore": false,
+        "image3@LastModified": "Wed Oct 18 2023 11:56:35 GMT+0000",
+        "agesLabel@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "readMoreLabel": "Read More",
+        "alert@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "alt": "Alt Avatar Image *",
+        "lat": 21.54238,
+        "lng": 39.19797,
+        "tag": [
+          "sauditourism:attraction/natural-site"
+        ],
+        "qaTitle": "What you need to know",
+        "accessibilityValue@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "alert": "<p>this is the Yellow Alert</p>\n",
+        "image": "/content/dam/horseshow.jpg",
+        "title": "Boulevard Riyadh City",
+        "qaHideReadMore": false,
+        "qaHideReadMore@LastModified": "Thu Nov 23 2023 07:23:50 GMT+0000",
+        "alert@ContentType": "text/html",
+        "image2@LastModified": "Wed Oct 18 2023 11:56:35 GMT+0000",
+        "aboutTitle@LastModified": "Wed Oct 18 2023 11:01:47 GMT+0000",
+        "s7image@LastModified": "Sun Nov 26 2023 23:06:11 GMT+0100",
+        "question@LastModified": "Wed Oct 18 2023 10:14:44 GMT+0000",
+        "accessibilityLabel@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "qaTitle@LastModified": "Wed Oct 18 2023 11:24:18 GMT+0000",
+        "s7image": "/content/dam/horseshow.jpg",
+        "authorText@LastModified": "Wed Oct 18 2023 11:21:27 GMT+0000",
+        "image1@LastModified": "Wed Oct 18 2023 11:56:35 GMT+0000",
+        "categoriesIcon": [
+          "sauditourism:categories/nature/natural_site"
+        ],
+        "hideShare": false,
+        "pagePath": "/content/sauditourism/en/events",
+        "categories@LastModified": "Wed Oct 18 2023 11:26:32 GMT+0000",
+        "questionAnswer@LastModified": "Mon Dec 04 2023 11:11:53 GMT+0100",
+        "cq:tags": [
+          "sauditourism:attraction/natural-site",
+          "sauditourism:accessibility/ramps-elevators",
+          "sauditourism:audience/all",
+          "sauditourism:categories/nature/natural_site"
+        ],
+        "tag@LastModified": "Wed Oct 18 2023 10:54:01 GMT+0000",
+        "accessibilityLabel": "Accessibility",
+        "accessibilityValue": [
+          "sauditourism:accessibility/ramps-elevators"
+        ],
+        "idealForLabel@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+        "authorCtaLink@LastModified": "Wed Oct 18 2023 11:21:27 GMT+0000",
+        "categories": [
+          "/content/dam/sauditourism/cf/en/categories/mountains",
+          "/content/dam/sauditourism/cf/en/categories/culture",
+          "/content/dam/sauditourism/cf/en/categories/shopping"
+        ],
+        "aboutTitle": "About",
+        "questionAnswer": [
+          "{\"question\":\"Best time to visit\",\"answer\":\"<p>Best time to visit is winter</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}",
+          "{\"question\":\"Best way to get there & where to park\",\"answer\":\"<p>Best way to get there &amp; where to park</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}",
+          "{\"question\":\"Tips for better experience\",\"answer\":\"<p>Tips for better experience</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}"
+        ],
+        "s7image3@LastModified": "Wed Oct 18 2023 11:56:35 GMT+0000",
+        "hideFavorite": false,
+        "informationLabel@LastModified": "Wed Oct 18 2023 11:31:14 GMT+0000",
+        "informationLabel": "know More About Jeddah",
+        "images@LastModified": "Mon Dec 04 2023 11:11:53 GMT+0100",
+        "alertColor@LastModified": "Wed Oct 18 2023 11:27:32 GMT+0000",
+        "alertColor": "Yellow",
+        "s7image2@LastModified": "Wed Oct 18 2023 11:56:35 GMT+0000"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Festivals &amp; Events"
+          jcr:title.ar="مهرجانات وفعاليات"
+          jcr:title.fr="Festivals et événements"
+          jcr:title.es="Festivales y eventos"
+          jcr:title.ru="Фестивали и мероприятия"
+          jcr:title.de="Festivals &amp; Events"
+          jcr:title.zh="庆典 &amp; 活动"
+          jcr:title.ja="フェスティバル＆イベント"
+          sling:resourceType="cq/tagging/components/tag"/>

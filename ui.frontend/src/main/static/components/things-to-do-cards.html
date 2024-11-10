@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="page basicpage" data-page-theme="purple">
+
+
+  <div data-component="ThingsToDoCards" data-props="{
+    &#34;componentId&#34;: &#34;Experience&#34;,
+    &#34;title&#34;: &#34;Guided Tours \u0026 Experiences &#34;,
+    &#34;link&#34;: {
+      &#34;hideMap&#34;: false,
+      &#34;url&#34;: &#34;https://book.visitsaudi.com/sa-en/search?query\u003driyadh&#34;,
+      &#34;urlWithExtension&#34;: &#34;https://book.visitsaudi.com/sa-en/search?query\u003driyadh&#34;,
+      &#34;urlSlingExporter&#34;: &#34;https://book.visitsaudi.com/sa-en/search?query\u003driyadh&#34;,
+      &#34;targetInNewWindow&#34;: false,
+      &#34;text&#34;: &#34;View All&#34;,
+      &#34;appType&#34;: &#34;external&#34;
+    },
+    &#34;display&#34;: {
+      &#34;cardSize&#34;: &#34;small&#34;,
+      &#34;displayType&#34;: &#34;scrollable&#34;
+    },
+    &#34;filter&#34;: {
+      &#34;type&#34;: [
+        &#34;experience&#34;
+      ],
+      &#34;destination&#34;: &#34;riyadh&#34;,
+      &#34;freeOnly&#34;: false
+    },
+    &#34;apiUrl&#34;: &#34;/bin/api/v1/things-to-do&#34;
+  }"></div>
+
+
+  <div data-component="ThingsToDoCards" data-props='{
+    "title": "Things To Do",
+    "link": {
+      "hideMap": false,
+      "url": "https://acc-revamp.visitsaudi.com/en/things-to-do-search",
+      "urlWithExtension": "/content/sauditourism/en/things-to-do-search.html",
+      "urlSlingExporter": "/things-to-do-search",
+      "targetInNewWindow": false,
+      "text": "View All",
+      "appType": "internal"
+    },
+    "display": {
+      "cardSize": "large",
+      "displayType": "scrollable"
+    },
+    "handpick": {},
+    "filter": {},
+    "tabs": [
+    {
+      "title": "All",
+      "icon": "/content/dam/sauditourism/tag-icons/categories/default.svg"
+    },
+      {
+        "title": "Nature",
+        "icon": "/content/dam/wvs/svg/nature.svg",
+        "category": "sauditourism:categories/nature"
+      },
+      {
+        "title": "Culture \u0026 History",
+        "icon": "/content/dam/wvs/svg/culture-history.svg",
+        "category": "sauditourism:categories/culture_history"
+      },
+      {
+        "title": "Entertainment",
+        "icon": "/content/dam/wvs/svg/entertainment.svg",
+        "category": "sauditourism:categories/entertainment"
+      },
+      {
+        "title": "Shopping",
+        "icon": "/content/dam/wvs/svg/shopping.svg",
+        "category": "sauditourism:categories/shopping"
+      },
+      {
+        "title": "Food \u0026 Drinks",
+        "icon": "/content/dam/wvs/svg/food-and-drink.svg",
+        "category": "sauditourism:categories/food_drink"
+      }
+    ],
+    "sort": {
+      "sortBy": []
+    },
+    "loadMore": {
+      "loadMoreLabel": "Load More"
+    },
+    "apiUrl": "https://qa-revamp.visitsaudi.com/bin/api/v1/things-to-do",
+    "updateFavUrl": "/bin/api/v2/user/update.favorites",
+    "deleteFavUrl": "/bin/api/v2/user/delete.favorites",
+    "getFavUrl": "/bin/api/v2/user/get.favorites?locale\u003den"
+  }'></div>
+
+  <div data-component="ThingsToDoCards" data-props='{
+    "title": "Things to do",
+    "link": {
+      "text": "View All",
+      "url": "",
+      "hideMap": false,
+      "targetInNewWindow": false,
+      "appType": "external"
+    },
+    "display": {
+      "cardSize": "small",
+      "displayType": "scrollable",
+      "numberOfCards": 40
+    },
+    "filter": {},
+    "tabs": [
+      {
+        "title": "All",
+        "icon": "/content/dam/sauditourism/tag-icons/categories/default.svg"
+      },
+      {
+        "title": "Nature",
+        "icon": "/content/dam/wvs/svg/nature.svg",
+        "category": "sauditourism:categories/nature"
+      },
+      {
+        "title": "Beauty",
+        "icon": "/content/dam/sauditourism/tag-icons/categories/beauty_relax.svg",
+        "category": "sauditourism:categories/beauty_relax"
+      },
+      {
+        "title": "Public Service",
+        "icon": "/content/dam/sauditourism/tag-icons/categories/culture_history.svg",
+        "category": "sauditourism:categories/publicServices"
+      }
+    ],
+    "sort": {},
+    "loadMore": {
+      "loadMoreLabel": "Load More"
+    },
+    "apiUrl": "/bin/api/v1/things-to-do",
+    "updateFavUrl": "/bin/api/v2/user/update.favorites",
+    "deleteFavUrl": "/bin/api/v2/user/delete.favorites",
+    "getFavUrl": "/bin/api/v2/user/get.favorites?locale\u003den"
+  }'></div>
+
+</body>
+
+</html>

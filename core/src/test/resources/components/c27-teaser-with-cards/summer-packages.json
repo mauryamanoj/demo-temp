@@ -1,0 +1,92 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:mixinTypes":[
+    "cq:ReplicationStatus"
+  ],
+  "jcr:createdBy":"rismail@esensesoftware.com",
+  "cq:lastReplicationAction":"Activate",
+  "summerPackagesCardsCityId":"jeddah",
+  "background":"white",
+  "cq:lastReplicatedBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "person":"Package",
+  "componentId":"TopPackages",
+  "pattern":"07",
+  "notAvailable":"Not available",
+  "checkDates":"Check Dates",
+  "jcr:created":"Sun May 15 2022 09:55:30 GMT+0000",
+  "cq:lastReplicated":"Tue Aug 03 2021 12:33:42 GMT+0200",
+  "cardStyle":"experience",
+  "off":"off",
+  "sar":"SAR",
+  "free":"Free",
+  "from":"Starting from",
+  "bookNow":"Book Now",
+  "limit":"0",
+  "title":"Mod-Te-04",
+  "variant":"event",
+  "jcr:lastModified":"Sun Aug 21 2022 12:10:09 GMT+0200",
+  "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards",
+  "hideDescription":"false",
+  "backgroundOrnamentId":"06",
+  "textIsRich":"true",
+  "ornamentId":"01",
+  "componentType":"h-summer-packages-cards",
+  "isColorVariant":"false",
+  "showFav":"true",
+  "header":{
+    "jcr:primaryType":"nt:unstructured",
+    "showUnderline":"false",
+    "showViewAllSlider":"false",
+    "showSlider":"false",
+    "heading":{
+      "jcr:primaryType":"nt:unstructured",
+      "text":"Packages"
+    },
+    "link":{
+      "jcr:primaryType":"nt:unstructured",
+      "url":"https://book.visitsaudi.com/sa-en/jeddah/experiences?sort=popularity",
+      "copy":"View all"
+    }
+  },
+  "componentHeading":{
+    "jcr:primaryType":"nt:unstructured",
+    "heading":{
+      "jcr:primaryType":"nt:unstructured",
+      "weight":"h1"
+    },
+    "link":{
+      "jcr:primaryType":"nt:unstructured",
+      "targetInNewWindow":"false"
+    }
+  },
+  "image":{
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:lastModifiedBy":"admin",
+    "jcr:lastModified":"Sun Aug 21 2022 12:10:09 GMT+0200"
+  },
+  "cards":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "isFeatured":"false",
+      "highlight":"false",
+      "icon":"none",
+      "type":"manual",
+      "useActivityLink":"false",
+      "hideFav":"false",
+      "ctaType":"none",
+      "imagePosition":"left",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "targetInNewWindow":"false"
+      },
+      "image":{
+        "jcr:primaryType":"nt:unstructured"
+      },
+      "caption":{
+        "jcr:primaryType":"nt:unstructured"
+      }
+    }
+  }
+}

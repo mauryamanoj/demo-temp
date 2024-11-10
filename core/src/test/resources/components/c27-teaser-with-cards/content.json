@@ -1,0 +1,83 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "pattern":"03",
+  "jcr:created":"Mon Dec 07 2020 16:22:09 GMT+0100",
+  "title":"Mod-Te-04",
+  "jcr:lastModified":"Fri Jan 08 2021 11:53:38 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards",
+  "viewAllLink":"/content/sauditourism/en/see-do/destinations/jeddah/jeddah_top_attractions",
+  "hideDescription":"false",
+  "backgroundOrnamentId":"06",
+  "componentType":"a-general-cards",
+  "isColorVariant":true,
+  "header":{
+    "jcr:primaryType":"nt:unstructured",
+    "heading":{
+      "jcr:primaryType":"nt:unstructured",
+      "text":"More Activities in the Snow"
+    },
+    "link":{
+      "jcr:primaryType":"nt:unstructured"
+    }
+  },
+  "cards":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "description":"Lace up your hiking boots to see where snow falls most commonly.",
+      "isFeatured":"false",
+      "highlight":"false",
+      "icon":"none",
+      "title":"Snowy hikes",
+      "hideFav":"false",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "url":"/content/sauditourism/en/do/winter/snow-adventures/snowy-hikes",
+        "copy":"Learn more"
+      },
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/content/dam/no-dynamic-media-folder/arabian-winter/winter-products/winter-activities/snow-1_snowy-hikes/_activity_snow_snowy_hikes_hero.jpg",
+        "fileReference":"/content/dam/no-dynamic-media-folder/arabian-winter/winter-products/winter-activities/snow-1_snowy-hikes/_activity_snow_snowy_hikes_hero.jpg"
+      }
+    },
+    "item1":{
+      "jcr:primaryType":"nt:unstructured",
+      "description":"Get ready to glide down Saudi's snow-covered trails.",
+      "isFeatured":"false",
+      "highlight":"false",
+      "icon":"none",
+      "title":"Snow sledding",
+      "hideFav":"false",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "url":"/content/sauditourism/en/do/winter/snow-adventures/snow-sledding",
+        "copy":"Learn more"
+      },
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"https://scth.scene7.com/is/image/scth/A121214",
+        "fileReference":"/content/dam/saudi-tourism/media/arabian-winter/snow/A121214.jpeg"
+      }
+    },
+    "item2":{
+      "jcr:primaryType":"nt:unstructured",
+      "description":"Enjoy camping in Saudi’s snowfields beneath the striking winter night's sky.",
+      "isFeatured":"false",
+      "highlight":"false",
+      "icon":"none",
+      "title":"Kashtah in the snow",
+      "hideFav":"false",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "url":"/content/sauditourism/en/do/winter/snow-adventures/kashta-in-the-snow",
+        "copy":"Learn more"
+      },
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/content/dam/no-dynamic-media-folder/arabian-winter/winter-products/winter-activities/snow-4_kashta-in-the-snow/_activity_snow_camping_hero.jpg",
+        "fileReference":"/content/dam/no-dynamic-media-folder/arabian-winter/winter-products/winter-activities/snow-4_kashta-in-the-snow/_activity_snow_camping_hero.jpg"
+      }
+    }
+  }
+}

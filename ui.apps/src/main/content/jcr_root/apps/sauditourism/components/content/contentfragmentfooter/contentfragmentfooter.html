@@ -1,0 +1,6 @@
+<sly data-sly-test="${!('app' in request.requestPathInfo.selectors)}">
+    <sly data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html"
+         data-sly-use.fragment="com.saudi.tourism.core.models.components.contentfragment.footer.ContentFragmentFooterModel" data-sly-test="${properties.fragmentPath}">
+        <div data-component="Footer" data-props="${fragment.json @context='text'}"></div>
+    </sly>
+</sly>

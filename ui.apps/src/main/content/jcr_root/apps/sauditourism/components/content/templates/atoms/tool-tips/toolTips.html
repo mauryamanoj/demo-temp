@@ -1,0 +1,10 @@
+<template data-sly-template.tooltip="${@ heading, description, new}">
+   <div data-component="tooltips" class="map-tooltips">
+      <div class="tooltip-head">
+         <h5 class="intractive-map">${heading}</h5>
+         <span class="new">${new}</span>
+      </div>
+      <p class="tooltip-desc">${description}</p>
+      <div class="top-arrow"></div>
+   </div>
+</template>

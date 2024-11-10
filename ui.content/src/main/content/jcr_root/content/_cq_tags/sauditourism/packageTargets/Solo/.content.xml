@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Solo"
+          jcr:title.ar="سأسافر وحدي"
+          jcr:title.fr="Voyage en solo"
+          jcr:title.es="Viajero en solitario"
+          jcr:title.ru="Соло-путешественники"
+          jcr:title.de="Alleinreisende"
+          jcr:title.zh="单人"
+          jcr:title.ja="1人"
+          sling:resourceType="cq/tagging/components/tag"/>

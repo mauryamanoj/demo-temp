@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body class="grid gap-4" data-page-theme="purple">
+        <div
+            data-component="FilterSection"
+            data-props='{
+            "cta": {
+                "label":"explorer",
+                "link":"/",
+                "targetInNewWindow": true
+            },
+            "filters": [
+                {
+                    "title":"destination?",
+                    "placeholder":"anywhere",
+                    "withSearch":true,
+                    "search": {
+                        "enabled": "true",
+                        "searchPlaceholder": "search",
+                        "searchLabel":"search"
+                    },
+                    "searchPlaceholder": "search",
+                    "type":"list",
+                    "list": ["All Saudi","Riyadh", "AlBaha","Asir", "Dammam", "Jazzan", "Yanbu"],
+                    "id":1
+                },
+                {
+                    "title":"when?",
+                    "placeholder":"anytime",
+                    "withSearch":false,
+                    "type":"calendar",
+                    "id":2
+                },
+                {
+                    "title":"about?",
+                    "placeholder":"anything",
+                    "type":"list",
+                    "list": ["all", "nature", "Entertainment", "shopping", "Food & Drinks", "Beauty & Relax", "Classes and Training", "Culture & History"],
+                    "withSearch":false,
+                    "id":3
+                 }
+            ]
+        }'
+        ></div>
+    </body>
+</html>
+

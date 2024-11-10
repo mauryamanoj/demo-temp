@@ -1,0 +1,96 @@
+{
+   "jcr:primaryType": "cq:Page",
+   "jcr:content": {
+      "jcr:lastModified": "{Date}2020-04-24T12:34:04.576Z",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:lastReplicated": "{Date}2020-03-03T20:01:34.123+01:00",
+      "jcr:lastReplicatedBy": "admin",
+      "jcr:lastReplicationAction": "Activate",
+      "jcr:template": "/conf/sauditourism/settings/wcm/templates/app-location-page",
+      "jcr:isCheckedOut": "{Boolean}true",
+      "jcr:mixinTypes": "[mix:versionable]",
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:title": "Makkah",
+      "jcr:uuid": "ab270eed-29ef-46e8-85cd-5be84abe00b1",
+      "jcr:resourceType": "sauditourism/components/structure/app-location-page",
+      "jcr:city": "Makkah Region",
+      "jcr:description": "The city of Makkah itself is only accessible to Muslims. Each year, it bears witness to the Hajj pilgrimage, a religious duty that must be performed by every able Muslim at least once in their lifetime, and which draws millions each year. Holy sites in the city include the sacred Ka’aba, located in the heart of the Masjid al-Haram, or Grand Mosque, while the circling mountains house the historic Cave of Thawr, where the Prophet sought refuge from the Quraysh tribe, and the revered Jabal Rahmah, where he delivered his last sermon.",
+      "jcr:featured": "false",
+      "jcr:featuredImage": "/content/dam/app/makkah/makkah-header.jpg",
+      "jcr:latitude": "21.771041",
+      "jcr:longitude": "39.856937",
+      "jcr:name": "Makkah",
+      "jcr:region": "Makkah",
+      "jcr:shortDescription": "The city of Makkah itself is only accessible to Muslims. Each year, it bears witness to the Hajj pilgrimage, a religious duty that must be performed by every able Muslim at least once in their lifetime, and which draws millions each year.",
+      "jcr:tags": "[sauditourism:events/Conferences]",
+      "jcr:thumbnail": "/content/dam/app/makkah/makkah-header.jpg",
+      "root": {
+         "jcr:primaryType": "nt:unstructured",
+         "jcr:resourceType": "wcm/foundation/components/responsivegrid",
+         "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:resourceType": "wcm/foundation/components/responsivegrid",
+            "image": {
+               "jcr:created": "{Date}2019-12-20T16:42:55.346+01:00",
+               "jcr:createdBy": "guillermo.morganjcr",
+               "jcr:lastModified": "{Date}2019-12-20T16:43:07.847+01:00",
+               "jcr:lastModifiedBy": "guillermo.morganjcr",
+               "jcr:primaryType": "nt:unstructured",
+               "jcr:resourceType": "sauditourism/components/content/image",
+               "jcr:fileReference": "/content/dam/app/makkah/makkah-header.jpg"
+            },
+            "text": {
+               "jcr:created": "{Date}2019-12-20T14:08:56.554+01:00",
+               "jcr:createdBy": "admin",
+               "jcr:lastModified": "{Date}2019-12-30T15:49:35.289+01:00",
+               "jcr:lastModifiedBy": "guillermo.morganjcr",
+               "jcr:primaryType": "nt:unstructured",
+               "jcr:resourceType": "sauditourism/components/content/text",
+               "jcr:text": "<p>Rising in the west, the province of Makkah is among the brightest jewels in Saudi Arabia’s crown. From the sun-bleached streets of its primary city, the birthplace of Prophet Muhammad (PBUH), to Jeddah’s cosmopolitan charm, Makkah is a living celebration of the Kingdom’s past and its future.<\/p>\r\n<p>The city of Makkah itself is only accessible to Muslims. Each year, it bears witness to the Hajj pilgrimage, a religious duty that must be performed by every able Muslim at least once in their lifetime, and which draws millions each year. Holy sites in the city include the sacred Ka’aba, located in the heart of the Masjid al-Haram or Grand Mosque, while the circling mountains house the historic Cave of Thowr, where the Prophet sought refuge from the Quraysh tribe, and the revered Jabal Rahmah, where he delivered his last sermon.<\/p>\r\n<p>In Jeddah, experience Saudi Arabia’s oldest and liveliest city, where bustling souks, old-world architecture and world-class cuisine draw throngs of visitors each year. Discover the pristine Red Sea coastline that is home to white-sand beaches and spectacular dive sites, or glimpse the past in Jeddah’s Al Balad historical district.<\/p>\r\n<p>For a weekend getaway, head to the southwestern city of Taif, where the combination of fresh mountain breezes and inviting greenery have earned it the unofficial title of Saudi’s summer capital. Explore the souks, picnic in the garden parks, and keep an eye out for the wild baboons that gather at the sides of its highways.<\/p>",
+               "jcr:textIsRich": "true"
+            },
+            "image_1137566950": {
+               "jcr:created": "{Date}2019-12-20T16:42:59.421+01:00",
+               "jcr:createdBy": "guillermo.morganjcr",
+               "jcr:lastModified": "{Date}2019-12-20T16:43:13.830+01:00",
+               "jcr:lastModifiedBy": "guillermo.morganjcr",
+               "jcr:primaryType": "nt:unstructured",
+               "jcr:resourceType": "sauditourism/components/content/image",
+               "jcr:fileReference": "/content/dam/app/makkah/makkah-image-1.jpg"
+            }
+         }
+      },
+      "related": {
+         "jcr:primaryType": "nt:unstructured",
+         "pages": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+               "jcr:primaryType": "nt:unstructured",
+               "jcr:path": "/content/sauditourism/app/en/jeddah-waterfront"
+            }
+         }
+      },
+      "locations": {
+         "jcr:primaryType": "nt:unstructured",
+         "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:description": "The city of Makkah itself is only accessible to Muslims. Each year, it bears witness to the Hajj pilgrimage, a religious duty that must be performed by every able Muslim at least once in their lifetime, and which draws millions each year.",
+            "jcr:latitude": "21.771041",
+            "jcr:longitude": "39.856937",
+            "jcr:title": "Welcome to Makkah"
+         }
+      },
+      "infoItems": {
+         "jcr:primaryType": "nt:unstructured",
+         "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:itemLabel": "history",
+            "jcr:itemValue": "true"
+         }
+      },
+      "search": {
+         "jcr:primaryType": "nt:unstructured",
+         "searchTags": "[locationSearch1]"
+      }
+   }
+}

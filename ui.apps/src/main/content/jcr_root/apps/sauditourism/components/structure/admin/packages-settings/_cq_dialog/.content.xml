@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Options Config"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.common.wcm,sauditourism.author]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+          <options
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              jcr:title="Package banner settings"
+              jcr:description="Package banner settings">
+            <items jcr:primaryType="nt:unstructured">
+              <winterPath
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  required="{Boolean}true"
+                  fieldLabel="Winter Campaign Root Path"
+                  fieldDescription="Path to Winter Campaign root page"
+                  name="./winterCampaignPath"
+                  rootPath="/content/sauditourism"/>
+              <desktop-image
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  fieldDescription="Select a desktop image to be used on banners"
+                  fieldLabel="Desktop Image"
+                  name="./desktopImage"
+                  rootPath="/content/dam"/>
+              <mobile-image
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  fieldDescription="Select a mobile image to be used on banners"
+                  fieldLabel="Mobile Image"
+                  name="./mobileImage"
+                  rootPath="/content/dam"/>
+                <packageDetailsPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        required="{Boolean}true"
+                        fieldLabel="Package Details Page"
+                        fieldDescription="Path to Package details page"
+                        name="./packageDetailsPath"
+                        rootPath="/content/sauditourism"/>
+            </items>
+          </options>
+          <filters-tab
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                jcr:title="Package filter settings"
+                jcr:description="Package filter settings">
+                <items jcr:primaryType="nt:unstructured">
+                    <filters
+                        jcr:description="Configure Halayalla package filters"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Package Filters"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <filters-multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="List of all Package Filters"
+                                fieldDescription="Add here all the Package Filters">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./filters"
+                                    granite:class="accordion-multifield-item"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <filter-item
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Package Filter"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <key
+                                                    granite:class="js-dialog-showhide"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Enter the field or key of the package filter"
+                                                    fieldLabel="Filter"
+                                                    required="{Boolean}true"
+                                                    name="./key">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        metaType="dropdown"
+                                                        showhide-target=".filter-key-showhide-target"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None"
+                                                            value=""/>
+                                                        <area
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Area"
+                                                            value="city"/>
+                                                        <category
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Subcategory"
+                                                            value="sub_category"/>
+                                                        <categories
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Categories"
+                                                                value="categories"/>
+                                                        <discount
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Discount"
+                                                            value="discounted"/>
+                                                        <priceRange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Price Range"
+                                                            value="minPrice,maxPrice"/>
+                                                    </items>
+                                                </key>
+                                                <name
+                                                    granite:class="accordion-multifield-item-title"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter the name of the package filter"
+                                                    fieldLabel="Name"
+                                                    required="{Boolean}true"
+                                                    name="./name"/>
+                                                <type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Select the type of the field in package filter"
+                                                    fieldLabel="Type"
+                                                    required="{Boolean}true"
+                                                    name="./type">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None"
+                                                            value=""/>
+                                                        <radio
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="RadioButton"
+                                                            value="radioButton"/>
+                                                        <checkbox
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Checkbox"
+                                                            value="checkbox"/>
+                                                        <range
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Range"
+                                                            value="range"/>
+                                                        <dateRange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Date Range"
+                                                            value="dateRange"/>
+                                                        <boolean
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Boolean"
+                                                            value="boolean"/>
+                                                    </items>
+                                                </type>
+                                                <area-data-multifield
+                                                    granite:class="filter-key-showhide-target"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="List of all areas"
+                                                    fieldDescription="Add here all the areas data for area filter">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        name="./areaData"
+                                                        granite:class="accordion-multifield-item"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <area-item
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Area Details"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <id
+                                                                        granite:class="accordion-multifield-item-title"
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Enter the id of the area"
+                                                                        fieldLabel="Id"
+                                                                        required="{Boolean}true"
+                                                                        name="./id"/>
+                                                                    <value
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Enter the value of the area"
+                                                                        fieldLabel="Value"
+                                                                        required="{Boolean}true"
+                                                                        name="./value"/>
+                                                                </items>
+                                                            </area-item>
+                                                        </items>
+                                                    </field>
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        showhide-target-value="city"/>
+                                                </area-data-multifield>
+                                                <minimum-price-range
+                                                    granite:class="filter-key-showhide-target"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    fieldDescription="Minimum price range in SAR"
+                                                    fieldLabel="Minimum price range"
+                                                    min="0"
+                                                    name="./minPriceRange">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        showhide-target-value="minPrice,maxPrice"/>
+                                                </minimum-price-range>
+                                                <maximum-price-range
+                                                    granite:class="filter-key-showhide-target"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    fieldDescription="Maximum price range in SAR"
+                                                    fieldLabel="Maximum price range"
+                                                    name="./maxPriceRange">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        showhide-target-value="minPrice,maxPrice"/>
+                                                </maximum-price-range>
+                                            </items>
+                                        </filter-item>
+                                    </items>
+                                </field>
+                            </filters-multifield>
+                        </items>
+                    </filters>
+                </items>
+          </filters-tab>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

@@ -1,0 +1,133 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"48ad4e90-47cd-4be3-ba4c-06f488264c39",
+  "jcr:predecessors":[
+    "0c9b4b22-c20b-4e39-abaf-9acb8041dcc5"
+  ],
+  "jcr:created":"Tue Oct 10 2023 00:11:01 GMT+0200",
+  "jcr:baseVersion":"0c9b4b22-c20b-4e39-abaf-9acb8041dcc5",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"bf823b8e-96d1-4320-8c07-34b471c03e37",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:title":"event1",
+    "jcr:lastModifiedBy":"admin",
+    "contentFragment":true,
+    "cq:name":"event1",
+    "jcr:lastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+    "lastFragmentSave":"Tue Oct 10 2023 00:53:22 GMT+0200",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/event",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Tue Oct 10 2023 00:11:01 GMT+0200"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/event",
+        "@stringArray@variations":[
+
+        ],
+        "string@aboutDescription":" freestar  freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus tempor arcu. Nam in porta eros. Phasellus nec iaculis dui. Donec pellentesque lectus commodo, euismod nibh non, mollis mi. Mauris vitae metus eleifend, iaculis ante eff",
+        "string@title":"jeddahevent",
+        "string@s7image1":"/content/dam/sauditourism/favicon.png",
+        "string@s7image2":"/content/dam/sauditourism/favicon.png",
+        "string@s7image3":"/content/dam/sauditourism/favicon.png",
+        "stringArray@questionsAnswers":[
+          "{\"question\":\"QuestionA\",\"answer\":\"ResponseA\"}",
+          "{\"question\":\"QuestionB\",\"answer\":\"ResponseB\"}",
+          "{\"question\":\"\",\"answer\":\"\"}"
+        ],
+        "double@lat":21.54238,
+        "double@lng":39.19797,
+        "string@aboutTitle":"About event",
+        "jcr:uuid":"19a1d80b-603a-4c67-8a3d-294b124de664"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/event",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified":"Wed Oct 04 2023 13:53:32 GMT+0000",
+        "locationValue":"/content/dam/sauditourism/cf/en/destinations/jeddah",
+        "s7image1@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "getDirectionsLabel@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "agesValue":[
+          "sauditourism:audience/18-plus"
+        ],
+        "locationValue@LastModified":"Wed Oct 04 2023 13:53:32 GMT+0000",
+        "aboutDescription@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "lat@LastModified":"Wed Oct 04 2023 13:53:32 GMT+0000",
+        "image1":"/content/dam/sauditourism/favicon.png",
+        "image2":"/content/dam/sauditourism/favicon.png",
+        "image3":"/content/dam/sauditourism/favicon.png",
+        "s7image1":"/content/dam/sauditourism/favicon.png",
+        "s7image2":"/content/dam/sauditourism/favicon.png",
+        "s7image3":"/content/dam/sauditourism/favicon.png",
+        "subtitle@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "lng@LastModified":"Wed Oct 04 2023 13:53:32 GMT+0000",
+        "placeholder@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "agesValue@LastModified":"Thu Oct 05 2023 12:19:49 GMT+0000",
+        "questionsAnswers":[
+          "{\"question\":\"QuestionA\",\"answer\":\"ResponseA\"}",
+          "{\"question\":\"QuestionB\",\"answer\":\"ResponseB\"}",
+          "{\"question\":\"\",\"answer\":\"\"}"
+        ],
+        "image3@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "agesLabel@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "lat":21.54238,
+        "lng":39.19797,
+        "accessibilityValue@LastModified":"Thu Oct 05 2023 12:09:49 GMT+0000",
+        "title":"jeddahevent",
+        "image2@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "aboutTitle@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "accessibilityLabel@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "qaTitle@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "image1@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "questionsAnswers@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "categories@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "cq:tags":[
+          "sauditourism:audience/18-plus",
+          "sauditourism:accessibility/ramps-elevators"
+        ],
+        "accessibilityValue":[
+          "sauditourism:accessibility/ramps-elevators"
+        ],
+        "idealForLabel@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "aboutDescription":" freestar  freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus tempor arcu. Nam in porta eros. Phasellus nec iaculis dui. Donec pellentesque lectus commodo, euismod nibh non, mollis mi. Mauris vitae metus eleifend, iaculis ante eff",
+        "categories":[
+          "/content/dam/sauditourism/cf/en/categories/food"
+        ],
+        "aboutTitle":"About event",
+        "s7image3@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+        "informationLabel@LastModified":"Wed Oct 04 2023 13:18:25 GMT+0000",
+        "s7image2@LastModified":"Tue Oct 10 2023 00:53:22 GMT+0200"
+      }
+    }
+  }
+}

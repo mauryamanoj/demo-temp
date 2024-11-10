@@ -1,0 +1,189 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 13:07:51 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Seasons",
+    "cq:lastReplicationAction":"Deactivate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"daa6524a-daaa-4dd4-9bb8-af10aad56a8d",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy":"nsaleh@esensesoftware.com",
+    "searchCategories":[
+      "sauditourism:searchCategories/SeeDo"
+    ],
+    "jcr:predecessors":[
+      "ba115b68-0d0d-4680-a467-0584420bc2b1"
+    ],
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Tue Sep 26 2023 13:07:51 GMT+0100",
+    "cq:lastReplicated":"Wed May 18 2022 12:27:07 GMT+0000",
+    "cq:lastModified":"Sun Jun 13 2021 00:04:28 GMT+0200",
+    "s7featureImage":"https://scth.scene7.com/is/image/scth/hero-banner-desk",
+    "theme":"red",
+    "jcr:description":"Seasons twice as BIG! Know all about Saudi seasons from the official Saudi promoter, Visit Saudi",
+    "jcr:baseVersion":"ba115b68-0d0d-4680-a467-0584420bc2b1",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "pageTitle":"Seasons",
+    "jcr:uuid":"a16ae6d8-442a-4c52-aa42-939749557e9b",
+    "featureImage":"/content/dam/saudi-seasons/images/hero-banner-desk.png",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "cq:lastModifiedBy":"dghazali@sta.gov.sa",
+    "navTitle":"Seasons",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero":{
+          "jcr:primaryType":"nt:unstructured",
+          "subtitle":"Seasons",
+          "jcr:createdBy":"admin",
+          "subtitleWeight":"h2",
+          "mobileVideoPath":"/content/dam/saudi-seasons/seasons-2021-revealer-video-60-mobile.mp4",
+          "jcr:lastModifiedBy":"EKamal@sta.gov.sa",
+          "interactiveVideo":"true",
+          "playVideoTitle":"Play Video",
+          "jcr:created":"Tue Jun 08 2021 18:48:43 GMT+0200",
+          "title":"Twice as BIG!",
+          "showFullHeight":"false",
+          "titleWeight":"h1",
+          "hideFav":"true",
+          "jcr:lastModified":"Fri Jun 11 2021 18:12:01 GMT+0200",
+          "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "videoPath":"/content/dam/saudi-seasons/seasons-2021-revealer-video-60-dekstop.mp4",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/hero-banner-desk",
+            "fileReference":"/content/dam/saudi-seasons/images/hero-banner-desk.png",
+            "mobileImageReference":"/content/dam/saudi-seasons/images/Image (4).png",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/Image (4)-1"
+          },
+          "link":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "caption":{
+            "jcr:primaryType":"nt:unstructured",
+            "linkType":"external"
+          }
+        },
+        "essential_links_1185298620":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:created":"Wed Jun 09 2021 16:31:42 GMT+0200",
+          "fullHeightImage":"true",
+          "variant":"full-width",
+          "hideCta":"false",
+          "jcr:lastModified":"Sat Jun 12 2021 19:23:03 GMT+0200",
+          "sling:resourceType":"sauditourism/components/content/essential-links",
+          "hideBackground":"true",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/Seasons are coming",
+            "fileReference":"/content/dam/saudi-seasons/images/Seasons are coming.png",
+            "jcr:lastModifiedBy":"admin",
+            "mobileImageReference":"/content/dam/saudi-seasons/images/white-bg/Component 1.png",
+            "jcr:lastModified":"Sat Jun 12 2021 19:23:03 GMT+0200",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/Component 1-1"
+          },
+          "linkButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "targetInNewWindow":"false"
+          }
+        },
+        "essential_links_77145243":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:created":"Wed Jun 02 2021 15:46:27 GMT+0200",
+          "fullHeightImage":"true",
+          "variant":"full-width",
+          "hideCta":"true",
+          "jcr:lastModified":"Thu Jun 10 2021 15:24:07 GMT+0200",
+          "sling:resourceType":"sauditourism/components/content/essential-links",
+          "hideBackground":"true",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/Banner-white",
+            "fileReference":"/content/dam/saudi-seasons/images/white-bg/Banner-white.png",
+            "jcr:lastModifiedBy":"admin",
+            "mobileImageReference":"/content/dam/saudi-seasons/images/white-bg/Banner.png",
+            "jcr:lastModified":"Thu Jun 10 2021 15:24:07 GMT+0200",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/Banner-2"
+          },
+          "linkButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "type":"external",
+            "targetInNewWindow":"false"
+          }
+        },
+        "essential_links_1528706162":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:created":"Wed Jun 09 2021 16:29:35 GMT+0200",
+          "fullHeightImage":"true",
+          "variant":"full-width",
+          "hideCta":"true",
+          "jcr:lastModified":"Sat Jun 12 2021 16:51:09 GMT+0200",
+          "sling:resourceType":"sauditourism/components/content/essential-links",
+          "hideBackground":"true",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/Join us Banner-5",
+            "fileReference":"/content/dam/saudi-seasons/Join us Banner.png",
+            "jcr:lastModifiedBy":"admin",
+            "mobileImageReference":"/content/dam/saudi-seasons/Join us Banner Mobile.png",
+            "jcr:lastModified":"Sat Jun 12 2021 16:51:09 GMT+0200",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/Join us Banner Mobile"
+          },
+          "linkButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"https://seasons.visitsaudi.com/cn/awpqa/en-create-with-us?samepage=true",
+            "type":"external",
+            "targetInNewWindow":"false"
+          }
+        },
+        "essential_links_1675213342":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "jcr:lastModifiedBy":"dghazali@sta.gov.sa",
+          "jcr:created":"Wed Jun 09 2021 16:30:29 GMT+0200",
+          "fullHeightImage":"true",
+          "variant":"full-width",
+          "hideCta":"true",
+          "jcr:lastModified":"Sun Jun 13 2021 00:04:28 GMT+0200",
+          "sling:resourceType":"sauditourism/components/content/essential-links",
+          "hideBackground":"true",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/Business Banner-1",
+            "fileReference":"/content/dam/saudi-seasons/images/white-bg/Business Banner.png",
+            "jcr:lastModifiedBy":"dghazali@sta.gov.sa",
+            "mobileImageReference":"/content/dam/saudi-seasons/images/mobile/Group 13.png",
+            "jcr:lastModified":"Sun Jun 13 2021 00:04:28 GMT+0200",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/Group 13-1"
+          },
+          "linkButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"https://ec.gov.sa/",
+            "type":"external",
+            "targetInNewWindow":"false"
+          }
+        }
+      }
+    }
+  }
+}

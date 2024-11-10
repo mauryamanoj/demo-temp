@@ -1,0 +1,46 @@
+<sly data-sly-test="${pageProperties.noCacheHeaderCdn}" data-sly-include="no-cache-cdn.jsp"></sly>
+<sly data-sly-test="${pageProperties.noCacheHeaderDispatcher}"
+     data-sly-include="no-cache-dispatcher.jsp"></sly>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" manifest="vsw.appcache"
+      data-sly-set.language="${inheritedPageProperties.jcr:language}"
+      data-sly-attribute.dir="${inheritedPageProperties.isRightToLeftLanguage ? inheritedPageProperties.isRightToLeftLanguage  : 'ltr'}"
+      data-sly-attribute.lang="${language}"
+      data-sly-set.selectors="${request.requestPathInfo.selectors}"
+      data-sly-set.isAppWebView="${'app' in selectors}"
+      data-sly-attribute.data-is-app="${isAppWebView ? 'true' : false}"
+      data-sly-set.pageTheme="${inheritedPageProperties.theme ? inheritedPageProperties.theme :'green'}"
+      data-sly-use.seo="com.saudi.tourism.core.models.seokeywords.SeoListModel"
+      data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page"
+      data-sly-use.head="head.html"
+      data-sly-use.footer="footer.html">
+<head data-sly-call="${head.head @ page = page, language= language, seo= seo}"></head>
+
+<sly data-sly-test="${isAppWebView}" data-sly-list.selector="${selectors}">
+    <sly data-sly-test="${'theme-' in selector}"
+         data-sly-use.themeSelector="${'/apps/sauditourism/components/htl-helpers/theme-selector.js'
+          @ theme=selector, pageTheme=pageTheme}"
+         data-sly-set.themeColor="${themeSelector.theme}"></sly>
+</sly>
+
+<body
+    data-sly-attribute.data-page-theme="${isAppWebView && themeColor ? themeColor : pageTheme}">
+<!-- Google Tag Manager (noscript) -->
+<noscript data-sly-test="${language != 'zh'}">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQKR2QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="app">
+
+    <!-- partial: component/layout/app/app.hbs -->
+    <div data-component="app-root">
+        <sly data-sly-include="body.html"></sly>
+    </div>
+    <!-- / component/layout/app/app.hbs -->
+</div>
+<sly data-sly-call="${footer.footer @ page = page}"></sly>
+
+
+</body>
+
+</html>

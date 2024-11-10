@@ -1,0 +1,61 @@
+/* Add your Custom Width for the Card */
+.buy-blk .swiper-slide,
+.buy-blk .swiper-slide a {
+    max-width: 390px;
+    max-height: 100%;
+}
+
+/* Remove  padding-left in en lang for desktop only */
+@media only screen and (min-width: 1024px) {
+    [dir="ltr"] .buy-blk {
+        padding-right: 0;
+    }
+
+    [dir="rtl"] .buy-blk {
+        padding-left: 0;
+    }
+}
+
+/* iPad */
+@media only screen and (max-width: 1024px) {
+    /* Reduce max width and height for smaller screens */
+    .buy-blk .swiper-slide,
+    .buy-blk .swiper-slide a {
+        max-width: 262px;
+        max-height: 100%;
+    }
+
+    /* Adjust the position of arrow arrows */
+    [dir="ltr"] .buy-blk .arrow-right,
+    [dir="rtl"] .buy-blk .arrow-left {
+        right: 80px;
+    }
+
+    [dir="rtl"] .buy-blk .arrow-right,
+    [dir="ltr"] .buy-blk .arrow-left {
+        left: 80px;
+    }
+}
+
+/* iPad (930px wide) */
+@media only screen and (max-width: 932px) {
+    /* Reset the position of arrow buttons */
+    [dir="ltr"] .buy-blk .arrow-right,
+    [dir="rtl"] .buy-blk .arrow-left {
+        right: 0px;
+    }
+
+    [dir="rtl"] .buy-blk .arrow-right,
+    [dir="ltr"] .buy-blk .arrow-left {
+        left: 0px;
+    }
+
+    /* Adjust padding for different text directions */
+    [dir="rtl"] .buy-blk {
+        padding-left: 0;
+    }
+
+    [dir="ltr"] .buy-blk {
+        padding-right: 0;
+    }
+}

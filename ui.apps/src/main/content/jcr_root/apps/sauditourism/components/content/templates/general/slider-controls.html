@@ -1,0 +1,13 @@
+<sly data-sly-template.slideControlsObj="${@ withSlideCounter}"
+     data-sly-use.cta06SliderArrowsTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-06-slider-arrows.html">
+  <div class="slider-controls desktop-controls"
+       data-component="slider-controls">
+    <sly data-sly-call="${cta06SliderArrowsTemplate.cta06SliderArrows @ variant='secondary',
+    backgroundColor='image', class='carousel-controls', hasAnimation=true}"></sly>
+    <div class="slide-counter label-text white-text" data-sly-test="${withSlideCounter}">
+      <span class="counter-current" data-counter-current>00</span>
+      <progress class="progress-bar" value="0" max="100" data-slider-progressbar></progress>
+      <span class="counter-total" data-counter-total>00</span>
+    </div>
+  </div>
+</sly>

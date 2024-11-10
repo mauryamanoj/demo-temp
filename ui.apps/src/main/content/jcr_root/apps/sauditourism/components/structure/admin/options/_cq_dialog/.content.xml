@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Options Config"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <options
+                        jcr:description="All content items"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header-Footer"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <eventsPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Events Path"
+                                fieldLabel="Events Path"
+                                name="./eventsPath"
+                                required="{Boolean}true"
+                                rootPath="/content/sauditourism"/>
+                            <disablePackages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable Packages, if checked"
+                                fieldLabel="Disable Packages"
+                                name="./disablePackages"
+                                text="Disable Packages"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <disableHotels
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable Hotels, if checked"
+                                fieldLabel="Disable Hotels"
+                                name="./disableHotels"
+                                text="Disable Hotels"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <disableArHotelsFilter
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable Hotels Filter via Articles, if checked"
+                                fieldLabel="Disable Hotels Filter via Articles"
+                                name="./disableArticleHotelsFilter"
+                                text="Disable Hotels Filter via Articles"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <disableArRestaurantsFilter
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable Restaurants Filter via Articles, if checked"
+                                fieldLabel="Disable Restaurants Filter via Articles"
+                                name="./disableArticleRestaurantsFilter"
+                                text="Disable Restaurants Filter via Articles"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <headerPath
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Header Page Path"
+                                name="./headerPath"
+                                rootPath="/content/sauditourism"/>
+                            <headerLogo jcr:primaryType="nt:unstructured"
+                                name="./headerLogo"
+                                fieldLabel="Header Logo"
+                                fieldDescription="choose the logo for specific site"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <radioVS jcr:primaryType="nt:unstructured"
+                                        text="Visitsaudi"
+                                        value="visitsaudi"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"/>
+                                    <radioNusuk jcr:primaryType="nt:unstructured"
+                                       text="Nusuk"
+                                       value="nusuk"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/radio"/>
+                                </items>
+                            </headerLogo>
+                            <enabledHeaderV4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Enable header v.4, if checked"
+                                fieldLabel="Enable header v.4"
+                                name="./enabledHeaderV4"
+                                text="Enable header v.4"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <footerPath
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Footer Page Path"
+                                name="./footerPath"
+                                rootPath="/content/sauditourism"/>
+                            <sitemapPath
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Sitemap Page Path"
+                                name="./sitemapPath"
+                                rootPath="/content/sauditourism"/>
+                            <hidePackagesPrice
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Hide Packages Price, if checked"
+                                fieldLabel="Hide Packages Price"
+                                name="./hidePackagesPrice"
+                                text="Hide Package Price"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <disableAppPackages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable App Packages, if checked"
+                                fieldLabel="Disable App Packages"
+                                name="./disableAppPackages"
+                                text="Disable App Packages"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <brandsPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Brands Path"
+                                fieldLabel="Brands Path"
+                                name="./brandsPath"
+                                required="{Boolean}true"
+                                rootPath="/content/sauditourism"/>
+                            <greenTaxiPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Green Taxi Path"
+                                fieldLabel="Green Taxi Path"
+                                name="./greenTaxiPath"
+                                rootPath="/content/sauditourism"/>
+                            <disableWebHalPackages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable Web Halayalla Packages, if checked"
+                                fieldLabel="Disable Web Halayalla Packages"
+                                name="./disableWebHalayallaPackages"
+                                text="Disable Web Halayalla Packages"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <disableAppHalPackages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Disable App Halayalla Packages, if checked"
+                                fieldLabel="Disable App Halayalla Packages"
+                                name="./disableAppHalayallaPackages"
+                                text="Disable App Halayalla Packages"
+                                uncheckedValue="false"
+                                value="true"/>
+                        </items>
+                    </options>
+                    <login
+                        jcr:description="All content items"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Favorites Log In"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <favLoginTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Title to appear on Login pop up while making favorites"
+                                fieldLabel="Fav login title"
+                                name="./favLoginTitle"
+                                value="Hey!"/>
+                            <favLoginCopy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Copy to appear on Login pop up while making favorites"
+                                fieldLabel="Fav login copy"
+                                name="./favLoginCopy"
+                                value="Log In or Sign Up to save your favorite attractions"/>
+                            <favLoginButtonCopy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter copy to appear on Login pop up button while making favorites"
+                                fieldLabel="Fav login button copy"
+                                name="./favLoginButtonCopy"
+                                value="Log In or Sign Up"/>
+                        </items>
+                    </login>
+                    <smartBanner
+                        jcr:description="All content items"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Smart Banner for Apps"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading-1
+                                cq:hideOnEdit="{Boolean}false"
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                class="coral-Form-fieldset-legend"
+                                level="{Long}3"
+                                text="Smart banner data"/>
+                            <enableSmartBanner
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Open new tab if checked"
+                                fieldLabel="Enable Smart Banner"
+                                name="./enableSmartBanner"
+                                text="Enable Smart Banner"
+                                uncheckedValue="false"
+                                value="{Boolean}true"/>
+                            <iosAppId
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the App Id for IOS"
+                                fieldLabel="IOS App Id"
+                                name="./iosAppId"
+                                value="502838820"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the Title"
+                                fieldLabel="Title"
+                                name="./smartBannerTitle"/>
+                            <author
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the Author"
+                                fieldLabel="Author"
+                                name="./smartBannerAuthor"/>
+                            <button
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the Button label"
+                                fieldLabel="Button Label"
+                                name="./smartBannerButtonLabel"/>
+                            <heading-2
+                                cq:hideOnEdit="{Boolean}false"
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                class="coral-Form-fieldset-legend"
+                                level="{Long}3"
+                                text="Info Labels"/>
+                            <iosLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="IOS label"
+                                fieldLabel="IOS Label"
+                                name="./iosLabel"/>
+                            <androidLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Android label"
+                                fieldLabel="Android Label"
+                                name="./androidLabel"/>
+                            <getLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Get label"
+                                fieldLabel="Get Label"
+                                name="./getLabel"/>
+                            <closeLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Close label"
+                                fieldLabel="Close Label"
+                                name="./closeLabel"/>
+                            <heading-3
+                                cq:hideOnEdit="{Boolean}false"
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                class="coral-Form-fieldset-legend"
+                                level="{Long}3"
+                                text="Price Labels"/>
+                            <iosIcon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="IOS Icon"
+                                fieldLabel="IOS Icon"
+                                path="/content"
+                                name="./iosIcon"/>
+                            <androidIcon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Android Icon"
+                                fieldLabel="Android Icon"
+                                path="/content"
+                                name="./androidIcon"/>
+                            <iosAppUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="IOS App Url"
+                                fieldLabel="IOS App Url"
+                                name="./iosAppUrl"/>
+                            <androidAppUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Android App URL"
+                                fieldLabel="Android App Url"
+                                name="./androidAppUrl"/>
+                        </items>
+                    </smartBanner>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

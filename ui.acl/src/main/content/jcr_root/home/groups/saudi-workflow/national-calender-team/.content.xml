@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-13T22:48:44.323+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-13T22:48:44.323+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="13187cfd-ed38-3866-b81a-e3c922de7150"
+    rep:authorizableId="national-calender-team"
+    rep:members="{WeakReference}[]"
+    rep:principalName="national-calender-team">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="national-calender-team"/>
+</jcr:root>

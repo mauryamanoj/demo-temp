@@ -1,0 +1,254 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Nov 18 2019 11:08:10 GMT+0100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Events",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:created": "Mon Nov 18 2019 11:08:10 GMT+0100",
+    "cq:lastModified": "Mon Nov 11 2019 09:34:19 GMT+0000",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "enrique-iglesias-": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Nov 22 2019 09:44:16 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:uuid": "270e15ad-7d4b-484e-b44d-92b88a36154e",
+      "cq:lastModified": "Fri Nov 15 2019 16:41:27 GMT+0000",
+      "jcr:title": "Enrique Iglesias ",
+      "headingLocationDetailType": "h1",
+      "locationLabel": "I am a label, edit me",
+      "locationTitle": "I am a location title, edit me",
+      "description": "I am a description, edit me",
+      "externalLink": "#",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/event-details",
+      "showHoursTitle": "I am a show hours title, edit me",
+      "addressDetail": "I am an address detail, edit me",
+      "address": "I am an address, edit me",
+      "calendarEndDate": "Fri Feb 21 2020 00:00:00 GMT+0000",
+      "shortDescription": "short description goes here",
+      "jcr:created": "Fri Nov 22 2019 09:44:16 GMT+0100",
+      "cardImage": "/content/dam/saudi-tourism/media/events/e043/single-card-mobile.jpg",
+      "sliderImage": "/content/dam/saudi-tourism/media/events/e043/event-slider-01.jpg",
+      "city": "Al-Ula",
+      "copy": "For the first time in Al-Ula, Maraya Theater will bear witness to the dazzling performance and soul-reviving voice of Spanish singer Enrique Iglesias. Fans are promised a night of their life, charged with captivating Latin tunes and lively pop music.For more details, please visit https://book.experi",
+      "image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+      "phone": "I am a phone number, edit me",
+      "title": "Enrique Iglesias",
+      "locationInDetailLabel": "I am a location label, edit me",
+      "headingType": "h1",
+      "featureEventMobileImage": "/content/dam/saudi-tourism/media/events/e043/brand-page-hero-mobile.jpg",
+      "categoryTags": [
+        "sauditourism:events/Music"
+      ],
+      "locationDistance": "1",
+      "imageListing": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+      "pageTitle": "Enrique Iglesias ",
+      "eventIntro": "I am an intro, edit me",
+      "eventTitle": "I am a title edit me",
+      "ctaText": "CTA, edit me",
+      "sling:resourceType": "sauditourism/components/structure/event-detail-page",
+      "headingshowHoursType": "h1",
+      "calendarStartDate": "Fri Feb 21 2020 00:00:00 GMT+0000",
+      "featureEventImage": "/content/dam/saudi-tourism/media/events/e043/brand-page-hero.jpg",
+      "cardImageMobile": "/content/dam/saudi-tourism/media/events/e043/single-card-mobile.jpg",
+      "disableSecondaryNav": true,
+      "location": "I am a location, edit me",
+      "cq:lastModifiedBy": "admin",
+      "imageMobile": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+      "altImage": "Enrique Iglesias",
+      "navTitle": "Enrique Iglesias ",
+      "eventLink": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "#",
+        "copy": "Book Tickets",
+        "targetInNewWindow": "false"
+      },
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "header-block": {
+          "jcr:primaryType": "nt:unstructured",
+          "ctaTitle": "I am a title, edit me",
+          "title": "I am a title, edit me",
+          "ctaLink": "#",
+          "ctaText": "CTA, edit me",
+          "sling:resourceType": "sauditourism/components/content/headerblock",
+          "backTitle": "I am a title, edit me",
+          "backLink": "#",
+          "backText": "CTA, edit me",
+          "small": {
+            "jcr:primaryType": "nt:unstructured",
+            "focalpoint": "left top",
+            "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+          },
+          "medium": {
+            "jcr:primaryType": "nt:unstructured",
+            "focalpoint": "left top",
+            "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+          },
+          "large": {
+            "jcr:primaryType": "nt:unstructured",
+            "focalpoint": "left top",
+            "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+          }
+        },
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      },
+      "event-slider": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "title": "Enrique Iglesias",
+        "jcr:lastModified": "Fri Nov 15 2019 16:50:11 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/c06-event-slider/v1/c06-event-slider"
+      },
+      "eventType": "Tier-2",
+      "weekendEvent": "true",
+      "promoTagText": "94",
+      "360Image": "/360images",
+      "featuredInMap": "false",
+      "mapLinks": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "active": "false",
+          "platform": "google",
+          "link": "https://www.google.com",
+          "name": "name",
+          "label": "label",
+          "typeMapLink": "parkingLinks"
+        }
+      }
+
+
+    }
+  },
+  "formula-e-2019-ad-diriyah-e-prix": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Nov 22 2019 09:44:16 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "startTime": "Fri Dec 13 2019 22:00:49 GMT+0100",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Formula E 2019 AD DIRIYAH E-PRIX",
+      "headingLocationDetailType": "h1",
+      "locationLabel": "I am a label, edit me",
+      "locationTitle": "I am a location title, edit me",
+      "description": "I am a description, edit me",
+      "latitude": "53.2734",
+      "ageTag": "sauditourism:age/18-plus",
+      "externalLink": "#",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/event-details",
+      "showHoursTitle": "I am a show hours title, edit me",
+      "addressDetail": "I am an address detail, edit me",
+      "address": "I am an address, edit me",
+      "calendarEndDate": "Sat Nov 23 2019 00:00:00 GMT+0100",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Nov 22 2019 09:44:16 GMT+0100",
+      "cardImage": "/content/dam/saudi-tourism/media/events/e001/brand-page-hero.jpg",
+      "cq:lastModified": "Sun Dec 15 2019 17:53:56 GMT+0100",
+      "sliderImage": "/content/dam/saudi-tourism/media/events/e001/event-slider-01.jpg",
+      "city": "Riyadh",
+      "copy": "The Formula E Championship commences their sixth season in Diriyah. The racetrack will host fans from around the world in an energetic and exciting sports atmosphere to enjoy the global sports scene.",
+      "image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+      "phone": "I am a phone number, edit me",
+      "title": "Formula E 2019 AD DIRIYAH E-PR",
+      "longitude": "-7.77832031",
+      "locationInDetailLabel": "I am a location label, edit me",
+      "eventSubtitle": "Boxing",
+      "headingType": "h1",
+      "featureEventMobileImage": "/content/dam/saudi-tourism/media/events/e001/brand-page-hero.jpg",
+      "categoryTags": [
+        "sauditourism:events/Music"
+      ],
+      "locationDistance": "1",
+      "targetGroupTags": [
+        "sauditourism:audience/18-plus"
+      ],
+      "imageListing": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+      "pageTitle": "Formula E 2019 AD DIRIYAH E-PRIX",
+      "eventIntro": "I am an intro, edit me",
+      "eventTitle": "I am a title edit me",
+      "ctaText": "CTA, edit me",
+      "sling:resourceType": "sauditourism/components/structure/event-detail-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "headingshowHoursType": "h1",
+      "calendarStartDate": "Fri Nov 22 2019 00:00:00 GMT+0100",
+      "hideInSiteMap": "false",
+      "featureEventImage": "/content/dam/saudi-tourism/media/events/e001/brand-page-hero.jpg",
+      "cardImageMobile": "/content/dam/saudi-tourism/media/events/e001/brand-page-hero.jpg",
+      "disableSecondaryNav": true,
+      "location": "I am a location, edit me",
+      "cq:lastModifiedBy": "admin",
+      "shortDescription": "short description goes here",
+      "imageMobile": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+      "altImage": "Formula E",
+      "navTitle": "Formula E 2019 AD DIRIYAH E-PRIX",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "header-block": {
+          "jcr:primaryType": "nt:unstructured",
+          "ctaTitle": "I am a title, edit me",
+          "title": "I am a title, edit me",
+          "ctaLink": "#",
+          "ctaText": "CTA, edit me",
+          "sling:resourceType": "sauditourism/components/content/headerblock",
+          "backTitle": "I am a title, edit me",
+          "backLink": "#",
+          "backText": "CTA, edit me",
+          "small": {
+            "jcr:primaryType": "nt:unstructured",
+            "focalpoint": "left top",
+            "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+          },
+          "medium": {
+            "jcr:primaryType": "nt:unstructured",
+            "focalpoint": "left top",
+            "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+          },
+          "large": {
+            "jcr:primaryType": "nt:unstructured",
+            "focalpoint": "left top",
+            "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+          }
+        },
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      },
+      "event-slider": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "title": "Enrique Iglesias",
+        "jcr:lastModified": "Fri Nov 15 2019 16:41:27 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/c06-event-slider/v1/c06-event-slider"
+      },
+      "eventLink": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "#",
+        "copy": "Book Tickets",
+        "targetInNewWindow": "false"
+      }
+    }
+  }
+}

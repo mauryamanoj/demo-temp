@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="c17ac708-88c5-3a77-b74b-f99bace5172e"
+    rep:authorizableId="intercontinental-travel-company"
+    rep:principalName="intercontinental-travel-company"/>

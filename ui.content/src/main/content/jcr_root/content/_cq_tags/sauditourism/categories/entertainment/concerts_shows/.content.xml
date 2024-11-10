@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Concerts &amp; Shows"
+          jcr:title.ar="حفلات وعروض"
+          jcr:title.de="Konzerte &amp; Shows"
+          jcr:title.es="Conciertos y espectáculos"
+          jcr:title.fr="Concerts et spectacles"
+          jcr:title.ja="コンサートとショー"
+          jcr:title.ru="Концерты и шоу"
+          jcr:title.zh="音乐会和表演"
+
+          sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Jouf"
+    jcr:title.ar="الجوف"
+    jcr:title.de="Al-Dschauf"
+    jcr:title.es="Al Yauf"
+    jcr:title.fr="Al Jawf"
+    jcr:title.ja="ジャウフ"
+    jcr:title.ru="Эль-Джауф"
+    jcr:title.zh="焦夫"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-jouf"/>

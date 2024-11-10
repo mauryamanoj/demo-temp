@@ -1,0 +1,25 @@
+<template
+    data-sly-template.sticky="${@ title, subtitle, linkObj, bookingText, linkRef, linkCopy, ctaType}"
+    data-sly-use.cta01ButtonTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-01-button.html"
+    data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html">
+  <div data-component="sticky-02-hero" data-sly-attribute.data-planner="${ctaType == 'planner' ? 'data-planner' : ''}">
+    <div class="sticky-wrapper">
+      <sly data-sly-call="${ornaments02BarsTemplate.ornaments02Bars @ orientation='vertical',
+             patternDefault='03A', class='ornament'}"></sly>
+      <span class="heading-5 title">${title @ context='text'}</span>
+      <div class="button-sticky" data-sly-test="${linkObj.copy || linkCopy}">
+        <sly
+            data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObj, link=linkRef,
+            copy=linkCopy, iconName=(ctaType == 'planner' ? 'travel' : 'link-external'), variant='secondary', newTab='true', noChevron=true, size='big'}">
+        </sly>
+      </div>
+    </div>
+    <div class="button-sticky-hero" data-sly-test="${linkObj.copy || linkCopy}">
+      <sly
+          data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObj, link=linkRef,
+          copy=linkCopy, iconName=(ctaType == 'planner' ? 'travel' : 'link-external'), variant='secondary', newTab='true', noChevron=true, size='big'}">
+      </sly>
+      <span class="label-text booking-text" data-sly-test="${bookingText}">${bookingText @ context='text'}</span>
+    </div>
+  </div>
+</template>

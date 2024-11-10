@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Swimming"
+          jcr:title.ar="السباحة"
+          jcr:title.de="Schwimmen"
+          jcr:title.es="Natación"
+          jcr:title.fr="Natation"
+          jcr:title.ja="水泳"
+          jcr:title.ru="Плавание"
+          jcr:title.zh="游泳"
+    sling:resourceType="cq/tagging/components/tag"/>

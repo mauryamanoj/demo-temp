@@ -1,0 +1,836 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:mixinTypes":[
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Nov 24 2021 07:43:14 GMT+0000",
+
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Visit Saudi Arabia | Visit Saudi Official Tourism Site",
+    "cq:lastReplicationAction":"Activate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"8068cc8e-850a-4e3c-a287-91b1b44f8c59",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:language":"en",
+    "searchCategories":[
+      "sauditourism:searchCategories/SeeDo",
+      "sauditourism:searchCategories/Highlight"
+    ],
+    "jcr:predecessors":[
+      "adbc9f5b-d09c-47f5-9479-4fcbf325d209"
+    ],
+    "sling:redirect":"true",
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Wed Nov 24 2021 07:45:17 GMT+0000",
+    "cq:lastReplicated":"Thu Oct 06 2022 13:42:52 GMT+0000",
+    "cq:lastModified":"Tue Oct 11 2022 14:04:43 GMT+0000",
+    "s7featureImage":"/content/dam/travel-regulations/tow-girls-in-souq-en.jpg",
+    "theme":"teal",
+    "jcr:description":"Plan your holiday in Saudi Arabia and explore its ancient heritage and culture, breathtaking outdoor activities and delicious local food.",
+    "jcr:baseVersion":"adbc9f5b-d09c-47f5-9479-4fcbf325d209",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"manifestNew",
+    "pageTitle":"Visit Saudi Arabia | Visit Saudi Official Tourism Site",
+    "cq:conf":"/conf/sauditourism/visitsaudi",
+    "jcr:uuid":"97b308a2-8c8a-405b-a948-8aaa48178ca7",
+    "featureImage":"/content/dam/travel-regulations/tow-girls-in-souq-en.jpg",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "navTitle":"Home page",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero":{
+          "jcr:primaryType":"nt:unstructured",
+          "setSubtitleBelow":"false",
+          "subtitleWeight":"h3",
+          "interactiveVideo":"false",
+          "jcr:created":"Wed Dec 29 2021 16:41:14 GMT+0000",
+          "title":"Get Your Tourism eVisa Now",
+          "showFullHeight":"false",
+          "titleWeight":"h1",
+          "hideFav":"true",
+          "jcr:lastModified":"Thu Sep 01 2022 17:47:49 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"/content/dam/travel-regulations/tow-girls-in-souq-en.jpg",
+            "fileReference":"/content/dam/travel-regulations/tow-girls-in-souq-en.jpg",
+            "alt":"AlUla Season",
+            "mobileImageReference":"/content/dam/travel-regulations/tow-girls-in-souq-en.jpg",
+            "s7mobileImageReference":"/content/dam/travel-regulations/tow-girls-in-souq-en.jpg"
+          },
+          "link":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/en/travel-regulations",
+            "copy":"Learn More"
+          },
+          "caption":{
+            "jcr:primaryType":"nt:unstructured",
+            "linkType":"external"
+          },
+          "video":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "i04_simple_text_intr":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"olivia",
+          "description":"Discover the essence of Saudi, where you’ll find a mixture of global diversity that has emerged from this cradle of many human civilizations. Explore the rock inscriptions and archaeological cities dating back to more than 10,000 years. Today, Saudi is a proud home of several heritage sites registered in the UNESCO World Heritage List. Each season of the year offers a distinct Saudi experience. Whether you choose to climb to the top of the highest mountain, 3000 meters above sea level, dive into the magical wonders of the corals and marine life of the Red Sea or cross the largest palm oasis in the world growing more than 2.5 million palm trees, all of these exciting experiences, and more, await you in a country ranked third in the world in terms of safety. Get ready to be part of the largest international events inside the most prominent cities of Saudi. Set out to discover the unique charm of Saudi generosity and heartfelt hospitality. Feast on the distinctively delicious traditional food. Witness the most mesmerizing iconic architectural masterpieces. And, discover the enchanting world of oriental scents.&nbsp;",
+          "jcr:created":"Thu Aug 13 2020 13:15:04 GMT+0200",
+          "title":"Saudi adventures you do not want to miss!",
+          "jcr:lastModified":"Wed Mar 30 2022 09:08:38 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/i04-simple-text-intro",
+          "textIsRich":"true",
+          "largeTextSize":"false"
+        },
+        "essential_links_copy":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:created":"Tue Aug 16 2022 09:00:48 GMT+0000",
+          "title":"Venture beyond Doha, Visit Saudi",
+          "fullHeightImage":"false",
+          "variant":"grid-big",
+          "hideCta":"false",
+          "jcr:lastModified":"Tue Oct 11 2022 14:04:43 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/essential-links",
+          "hideBackground":"false",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/beyond-doha",
+            "fileReference":"/content/dam/fifa_2022/beyond-doha.jpg",
+            "mobileImageReference":"/content/dam/fifa_2022/beyond-doha.jpg",
+            "jcr:lastModified":"Tue Oct 11 2022 14:04:43 GMT+0000"
+          },
+          "linkButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/en/the-cup",
+            "copy":"Explore More",
+            "type":"internal",
+            "targetInNewWindow":"false"
+          }
+        },
+        "c27_teaser_with_card_1778107697":{
+          "jcr:primaryType":"nt:unstructured",
+          "background":"white",
+          "pattern":"07",
+          "jcr:created":"Sun Jul 31 2022 15:32:26 GMT+0000",
+          "title":"Mod-Te-04",
+          "jcr:lastModified":"Thu Oct 06 2022 09:36:06 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v0/c27-teaser-with-cards",
+          "hideDescription":"false",
+          "backgroundOrnamentId":"02",
+          "textIsRich":[
+            "true",
+            "true"
+          ],
+          "componentType":"a-general-cards",
+          "isColorVariant":"false",
+          "header":{
+            "jcr:primaryType":"nt:unstructured",
+            "showUnderline":"false",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "text":"Happening Now..."
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModified":"Thu Oct 06 2022 09:36:06 GMT+0000"
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Saudi Summer Program</p>\r\n",
+              "isFeatured":"false",
+              "highlight":"true",
+              "icon":"none",
+              "type":"manual",
+              "title":"Summer & Vibes",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/summer-season",
+                "copy":"Explore",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:ReplicationStatus"
+                ],
+                "cq:lastReplicationAction":"Activate",
+                "fileReference":"/content/dam/family-hike-en.jpg",
+                "cq:lastReplicated":"Thu Oct 06 2022 10:06:02 GMT+0000",
+                "mobileImageReference":"/content/dam/family-hike-en.jpg"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Unlock the wonders of AlUla&nbsp;</p>\r\n",
+              "isFeatured":"false",
+              "highlight":"true",
+              "icon":"none",
+              "type":"manual",
+              "title":"AlUla Moments",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"https://calendar.visitsaudi.com/en/season/alula-moments",
+                "copy":"Book Now",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "jcr:mixinTypes":[
+                  "cq:ReplicationStatus"
+                ],
+                "cq:lastReplicationAction":"Activate",
+                "fileReference":"/content/dam/saudi-tourism/media/events-/AlUla-Moments.jpg",
+                "cq:lastReplicated":"Thu Oct 06 2022 10:05:59 GMT+0000",
+                "alt":"AlUla Events",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/events-/AlUla-Moments.jpg"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        },
+        "c27_teaser_with_card_589210866":{
+          "jcr:primaryType":"nt:unstructured",
+          "enableFullOrnament":"false",
+          "background":"white",
+          "viewAllLink":"https://book.visitsaudi.com/sa-en",
+          "viewAllText":"View All",
+          "pattern":"07",
+          "jcr:created":"Thu Jul 28 2022 18:36:02 GMT+0000",
+          "cardStyle":"experience",
+          "limit":"0",
+          "title":"Mod-Te-04",
+          "variant":"event",
+          "jcr:lastModified":"Thu Sep 29 2022 15:43:00 GMT+0000",
+          "linkType":"chevron",
+          "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards",
+          "hideDescription":"false",
+          "textIsRich":[
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "ornamentId":"07A",
+          "componentType":"a-general-cards",
+          "isColorVariant":"false",
+          "showFav":"false",
+          "header":{
+            "jcr:primaryType":"nt:unstructured",
+            "showUnderline":"false",
+            "showViewAllSlider":"false",
+            "showSlider":"false",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "text":"What to Experience"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModified":"Thu Sep 29 2022 15:43:00 GMT+0000"
+          },
+          "componentHeading":{
+            "jcr:primaryType":"nt:unstructured",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "weight":"h1"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "targetInNewWindow":"false"
+            }
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Starts from</p>\r\n<p><b>4,630 SAR</b></p>\r\n",
+              "labels":"Experience",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"Abha",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Abha City Tour - 1 Day Tour",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "hideImageBrush":"false",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"https://book.visitsaudi.com/sa-en/experiences/abha/nature/abha-city-tour",
+                "copy":"Book Now",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/abha-cty-tour",
+                "fileReference":"/content/dam/experiences/abha-cty-tour.jpg",
+                "mobileImageReference":"/content/dam/experiences/abha-cty-tour.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/abha-cty-tour"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Starts from</p>\r\n<p><b>4,685 SAR</b></p>\r\n",
+              "labels":"Experience",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"Jeddah",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Jeddah Sea Trip ​(Boat Trip) - 1 Day Trip",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "hideImageBrush":"false",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"https://book.visitsaudi.com/sa-en/experiences/jeddah/sta-adventure/jeddah-sea-trip-boat-trip",
+                "copy":"Book Now",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/jeddah-trip",
+                "fileReference":"/content/dam/experiences/jeddah-trip.jpg",
+                "alt":"Jeddah Sea Trip ​(Boat Trip) - 1 Day Trip",
+                "mobileImageReference":"/content/dam/experiences/jeddah-trip.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/jeddah-trip"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Starts from</p>\r\n<p><b>2,850 SAR</b></p>\r\n",
+              "labels":"Experience",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"Riyadh",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Saudi Villages Culture - 1 Day Trip",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "hideImageBrush":"false",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"https://book.visitsaudi.com/sa-en/experiences/riyadh/culture/saudi-villages-culture",
+                "copy":"Book Now",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/saudi-villages-culture",
+                "fileReference":"/content/dam/experiences/saudi-villages-culture.jpg",
+                "alt":"Saudi Villages Culture - 1 Day Trip",
+                "mobileImageReference":"/content/dam/experiences/saudi-villages-culture.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/saudi-villages-culture"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Starts from</p>\r\n<p><b>230 SAR</b></p>\r\n",
+              "labels":"Experience",
+              "isFeatured":"false",
+              "featuredTagLineFeaturedCopy":"Taif",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Equestrian Trip in Taif - 1 Day Trip",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "hideImageBrush":"false",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"https://book.visitsaudi.com/sa-en/experiences/taif/culture/equestrian-trip",
+                "copy":"Book Now",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/equestrian-trip-in-taif",
+                "fileReference":"/content/dam/experiences/equestrian-trip-in-taif .jpg",
+                "mobileImageReference":"/content/dam/experiences/equestrian-trip-in-taif .jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/equestrian-trip-in-taif"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        },
+        "essential_links_copy_813268827":{
+          "jcr:primaryType":"nt:unstructured",
+          "subTitle":"For Unique Travel Experience",
+          "jcr:created":"Tue May 31 2022 06:57:22 GMT+0000",
+          "title":"Enjoy Summer Season with Exclusive Deals",
+          "fullHeightImage":"false",
+          "variant":"grid-small",
+          "hideCta":"false",
+          "jcr:lastModified":"Mon Sep 05 2022 20:19:48 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/essential-links",
+          "hideBackground":"false",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/saudi-beach-banner",
+            "fileReference":"/content/dam/saudi-beach-banner.png",
+            "mobileImageReference":"/content/dam/saudi-beach-banner.png",
+            "jcr:lastModified":"Mon Sep 05 2022 20:19:48 GMT+0000"
+          },
+          "linkButton":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/en/Partners_Promotions",
+            "copy":"Check Now",
+            "type":"internal",
+            "targetInNewWindow":"false"
+          }
+        },
+        "c04_full_bleed_slide":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:created":"Tue Aug 09 2022 10:26:41 GMT+0000",
+          "jcr:lastModified":"Mon Sep 05 2022 09:23:19 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/c04-full-bleed-slider/v1/c04-full-bleed-slider",
+          "componentHeading":{
+            "jcr:primaryType":"nt:unstructured",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "weight":"h2",
+              "text":"Authentically  Saudi"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "targetInNewWindow":"true"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModified":"Mon Sep 05 2022 09:23:19 GMT+0000"
+          },
+          "slides":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "subtitleWeight":"h4",
+              "description":"From Kabsah to Saudi authentic coffee, you will taste something that is not found anywhere in the world.",
+              "title":"Eat and Drink",
+              "hideSlide":"false",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/eat",
+                "copy":"Learn More",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/serve food",
+                "fileReference":"/content/dam/jeddah/where-to-eat-in-jeddah/serve food.jpg",
+                "alt":"Food",
+                "mobileImageReference":"/content/dam/jeddah/where-to-eat-in-jeddah/serve food.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/serve food"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "subtitleWeight":"h1",
+              "description":"There are a lot to take with you back home from Saudi shops and creativity.",
+              "title":"Shopping in Saudi",
+              "hideSlide":"false",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/jeddah/shopping_in_jeddah",
+                "copy":"Learn More",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/mall-activity",
+                "fileReference":"/content/dam/jeddah/shopping-in-jeddah/mall-activity.jpeg",
+                "alt":"Shopping in Saudi",
+                "mobileImageReference":"/content/dam/jeddah/shopping-in-jeddah/mall-activity.jpeg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/mall-activity"
+              }
+            }
+          }
+        },
+        "c28_destinations_and_1426954168":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:created":"Thu Nov 26 2020 14:30:22 GMT+0100",
+          "type":"map",
+          "title":"Mod-Te-04",
+          "mapType":"google",
+          "jcr:lastModified":"Tue Aug 09 2022 10:37:10 GMT+0000",
+          "isLoadMore":"false",
+          "sling:resourceType":"sauditourism/components/content/c28-destinations-and-map/v1/c28-destinations-and-map",
+          "header":{
+            "jcr:primaryType":"nt:unstructured",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "text":"Explore Top Destinations"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"dammam",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/dammam"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"al-ahsa",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/al-ahsa"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"riyadh",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/riyadh"
+              }
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"alula",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/alula"
+              }
+            },
+            "item4":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"diriyah",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/diriyah"
+              }
+            },
+            "item5":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"jeddah",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/jeddah"
+              }
+            },
+            "item6":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"tabuk",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/tabuk"
+              }
+            },
+            "item7":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"yanbu",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/yanbu"
+              }
+            },
+            "item8":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"king-abdullah-economic-city",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/kaec"
+              }
+            },
+            "item9":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"hail",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/hail"
+              }
+            },
+            "item10":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"taif",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/taif"
+              }
+            },
+            "item11":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"abha",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/asir"
+              }
+            },
+            "item12":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"al-baha",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/al-baha"
+              }
+            },
+            "item13":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"jazan",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/jazan"
+              }
+            },
+            "item14":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"al-jouf",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/see-do/destinations/al-jouf"
+              }
+            }
+          }
+        },
+        "c27_teaser_with_card_1329657591":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "background":"white",
+          "pattern":"07",
+          "jcr:created":"Mon Oct 04 2021 14:14:09 GMT+0200",
+          "cardStyle":"experience",
+          "limit":"0",
+          "title":"Mod-Te-04",
+          "variant":"event",
+          "jcr:lastModified":"Tue Aug 09 2022 10:37:59 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards",
+          "hideDescription":"false",
+          "backgroundOrnamentId":"06",
+          "textIsRich":[
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "ornamentId":"01",
+          "componentType":"a-general-cards",
+          "isColorVariant":"false",
+          "header":{
+            "jcr:primaryType":"nt:unstructured",
+            "showUnderline":"false",
+            "showViewAllSlider":"false",
+            "showSlider":"false",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "text":"Know Before You Go"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "url":"/content/sauditourism/en/travel-essentials",
+              "copy":"View all"
+            }
+          },
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModified":"Tue Aug 09 2022 10:37:59 GMT+0000"
+          },
+          "componentHeading":{
+            "jcr:primaryType":"nt:unstructured",
+            "heading":{
+              "jcr:primaryType":"nt:unstructured",
+              "weight":"h1"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "targetInNewWindow":"false"
+            }
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"About Saudi",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/understand",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/brand-page-hero-1459",
+                "fileReference":"/content/dam/saudi-tourism/media/understand/660x370/brand-page-hero.jpg",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/understand/660x370/brand-page-hero.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/brand-page-hero-1459"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Safety travel tips",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/travel-safety-tips",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/arabic-101",
+                "fileReference":"/content/dam/saudi-tourism/media/updated-imagery/arabic-101.jpeg",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/updated-imagery/arabic-101.jpeg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/arabic-101"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Useful contacts",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/understand/useful-contacts",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/safety-poster-13",
+                "fileReference":"/content/dam/saudi-tourism/media/safety-useful-numbers/1920x1080/safety-poster.jpg",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/safety-useful-numbers/1920x1080/safety-poster.jpg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/safety-poster-13"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "isFeatured":"false",
+              "highlight":"false",
+              "icon":"none",
+              "type":"manual",
+              "title":"Travel Regulations ",
+              "useActivityLink":"false",
+              "hideFav":"true",
+              "ctaType":"none",
+              "imagePosition":"left",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/en/travel-regulations",
+                "copy":"Learn more",
+                "targetInNewWindow":"false"
+              },
+              "image":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"https://scth.scene7.com/is/image/scth/South Farms- crop 2",
+                "fileReference":"/content/dam/saudi-tourism/media/travel-safety-tips/new-hero-and-navigation-image/South Farms- crop 2.jpeg",
+                "alt":"Travel Regulations ",
+                "mobileImageReference":"/content/dam/saudi-tourism/media/travel-safety-tips/new-hero-and-navigation-image/South Farms- crop 2.jpeg",
+                "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/South Farms- crop 2"
+              },
+              "caption":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        }
+      }
+    },
+    "seoKeys":{
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{
+        "jcr:primaryType":"nt:unstructured",
+        "keyword":"visit saudi "
+      },
+      "item1":{
+        "jcr:primaryType":"nt:unstructured",
+        "keyword":"saudi arabia "
+      },
+      "item2":{
+        "jcr:primaryType":"nt:unstructured",
+        "keyword":"saudi arabia tourism "
+      }
+    }
+  }
+}

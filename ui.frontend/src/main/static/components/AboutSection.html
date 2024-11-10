@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>About Section</title>
+	<meta name="template" content="page-content" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="page basicpage" data-page-theme="purple">
+	<div class="menu contentfragment aem-GridColumn aem-GridColumn--default--12">
+		<div data-component="MainMenu" data-props="{
+              &#34;userMenu&#34;: {
+                &#34;registerLabel&#34;: &#34;Log In / Sign Up&#34;,
+                &#34;signOutLabel&#34;: &#34;Sign Out&#34;,
+                &#34;welcomeLabel&#34;: &#34;Welcome&#34;,
+                &#34;userApi&#34;: {
+                  &#34;ssidLoginUrl&#34;: &#34;/bin/api/v1/ssid/login-url&#34;,
+                  &#34;domain&#34;: &#34;uat-ssid.visitsaudi.com&#34;,
+                  &#34;clientId&#34;: &#34;114df34f05fdd859540c28704c6f7921dd162eb03c70c265516d634d080dcd38&#34;,
+                  &#34;ssidUserInfo&#34;: &#34;https://qa-revamp.visitsaudi.com/bin/api/v1/ssid/userInfo&#34;,
+                  &#34;ssidLogoutUrl&#34;: &#34;/bin/api/v1/ssid/logout&#34;,
+                  &#34;getProfile&#34;: &#34;/bin/api/v2/user/get.profile&#34;,
+                  &#34;getTripPlansEndpoint&#34;: &#34;/bin/api/v2/user/get.trips&#34;,
+                  &#34;updateProfile&#34;: &#34;/bin/api/v2/user/update.profile&#34;,
+                  &#34;getFavorites&#34;: &#34;/bin/api/v2/user/get.favorites&#34;
+                },
+                &#34;subMenu&#34;: [
+                  {
+                    &#34;iconName&#34;: &#34;userCircle&#34;,
+                    &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+                    &#34;label&#34;: &#34;Personal info&#34;
+                  },
+                  {
+                    &#34;iconName&#34;: &#34;heartMenu&#34;,
+                    &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+                    &#34;label&#34;: &#34;Favorites&#34;
+                  },
+                  {
+                    &#34;iconName&#34;: &#34;bookingMenu&#34;,
+                    &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+                    &#34;label&#34;: &#34;Bookings&#34;
+                  },
+                  {
+                    &#34;iconName&#34;: &#34;tripsMenu&#34;,
+                    &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+                    &#34;label&#34;: &#34;Saved Trips&#34;
+                  }
+                ]
+              },
+              &#34;searchBox&#34;: {
+              &#34;suggestionsEndpoint&#34;: &#34;/bin/api/solr/search&#34;,
+              &#34;searchPagePath&#34;: &#34;/search-result.html&#34;,
+              &#34;cancelLabel&#34;: &#34;Cancel&#34;,
+              &#34;clearLabel&#34;: &#34;Clear&#34;,
+              &#34;clearHistoryLabel&#34;: &#34;Clear Hisyory&#34;,
+              &#34;trendingBlock&#34;: &#34;&#34;,
+              &#34;searchLabel&#34;: &#34;Search&#34;,
+              &#34;searchModalTitle&#34;: &#34;Search&#34;,
+              &#34;recentSearchLabel&#34;: &#34;Recent search&#34;,
+              &#34;trending&#34;: {
+                &#34;title&#34;: &#34;Trending&#34;,
+                &#34;items&#34;:[
+                {
+                  &#34;ctaLabel&#34;: &#34;Medina&#34;,
+                  &#34;ctaLink&#34;: &#34;/en/see-do/destinations/medina&#34;
+                },
+                {
+                  &#34;ctaLabel&#34;: &#34;Jeddah&#34;,
+                  &#34;ctaLink&#34;: &#34;/en/see-do/destinations/medina&#34;
+                }]
+              }
+              },
+              &#34;logo&#34;: {
+                &#34;desktopImage&#34;: &#34;/content/dam/sauditourism/header/icon/logo1/logo1-en.svg&#34;,
+                &#34;mobileImage&#34;: &#34;/content/dam/sauditourism/header/icon/logo1/logo1-mobile.svg&#34;
+              },
+              &#34;data&#34;: [
+                {
+                  &#34;title&#34;: &#34;Destinations &#34;,
+                  &#34;ctaLink&#34;: &#34;https://qa-revamp.visitsaudi.com/en/revamp/destinations/saudi-destinations&#34;,
+                  &#34;data&#34;: [
+                    {
+                      &#34;image&#34;: {
+                        &#34;fileReference&#34;: &#34;/content/dam/travel-regulations/Travel_Regulations_Banner.jpg&#34;,
+                        &#34;mobileImageReference&#34;: &#34;/content/dam/travel-regulations/Travel_Regulations_Banner.jpg&#34;,
+                        &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner&#34;,
+                        &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner&#34;,
+                        &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-660x337?defaultImage\u003dTravel_Regulations_Banner&#34;,
+                        &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-600x600?defaultImage\u003dTravel_Regulations_Banner&#34;,
+                        &#34;breakpoints&#34;: [
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-660x337?defaultImage\u003dTravel_Regulations_Banner\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+                            &#34;media&#34;: &#34;(max-width: 768px)&#34;
+                          },
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-600x600?defaultImage\u003dTravel_Regulations_Banner\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+                          }
+                        ],
+                        &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-660x337?defaultImage\u003dTravel_Regulations_Banner\u0026wid\u003d375\u0026hei\u003d191&#34;
+                      },
+                      &#34;ctaLabel&#34;: &#34;Saudi&#34;,
+                      &#34;ctaLink&#34;: &#34;/en/revamp/destinations/saudi-destinations&#34;
+                    }
+                  ]
+                },
+                {
+                  &#34;title&#34;: &#34;Things To Do&#34;,
+                  &#34;ctaLink&#34;: &#34;/en/revamp/see-do/nature&#34;,
+                  &#34;viewAllLabel&#34;: &#34;View All&#34;,
+                  &#34;viewAllLink&#34;: &#34;/en/revamp/Traveler-Destinations&#34;,
+                  &#34;data&#34;: [
+                    {
+                      &#34;image&#34;: {
+                        &#34;fileReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+                        &#34;mobileImageReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+                        &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+                        &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+                        &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+                        &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+                        &#34;breakpoints&#34;: [
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+                            &#34;media&#34;: &#34;(max-width: 768px)&#34;
+                          },
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+                          }
+                        ],
+                        &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191&#34;
+                      },
+                      &#34;ctaLabel&#34;: &#34;Nature&#34;,
+                      &#34;ctaLink&#34;: &#34;/en/revamp/see-do/nature&#34;
+                    },
+                    {
+                      &#34;image&#34;: {
+                        &#34;fileReference&#34;: &#34;/content/dam/shopping Rectangle (1).png&#34;,
+                        &#34;mobileImageReference&#34;: &#34;/content/dam/shopping Rectangle (1).png&#34;,
+                        &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/shopping Rectangle (1)&#34;,
+                        &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/shopping Rectangle (1)&#34;,
+                        &#34;desktopImage&#34;: &#34;&#34;,
+                        &#34;mobileImage&#34;: &#34;&#34;,
+                        &#34;breakpoints&#34;: [
+                          {
+                            &#34;srcset&#34;: &#34;?wid\u003d375\u0026hei\u003d191 375w&#34;,
+                            &#34;media&#34;: &#34;(max-width: 768px)&#34;
+                          },
+                          {
+                            &#34;srcset&#34;: &#34;?wid\u003d375\u0026hei\u003d375 375w&#34;
+                          }
+                        ],
+                        &#34;defaultImage&#34;: &#34;?wid\u003d375\u0026hei\u003d191&#34;
+                      },
+                      &#34;ctaLabel&#34;: &#34;Shopping&#34;,
+                      &#34;ctaLink&#34;: &#34;/en/revamp/see-do/shopping&#34;
+                    },
+                    {
+                      &#34;image&#34;: {
+                        &#34;fileReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+                        &#34;mobileImageReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+                        &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+                        &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+                        &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+                        &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+                        &#34;breakpoints&#34;: [
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+                            &#34;media&#34;: &#34;(max-width: 768px)&#34;
+                          },
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+                          }
+                        ],
+                        &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191&#34;
+                      },
+                      &#34;ctaLabel&#34;: &#34;Nature&#34;,
+                      &#34;ctaLink&#34;: &#34;/en/revamp/see-do/nature&#34;
+                    }
+                  ]
+                },
+                {
+                  &#34;title&#34;: &#34;Plan your trip&#34;,
+                  &#34;ctaLink&#34;: &#34;/en/test/sprint6/menu-demo/plan-your-trip&#34;,
+                  &#34;viewAllLabel&#34;: &#34;View All&#34;,
+                  &#34;viewAllLink&#34;: &#34;/en/test/sprint6/menu-demo/plan-your-trip&#34;,
+                  &#34;data&#34;: [
+                    {
+                      &#34;image&#34;: {
+                        &#34;fileReference&#34;: &#34;/content/dam/summer_season_banner.jpg&#34;,
+                        &#34;mobileImageReference&#34;: &#34;/content/dam/summer_season_banner.jpg&#34;,
+                        &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner&#34;,
+                        &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner&#34;,
+                        &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-660x337?defaultImage\u003dsummer_season_banner&#34;,
+                        &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-600x600?defaultImage\u003dsummer_season_banner&#34;,
+                        &#34;breakpoints&#34;: [
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-660x337?defaultImage\u003dsummer_season_banner\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+                            &#34;media&#34;: &#34;(max-width: 768px)&#34;
+                          },
+                          {
+                            &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-600x600?defaultImage\u003dsummer_season_banner\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+                          }
+                        ],
+                        &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-660x337?defaultImage\u003dsummer_season_banner\u0026wid\u003d375\u0026hei\u003d191&#34;
+                      },
+                      &#34;ctaLabel&#34;: &#34;Visa regulation&#34;,
+                      &#34;ctaLink&#34;: &#34;/en/test/sprint6/menu-demo/plan-your-trip/visa-regulation&#34;
+                    }
+                  ]
+                },
+                {
+                  &#34;title&#34;: &#34;Saudi Calendar&#34;,
+                  &#34;ctaLink&#34;: &#34;/en/calendar&#34;,
+                  &#34;data&#34;: []
+                },
+                {
+                  &#34;title&#34;: &#34;Saudi Map&#34;,
+                  &#34;ctaLink&#34;: &#34;https://map.visitsaudi.com/en&#34;,
+                  &#34;data&#34;: []
+                }
+              ],
+              &#34;languages&#34;: {
+                &#34;label&#34;: &#34;Language&#34;,
+                &#34;data&#34;: [
+                  {
+                    &#34;ctaLabel&#34;: &#34;AR - العربية&#34;,
+                    &#34;ctaLink&#34;: &#34;/ar&#34;,
+                    &#34;isSelected&#34;: false
+                  },
+                  {
+                    &#34;ctaLabel&#34;: &#34;FR - FRANÇAIS&#34;,
+                    &#34;ctaLink&#34;: &#34;/fr&#34;,
+                    &#34;isSelected&#34;: false
+                  },
+                  {
+                    &#34;ctaLabel&#34;: &#34;EN - ENGLISH&#34;,
+                    &#34;ctaLink&#34;: &#34;/en&#34;,
+                    &#34;isSelected&#34;: true
+                  },
+                  {
+                    &#34;ctaLabel&#34;: &#34;DE - DEUTSCH&#34;,
+                    &#34;ctaLink&#34;: &#34;/de&#34;,
+                    &#34;isSelected&#34;: false
+                  },
+                  {
+                    &#34;ctaLabel&#34;: &#34;RU - РУССКИЙ&#34;,
+                    &#34;ctaLink&#34;: &#34;/ru&#34;,
+                    &#34;isSelected&#34;: false
+                  },
+                  {
+                    &#34;ctaLabel&#34;: &#34;ZH - 中文&#34;,
+                    &#34;ctaLink&#34;: &#34;/zh&#34;,
+                    &#34;isSelected&#34;: false
+                  }
+                ]
+              },
+              &#34;evisa&#34;: {
+                &#34;title&#34;: &#34;Get your Visa &#34;,
+                &#34;link&#34;: &#34;/en/travel-regulations&#34;
+              }
+            }"></div>
+	</div>
+	<div data-component="PromotionalBanner" data-props="{
+			&#34;enableManualAuthoring&#34;: false,
+			&#34;hideImageBrush&#34;: &#34;false&#34;,
+			&#34;type&#34;: &#34;HomeBanner&#34;,
+			&#34;cards&#34;: [
+			  {
+				&#34;title&#34;: &#34;Nature&#34;,
+				&#34;description&#34;: &#34;Lorem Ipsum is simply dummy text of the printing and typesetting indus&#34;,
+				&#34;image&#34;: {
+				  &#34;fileReference&#34;: &#34;/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/natureBanner.png&#34;,
+				  &#34;alt&#34;: &#34;Alt text of image &#34;,
+				  &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/natureBanner&#34;,
+				  &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/natureBanner:crop-1920x768?defaultImage\u003dnatureBanner&#34;,
+				  &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/natureBanner:crop-460x620?defaultImage\u003dnatureBanner&#34;,
+				  &#34;breakpoints&#34;: [
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/natureBanner:crop-460x620?defaultImage\u003dnatureBanner\u0026wid\u003d820\u0026hei\u003d1105 820w&#34;,
+					  &#34;media&#34;: &#34;(max-width: 1023px)&#34;
+					},
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/natureBanner:crop-1920x768?defaultImage\u003dnatureBanner\u0026wid\u003d1500\u0026hei\u003d600 1500w&#34;
+					}
+				  ],
+				  &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/natureBanner:crop-460x620?defaultImage\u003dnatureBanner\u0026wid\u003d820\u0026hei\u003d1105&#34;,
+				  &#34;isTransparent&#34;: false
+				},
+				&#34;video&#34;: {
+				  &#34;autorerun&#34;: false,
+				  &#34;autoplay&#34;: false
+				}
+			  }
+			],
+			&#34;thumbs&#34;: {}
+		  }"></div>
+	<div data-component="Breadcrumbs" data-props="{
+			&#34;items&#34;: [
+			  {
+				&#34;link&#34;: {
+				  &#34;hideMap&#34;: false,
+				  &#34;url&#34;: &#34;/en&#34;,
+				  &#34;targetInNewWindow&#34;: false
+				},
+				&#34;title&#34;: &#34;Visit Saudi&#34;
+			  },
+			  {
+				&#34;link&#34;: {
+				  &#34;hideMap&#34;: false,
+				  &#34;url&#34;: &#34;/en/revamp&#34;,
+				  &#34;targetInNewWindow&#34;: false
+				},
+				&#34;title&#34;: &#34;Revamp&#34;
+			  },
+			  {
+				&#34;link&#34;: {
+				  &#34;hideMap&#34;: false,
+				  &#34;url&#34;: &#34;/en/revamp/search-page&#34;,
+				  &#34;targetInNewWindow&#34;: false
+				},
+				&#34;title&#34;: &#34;search-page&#34;
+			  }
+			]
+		  }"></div>
+
+	<div class="layout2Cols flex flex-col  md:flex-row">
+		<div class="leftCol1 order-2 md:order-1 ltr:lg:mr-32 ltr:mr-0 rtl:lg:ml-32 rtl:ml-0">
+			<div data-component="AboutSection" data-props="{
+					&#34;enableManualAuthoring&#34;: true,
+					&#34;aboutTitle&#34;: &#34;About&#34;,
+					&#34;aboutDescription&#34;: &#34;I am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in aI am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in aI am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a&#34;,
+					&#34;hideReadMore&#34;: false,
+					&#34;readMoreLabel&#34;: &#34;Read More&#34;,
+					&#34;readLessLabel&#34;: &#34;Read Less&#34;,
+					&#34;hideFavorite&#34;: false,
+					&#34;hideShare&#34;: false,
+					&#34;categoriesTags&#34;: [
+					  {
+						&#34;title&#34;: &#34;Nature&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Natural site&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/natural_site.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Public Park&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/public_park.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Safari&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/safari.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Zoo&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/zoo.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Farm&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/farm.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Beaches&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/beaches.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Harbours&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/harbours.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Valley&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/valley.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Islands&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/islands.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Coasts&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/coasts.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Wildlife reserve&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/wildlife_reserve.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Mountains&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/mountains.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Culture \u0026 History&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Historic site&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/historic_site.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Art Gallery&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/art_gallery.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Religious Site&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/religious_site.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Museum&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/museum.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Monuments&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/monuments.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Architectural sites&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/architectural_sites.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Libraries&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/libraries.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Mosques&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history/mosques.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Entertainment&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Entertainment Center&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/entertainment_center.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Gaming Center&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/gaming_center.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Concerts \u0026 shows&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/concerts_shows.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Sky Bridge&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/sky_bridge.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Cinema&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/cinema.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Exhibition&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/exhibition.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Comedy Show&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/comedy_show.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Concert halls&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/concert_halls.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Theater&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/theater.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;opera&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/opera.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Amusement parks&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment/amusement_parks.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Food \u0026 Drink&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Restaurant&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;International kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/international_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Saudi kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/saudi_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Asian kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/asian_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Italian kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/italian_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Indian kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/indian_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;French kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/french_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;American kitchen&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/american_kitchen.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;BBQ&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/restaurant/bbq.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Cafe&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/cafe.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Cafe&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/cafe/cafe.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Tea House&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/cafe/tea_house.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Deserts&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/deserts.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;icecream&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/deserts/icecream.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Western Sweets&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/deserts/western_sweets.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Traditional Sweets&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/deserts/traditional_sweets.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Bakery&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/deserts/bakery.svg&#34;
+					  },
+					  {
+						&#34;title&#34;: &#34;Juices&#34;,
+						&#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/food_drink/juices.svg&#34;
+					  }
+					]
+				  }"></div>
+		</div>
+		<div class="rightCol1 order-1 md:order-2 !mb-0">
+			<div data-component="Anchors" data-props='{
+						"title": "JUMP TO URLS",
+						"line":"true",
+						"showInResponsive" : true,
+						"links": [
+						{
+							"number":"01",
+							"hideMap":false,
+							"url":"/content/sauditourism/en/all-destinations.html",
+							"urlWithExtension":"/content/sauditourism/en/all-destinations.html",
+							"urlSlingExporter":"/AtomsShowcase",
+							"targetInNewWindow":true,
+							"text":"All destinations",
+							"appType":"calendar",
+							"scroll":false
+					 },
+					 {
+						"number":"01",
+						"hideMap":false,
+						"url":"/content/sauditourism/en/all-destinations.html",
+						"urlWithExtension":"/content/sauditourism/en/all-destinations.html",
+						"urlSlingExporter":"/AtomsShowcase",
+						"targetInNewWindow":true,
+						"text":"All destinations",
+						"appType":"calendar",
+						"scroll":false
+				 },
+				 {
+					"number":"01",
+					"hideMap":false,
+					"url":"/content/sauditourism/en/all-destinations.html",
+					"urlWithExtension":"/content/sauditourism/en/all-destinations.html",
+					"urlSlingExporter":"/AtomsShowcase",
+					"targetInNewWindow":true,
+					"text":"All destinations",
+					"appType":"calendar",
+					"scroll":false
+			 },
+			 {
+				"number":"01",
+				"hideMap":false,
+				"url":"/content/sauditourism/en/all-destinations.html",
+				"urlWithExtension":"/content/sauditourism/en/all-destinations.html",
+				"urlSlingExporter":"/AtomsShowcase",
+				"targetInNewWindow":true,
+				"text":"All destinations",
+				"appType":"calendar",
+				"scroll":false
+		 }
+						]
+					}'></div>
+		</div>
+	</div>
+
+</body>
+
+</html>

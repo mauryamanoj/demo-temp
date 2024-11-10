@@ -1,0 +1,68 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Nov 08 2019 14:10:13 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "brand-page-hero",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:created": "Fri Nov 08 2019 14:10:13 GMT+1100",
+    "cq:lastModified": "Fri Nov 08 2019 15:18:57 GMT+1100",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "h01_brand_page_hero": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Fri Nov 08 2019 14:10:26 GMT+1100",
+          "jcr:lastModified": "Fri Nov 08 2019 15:18:57 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/h01-brand-page-hero/v1/h01-brand-page-hero",
+          "slides": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitle": "Subtitle1",
+              "title": "Title1",
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "url": "/content/sauditourism/ar",
+                "copy": "Link1",
+                "targetInNewWindow": "false"
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/sauditourism/card-01.jpg",
+                "alt": "alt1",
+                "mobileImageReference": "/content/dam/sauditourism/card-mobile-02.jpg"
+              }
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitle": "Subtitle2",
+              "title": "Title2",
+              "videoPath": "/content/dam/sauditourism/hero/brand-hero.mp4",
+              "videoAudio": "false",
+              "interactiveVideo": "false",
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "url": "/content/sauditourism/en",
+                "copy": "Link2",
+                "targetInNewWindow": "false"
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

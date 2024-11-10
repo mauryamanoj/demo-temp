@@ -1,0 +1,118 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "e2469e51-0e90-4c9a-9e68-2e5a79857f7f",
+  "jcr:predecessors": [
+    "f88486e1-3f86-48a1-a5a0-72f167b1ceae"
+  ],
+  "jcr:created": "Sun Nov 26 2023 20:55:50 GMT+0100",
+  "jcr:baseVersion": "f88486e1-3f86-48a1-a5a0-72f167b1ceae",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "c5f5361d-a4a6-442d-bc87-1380463bd380",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title": "Story 2",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicated": "Wed Nov 01 2023 11:04:51 GMT+0000",
+    "contentFragment": true,
+    "cq:name": "story-2",
+    "jcr:lastModified": "Tue Nov 28 2023 18:32:41 GMT+0100",
+    "lastFragmentSave": "Tue Nov 28 2023 18:32:41 GMT+0100",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/stories",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Nov 26 2023 20:55:50 GMT+0100"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/story",
+        "@stringArray@variations": [],
+        "string@s7image": "https://s7e5a.scene7.com/is/image/scthacc/story2",
+        "string@aboutDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>\n<p>&nbsp;</p>\n<p>For more information, visit [example.com](https://www.example.com).</p>\n",
+        "string@title": "Jedda stories",
+        "boolean@hideFavorite": false,
+        "jcr:uuid": "a8d0e1ea-271a-4b98-a054-b8802051f4e7",
+        "boolean@showReadMore": false,
+        "stringArray@images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/cf/en/fady_and_bob/fady/contact-us/contact us.png\",\"s7image\":\"https://scth.scene7.com/is/image/scthacc/contact us\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"s7image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"video\",\"image\":\"\",\"s7image\":\"\",\"video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"s7video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"thumbnail\":\"/content/dam/sauditourism/saudi-winter.jpg\",\"featureInSubStory\":\"true\"}"
+        ]
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/story",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified": "Mon Nov 27 2023 00:22:44 GMT+0100",
+        "showReadMore": false,
+        "aboutDescription@LastModified": "Tue Nov 28 2023 16:33:03 GMT+0100",
+        "destination": "/content/dam/sauditourism/cf/en/destinations/makkah",
+        "lat@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "authorDetails@LastModified": "Wed Nov 01 2023 10:31:23 GMT+0000",
+        "images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/cf/en/fady_and_bob/fady/contact-us/contact us.png\",\"s7image\":\"https://scth.scene7.com/is/image/scthacc/contact us\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"s7image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"\"}",
+          "{\"type\":\"video\",\"image\":\"\",\"s7image\":\"\",\"video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"s7video\":\"/content/dam/sauditourism/Journey through time.mp4\",\"thumbnail\":\"/content/dam/sauditourism/saudi-winter.jpg\",\"featureInSubStory\":\"true\"}"
+        ],
+        "hideFavorite@LastModified": "Thu Oct 19 2023 08:21:17 GMT+0000",
+        "subtitle@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "lng@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "aboutDescription@ContentType": "text/html",
+        "image@LastModified": "Thu Oct 19 2023 08:21:17 GMT+0000",
+        "authorDetails@ContentType": "text/html",
+        "pagePath@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "placeholder@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "showReadMore@LastModified": "Wed Nov 01 2023 10:31:23 GMT+0000",
+        "destination@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "tag": [
+          "sauditourism:story/natural-site"
+        ],
+        "image": "/content/dam/nature-page/LatestStories2.png",
+        "title": "Jedda stories",
+        "aboutTitle@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "s7image@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "showFavorite@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "s7image": "https://s7e5a.scene7.com/is/image/scthacc/story2",
+        "pagePath": "/content/sauditourism/en/Newsletter-2022-APAC",
+        "cq:tags": [
+          "sauditourism:story/natural-site"
+        ],
+        "tag@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "aboutDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>\n<p>&nbsp;</p>\n<p>For more information, visit [example.com](https://www.example.com).</p>\n",
+        "hideFavorite": false,
+        "images@LastModified": "Tue Nov 28 2023 18:32:41 GMT+0100"
+      }
+    }
+  }
+}

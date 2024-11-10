@@ -1,0 +1,86 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"48ad4e90-47cd-4be3-ba4c-06f488264c39",
+  "jcr:predecessors":[
+    "0c9b4b22-c20b-4e39-abaf-9acb8041dcc5"
+  ],
+  "jcr:created":"Tue Oct 10 2023 00:11:01 GMT+0200",
+  "jcr:baseVersion":"0c9b4b22-c20b-4e39-abaf-9acb8041dcc5",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"bf823b8e-96d1-4320-8c07-34b471c03e37",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:title":"attraction1",
+    "jcr:lastModifiedBy":"admin",
+    "contentFragment":true,
+    "cq:name":"attraction1",
+    "jcr:lastModified":"Tue Oct 10 2023 00:53:22 GMT+0200",
+    "lastFragmentSave":"Tue Oct 10 2023 00:53:22 GMT+0200",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/attractions",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Tue Oct 10 2023 00:11:01 GMT+0200"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/attraction",
+        "@stringArray@variations":[
+
+        ],
+        "string@title":"jeddahAttraction",
+        "string@s7image1":"/content/dam/sauditourism/favicon.png",
+        "string@s7image2":"/content/dam/sauditourism/favicon.png",
+        "string@s7image3":"/content/dam/sauditourism/favicon.png",
+        "stringArray@questionsAnswers":[
+          "{\"question\":\"QuestionA\",\"answer\":\"ResponseA\"}",
+          "{\"question\":\"QuestionB\",\"answer\":\"ResponseB\"}",
+          "{\"question\":\"\",\"answer\":\"\"}"
+        ],
+        "double@lat":21.54238,
+        "double@lng":39.19797,
+        "jcr:uuid":"19a1d80b-603a-4c67-8a3d-294b124de664"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/attraction",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "qaTitle":"QA Title",
+        "questionsAnswers":[
+          "{\"question\":\"QuestionA CD\",\"answer\":\"ResponseA CF\"}",
+          "{\"question\":\"QuestionB\",\"answer\":\"ResponseB\"}",
+          "{\"question\":\"\",\"answer\":\"\"}"
+        ],
+        "qaHideReadMore":true,
+        "qaReadMoreLabel":"Read More",
+        "qaReadLessLabel":"Read Less"
+      }
+    }
+  }
+}

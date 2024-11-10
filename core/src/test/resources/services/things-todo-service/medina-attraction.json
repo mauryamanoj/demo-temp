@@ -1,0 +1,151 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"13f6f872-c1b1-4e1e-862d-7b6bfa008ba5",
+  "jcr:predecessors":[
+    "045158cd-0c1d-4d3a-a208-81c157fbe57e"
+  ],
+  "jcr:created":"Wed Oct 18 2023 18:06:12 GMT+0200",
+  "jcr:baseVersion":"045158cd-0c1d-4d3a-a208-81c157fbe57e",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"584c7d24-2386-4e8c-bc7d-ebdf2140ee50",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:mixinTypes":[
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title":"Medina Attraction",
+    "cq:lastReplicationAction":"Activate",
+    "cq:lastReplicatedBy":"telhamdouni-c@sta.gov.sa",
+    "jcr:lastModifiedBy":"telhamdouni-c@sta.gov.sa",
+    "cq:lastReplicated":"Wed Oct 18 2023 06:34:41 GMT+0000",
+    "jcr:description":"Desc",
+    "contentFragment":true,
+    "cq:name":"medina-attraction",
+    "jcr:lastModified":"Wed Oct 18 2023 06:27:56 GMT+0000",
+    "lastFragmentSave":"Wed Oct 18 2023 06:27:56 GMT+0000",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/attractions",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Oct 29 2023 08:08:20 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/attraction",
+        "@stringArray@variations":[
+
+        ],
+        "string@alt":"av",
+        "boolean@hideReadMore":false,
+        "string@s7image":"/content/dam/1920x1080IMAGE_08.png",
+        "string@title":"header",
+        "string@s7image1":"https://s7e5a.scene7.com/is/image/scth/16520356267369094706",
+        "string@s7image2":"https://s7e5a.scene7.com/is/image/scth/16526984056478312589",
+        "string@s7image3":"https://s7e5a.scene7.com/is/image/scth/16545149221184857235",
+        "double@lat":1.0,
+        "double@lng":1.0,
+        "boolean@hideShare":false,
+        "boolean@hideFavorite":true,
+        "jcr:uuid":"93166ad1-2999-4727-b7fb-813ab936b123",
+        "string@alertColor":"Grey"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ],
+      "cq:tags":[
+        "sauditourism:cityCategories/adventures"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/attraction",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "hideReadMore@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "locationValue":"/content/dam/sauditourism/cf/en/destinations/al-ahsa",
+        "s7image1@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "getDirectionsLabel@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "locationValue@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "aboutDescription@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "hideShare@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "lat@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "image1":"/content/dam/16520356267369094706.jpg",
+        "image2":"/content/dam/16526984056478312589.jpg",
+        "image3":"/content/dam/16545149221184857235.jpg",
+        "hideFavorite@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "s7image1":"https://s7e5a.scene7.com/is/image/scth/16520356267369094706",
+        "s7image2":"https://s7e5a.scene7.com/is/image/scth/16526984056478312589",
+        "s7image3":"https://s7e5a.scene7.com/is/image/scth/16545149221184857235",
+        "subtitle@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "lng@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "readMoreLabel@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "image@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "alt@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "pagePath@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "placeholder@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "agesValue@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "hideReadMore":false,
+        "image3@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "agesLabel@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "alert@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "alt":"av",
+        "lat":1.0,
+        "lng":1.0,
+        "tag":[
+          "sauditourism:attraction/museum"
+        ],
+        "accessibilityValue@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "image":"/content/dam/1920x1080IMAGE_08.png",
+        "title":"header",
+        "alert@ContentType":"text/html",
+        "image2@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "aboutTitle@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "s7image@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "question@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "accessibilityLabel@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "qaTitle@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "s7image":"/content/dam/1920x1080IMAGE_08.png",
+        "authorText@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "image1@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "hideShare":false,
+        "pagePath":"/content/sauditourism/en/arabian-winter/partners",
+        "categories@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "questionAnswer@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "cq:tags":[
+          "sauditourism:attraction/museum"
+        ],
+        "tag@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "idealForLabel@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "authorCtaLink@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "s7image3@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "hideFavorite":true,
+        "informationLabel@LastModified":"Wed Oct 18 2023 06:26:20 GMT+0000",
+        "alertColor@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000",
+        "alertColor":"Grey",
+        "s7image2@LastModified":"Wed Oct 18 2023 06:27:55 GMT+0000"
+      }
+    }
+  }
+}

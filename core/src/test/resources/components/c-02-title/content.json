@@ -1,0 +1,24 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Mon Feb 08 2021 18:20:11 GMT+0100",
+  "mainTitle":"Title, Edit me",
+  "introDescription":"Description, Edit me",
+  "jcr:lastModified":"Sun Nov 27 2022 11:31:09 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/c02-title/v1/c02-title",
+  "cq:styleIds":[
+    "1573222264088"
+  ],
+  "heading":{
+    "jcr:primaryType":"nt:unstructured",
+    "analyticsDataCopy":"hotels",
+    "weight":"h3",
+    "text":"Hotels just for you"
+  },
+  "link":{
+    "jcr:primaryType":"nt:unstructured",
+    "url":"/content/sauditourism/en/offers",
+    "copy":"See More",
+    "targetInNewWindow":"false"
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Template"
+          allowedPaths="[/content/sauditourism(/.*)?]"
+          ranking="{Long}1">
+  <jcr:content
+      allowedPaths="[/content/sauditourism/\\w{2}/events(/.*)?]"
+      cq:templateType="/conf/sauditourism/settings/wcm/template-types/content-page"
+      jcr:description="Simple Event page for sauditourism"
+      jcr:primaryType="cq:PageContent"
+      jcr:title="T-16 Event Detail"
+      status="enabled"/>
+</jcr:root>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+  <jcr:content
+      cq:template="/conf/sauditourism/settings/wcm/templates/package-details"
+      jcr:primaryType="cq:PageContent"
+      sling:resourceType="sauditourism/components/structure/package-detail-page"
+      area="Riyadh"
+      copy="I am a description, edit me"
+      bannerImage="/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/featured-660x440.jpg"
+      headingLocationDetailType="h1"
+      headingshowHoursType="h1"
+      headingType="h1"
+      theme="teal"
+      title="I am a title, edit me">
+    <!-- Itinerary type must be always "booking" for all package pages, is not authored. -->
+    <h01-brand-page-hero
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="sauditourism/components/content/h01-brand-page-hero/v2/h01-brand-page-hero"
+        createItineraryLabel="Book Now"
+        itineraryType="booking"/>
+    <days-info
+        jcr:lastModified="{Date}2020-05-22T20:00:55.462+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="sauditourism/components/content/package/days">
+      <days jcr:primaryType="nt:unstructured">
+        <item0
+            jcr:primaryType="nt:unstructured"
+            image="/content/dam/sauditourism/placeholder.jpg"
+            title="Day 1">
+          <details jcr:primaryType="nt:unstructured">
+            <item0
+                jcr:primaryType="nt:unstructured"
+                text="edit me"/>
+          </details>
+        </item0>
+      </days>
+    </days-info>
+    <important-info
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="sauditourism/components/content/package/package-info"
+        icon="check"
+        title="Important Information">
+      <details jcr:primaryType="nt:unstructured">
+        <item0
+            jcr:primaryType="nt:unstructured"
+            text="info1, edit me"/>
+      </details>
+    </important-info>
+    <package-include
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="sauditourism/components/content/package/package-info"
+        icon="ticket"
+        title="Package includes">
+      <details jcr:primaryType="nt:unstructured">
+        <item0
+            jcr:primaryType="nt:unstructured"
+            text="info1, edit me"/>
+      </details>
+    </package-include>
+    <package-exclude
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="sauditourism/components/content/package/package-info"
+        icon="ticket-no"
+        title="Package excludes">
+      <details jcr:primaryType="nt:unstructured">
+        <item0
+            jcr:primaryType="nt:unstructured"
+            text="info1, edit me"/>
+      </details>
+    </package-exclude>
+    <price-info
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="sauditourism/components/content/package/package-info"
+        icon="price"
+        title="Price per Person">
+    </price-info>
+  </jcr:content>
+</jcr:root>

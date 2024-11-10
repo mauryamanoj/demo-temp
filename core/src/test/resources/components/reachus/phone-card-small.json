@@ -1,0 +1,18 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Wed Nov 15 2023 09:55:03 GMT+0100",
+  "cardType": "PHONE_CARD",
+  "title": "Police number in Riyadh, Makkah,  and Eastern provinces",
+  "jcr:lastModified": "Wed Nov 15 2023 09:55:22 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/reach-us",
+  "displayForm": "SMALL",
+  "phoneCard": {
+    "jcr:primaryType": "nt:unstructured",
+    "offlineLabel": "Off line",
+    "phoneNumber": "+11111",
+    "callUsCta": "Call Us",
+    "liveLabel": "Live"
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2020-02-03T12:52:00.782+01:00"
+    cq:lastReplicatedBy="maren.dethlefsen"
+    cq:lastReplicationAction="Activate"
+    jcr:lastModified="{Date}2019-12-18T17:48:37.743+01:00"
+    jcr:lastModifiedBy="chloe.winchester"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Digital"
+    jcr:title.ar="رقمي"
+    jcr:title.de="Digital"
+    jcr:title.es="Digital"
+    jcr:title.fr="Digital"
+    jcr:title.ja="デジタル"
+    jcr:title.ru="Цифровые технологии"
+    jcr:title.zh="数码"
+    sling:resourceType="cq/tagging/components/tag"/>

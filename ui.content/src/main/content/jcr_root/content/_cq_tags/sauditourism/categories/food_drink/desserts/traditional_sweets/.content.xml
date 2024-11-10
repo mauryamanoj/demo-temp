@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Traditional Sweets"
+          jcr:title.ar="حلويات تقليدية"
+          jcr:title.de="Traditionelle Süßigkeiten"
+          jcr:title.es="Dulces tradicionales"
+          jcr:title.fr="Douceurs traditionnelles"
+          jcr:title.ja="伝統的なお菓子"
+          jcr:title.ru="Традиционные сладости"
+          jcr:title.zh="传统糖果"
+          sling:resourceType="cq/tagging/components/tag"/>

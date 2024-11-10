@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Saudi Kitchen"
+          jcr:title.ar="مطبخ سعودي"
+          jcr:title.de="Saudi-Küche"
+          jcr:title.es="Cocina saudita"
+          jcr:title.fr="Cuisine saoudienne"
+          jcr:title.ja="サウジキッチン"
+          jcr:title.ru="Саудовская кухня"
+          jcr:title.zh="沙特厨房"
+          sling:resourceType="cq/tagging/components/tag"/>

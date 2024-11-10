@@ -1,0 +1,120 @@
+package com.saudi.tourism.core.models.components.events.eventdatewidget.v1;
+
+import com.day.cq.wcm.api.PageManager;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.annotations.Expose;
+import com.saudi.tourism.core.utils.gson.IsoCalendarAdapter;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.Self;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+
+import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+import java.util.Calendar;
+
+@Model(
+    adaptables = Resource.class,
+    defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Data
+@Slf4j
+public class EventDateWidgetModel {
+
+  /**
+   * Component Id.
+   */
+  @ValueMapValue
+  @Expose
+  private String componentId;
+
+  /**
+   * Resource Resolver.
+   */
+  @Inject
+  private ResourceResolver resourceResolver;
+
+  /**
+   * Current resource.
+   */
+  @Self
+  private Resource currentResource;
+
+  /**
+   * Title.
+   */
+  @Expose
+  private String title;
+
+  /**
+   * start date of event.
+   */
+  @Expose
+  private Calendar startDate;
+  /**
+   * End date of event.
+   */
+  @Expose
+  private Calendar endDate;
+
+  /**
+   * Coming Soon Label.
+   */
+  @Expose
+  private String comingSoonLabel;
+
+  /**
+   * Expired  Label.
+   */
+  @Expose
+  private String expiredLabel;
+
+  @PostConstruct
+  void init() {
+    final var pageManager = resourceResolver.adaptTo(PageManager.class);
+    final var currentPage = pageManager.getContainingPage(currentResource);
+    if (currentPage == null) {
+      return;
+    }
+
+    final var cfPath = currentPage.getProperties().get("referencedFragmentPath", String.class);
+    if (StringUtils.isEmpty(cfPath)) {
+      return;
+    }
+
+    final var cfResource = resourceResolver.getResource(cfPath);
+    if (cfResource == null) {
+      return;
+    }
+
+    final var cfModel = cfResource.adaptTo(EventDateWidgetCFModel.class);
+    if (cfModel == null) {
+      return;
+    }
+
+    title = cfModel.getTitle();
+    startDate = cfModel.getStartDate();
+    endDate = cfModel.getEndDate();
+    comingSoonLabel = cfModel.getComingSoonLabel();
+    expiredLabel = cfModel.getExpiredLabel();
+
+
+  }
+
+  @JsonIgnore
+  public String getJson() {
+    GsonBuilder gsonBuilder = new GsonBuilder();
+    gsonBuilder
+        .excludeFieldsWithoutExposeAnnotation()
+        .setPrettyPrinting()
+        .registerTypeHierarchyAdapter(Calendar.class, new IsoCalendarAdapter());
+    Gson gson = gsonBuilder.create();
+    return gson.toJson(this);
+  }
+}

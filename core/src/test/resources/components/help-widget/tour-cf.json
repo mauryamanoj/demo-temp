@@ -1,0 +1,58 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:versionHistory": "dbb754f0-d8f4-4469-9ec7-12e833fe631a",
+  "jcr:predecessors": [
+    "1b3a9eeb-3a32-4cd9-98d5-4abf7d173d3a"
+  ],
+  "jcr:baseVersion": "1b3a9eeb-3a32-4cd9-98d5-4abf7d173d3a",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "92dc6b00-08e0-475c-8008-90a4bd0fdb3e",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "tour-cfm-1",
+    "jcr:lastModifiedBy": "admin",
+    "contentFragment": true,
+    "cq:name": "tour-cfm-1",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/tours",
+    "renditions": {
+      "jcr:primaryType": "nt:folder"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ]
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/tour",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "helpWidgetHeading": "Do You Need Help",
+        "helpWidgetDescription": "<p>Do you have a question or need more information ?</p>",
+        "helpWidgetCtaLabel": "Get More Help",
+        "helpWidgetCtaLink": "/content/sauditourism/page"
+      }
+    }
+  }
+}

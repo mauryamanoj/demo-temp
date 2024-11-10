@@ -1,0 +1,10 @@
+<sly data-sly-test="${wcmmode.preview || wcmmode.edit}">
+    <div class="app-main">
+        <div class="app-main-title">App Translation Page</div>
+        <div class="app-main-intro">Add below the list of key/values</div>
+    </div>
+
+    <sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+         data-sly-repeat.child="${templatedContainer.structureResources}"
+         data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+</sly>

@@ -1,0 +1,4 @@
+{
+    "title": "This is text description box",
+    "description": "We can pass props here in JSON format to component"
+}

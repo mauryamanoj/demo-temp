@@ -1,0 +1,18 @@
+<sly data-sly-use.data="com.saudi.tourism.core.models.app.page.AppHomepage"></sly>
+<h3> App ${resource.name}</h3> <br>
+<ul data-sly-list ="${data.travelEssentials || data.partners || data.promotionsHome}">
+	<h4> Card${itemList.count} Config: </h4>
+		<li>
+			<h5> Title - ${item.title}</h5>
+			<h5> Description - ${item.description}</h5>
+			<h5> Background image path - ${item.imagePath}</h5>
+            <h5> CTA text - ${item.ctaText}</h5>
+			<h5> Link type - ${item.linkType}</h5>
+			<h5> CTA or Card Link - ${item.link}</h5>
+			<h5> Icon path - ${item.iconPath}</h5>
+            <h5> Type - ${item.type}</h5>
+            <h5> Id - ${item.id}</h5>
+		</li>
+	<br>
+</ul>
+

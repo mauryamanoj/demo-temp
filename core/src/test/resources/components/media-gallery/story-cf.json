@@ -1,0 +1,243 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "72dcea9d-1aaf-4f53-b7d3-3ff8b6f26771",
+  "jcr:predecessors": [
+    "05ab16f2-f1d8-4977-8c0d-c7c73ecb70d7"
+  ],
+  "jcr:created": "Sun Nov 26 2023 20:55:50 GMT+0100",
+  "jcr:baseVersion": "05ab16f2-f1d8-4977-8c0d-c7c73ecb70d7",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "d4366583-6e32-404e-adfb-b20e83ec68aa",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title": "story1",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "telhamdouni-c@sta.gov.sa",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicated": "Thu Nov 16 2023 13:28:59 GMT+0000",
+    "contentFragment": true,
+    "cq:name": "story1",
+    "jcr:lastModified": "Mon Dec 04 2023 12:21:18 GMT+0100",
+    "lastFragmentSave": "Mon Dec 04 2023 12:21:18 GMT+0100",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/stories",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Nov 26 2023 20:55:50 GMT+0100"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/story",
+        "double@meetingPointLat": 24.59717865150228,
+        "double@meetingPointLng": 46.69508869999306,
+        "@stringArray@variations": [],
+        "string@alt": "Alt Avatar",
+        "string@meetingPointHeader": "Meeting point",
+        "double@agesValueFrom": 2,
+        "boolean@qaHideReadMore": false,
+        "boolean@hideReadMore": false,
+        "string@s7image": "/content/dam/660x370_5.jpg",
+        "string@typeLabel": "type ",
+        "double@agesValueTo": 10,
+        "string@ticketPriceSuffix": "suff",
+        "string@title": "Horsing",
+        "string@informationLabel": "information",
+        "string@openNowLabel": "To",
+        "stringArray@timings": [
+          "{\"dayLabel\":\"Lundi\",\"startTimeLabel\":\"2023-11-15T08:00:53.025+01:00\",\"endTimeLabel\":\"2023-11-15T17:00:00.000+01:00\"}",
+          "{\"dayLabel\":\"Tuesday\",\"startTimeLabel\":\"2023-11-15T09:30:23.990+01:00\",\"endTimeLabel\":\"2023-11-15T22:30:35.636+01:00\"}",
+          "{\"dayLabel\":\"\",\"startTimeLabel\":\"\",\"endTimeLabel\":\"\"}"
+        ],
+        "string@locationLabel": "Riyadh",
+        "string@accessibilityLabel": "Accessibility",
+        "string@closeNowLabel": "Close",
+        "string@ticketPrice": "39",
+        "double@lat": 24.774265,
+        "double@lng": 46.738586,
+        "boolean@hideShare": false,
+        "boolean@hideFavorite": false,
+        "jcr:uuid": "bef89080-0e37-47ed-af2c-a93b0fcd0b67",
+        "string@meetingPointLabel": "Location",
+        "string@meetingPointValue": "riyadh",
+        "string@languageLabel": "Laguages",
+        "string@openingHoursLabel": "Opening Hours .",
+        "string@getDirectionsLabel": "Get Directions",
+        "string@alertColor": "Grey",
+        "string@toLabel": "To",
+        "string@agesLabel": "Ages ",
+        "string@ticketType": "getTicket",
+        "string@durationLabel": "3-6",
+        "string@durationValue": "type ",
+        "stringArray@images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"s7image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"Najrane\",\"featureInSubStory\":\"\"}"
+        ]
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/story",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified": "Sun Nov 26 2023 23:13:41 GMT+0100",
+        "getDirectionsLabel": "Get Directions",
+        "typeLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "durationLabel@LastModified": "Thu Nov 16 2023 10:53:38 GMT+0000",
+        "s7video@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "ticketPriceSuffix": "suff",
+        "helpWidgetHeading@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "hideReadMore@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "ticketPriceSuffix@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "locationLabel": "Riyadh",
+        "openingHoursLabel@LastModified": "Thu Nov 16 2023 11:35:34 GMT+0000",
+        "locationValue": "/content/dam/sauditourism/cf/en/destinations/al-ahsa",
+        "getDirectionsLabel@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "ticketDetails@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "agesLabel": "Ages ",
+        "agesValueFrom@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "openNowLabel@LastModified": "Thu Nov 16 2023 10:53:38 GMT+0000",
+        "locationValue@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "languageValue@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "aboutDescription@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "hideShare@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "closeNowLabel": "Close",
+        "lat@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "helpWidgetCTALabel@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "timings": [
+          "{\"dayLabel\":\"Lundi\",\"startTimeLabel\":\"2023-11-15T08:00:53.025+01:00\",\"endTimeLabel\":\"2023-11-15T17:00:00.000+01:00\"}",
+          "{\"dayLabel\":\"Tuesday\",\"startTimeLabel\":\"2023-11-15T09:30:23.990+01:00\",\"endTimeLabel\":\"2023-11-15T22:30:35.636+01:00\"}",
+          "{\"dayLabel\":\"\",\"startTimeLabel\":\"\",\"endTimeLabel\":\"\"}"
+        ],
+        "images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"s7image\":\"/content/dam/sauditourism/horsing-hobby.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"Najrane\",\"featureInSubStory\":\"\"}"
+        ],
+        "locationLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "languageLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "toLabel": "To",
+        "hideFavorite@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "timings@LastModified": "Mon Dec 04 2023 12:21:18 GMT+0100",
+        "subtitle@LastModified": "Sun Nov 26 2023 23:13:41 GMT+0100",
+        "lng@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "meetingPointLat": 24.59717865150228,
+        "meetingPointLng": 46.69508869999306,
+        "meetingPointHeader@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "helpWidgetCTALink@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "readMoreLabel@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "ticketDetails@ContentType": "text/html",
+        "meetingPointHeader": "Meeting point",
+        "ticketsPriceSuffix@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "image@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "alt@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "placeholder@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "agesValue@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "languageLabel": "Laguages",
+        "languageValue": [
+          "sauditourism:language/English",
+          "sauditourism:language/Arabic",
+          "sauditourism:language/German"
+        ],
+        "hideReadMore": false,
+        "meetingPointLabel": "Location",
+        "meetingPointValue": "riyadh",
+        "agesLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "openNowLabel": "To",
+        "ticketsCtaLink@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "meetingPointValue@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "alert@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "alt": "Alt Avatar",
+        "lat": 24.774265,
+        "lng": 46.738586,
+        "tag": [
+          "workflow:"
+        ],
+        "openingHoursLabel": "Opening Hours .",
+        "accessibilityValue@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "image": "/content/dam/660x370_5.jpg",
+        "title": "Horsing",
+        "durationLabel": "3-6",
+        "durationValue": "type ",
+        "qaHideReadMore": false,
+        "qaHideReadMore@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "meetingPointLabel@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "alert@ContentType": "text/html",
+        "aboutTitle@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "s7image@LastModified": "Sun Nov 26 2023 23:13:41 GMT+0100",
+        "ticketPrice": "39",
+        "accessibilityLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "qaTitle@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "typeLabel": "type ",
+        "typeValue": [
+          "sauditourism:audience/children",
+          "sauditourism:audience/families"
+        ],
+        "agesValueTo@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "s7image": "/content/dam/660x370_5.jpg",
+        "closeNowLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "authorText@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "hideShare": false,
+        "categories@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "questionAnswer@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "cq:tags": [
+          "sauditourism:audience/families",
+          "sauditourism:audience/children",
+          "sauditourism:language/Arabic",
+          "sauditourism:accessibility/ramps-elevators",
+          "workflow:",
+          "sauditourism:language/German",
+          "sauditourism:language/English"
+        ],
+        "helpWidgetDescription@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "agesValueFrom": 2,
+        "tag@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "toLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "accessibilityLabel": "Accessibility",
+        "accessibilityValue": [
+          "sauditourism:accessibility/ramps-elevators"
+        ],
+        "idealForLabel@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "authorCtaLink@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "agesValueTo": 10,
+        "ticketType@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "ticketPrice@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "meetingPointLat@LastModified": "Wed Nov 08 2023 11:31:26 GMT+0000",
+        "hideFavorite": false,
+        "ticketsCtaLabel@LastModified": "Wed Nov 08 2023 09:14:13 GMT+0000",
+        "informationLabel@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "informationLabel": "information",
+        "images@LastModified": "Mon Dec 04 2023 12:21:18 GMT+0100",
+        "alertColor@LastModified": "Wed Nov 08 2023 09:18:43 GMT+0000",
+        "alertColor": "Grey",
+        "typeValue@LastModified": "Wed Nov 15 2023 13:54:47 GMT+0000",
+        "meetingPointLng@LastModified": "Wed Nov 08 2023 11:31:26 GMT+0000",
+        "durationValue@LastModified": "Thu Nov 16 2023 10:53:38 GMT+0000",
+        "ticketType": "getTicket"
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<div data-sly-resource="${'h01-brand-page-hero'
+@ resourceType='/apps/sauditourism/components/content/h01-brand-page-hero/v2/h01-brand-page-hero',
+  wcmmode='disabled'}"></div>
+
+<sly data-sly-use.packageModel="com.saudi.tourism.core.models.components.packages.PackageDetailSlingModel"
+     data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html"
+     data-sly-use.ornaments03BrushesTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-03-brushes.html"
+      data-sly-set.tourHighlightsBackground="solid"></sly>
+<div class="tour-highlights component-wrapper ${tourHighlightsBackground == 'solid' ? 'solid' : ''}"
+     data-component="tour-highlights"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+  <div class="highlights-wrapper component-wrapper">
+    <sly data-sly-list="${packageModel.filters}">
+      <div class="highlight">
+        <div class="highlight-title">
+          <div class="highlight-icon icon-wrapper">
+            <sly data-sly-call="${iconTemplate.icon @ iconName=item.type}"></sly>
+          </div>
+          <span class="title label-text">${item.filterTitle}</span>
+        </div>
+        <span class="information copy">${item.placeHolderText}</span>
+      </div>
+    </sly>
+  </div>
+  <div class="ornament-wrapper-bottom"
+       data-sly-call="${ornaments03BrushesTemplate.ornaments03Brushes @ orientation='horizontal',
+                      direction='right', id='05', class='brush-ornament'}">
+  </div>
+</div>
+
+<div class="title-intro-with-subtitle component-wrapper" data-component="title-intro-with-subtitle">
+  <div class="title-subtitle-wrapper">
+    <h2 class="title">${pageProperties.jcr:title}</h2>
+  </div>
+  <div class="paragraph-wrapper">
+    <p class="paragraph">${pageProperties.copy}</p>
+  </div>
+</div>
+
+<div
+    data-sly-resource="${'days-info'
+     @resourceType='/apps/sauditourism/components/content/package/days'}"></div>
+<br>
+
+<div class="mod-info-10-tour-detail-information" data-component="mod-info-10-tour-detail-information">
+  <div class="component-wrapper">
+    <div
+        data-sly-resource="${'package-include'
+        @resourceType='/apps/sauditourism/components/content/package/package-info', decoration=false}"></div>
+    <div
+        data-sly-resource="${'package-exclude'
+        @resourceType='/apps/sauditourism/components/content/package/package-info', decoration=false}"></div>
+    <div
+        data-sly-resource="${'important-info'
+        @resourceType='/apps/sauditourism/components/content/package/package-info', decoration=false}"></div>
+    <div
+        data-sly-test="${packageModel.packageDetail.price}"
+        data-sly-resource="${'price-info'
+        @resourceType='/apps/sauditourism/components/content/package/package-info', decoration=false}"></div>
+  </div>
+  <div class="ornament-wrapper"
+       data-sly-call="${ornaments02BarsTemplate.ornaments02Bars @ orientation='vertical',
+              patternDefault='05B'}">
+  </div>
+</div>
+<!--
+<div id="vendor"
+    data-sly-resource="${'packages-signup'
+    @resourceType='/apps/sauditourism/components/content/package/packages-signup', wcmmode='disabled'}"></div>
+-->
+<div data-sly-resource="${'package-slider'
+      @resourceType='/apps/sauditourism/components/content/c27-teaser-with-cards/v0/c27-teaser-with-cards', wcmmode='disabled'}"></div>
+
+<!--Removing the essential links as it is for winter <div data-sly-resource="${'essential-links'
+    @resourceType='/apps/sauditourism/components/content/essential-links', wcmmode='disabled'}"></div>
+ -->

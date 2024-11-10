@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="App generic cards config"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <genericCards
+                        jcr:description="Cards"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Generic Cards"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <cards
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Cards">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                    name="./cards">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Card"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Title"
+                                                    name="./title"/>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Description"
+                                                    name="./description"/>
+                                                <imagepath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Image path"
+                                                    name="./imagePath"
+                                                    rootPath="/content/dam"/>
+                                                <ctaTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Cta Text"
+                                                    name="./ctaText"/>
+                                                <linktype
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Link Type"
+                                                    name="./linkType">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <external
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="External"
+                                                            value="external"/>
+                                                        <Internal
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Internal"
+                                                            value="internal"/>
+                                                        <travel-essentials
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Travel Essential"
+                                                                value="travel-essential"/>
+                                                        <visa-regulations
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Visa Regulations"
+                                                                value="visa-regulations"/>
+                                                    </items>
+                                                </linktype>
+                                                <link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Card or CTA Link"
+                                                    fieldDescription="This field to configure Card or CTA link"
+                                                    name="./link"
+                                                    rootPath="/content/sauditourism"/>
+                                                <iconpath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Icon Path"
+                                                    name="./iconPath"
+                                                    rootPath="/content/dam"/>
+                                                <type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Card Type"
+                                                    name="./type">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <select
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Select"
+                                                            value=""
+                                                            selected="{Boolean}true"/>
+                                                        <travel-essentials
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Travel Essential"
+                                                            value="travel-essential"/>
+                                                    </items>
+                                                </type>
+                                                <id
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Identifier"
+                                                    name="./id"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </cards>
+                        </items>
+                    </genericCards>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

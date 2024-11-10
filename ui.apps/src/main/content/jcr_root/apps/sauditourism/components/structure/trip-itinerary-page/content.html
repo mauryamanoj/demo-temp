@@ -1,0 +1,12 @@
+<div class="container" data-sly-unwrap="${wcmmode.disabled}"
+     data-sly-set.tripPlanRelativePath="root/trip_detail">
+  <div class="root responsivegrid">
+
+    <!--/* Trip Plan Component */-->
+    <sly data-sly-resource="${ @ path=tripPlanRelativePath, decorationTagName='div'}"></sly>
+
+    <sly data-sly-resource="${'root/responsivegrid' @
+         resourceType='wcm/foundation/components/responsivegrid',
+         decorationTagName='div'}"></sly>
+  </div>
+</div>

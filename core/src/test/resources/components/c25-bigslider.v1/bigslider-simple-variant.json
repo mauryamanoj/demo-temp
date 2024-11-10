@@ -1,0 +1,68 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Wed Jun 29 2022 16:24:27 GMT+0200",
+  "variant": "simple",
+  "jcr:lastModified": "Sun Jul 03 2022 15:27:50 GMT+0200",
+  "sling:resourceType": "sauditourism/components/content/c25-big-slider/v1/c25-big-slider",
+  "ornamentId": "07A",
+  "componentHeading": {
+    "jcr:primaryType": "nt:unstructured",
+    "heading": {
+      "jcr:primaryType": "nt:unstructured",
+      "weight": "h2",
+      "text": "Hello I'm a big slider"
+    },
+    "link": {
+      "jcr:primaryType": "nt:unstructured",
+      "url": "/content/sauditourism/en/about-e-visa",
+      "copy": "Open",
+      "targetInNewWindow": "true"
+    }
+  },
+  "authorSlides": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "I'm simple slide 1",
+      "title": "Simple Slide 1",
+      "hideSlide": "false",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "/content/sauditourism/en/events/-bar-masa",
+        "copy": "Link title 1",
+        "targetInNewWindow": "true"
+      },
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "s7fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "alt": "Alt text 1"
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "I'm hidden simple slide 2",
+      "title": "Simple Slide 2",
+      "hideSlide": "true",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "/content/sauditourism/en/events/-beast-",
+        "copy": "Link title 2",
+        "targetInNewWindow": "true"
+      },
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "s7fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "alt": "Alt text 1"
+      }
+    }
+  },
+  "image": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:lastModified": "Sun Jul 03 2022 15:27:50 GMT+0200"
+  }
+}

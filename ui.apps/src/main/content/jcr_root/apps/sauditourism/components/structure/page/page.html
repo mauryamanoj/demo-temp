@@ -1,0 +1,125 @@
+<sly data-sly-test="${pageProperties.noCacheHeaderCdn}" data-sly-include="no-cache-cdn.jsp"></sly>
+<sly data-sly-test="${pageProperties.noCacheHeaderDispatcher}"
+     data-sly-include="no-cache-dispatcher.jsp"></sly>
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+      data-sly-set.language="${inheritedPageProperties.jcr:language}"
+      data-sly-attribute.dir="${inheritedPageProperties.isRightToLeftLanguage ? inheritedPageProperties.isRightToLeftLanguage  : 'ltr'}"
+      data-sly-attribute.lang="${language}"
+      data-sly-set.selectors="${request.requestPathInfo.selectors}"
+      data-sly-set.isAppWebView="${'app' in selectors}"
+      data-sly-attribute.data-is-app="${isAppWebView ? 'true' : false}"
+      data-sly-set.pageTheme="${inheritedPageProperties.theme ? inheritedPageProperties.theme :'purple'}"
+      data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page"
+      data-sly-use.analyticData="com.saudi.tourism.core.models.common.PageAnalyticsModel"
+      data-sly-use.seo="com.saudi.tourism.core.models.seokeywords.SeoListModel"
+      data-sly-use.head="head.html"
+      data-sly-use.footer="footer.html">
+<head data-sly-call="${head.head @ page = page, language= language, seo= seo, analyticData=analyticData}"></head>
+
+<sly data-sly-test="${isAppWebView}" data-sly-list.selector="${selectors}">
+    <sly data-sly-test="${'theme-' in selector}"
+         data-sly-use.themeSelector="${'/apps/sauditourism/components/htl-helpers/theme-selector.js'
+          @ theme=selector, pageTheme=pageTheme}"
+         data-sly-set.themeColor="${themeSelector.theme}"></sly>
+</sly>
+
+<body
+    data-sly-attribute.data-page-theme="${isAppWebView && themeColor ? themeColor : pageTheme}" data-cmp-data-layer-enabled="${page.data ? true :false}">
+    <!-- adobeDataLayer script -->
+    <script data-dly-layer-enabled="${page.data}">
+        window.adobeDataLayer=window.adobeDataLayer || [];
+        adobeDataLayer.push({
+            page:JSON.parse("${page.data.json @context='scriptString'}"),
+            event:'cmpshow',
+            eventInfo:{
+                path:'page.${page.id @context="scriptString"}'
+            }
+        });
+    </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript data-sly-test="${language != 'zh'}">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQKR2QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="app">
+
+    <!-- partial: component/layout/app/app.hbs -->
+    <div data-component="app-root">
+        <sly data-sly-include="body.html"></sly>
+    </div>
+    <!-- / component/layout/app/app.hbs -->
+</div>
+<sly data-sly-call="${footer.footer @ page = page}"></sly>
+
+<!--chatbot script starts here-->
+<sly data-sly-use.chatBot="com.saudi.tourism.core.models.components.Chatbot">
+    <sly data-sly-test="${chatBot.enablePage}">
+        <sly data-sly-include="chatbot.html"></sly>
+        <sly data-sly-test="${language == 'en'}">
+            <script id="chatbot" src="https://sahib.visitsaudi.com/chatbot.js" hostLanguage="en-US" hostUserName="" type="text/babel" data-presets="es2015,react,stage-3"></script>
+        </sly>
+        <sly data-sly-test="${language == 'ar'}">
+            <script id="chatbot" src="https://sahib.visitsaudi.com/chatbot.js" hostLanguage="ar-ar" hostUserName="" type="text/babel" data-presets="es2015,react,stage-3"></script>
+        </sly>
+    </sly>
+</sly>
+<!--chatbot script ends here-->
+<script>
+window.onload = function triggerEntityId() {
+  var mboxes;
+  if (window.location.pathname.endsWith("Partners_Promotions")) {
+      mboxes = ["partner-mbox"];
+  }
+  if (window.location.pathname.endsWith("Dir-iyah")) {
+      mboxes = ["attractions-mbox"];
+    }
+  if(window.location.pathname.indexOf("/en/see-do/destinations/") != -1) {
+      var urlParts = window.location.pathname.split("/en/see-do/destinations/");
+    if (urlParts.length>1 && urlParts[1].includes("/")) {
+      mboxes = ["attractions-mbox","food-trending-mbox","food-what-to-eat-mbox"];
+    } else {
+      mboxes = ["city-mbox","dest-map-mbox","discover-mbox"];
+    }
+    if (window.location.pathname.endsWith("province")) {
+      mboxes = ["region-mbox"];
+    }
+  } else if (window.location.pathname.indexOf("/en/do/") != -1) {
+    mboxes = ["trending-mbox"]
+  }
+  if (window.location.pathname.indexOf("/adventure-activities") != -1) {
+      mboxes = ["discover_adventure_mbox"];
+  }
+  if (window.location.pathname.indexOf("/lifestyle") != -1) {
+      mboxes = ["discover_lifestyle_mbox"];
+  }
+  if (window.location.pathname.indexOf("/culture") != -1) {
+      mboxes = ["discover_culture_mbox"];
+  }
+  if (window.location.pathname.indexOf("/family-activities") != -1) {
+      mboxes = ["discover_family_mbox"];
+  }
+  
+if(mboxes && adobe && adobe.target){
+  for (let i = 0; i < mboxes.length; i++) {
+    adobe.target.getOffer({   
+      "mbox": mboxes[i],
+      "success": function(offers) {           
+        if (console && console.log) { 
+          console.log('pageload offer',offers); 
+        } 
+      },   
+      "error": function(status, error) {
+        if (console && console.log) { 
+          console.log('pageload offer error',error); 
+        } 
+      }, 
+      "timeout": 5000 
+    });
+  }
+}
+}
+</script>
+</body>
+
+</html>

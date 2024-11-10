@@ -1,0 +1,43 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:lastModifiedBy":"admin",
+  "headline":"Upcoming Months",
+  "filtersPagePath":"/content/sauditourism/en/calendar",
+  "jcr:created":"Thu Jun 09 2022 12:57:52 GMT+0000",
+  "seasonType":"alula-season",
+  "jcr:lastModified":"Sun Aug 28 2022 14:30:22 GMT+0200",
+  "sling:resourceType":"sauditourism/components/content/events-cards",
+  "componentType":"upcoming-months",
+  "numberOfMonths":"1",
+  "hideOrnament":"false",
+  "nextMonth":{
+    "jcr:primaryType":"nt:unstructured",
+    "s7fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Mobile.jpg",
+    "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Mobile.jpg"
+  },
+  "secondMonth":{
+    "jcr:primaryType":"nt:unstructured",
+    "s7fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/October_Mobile.jpg",
+    "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/October_Mobile.jpg"
+  },
+  "thirdMonth":{
+    "jcr:primaryType":"nt:unstructured",
+    "s7fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/November_Desktop.jpg",
+    "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/November_Desktop.jpg"
+  },
+  "fourthMonth":{
+    "jcr:primaryType":"nt:unstructured"
+  },
+  "fifthMonth":{
+    "jcr:primaryType":"nt:unstructured"
+  },
+  "sixthMonth":{
+    "jcr:primaryType":"nt:unstructured"
+  },
+  "seventhMonth":{
+    "jcr:primaryType":"nt:unstructured"
+  },
+  "eightMonth":{
+    "jcr:primaryType":"nt:unstructured"
+  }
+}

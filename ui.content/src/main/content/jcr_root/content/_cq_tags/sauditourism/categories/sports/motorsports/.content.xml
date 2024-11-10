@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Motorsports"
+          jcr:title.ar="الرياضات الآلية"
+          jcr:title.de="Motorsport"
+          jcr:title.es="Deportes de motor"
+          jcr:title.fr="Sports mécaniques"
+          jcr:title.ja="モータースポーツ"
+          jcr:title.ru="Мотоспорт"
+          jcr:title.zh="摩托运动"
+    sling:resourceType="cq/tagging/components/tag"/>

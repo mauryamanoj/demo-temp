@@ -1,0 +1,55 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "mobileImage": "/content/dam/sauditourism/placeholder.jpg",
+  "jcr:lastModifiedBy": "admin",
+  "imageAlt": "Placeholder",
+  "jcr:lastModified": "Fri Sep 11 2020 04:17:54 GMT+0600",
+  "desktopImage": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+  "sling:resourceType": "sauditourism/components/structure/admin/create-itinerary-config",
+  "tripDetailUrl": "asdasd",
+  "steps": {
+    "jcr:primaryType": "nt:unstructured",
+    "step1": {
+      "jcr:primaryType": "nt:unstructured",
+      "buttonTitle": "Save & Continue",
+      "inputPlaceholder": "Enter your trip's name",
+      "label": "Trip name",
+      "title": "Personalize your trip"
+    },
+    "step2": {
+      "jcr:primaryType": "nt:unstructured",
+      "buttonTitle": "Save & Continue",
+      "multipleSelectionLabel": "Multitple selection",
+      "label": "Where",
+      "title": "Where are you travelling?"
+    },
+    "step3": {
+      "jcr:primaryType": "nt:unstructured",
+      "buttonTitle": "Create itinerary",
+      "description": "Leave it up to us, and enjoy your travels",
+      "dateLabel": "Start date",
+      "label": "When",
+      "title": "When are you travelling?"
+    }
+  },
+  "loginModal": {
+    "jcr:primaryType": "nt:unstructured",
+    "title": "Please login or Sign up!",
+    "primaryButtonLabel": "Login or Sign up",
+    "paragraph": "You need to have an account in order to create your trip"
+  },
+  "errorModal": {
+    "jcr:primaryType": "nt:unstructured",
+    "title": "Sorry!",
+    "primaryButtonLabel": "Try Again",
+    "paragraph": "Something went wrong. Please try again."
+  },
+  "closeModal": {
+    "jcr:primaryType": "nt:unstructured",
+    "subtitle": "Are you sure you want to exit?",
+    "secondaryButtonLabel": "I'll stay",
+    "title": "Don’t leave! 😰",
+    "primaryButtonLabel": "Leave",
+    "paragraph": "It looks like you are in the middle of creating an itinerary. Changes you made won’t be saved."
+  }
+}

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Saudi Tourism Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.authoring.dialog]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+    mode="edit">
+    <content
+        granite:class="cq-dialog-content-page"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <saudi-tourism-config
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Saudi Tourism"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                class="coral-Form-fieldset-legend"
+                                                level="{Long}3"
+                                                text="Page layout"/>
+                                            <theme
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}false"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select the theme color of the page"
+                                                fieldLabel="Page theme"
+                                                inputValue="purple"
+                                                name="./theme">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value=""/>
+                                                    <red
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Red"
+                                                        value="red"/>
+                                                    <green
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Green"
+                                                        value="green"/>
+                                                    <purple
+                                                        jcr:primaryType="nt:unstructured"
+                                                        selected="{Boolean}true"
+                                                        text="Purple"
+                                                        value="purple"/>
+                                                    <orange
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Orange"
+                                                        value="orange"/>
+                                                    <gold
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Gold"
+                                                        value="gold"/>
+                                                    <teal
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Teal"
+                                                        value="teal"/>
+                                                    <black
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Black"
+                                                        value="black"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="theme"/>
+                                            </theme>
+                                            <branding
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select the Branding"
+                                                fieldLabel="Branding"
+                                                name="./branding">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value=""/>
+                                                    <visitsaudi
+                                                        jcr:primaryType="nt:unstructured"
+                                                        selected="{Boolean}true"
+                                                        text="Visit Saudi"
+                                                        value="visitsaudi"/>
+                                                    <nusuk
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Nusuk"
+                                                        value="nusuk"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="branding"/>
+                                            </branding>
+                                            <favicon-icon
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                granite:class="s7-image-listener"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select Favicon Icon for browser tab"
+                                                fieldLabel="Select Favicon Icon"
+                                                name="./faviconIcon"
+                                                rootPath="/content/dam">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="faviconIcon"/>
+                                            </favicon-icon>
+                                            <analytics-page-name
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Analytics Page Name"
+                                                fieldDescription="Page name for Analytics purpose"
+                                                fieldLabel="Analytics Page Name"
+                                                name="./analyticsPageName"
+                                                required="{Boolean}false">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="analyticsPageName"/>
+                                            </analytics-page-name>
+                                            <isRightToLeftLanguage
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Language is right to left"
+                                                fieldLabel="IsRightToLeftLanguage"
+                                                name="./isRightToLeftLanguage">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        selected="{Boolean}true"
+                                                        text="Default"
+                                                        value=""/>
+                                                    <leftToRight
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Left to right"
+                                                        value="ltr"/>
+                                                    <RightToLeft
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Right to left"
+                                                        value="rtl"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="isRightToLeftLanguage"/>
+                                            </isRightToLeftLanguage>
+                                            <heading-12
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                class="coral-Form-fieldset-legend"
+                                                level="{Long}3"
+                                                text="Category"/>
+                                            <pageCategory
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                fieldLabel="Page Categories"
+                                                multiple="{Boolean}true"
+                                                forceSelection="{Boolean}true"
+                                                cq:showOnCreate="{Boolean}true"
+                                                rootPath="/content/cq:tags/sauditourism/packageCategories"
+                                                required="{Boolean}false"
+                                                name="./pageCategory">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="pageCategory"/>
+                                            </pageCategory>
+                                            <heading-2
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                class="coral-Form-fieldset-legend"
+                                                level="{Long}3"
+                                                text="Imagery"/>
+                                            <feature-image
+                                                cq:showOnCreate="{Boolean}false"
+                                                cq:hideOnEdit="{Boolean}false"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                granite:class="s7-image-listener"
+                                                fieldDescription="Select an Image to be used as Featured image for this Page"
+                                                fieldLabel="Feature image"
+                                                name="./featureImage"
+                                                rootPath="/content/dam">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="featureImage"/>
+                                            </feature-image>
+                                            <s7featureImage
+                                                granite:class="s7-featureImage"
+                                                jcr:primaryType="nt:unstructured"
+                                                granite:id="s7-featureImage"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                name="./s7featureImage">
+                                            </s7featureImage>
+                                            <nav-image
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                granite:class="s7-image-listener"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select an Image to be used as Navigation image for this page."
+                                                fieldLabel="Nav image"
+                                                name="./navImage"
+                                                rootPath="/content/dam">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="navImage"/>
+                                            </nav-image>
+                                            <s7navImage
+                                                granite:class="s7-navImage"
+                                                granite:id="s7-navImage"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                name="./s7navImage">
+                                            </s7navImage>
+                                            <mobile-nav-image
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                granite:class="s7-image-listener"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select an Image to be used as Navigation image for this page on Mobile Devices. Note: If BLANK, Use Nav image for both Desktop and Mobile."
+                                                fieldLabel="Mobile Nav image"
+                                                name="./mobileNavImage"
+                                                rootPath="/content/dam">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="mobileNavImage"/>
+                                            </mobile-nav-image>
+                                            <s7mobileNavImage
+                                                granite:class="s7-mobileNavImage"
+                                                granite:id="s7-mobileNavImage"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                name="./s7mobileNavImage">
+                                            </s7mobileNavImage>
+                                            <heading-31
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                class="coral-Form-fieldset-legend"
+                                                level="{Long}3"
+                                                text="System properties"/>
+                                            <hideInSiteMap
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="false"
+                                                fieldDescription="Page will not appear in site map if this option is enabled."
+                                                name="./hideInSiteMap"
+                                                text="Hide content items in site map."
+                                                uncheckedValue="false"
+                                                value="true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="hideInSiteMap"/>
+                                            </hideInSiteMap>
+                                            <searchHighlight
+                                                cq:hideOnEdit="{Boolean}false"
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="false"
+                                                fieldDescription="The page will be in the top of the search results after sorting by priority."
+                                                name="./searchHighlight"
+                                                text="Highlight the page in search results."
+                                                uncheckedValue="false"
+                                                value="true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="searchHighlight"/>
+                                            </searchHighlight>
+                                            <no-cache-cdn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Please select the checkbox to set no cache header for CDN (akamai)."
+                                                name="./noCacheHeaderCdn"
+                                                text="No Cache on CDN"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="noCacheHeaderCdn"/>
+                                            </no-cache-cdn>
+                                            <no-cache-dispatcher
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Please select the checkbox to set no cache header for dispatcher."
+                                                name="./noCacheHeaderDispatcher"
+                                                text="No Cache on Dispatcher"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="noCacheHeaderDispatcher"/>
+                                            </no-cache-dispatcher>
+                                        </items>
+                                    </section>
+                                    <sectionRelated
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="CDN Related Paths"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <pages
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                cq-msm-lockable="cdnRelatedPaths"
+                                                fieldDescription="CDN Related Paths"
+                                                fieldLabel="CDN Related Paths"
+                                                required="{Boolean}false">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="cdnRelatedPaths"/>
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./cdnRelatedPaths">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <path
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Path"
+                                                            fieldLabel="Path"
+                                                            filter="nosystem"
+                                                            name="./path"
+                                                            rootPath="/content/sauditourism"/>
+                                                    </items>
+                                                </field>
+                                            </pages>
+                                        </items>
+                                    </sectionRelated>
+                                    <prefetchLinks
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Prefetch and Preload links"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <pages
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                cq-msm-lockable="prefetchLinks"
+                                                fieldDescription="Prefetch and Preload links"
+                                                fieldLabel="Prefetch and Preload links"
+                                                required="{Boolean}false">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="prefetchLinks"/>
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./prefetchLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <href
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Href"
+                                                            fieldLabel="Href"
+                                                            filter="nosystem"
+                                                            name="./href"/>
+                                                        <type
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Type"
+                                                            fieldLabel="Type"
+                                                            filter="nosystem"
+                                                            name="./type"/>
+                                                        <rel
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Rel"
+                                                            fieldLabel="Rel"
+                                                            filter="nosystem"
+                                                            name="./rel"/>
+                                                    </items>
+                                                </field>
+                                            </pages>
+                                        </items>
+                                    </prefetchLinks>
+                                    <pageAuthor
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        emptyOption="{Boolean}true"
+                                        fieldDescription="Select the Author/Modifier Group of page"
+                                        fieldLabel="Page Authored/Modified by"
+                                        name="./pageAuthor"
+                                        required="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="pageAuthor"
+                                            metaType="dropdown"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <select
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Select"
+                                                selected="{Boolean}true"
+                                                value=""/>
+                                            <contentAuthors
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Content Authors"
+                                                value="contentAuthors"/>
+                                            <manifestNew
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Manifest New"
+                                                value="manifestNew"/>
+                                            <manifestRefresh
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Manifest Refresh"
+                                                value="manifestRefresh"/>
+                                        </items>
+                                    </pageAuthor>
+                                    <loginModal-not-required
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="false"
+                                        fieldDescription="Check this if Login Modal is not required on page."
+                                        name="./noLoginModal"
+                                        text="Is Login modal not required."
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="noLoginModal"/>
+                                    </loginModal-not-required>
+                                </items>
+                            </column>
+                        </items>
+                    </saudi-tourism-config>
+                    <saudi-tourism-meta
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Metadata"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <meta-robots
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Meta Robots"
+                                                name="./metaRobots">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="metaRobots"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <allow-all
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Allow search engines to index this page"
+                                                        value=""/>
+                                                    <index-follow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Allow search engines to index this page + Don't follow links on the page"
+                                                        value="index,nofollow"/>
+                                                    <noindex-nofollow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Prevent search engines from indexing this page + Don't follow links on the page"
+                                                        value="noindex,nofollow"/>
+                                                    <noindex-follow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Prevent search engines from indexing this page + Do follow links on the page"
+                                                        value="noindex,follow"/>
+                                                </items>
+                                            </meta-robots>
+                                            <canonical-url
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select the Canonical url for Page."
+                                                fieldLabel="Canonical Url"
+                                                name="./canonicalUrl"
+                                                rootPath="/content/sauditourism">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="canonicalUrl"/>
+                                            </canonical-url>
+                                            <error-pages
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Error pages for this content tree"
+                                                fieldLabel="Error pages"
+                                                name="./errorPages"
+                                                rootPath="/content/sauditourism">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="errorPages"/>
+                                            </error-pages>
+                                            <seo-keywords
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                cq-msm-lockable="seoKeywords"
+                                                fieldDescription="SEO Keywords"
+                                                fieldLabel="SEO Keywords"
+                                                required="{Boolean}false">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="seoKeys"/>
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./seoKeys">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <keyword
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Keyword for SEO"
+                                                            fieldLabel="Keyword"
+                                                            required="{Boolean}true"
+                                                            name="./keyword"/>
+                                                    </items>
+                                                </field>
+                                            </seo-keywords>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </saudi-tourism-meta>
+                    <saudi-tourism-destination
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Destination"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <region
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                emptyOption="{Boolean}true"
+                                                fieldDescription="Specify region property for the destination page."
+                                                fieldLabel="Region"
+                                                name="./region"
+                                                ordered="{Boolean}true">
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="sauditourism/datasource/cities-regions"
+                                                    saudi-tourism-listtype="region"/>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="region"/>
+                                            </region>
+                                            <city
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                emptyOption="{Boolean}true"
+                                                fieldDescription="Specify city property for the destination page."
+                                                fieldLabel="City"
+                                                name="./city"
+                                                ordered="{Boolean}true">
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="sauditourism/datasource/cities-regions"
+                                                    saudi-tourism-listtype="city"/>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="city"/>
+                                            </city>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </saudi-tourism-destination>
+                    <saudi-tourism-search
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Search"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <searchCategories
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                fieldDescription="Select search categories for the page"
+                                                fieldLabel="Search categories"
+                                                forceSelection="{Boolean}true"
+                                                multiple="{Boolean}true"
+                                                name="./searchCategories"
+                                                required="{Boolean}true"
+                                                rootPath="/content/cq:tags/sauditourism/searchCategories"
+                                                validation="tags.count.validator">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="searchCategories"/>
+                                            </searchCategories>
+                                            <isFeatured
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="check if you want this page to be in featured Search"
+                                                name="./isFeatured"
+                                                text="Is Featured Search"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true">
+                                            </isFeatured>
+                                            <isMobileExcluded
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="check if you want this page to not be in indexed on Mobile"
+                                                    name="./isExcludedMobileIndex"
+                                                    text="Is Mobile Index excluded"
+                                                    uncheckedValue="{Boolean}false"
+                                                    value="{Boolean}true">
+                                            </isMobileExcluded>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </saudi-tourism-search>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Bakery"
+          jcr:title.ar="مخبز"
+          jcr:title.de="Bäckerei"
+          jcr:title.es="Panadería"
+          jcr:title.fr="Boulangerie"
+          jcr:title.ja="ベーカリー"
+          jcr:title.ru="Пекарня"
+          jcr:title.zh="面包店"
+          sling:resourceType="cq/tagging/components/tag"/>

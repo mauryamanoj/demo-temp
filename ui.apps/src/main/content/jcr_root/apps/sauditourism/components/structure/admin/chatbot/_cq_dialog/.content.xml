@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Chatbot Config"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.common.wcm,sauditourism.author]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+          <chatbot-config
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                jcr:title="Configurations"
+                jcr:description="Configurations">
+                <items jcr:primaryType="nt:unstructured">
+                    <data
+                        jcr:description="Configure  Chatbot"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Chatbot Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="add webchat tooltip"
+                                        fieldLabel="Webchat Tooltip"
+                                        name="./chatbotTitle"
+                                        required="{Boolean}true"/>
+				                    <selection
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Select to Enable/ Disable chatbot"
+                                        name="./enableOrDisable"
+                                        required="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            metaType="dropdown"
+                                            showhide-target=".enable-disable-chatbot-showhide-target"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <enableAll
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Enable Chatbot on All Pages"
+                                                value="enable-all"/>
+                                            <disableAll
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Disable Chatbot on All Pages"
+                                                value="disable-all"/>
+                                        </items>
+                                    </selection>
+                                    <disable-chatbot-multifield
+                                        granite:class="enable-disable-chatbot-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Add Pages for Disabling Chatbot"
+                                        fieldLabel="List of all Pages for Disabling Chatbot">
+                                        <field
+                                            granite:class="accordion-multifield-item"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./disabledPages">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <pages
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Pages (Chatbot disabled)"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <page
+                                                            granite:class="accordion-multifield-item-title"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="added pages will not have the chatbot enabled"
+                                                            fieldLabel="Page Path"
+                                                            name="./disablePagePath"
+                                                            required="{Boolean}true"
+                                                            rootPath="/content/sauditourism"/>
+                                                    </items>
+                                                </pages>
+                                            </items>
+                                        </field>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="enable-all"/>
+                                    </disable-chatbot-multifield>
+                                    <enable-chatbot-multifield
+                                        granite:class="enable-disable-chatbot-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Add Pages for Enabling Chatbot"
+                                        fieldLabel="List of Pages for Enabling Chatbot">
+                                        <field
+                                            granite:class="accordion-multifield-item"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./enabledPages">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <pages
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Pages (Chatbot enabled)"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <page
+                                                            granite:class="accordion-multifield-item-title"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="only added pages will have the chatbot enabled"
+                                                            fieldLabel="Page Path"
+                                                            name="./enablePagePath"
+                                                            required="{Boolean}true"
+                                                            rootPath="/content/sauditourism"/>
+                                                    </items>
+                                                </pages>
+                                            </items>
+                                        </field>
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="disable-all"/>
+                                    </enable-chatbot-multifield>
+                                </items>
+                            </data>
+                        </items>
+                    </chatbot-config>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

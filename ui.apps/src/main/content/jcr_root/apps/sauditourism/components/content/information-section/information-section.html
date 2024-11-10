@@ -1,0 +1,7 @@
+<sly data-sly-use.model="com.saudi.tourism.core.models.components.informationsection.v1.InformationSectionModel"
+data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html">
+<sly data-sly-call="${templates.placeholder @ isEmpty = !title}"></sly>
+    <section id="information-section">
+        <div data-component="InformationSection" data-props="${model.json @context='text'}"></div>
+    </section>
+</sly>

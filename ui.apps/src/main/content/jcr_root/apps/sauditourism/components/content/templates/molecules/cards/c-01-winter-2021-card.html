@@ -1,0 +1,308 @@
+<template
+    data-sly-template.winter2021Images="${@ winterCardModel, textCardsModel, cardStyle, packId, name, lang, images, backgroundImage, photo, authorPhoto, business, item, discountPrice, price, priceType, contactName,location, days, description, durationUnit, categorySlug, byText, pagePath}"
+    data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+    data-sly-use.atomIconTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"
+    data-sly-use.tagline_g01="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-01-simple.html"
+    data-sly-use.tagline_g02="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-02-featured.html"
+    data-sly-use.cta_07="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+    data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html"
+    data-sly-use.taglineG01SimpleTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-01-simple.html"
+    data-sly-use.taglineG02FeaturedTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-02-featured.html"
+    data-sly-use.picture_carousel="/apps/sauditourism/components/content/templates/general/picture-with-carousel.html"
+    data-sly-use.static_rating="/apps/sauditourism/components/content/templates/general/static-rating.html"
+    data-sly-use.picture="/apps/sauditourism/components/content/templates/general/picture.html"
+    data-sly-use.winterTagLine="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-winter-featured.html">
+    <div data-component="c-01-winter-2021-card" data-track-name="${winterCardModel.buy}" data-s-packageName="${name}" data-track-product="${textCardsModel.header.heading.text} ; ${name}" data-track-section="${textCardsModel.header.heading.text}" data-track-eventName="booknow" class="layout-vertical">
+        <div class="${cardStyle=='roadTrip' ? 'image-wrapper roadtrip-image-wrapper' : 'image-wrapper experience-image-wrapper'}">
+
+            <sly data-sly-test="${cardStyle=='experience'}">
+                <div class="favorite-button-wrapper">
+                    <sly data-sly-call="${cta_07.fav @ variant='white'}"></sly>
+                    <sly data-sly-test="${winterCardModel.buy}">
+                        <a href="https://www.halayalla.com/sa-${lang}/sta/packages/${packId}/book" class="image-link">
+                            <button class="buy-button">${winterCardModel.buy}</button>
+                        </a>
+                    </sly>
+                </div>
+            </sly>
+            <sly data-sly-test="${cardStyle=='dining'}">
+                <div class="favorite-button-wrapper">
+                    <sly data-sly-call="${cta_07.fav @ variant='white'}"></sly>
+                    <sly data-sly-test="${winterCardModel.buy}">
+                        <a href="https://www.halayalla.com/sa-${lang}/sta/packages/${packId}/book" class="image-link">
+                            <button class="buy-button">${winterCardModel.buy}</button>
+                        </a>
+                    </sly>
+                </div>
+            </sly>
+
+            <sly data-sly-test="${cardStyle=='experience'}">
+                <div href="https://www.halayalla.com/sa-${lang}/sta/packages/${packId}/book">
+                    <sly data-sly-test="${images}">
+                        <sly
+                            data-sly-call="${picture_carousel.pictureCarousel @ winterCardModel=winterCardModel, images=images}">
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${!images}">
+                        <sly
+                            data-sly-call="${picture.pictureObj @ extraClass='with-favorite-button', imageDesktop='backgroundImage'}">
+                        </sly>
+                    </sly>
+                </div>
+            </sly>
+
+            <sly data-sly-test="${cardStyle=='dining'}">
+                <div href="https://www.halayalla.com/sa-${lang}/sta/packages/${packId}/book">
+                    <sly data-sly-test="${images}">
+                        <sly
+                            data-sly-call="${picture_carousel.pictureCarousel @ winterCardModel=winterCardModel, images=images}">
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${!images}">
+                        <sly
+                            data-sly-call="${picture.pictureObj @ extraClass='with-favorite-button', imageDesktop=backgroundImage}">
+                        </sly>
+                    </sly>
+                </div>
+            </sly>
+            <sly data-sly-test="${cardStyle=='roadTrip'}">
+                <div href="#">
+                    <sly data-sly-test="${lang == 'en'}">
+                        <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameENModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+                    </sly>
+                    <sly data-sly-test="${lang == 'ar'}">
+                        <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameARModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+                    </sly>
+
+                    <sly data-sly-test="${lang == 'es'}">
+                        <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameESModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+                    </sly>
+
+                    <sly data-sly-test="${lang == 'pt'}">
+                        <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNamePTModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+                    </sly>
+                    <sly data-sly-test="${lang == 'ru'}">
+                        <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameRUModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+                    </sly>
+                    <sly data-sly-test="${lang == 'de'}">
+                        <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameDEModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+                    </sly>
+                        <sly data-sly-test="${photo}">
+                            <div data-component="picture" class="picture-wrapper">
+                                <picture class="picture is-supported" data-component="picture">
+                                    <source data-srcset="${photo}" media="(min-width:768px)" />
+                                    <img data-src="${photo}" class="image lazyload" />
+                                </picture>
+                            </div>
+                        </sly>
+                    </a>
+                </div>
+            </sly>
+        </div>
+        <sly data-sly-test="${cardStyle=='dining'}">
+            <a href="https://www.halayalla.com/sa-${lang}/sta/packages/${packId}/book"
+               class="content-wrapper experience-wrapper dining-wrapper" data-heading="${winterCardModel.name}"
+               data-origin="${winterCardModel.city}">
+        </sly>
+        <sly data-sly-test="${cardStyle=='experience'}">
+            <a href="${pagePath @ extension = 'html'}"
+               class="content-wrapper experience-wrapper" data-heading="${winterCardModel.name}"
+               data-origin="${winterCardModel.city}">
+        </sly>
+        <sly data-sly-test="${cardStyle=='roadTrip'}">
+            <sly data-sly-test="${lang == 'en'}">
+                <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameENModified}/${item.id}" target="_blank"  rel="noopener noreferrer" class="content-wrapper" data-heading="${item.tripNameEN}" data-origin="${item.tripCityEN}">
+            </sly>
+            <sly data-sly-test="${lang == 'ar'}">
+                <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameARModified}/${item.id}" target="_blank" rel="noopener noreferrer" class="content-wrapper" data-heading="${item.tripNameAR}" data-origin="${item.tripCityAR}">
+            </sly>
+            <sly data-sly-test="${lang == 'es'}">
+                <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameESModified}/${item.id}" target="_blank" rel="noopener noreferrer" class="content-wrapper" data-heading="${item.tripNameES}" data-origin="${item.tripCityES}">
+            </sly>
+            <sly data-sly-test="${lang == 'pt'}">
+                <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNamePTModified}/${item.id}" target="_blank" rel="noopener noreferrer" class="content-wrapper" data-heading="${item.tripNamePT}" data-origin="${item.tripCityPT}">
+            </sly>
+            <sly data-sly-test="${lang == 'ru'}">
+                <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameRUModified}/${item.id}" target="_blank" rel="noopener noreferrer" class="content-wrapper" data-heading="${item.tripNameRU}" data-origin="${item.tripCityRU}">
+            </sly>
+            <sly data-sly-test="${lang == 'de'}">
+                <a href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameDEModified}/${item.id}" target="_blank" rel="noopener noreferrer" class="content-wrapper" data-heading="${item.tripNameDE}" data-origin="${item.tripCityDE}">
+            </sly>
+        </sly>
+
+        <div class="info-wrapper">
+            <div class="inner-wrapper">
+
+                <sly data-sly-test="${cardStyle=='experience'}">
+                    <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=location, categorySlug=categorySlug}"></sly>
+                    <h5 class="title">${name}</h5>
+                    <div class="description copy">
+                        ${description}
+                    </div>
+                </sly>
+                <sly data-sly-test="${cardStyle=='dining'}">
+                    <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=location}"></sly>
+                    <h5 class="title">${name}</h5>
+                    <div class="description copy">
+                        ${description}
+                    </div>
+                </sly>
+                <sly data-sly-test="${cardStyle=='roadTrip'}">
+                    <sly data-sly-test="${lang == 'en'}">
+                        <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=item.tripCityEN, days=days , durationUnit = durationUnit}"></sly>
+                        <h5 class="title">${item.tripNameEN}</h5>
+                        <sly data-sly-test="${item.tripDescriptionEN}">
+                            <div class="description copy">
+                                ${item.tripDescriptionEN}
+                            </div>
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${lang == 'ar'}">
+                        <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=item.tripCityAR, days=days , durationUnit = durationUnit}"></sly>
+                        <h5 class="title">${item.tripNameAR}</h5>
+                        <sly data-sly-test="${item.tripDescriptionAR}">
+                            <div class="description copy">
+                                ${item.tripDescriptionAR}
+                            </div>
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${lang == 'es'}">
+                        <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=item.tripCityES, days=days , durationUnit = durationUnit}"></sly>
+                        <h5 class="title">${item.tripNameES}</h5>
+                        <sly data-sly-test="${item.tripDescriptionES}">
+                            <div class="description copy">
+                                ${item.tripDescriptionES}
+                            </div>
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${lang == 'pt'}">
+                        <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=item.tripCityPT, days=days , durationUnit = durationUnit}"></sly>
+                        <h5 class="title">${item.tripNamePT}</h5>
+                        <sly data-sly-test="${item.tripDescriptionPT}">
+                            <div class="description copy">
+                                ${item.tripDescriptionPT}
+                            </div>
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${lang == 'ru'}">
+                        <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=item.tripCityRU, days=days , durationUnit = durationUnit}"></sly>
+                        <h5 class="title">${item.tripNameRU}</h5>
+                        <sly data-sly-test="${item.tripDescriptionRU}">
+                            <div class="description copy">
+                                ${item.tripDescriptionRU}
+                            </div>
+                        </sly>
+                    </sly>
+                    <sly data-sly-test="${lang == 'de'}">
+                        <sly data-sly-call="${winterTagLine.taglineWinterFeatured @ location=item.tripCityDE, days=days , durationUnit = durationUnit}"></sly>
+                        <h5 class="title">${item.tripNameDE}</h5>
+                        <sly data-sly-test="${item.tripDescriptionDE}">
+                            <div class="description copy">
+                                ${item.tripDescriptionDE}
+                            </div>
+                        </sly>
+                    </sly>
+                </sly>
+                <sly data-sly-test="${cardStyle=='dining'}">
+                    <div class="cuisine">
+                        <div class="text">Cuisine</div>
+                        <span class="separator">.</span>
+                    </div>
+                </sly>
+                <sly data-sly-test="${cardStyle=='experience'}">
+                    <sly data-sly-test="${price}">
+                        <div class="price-details-wrapper">
+                            <span class="currency-style">${price} SAR &nbsp;</span>
+                            <span class="count-style"> / ${priceType}</span>
+                            <!--<sly data-sly-test="${discountPrice}">
+                                <span class="discount">${discountPrice}</span>
+                            </sly>-->
+                        </div>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+        </a>
+        <sly data-sly-test="${cardStyle=='dining'}">
+            <div class="cta-wrapper cta-wrapper-dining">
+        </sly>
+        <sly data-sly-test="${cardStyle=='experience'}">
+            <div class="cta-wrapper cta-wrapper-experience">
+        </sly>
+        <sly data-sly-test="${cardStyle=='roadTrip'}">
+            <sly data-sly-test="${lang == 'en'}">
+                <a class="travel-expert-wrapper" href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameENModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+            </sly>
+            <sly data-sly-test="${lang == 'ar'}">
+                <a class="travel-expert-wrapper" href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameARModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+            </sly>
+
+            <sly data-sly-test="${lang == 'es'}">
+                <a class="travel-expert-wrapper" href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameESModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+            </sly>
+
+            <sly data-sly-test="${lang == 'pt'}">
+                <a class="travel-expert-wrapper" href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNamePTModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+            </sly>
+            <sly data-sly-test="${lang == 'ru'}">
+                <a class="travel-expert-wrapper" href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameRUModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+            </sly>
+            <sly data-sly-test="${lang == 'de'}">
+                <a class="travel-expert-wrapper" href="https://routes.visitsaudi.com/${lang}/trip/${item.tripNameDEModified}/${item.id}" target="_blank" rel="noopener noreferrer">
+            </sly>
+            <div class="cta-wrapper  cta-wrapper-roadtrip">
+        </sly>
+        <sly data-sly-test="${cardStyle=='experience'}">
+            <span class="experience-provider">${byText} ${contactName}</span>
+        </sly>
+
+        <sly data-sly-test="${business}">
+                <img src="${authorPhoto}" alt="travel expert image" />
+                <sly data-sly-test="${lang == 'en'}">
+                <div class="travel-expert-text">
+                    <div class="line-one">${item.authorNameEN}</div>
+                    <div class="line-two">${'travel-expert' @ i18n}</div>
+                </div>
+                </sly>
+                <sly data-sly-test="${lang == 'ar'}">
+                    <div class="travel-expert-text">
+                        <div class="line-one">${item.authorNameAR}</div>
+                        <div class="line-two">${'travel-expert' @ i18n}</div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${lang == 'es'}">
+                    <div class="travel-expert-text">
+                        <div class="line-one">${item.authorNameES}</div>
+                        <div class="line-two">${'travel-expert' @ i18n}</div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${lang == 'pt'}">
+                    <div class="travel-expert-text">
+                        <div class="line-one">${item.authorNamePT}</div>
+                        <div class="line-two">${'travel-expert' @ i18n}</div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${lang == 'ru'}">
+                    <div class="travel-expert-text">
+                        <div class="line-one">${item.authorNameRU}</div>
+                        <div class="line-two">${'travel-expert' @ i18n}</div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${lang == 'de'}">
+                    <div class="travel-expert-text">
+                        <div class="line-one">${item.authorNameDE}</div>
+                        <div class="line-two">${'travel-expert' @ i18n}</div>
+                    </div>
+                </sly>
+                <div class="road-trip-arrow">
+                    <sly
+                        data-sly-call="${atomIconTemplate.iconSimple @ name='chevron-right', desktopSize='22', mobileSize='22',class='arrow-right'}">
+                    </sly>
+                </div>
+        </sly>
+        <sly data-sly-test="${cardStyle=='roadTrip'}">
+            </a>
+        </sly>
+    </div>
+    </div>
+</template>

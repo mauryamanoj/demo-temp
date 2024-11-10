@@ -1,0 +1,14 @@
+{
+  "jcr:primaryType": "sling:Folder",
+  "Test-IP": {
+    "jcr:primaryType": "nt:unstructured",
+    "usmRadius": "0.2",
+    "usmThreshold": "2",
+    "banner": "Large,1260,720|Medium,700,525|Small,400,400|Square-100,100,100|test,300,50|event-card,260,195",
+    "swatch": "",
+    "usmMonochrome": "0",
+    "crop": "0,0,0,0",
+    "crop_type": "crop_smart",
+    "usmAmount": "1.75"
+  }
+}

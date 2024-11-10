@@ -1,0 +1,116 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "e2469e51-0e90-4c9a-9e68-2e5a79857f7f",
+  "jcr:predecessors": [
+    "35c057a0-50fc-4ee7-9bc9-a82b423f8873"
+  ],
+  "jcr:created": "Sun Nov 26 2023 20:55:50 GMT+0100",
+  "jcr:baseVersion": "35c057a0-50fc-4ee7-9bc9-a82b423f8873",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "c5f5361d-a4a6-442d-bc87-1380463bd380",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title": "Story 2",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicated": "Mon Dec 18 2023 09:26:13 GMT+0100",
+    "contentFragment": true,
+    "cq:name": "story-2",
+    "jcr:lastModified": "Mon Dec 18 2023 11:08:16 GMT+0100",
+    "lastFragmentSave": "Mon Dec 18 2023 10:57:54 GMT+0100",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/stories",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Dec 14 2023 14:21:23 GMT+0100"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/story",
+        "@stringArray@variations": [],
+        "string@s7image": "https://s7e5a.scene7.com/is/image/scthacc/story2",
+        "string@aboutDescription": "<p>Certainly! Here's a Lorem Ipsum text:</p>\n<p>&nbsp;</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+        "string@title": "How I got lost and found my inner voice",
+        "boolean@hideFavorite": false,
+        "jcr:uuid": "a8d0e1ea-271a-4b98-a054-b8802051f4e7",
+        "boolean@showReadMore": false,
+        "stringArray@images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/coffee-shops-in-riyadh-1.jpg\",\"s7image\":\"/content/dam/sauditourism/coffee-shops-in-riyadh-1.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"true\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"s7image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"true\"}"
+        ]
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/story",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "showReadMore": false,
+        "aboutDescription@LastModified": "Wed Nov 29 2023 15:26:55 GMT+0000",
+        "destination": "/content/dam/sauditourism/cf/en/destinations/makkah",
+        "lat@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "authorDetails@LastModified": "Wed Nov 01 2023 10:18:06 GMT+0000",
+        "images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/coffee-shops-in-riyadh-1.jpg\",\"s7image\":\"/content/dam/sauditourism/coffee-shops-in-riyadh-1.jpg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"true\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"s7image\":\"/content/dam/sauditourism/red-sea.jpeg\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"featureInSubStory\":\"true\"}"
+        ],
+        "hideFavorite@LastModified": "Mon Dec 18 2023 11:08:16 GMT+0100",
+        "subtitle@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "lng@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "aboutDescription@ContentType": "text/html",
+        "image@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "authorDetails@ContentType": "text/html",
+        "pagePath@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "placeholder@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "showReadMore@LastModified": "Wed Nov 01 2023 10:18:06 GMT+0000",
+        "destination@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "tag": [
+          "sauditourism:story/natural-site"
+        ],
+        "image": "/content/dam/sauditourism/global-assets/story2.png",
+        "title": "How I got lost and found my inner voice",
+        "aboutTitle@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "s7image@LastModified": "Wed Oct 04 2023 10:11:32 GMT+0000",
+        "showFavorite@LastModified": "Wed Oct 04 2023 10:09:36 GMT+0000",
+        "s7image": "https://s7e5a.scene7.com/is/image/scthacc/story2",
+        "pagePath": "/content/sauditourism/en/Newsletter-2022-APAC",
+        "cq:tags": [
+          "sauditourism:story/natural-site"
+        ],
+        "tag@LastModified": "Mon Dec 18 2023 10:44:24 GMT+0100",
+        "aboutDescription": "<p>Certainly! Here's a Lorem Ipsum text:</p>\n<p>&nbsp;</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+        "hideFavorite": false,
+        "images@LastModified": "Mon Dec 18 2023 11:08:16 GMT+0100"
+      }
+    }
+  }
+}

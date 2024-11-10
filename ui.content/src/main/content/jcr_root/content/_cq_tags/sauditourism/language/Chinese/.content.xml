@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Chinese"
+          jcr:title.ar="صيني"
+          jcr:title.fr="Chinois"
+          jcr:title.en="Chinese"
+          jcr:title.es="Chino"
+          jcr:title.ru="Китайский"
+          jcr:title.de="Chinesisch"
+          jcr:title.zh="中文"
+          jcr:title.ja="中国語"
+          sling:resourceType="cq/tagging/components/tag"/>

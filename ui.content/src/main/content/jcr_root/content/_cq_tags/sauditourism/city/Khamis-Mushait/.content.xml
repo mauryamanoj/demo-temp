@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Khamis Mushait"
+    jcr:title.ar="خميس مشيط"
+    jcr:title.de="Chamis Muschait"
+    jcr:title.es="Khamis Mushait"
+    jcr:title.fr="Khamis Mushait"
+    jcr:title.ja="ハミース・ムシャイト"
+    jcr:title.ru="Хамис-Мушаит"
+    jcr:title.zh="海米斯穆谢特"
+    sling:resourceType="cq/tagging/components/tag"
+    city="khamis-mushait"/>

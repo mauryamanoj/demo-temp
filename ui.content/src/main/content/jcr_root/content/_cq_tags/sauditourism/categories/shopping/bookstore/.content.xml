@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Bookstore"
+          jcr:title.ar="مكتبة"
+          jcr:title.de="Buchhandlung"
+          jcr:title.es="Librería"
+          jcr:title.fr="Librairie"
+          jcr:title.ja="書店"
+          jcr:title.ru="Книжный магазин"
+          jcr:title.zh="书店"
+          sling:resourceType="cq/tagging/components/tag"/>

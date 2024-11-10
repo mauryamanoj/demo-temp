@@ -1,0 +1,443 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Nov 25 2019 17:25:07 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "app",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "0991fb66-6378-43ad-aad7-6b44ab9c2d1d",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:predecessors": [
+      "41b99a18-e673-46e6-9a58-b8d4171e3c8c"
+    ],
+    "jcr:created": "Mon Nov 25 2019 17:25:07 GMT+1100",
+    "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+    "cq:lastModified": "Mon Nov 25 2019 17:25:07 GMT+1100",
+    "jcr:baseVersion": "41b99a18-e673-46e6-9a58-b8d4171e3c8c",
+    "jcr:isCheckedOut": true,
+    "jcr:uuid": "eafc77e1-e8d0-421e-b9e9-ca3ebdf0590c",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "en": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Nov 27 2019 14:55:50 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "en",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "4a2366c0-4f06-4240-a2b9-3e625904532f",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "a6eac418-7c94-40ce-bee6-ee8c60645832"
+      ],
+      "jcr:created": "Wed Nov 27 2019 14:55:50 GMT+1100",
+      "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+      "cq:lastModified": "Wed Nov 27 2019 14:55:50 GMT+1100",
+      "jcr:baseVersion": "a6eac418-7c94-40ce-bee6-ee8c60645832",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "cbde511d-60f6-4f7e-b586-068dfb85eb5a",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "contact": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Nov 28 2019 14:02:33 GMT+1100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "contact",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "6611bba0-7ccf-47cd-9636-71440184f723",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/app-contact-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "7dd37887-b7ba-4c68-a973-8624149c9cef"
+        ],
+        "jcr:created": "Thu Nov 28 2019 14:02:33 GMT+1100",
+        "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+        "cq:lastModified": "Thu Nov 28 2019 15:49:11 GMT+1100",
+        "rata": "soy una rata",
+        "jcr:baseVersion": "7dd37887-b7ba-4c68-a973-8624149c9cef",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "558aca29-6177-423c-9527-52a65fbaef66",
+        "sling:resourceType": "sauditourism/components/structure/app-contact-page",
+        "cq:lastModifiedBy": "admin",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "contact": {
+          "jcr:primaryType": "nt:unstructured",
+          "header": "header contact",
+          "cta": "cta contact",
+          "text": "text contact",
+          "phone": "123"
+        },
+        "services": {
+          "jcr:primaryType": "nt:unstructured",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "name": "service1 name",
+            "phone": "phone service 1"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "name": "service name2",
+            "phone": "phone service 2"
+          }
+        },
+        "embassy": {
+          "jcr:primaryType": "nt:unstructured",
+          "header": "Embassy Header",
+          "embassies": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "countryCode": "11",
+              "name": "1",
+              "phone": "111"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "countryCode": "22",
+              "name": "2",
+              "phone": "222"
+            }
+          }
+        }
+      }
+    },
+    "contentpage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Nov 29 2019 11:15:07 GMT+1100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "contentpage",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "81863144-5f63-4be5-99d5-d21d858bc661",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/app-content-page",
+        "cq:lastReplicatedBy": "admin",
+        "featuredImage": "/content/dam/saudi-tourism/media/1200-a.jpg",
+        "publishDate": "Mon Nov 04 2019 06:22:00 GMT+1100",
+        "jcr:predecessors": [
+          "0758b9be-0497-4c91-90b0-b2d8f9d7a376"
+        ],
+        "jcr:created": "Fri Nov 29 2019 11:15:07 GMT+1100",
+        "featured": "false",
+        "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+        "cq:lastModified": "Fri Nov 29 2019 14:31:57 GMT+1100",
+        "tags": [
+          "sauditourism:events/Tours",
+          "sauditourism:events/Equestrian",
+          "sauditourism:events/Tennis"
+        ],
+        "jcr:baseVersion": "0758b9be-0497-4c91-90b0-b2d8f9d7a376",
+        "jcr:isCheckedOut": true,
+        "cq:tags": [
+          "default:"
+        ],
+        "jcr:uuid": "785cad62-1749-4cb5-b5ce-77badb7efb01",
+        "sling:resourceType": "sauditourism/components/structure/app-page",
+        "cq:lastModifiedBy": "admin",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "related": {
+          "jcr:primaryType": "nt:unstructured",
+          "tags": [
+            "sauditourism:events/Equestrian",
+            "sauditourism:events/Performing-Arts",
+            "sauditourism:events/Tennis",
+            "sauditourism:events/Conferences",
+            "sauditourism:events/Boxing"
+          ],
+          "pages": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "path": "/content/sauditourism/fr"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "path": "/content/sauditourism/en"
+            }
+          }
+        }
+      },
+      "content1-1": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Mon Dec 02 2019 14:53:01 GMT+1100",
+        "jcr:content": {
+          "jcr:primaryType": "cq:PageContent",
+          "jcr:mixinTypes": [
+            "mix:versionable"
+          ],
+          "jcr:createdBy": "admin",
+          "jcr:title": "content1.1",
+          "cq:lastReplicationAction": "Activate",
+          "jcr:versionHistory": "641d8fb0-6058-40b4-b48a-e8ca4e6abf1f",
+          "cq:template": "/conf/sauditourism/settings/wcm/templates/app-content-page",
+          "cq:lastReplicatedBy": "admin",
+          "jcr:predecessors": [
+            "491ac715-5710-4ada-8f3b-1093936fd311"
+          ],
+          "jcr:created": "Mon Dec 02 2019 14:53:01 GMT+1100",
+          "featured": "false",
+          "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+          "cq:lastModified": "Mon Dec 02 2019 14:53:01 GMT+1100",
+          "jcr:baseVersion": "491ac715-5710-4ada-8f3b-1093936fd311",
+          "jcr:isCheckedOut": true,
+          "jcr:uuid": "fba37b46-1f47-4c59-8ff7-c541f442895f",
+          "sling:resourceType": "sauditourism/components/structure/app-page",
+          "cq:lastModifiedBy": "admin",
+          "root": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid",
+            "responsivegrid": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid"
+            }
+          },
+          "related": {
+            "jcr:primaryType": "nt:unstructured"
+          }
+        }
+      }
+    },
+    "location-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Nov 29 2019 15:59:27 GMT+1100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "location page",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "b6aaaff6-f36c-446c-9de4-501c577ef6ee",
+        "latitude": "12.234",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/app-location-page",
+        "cq:lastReplicatedBy": "admin",
+        "featuredImage": "/content/dam/saudi-tourism/media/1280-c.jpg",
+        "publishDate": "Sat Nov 30 2019 15:59:00 GMT+1100",
+        "jcr:predecessors": [
+          "89cf15c1-ea2c-46f1-84c1-47d94da11f37"
+        ],
+        "jcr:created": "Fri Nov 29 2019 15:59:27 GMT+1100",
+        "featured": "true",
+        "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+        "cq:lastModified": "Fri Nov 29 2019 15:59:27 GMT+1100",
+        "name": "Name",
+        "tags": [
+          "sauditourism:events/Music"
+        ],
+        "type": "highlight",
+        "longitude": "-33.22",
+        "jcr:baseVersion": "89cf15c1-ea2c-46f1-84c1-47d94da11f37",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "d0cb0b50-0521-4c9f-a339-4d02dbc1dea6",
+        "sling:resourceType": "sauditourism/components/structure/app-location-page",
+        "cq:lastModifiedBy": "admin",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "related": {
+          "jcr:primaryType": "nt:unstructured",
+          "tags": [
+            "sauditourism:events/Music",
+            "sauditourism:events/Tours",
+            "sauditourism:events/Football",
+            "sauditourism:events/Equestrian",
+            "sauditourism:events/Performing-Arts",
+            "sauditourism:events/Tennis",
+            "sauditourism:events/Conferences",
+            "sauditourism:events/Boxing"
+          ],
+          "pages": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "path": "/content/sauditourism/cn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "es": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Nov 27 2019 14:56:10 GMT+1100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Spanish",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "04d2172c-c639-4c0f-843a-2914d7d9c394",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "0cc4b313-360f-475b-b5d1-db676a585a28"
+      ],
+      "jcr:created": "Wed Nov 27 2019 14:56:10 GMT+1100",
+      "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+      "cq:lastModified": "Wed Nov 27 2019 14:56:10 GMT+1100",
+      "jcr:baseVersion": "0cc4b313-360f-475b-b5d1-db676a585a28",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "f054a8a2-1a9d-4856-87fc-15b5c716b25b",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "content-es": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Mon Dec 02 2019 16:39:09 GMT+1100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "content-es",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "ffdc365c-57af-4926-95d6-89aabcdf0143",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/app-content-page",
+        "cq:lastReplicatedBy": "admin",
+        "publishDate": "Mon Dec 02 2019 05:10:06 GMT+1100",
+        "jcr:predecessors": [
+          "e3177cf6-d5b0-45c7-8fd0-9075601553e5"
+        ],
+        "jcr:created": "Mon Dec 02 2019 16:39:09 GMT+1100",
+        "featured": "false",
+        "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+        "cq:lastModified": "Mon Dec 02 2019 16:39:09 GMT+1100",
+        "jcr:baseVersion": "e3177cf6-d5b0-45c7-8fd0-9075601553e5",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "2c0552d0-4c57-4179-955b-643cb02db0dd",
+        "sling:resourceType": "sauditourism/components/structure/app-page",
+        "cq:lastModifiedBy": "admin",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "related": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      }
+    },
+    "loces": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Mon Dec 02 2019 17:48:12 GMT+1100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "loces",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "2afd8bcc-6c12-4ffc-aef3-61563acb2211",
+        "latitude": "12",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/app-location-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "5e5f8a63-cd12-48c2-b6ee-58d98be53b4a"
+        ],
+        "jcr:created": "Mon Dec 02 2019 17:48:12 GMT+1100",
+        "featured": "false",
+        "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+        "cq:lastModified": "Mon Dec 02 2019 17:48:12 GMT+1100",
+        "name": "loc es",
+        "type": "highlight",
+        "longitude": "12",
+        "jcr:baseVersion": "5e5f8a63-cd12-48c2-b6ee-58d98be53b4a",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "e8639766-20a7-438d-9201-0398068b30da",
+        "sling:resourceType": "sauditourism/components/structure/app-location-page",
+        "cq:lastModifiedBy": "admin",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "related": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      }
+    }
+  }
+}

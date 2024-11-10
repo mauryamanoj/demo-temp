@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+          jcr:primaryType="rep:ACL">
+    <allow0
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="vendors"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:itemNames="comment"/>
+    </allow0>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="vendors"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            commentAuthor="vendors"/>
+    </allow1>
+    <allow2
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="content-authors"
+        rep:privileges="{Name}[jcr:read,rep:write]">
+    </allow2>
+</jcr:root>

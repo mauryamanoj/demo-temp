@@ -1,0 +1,13 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "title":"page",
+  "sling:resourceType":"sauditourism/components/content/faq-section",
+  "jcr:primaryType":"nt:unstructured",
+  "headline":"Frequently Asked Questions V1",
+  "componentId":"faq",
+  "link": {
+    "jcr:primaryType": "nt:unstructured",
+    "url": "/content/sauditourism/en",
+    "copy": "Link Title"
+  }
+}

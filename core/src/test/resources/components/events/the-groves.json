@@ -1,0 +1,134 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Mon Nov 18 2019 11:08:10 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "startTime":"Mon Apr 04 2022 19:00:00 GMT+0300",
+    "getDirectionCtaLink":"https://goo.gl/maps/LqgUdTTy54VnsqJH8",
+    "getDirectionCtaText":"Get Direction",
+    "jcr:createdBy":"admin",
+    "averageTime":"2",
+    "jcr:title":"The Groves",
+    "durationText":"Date",
+    "headingLocationDetailType":"h1",
+    "showOnMap":"true",
+    "locationLabel":"I am a label, edit me",
+    "locationTitle":"Location Information",
+    "description":"I am a description, edit me",
+    "suitableForText":"Audience",
+    "cq:lastReplicationAction":"Deactivate",
+    "endTime":"Mon Apr 04 2022 01:00:00 GMT+0300",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"d8406005-6e57-4c33-8621-56aca85730af",
+    "freePaid":"paid",
+    "noCacheHeaderDispatcher":"false",
+    "latitude":"24.685759",
+    "externalLink":"#",
+    "addressInfo":"Al Safarat, Riyadh 12513, Saudi Arabia",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/event-details",
+    "showHoursTitle":"I am a show hours title, edit me",
+    "addressDetail":"I am an address detail, edit me",
+    "address":"I am an address, edit me",
+    "roundTheClock":"false",
+    "templateType":"new",
+    "season":"all-seasons",
+    "eventLink-url":"https://www.thegroves-sa.com/events",
+    "eventLink-copy":"Book Now",
+    "calendarEndDate":"Sat Dec 31 2022 00:00:00 GMT+0300",
+    "jcr:predecessors":[
+      "00628d67-4d8a-419d-b845-8732b2d0681a"
+    ],
+    "jcr:created":"Thu Jul 21 2022 16:22:24 GMT+0200",
+    "featured":"false",
+    "cq:lastReplicated":"Sun May 22 2022 14:21:59 GMT+0000",
+    "cq:lastModified":"Wed May 18 2022 09:43:35 GMT+0000",
+    "eventLink-targetInNewWindow":"true",
+    "locationName":"Al Safarat, Riyadh 12513, Saudi Arabia",
+    "city":"riyadh",
+    "copy":"The Groves boasts a variety of options ranging from upscale restaurants and cafes to entertainment events, relaxation spots, and art workshops.\r\n\r\nStop by Birds of Eden for delicious light snacks; and for a dose of nature against atmospheric music, check out Al Jalsa.\r\n\r\nFor international cuisine lovers, GEM-In-I is ready to delight you with its Japanese and Italian offerings, whereas El Lechazo awaits you with its delicious dishes straight out of Spain!\r\nAdditionally, check out Passion &amp; Fashion – a fashion event showcasing exquisite collections from local and global talents, and Milk &amp; Butter Nail Spa for the ultimate relaxation experience.",
+    "s7featureEventImage":"/content/dam/saudi-tourism/media/events-/Groves.png",
+    "image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "phone":"I am a phone number, edit me",
+    "theme":"orange",
+    "title":"The Groves",
+    "longitude":"46.622747",
+    "locationInDetailLabel":"I am a location label, edit me",
+    "headingType":"h1",
+    "categoryTags":[
+      "sauditourism:events/dining"
+    ],
+    "locationDistance":"1",
+    "readMoreButton":"Read More",
+    "jcr:baseVersion":"00628d67-4d8a-419d-b845-8732b2d0681a",
+    "s7image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "jcr:isCheckedOut":true,
+    "targetGroupTags":[
+      "sauditourism:audience/all"
+    ],
+    "pageAuthor":"contentAuthors",
+    "imageListing":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+    "mapType":"google",
+    "eventIntro":"I am an intro, edit me",
+    "eventTitle":"I am a title edit me",
+    "jcr:uuid":"ab1c6435-18a5-4df6-9365-e9c0b4013f2e",
+    "ctaText":"CTA, edit me",
+    "activitiesText":"Activities",
+    "addToCalendarText":"Add to Calendar",
+    "sling:resourceType":"sauditourism/components/structure/event-detail-page",
+    "headingshowHoursType":"h1",
+    "calendarStartDate":"Sun Apr 03 2022 00:00:00 GMT+0300",
+    "textIsRich":"true",
+    "hideInSiteMap":"false",
+    "featureEventImage":"/content/dam/saudi-tourism/media/events-/Groves.png",
+    "searchHighlight":"false",
+    "disableSecondaryNav":true,
+    "location":"I am a location, edit me",
+    "imageMobile":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "header-block":{
+        "jcr:primaryType":"nt:unstructured",
+        "ctaTitle":"I am a title, edit me",
+        "title":"I am a title, edit me",
+        "ctaLink":"#",
+        "ctaText":"CTA, edit me",
+        "sling:resourceType":"sauditourism/components/content/headerblock",
+        "backTitle":"I am a title, edit me",
+        "backLink":"#",
+        "backText":"CTA, edit me",
+        "small":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+        },
+        "medium":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+        },
+        "large":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+        }
+      },
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "more-events":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:lastModified":"Thu Dec 09 2021 11:22:42 GMT+0000",
+      "sling:resourceType":"sauditourism/components/content/d01-more-events"
+    }
+  }
+}

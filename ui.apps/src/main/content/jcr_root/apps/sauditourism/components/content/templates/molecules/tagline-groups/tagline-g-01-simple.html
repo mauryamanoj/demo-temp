@@ -1,0 +1,13 @@
+<template data-sly-template.taglineG01Simple="${@ card}"
+          data-sly-use.tagline01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/taglines/tagline-01-simple.html">
+    <div data-sly-set.color="${card.isFeatured ? 'white' : 'default'}"
+            data-component="tagline-g-01-simple" class="color-${color}">
+        <ul class="taglines" data-list-container>
+            <sly data-sly-list="${card.simpleTagLinesList}">
+                <li class="tagline" data-list-item data-sly-test="${itemList.index < 3}">
+                    <sly data-sly-call="${tagline01SimpleTemplate.tagline01Simple @ copy=item}"></sly>
+                </li>
+            </sly>
+        </ul>
+    </div>
+</template>

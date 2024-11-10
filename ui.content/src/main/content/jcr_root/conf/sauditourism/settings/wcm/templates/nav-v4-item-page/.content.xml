@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        allowedPaths="[/content/sauditourism/\\w{2}/Configs(/.*)?]"
+        cq:lastModified="{Date}2019-10-10T14:42:25.480+02:00"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/sauditourism/settings/wcm/template-types/nav-item-page"
+        jcr:description="This template is used for configuration purposes. Eg: Main navigation structure, Footer configurations,etc."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="V4 Nav Item Page"
+        status="enabled"/>
+</jcr:root>

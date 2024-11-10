@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="9fe23571-81cf-4e85-976f-c8a0c2526e20">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2019-11-22T16:22:12.020+01:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}8"
+            dam:Comments="date:create: 2019-09-26T14:23:36+00:00&#xa;date:modify: 2019-09-26T14:23:36+00:00&#xa;jpeg:colorspace: 2&#xa;jpeg:sampling-factor: 2x2,1x1,1x1&#xa;software: ImageMagick 6.7.8-9 2014-05-12 Q16 http://www.imagemagick.org&#xa;Thumb::Document::Pages: 1&#xa;Thumb::Image::height: 192&#xa;Thumb::Image::Width: 192&#xa;Thumb::Mimetype: image/png&#xa;Thumb::MTime: 1569507816&#xa;Thumb::Size: 0BB&#xa;Thumb::URI: file:///mntlog/favicons/2019-09-26/e442e683b5b1c4e774d5611ad8d2e85e.ico.png&#xa;"
+            dam:extracted="{Date}2019-11-22T16:22:11.954+01:00"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}12"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
+            dam:Progressive="no"
+            dam:sha1="8718ea9cc9d697eb0e90383a36c4f0f019e2f2ac"
+            dam:size="{Long}1707"
+            dc:format="image/png"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}32"
+            tiff:ImageWidth="{Long}32"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

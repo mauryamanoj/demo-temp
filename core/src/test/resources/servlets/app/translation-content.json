@@ -1,0 +1,309 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:title": "app",
+    "jcr:versionHistory": "0991fb66-6378-43ad-aad7-6b44ab9c2d1d",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:predecessors": [
+      "41b99a18-e673-46e6-9a58-b8d4171e3c8c"
+    ],
+    "jcr:baseVersion": "41b99a18-e673-46e6-9a58-b8d4171e3c8c",
+    "jcr:isCheckedOut": true,
+    "jcr:uuid": "eafc77e1-e8d0-421e-b9e9-ca3ebdf0590c",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "en": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:title": "en",
+      "jcr:versionHistory": "4a2366c0-4f06-4240-a2b9-3e625904532f",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "jcr:predecessors": [
+        "a6eac418-7c94-40ce-bee6-ee8c60645832"
+      ],
+      "jcr:baseVersion": "a6eac418-7c94-40ce-bee6-ee8c60645832",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "cbde511d-60f6-4f7e-b586-068dfb85eb5a",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "event": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "startTime": "Thu Jan 09 2020 10:00:32 GMT+0000",
+        "jcr:title": "Machar Adventure Zone",
+        "headingLocationDetailType": "h1",
+        "locationLabel": "I am a label, edit me",
+        "locationTitle": "I am a location title, edit me",
+        "description": "I am a description, edit me",
+        "endTime": "Thu Jan 09 2020 17:00:19 GMT+0000",
+        "jcr:versionHistory": "3bc6787a-f054-49a1-a7bf-c9074a44aa65",
+        "freePaid": "paid",
+        "latitude": "27.568970",
+        "externalLink": "#",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/event-details",
+        "cq:lastReplicatedBy": "maren.dethlefsen",
+        "showHoursTitle": "I am a show hours title, edit me",
+        "addressDetail": "I am an address detail, edit me",
+        "address": "I am an address, edit me",
+        "region": "Machar National Park",
+        "season": "hail-season",
+        "calendarEndDate": "Sat Feb 01 2020 00:00:00 GMT+0000",
+        "jcr:predecessors": [
+          "9fa29df2-d5ea-4ecb-aa30-f419c52f3db6"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "cardImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "sliderImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "city": "Hail",
+        "copy": "Machar National Park is extending its offer with an adventure zone. Located in the heart of the national park, this adventure park includes many exciting adventure games, a fitting challenge to all thrill seekers. For the less adventurous, an outdoor cinema is providing a unique experience. ",
+        "image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+        "phone": "I am a phone number, edit me",
+        "theme": "red",
+        "title": "Machar Adventure Zone",
+        "longitude": "41.625040",
+        "locationInDetailLabel": "I am a location label, edit me",
+        "headingType": "h1",
+        "featureEventMobileImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "categoryTags": [
+          "sauditourism:events/themed-attractions"
+        ],
+        "jcr:description": "Machar National Park is extending its offer with an adventure zone. ",
+        "locationDistance": "1",
+        "jcr:baseVersion": "9fa29df2-d5ea-4ecb-aa30-f419c52f3db6",
+        "jcr:isCheckedOut": true,
+        "targetGroupTags": [
+          "sauditourism:audience/all"
+        ],
+        "imageListing": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+        "pageTitle": "Machar Adventure Zone - Visit Saudi Official Website",
+        "eventIntro": "I am an intro, edit me",
+        "eventTitle": "I am a title edit me",
+        "jcr:uuid": "7d63a975-12f0-48a6-a691-7e66f37fb0f9",
+        "ctaText": "CTA, edit me",
+        "featureImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "sling:resourceType": "sauditourism/components/structure/event-detail-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "headingshowHoursType": "h1",
+        "calendarStartDate": "Mon Jan 13 2020 00:00:00 GMT+0000",
+        "hideInSiteMap": "false",
+        "featureEventImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "cardImageMobile": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "disableSecondaryNav": true,
+        "location": "I am a location, edit me",
+        "shortDescription": "Machar National Park is extending its offer with an adventure zone. ",
+        "imageMobile": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+        "altImage": "Machar Adventure Zone",
+        "navTitle": "Machar Adventure Zone",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "header-block": {
+            "jcr:primaryType": "nt:unstructured",
+            "ctaTitle": "I am a title, edit me",
+            "title": "I am a title, edit me",
+            "ctaLink": "#",
+            "ctaText": "CTA, edit me",
+            "sling:resourceType": "sauditourism/components/content/headerblock",
+            "backTitle": "I am a title, edit me",
+            "backLink": "#",
+            "backText": "CTA, edit me",
+            "small": {
+              "jcr:primaryType": "nt:unstructured",
+              "focalpoint": "left top",
+              "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+            },
+            "medium": {
+              "jcr:primaryType": "nt:unstructured",
+              "focalpoint": "left top",
+              "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+            },
+            "large": {
+              "jcr:primaryType": "nt:unstructured",
+              "focalpoint": "left top",
+              "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+            }
+          },
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "eventLink": {
+          "jcr:primaryType": "nt:unstructured",
+          "url": "https://www.hailseason.sa/ar",
+          "copy": "Buy Tickets",
+          "targetInNewWindow": "true"
+        }
+      }
+    }
+  },
+  "ar": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:title": "Arabic",
+      "jcr:versionHistory": "04d2172c-c639-4c0f-843a-2914d7d9c394",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "jcr:predecessors": [
+        "0cc4b313-360f-475b-b5d1-db676a585a28"
+      ],
+      "jcr:baseVersion": "0cc4b313-360f-475b-b5d1-db676a585a28",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "f054a8a2-1a9d-4856-87fc-15b5c716b25b",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "event": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "startTime": "Thu Jan 09 2020 10:00:32 GMT+0000",
+        "jcr:title": "منطقة المغامرات بمنتزه مشار",
+        "headingLocationDetailType": "h1",
+        "locationLabel": "I am a label, edit me",
+        "locationTitle": "I am a location title, edit me",
+        "description": "I am a description, edit me",
+        "endTime": "Thu Jan 09 2020 17:00:19 GMT+0000",
+        "jcr:versionHistory": "0b87b375-a603-473c-a12c-4c8d0242eff0",
+        "freePaid": "paid",
+        "latitude": "27.568970",
+        "externalLink": "#",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/event-details",
+        "cq:lastReplicatedBy": "maren.dethlefsen",
+        "showHoursTitle": "I am a show hours title, edit me",
+        "addressDetail": "I am an address detail, edit me",
+        "address": "I am an address, edit me",
+        "region": "منتزه مشار",
+        "season": "hail-season",
+        "calendarEndDate": "Sat Feb 01 2020 00:00:00 GMT+0000",
+        "jcr:predecessors": [
+          "7734b9ac-d193-4d22-85e2-5a655fa419e4"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "cardImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "sliderImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "city": "Hail",
+        "copy": "اقتتاح منطقة المغامرات بمنتزه مشار مما يتضمن العديد من العاب المغامرات بالاضافة للسينما الخارجية",
+        "image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+        "phone": "I am a phone number, edit me",
+        "theme": "red",
+        "title": "منطقة المغامرات بمنتزه مشار",
+        "longitude": "41.625040",
+        "locationInDetailLabel": "I am a location label, edit me",
+        "headingType": "h1",
+        "featureEventMobileImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "categoryTags": [
+          "sauditourism:events/themed-attractions"
+        ],
+        "jcr:description": "اقتتاح منطقة المغامرات بمنتزه مشار مما يتضمن العديد من العاب المغامرات بالاضافة للسينما الخارجية",
+        "locationDistance": "1",
+        "jcr:baseVersion": "7734b9ac-d193-4d22-85e2-5a655fa419e4",
+        "jcr:isCheckedOut": true,
+        "targetGroupTags": [
+          "sauditourism:audience/all"
+        ],
+        "imageListing": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+        "pageTitle": "منطقة المغامرات بمنتزه مشار",
+        "eventIntro": "I am an intro, edit me",
+        "eventTitle": "I am a title edit me",
+        "jcr:uuid": "b676cf80-1ab8-4d2e-b7e9-3627b7cd4a5b",
+        "ctaText": "CTA, edit me",
+        "featureImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "sling:resourceType": "sauditourism/components/structure/event-detail-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "headingshowHoursType": "h1",
+        "calendarStartDate": "Mon Jan 13 2020 00:00:00 GMT+0000",
+        "hideInSiteMap": "false",
+        "featureEventImage": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "cardImageMobile": "/content/dam/saudi-tourism/media/events/e200/مشار.png",
+        "disableSecondaryNav": true,
+        "location": "I am a location, edit me",
+        "shortDescription": "اقتتاح منطقة المغامرات بمنتزه مشار مما يتضمن العديد من العاب المغامرات بالاضافة للسينما الخارجية",
+        "imageMobile": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+        "altImage": "منطقة المغامرات بمنتزه مشار",
+        "navTitle": "منطقة المغامرات بمنتزه مشار",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "header-block": {
+            "jcr:primaryType": "nt:unstructured",
+            "ctaTitle": "I am a title, edit me",
+            "title": "I am a title, edit me",
+            "ctaLink": "#",
+            "ctaText": "CTA, edit me",
+            "sling:resourceType": "sauditourism/components/content/headerblock",
+            "backTitle": "I am a title, edit me",
+            "backLink": "#",
+            "backText": "CTA, edit me",
+            "small": {
+              "jcr:primaryType": "nt:unstructured",
+              "focalpoint": "left top",
+              "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+            },
+            "medium": {
+              "jcr:primaryType": "nt:unstructured",
+              "focalpoint": "left top",
+              "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+            },
+            "large": {
+              "jcr:primaryType": "nt:unstructured",
+              "focalpoint": "left top",
+              "fileReference": "/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+            }
+          },
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        },
+        "eventLink": {
+          "jcr:primaryType": "nt:unstructured",
+          "url": "https://www.hailseason.sa/ar",
+          "copy": "شراء التذاكر",
+          "targetInNewWindow": "true"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:created":"Tue Nov 21 2023 20:49:02 GMT+0100",
+  "jcr:lastModified":"Tue Nov 21 2023 20:51:52 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/evisa-countries-groups",
+  "listCountriesGroups":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "name":"gcc"
+    },
+    "item1":{
+      "jcr:primaryType":"nt:unstructured",
+      "name":"eligible"
+    },
+    "item2":{
+      "jcr:primaryType":"nt:unstructured",
+      "name":"noneligible"
+    },
+    "item3":{
+      "jcr:primaryType":"nt:unstructured",
+      "name":"Group D"
+    }
+  }
+}

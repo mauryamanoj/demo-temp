@@ -1,0 +1,69 @@
+{
+    "code": 200,
+    "message": "success",
+    "response": [
+        {
+            "title": "tabuk",
+            "path": "/content/dam/sauditourism/cf/en/destinations/tabuk"
+        },
+        {
+            "title": "Hail",
+            "path": "/content/dam/sauditourism/cf/en/destinations/hail"
+        },
+        {
+            "title": "Makkah",
+            "path": "/content/dam/sauditourism/cf/en/destinations/makkah"
+        },
+        {
+            "title": "Dammam",
+            "path": "/content/dam/sauditourism/cf/en/destinations/dammam"
+        },
+        {
+            "title": "AlUla + test",
+            "path": "/content/dam/sauditourism/cf/en/destinations/alula"
+        },
+        {
+            "title": "Welcome to Chez fady",
+            "path": "/content/dam/sauditourism/cf/en/destinations/chez-fadi"
+        },
+        {
+            "title": "Jeddah",
+            "path": "/content/dam/sauditourism/cf/en/destinations/jeddah"
+        },
+        {
+            "path": "/content/dam/sauditourism/cf/en/destinations/jcr:content"
+        },
+        {
+            "path": "/content/dam/sauditourism/cf/en/destinations/test-tes"
+        },
+        {
+            "path": "/content/dam/sauditourism/cf/en/destinations/test-des-1"
+        },
+        {
+            "title": "Medina",
+            "path": "/content/dam/sauditourism/cf/en/destinations/medina"
+        },
+        {
+            "title": "destination Tao",
+            "path": "/content/dam/sauditourism/cf/en/destinations/destination-tao"
+        },
+        {
+            "path": "/content/dam/sauditourism/cf/en/destinations/destination-with-tag"
+        },
+        {
+            "path": "/content/dam/sauditourism/cf/en/destinations/test-des"
+        },
+        {
+            "title": "Riyadh",
+            "path": "/content/dam/sauditourism/cf/en/destinations/riyadh"
+        },
+        {
+            "title": "BOB",
+            "path": "/content/dam/sauditourism/cf/en/destinations/bobdestination"
+        },
+        {
+            "title": "Al Ahsa",
+            "path": "/content/dam/sauditourism/cf/en/destinations/al-ahsa"
+        }
+    ]
+}

@@ -1,0 +1,1390 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Sun Mar 20 2022 11:42:52 GMT+0000",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Saudi Calendar",
+    "cq:lastReplicationAction":"Activate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"70d34706-3065-4eba-8f57-d6e586c42ab3",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "searchCategories":[
+      "sauditourism:searchCategories/FestivalsEvents"
+    ],
+    "jcr:predecessors":[
+      "3df429fb-b45a-4c8f-be9f-536bbfb483e8"
+    ],
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Sun Mar 20 2022 11:42:52 GMT+0000",
+    "cq:lastReplicated":"Thu Oct 13 2022 11:14:42 GMT+0000",
+    "cq:lastModified":"Thu Oct 13 2022 10:52:26 GMT+0000",
+    "s7featureImage":"/content/dam/cq5dam.web.1280.1280.jpeg",
+    "theme":"orange",
+    "jcr:baseVersion":"3df429fb-b45a-4c8f-be9f-536bbfb483e8",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "hideInNav":"true",
+    "jcr:uuid":"e72dfced-0227-40ae-8f64-5b2e3b452684",
+    "featureImage":"/content/dam/cq5dam.web.1280.1280.jpeg",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "navTitle":"Saudi Calendar",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero":{
+          "jcr:primaryType":"nt:unstructured",
+          "subtitle":"Unlock the Kingdom and discover all the events and festivals Saudi Arabia has to offer. Never miss a beat.",
+          "setSubtitleBelow":"true",
+          "subtitleWeight":"h3",
+          "interactiveVideo":"false",
+          "jcr:created":"Wed Apr 06 2022 13:31:42 GMT+0000",
+          "title":"Saudi Calendar",
+          "showFullHeight":"false",
+          "titleWeight":"h1",
+          "hideFav":"true",
+          "jcr:lastModified":"Mon Sep 05 2022 10:23:15 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "hideImageBrush":"false",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"/content/dam/cq5dam.web.1280.1280.jpeg",
+            "fileReference":"/content/dam/cq5dam.web.1280.1280.jpeg",
+            "alt":"Saudi Calendar",
+            "mobileImageReference":"/content/dam/cq5dam.web.1280.1280.jpeg",
+            "s7mobileImageReference":"/content/dam/cq5dam.web.1280.1280.jpeg"
+          },
+          "link":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/en/calendar",
+            "copy":"Explore All Events"
+          },
+          "caption":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "video":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "browse_events":{
+          "jcr:primaryType":"nt:unstructured",
+          "thisWeekEventsText":"This Week",
+          "thisMonthEventsText":"This Month",
+          "headline":"Browse Events",
+          "todayEventsText":"Today",
+          "eventsFilterPagePath":"/content/sauditourism/en/calendar",
+          "emptyCalendarTitle": "The calendar is empty!",
+          "emptyCalendarSubtitle": "We will be adding new events soon. Please check back later",
+          "jcr:created":"Wed Apr 06 2022 16:13:37 GMT+0000",
+          "jcr:lastModified":"Wed Apr 06 2022 16:15:32 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/browse-events"
+        },
+        "events_cards":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"Seasons and Fest",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Wed Apr 06 2022 16:17:24 GMT+0000",
+          "jcr:lastModified":"Sun Aug 28 2022 13:08:36 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "componentType":"seasons-and-festivals",
+          "numberOfMonths":"1",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "fourthMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "fifthMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "sixthMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "seventhMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "eightMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "festivalcards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+              "fileReference":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+              "altText":"Riyadh Season",
+              "filtersPath":"/content/sauditourism/en/calendar/saudi-calendar/riyadh-season",
+              "titleSeason":"Riyadh Season",
+              "seasonType":"riyadh-season",
+              "seasonDescription":"A lot of interesting  events"
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/jeddah_hero_desktop-2",
+              "fileReference":"/content/dam/summer-season/jeddah_hero_desktop.png",
+              "filtersPath":"/content/sauditourism/en/calendar/saudi-calendar/jeddah-season",
+              "titleSeason":"Jeddah Season",
+              "seasonType":"jeddah-season",
+              "seasonDescription":"Jeddah Season"
+            }
+          }
+        },
+        "events_cards_1570274218":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"This Week",
+          "viewAllWeek":"View All",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Wed Apr 06 2022 16:24:58 GMT+0000",
+          "jcr:lastModified":"Wed Apr 06 2022 16:37:13 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "componentType":"this-week-events",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "events_cards_1570274":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"This Month",
+          "viewAllWeek":"View All",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Wed Apr 06 2022 16:24:58 GMT+0000",
+          "jcr:lastModified":"Wed Apr 06 2022 16:26:13 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "viewAllMonth":"View All",
+          "componentType":"this-month-events",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "events_cards_1407652442":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"Hand Picked Events",
+          "minNumberEventShowPlusSign":"99",
+          "jcr:created":"Thu Sep 15 2022 09:34:38 GMT+0000",
+          "jcr:lastModified":"Thu Oct 13 2022 10:52:26 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "viewAllLabel":"View All",
+          "componentType":"hand-pick-events",
+          "numberOfMonths":"1",
+          "viewAllUrl":"/en/calendar?season=all-seasons&startDate=2022-09-15&endDate=2022-09-17&type=this-week",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "fourthMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "fifthMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "sixthMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "seventhMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "eightMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "handPickedEvents":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "eventPath":"/content/sauditourism/en/events/via-ferrata-and-hammock"
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "eventPath":"/content/sauditourism/en/events/the-groves"
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "eventPath":"/content/sauditourism/en/events/old-town-market-road"
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "eventPath":"/content/sauditourism/en/events/elephant-rock-visit"
+            }
+          }
+        },
+        "events_cards_1570274_48304227":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"Upcoming Months",
+          "viewAllWeek":"View All",
+          "minNumberEventShowPlusSign":"3",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Wed Apr 06 2022 16:24:58 GMT+0000",
+          "jcr:lastModified":"Sun Oct 09 2022 10:42:09 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "componentType":"upcoming-months",
+          "numberOfMonths":"5",
+          "hideOrnament":"false",
+          "seasonType":"alula-season",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"/content/dam/no-dynamic-media-folder/saudi-by-month/May_Mobile.jpg",
+            "fileReference":"/content/dam/no-dynamic-media-folder/saudi-by-month/May_Mobile.jpg",
+            "alt":"alt"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/June_Mobile",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/June_Mobile.jpg",
+            "alt":"alt"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"/content/dam/no-dynamic-media-folder/saudi-by-month/July_Mobile.jpg",
+            "fileReference":"/content/dam/no-dynamic-media-folder/saudi-by-month/July_Mobile.jpg",
+            "alt":"alt"
+          },
+          "fourthMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/Overview_Mobile",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/Overview_Mobile.jpg"
+          },
+          "fifthMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/September_Mobile",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Mobile.jpg"
+          },
+          "sixthMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/October_Mobile",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/October_Mobile.jpg",
+            "alt":"October"
+          },
+          "seventhMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/November_Mobile",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/November_Mobile.jpg"
+          },
+          "eightMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/December_Desktop",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/December_Desktop.jpg"
+          },
+          "handPickedEvents":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          }
+        },
+        "news_letter_subscrip":{
+          "jcr:primaryType":"nt:unstructured",
+          "stayUpToDate":"Stay up to date",
+          "subscribeButtonText":"Subscribe",
+          "jcr:created":"Wed Apr 06 2022 16:49:19 GMT+0000",
+          "emailInputPlaceholder":"Enter email address",
+          "jcr:lastModified":"Wed Apr 06 2022 16:49:46 GMT+0000",
+          "errorMessage":"Error Happened While Registering your email. Please, try again later.",
+          "successMessage":"Email is registered",
+          "sling:resourceType":"sauditourism/components/content/news-letter-subscription",
+          "subscribeText":"Subscribe to our newsletter",
+          "invalidEmailMessage":"Invalid Email Address."
+        },
+        "events_cards_40382016":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:created":"Thu Oct 13 2022 10:48:39 GMT+0000",
+          "jcr:lastModified":"Thu Oct 13 2022 10:48:39 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards"
+        }
+      }
+    }
+  },
+  "jeddah-season":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:created":"Mon Jul 18 2022 14:13:19 GMT+0000",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:mixinTypes":[
+        "mix:versionable"
+      ],
+      "jcr:title":"Jeddah Season",
+      "cq:lastReplicationAction":"Activate",
+      "jcr:versionHistory":"2712f00d-0733-4df5-b639-104ae7bbb964",
+      "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+      "searchCategories":[
+        "sauditourism:searchCategories/Campaign"
+      ],
+      "jcr:predecessors":[
+        "456bf5ef-7adc-4da9-bf01-70836ffaca58"
+      ],
+      "jcr:created":"Mon Jul 18 2022 14:13:19 GMT+0000",
+      "cq:lastReplicated":"Sun Sep 25 2022 09:43:33 GMT+0000",
+      "cq:lastModified":"Sun Sep 25 2022 09:43:23 GMT+0000",
+      "s7featureImage":"https://scth.scene7.com/is/image/scth/jeddah-season-banner-1",
+      "theme":"orange",
+      "jcr:baseVersion":"456bf5ef-7adc-4da9-bf01-70836ffaca58",
+      "jcr:isCheckedOut":true,
+      "pageAuthor":"contentAuthors",
+      "jcr:uuid":"a8f60d0f-0111-433c-97d8-edb24de70673",
+      "featureImage":"/content/dam/jeddah-season-banner.jpg",
+      "sling:resourceType":"sauditourism/components/structure/page",
+      "hideInSiteMap":"false",
+      "searchHighlight":"false",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "responsivegrid":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero":{
+            "jcr:primaryType":"nt:unstructured",
+            "subtitle":"Our Good Days",
+            "setSubtitleBelow":"false",
+            "subtitleWeight":"h3",
+            "interactiveVideo":"false",
+            "jcr:created":"Sun Jun 05 2022 13:06:55 GMT+0000",
+            "title":"Jeddah Season",
+            "showFullHeight":"false",
+            "titleWeight":"h1",
+            "hideFav":"true",
+            "jcr:lastModified":"Sun Jun 05 2022 13:08:21 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/jeddah-season-banner-1",
+              "fileReference":"/content/dam/jeddah-season-banner.jpg",
+              "mobileImageReference":"/content/dam/jeddah-season-banner.jpg",
+              "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/jeddah-season-banner-1"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "caption":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "video":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "browse_events":{
+            "jcr:primaryType":"nt:unstructured",
+            "thisWeekEventsText":"This Week",
+            "thisMonthEventsText":"This Month",
+            "headline":"Browse Events",
+            "todayEventsText":"Today",
+            "eventsFilterPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:08:37 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 13:09:31 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/browse-events"
+          },
+          "custom_breadcrumb":{
+            "jcr:primaryType":"nt:unstructured",
+            "startLevel":"2",
+            "jcr:created":"Mon Jun 06 2022 08:00:46 GMT+0000",
+            "showHidden":"false",
+            "jcr:lastModified":"Mon Jun 06 2022 08:00:54 GMT+0000",
+            "hideCurrent":"false",
+            "sling:resourceType":"sauditourism/components/content/custom-breadcrumb"
+          },
+          "events_cards_1253342690":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Sightseeing Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Sun Jun 05 2022 14:22:36 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/sightseeing"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_1253342":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Culture & Art Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Tue Jun 07 2022 07:35:10 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/culture"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_1253342_1188260452":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Dining, Sport & Adventure Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Sun Jun 05 2022 16:55:08 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/dining",
+              "sauditourism:events/sport",
+              "sauditourism:events/adventure"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_169610464":{
+            "jcr:primaryType":"nt:unstructured",
+            "venueTag":[
+              "sauditourism:venue/al-balad"
+            ],
+            "headline":"Al Balad",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+            "jcr:lastModified":"Tue Jun 07 2022 09:23:13 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_1696104":{
+            "jcr:primaryType":"nt:unstructured",
+            "venueTag":[
+              "sauditourism:venue/jeddah-waves"
+            ],
+            "headline":"Jeddah Waves",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+            "jcr:lastModified":"Tue Jun 07 2022 09:26:24 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_1696104_1118985704":{
+            "jcr:primaryType":"nt:unstructured",
+            "venueTag":[
+              "sauditourism:venue/jeddah-pier"
+            ],
+            "headline":"Jeddah Pier",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+            "jcr:lastModified":"Tue Jun 07 2022 09:25:43 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Upcoming Months",
+            "minNumberEventShowPlusSign":"99",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:13:09 GMT+0000",
+            "seasonType":"jeddah-season",
+            "jcr:lastModified":"Sun Sep 25 2022 09:43:23 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "componentType":"upcoming-months",
+            "numberOfMonths":"3",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/July_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/July_Desktop.jpg"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/August_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/August_Desktop.jpg"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/September_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Desktop.jpg"
+            },
+            "fourthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "fifthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "sixthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "seventhMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "eightMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "news_letter_subscrip":{
+            "jcr:primaryType":"nt:unstructured",
+            "stayUpToDate":"Stay up to date",
+            "subscribeButtonText":"Subscribe",
+            "jcr:created":"Sun Sep 18 2022 11:10:21 GMT+0000",
+            "emailInputPlaceholder":"Enter email address",
+            "jcr:lastModified":"Sun Sep 18 2022 11:11:05 GMT+0000",
+            "errorMessage":"Error Happened While Registering your email. Please, try again later.",
+            "successMessage":"Email is registered",
+            "sling:resourceType":"sauditourism/components/content/news-letter-subscription",
+            "subscribeText":"Subscribe to our newsletter",
+            "invalidEmailMessage":"Invalid Email Address."
+          }
+        }
+      }
+    }
+  },
+  "riyadh-season":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:created":"Tue May 24 2022 08:30:00 GMT+0000",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:mixinTypes":[
+        "mix:versionable"
+      ],
+      "jcr:title":"Riyadh Season",
+      "cq:lastReplicationAction":"Activate",
+      "jcr:versionHistory":"6c4675a1-23c1-4023-b561-5c570f34e637",
+      "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+      "searchCategories":[
+        "sauditourism:searchCategories/Campaign"
+      ],
+      "jcr:predecessors":[
+        "aff6e3c5-87c9-41bb-ac80-49a35dca0127"
+      ],
+      "jcr:created":"Tue May 24 2022 08:30:00 GMT+0000",
+      "cq:lastReplicated":"Sun Oct 23 2022 08:40:09 GMT+0000",
+      "cq:lastModified":"Sun Oct 23 2022 08:40:02 GMT+0000",
+      "s7featureImage":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+      "theme":"orange",
+      "jcr:baseVersion":"aff6e3c5-87c9-41bb-ac80-49a35dca0127",
+      "jcr:isCheckedOut":true,
+      "pageAuthor":"contentAuthors",
+      "jcr:uuid":"e4b6f562-9f09-466e-88dd-a7b94bb46182",
+      "featureImage":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+      "sling:resourceType":"sauditourism/components/structure/page",
+      "hideInSiteMap":"false",
+      "searchHighlight":"false",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "responsivegrid":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero":{
+            "jcr:primaryType":"nt:unstructured",
+            "subtitle":"Feel the ultimate thrill with marvelous shows, fireworks, and parade floats performed by International performers.",
+            "setSubtitleBelow":"true",
+            "subtitleWeight":"h3",
+            "interactiveVideo":"false",
+            "enableCustomBranding":"false",
+            "jcr:created":"Sun Jun 05 2022 13:06:55 GMT+0000",
+            "title":"Riyadh Season",
+            "showFullHeight":"false",
+            "titleWeight":"h1",
+            "hideFav":"true",
+            "jcr:lastModified":"Sun Oct 23 2022 08:40:02 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "hideImageBrush":"false",
+            "image":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+              "fileReference":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+              "mobileImageReference":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg",
+              "s7mobileImageReference":"/content/dam/nB02IiBTQzwX1SGJDeL7fmTefMGybiM5GgrfsRPu.jpg"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "url":"/content/sauditourism/en/calendar/saudi-calendar/riyadh-season",
+              "copy":"Explore All Events"
+            },
+            "caption":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "video":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "browse_events":{
+            "jcr:primaryType":"nt:unstructured",
+            "thisWeekEventsText":"This Week",
+            "thisMonthEventsText":"This Month",
+            "headline":"Browse Events",
+            "todayEventsText":"Today",
+            "eventsFilterPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:08:37 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 13:09:31 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/browse-events"
+          },
+          "custom_breadcrumb":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:created":"Mon Jun 06 2022 07:45:46 GMT+0000",
+            "jcr:lastModified":"Mon Jun 06 2022 07:45:46 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/custom-breadcrumb"
+          },
+          "events_cards_1253342":{
+            "jcr:primaryType":"nt:unstructured",
+            "venueTag":[
+              "sauditourism:events/Conferences",
+              "sauditourism:events/Performing-Arts",
+              "sauditourism:events/adventure",
+              "sauditourism:events/central",
+              "sauditourism:events/culture",
+              "sauditourism:events/digital",
+              "sauditourism:events/dining",
+              "sauditourism:events/eastern",
+              "sauditourism:events/nature",
+              "sauditourism:events/shopping-retail",
+              "sauditourism:events/sightseeing",
+              "sauditourism:events/sport",
+              "sauditourism:events/themed-attractions",
+              "sauditourism:events/visa",
+              "sauditourism:events/western"
+            ],
+            "headline":"All Venues",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Tue Jul 19 2022 07:24:31 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "categoryTag":[
+              "sauditourism:events/dining"
+            ],
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "festivalcards":{
+              "jcr:primaryType":"nt:unstructured",
+              "item0":{
+                "jcr:primaryType":"nt:unstructured",
+                "titleSeason":"Riyadh Season",
+                "seasonType":"riyadh-season",
+                "seasonDescription":"Riyadh Season"
+              }
+            }
+          },
+          "events_cards_1253342690":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"4 Categories",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Mon Aug 08 2022 08:11:38 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/Conferences",
+              "sauditourism:events/adventure",
+              "sauditourism:events/culture",
+              "sauditourism:events/dining",
+              "sauditourism:events/nature"
+            ],
+            "componentType":"categoryBasedEvents",
+            "numberOfMonths":"1",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "fourthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "fifthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "sixthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "seventhMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "eightMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "festivalcards":{
+              "jcr:primaryType":"nt:unstructured",
+              "item0":{
+                "jcr:primaryType":"nt:unstructured",
+                "titleSeason":"Riyadh Season",
+                "seasonType":"riyadh-season",
+                "seasonDescription":"Riyadh Season"
+              }
+            }
+          },
+          "events_cards_169610464":{
+            "jcr:primaryType":"nt:unstructured",
+            "venueTag":[
+              "sauditourism:events/adventure",
+              "sauditourism:events/central"
+            ],
+            "headline":"All Venues",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+            "jcr:lastModified":"Tue Jul 19 2022 07:14:36 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_184833537":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Nature Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Mon Jul 18 2022 19:06:48 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Wed Jul 20 2022 09:20:03 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/nature"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Upcoming Months",
+            "minNumberEventShowPlusSign":"99",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:13:09 GMT+0000",
+            "jcr:lastModified":"Sun Sep 18 2022 10:51:24 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "componentType":"upcoming-months",
+            "numberOfMonths":"4",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/July_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/July_Desktop.jpg",
+              "alt":"alt"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/August_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/August_Desktop.jpg",
+              "alt":"alt"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/September_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Desktop.jpg",
+              "alt":"alt"
+            },
+            "fourthMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/Overview_Mobile",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/Overview_Mobile.jpg"
+            },
+            "fifthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "sixthMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "seventhMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "eightMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "news_letter_subscrip":{
+            "jcr:primaryType":"nt:unstructured",
+            "stayUpToDate":"Stay up to date",
+            "subscribeButtonText":"Subscribe",
+            "jcr:created":"Sun Jun 05 2022 13:12:04 GMT+0000",
+            "emailInputPlaceholder":"Enter email address",
+            "jcr:lastModified":"Sun Jun 05 2022 13:12:16 GMT+0000",
+            "errorMessage":"Error Happened While Registering your email. Please, try again later.",
+            "successMessage":"Email is registered",
+            "sling:resourceType":"sauditourism/components/content/news-letter-subscription",
+            "subscribeText":"Subscribe to our newsletter",
+            "invalidEmailMessage":"Invalid Email Address."
+          }
+        }
+      }
+    }
+  },
+  "alula-season":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:created":"Mon Jul 18 2022 14:13:19 GMT+0000",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:mixinTypes":[
+        "mix:versionable"
+      ],
+      "jcr:title":"AlUla Season",
+      "cq:lastReplicationAction":"Activate",
+      "jcr:versionHistory":"2d52dcaf-8fb1-458b-bf32-2137412ba3b1",
+      "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+      "searchCategories":[
+        "sauditourism:searchCategories/Campaign"
+      ],
+      "jcr:predecessors":[
+        "11f75a80-5e29-44f4-a8c7-405c65f273f4"
+      ],
+      "jcr:created":"Mon Jul 18 2022 14:13:19 GMT+0000",
+      "cq:lastReplicated":"Sun Sep 18 2022 10:45:54 GMT+0000",
+      "cq:lastModified":"Tue Jul 19 2022 11:19:04 GMT+0000",
+      "s7featureImage":"/content/dam/saudi-calendar/Al_Ula_Season.jpeg",
+      "theme":"orange",
+      "jcr:baseVersion":"11f75a80-5e29-44f4-a8c7-405c65f273f4",
+      "jcr:isCheckedOut":true,
+      "pageAuthor":"contentAuthors",
+      "jcr:uuid":"bc642139-21a5-4cc7-8a5e-21b58248f68a",
+      "featureImage":"/content/dam/saudi-calendar/Al_Ula_Season.jpeg",
+      "sling:resourceType":"sauditourism/components/structure/page",
+      "hideInSiteMap":"false",
+      "searchHighlight":"false",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "responsivegrid":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero":{
+            "jcr:primaryType":"nt:unstructured",
+            "subtitle":"Time to celebrate AlUla. Discover what’s new and what’s on in the World’s Masterpiece.",
+            "setSubtitleBelow":"true",
+            "subtitleWeight":"h3",
+            "interactiveVideo":"false",
+            "jcr:created":"Sun Jun 05 2022 13:06:55 GMT+0000",
+            "title":"AlUla Season",
+            "showFullHeight":"false",
+            "titleWeight":"h1",
+            "hideFav":"true",
+            "jcr:lastModified":"Mon Jun 06 2022 08:02:25 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"/content/dam/saudi-calendar/Al_Ula_Season.jpeg",
+              "fileReference":"/content/dam/saudi-calendar/Al_Ula_Season.jpeg",
+              "mobileImageReference":"/content/dam/saudi-calendar/Al_Ula_Season.jpeg",
+              "s7mobileImageReference":"/content/dam/saudi-calendar/Al_Ula_Season.jpeg"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "caption":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "video":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "browse_events":{
+            "jcr:primaryType":"nt:unstructured",
+            "thisWeekEventsText":"This Week",
+            "thisMonthEventsText":"This Month",
+            "headline":"Browse Events",
+            "todayEventsText":"Today",
+            "eventsFilterPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:08:37 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 13:09:31 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/browse-events"
+          },
+          "custom_breadcrumb":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:created":"Mon Jun 06 2022 08:02:03 GMT+0000",
+            "jcr:lastModified":"Mon Jun 06 2022 08:02:03 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/custom-breadcrumb"
+          },
+          "events_cards_1253342690":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Culture Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Sun Jun 05 2022 16:58:39 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/culture"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_169610464":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"All Venues",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 16:58:54 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_1253342":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Dining Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Sun Jun 05 2022 17:00:09 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/dining"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Upcoming Months",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:13:09 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 13:16:17 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "componentType":"upcoming-months",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/July_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/July_Desktop.jpg"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/August_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/August_Desktop.jpg"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/September_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Desktop.jpg"
+            }
+          },
+          "news_letter_subscrip":{
+            "jcr:primaryType":"nt:unstructured",
+            "stayUpToDate":"Stay up to date",
+            "subscribeButtonText":"Subscribe",
+            "jcr:created":"Sun Jun 05 2022 13:12:04 GMT+0000",
+            "emailInputPlaceholder":"Enter email address",
+            "jcr:lastModified":"Sun Jun 05 2022 13:12:16 GMT+0000",
+            "errorMessage":"Error Happened While Registering your email. Please, try again later.",
+            "successMessage":"Email is registered",
+            "sling:resourceType":"sauditourism/components/content/news-letter-subscription",
+            "subscribeText":"Subscribe to our newsletter",
+            "invalidEmailMessage":"Invalid Email Address."
+          },
+          "best_experiences":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:created":"Tue Jul 19 2022 10:57:45 GMT+0000",
+            "jcr:lastModified":"Tue Jul 19 2022 10:57:45 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/best-experiences"
+          },
+          "c27_teaser_with_card":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:created":"Tue Jul 19 2022 11:19:04 GMT+0000",
+            "title":"Mod-Te-04",
+            "jcr:lastModified":"Tue Jul 19 2022 11:19:04 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/c27-teaser-with-cards/v0/c27-teaser-with-cards"
+          }
+        }
+      }
+    }
+  },
+  "all-season":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:created":"Mon Jul 18 2022 14:13:19 GMT+0000",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:mixinTypes":[
+        "mix:versionable"
+      ],
+      "jcr:title":"All Season",
+      "cq:lastReplicationAction":"Activate",
+      "jcr:versionHistory":"cf4d8335-af86-469c-85aa-c9a6652fa955",
+      "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+      "searchCategories":[
+        "sauditourism:searchCategories/Campaign"
+      ],
+      "jcr:predecessors":[
+        "1b5c3dee-a644-4409-b5a7-b68422735f1b"
+      ],
+      "jcr:created":"Mon Jul 18 2022 14:13:19 GMT+0000",
+      "cq:lastReplicated":"Mon Jun 06 2022 10:02:17 GMT+0000",
+      "cq:lastModified":"Mon Jun 06 2022 10:02:13 GMT+0000",
+      "s7featureImage":"/content/dam/saudi-tourism/Its-All-Happening-web.png",
+      "theme":"orange",
+      "jcr:baseVersion":"1b5c3dee-a644-4409-b5a7-b68422735f1b",
+      "jcr:isCheckedOut":true,
+      "pageAuthor":"contentAuthors",
+      "jcr:uuid":"32ef77a2-2066-4d98-a986-a548a21e8ed1",
+      "featureImage":"/content/dam/saudi-tourism/Its-All-Happening-web.png",
+      "sling:resourceType":"sauditourism/components/structure/page",
+      "hideInSiteMap":"false",
+      "searchHighlight":"false",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "responsivegrid":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "h02_secondary_hero":{
+            "jcr:primaryType":"nt:unstructured",
+            "setSubtitleBelow":"false",
+            "subtitleWeight":"h3",
+            "interactiveVideo":"false",
+            "jcr:created":"Sun Jun 05 2022 13:06:55 GMT+0000",
+            "title":"All Season",
+            "showFullHeight":"false",
+            "titleWeight":"h1",
+            "hideFav":"true",
+            "jcr:lastModified":"Sun Jun 05 2022 14:42:21 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+            "image":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"/content/dam/saudi-tourism/Its-All-Happening-web.png",
+              "fileReference":"/content/dam/saudi-tourism/Its-All-Happening-web.png",
+              "mobileImageReference":"/content/dam/saudi-tourism/Its-All-Happening-web.png",
+              "s7mobileImageReference":"/content/dam/saudi-tourism/Its-All-Happening-web.png"
+            },
+            "link":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "caption":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "video":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "browse_events":{
+            "jcr:primaryType":"nt:unstructured",
+            "thisWeekEventsText":"This Week",
+            "thisMonthEventsText":"This Month",
+            "headline":"Browse Events",
+            "todayEventsText":"Today",
+            "eventsFilterPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:08:37 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 13:09:31 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/browse-events"
+          },
+          "custom_breadcrumb":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:created":"Mon Jun 06 2022 08:03:06 GMT+0000",
+            "jcr:lastModified":"Mon Jun 06 2022 08:03:06 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/custom-breadcrumb"
+          },
+          "events_cards_1253342690":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Shows & Performance Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Mon Jun 06 2022 10:01:20 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/Performing-Arts"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_1253342":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Convention Category",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+            "viewAllCategory":"View All",
+            "jcr:lastModified":"Mon Jun 06 2022 10:02:13 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "categoryTag":[
+              "sauditourism:events/Conferences"
+            ],
+            "componentType":"categoryBasedEvents",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards_169610464":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"All Venues",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 16:57:01 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "viewAllVenue":"View All",
+            "componentType":"grouped",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          },
+          "events_cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Upcoming Months",
+            "filtersPagePath":"/content/sauditourism/en/calendar",
+            "jcr:created":"Sun Jun 05 2022 13:13:09 GMT+0000",
+            "jcr:lastModified":"Sun Jun 05 2022 13:16:17 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "componentType":"upcoming-months",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/July_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/July_Desktop.jpg"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/August_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/August_Desktop.jpg"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured",
+              "s7fileReference":"https://scth.scene7.com/is/image/scth/September_Desktop",
+              "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Desktop.jpg"
+            }
+          },
+          "news_letter_subscrip":{
+            "jcr:primaryType":"nt:unstructured",
+            "stayUpToDate":"Stay up to date",
+            "subscribeButtonText":"Subscribe",
+            "jcr:created":"Sun Jun 05 2022 13:12:04 GMT+0000",
+            "emailInputPlaceholder":"Enter email address",
+            "jcr:lastModified":"Sun Jun 05 2022 13:12:16 GMT+0000",
+            "errorMessage":"Error Happened While Registering your email. Please, try again later.",
+            "successMessage":"Email is registered",
+            "sling:resourceType":"sauditourism/components/content/news-letter-subscription",
+            "subscribeText":"Subscribe to our newsletter",
+            "invalidEmailMessage":"Invalid Email Address."
+          }
+        }
+      }
+    }
+  },
+  "TestOnly":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:created":"Mon Aug 01 2022 13:49:43 GMT+0000",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:mixinTypes":[
+        "mix:versionable"
+      ],
+      "jcr:title":"Test Only",
+      "cq:lastReplicationAction":"Activate",
+      "jcr:versionHistory":"de5df0d3-21ad-4e51-b424-a47797aba148",
+      "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+      "searchCategories":[
+        "sauditourism:searchCategories/MeetSaudi"
+      ],
+      "jcr:predecessors":[
+        "0e28ded5-a0df-4afe-9ee7-0d1c71ca9ca3"
+      ],
+      "jcr:created":"Mon Aug 01 2022 13:49:43 GMT+0000",
+      "cq:lastReplicated":"Mon Aug 01 2022 14:07:09 GMT+0000",
+      "cq:lastModified":"Mon Aug 01 2022 14:12:13 GMT+0000",
+      "theme":"red",
+      "jcr:baseVersion":"0e28ded5-a0df-4afe-9ee7-0d1c71ca9ca3",
+      "jcr:isCheckedOut":true,
+      "pageAuthor":"contentAuthors",
+      "pageTitle":"Test Only",
+      "jcr:uuid":"dfa0bc32-ece7-46a9-90fb-4a99d5792ca3",
+      "sling:resourceType":"sauditourism/components/structure/page",
+      "hideInSiteMap":"false",
+      "searchHighlight":"false",
+      "navTitle":"Test Only",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "responsivegrid":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "events_cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "headline":"Seasons and Festivals Test",
+            "jcr:created":"Mon Aug 01 2022 13:51:29 GMT+0000",
+            "jcr:lastModified":"Mon Aug 01 2022 14:12:13 GMT+0000",
+            "sling:resourceType":"sauditourism/components/content/events-cards",
+            "componentType":"seasons-and-festivals",
+            "hideOrnament":"false",
+            "nextMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "secondMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "thirdMonth":{
+              "jcr:primaryType":"nt:unstructured"
+            },
+            "festivalcards":{
+              "jcr:primaryType":"nt:unstructured",
+              "item0":{
+                "jcr:primaryType":"nt:unstructured",
+                "titleSeason":"Test Season",
+                "seasonType":"test-season"
+              },
+              "item1":{
+                "jcr:primaryType":"nt:unstructured",
+                "filtersPath":"/content/sauditourism/en/calendar/saudi-calendar/riyadh-season",
+                "titleSeason":"مهرجان الرياض",
+                "seasonType":"riyadh-season"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

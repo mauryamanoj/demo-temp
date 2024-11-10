@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-23T15:09:10.961+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-23T15:09:10.961+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="262ea4a0-3a8d-35b2-a3c5-1afae3efe962"
+    rep:authorizableId="trip-package-users"
+    rep:members="{WeakReference}[2bc28e22-8525-375e-94c0-7dbc14850c34,5a6ad8bd-4b1e-31b3-923f-9fc60c0ee54e]"
+    rep:principalName="trip-package-users">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="trip-package-users"/>
+</jcr:root>

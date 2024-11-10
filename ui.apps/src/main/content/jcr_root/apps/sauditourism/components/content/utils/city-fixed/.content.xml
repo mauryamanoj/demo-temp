@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured">
+  <!--/* Region: Riyadh Region */-->
+  <riyadh-region
+      jcr:primaryType="nt:unstructured"
+      text="Riyadh Region"
+      value="riyadh-region"
+      navigationValue="riyadh"
+      latitude="23.33333"
+      longitude="45.333328"
+      weatherCityId="{Long}108411"
+      weatherCityName="Minţaqat ar Riyāḑ"/>
+  <riyadh
+      jcr:primaryType="nt:unstructured"
+      text="Riyadh (Riyadh Region)"
+      value="riyadh"
+      latitude="24.687731"
+      longitude="46.721851"
+      weatherCityId="{Long}108410"
+      weatherCityName="Riyadh"/>
+  <afif
+      jcr:primaryType="nt:unstructured"
+      text="Afif (Riyadh Region)"
+      value="afif"
+      latitude="23.9065"
+      longitude="42.91724"
+      weatherCityId="{Long}110250"
+      weatherCityName="Afif"/>
+  <!-- Dawadmi / Ad Dawadimi / Al Duwadimi -->
+  <ad-dawadimi
+      jcr:primaryType="nt:unstructured"
+      text="Al Dwadmi (Ad Dawadimi) (Riyadh Region)"
+      value="al-dwadmi"
+      latitude="24.507721"
+      longitude="44.392368"
+      weatherCityId="{Long}110325"
+      weatherCityName="Ad Dawādimī"/>
+  <!--  Al Saih / Al Sayeeh, Al Kharj governorate -->
+  <al-sayeeh
+      jcr:primaryType="nt:unstructured"
+      text="Al Sayeeh (Al Kharj) (Riyadh Region)"
+      value="al-sayeeh"
+      latitude="24.15502"
+      longitude="47.334599"
+      weatherCityId="{Long}109353"
+      weatherCityName="Al Kharj"/>
+  <!-- Al Zulfi / Az Zulfi / Al Zolfa -->
+  <al-zolfa
+      jcr:primaryType="nt:unstructured"
+      text="Al Zulfi (Al Zolfa) (Riyadh Region)"
+      value="al-zolfa"
+      latitude="26.29945"
+      longitude="44.815418"
+      weatherCityId="{Long}107781"
+      weatherCityName="Az Zulfī"/>
+  <!-- Al Dulam / Al Dulm / Ad Dilam -->
+  <al-dulm
+      jcr:primaryType="nt:unstructured"
+      text="Al Dulm (Ad Dilam) (Riyadh Region)"
+      value="al-dulm"
+      latitude="23.991461"
+      longitude="47.162659"
+      weatherCityId="{Long}110314"
+      weatherCityName="Ad Dilam"/>
+  <!-- For weather it's beteween Az Zulfi and Tumair -->
+  <al-majmaah
+      jcr:primaryType="nt:unstructured"
+      text="Al Majma'ah (Riyadh Region)"
+      value="al-majmaah"
+      latitude="25.903889"
+      longitude="45.345556"
+      weatherCityId="{Long}107781"
+      weatherCityName="Az Zulfī"/>
+  <!-- Al Mozahmiya / Al Muzahmiya / Al Muzahmiyya / Shokaib -->
+  <al-mozahmiya
+      jcr:primaryType="nt:unstructured"
+      text="Al Mozahmiya (Riyadh Region)"
+      value="al-mozahmiya"
+      latitude="24.482222"
+      longitude="46.256111"
+      weatherCityId="{Long}6692745"
+      weatherCityName="shokhaibٍ"/>
+  <!-- Al Quway'iyah / Al Quwaiiyah / El Kuveyiye -->
+  <!-- For weather the nearest city is Ash Shubramiyah -->
+  <al-quwayiyah
+      jcr:primaryType="nt:unstructured"
+      text="Al Quway'iyah (Riyadh Region)"
+      value="al-quwayiyah"
+      latitude="24.046389"
+      longitude="45.265556"
+      weatherCityId="{Long}108210"
+      weatherCityName="Ash Shubramīyah"/>
+  <!-- Diriyah / Ad Diriyah - part of Riyadh cluster -->
+  <diriyah
+      jcr:primaryType="nt:unstructured"
+      text="Diriyah (Riyadh Region)"
+      value="diriyah"
+      latitude="24.7490944"
+      longitude="46.5049977"
+      weatherCityId="{Long}108410"
+      weatherCityName="Riyadh"/>
+  <!-- Hautat Sudair / Hawtah Sudayr / Hawat Sudir -->
+  <!-- For weather the nearest city is Tumayr -->
+  <hawat-sudir
+      jcr:primaryType="nt:unstructured"
+      text="Hautat Sudair (Hawat Sudir) (Riyadh Region)"
+      value="hawat-sudir"
+      latitude="25.3556836"
+      longitude="45.3699826"
+      weatherCityId="{Long}396550"
+      weatherCityName="Tumayr"/>
+  <!-- Hotat Bani Tamim / Howtat Bani Tamim / Hawtat Bani Tamim -->
+  <!-- Ad Dilam is nearest for weather -->
+  <hawta-bani-tamim
+      jcr:primaryType="nt:unstructured"
+      text="Hawta bani Tamim (Riyadh Region)"
+      value="hawta-bani-tamim"
+      latitude="25.36"
+      longitude="45.371"
+      weatherCityId="{Long}110314"
+      weatherCityName="Ad Dilam"/>
+  <!-- Layla / Laila town in Al Aflaj -->
+  <!-- For the weather it's between As Sulayyil and Ad Dilam -->
+  <laila
+      jcr:primaryType="nt:unstructured"
+      text="Laila (Riyadh Region)"
+      value="laila"
+      latitude="22.2833"
+      longitude="46.7333"
+      weatherCityId="{Long}108048"
+      weatherCityName="As Sulayyil"/>
+  <!-- The nearest for weather is Banban -->
+  <ramah
+      jcr:primaryType="nt:unstructured"
+      text="Ramah (Riyadh Region)"
+      value="ramah"
+      latitude="25.001671"
+      longitude="46.588058"
+      weatherCityId="{Long}107684"
+      weatherCityName="Banbān"/>
+  <!-- Al Sulayyil / As Sulayyil / Salel-->
+  <salel
+      jcr:primaryType="nt:unstructured"
+      text="Al Sulayyil (Salel) (Riyadh Region)"
+      value="salel"
+      latitude="20.4607"
+      longitude="45.5779"
+      weatherCityId="{Long}108048"
+      weatherCityName="As Sulayyil"/>
+  <!-- Shaqra / Shaqraa -->
+  <!-- For weather the nearest is Marat -->
+  <shaqraa
+      jcr:primaryType="nt:unstructured"
+      text="Shaqraa (Riyadh Region)"
+      value="shaqraa"
+      latitude="25.07007"
+      longitude="45.461472"
+      weatherCityId="{Long}104376"
+      weatherCityName="Marāt"/>
+  <!-- For weather the nearest is As Sulayyil -->
+  <wadi-al-dawasir
+      jcr:primaryType="nt:unstructured"
+      text="Wadi al Dawasir (Riyadh Region)"
+      value="wadi-al-dawasir"
+      latitude="20.464444"
+      longitude="44.787222"
+      weatherCityId="{Long}108048"
+      weatherCityName="As Sulayyil"/>
+  <!--/* Region: Tabuk Region */-->
+  <tabuk-region
+      jcr:primaryType="nt:unstructured"
+      text="Tabuk Region"
+      value="tabuk-region"
+      navigationValue="tabuk"
+      latitude="27.5"
+      longitude="37.333328"
+      weatherCityId="{Long}101627"
+      weatherCityName="Minţaqat Tabūk"/>
+  <!-- Al Wajh / Al Wejh -->
+  <al-wajh
+      jcr:primaryType="nt:unstructured"
+      text="Al Wajh (Tabuk Region)"
+      value="al-wajh"
+      latitude="26.24551"
+      longitude="36.45248"
+      weatherCityId="{Long}108773"
+      weatherCityName="Al Wajh"/>
+  <!-- Duba / Debaa -->
+  <duba
+      jcr:primaryType="nt:unstructured"
+      text="Duba (Tabuk Region)"
+      value="duba"
+      latitude="27.351339"
+      longitude="35.69014"
+      weatherCityId="{Long}106909"
+      weatherCityName="Duba"/>
+  <!-- Haql / Haqal -->
+  <!-- For weather it's between Aqaba (JO) and Nuweiba (EG) -->
+  <haql
+      jcr:primaryType="nt:unstructured"
+      text="Haql (Tabuk Region)"
+      value="haql"
+      latitude="29.283333"
+      longitude="34.933333"
+      weatherCityId="350893"
+      weatherCityName="Nuweiba, EG"/>
+  <!-- For weather the nearest is Duba -->
+  <sharma
+      jcr:primaryType="nt:unstructured"
+      text="Sharma (Tabuk Region)"
+      value="sharma"
+      latitude="27.9975948"
+      longitude="35.1536727"
+      weatherCityId="{Long}106909"
+      weatherCityName="Duba"/>
+  <tabuk
+      jcr:primaryType="nt:unstructured"
+      text="Tabuk (Tabuk Region)"
+      value="tabuk"
+      navigationValue="tabuk"
+      latitude="28.383329"
+      longitude="36.583328"
+      weatherCityId="{Long}101628"
+      weatherCityName="Tabuk"/>
+  <!-- Tayma / Taimaa / Tema / Teman / Tyeman / Yeman -->
+  <!-- Tabuk weather is used for Taimaa -->
+  <taimaa
+      jcr:primaryType="nt:unstructured"
+      text="Taimaa (Tayma) (Tabuk Region)"
+      value="taimaa"
+      latitude="27.629722"
+      longitude="38.543889"
+      weatherCityId="{Long}101628"
+      weatherCityName="Tabuk"/>
+  <umluj
+      jcr:primaryType="nt:unstructured"
+      text="Umluj (Amlaj) (Tabuk Region)"
+      value="umluj"
+      latitude="25.021259"
+      longitude="37.268501"
+      weatherCityId="{Long}100926"
+      weatherCityName="Umluj"/>
+
+  <!--/* Region: The Northern Border Region */-->
+  <northern-border-region
+      jcr:primaryType="nt:unstructured"
+      text="The Northern Border Region"
+      value="the-northern-border-region"/>
+  <arar
+      jcr:primaryType="nt:unstructured"
+      text="Arar (The Northern Border Region)"
+      value="arar"
+      latitude="30.975309"
+      longitude="41.038078"
+      weatherCityId="{Long}108512"
+      weatherCityName="Arar"/>
+  <!-- Rafhaa / Rafha -->
+  <rafhaa
+      jcr:primaryType="nt:unstructured"
+      text="Rafhaa (The Northern Border Region)"
+      value="rafhaa"
+      latitude="29.634251"
+      longitude="43.519409"
+      weatherCityId="{Long}103012"
+      weatherCityName="Rafha"/>
+  <!-- Tarif / Turaif -->
+  <tarif
+      jcr:primaryType="nt:unstructured"
+      text="Tarif (Turaif) (The Northern Border Region)"
+      value="tarif"
+      latitude="31.67252"
+      longitude="38.663738"
+      weatherCityId="{Long}101312"
+      weatherCityName="Turaif"/>
+
+  <!--/* Region: Najran Region */-->
+  <najran-region
+      jcr:primaryType="nt:unstructured"
+      text="Najran Region"
+      value="najran-region"
+      navigationValue="najran"/>
+  <najran
+      jcr:primaryType="nt:unstructured"
+      text="Najran (Najran Region)"
+      value="najran"
+      latitude="17.492399"
+      longitude="44.127659"
+      weatherCityId="{Long}103630"
+      weatherCityName="Najrān"/>
+  <!-- Sherora / Sharorah / Sharurah -->
+  <sherora
+      jcr:primaryType="nt:unstructured"
+      text="Sharorah (Sherora) (Najran Region)"
+      value="sherora"
+      latitude="17.48946"
+      longitude="47.11488"
+      weatherCityId="{Long}8019123"
+      weatherCityName="Sharurah"/>
+
+  <!--/* Region: Makkah Region */-->
+  <makkah-region
+      jcr:primaryType="nt:unstructured"
+      text="Makkah Region"
+      value="makkah-region"
+      navigationValue="makkah"
+      latitude="20.66667"
+      longitude="41.333328"
+      weatherCityId="{Long}104514"
+      weatherCityName="Makkah Province"/>
+  <!-- Mecca / Makkah / Makkah al-Mukarramah -->
+  <makkah
+      jcr:primaryType="nt:unstructured"
+      text="Mecca (Makkah) (Makkah Region)"
+      value="makkah"
+      latitude="21.42667"
+      longitude="39.826111"
+      weatherCityId="{Long}104515"
+      weatherCityName="Mecca"/>
+  <!-- For weather the nearest is Rabigh -->
+  <king-abdullah-economic-city
+      jcr:primaryType="nt:unstructured"
+      text="King Abdullah Economic City (KAEC) (Makkah Region)"
+      value="king-abdullah-economic-city"
+      navigationValue="kaec-navigation"
+      latitude="22.4"
+      longitude="39.083333"
+      weatherCityId="{Long}103035"
+      weatherCityName="Rābigh"/>
+  <!-- Al Gamom / Al Gomom / Al Jumum -->
+  <al-gomom
+      jcr:primaryType="nt:unstructured"
+      text="Al Gomom (Al Jumum) (Makkah Region)"
+      value="al-gomom"
+      latitude="21.61694"
+      longitude="39.698059"
+      weatherCityId="{Long}109417"
+      weatherCityName="Al Jumūm"/>
+  <!-- Al Hawiyah / Al Awajiyah -->
+  <al-hawiyah
+      jcr:primaryType="nt:unstructured"
+      text="Al Hawiyah (Makkah Region)"
+      value="al-hawiyah"
+      latitude="21.447689"
+      longitude="40.54842"
+      weatherCityId="{Long}409515"
+      weatherCityName="Al ‘Awājīyah"/>
+  <!-- Al Khurma / Al Khorma / Al Khurmah -->
+  <!-- For weather the nearest are Radwan or Al Muwayh -->
+  <al-khorma
+      jcr:primaryType="nt:unstructured"
+      text="Al Khorma (Makkah Region)"
+      value="al-khorma"
+      latitude="21.916667"
+      longitude="42.033333"
+      weatherCityId="{Long}409950"
+      weatherCityName="Raḑwān"/>
+  <!-- Al Laith / Al Lith -->
+  <!-- For weather the nearest is Al Bahah-->
+  <al-laith
+      jcr:primaryType="nt:unstructured"
+      text="Al Lith (Al Laith) (Makkah Region)"
+      value="al-laith"
+      latitude="20.15"
+      longitude="40.266667"
+      weatherCityId="{Long}109953"
+      weatherCityName="Al Bahah"/>
+  <!-- Al Qawz / AlQouz -->
+  <!-- Al Bahah is displaying for weather -->
+  <al-qawz
+      jcr:primaryType="nt:unstructured"
+      text="Al Qawz (Makkah Region)"
+      value="al-qawz"
+      latitude="18.9660895"
+      longitude="41.3179496"
+      weatherCityId="{Long}109953"
+      weatherCityName="Al Bahah"/>
+  <!-- For Weather the nearest city is An Nimas -->
+  <al-qunfudhah
+      jcr:primaryType="nt:unstructured"
+      text="Al Qunfudhah (Makkah Region)"
+      value="al-qunfudhah"
+      latitude="19.126389"
+      longitude="41.078889"
+      weatherCityId="{Long}108617"
+      weatherCityName="An Nimāş"/>
+  <!-- For weather the nearest is Jeddah -->
+  <bahra
+      jcr:primaryType="nt:unstructured"
+      text="Bahra (Makkah Region)"
+      value="bahra"
+      latitude="21.401667"
+      longitude="39.450833"
+      weatherCityId="{Long}105343"
+      weatherCityName="Jeddah"/>
+  <jeddah
+      jcr:primaryType="nt:unstructured"
+      text="Jeddah (Makkah Region)"
+      value="jeddah"
+      latitude="21.516939"
+      longitude="39.21917"
+      weatherCityId="{Long}105343"
+      weatherCityName="Jeddah"/>
+  <!-- Khulais / Khalis / Khulays -->
+  <!-- Jeddah weather is displaying for Khulais -->
+  <khalis
+      jcr:primaryType="nt:unstructured"
+      text="Khulais (Khalis) (Makkah Region)"
+      value="khalis"
+      latitude="22.153889"
+      longitude="39.318333"
+      weatherCityId="{Long}105343"
+      weatherCityName="Jeddah"/>
+  <rabigh
+      jcr:primaryType="nt:unstructured"
+      text="Rabigh (Makkah Region)"
+      value="rabigh"
+      latitude="22.798559"
+      longitude="39.034931"
+      weatherCityId="{Long}103035"
+      weatherCityName="Rābigh"/>
+  <!-- Ranyah / Ranieh -->
+  <!-- For weather the nearest city is Turabah -->
+  <ranieh
+      jcr:primaryType="nt:unstructured"
+      text="Ranieh (Makkah Region)"
+      value="ranieh"
+      latitude="21.253889"
+      longitude="41.8675"
+      weatherCityId="{Long}101322"
+      weatherCityName="Turabah"/>
+  <taif
+      jcr:primaryType="nt:unstructured"
+      text="Ta'if (Makkah Region)"
+      value="taif"
+      navigationValue="taif"
+      latitude="21.270281"
+      longitude="40.415829"
+      weatherCityId="{Long}107968"
+      weatherCityName="Ta’if"/>
+  <!-- Thuwal / Thoul -->
+  <!-- For wether the nearest is Rabigh -->
+  <thoul
+      jcr:primaryType="nt:unstructured"
+      text="Thuwal (Thoul) (Makkah Region)"
+      value="thoul"
+      latitude="22.283333"
+      longitude="39.1"
+      weatherCityId="{Long}103035"
+      weatherCityName="Rābigh"/>
+  <!-- Torba / Turabah / Turubah / Turbah -->
+  <torba
+      jcr:primaryType="nt:unstructured"
+      text="Torba (Makkah Region)"
+      value="torba"
+      latitude="21.21406"
+      longitude="41.633099"
+      weatherCityId="{Long}101322"
+      weatherCityName="Turabah"/>
+
+  <!--/* Region: Madinah Region */-->
+  <madinah-region
+      jcr:primaryType="nt:unstructured"
+      text="Al Madinah Region"
+      value="madinah-region"
+      navigationValue="madinah"
+      latitude="25.66667"
+      longitude="39.666672"
+      weatherCityId="{Long}109224"
+      weatherCityName="Al Madīnah al Munawwarah"/>
+  <!-- Medina / Madinah / Al Madinat Al Munawwarah-->
+  <madinah
+      jcr:primaryType="nt:unstructured"
+      text="Medina (Madinah) (Madinah Region)"
+      value="madinah"
+      latitude="24.468611"
+      longitude="39.61417"
+      weatherCityId="{Long}109223"
+      weatherCityName="Medina"/>
+  <!-- AlUla / Al ʿUla -->
+  <!-- For weather the nearest is Wej -->
+  <alula
+      jcr:primaryType="nt:unstructured"
+      text="AlUla (Madinah Region)"
+      value="alula"
+      latitude="26.616667"
+      longitude="37.916667"
+      weatherCityId="{Long}108773"
+      weatherCityName="Al Wajh"/>
+  <!-- Badr / Badr Hunayn -->
+  <badr
+      jcr:primaryType="nt:unstructured"
+      text="Badr (Madinah Region)"
+      value="badr"
+      latitude="23.782921"
+      longitude="38.79047"
+      weatherCityId="{Long}107744"
+      weatherCityName="Badr Ḩunayn"/>
+  <yanbu
+      jcr:primaryType="nt:unstructured"
+      text="Yanbu (Madinah Region)"
+      value="yanbu"
+      latitude="24.089121"
+      longitude="38.06374"
+      weatherCityId="{Long}100425"
+      weatherCityName="Yanbu"/>
+
+  <!--/* Region: Jazan Region */-->
+  <jazan-region
+      jcr:primaryType="nt:unstructured"
+      text="Jazan Region"
+      value="jazan-region"
+      navigationValue="jazan"
+      latitude="17.33333"
+      longitude="42.666672"
+      weatherCityId="{Long}105298"
+      weatherCityName="Jizan Region"/>
+  <!-- Jazan / Jizan -->
+  <jazan
+      jcr:primaryType="nt:unstructured"
+      text="Jazan (Jizan) (Jazan Region)"
+      value="jazan"
+      latitude="16.88917"
+      longitude="42.551109"
+      weatherCityId="{Long}105299"
+      weatherCityName="Jizan"/>
+  <abu-arish
+      jcr:primaryType="nt:unstructured"
+      text="Abu Arish (Jazan Region)"
+      value="abu-arish"
+      latitude="16.96887"
+      longitude="42.832512"
+      weatherCityId="{Long}110619"
+      weatherCityName="Abū ‘Arīsh"/>
+  <!-- For weather the nearest is Misliyah -->
+  <baish
+      jcr:primaryType="nt:unstructured"
+      text="Baish (Jazan Region)"
+      value="baish"
+      latitude="17.3780593"
+      longitude="42.5187633"
+      weatherCityId="{Long}104269"
+      weatherCityName="Mislīyah"/>
+  <!-- For weather it's between Sabya and Abu Arish -->
+  <damad
+      jcr:primaryType="nt:unstructured"
+      text="Damad (Jazan Region)"
+      value="damad"
+      latitude="17.1"
+      longitude="42.783333"
+      weatherCityId="{Long}102651"
+      weatherCityName="Şabyā"/>
+  <!-- Ahad Almasarha / Ahad al Masarihah / Ohud Al Mosareha / Uhud Al Masareha -->
+  <!-- For weather the nearest is Samitah -->
+  <ohud-al-mosareha
+      jcr:primaryType="nt:unstructured"
+      text="Ohud Al Mosareha (Jazan Region)"
+      value="ohud-al-mosareha"
+      latitude="16.709722"
+      longitude="42.955"
+      weatherCityId="{Long}102451"
+      weatherCityName="Şāmitah"/>
+  <!-- Sametah / Samitah -->
+  <sametah
+      jcr:primaryType="nt:unstructured"
+      text="Sametah (Jazan Region)"
+      value="sametah"
+      latitude="16.59601"
+      longitude="42.944351"
+      weatherCityId="{Long}102451"
+      weatherCityName="Şāmitah"/>
+  <!-- Sabya / Sebya'a -->
+  <sebyaa
+      jcr:primaryType="nt:unstructured"
+      text="Sabya (Sebya'a) (Jazan Region)"
+      value="sebyaa"
+      latitude="17.1495"
+      longitude="42.62537"
+      weatherCityId="{Long}102651"
+      weatherCityName="Şabyā"/>
+
+  <!--/* Region: Ha'il Region */-->
+  <hail-region
+      jcr:primaryType="nt:unstructured"
+      text="Hail Region"
+      value="hail-region"
+      navigationValue="hail"
+      latitude="27.5"
+      longitude="42.5"
+      weatherCityId="{Long}106280"
+      weatherCityName="Hai’l Region"/>
+  <hail
+      jcr:primaryType="nt:unstructured"
+      text="Hail (Hail Region)"
+      value="hail"
+      latitude="27.521879"
+      longitude="41.690731"
+      weatherCityId="{Long}106281"
+      weatherCityName="Ha'il"/>
+
+  <!--/* Region: Jawf (Al Jouf) Region */-->
+  <aljouf-region
+      jcr:primaryType="nt:unstructured"
+      text="Al Jouf Region"
+      value="al-jouf-region"
+      navigationValue="al-jouf"/>
+  <!-- Al Jouf / Al Jawf -->
+  <al-jouf
+      jcr:primaryType="nt:unstructured"
+      text="Al Jouf (Al Jawf) (Al Jouf Region)"
+      value="al-jouf"
+      navigationValue="al-jouf"
+      latitude="29.5"
+      longitude="38.75"
+      weatherCityId="{Long}109470"
+      weatherCityName="Al Jawf"/>
+  <!-- For weather the nearest is Sakakah -->
+  <dumat-al-jandal
+      jcr:primaryType="nt:unstructured"
+      text="Dumat al-Jandal (Al Jouf Region)"
+      value="dumat-al-jandal"
+      latitude="29.811389"
+      longitude="39.868333"
+      weatherCityId="{Long}102527"
+      weatherCityName="Sakakah"/>
+  <qurayyat
+      jcr:primaryType="nt:unstructured"
+      text="Qurayyat (Al Jouf Region)"
+      value="qurayyat"
+      latitude="31.33176"
+      longitude="37.342819"
+      weatherCityId="{Long}108648"
+      weatherCityName="Qurayyat"/>
+  <!-- Sakakah / Sakaka -->
+  <sakaka
+      jcr:primaryType="nt:unstructured"
+      text="Sakakah (Al Jouf Region)"
+      value="sakaka"
+      latitude="29.96974"
+      longitude="40.206409"
+      weatherCityId="{Long}102527"
+      weatherCityName="Sakakah"/>
+  <!-- Tubarjal / Tabarjal -->
+  <tabarjal
+      jcr:primaryType="nt:unstructured"
+      text="Tabarjal (Tubarjal) (Al Jouf Region)"
+      value="tabarjal"
+      latitude="30.49987"
+      longitude="38.21603"
+      weatherCityId="{Long}101631"
+      weatherCityName="Ţubarjal"/>
+
+  <!--/* Region: Al Qassim Region */-->
+  <al-qassim-region
+      jcr:primaryType="nt:unstructured"
+      text="Al Qassim Region"
+      value="al-qassim-region"
+      navigationValue="Al-Qassim"
+      latitude="27.08333"
+      longitude="43.466671"
+      weatherCityId="{Long}108933"
+      weatherCityName="Al-Qassim Province"/>
+  <!-- Al Badea / Al Badayea / Al Bada'i -->
+  <!-- For weather it's between Ar Rass and Al Bukayriyah -->
+  <al-badea
+      jcr:primaryType="nt:unstructured"
+      text="Al Badea (Al Qassim Region)"
+      value="al-badea"
+      latitude="25.9751178"
+      longitude="43.6732269"
+      weatherCityId="{Long}108435"
+      weatherCityName="Ar Rass"/>
+  <!-- Al Bukayriyah / Al Buqueriya -->
+  <albuqueriya
+      jcr:primaryType="nt:unstructured"
+      text="Al Bukayriyah (Al Buqueriya) (Al Qassim Region)"
+      value="albuqueriya"
+      latitude="26.14422"
+      longitude="43.659328"
+      weatherCityId="{Long}109878"
+      weatherCityName="Al Bukayrīyah"/>
+  <!-- Al Mithnab / Al Mozanab -->
+  <!-- For weather nearest cities are: Ar Rass, Al Bukariyah, Buraidah -->
+  <al-mozanab
+      jcr:primaryType="nt:unstructured"
+      text="Al Mithnab (Al Mozanab) (Al Qassim Region)"
+      value="al-mozanab"
+      latitude="25.8885875"
+      longitude="44.1475273"
+      weatherCityId="{Long}108435"
+      weatherCityName="Ar Rass"/>
+  <!-- Al Ras / Ar Ras -->
+  <al-ras
+      jcr:primaryType="nt:unstructured"
+      text="Ar Ras (Al Ras) (Al Qassim Region)"
+      value="al-ras"
+      latitude="25.86944"
+      longitude="43.497299"
+      weatherCityId="{Long}108435"
+      weatherCityName="Ar Rass"/>
+  <!-- Unayzah / Annizah / Onaizah / Onizah / Unayzah-->
+  <!-- For weather the nearest cities are: Al Bukayriyah, Al Busur, Buraidah -->
+  <annizah
+      jcr:primaryType="nt:unstructured"
+      text="Annizah (Al Qassim Region)"
+      value="annizah"
+      latitude="26.084"
+      longitude="43.994"
+      weatherCityId="{Long}109878"
+      weatherCityName="Al Bukayrīyah"/>
+  <buraydah
+      jcr:primaryType="nt:unstructured"
+      text="Buraydah (Al Qassim Region)"
+      value="buraydah"
+      latitude="26.325991"
+      longitude="43.974972"
+      weatherCityId="{Long}107304"
+      weatherCityName="Buraydah"/>
+
+  <!--/* Region: Aseer Region */-->
+  <asir-region
+      jcr:primaryType="nt:unstructured"
+      text="Aseer Region"
+      value="asir-region"
+      navigationValue="asir"
+      latitude="19.16667"
+      longitude="43.166672"
+      weatherCityId="{Long}108179"
+      weatherCityName="Minţaqat ‘Asīr"/>
+  <!-- We need Aseer as a region and as a city -->
+  <!-- For weather region's value is displayed -->
+  <asir
+      jcr:primaryType="nt:unstructured"
+      text="Aseer (Aseer Region)"
+      value="asir"
+      latitude="19.16667"
+      longitude="43.166672"
+      weatherCityId="{Long}108179"
+      weatherCityName="Minţaqat ‘Asīr"/>
+  <abha
+      jcr:primaryType="nt:unstructured"
+      text="Abha (Aseer Region)"
+      value="abha"
+      latitude="18.216391"
+      longitude="42.50528"
+      weatherCityId="{Long}110690"
+      weatherCityName="Abha"/>
+  <!-- Ahad Rufida / Ahad Rafidah -->
+  <!-- For weather the nearest city is Hajlah -->
+  <ahad-rufida
+      jcr:primaryType="nt:unstructured"
+      text="Ahad Rufida (Aseer Region)"
+      value="ahad-rufida"
+      latitude="18.204444"
+      longitude="42.813056"
+      weatherCityId="{Long}106261"
+      weatherCityName="Ḩajlah"/>
+  <!-- Sabt Al Alaya / Aleilaya -->
+  <!-- For weather it's between An Nimas and Al Bahah -->
+  <aleilaya
+      jcr:primaryType="nt:unstructured"
+      text="Sabt Al Alaya (Aleilaya) (Aseer Region)"
+      value="aleilaya"
+      latitude="19.5825888"
+      longitude="41.9081562"
+      weatherCityId="{Long}108617"
+      weatherCityName="An Nimāş"/>
+  <!-- Al Namas / An Nimas -->
+  <al-namas
+      jcr:primaryType="nt:unstructured"
+      text="Al Namas (An Nimas) (Aseer Region)"
+      value="al-namas"
+      latitude="19.14547"
+      longitude="42.120098"
+      weatherCityId="{Long}108617"
+      weatherCityName="An Nimāş"/>
+  <!-- Bisha / Qal`at Bishah -->
+  <bisha
+      jcr:primaryType="nt:unstructured"
+      text="Bisha (Aseer Region)"
+      value="bisha"
+      latitude="20.00054"
+      longitude="42.605202"
+      weatherCityId="{Long}103369"
+      weatherCityName="Qal‘at Bīshah"/>
+  <!-- It's not Dhahran, it's Dhahran Al Janub in Aseer Region (different cities)! -->
+  <!-- For weather the nearest city is Baqim As Suq (YE) -->
+  <dhahran-aljanoub
+      jcr:primaryType="nt:unstructured"
+      text="Dhahran Aljanoub (Aseer Region)"
+      value="dhahran-aljanoub"
+      latitude="17.6692341"
+      longitude="43.4994239"
+      weatherCityId="{Long}8015577"
+      weatherCityName="Baqim as Suq"/>
+  <!-- Fifa Mountains / Faifa / Fayfa -->
+  <!-- For weather the nearest city is Al Hijrah (YE) -->
+  <fayfa
+      jcr:primaryType="nt:unstructured"
+      text="Fayfa (Aseer Region)"
+      value="fayfa"
+      latitude="17.2527746"
+      longitude="43.068482"
+      weatherCityId="{Long}7345723"
+      weatherCityName="Al Hijrah, YE"/>
+  <khamis-mushait
+      jcr:primaryType="nt:unstructured"
+      text="Khamis Mushait (Aseer Region)"
+      value="khamis-mushait"
+      latitude="18.306391"
+      longitude="42.729172"
+      weatherCityId="{Long}105072"
+      weatherCityName="Khamis Mushait"/>
+  <!-- Muhayel / Muhayil -->
+  <!-- For weather the nearest city is Abha, but anyway it's too far -->
+  <muhayel
+      jcr:primaryType="nt:unstructured"
+      text="Muhayel (Aseer Region)"
+      value="muhayel"
+      latitude="18.55"
+      longitude="42.05"
+      weatherCityId="{Long}110690"
+      weatherCityName="Abha"/>
+
+  <!--/* Region: Al Baha Region */-->
+  <al-baha-region
+      jcr:primaryType="nt:unstructured"
+      text="Al Bahah Region"
+      value="al-baha-region"
+      navigationValue="al-baha"/>
+  <!-- Al Baha / Al Bahah -->
+  <al-baha
+      jcr:primaryType="nt:unstructured"
+      text="Al Baha (Al Baha Region)"
+      value="al-baha"
+      latitude="20.01288"
+      longitude="41.46767"
+      weatherCityId="{Long}109953"
+      weatherCityName="Al Bahah"/>
+  <!-- Al Mekhwah / Al Makhwah -->
+  <!-- For weather the nearest city is Al Bahah -->
+  <al-mekhwah
+      jcr:primaryType="nt:unstructured"
+      text="Al Mekhwah (Al Baha Region)"
+      value="al-mekhwah"
+      latitude="19.7674423"
+      longitude="41.3992089"
+      weatherCityId="{Long}109953"
+      weatherCityName="Al Bahah"/>
+  <!-- Baljurashi / Biljurashi -->
+  <!-- For weather the nearest city is Al Bahah -->
+  <baljurashi
+      jcr:primaryType="nt:unstructured"
+      text="Baljurashi (Biljurashi) (Al Baha Region)"
+      value="baljurashi"
+      latitude="19.856812"
+      longitude="41.54437"
+      weatherCityId="{Long}109953"
+      weatherCityName="Al Bahah"/>
+
+  <!--/* Region: Eastern Province */-->
+  <eastern-province
+      jcr:primaryType="nt:unstructured"
+      text="Eastern Province"
+      value="eastern-region"
+      latitude="22.5"
+      longitude="51.0"
+      weatherCityId="{Long}108241"
+      weatherCityName="Al Minţaqah ash Sharqīyah"/>
+  <!-- al-hasa / al-ahsa / al-hassa / al hofuf / hofuf / hufuf -->
+  <!-- TODO Waiting for client approval about Al Hofuf, Al Ahsa and Al Mubarraz -->
+  <al-ahsa
+      jcr:primaryType="nt:unstructured"
+      text="Al Ahsa (Eastern Province)"
+      value="al-ahsa"
+      latitude="25.364571"
+      longitude="49.565319"
+      weatherCityId="{Long}109571"
+      weatherCityName="Al Hufūf"/>
+  <hofuf-almabarraz
+      jcr:primaryType="nt:unstructured"
+      text="Hofuf and Al Mubarraz (Eastern Province)"
+      value="hofuf-and-almabarraz"
+      latitude="25.4261078"
+      longitude="49.4873549"
+      weatherCityId="{Long}109571"
+      weatherCityName="Al Hufūf"/>
+  <!-- Al-Awamiyah / Awamia - town in Al Qatif -->
+  <al-awamya
+      jcr:primaryType="nt:unstructured"
+      text="Al Awamya (Eastern Province)"
+      value="al-awamya"
+      latitude="26.5208"
+      longitude="50.024521"
+      weatherCityId="{Long}108927"
+      weatherCityName="Al Qaţīf"/>
+  <!-- Al Batalya / Al Battaliyah -->
+  <al-batalya
+      jcr:primaryType="nt:unstructured"
+      text="Al Battaliyah (Eastern Province)"
+      value="al-batalya"
+      latitude="25.433331"
+      longitude="49.633331"
+      weatherCityId="{Long}109915"
+      weatherCityName="Al Baţţālīyah"/>
+  <al-khafji
+      jcr:primaryType="nt:unstructured"
+      text="Al Khafji (Eastern Province)"
+      value="al-khafji"
+      latitude="28.439051"
+      longitude="48.491322"
+      weatherCityId="{Long}109380"
+      weatherCityName="Al Khafjī"/>
+  <!--
+    TODO Couldn't find this city, is it Al Munaizilah? - Using coordinates & weather of Al Hofuf
+   -->
+  <al-menzlat
+      jcr:primaryType="nt:unstructured"
+      text="Al Menzlat (Eastern Province)"
+      value="al-menzlat"
+      latitude="25.3796527"
+      longitude="49.6600276"
+      weatherCityId="{Long}109571"
+      weatherCityName="Al Hufūf"/>
+  <!--
+    TODO Couldn't find this city, is it Al Quatif? Displaying weather for Al Quatif.
+  -->
+  <al-qadeeh
+      jcr:primaryType="nt:unstructured"
+      text="Al Qadeeh (Eastern Province)"
+      value="al-qadeeh"
+      latitude="26.5208"
+      longitude="50.024521"
+      weatherCityId="{Long}108927"
+      weatherCityName="Al Qaţīf"/>
+  <!-- It's part of Al-Ahsa oasis, for weather Al Hofuf station is used -->
+  <al-tarf
+      jcr:primaryType="nt:unstructured"
+      text="Al Tarf (Eastern Province)"
+      value="al-tarf"
+      latitude="25.3530041"
+      longitude="49.709958"
+      weatherCityId="{Long}109571"
+      weatherCityName="Al Hufūf"/>
+  <!-- If it's Al Hulaylah, then it's part of Al Ahsa, weather for Al Hofuf is displayed -->
+  <al-halilah
+      jcr:primaryType="nt:unstructured"
+      text="Al Halilah (Eastern Province)"
+      value="al-halilah"
+      latitude="25.4384627"
+      longitude="49.6413198"
+      weatherCityId="{Long}109571"
+      weatherCityName="Al Hufūf"/>
+  <al-jubail
+      jcr:primaryType="nt:unstructured"
+      text="Al Jubail (Eastern Province)"
+      value="al-jubail"
+      latitude="25.4"
+      longitude="49.650002"
+      weatherCityId="{Long}109436"
+      weatherCityName="Al Jubayl"/>
+  <al-khobar
+      jcr:primaryType="nt:unstructured"
+      text="Al Khobar (Eastern Province)"
+      value="al-khobar"
+      latitude="26.27944"
+      longitude="50.208328"
+      weatherCityId="{Long}109323"
+      weatherCityName="Khobar"/>
+  <!--
+    TODO Coulnd't find this city, weather for Al Hofuf is used.
+    TODO Add latitude / longitude coordinates for this city
+   -->
+  <al-noayriyah
+      jcr:primaryType="nt:unstructured"
+      text="Al Noayriyah (Eastern Province)"
+      value="al-noayriyah"
+      weatherCityId="{Long}109571"
+      weatherCityName="Al Hufūf"/>
+  <!-- Al Oyoun / Al Uyun -->
+  <!-- For weather the nearest city is Al Qurayn -->
+  <al-oyoun
+      jcr:primaryType="nt:unstructured"
+      text="Al Oyoun (Eastern Province)"
+      value="al-oyoun"
+      latitude="25.6653818"
+      longitude="49.542155"
+      weatherCityId="{Long}108890"
+      weatherCityName="Al Qurayn"/>
+  <al-qatif
+      jcr:primaryType="nt:unstructured"
+      text="Al Qatif (Eastern Province)"
+      value="al-qatif"
+      latitude="26.5208"
+      longitude="50.024521"
+      weatherCityId="{Long}108927"
+      weatherCityName="Al Qaţīf"/>
+  <!-- It's a part of Al Khobar, so Khobar's weather is displayed. -->
+  <al-thuqbah
+      jcr:primaryType="nt:unstructured"
+      text="Al Thuqbah (Eastern Province)"
+      value="al-thuqbah"
+      latitude="26.2744565"
+      longitude="50.1730751"
+      weatherCityId="{Long}109323"
+      weatherCityName="Khobar"/>
+  <!-- Anak / Ank -->
+  <!-- It's a part of Al Qatif, so Quatif's weather is displayed. -->
+  <ank
+      jcr:primaryType="nt:unstructured"
+      text="Anak (Ank) (Eastern Province)"
+      value="ank"
+      latitude="26.5135882"
+      longitude="49.9704471"
+      weatherCityId="{Long}108927"
+      weatherCityName="Al Qaţīf"/>
+  <!-- Abqaiq / Buqaiq / Baqiq-->
+  <baqiq
+      jcr:primaryType="nt:unstructured"
+      text="Baqiq (Abqaiq) (Eastern Province)"
+      value="baqiq"
+      latitude="25.937099"
+      longitude="49.677608"
+      weatherCityId="{Long}107312"
+      weatherCityName="Abqaiq"/>
+  <dammam
+      jcr:primaryType="nt:unstructured"
+      text="Dammam (Eastern Province)"
+      value="dammam"
+      navigationValue="dammam"
+      latitude="26.43442"
+      longitude="50.10326"
+      weatherCityId="{Long}110336"
+      weatherCityName="Dammam"/>
+
+    <dammam2
+            jcr:primaryType="nt:unstructured"
+            text="Dammam 2 (Eastern Province)"
+            value="dammam2"
+            navigationValue="dammam"
+            latitude="26.43442"
+            longitude="50.10326"
+            weatherCityId="{Long}110336"
+            weatherCityName="Dammam"/>
+  <dhahran
+      jcr:primaryType="nt:unstructured"
+      text="Dhahran (Eastern Province)"
+      value="dhahran"
+      latitude="26.30324"
+      longitude="50.135281"
+      weatherCityId="{Long}107797"
+      weatherCityName="Dhahran"/>
+  <!-- Hafr Al Batin / Hafar Al Batin -->
+  <hafr-al-batin
+      jcr:primaryType="nt:unstructured"
+      text="Hafr Al Batin (Eastern Province)"
+      value="hafr-al-batin"
+      latitude="28.432791"
+      longitude="45.970772"
+      weatherCityId="{Long}106297"
+      weatherCityName="Hafar Al-Batin"/>
+  <qaisumah
+      jcr:primaryType="nt:unstructured"
+      text="Qaisumah (Eastern Province)"
+      value="qaisumah"
+      latitude="28.311171"
+      longitude="46.127289"
+      weatherCityId="{Long}108918"
+      weatherCityName="Qaisumah"/>
+  <rahima
+      jcr:primaryType="nt:unstructured"
+      text="Rahima (Eastern Province)"
+      value="rahima"
+      latitude="26.707911"
+      longitude="50.061939"
+      weatherCityId="{Long}102985"
+      weatherCityName="Raḩīmah"/>
+  <safwa
+      jcr:primaryType="nt:unstructured"
+      text="Safwa (Eastern Province)"
+      value="safwa"
+      latitude="26.64986"
+      longitude="49.952229"
+      weatherCityId="{Long}102585"
+      weatherCityName="Şafwá"/>
+  <!-- Saihat / Sayhat -->
+  <saihat
+      jcr:primaryType="nt:unstructured"
+      text="Saihat (Sayhat) (Eastern Province)"
+      value="saihat"
+      latitude="26.48522"
+      longitude="50.040459"
+      weatherCityId="{Long}102318"
+      weatherCityName="Sayhāt"/>
+  <!-- Tarout / Tarut -->
+  <tarout
+      jcr:primaryType="nt:unstructured"
+      text="Tarout (Eastern Province)"
+      value="tarout"
+      latitude="26.57332"
+      longitude="50.036942"
+      weatherCityId="{Long}101554"
+      weatherCityName="Tārūt"/>
+    <tanumah
+            jcr:primaryType="nt:unstructured"
+            text="Tanomah (Aseer Region)"
+            value="tanomah"
+            latitude="18.9365801694361"
+            longitude="42.186802425054964"
+            weatherCityId="{Long}101581"
+            weatherCityName="Tanūmah"/>
+    <!-- Added for Entertainer cities -->
+    <alqassim jcr:primaryType="nt:unstructured" text="Alqassim" value="alqassim" latitude="26.207826"
+              longitude="43.483738"/>
+    <northern-borders jcr:primaryType="nt:unstructured" text="Northern Borders" value="northern-borders"
+                      latitude="30.0799162" longitude="42.8637875"/>
+    <al-kharj jcr:primaryType="nt:unstructured" text="Al Kharj" value="al-kharj" latitude="24.1587"
+              longitude="47.32696"/>
+    <al-kamil jcr:primaryType="nt:unstructured" text="Al Kamil" value="al-kamil" latitude="22.26459"
+              longitude="39.79018"/>
+    <ash-shinan jcr:primaryType="nt:unstructured" text="Ash Shinan" value="ash-shinan" latitude="27.18067"
+                longitude="42.44156"/>
+    <al-jumum jcr:primaryType="nt:unstructured" text="Al Jumum" value="al-jumum" latitude="21.61477"
+              longitude="39.6969"/>
+    <al-majardah jcr:primaryType="nt:unstructured" text="Al Majardah" value="al-majardah" latitude="19.12439"
+                 longitude="41.9363"/>
+    <bariq jcr:primaryType="nt:unstructured" text="Bariq" value="bariq" latitude="18.9279" longitude="41.9422"/>
+    <as-sulayyil jcr:primaryType="nt:unstructured" text="As Sulayyil" value="as-sulayyil" latitude="20.47345"
+                 longitude="45.57561"/>
+    <al-aflaj jcr:primaryType="nt:unstructured" text="Al Aflaj" value="al-aflaj" latitude="22.28636"
+              longitude="46.73166"/>
+    <al-hajrah jcr:primaryType="nt:unstructured" text="Al Hajrah" value="al-hajrah" latitude="20.00695"
+               longitude="41.46314"/>
+    <tathlith jcr:primaryType="nt:unstructured" text="Tathlith" value="tathlith" latitude="19.53082"
+              longitude="43.50363"/>
+    <bani-hasan jcr:primaryType="nt:unstructured" text="Bani Hasan" value="bani-hasan" latitude="20.05274"
+                longitude="41.35977"/>
+    <balqarn jcr:primaryType="nt:unstructured" text="Balqarn" value="balqarn" latitude="19.59038" longitude="41.88864"/>
+    <rijal-al-ma jcr:primaryType="nt:unstructured" text="Rijal Al Ma'" value="rijal-al-ma" latitude="18.19538"
+                 longitude="42.28446"/>
+    <al-asyah jcr:primaryType="nt:unstructured" text="Al Asyah" value="al-asyah" latitude="26.77779"
+              longitude="44.21845"/>
+    <uyun-al-jawa jcr:primaryType="nt:unstructured" text="Uyun Al Jawa'" value="uyun-al-jawa" latitude="26.49974"
+                  longitude="43.62933"/>
+    <ash-shamli jcr:primaryType="nt:unstructured" text="Ash Shamli" value="ash-shamli" latitude="26.84331"
+                longitude="40.31885"/>
+    <mawqaq jcr:primaryType="nt:unstructured" text="Mawqaq" value="mawqaq" latitude="27.38726" longitude="41.17471"/>
+    <baqa jcr:primaryType="nt:unstructured" text="Baq'A" value="baqa" latitude="27.91024" longitude="42.40918"/>
+    <riyad-al-khabra jcr:primaryType="nt:unstructured" text="Riyad Al Khabra" value="riyad-al-khabra"
+                     latitude="26.03878" longitude="43.53903"/>
+    <tarib jcr:primaryType="nt:unstructured" text="Tarib" value="tarib" latitude="18.5625527" longitude="43.2020988"/>
+    <simira jcr:primaryType="nt:unstructured" text="Simira'" value="simira" latitude="26.49941" longitude="42.12939"/>
+    <as-sulaymi jcr:primaryType="nt:unstructured" text="As Sulaymi" value="as-sulaymi" latitude="26.29489"
+                longitude="41.36381"/>
+    <al-ghazalah jcr:primaryType="nt:unstructured" text="Al Ghazalah" value="al-ghazalah" latitude="26.79444"
+                 longitude="41.31732"/>
+    <al-hait jcr:primaryType="nt:unstructured" text="Al Hait" value="al-hait" latitude="25.98816" longitude="40.47389"/>
+    <ash-shimasiyah jcr:primaryType="nt:unstructured" text="Ash Shimasiyah" value="ash-shimasiyah" latitude="26.32593"
+                    longitude="44.25513"/>
+    <al-mandaq jcr:primaryType="nt:unstructured" text="Al Mandaq" value="al-mandaq" latitude="20.16446"
+               longitude="41.29221"/>
+    <thar jcr:primaryType="nt:unstructured" text="Thar" value="thar" latitude="17.97739" longitude="44.07633"/>
+    <khaybar jcr:primaryType="nt:unstructured" text="Khaybar" value="khaybar" latitude="25.71837" longitude="39.27876"/>
+    <al-birk jcr:primaryType="nt:unstructured" text="Al Birk" value="al-birk" latitude="18.22492" longitude="41.54151"/>
+    <uqlat-as-suqur jcr:primaryType="nt:unstructured" text="Uqlat As Suqur" value="uqlat-as-suqur" latitude="25.8335"
+                    longitude="42.20797"/>
+    <an-nabhaniyah jcr:primaryType="nt:unstructured" text="An Nabhaniyah" value="an-nabhaniyah" latitude="25.87208"
+                   longitude="43.05837"/>
+    <al-ghat jcr:primaryType="nt:unstructured" text="Al Ghat" value="al-ghat" latitude="26.04075" longitude="44.95036"/>
+    <al-hariq jcr:primaryType="nt:unstructured" text="Al Hariq" value="al-hariq" latitude="23.61667"
+              longitude="46.51667"/>
+    <qilwah jcr:primaryType="nt:unstructured" text="Qilwah" value="qilwah" latitude="19.94803" longitude="41.23936"/>
+    <sarat-abidah jcr:primaryType="nt:unstructured" text="Sarat Abidah" value="sarat-abidah" latitude="18.08423"
+                  longitude="43.1446"/>
+    <badr-al-janub jcr:primaryType="nt:unstructured" text="Badr Al Janub" value="badr-al-janub" latitude="17.88496"
+                   longitude="43.7335"/>
+    <hubuna jcr:primaryType="nt:unstructured" text="Hubuna" value="hubuna" latitude="17.84068" longitude="44.01283"/>
+    <ad-darb jcr:primaryType="nt:unstructured" text="Ad Darb" value="ad-darb" latitude="17.74143" longitude="42.28269"/>
+    <al-aydabi jcr:primaryType="nt:unstructured" text="Al 'Aydabi" value="al-aydabi" latitude="17.23547"
+               longitude="42.94462"/>
+    <harub jcr:primaryType="nt:unstructured" text="Harub" value="harub" latitude="17.43743" longitude="42.89813"/>
+    <samtah jcr:primaryType="nt:unstructured" text="Samtah" value="samtah" latitude="16.60519" longitude="42.94083"/>
+    <at-tuwal jcr:primaryType="nt:unstructured" text="At Tuwal" value="at-tuwal" latitude="16.52891"
+              longitude="42.96813"/>
+    <al-kharkhir jcr:primaryType="nt:unstructured" text="Al Kharkhir" value="al-kharkhir" latitude="18.85879"
+                 longitude="51.13474"/>
+    <farasan jcr:primaryType="nt:unstructured" text="Farasan" value="farasan" latitude="16.7024076"
+             longitude="42.1005365"/>
+    <al-aridah jcr:primaryType="nt:unstructured" text="Al 'Aridah" value="al-aridah" latitude="17.03897"
+               longitude="43.088"/>
+    <haql jcr:primaryType="nt:unstructured" text="Haql" value="haql" latitude="29.30103" longitude="34.94863"/>
+    <al-bad jcr:primaryType="nt:unstructured" text="Al Bad'" value="al-bad" latitude="28.51119" longitude="35.00763"/>
+    <thadiq jcr:primaryType="nt:unstructured" text="Thadiq" value="thadiq" latitude="25.29715" longitude="45.86179"/>
+    <al-hinakiyah jcr:primaryType="nt:unstructured" text="Al Hinakiyah" value="al-hinakiyah" latitude="24.86837"
+                  longitude="40.49267"/>
+    <huraymila jcr:primaryType="nt:unstructured" text="Huraymila" value="huraymila" latitude="25.13226"
+               longitude="46.12835"/>
+    <marat jcr:primaryType="nt:unstructured" text="Marat" value="marat" latitude="25.07316" longitude="45.46437"/>
+    <duruma jcr:primaryType="nt:unstructured" text="Duruma" value="duruma" latitude="24.60411" longitude="46.13182"/>
+    <qaryat-al-ulya jcr:primaryType="nt:unstructured" text="Qaryat Al 'Ulya" value="qaryat-al-ulya" latitude="27.56297"
+                    longitude="47.7004"/>
+    <redsea
+        jcr:primaryType="nt:unstructured"
+        text="Red Sea"
+        value="redsea"
+        latitude="25.539333"
+        longitude="37.069583"
+        weatherCityName="Red Sea" />
+
+
+
+
+    <!-- Weather info for other cities, if we need to include them -->
+  <!--
+  <umm-as-sahik
+      latitude="26.65361"
+      longitude="49.916389"
+      weatherCityId="{Long}101035"
+      weatherCityName="Umm as Sāhik"/>
+  <at-tubi
+      latitude="26.557779"
+      longitude="49.991669"
+      weatherCityId="{Long}101344"
+      weatherCityName="At Tūbī"/>
+  <tanumah
+      latitude="27.1"
+      longitude="44.133331"
+      weatherCityId="{Long}101581"
+      weatherCityName="Tanūmah"/>
+  <tamrah
+      latitude="20.40843"
+      longitude="45.433941"
+      weatherCityId="{Long}101591"
+      weatherCityName="Tamrah"/>
+  <tabalah
+      latitude="19.950001"
+      longitude="42.400002"
+      weatherCityId="{Long}101633"
+      weatherCityName="Tabālah"/>
+  <sumaymah
+      latitude="21.249649"
+      longitude="39.157711"
+      weatherCityId="{Long}101752"
+      weatherCityName="Şumaymah"/>
+  <sultanah
+      latitude="24.49258"
+      longitude="39.58572"
+      weatherCityId="{Long}101760"
+      weatherCityName="Sulţānah"/>
+  <sufan
+      latitude="19.98333"
+      longitude="42.599998"
+      weatherCityId="{Long}101810"
+      weatherCityName="Sufan"/>
+  <sidi-hamzah
+      latitude="24.506149"
+      longitude="39.615921"
+      weatherCityId="{Long}101927"
+      weatherCityName="Sīdī Ḩamzah"/>
+
+  <kingdom-of-saudi-arabia
+      latitude="25.0"
+      longitude="45.0"
+      weatherCityId="{Long}102358"
+      weatherCityName="Kingdom of Saudi Arabia"/>
+  <ras-tanura
+      latitude="26.64389"
+      longitude="50.159168"
+      weatherCityId="{Long}102891"
+      weatherCityName="Ras Tanura"/>
+  <qara
+      latitude="29.87694"
+      longitude="40.22694"
+      weatherCityId="{Long}103331"
+      weatherCityName="Qārā"/>
+  <nimran
+      latitude="20.0"
+      longitude="42.599998"
+      weatherCityId="{Long}103533"
+      weatherCityName="Nimrān"/>
+  <naghbi
+      latitude="17.73333"
+      longitude="42.25"
+      weatherCityId="{Long}103665"
+      weatherCityName="Naghbī"/>
+  <mulayjah
+      latitude="27.27103"
+      longitude="48.424191"
+      weatherCityId="{Long}103922"
+      weatherCityName="Mulayjah"/>
+  <misliyah
+      latitude="17.459881"
+      longitude="42.557201"
+      weatherCityId="{Long}104269"
+      weatherCityName="Mislīyah"/>
+  <masjid-ibn-rashid
+      latitude="27.91667"
+      longitude="45.400002"
+      weatherCityId="{Long}104270"
+      weatherCityName="Masjid Ibn Rashīd"/>
+  <masahili
+      latitude="24.027769"
+      longitude="38.23246"
+      weatherCityId="{Long}104308"
+      weatherCityName="Masāḩilī"/>
+  <marat
+      latitude="25.07007"
+      longitude="45.461472"
+      weatherCityId="{Long}104376"
+      weatherCityName="Marāt"/>
+  <madinat-yanbu-as-sinaiyah
+      latitude="23.999439"
+      longitude="38.227501"
+      weatherCityId="{Long}104625"
+      weatherCityName="Madīnat Yanbu‘ aş Şinā‘īyah"/>
+  <julayjilah
+      latitude="25.5"
+      longitude="49.599998"
+      weatherCityId="{Long}105252"
+      weatherCityName="Julayjilah"/>
+  <hajlah
+      latitude="18.25"
+      longitude="42.633331"
+      weatherCityId="{Long}106261"
+      weatherCityName="Ḩajlah"/>
+  <farasan
+      latitude="16.702221"
+      longitude="42.118328"
+      weatherCityId="{Long}106744"
+      weatherCityName="Farasān"/>
+  <birzayn
+      latitude="18.25"
+      longitude="42.783329"
+      weatherCityId="{Long}107392"
+      weatherCityName="Birzayn"/>
+  <at-taraf
+      latitude="25.362761"
+      longitude="49.72504"
+      weatherCityId="{Long}107959"
+      weatherCityName="Aţ Ţaraf"/>
+  <as-sulaymaniyah
+      latitude="24.12361"
+      longitude="47.295559"
+      weatherCityId="{Long}108052"
+      weatherCityName="As Sulaymānīyah"/>
+  <sajir
+      latitude="25.18251"
+      longitude="44.59964"
+      weatherCityId="{Long}108121"
+      weatherCityName="Sājir"/>
+  <as-saffaniyah
+      latitude="27.970831"
+      longitude="48.73"
+      weatherCityId="{Long}108142"
+      weatherCityName="As Saffānīyah"/>
+  <ash-shurayf
+      latitude="25.707081"
+      longitude="39.282341"
+      weatherCityId="{Long}108190"
+      weatherCityName="Ash Shurayf"/>
+  <ash-shubramiyah
+      latitude="24.253611"
+      longitude="44.130001"
+      weatherCityId="{Long}108210"
+      weatherCityName="Ash Shubramīyah"/>
+  <ar-ruqayyiqah
+      latitude="25.35"
+      longitude="49.566669"
+      weatherCityId="{Long}108384"
+      weatherCityName="Ar Ruqayyiqah"/>
+  <al-qurayn
+      latitude="25.48333"
+      longitude="49.599998"
+      weatherCityId="{Long}108890"
+      weatherCityName="Al Qurayn"/>
+  <al-quraynah
+      latitude="24.46747"
+      longitude="46.421291"
+      weatherCityId="{Long}108947"
+      weatherCityName="Al Quraynah"/>
+  <al-qarah
+      latitude="25.41667"
+      longitude="49.666672"
+      weatherCityId="{Long}108957"
+      weatherCityName="Al Qārah"/>
+  <al-mutayrifi
+      latitude="25.47879"
+      longitude="49.557629"
+      weatherCityId="{Long}109008"
+      weatherCityName="Al Muţayrifī"/>
+  <al-munayzilah
+      latitude="25.383329"
+      longitude="49.666672"
+      weatherCityId="{Long}109059"
+      weatherCityName="Al Munayzilah"/>
+  <al-mubarraz
+      latitude="25.41"
+      longitude="49.58083"
+      weatherCityId="{Long}109101"
+      weatherCityName="Al Mubarraz"/>
+  <al-mindak
+      latitude="20.1588"
+      longitude="41.283371"
+      weatherCityId="{Long}109118"
+      weatherCityName="Al Mindak"/>
+  <al-mikhlaf
+      latitude="17.53957"
+      longitude="44.213501"
+      weatherCityId="{Long}109122"
+      weatherCityName="Al Mikhlāf"/>
+  <al-markaz
+      latitude="25.4"
+      longitude="49.73333"
+      weatherCityId="{Long}109165"
+      weatherCityName="Al Markaz"/>
+  <al-jubayl
+      latitude="27.011221"
+      longitude="49.65826"
+      weatherCityId="{Long}109435"
+      weatherCityName="Al Jubayl"/>
+  <al-jaradiyah
+      latitude="16.57946"
+      longitude="42.912399"
+      weatherCityId="{Long}109481"
+      weatherCityName="Al Jarādīyah"/>
+  <al-jafr
+      latitude="25.37694"
+      longitude="49.72361"
+      weatherCityId="{Long}109502"
+      weatherCityName="Al Jafr"/>
+  <mintaqat-al-hudud-ash-shamaliyah
+      latitude="30.0"
+      longitude="42.666672"
+      weatherCityId="{Long}109579"
+      weatherCityName="Minţaqat al Ḩudūd ash Shamālīyah"/>
+  <al-ghatghat
+      latitude="24.47649"
+      longitude="46.249908"
+      weatherCityId="{Long}109771"
+      weatherCityName="Al Ghaţghaţ"/>
+  <al-busur
+      latitude="26.285299"
+      longitude="43.869732"
+      weatherCityId="{Long}109923"
+      weatherCityName="Al Buşur"/>
+  <al-artawiyah
+      latitude="26.50526"
+      longitude="45.344372"
+      weatherCityId="{Long}110031"
+      weatherCityName="Al Arţāwīyah"/>
+  <al-aqiq
+      latitude="20.273581"
+      longitude="41.664341"
+      weatherCityId="{Long}110060"
+      weatherCityName="Al ‘Aqīq"/>
+  <al-awjam
+      latitude="26.56324"
+      longitude="49.94331"
+      weatherCityId="{Long}110107"
+      weatherCityName="Al Awjām"/>
+  <ad-darb
+      latitude="17.722851"
+      longitude="42.252609"
+      weatherCityId="{Long}110328"
+      weatherCityName="Ad Darb"/>
+  <aba-as-suud
+      latitude="17.466669"
+      longitude="44.099998"
+      weatherCityId="{Long}110737"
+      weatherCityName="Abā as Su‘ūd"/>
+  <ash-shuaybah
+      latitude="26.433889"
+      longitude="50.11528"
+      weatherCityId="{Long}389860"
+      weatherCityName="Ash Shu‘aybah"/>
+  <hajrat-al-khinbish
+      latitude="27.78248"
+      longitude="45.036751"
+      weatherCityId="{Long}391699"
+      weatherCityName="Ḩajrat al Khinbish"/>
+  <usayfirat
+      latitude="26.10927"
+      longitude="49.432049"
+      weatherCityId="{Long}391749"
+      weatherCityName="‘Uşayfirāt"/>
+  <al-fadili
+      latitude="26.98016"
+      longitude="49.174511"
+      weatherCityId="{Long}392343"
+      weatherCityName="Al Fāḑilī"/>
+  <suwayr
+      latitude="30.11713"
+      longitude="40.389252"
+      weatherCityId="{Long}392753"
+      weatherCityName="Şuwayr"/>
+  <sidis
+      latitude="27.470261"
+      longitude="41.674049"
+      weatherCityId="{Long}395014"
+      weatherCityName="Sidīs"/>
+  <khushaybi-al-hadar
+      latitude="25.762119"
+      longitude="43.283531"
+      weatherCityId="{Long}396460"
+      weatherCityName="Khushaybī al Ḩaḑar"/>
+  <tumayr
+      latitude="25.70393"
+      longitude="45.867962"
+      weatherCityId="{Long}396550"
+      weatherCityName="Tumayr"/>
+  <al-fuwayliq
+      latitude="26.44322"
+      longitude="43.253399"
+      weatherCityId="{Long}397513"
+      weatherCityName="Al Fuwayliq"/>
+  <al-majaridah
+      latitude="19.12361"
+      longitude="41.91111"
+      weatherCityId="{Long}399518"
+      weatherCityName="Al Majāridah"/>
+  <al-faysaliyah
+      latitude="24.64348"
+      longitude="46.776981"
+      weatherCityId="{Long}400685"
+      weatherCityName="Al Fayşalīyah"/>
+  <as-sahba
+      latitude="24.191019"
+      longitude="47.379662"
+      weatherCityId="{Long}407308"
+      weatherCityName="As Sahbā’"/>
+  <radwan
+      latitude="22.09037"
+      longitude="41.274559"
+      weatherCityId="{Long}409950"
+      weatherCityName="Raḑwān"/>
+  <al-muwayh
+      latitude="22.433331"
+      longitude="41.758289"
+      weatherCityId="{Long}409993"
+      weatherCityName="Al Muwayh"/>
+  <al-hada
+      latitude="21.367531"
+      longitude="40.286942"
+      weatherCityId="{Long}410084"
+      weatherCityName="Al Hadā"/>
+  <mizhirah
+      latitude="16.826111"
+      longitude="42.73333"
+      weatherCityId="{Long}410874"
+      weatherCityName="Mizhirah"/>
+  <al-mudawwarah
+      latitude="21.271589"
+      longitude="39.962681"
+      weatherCityId="{Long}411338"
+      weatherCityName="Al Mudawwarah"/>
+  <al-abar
+      latitude="21.09469"
+      longitude="39.911419"
+      weatherCityId="{Long}411398"
+      weatherCityName="Al Ābār"/>
+  <al-khalidiyah
+      latitude="24.622219"
+      longitude="46.759441"
+      weatherCityId="{Long}448600"
+      weatherCityName="Al Khālidīyah"/>
+  -->
+</jcr:root>

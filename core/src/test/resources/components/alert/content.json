@@ -1,0 +1,23 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "alert":{
+          "jcr:primaryType":"nt:unstructured",
+          "type":"success",
+          "paragraph":"Alert Text",
+          "sling:resourceType":"sauditourism/components/content/alert"
+        }
+      }
+    }
+  }
+}

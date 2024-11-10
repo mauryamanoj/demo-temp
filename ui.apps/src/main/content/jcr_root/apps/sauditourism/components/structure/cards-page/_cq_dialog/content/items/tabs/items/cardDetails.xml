@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          cq:showOnCreate="{Boolean}True"
+          jcr:primaryType="cq:Widget"
+          jcr:title="Card Details"
+          granite:class="core-wcm-edetailing dialog-container"
+          sling:resourceType="granite/ui/components/foundation/container">
+  <layout
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+      margin="{Boolean}false"/>
+  <items jcr:primaryType="nt:unstructured">
+    <column
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+      <category
+         jcr:primaryType="nt:unstructured"
+         sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+         fieldLabel="Category"
+         multiple="{Boolean}true"
+         cq:showOnCreate="{Boolean}true"
+         forceSelection="{Boolean}true"
+         rootPath="/content/cq:tags/sauditourism"
+         name="./cardCategory">
+         <granite:data
+             jcr:primaryType="nt:unstructured"
+             cq-msm-lockable="cardCategory"/>
+        </category>
+        <city
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+              fieldLabel="City"
+              multiple="{Boolean}true"
+              cq:showOnCreate="{Boolean}true"
+              forceSelection="{Boolean}true"
+              rootPath="/content/cq:tags/sauditourism/city"
+              name="./cardCity">
+              <granite:data
+                  jcr:primaryType="nt:unstructured"
+                  cq-msm-lockable="cardCity"/>
+        </city>
+          <ctaKey
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/select"
+              fieldLabel="Select the Value"
+              fieldDescription="This is dropdown values added for native app"
+              name="./ctaKey">
+              <items jcr:primaryType="nt:unstructured">
+                  <call
+                      jcr:primaryType="nt:unstructured"
+                      text="Call"
+                      value="Call"/>
+                  <email
+                      jcr:primaryType="nt:unstructured"
+                      text="Email"
+                      value="Email"/>
+                  <website
+                      jcr:primaryType="nt:unstructured"
+                      text="Website"
+                      value="Website"/>
+                  <offer
+                      jcr:primaryType="nt:unstructured"
+                      text="Offer"
+                      value="Offer"/>
+              </items>
+          </ctaKey>
+
+          <name
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldDescription="Enter Card Name."
+            fieldLabel="Name"
+            required="{Boolean}true"
+            cq:showOnCreate="{Boolean}true"
+            name="./name">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="name"/>
+        </name>
+        <description
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldLabel="Description"
+            name="./description"
+            fieldDescription="Enter Card Description.">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="description"/>
+        </description>
+        <image
+            cq:showOnCreate="{Boolean}true"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+            granite:class="s7-image-listener"
+            fieldDescription="Select a desktop image for this Card"
+            fieldLabel="Image"
+            name="./image/fileReference"
+            rootPath="/content/dam">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="image/fileReference"/>
+        </image>
+        <s7fileReference
+            granite:class="s7-fileReference"
+            jcr:primaryType="nt:unstructured"
+            granite:id="s7-fileReference"
+            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+            name="./image/s7fileReference">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="image/s7fileReference"/>
+        </s7fileReference>
+        <alt-image
+            cq:showOnCreate="{Boolean}true"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            emptyText="Enter an ALT text for the image"
+            fieldDescription="Enter an ALT text for the image. If not filled, activity title will be used."
+            fieldLabel="Alt text of the image"
+            name="./image/alt">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="image/alt"/>
+        </alt-image>
+        <priceRange
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+          fieldLabel="Price Range"
+          fieldDescription="Price Range to be displayed on the card, Starting from  1 to 4"
+          cq:showOnCreate="{Boolean}true"
+          max="4"
+          min="1"
+          name="./priceRange">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="priceRange"/>
+        </priceRange>
+        <linkText
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldDescription="Enter Card Link Label."
+            fieldLabel="Link Label"
+            required="{Boolean}true"
+            cq:showOnCreate="{Boolean}true"
+            name="./linkText">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="linkText"/>
+        </linkText>
+        <link-type
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/select"
+              fieldDescription="Link type: none, internal, external"
+              fieldLabel="Link Type"
+              name="./linkType">
+              <items jcr:primaryType="nt:unstructured">
+                  <none
+                      jcr:primaryType="nt:unstructured"
+                      text="None"
+                      value=""
+                      selected="{Boolean}true"/>
+                  <internal
+                      jcr:primaryType="nt:unstructured"
+                      text="Internal"
+                      value="internal"/>
+                  <external
+                      jcr:primaryType="nt:unstructured"
+                      text="External"
+                      value="external"/>
+              </items>
+                <granite:data
+                    jcr:primaryType="nt:unstructured"
+                    cq-msm-lockable="linkType"/>
+        </link-type>
+        <linkUrl
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldDescription="Enter Link URL."
+            fieldLabel="Link URL"
+            required="{Boolean}false"
+            cq:showOnCreate="{Boolean}true"
+            name="./linkUrl">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="linkUrl"/>
+        </linkUrl>
+        <card-details-header-title
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+          fieldDescription="Enter the card details header title."
+          fieldLabel="Card Details Header Title"
+          required="{Boolean}false"
+          cq:showOnCreate="{Boolean}true"
+          name="./detailsHeaderTitle">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="detailsHeaderTitle"/>
+        </card-details-header-title>
+        <card-details-title
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+          fieldDescription="Enter the card details title."
+          fieldLabel="Card Details Title"
+          required="{Boolean}false"
+          cq:showOnCreate="{Boolean}true"
+          name="./detailsTitle">
+        <granite:data
+          jcr:primaryType="nt:unstructured"
+          cq-msm-lockable="detailsTitle"/>
+        </card-details-title>
+        <card-details-link
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldDescription="Enter the card details link."
+            fieldLabel="Card Details link"
+            required="{Boolean}false"
+            cq:showOnCreate="{Boolean}true"
+            name="./detailsLink">
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="detailsLink"/>
+        </card-details-link>
+        <card-details-type
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/select"
+              fieldDescription="Based on Selection of card details content type the options will change"
+              fieldLabel="Card details content Type"
+              required="{Boolean}true"
+              name="./detailsType">
+              <items jcr:primaryType="nt:unstructured">
+                  <hotels
+                      jcr:primaryType="nt:unstructured"
+                      text="Hotels"
+                      value="hotels"/>
+                  <attractions
+                      jcr:primaryType="nt:unstructured"
+                      text="Top Attractions"
+                      value="top-attractions"/>
+                  <deals
+                      jcr:primaryType="nt:unstructured"
+                      text="Deals"
+                      value="deals"/>
+                  <packages
+                      jcr:primaryType="nt:unstructured"
+                      text="Packages"
+                      value="packages"/>
+                  <restaurants
+                      jcr:primaryType="nt:unstructured"
+                      text="Restaurants"
+                      value="restaurants"/>
+                  <events
+                      jcr:primaryType="nt:unstructured"
+                      text="Events"
+                      value="events"/>
+                  <articles
+                      jcr:primaryType="nt:unstructured"
+                      text="Articles"
+                      value="articles"/>
+              </items>
+            <granite:data
+                jcr:primaryType="nt:unstructured"
+                cq-msm-lockable="detailsType"/>
+        </card-details-type>
+        <tab-items
+              cq:showOnCreate="{Boolean}true"
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+              cq-msm-lockable="details"
+              composite="{Boolean}true"
+              fieldDescription="Click 'Add' to add more Card Details"
+              fieldLabel="More Details">
+              <field
+                  jcr:primaryType="nt:unstructured"
+                  granite:class="accordion-multifield-item"
+                  sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                  name="./details">
+                  <items jcr:primaryType="nt:unstructured">
+                      <column
+                          jcr:primaryType="nt:unstructured"
+                          jcr:title="Details"
+                          sling:resourceType="granite/ui/components/coral/foundation/container">
+                          <items jcr:primaryType="nt:unstructured">
+                              <detail-title
+                                  cq:showOnCreate="{Boolean}true"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  fieldDescription="Article Item Details Title"
+                                  fieldLabel="Title"
+                                  name="./title"/>
+                              <description
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                  fieldDescription="Article Item Details Description"
+                                  fieldLabel="Description"
+                                  name="./description"
+                                  useFixedInlineToolbar="{Boolean}true">
+                                  <rtePlugins
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                                  <uiSettings
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                              </description>
+                              <image
+                                  cq:showOnCreate="{Boolean}true"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                  granite:class="s7-image-listener"
+                                  fieldDescription="Select a desktop image for this Article item details"
+                                  fieldLabel="Image"
+                                  name="./image/fileReference"
+                                  rootPath="/content/dam">
+                              </image>
+                              <s7fileReference
+                                  granite:class="s7-fileReference"
+                                  jcr:primaryType="nt:unstructured"
+                                  granite:id="s7-fileReference"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                  name="./image/s7fileReference">
+                              </s7fileReference>
+                              <alt-image
+                                  cq:showOnCreate="{Boolean}true"
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  emptyText="Enter an ALT text for the image"
+                                  fieldDescription="Enter an ALT text for the Article item details image."
+                                  fieldLabel="Alt text of the image"
+                                  name="./image/alt">
+                              </alt-image>
+                          </items>
+                      </column>
+                  </items>
+              </field>
+              <granite:data
+                  jcr:primaryType="nt:unstructured"
+                  cq-msm-lockable="details"/>
+        </tab-items>
+        <latitude
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Latitude"
+                    fieldDescription="Latitude"
+                    fieldLabel="Latitude"
+                    name="./latitude"
+                    typeHint="Decimal"/>
+                <longitude
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Longitude"
+                    fieldDescription="Longitude"
+                    fieldLabel="Longitude"
+                    name="./longitude"
+                    typeHint="Decimal"/>
+                <mapType
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Map Type"
+                    name="./mapType">
+                    <items jcr:primaryType="nt:unstructured">
+                        <google
+                            jcr:primaryType="nt:unstructured"
+                            selected="{Boolean}true"
+                            text="Google Maps"
+                            value="google"/>
+                        <mapbox
+                            jcr:primaryType="nt:unstructured"
+                            text="Mapbox Maps"
+                            value="mapbox"/>
+                    </items>
+                </mapType>
+                <zoom
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    emptyText="Zoom Level"
+                    fieldDescription="Zoom Level"
+                    fieldLabel="Zoom"
+                    name="./zoom"/>
+      </items>
+    </column>
+  </items>
+</jcr:root>

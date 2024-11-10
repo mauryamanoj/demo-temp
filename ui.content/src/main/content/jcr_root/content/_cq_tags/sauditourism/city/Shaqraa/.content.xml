@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Shaqraa"
+    jcr:title.ar="شقراء"
+    jcr:title.de="Schaqrāʾ"
+    jcr:title.es="Shaqra"
+    jcr:title.fr="Shaqra"
+    jcr:title.ja="シャクラ"
+    jcr:title.ru="Шакра"
+    jcr:title.zh="舍格拉"
+    sling:resourceType="cq/tagging/components/tag"
+    city="shaqraa"/>

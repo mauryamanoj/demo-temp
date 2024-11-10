@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Aleilaya"
+    jcr:title.ar="سبت العلاية"
+    jcr:title.de="Aleilaya"
+    jcr:title.es="Aleilaya"
+    jcr:title.fr="Aleilaya"
+    jcr:title.ja="アレイラヤ"
+    jcr:title.ru="Эль-Улейя"
+    jcr:title.zh="艾维拉亚"
+    sling:resourceType="cq/tagging/components/tag"
+    city="aleilaya"/>

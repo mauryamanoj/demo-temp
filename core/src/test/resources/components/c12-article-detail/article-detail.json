@@ -1,0 +1,15 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:mixinTypes":[
+    "cq:LiveRelationship",
+    "cq:LiveSyncCancelled"
+  ],
+  "jcr:createdBy":"matt.pomroy",
+  "cq:isCancelledForChildren":true,
+  "jcr:lastModifiedBy":"francesco.lo.bello",
+  "jcr:created":"Sun Apr 05 2020 16:20:41 GMT+0200",
+  "text":"<p>Lors de votre séjour, prenez le train pour profiter des vues pittoresques et voyager rapidement. Le train reliant Dammam à Riyad est un moyen économique de visiter les villes du royaume tout en admirant le magnifique paysage.<br />\n<\/p>\n",
+  "jcr:lastModified":"Mon Feb 08 2021 12:51:56 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/c12-article-detail/v1/c12-article-detail",
+  "textIsRich":"true"
+}

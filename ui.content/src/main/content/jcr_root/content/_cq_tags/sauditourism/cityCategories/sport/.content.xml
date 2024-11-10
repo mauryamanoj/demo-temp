@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Sport"
+          jcr:title.de="Sport"
+          jcr:title.es="Deporte"
+          jcr:title.ru="Спорт"
+          jcr:title.zh="運動"
+          jcr:title.fr="Sport"
+          jcr:title.ar="رياضة"
+          jcr:title.ja="スポーツ"
+          sling:resourceType="cq/tagging/components/tag"/>

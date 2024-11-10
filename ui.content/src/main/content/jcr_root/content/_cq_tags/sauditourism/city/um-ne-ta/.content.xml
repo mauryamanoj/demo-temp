@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Umluj, NEOM, Tabuk"
+    jcr:title.ar="أملج، نيوم، تبوك"
+    jcr:title.de="Umluj, NEOM, Tabuk"
+    jcr:title.es="Umluj, NEOM, Tabuk"
+    jcr:title.fr="Umluj, NEOM, Tabuk"
+    jcr:title.ja="Umluj, NEOM, Tabuk"
+    jcr:title.ru="Umluj, NEOM, Tabuk"
+    jcr:title.zh="Umluj, NEOM, Tabuk"
+    sling:resourceType="cq/tagging/components/tag"/>

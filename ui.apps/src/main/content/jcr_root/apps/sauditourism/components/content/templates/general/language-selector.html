@@ -1,0 +1,16 @@
+<sly data-sly-template.languageSelector="${@ multiSiteItems}">
+  <sly
+      data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"></sly>
+  <div class="language-selector" data-component="language-selector">
+    <sly
+        data-sly-call="${iconTemplate.icon @ iconName='language', iconClass='global'}"></sly>
+    <select name="language-drop" class="language-dropdown">
+      <option>${'selectlanguage' @ i18n}</option>
+      <sly data-sly-list.multiSiteItem="${multiSiteItems}">
+        <option value="${multiSiteItem.siteName}">${multiSiteItem.title}</option>
+      </sly>
+    </select>
+    <sly
+        data-sly-call="${iconTemplate.icon @ iconName='chevron', iconClass='chevron'}"></sly>
+  </div>
+</sly>

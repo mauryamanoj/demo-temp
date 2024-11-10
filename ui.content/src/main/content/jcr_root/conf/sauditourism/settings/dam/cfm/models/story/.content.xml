@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Template"
+    allowedPaths="[/content/entities(/.*)?, /content/dam(/.*)?]"
+    ranking="{Long}100">
+    <jcr:content
+        cq:scaffolding="/conf/sauditourism/settings/dam/cfm/models/story/jcr:content/model"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="story"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity"
+        sling:resourceType="dam/cfm/models/console/components/data/entity/default"
+        status="enabled">
+        <metadata jcr:primaryType="nt:unstructured">
+            <graphQL
+                jcr:primaryType="nt:unstructured"
+                apiName="StoryModel"
+                queryFieldMultiple="storyList"
+                queryFieldSingle="storyByPath"/>
+        </metadata>
+        <model
+            cq:targetPath="/content/dam"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            maxGeneratedOrder="20">
+            <cq:dialog
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog">
+                <content
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        maxGeneratedOrder="21">
+                        <tabPlaceholder
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/tabplaceholder"
+                            fieldLabel="Basic Informations"
+                            listOrder="11"
+                            metaType="tab-placeholder"
+                            name="placeholder"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string/tab"/>
+                        <storyTitleField
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter the title of your story here"
+                            fieldLabel="Story Title"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="title"
+                            renderReadOnly="false"
+                            required="on"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </storyTitleField>
+                        <storySubtitleField
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter the subtitle of your story here"
+                            fieldLabel="Story Subtitle&#x9;"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="subtitle"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </storySubtitleField>
+                        <bannerImages
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            required="on"
+                            composite="{Boolean}true"
+                            fieldLabel="Banner Images"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="images"
+                            showThumbnail="true"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string[]">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./images">
+                                <granite:data jcr:primaryType="nt:unstructured"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <typeAsset
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Type Image"
+                                                name="type"
+                                                renderReadOnly="false"
+                                                showEmptyInReadOnly="true"
+                                                valueType="string">
+                                                <optionsmultifield jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        fieldLabel="image"
+                                                        fieldValue="image"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        fieldLabel="gif"
+                                                        fieldValue="gif"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        fieldLabel="video"
+                                                        fieldValue="video"/>
+                                                </optionsmultifield>
+                                                <datasource
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="dam/cfm/admin/components/datasources/optionrendererenumeration"
+                                                    variant="default"/>
+                                                <granite:data jcr:primaryType="nt:unstructured"/>
+                                            </typeAsset>
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="dam/cfm/models/editor/components/contentreference"
+                                                granite:class="s7-image-listener"
+                                                fieldDescription="Fill this field only if type is 'image'"
+                                                fieldLabel="Image"
+                                                name="./image"
+                                                rootPath="/content/dam"
+                                                renderReadOnly="false"
+                                                showThumbnail="true"
+                                                required="on"
+                                                validation="cfm.validation.contenttype.image">
+                                                <granite:data
+                                                    selector="s7-image-listener"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    mvmaxitems="3"
+                                                    showThumbnail="true"
+                                                    thumbnail-validation="cfm.validation.thumbnail.show"/>
+                                            </image>
+                                            <imageFileReference
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                fieldDescription="Fill this field only if type is 'image'"
+                                                fieldLabel="Image fileReference"
+                                                listOrder="21"
+                                                maxlength="255"
+                                                metaType="text-single"
+                                                name="./s7image"
+                                                renderReadOnly="true"
+                                                showEmptyInReadOnly="true"
+                                                valueType="string">
+                                                <granite:data jcr:primaryType="nt:unstructured"/>
+                                            </imageFileReference>
+                                            <video
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="dam/cfm/models/editor/components/contentreference"
+                                                granite:class="s7-video-listener"
+                                                fieldDescription="Fill this field only if type is 'video'"
+                                                fieldLabel="Video"
+                                                name="./video"
+                                                rootPath="/content/dam"
+                                                renderReadOnly="false"
+                                                showThumbnail="true"
+                                                validation="cfm.validation.contenttype.video">
+                                                <granite:data
+                                                    selector="s7-video-listener"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    mvmaxitems="3"
+                                                    showThumbnail="true"
+                                                    thumbnail-validation="cfm.validation.thumbnail.show"/>
+                                            </video>
+                                            <videoFileReference
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                fieldDescription="Fill this field only if type is 'video'"
+                                                fieldLabel="Video fileReference"
+                                                listOrder="21"
+                                                maxlength="255"
+                                                metaType="text-single"
+                                                name="./s7video"
+                                                renderReadOnly="true"
+                                                showEmptyInReadOnly="true"
+                                                valueType="string">
+                                                <granite:data jcr:primaryType="nt:unstructured"/>
+                                            </videoFileReference>
+                                            <thumbnail
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Fill this field only if type is 'video'"
+                                                fieldLabel="Video Thumbnail"
+                                                name="./thumbnail"
+                                                rootPath="/content/dam"/>
+                                            <featureInSubStory
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./featureInSubStory"
+                                                text="Feature Asset in sub-story"
+                                                value="true">
+                                            </featureInSubStory>
+                                        </items>
+                                    </column>
+                                </items>
+                            </field>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </bannerImages>
+                        <informationLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Insert Information label here"
+                            fieldLabel="Information Label"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="informationLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </informationLabel>
+                        <locationLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Insert Location label here"
+                            fieldLabel="Location Label"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="locationLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </locationLabel>
+                        <destinationFragmentReference
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            allowNew="{Boolean}true"
+                            fieldLabel="Destination"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/sauditourism/settings/dam/cfm/models/destination"
+                            listOrder="9"
+                            metaType="fragment-reference"
+                            name="destination"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field jcr:primaryType="nt:unstructured"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </destinationFragmentReference>
+
+                        <authorDetails
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="Author Details"
+                            checked="false"
+                            default-mime-type="text/html"
+                            listOrder="2"
+                            metaType="text-multi"
+                            name="authorDetails"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string/multiline"/>
+                        <aboutDescription
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="About Description"
+                            checked="false"
+                            default-mime-type="text/html"
+                            listOrder="2"
+                            metaType="text-multi"
+                            name="aboutDescription"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string/multiline"/>
+                        <showReadMore
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="22"
+                            metaType="boolean"
+                            name="showReadMore"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Show Read More"
+                            valueType="boolean">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </showReadMore>
+                        <readMoreLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter the read more label"
+                            fieldLabel="Show More Label"
+                            listOrder="23"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="readMoreLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </readMoreLabel>
+                        <readLessLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter the read less label"
+                            fieldLabel="Show Less Label"
+                            listOrder="23"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="readLessLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </readLessLabel>
+                        <hideFavorite
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="21"
+                            metaType="boolean"
+                            name="hideFavorite"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Hide Favorite"
+                            valueType="boolean">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </hideFavorite>
+                        <latitude
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            fieldLabel="Latitude"
+                            listOrder="3"
+                            metaType="number"
+                            name="lat"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            step="any"
+                            typeHint="double"
+                            valueType="double">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </latitude>
+                        <longitude
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            fieldLabel="Longitude"
+                            listOrder="21"
+                            metaType="number"
+                            name="lng"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            step="any"
+                            typeHint="double"
+                            valueType="double">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </longitude>
+                        <pagePath
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/contentreference"
+                            fieldLabel="Story Page Path"
+                            filter="hierarchy"
+                            listOrder="21"
+                            metaType="reference"
+                            name="pagePath"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/sauditourism"
+                            showEmptyInReadOnly="true"
+                            showThumbnail="false"
+                            valueType="string/reference">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                thumbnail-validation="cfm.validation.thumbnail.show"/>
+                        </pagePath>
+                        <dayLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="E.g. Day"
+                            fieldLabel="Day"
+                            listOrder="21"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="dayLabel"
+                            renderReadOnly="true"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </dayLabel>
+                        <startDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/datatypes/datepicker"
+                            displayedFormat="YYYY-MM-DD"
+                            fieldLabel="Start Date"
+                            listOrder="21"
+                            metaType="date"
+                            name="startDate"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            type="date"
+                            valueFormat="YYYY-MM-DD"
+                            valueType="calendar/date">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                typeHint="Date"/>
+                        </startDate>
+                        <endDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/datatypes/datepicker"
+                            displayedFormat="YYYY-MM-DD"
+                            fieldLabel="End Date"
+                            listOrder="22"
+                            metaType="date"
+                            name="endDate"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            type="date"
+                            valueFormat="YYYY-MM-DD"
+                            valueType="calendar/date">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                typeHint="Date"/>
+                        </endDate>
+                        <comingSoonLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Insert the coming soon label of your event here"
+                            fieldLabel="Coming Soon Label"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="comingSoonLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </comingSoonLabel>
+                        <expiredLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Insert the expired label of your holiday here"
+                            fieldLabel="Expired Label"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="expiredLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </expiredLabel>
+                        <eventWidgetTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Insert the title of your event widget here"
+                                fieldLabel="Event Widget title"
+                                listOrder="1"
+                                maxlength="255"
+                                metaType="text-single"
+                                name="eventWidgetTitle"
+                                renderReadOnly="false"
+                                showEmptyInReadOnly="true"
+                                valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </eventWidgetTitle>
+                        <idealForLabel
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter the ideal for label here"
+                            fieldLabel="Ideal For Label"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="idealForLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </idealForLabel>
+                        <categoriesIcon
+                            cq:showOnCreate="true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            autocreateTag="true"
+                            fieldLabel="Category Tags"
+                            forceSelection="false"
+                            listOrder="7"
+                            metaType="tags"
+                            multiple="true"
+                            name="categories"
+                            renderReadOnly="false"
+                            rootPath="/content/cq:tags/sauditourism/categories"
+                            showEmptyInReadOnly="true"
+                            valueType="string/tags[]"/>
+
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>

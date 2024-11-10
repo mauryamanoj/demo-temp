@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Nail Salon"
+          jcr:title.ar="صالون الأظافر"
+          jcr:title.de="Nagelstudio"
+          jcr:title.es="Salón de uñas"
+          jcr:title.fr="Salon de manucure"
+          jcr:title.ja="ネイルサロン"
+          jcr:title.ru="Ногтевой салон"
+          jcr:title.zh="美甲沙龙"
+          sling:resourceType="cq/tagging/components/tag"/>

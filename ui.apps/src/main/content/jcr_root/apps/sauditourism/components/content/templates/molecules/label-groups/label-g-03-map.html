@@ -1,0 +1,17 @@
+<template data-sly-template.labelG03Map="${@ region, city, labelList}"
+          data-sly-use.map01RegionsAndCitiesTemplate="/apps/sauditourism/components/content/templates/atoms/maps/map-01-regions-and-cities.html"
+          data-sly-use.labelG01Simple="/apps/sauditourism/components/content/templates/molecules/label-groups/label-g-01-simple.html">
+    <div data-component="label-g-03-map${labelList ? '' : ' without-labels'}">
+        <div class="map-wrapper"
+             data-sly-set.locationType="${city ? 'city' : 'region'}">
+            <sly data-sly-call="${map01RegionsAndCitiesTemplate.map @ regionId=region, cityId=city,
+             locationType=locationType}"></sly>
+        </div>
+        <div class="labels-wrapper">
+            <sly data-sly-test="${labelList}"
+                 data-sly-set.bestFor="${'Best for' @ i18n}"
+                 data-sly-call="${labelG01Simple.labelG01Simple @ labelList=labelList, tagLine=bestFor, taglinePosition='top',
+            taglineColor='map', copyColor='grey', containerColor='map'}"></sly>
+        </div>
+    </div>
+</template>

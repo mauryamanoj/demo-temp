@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          enabled="{Boolean}true"
+          vanity.dispatch.enabled="{Boolean}true"
+          serve-authenticated-from-cache="{Boolean}true"
+          cache.serve-authenticated="{Boolean}true"
+          ttl="{Long}3600"
+          error-page.system-path="/content/sauditourism/en/errors/404"
+          not-found.behavior="respond-with-404"
+          error-images.extension="[png,jpeg,jpg,gif]"
+          error-page.extension="html"
+          error-images.path=".img.png"
+          error-images.enabled="{Boolean}true"
+          not-found.exclusion-path-patterns="[]"
+          paths="[/content/sauditourism/en/errors]"
+          error-page.fallback-name="500"
+/>

@@ -1,0 +1,42 @@
+{
+    "code": 200,
+    "message": "success",
+    "response": [
+        {
+            "title": "Nature",
+            "path": "Nature"
+        },
+        {
+            "title": "Culture \u0026 History",
+            "path": "Culture \u0026 History"
+        },
+        {
+            "title": "Entertainment",
+            "path": "Entretenimiento"
+        },
+        {
+            "title": "Food \u0026 Drink",
+            "path": "Comida y Bebida"
+        },
+        {
+            "title": "Shopping",
+            "path": "Compras"
+        },
+        {
+            "title": "Beauty \u0026 Relax",
+            "path": "Beauty \u0026 Relax"
+        },
+        {
+            "title": "Classes and Training",
+            "path": "Classes and Training"
+        },
+        {
+            "title": "Adventure",
+            "path": "Aventura"
+        },
+        {
+            "title": "Sports",
+            "path": "Deportes"
+        }
+    ]
+}

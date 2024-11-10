@@ -1,0 +1,6 @@
+{
+          "jcr:primaryType": "nt:unstructured",
+          "countryListEndPoint": "/bin/api/v1/geo/countries",
+          "eVisaConfigEndPoint": "/bin/api/v1/evisa/config",
+          "errorMessage": "Something Went Wrong"
+}

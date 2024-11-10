@@ -1,0 +1,50 @@
+/* Default style for pagination bullet */
+.swiper-pagination-bullet {
+    bottom: 40px;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: rgba(113, 113, 113, 1);
+    opacity: 1;
+    transition: width 0.3s; /* Added transition for consistent effect */
+}
+
+/* Active style for pagination bullet */
+.swiper-pagination-bullet-active {
+    width: 32px;
+    height: 8px;
+    border-radius: 5px;
+    background: rgba(190, 0, 141, 1);
+    overflow: hidden;
+    opacity: 1;
+    transition: width 0.3s; /* Transition for width */
+}
+
+.autoplay .swiper-pagination-bullet-active {
+    width: 32px;
+    background: white;
+}
+
+.autoplay .innerBullet {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 8px;
+}
+
+html[lang='ar'] .autoplay .innerBullet {
+left: unset;
+right: 0;
+}
+
+.autoplay .swiper-pagination-bullet-active .innerBullet {
+    width: 32px;
+    background: rgba(190, 0, 141, 1);
+}
+
+.swiper-pagination {
+    overflow: visible;
+}
+

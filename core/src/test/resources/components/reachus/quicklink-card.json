@@ -1,0 +1,18 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "cardType": "QUICK_LINK_CARD",
+  "title": "Chat With Us",
+  "jcr:lastModified": "Fri Oct 27 2023 11:27:12 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/reach-us",
+  "phoneCard": {
+    "jcr:primaryType": "nt:unstructured"
+  },
+  "quickLinkCard": {
+    "jcr:primaryType": "nt:unstructured",
+    "subtitle": "Start a Whatsapp chat",
+    "link": {
+      "url": "https://web.whatsapp.com/"
+    },
+    "icon": "quick-link-icon.png"
+  }
+}

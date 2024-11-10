@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Public"
+          jcr:title.de="Öffentlichkeit"
+          jcr:title.es="Público general"
+          jcr:title.ru="Широкая публика"
+          jcr:title.zh="对外开放"
+          jcr:title.fr="Public"
+          jcr:title.ar="عامة"
+          jcr:title.ja="一般"
+          sling:resourceType="cq/tagging/components/tag"/>

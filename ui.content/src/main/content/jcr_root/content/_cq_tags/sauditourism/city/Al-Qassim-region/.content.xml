@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al-Qassim region"
+    jcr:title.ar="منطقة القصيم"
+    jcr:title.de="Provinz al-Qasim"
+    jcr:title.es="Provincia de Casim"
+    jcr:title.fr="Province d'Al Qasim"
+    jcr:title.ja="カスィーム州"
+    jcr:title.ru="Провинция Эль-Касим"
+    jcr:title.zh="卡西姆地区"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-qassim-region"/>

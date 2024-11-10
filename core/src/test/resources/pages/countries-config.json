@@ -1,0 +1,96 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Nov 01 2022 08:25:16 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Country List",
+    "cq:lastReplicationAction":"Activate",
+    "jcr:versionHistory":"a415545e-0870-4e46-9312-774106d02939",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "searchCategories":[
+      "sauditourism:searchCategories/FestivalsEvents"
+    ],
+    "jcr:predecessors":[
+      "5d04a4a2-8aff-40fa-9a53-4d98b3e65d05"
+    ],
+    "jcr:created":"Tue Nov 01 2022 08:25:16 GMT+0100",
+    "cq:lastReplicated":"Tue Feb 08 2022 15:03:31 GMT+0000",
+    "cq:lastModified":"Tue Feb 08 2022 14:57:11 GMT+0000",
+    "theme":"red",
+    "jcr:baseVersion":"5d04a4a2-8aff-40fa-9a53-4d98b3e65d05",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "jcr:uuid":"31ba96b1-9b41-404c-a286-89e32ed69b13",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "countrylist":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "searchPlaceholder":"Search for a country",
+          "getStarted":"Get started by selecting a country from the list above",
+          "jcr:created":"Sun Nov 28 2021 14:05:04 GMT+0100",
+          "heading":"Can I travel to Saudi Arabia from",
+          "jcr:lastModified":"Tue Feb 08 2022 14:57:11 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/countryList",
+          "quickLinks":"Quick Links",
+          "selectCountry":"Select Country",
+          "country":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "countryName":"Afghanistan",
+              "flag":"https://acc.visitsaudi.com/content/dam/flags/Afghanistan.png",
+              "type":"non-eligible",
+              "visaGroup":"non-eligible",
+              "lastUpdated":"8th Feb 2022"
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "countryName":"Albania",
+              "flag":"/content/dam/flags/Albania.png",
+              "type":"non-eligible",
+              "visaGroup":"non-eligible",
+              "lastUpdated":"8th Feb 2022"
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "countryName":"Algeria",
+              "flag":"/content/dam/flags/Algeria.png",
+              "type":"non-eligible",
+              "visaGroup":"non-eligible",
+              "lastUpdated":"8th Feb 2022"
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "countryName":"American Samoa",
+              "flag":"/content/dam/flags/American Samoa.png",
+              "type":"non-eligible",
+              "visaGroup":"non-eligible",
+              "lastUpdated":"8th Feb 2022"
+            },
+            "item4":{
+              "jcr:primaryType":"nt:unstructured",
+              "countryName":"Andorra",
+              "flag":"/content/dam/flags/Andorra.png",
+              "type":"eligible",
+              "visaGroup":"eligible",
+              "lastUpdated":"8th Feb 2022"
+            }
+          }
+        }
+      }
+    }
+  }
+}

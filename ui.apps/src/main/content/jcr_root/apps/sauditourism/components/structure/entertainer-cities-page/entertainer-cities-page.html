@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+  <meta charset="utf-8">
+  <title>${currentPage.title || properties['jcr:title']}</title>
+    <sly data-sly-test="${!wcmmode.disabled}"
+         data-sly-call="${clientlib.all @ categories = [
+            'cq.authoring.page'
+        ]
+    }"></sly>
+
+</head>
+<body>
+<section style="margin:20px"
+         data-sly-use.model="com.saudi.tourism.core.models.app.entertainer.EntertainerCitiesPageModel">
+  <h1>Entertainer Cities Config </h1>
+
+  <sly data-sly-list.city="${model.cityList}">
+    <hr style="margin-top: 20px; margin-bottom:20px">
+
+    <div style="margin-bottom:10px;font-size:14px">
+      <strong>${city.text || city.name} </strong>
+        <sly data-sly-set.cityid="${['citiesList',city.id] @ join = '/'}"/>
+
+        <div data-sly-resource="${ cityid @ resourceType='sauditourism/components/content/entertainer-city'}"
+
+        ></div>
+    </div>
+  </sly>
+</section>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Categories Cards"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <cardsConfiguration
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Categories Cards Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <view
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Select the Value"
+                                        name="./view">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <grid
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Grid"
+                                                value="grid"/>
+                                            <slider
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Slider"
+                                                value="slider"/>
+                                        </items>
+                                    </view>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}false">
+                                    </title>
+                                    <background-image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        autoStart="{Boolean}false"
+                                        granite:class="cq-droptarget s7-image-listener"
+                                        fieldLabel="Background image"
+                                        fileNameParameter="./backgroundImage/fileName"
+                                        fileReferenceParameter="./backgroundImage/fileReference"
+                                        fieldDescription="Image size: 1920 x 1080 - Ratio 16:9. Select an image to be used for Background view"
+                                        mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                        multiple="{Boolean}false"
+                                        name="./backgroundImage/fileName"
+                                        title="Upload Background Image Asset"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true"/>
+                                    <s7fileReference-backgroundImage
+                                        granite:class="s7-fileReference"
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:id="s7-fileReference"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                        name="./backgroundImage/s7fileReference"/>
+                                    <alt-backgroundImage
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter an ALT text for the image."
+                                        fieldLabel="Alt text of Background image"
+                                        required="{Boolean}false"
+                                        name="./backgroundImage/alt"
+                                        emptyText="Background Image alt text"/>
+                                    <cards
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add' to add a new card Data"
+                                        fieldLabel="Category Data List"
+                                        required="{Boolean}true">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./cards">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Category"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <category
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="manual-authoring-showhide-target"
+                                                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                            fieldDescription="Select what this Categories is best suitable for"
+                                                            fieldLabel="Category Tag"
+                                                            forceSelection="{Boolean}true"
+                                                            multiple="{Boolean}false"
+                                                            name="./category"
+                                                            required="{Boolean}false"
+                                                            rootPath="/content/cq:tags/sauditourism/categories"
+                                                            validation="tags.count.validator">
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="true"/>
+                                                        </category>
+                                                        <image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            granite:class="cq-droptarget s7-image-listener"
+                                                            fieldLabel="Image"
+                                                            fileNameParameter="./image/fileName"
+                                                            fileReferenceParameter="./image/fileReference"
+                                                            fieldDescription="Image size: 1920 x 1080 - Ratio 16:9. Select an image to be used for Image view"
+                                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./image/fileName"
+                                                            title="Upload  Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <s7fileReference
+                                                            granite:class="s7-fileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:id="s7-fileReference"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./image/s7fileReference"/>
+                                                        <alt
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter an ALT text for the image."
+                                                            fieldLabel="Alt text of  image"
+                                                            required="{Boolean}True"
+                                                            name="./image/alt"
+                                                            emptyText=" Image alt text"/>
+                                                        <copy
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Link that will be opened when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="Label Link"
+                                                            name="./link/copy"/>
+                                                        <url
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Link that will be opened when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="Url Link"
+                                                            name="./link/url"/>
+                                                        <targetInNewWindow
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Target In New Window"
+                                                            name="./link/targetInNewWindow"
+                                                            text="Target In New Window"
+                                                            uncheckedValue="{Boolean}false">
+                                                        </targetInNewWindow>
+                                                        <appEventData
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="app Event Data when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="Category Event Data "
+                                                            name="./appEventData"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </cards>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </cardsConfiguration>
+        </items>
+    </content>
+</jcr:root>
+
+

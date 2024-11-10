@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+          jcr:primaryType="rep:ACL">
+    <allow0
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="acs-commons-email-service"
+        rep:privileges="{Name}[jcr:read]"/>
+    <deny1
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="trip-package-users"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/*"/>
+    </deny1>
+    <deny2
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="vendors"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/*"/>
+    </deny2>
+    <deny3
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="event-vendors"
+        rep:privileges="{Name}[jcr:read]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/*"/>
+    </deny3>
+</jcr:root>

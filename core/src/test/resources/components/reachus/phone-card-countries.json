@@ -1,0 +1,32 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Wed Nov 15 2023 08:21:37 GMT+0100",
+  "cardType": "PHONE_CARD",
+  "title": "Contact Us",
+  "jcr:lastModified": "Wed Nov 15 2023 08:23:02 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/reach-us",
+  "displayForm": "WITH_COUNTRIES",
+  "phoneCard": {
+    "jcr:primaryType": "nt:unstructured",
+    "offlineLabel": "Off line",
+    "callUsCta": "Call Us",
+    "liveLabel": "Live",
+    "contactWithFlag": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "countryFlag": "/content/dam/sauditourism/favicon.png",
+        "phoneNumber": "+9655432165343",
+        "contactName": "Arabic Saudi"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "countryFlag": "/content/dam/sauditourism/favicon.png",
+        "phoneNumber": "Kingdom of Morocco",
+        "contactName": "+21288736465"
+      }
+    }
+  }
+}

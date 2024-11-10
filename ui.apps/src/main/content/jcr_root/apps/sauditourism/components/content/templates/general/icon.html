@@ -1,0 +1,20 @@
+<sly data-sly-template.icon="${@ iconName, dataTransition, iconClass, dataBind ,dynamic}"
+     data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js' @
+         attributes=[dataTransition]}">
+  <span class="icon ${iconClass ? iconClass : ''}"
+        data-component="icon"
+        data-icon="${iconName}"
+        data-bind="${dataBind}"
+        data-dynamic="${dynamic}"
+        data-sly-attribute="${attributesHelper.attributes}">
+  </span>
+</sly>
+
+<sly data-sly-template.diamondIcon="${@ dataTransition, iconClass }"
+     data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js' @
+         attributes=[dataTransition]}">
+  <span class="diamond-icon ${iconClass}"
+        data-component="diamond-icon"
+        data-sly-attribute="${attributesHelper.attributes}">
+    </span>
+</sly>

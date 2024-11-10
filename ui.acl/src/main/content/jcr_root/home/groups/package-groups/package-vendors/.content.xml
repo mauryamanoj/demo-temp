@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="edf45c17-247f-35a4-a4e8-635112e0a730"
+    rep:authorizableId="package-vendors"
+    rep:members="{WeakReference}[77545dda-c321-37cf-a37f-1febdc16ea5a,4d7f6434-20ed-3ff5-b949-062d84353560,ce261aed-cc64-3d51-9fdb-a7d82cea18e8,32ce2239-8845-35b7-ae46-956f09d81005,fcc0818c-4240-3c44-ade6-53345b605b08,bca4ccd0-81bd-3a1f-9bc7-58c7ca81d5bc,9d800c65-7ddc-35c1-b9ca-383581597ba5,c17ac708-88c5-3a77-b74b-f99bace5172e,f1dea5a8-76cb-3ce0-b593-ee11ed9c7f81,d5e8f163-2afb-30b7-8e98-83f2ead0470d]"
+    rep:principalName="package-vendors"/>

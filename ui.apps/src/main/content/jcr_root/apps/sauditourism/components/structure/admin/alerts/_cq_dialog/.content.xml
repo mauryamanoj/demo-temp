@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Alerts Config"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+          <alerts
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              jcr:title="Alert-Config"
+              jcr:description="All content items">
+            <items jcr:primaryType="nt:unstructured">
+              <enableAlert
+                  jcr:primaryType="nt:unstructured"
+                  cq:showOnCreate="{Boolean}true"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                  fieldDescription="Enable Alert if checked"
+                  fieldLabel="Enable Alert"
+                  name="./enableAlert"
+                  text="Enable Alert"
+                  uncheckedValue="false"
+                  value="{Boolean}true"/>
+              <leftText
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="Vi"
+                  fieldDescription="Left Text"
+                  fieldLabel="Left Text"
+                  name="./leftText"/>
+              <leftText2
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="sit at home"
+                  fieldDescription="Left Text 2"
+                  fieldLabel="Left Text2"
+                  name="./leftText2"
+                  required="{Boolean}true"/>
+              <middleText
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="Your safety is out priority #stayhome"
+                  fieldDescription="Middle Text"
+                  fieldLabel="Middle Text"
+                  name="./middleText"
+                  required="{Boolean}true"/>
+              <middleTextHash
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="#stayhome"
+                  fieldDescription="Middle Text Hash"
+                  fieldLabel="Middle Text Hash"
+                  name="./middleTextHash"
+                  required="{Boolean}true"/>
+              <right-link
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/heading"
+                  level="{Long}2"
+                  cq:showOnCreate="{Boolean}true"
+                  text="Right CTA Configs"/>
+              <cta
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/include"
+                  path="sauditourism/components/commons/link/content/items/columns/items/column"/>
+            </items>
+          </alerts>
+          <viewport-alerts
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              jcr:title="Viewport Alert Config"
+              jcr:description="All content items">
+            <items jcr:primaryType="nt:unstructured">
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="Please rotate your device"
+                  fieldDescription="Mobile Device Title"
+                  fieldLabel="Device Title"
+                  name="./viewportAlertTitle"/>
+              <desktop-title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="Your window is too small, please expand its size"
+                  fieldDescription="Desktop Title default: Your window is too small, please expand its size"
+                  fieldLabel="Desktop Title"
+                  name="./viewportAlertDesktopTitle"/>
+              <copy
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  emptyText="We support portrait mode only."
+                  fieldDescription="Copy Message"
+                  fieldLabel="Copy Message"
+                  name="./viewportAlertCopy"/>
+            </items>
+          </viewport-alerts>
+        <announcement-banner
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container"
+            jcr:title="Announcement Banner Alert Config"
+            jcr:description="All content items">
+            <items jcr:primaryType="nt:unstructured">
+                <enableAlert
+                    jcr:primaryType="nt:unstructured"
+                    cq:showOnCreate="{Boolean}true"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Enable Alert if checked"
+                    fieldLabel="Enable Alert"
+                    name="./enableBannerAlert"
+                    text="Enable Alert"
+                    uncheckedValue="false"
+                    value="{Boolean}true"/>
+                <desktop-title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldDescription="Add announcement banner alert title"
+                    fieldLabel="Desktop Title"
+                    required="{Boolean}true"
+                    name="./annBannerDesktopTitle"/>
+                <link
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    rootPath="/content/sauditourism"
+                    fieldDescription="enter the page page for linking"
+                    fieldLabel="URL"
+                    required="{Boolean}true"
+                    name="./annBannerUrl"/>
+            </items>
+        </announcement-banner>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

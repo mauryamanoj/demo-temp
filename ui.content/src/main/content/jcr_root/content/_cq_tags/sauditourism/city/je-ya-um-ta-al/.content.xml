@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    jcr:title.ar="جدة، ينبع، أملج، تبوك، الجوف"
+    jcr:title.de="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    jcr:title.es="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    jcr:title.fr="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    jcr:title.ja="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    jcr:title.ru="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    jcr:title.zh="Jeddah, Yanbu, Umluj, Tabuk, Al-Jouf"
+    sling:resourceType="cq/tagging/components/tag"/>

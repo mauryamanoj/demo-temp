@@ -1,0 +1,127 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "sauditourism/components/structure/admin/holidays",
+  "items": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-03-20",
+      "name": "March Equinox"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-06-20",
+      "name": "June Solstice"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-09-22",
+      "name": "September Equinox"
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-09-23",
+      "name": "Saudi National Day"
+    },
+    "item4": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-12-21",
+      "name": "December Solstice"
+    },
+    "item5": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-14",
+      "name": "Eid al-Fitr"
+    },
+    "item6": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-15",
+      "name": "Eid al-Fitr"
+    },
+    "item7": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-16",
+      "name": "Eid al-Fitr"
+    },
+    "item8": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-17",
+      "name": "Eid al-Fitr"
+    },
+    "item9": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-18",
+      "name": "Eid al-Fitr"
+    },
+    "item10": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-19",
+      "name": "Eid al-Fitr"
+    },
+    "item11": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-20",
+      "name": "Eid al-Fitr"
+    },
+    "item12": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-21",
+      "name": "Eid al-Fitr"
+    },
+    "item13": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-22",
+      "name": "Eid al-Fitr"
+    },
+    "item14": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-23",
+      "name": "Eid al-Fitr"
+    },
+    "item15": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-24",
+      "name": "Eid al-Fitr"
+    },
+    "item16": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-25",
+      "name": "Eid al-Fitr"
+    },
+    "item17": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-26",
+      "name": "Eid al-Fitr"
+    },
+    "item18": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-05-27",
+      "name": "Eid al-Fitr"
+    },
+    "item19": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-07-30",
+      "name": "Arafat Day"
+    },
+    "item20": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-07-31",
+      "name": "Eid al-Adha"
+    },
+    "item21": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-08-01",
+      "name": "Eid al-Adha"
+    },
+    "item22": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-08-02",
+      "name": "Eid al-Adha"
+    },
+    "item23": {
+      "jcr:primaryType": "nt:unstructured",
+      "date": "2020-08-20",
+      "name": "Muharram (Muslim New Year)"
+    }
+  }
+}

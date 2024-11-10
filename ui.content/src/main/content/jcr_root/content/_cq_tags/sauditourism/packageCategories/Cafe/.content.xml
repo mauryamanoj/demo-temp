@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Café"
+    jcr:title.ar="مقهى"
+    jcr:title.de="Café"
+    jcr:title.es="Cafetería"
+    jcr:title.fr="Café"
+    jcr:title.ja="カフェ"
+    jcr:title.ru="Кафе"
+    jcr:title.zh="咖啡店"
+    sling:resourceType="cq/tagging/components/tag"/>

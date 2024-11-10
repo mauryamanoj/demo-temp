@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          sling.servlet.resourceTypes="[sauditourism/components/structure/page]"
+          include.lastmod="{Boolean}true"
+          character.encoding="UTF-8"
+          extensionless.urls="{Boolean}true"
+          changefreq.properties="[]"
+          remove.slash="{Boolean}true"
+          url.rewrites="[]"
+          include.inherit="{Boolean}false"
+          damassets.property=""
+          damassets.types="[]"
+          priority.properties="[]"
+          exclude.property="hideInSiteMap"
+          externalizer.domain="sitemap"
+/>

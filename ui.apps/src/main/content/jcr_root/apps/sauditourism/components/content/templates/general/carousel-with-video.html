@@ -1,0 +1,20 @@
+<sly data-sly-template.carousel="${@ model}"
+     data-sly-use.modalWindowTemplate="/apps/sauditourism/components/content/templates/general/modal-window.html"
+     data-sly-use.stepperBulletsTemplate="/apps/sauditourism/components/content/templates/atoms/pagination/pag-01-slider-stepper-bullets.html"
+     data-sly-use.cwithSliderArrowsTemplate="/apps/sauditourism/components/content/headers/header-01-main/variants/c-with-slider-arrows.html"
+>
+
+  <div class="carousel-with-video columns-2" data-component="carousel-with-video"
+       data-editor="${wcmmode.edit ? 'true' : 'false'}">
+    <sly data-sly-call="${cwithSliderArrowsTemplate.cwithSliderArrows @ header=model.header}"></sly>
+    <div class="content-wrapper offset-container">
+      <sly data-sly-call="${modalWindowTemplate.modalWindow @ model=model}"></sly>
+    </div>
+    <div class="component-wrapper">
+      <div class="bullets-wrapper cmp-carousel__actions" data-bullets-wrapper>
+        <sly data-sly-call="${stepperBulletsTemplate.sliderStepperBullets}"
+             data-sly-test="${model.cards}"></sly>
+      </div>
+    </div>
+  </div>
+</sly>

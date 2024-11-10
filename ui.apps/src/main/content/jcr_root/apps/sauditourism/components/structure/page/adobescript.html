@@ -1,0 +1,39 @@
+<sly data-sly-use.mode="com.saudi.tourism.core.models.app.page.ModeModel">
+
+    <script>
+        var shouldLoadScript = navigator.userAgent.indexOf('miniProgram') === -1 && navigator.userAgent.indexOf('MicroMessenger') === -1;
+    </script>
+
+    <sly data-sly-test="${mode.saudiModeConfig.mode == 'dev' @ context='scriptString'}">
+        <script>
+            if (shouldLoadScript) {
+                window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-ea208b6d49a1-development.min.js";
+            }
+        </script>
+    </sly>
+
+    <sly data-sly-test="${mode.saudiModeConfig.mode == 'acc' @ context='scriptString'}">
+        <script>
+            if (shouldLoadScript) {
+                window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d1d2f74bada3-staging.min.js";
+            }
+        </script>
+    </sly>
+
+    <sly data-sly-test="${mode.saudiModeConfig.mode == 'prod' @ context='scriptString'}">
+        <sly data-sly-test.publish="${mode.saudiModeConfig.publish @ context='scriptString'}">
+            <script>
+                if (shouldLoadScript) {
+                    window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d7d511425437.min.js";
+                }
+            </script>
+        </sly>
+        <sly data-sly-test="${!publish @ context='scriptString'}">
+            <script>
+                if (shouldLoadScript) {
+                    window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d1d2f74bada3-staging.min.js";
+                }
+            </script>
+        </sly>
+    </sly>
+</sly>

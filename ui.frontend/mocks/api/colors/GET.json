@@ -1,0 +1,506 @@
+[
+    {
+        "id": "sauditourism:categories/healthCare/pharmacy",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/healthCare/medicalsClinics",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/healthCare/healthCenter",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/healthCare/hospitals",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/healthCare",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/transportation/railwayStations",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/transportation/metroStations",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/transportation/busStations",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/transportation/carRental",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/transportation/gasStations",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/transportation/airports",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/transportation",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/publicServices/airports",
+        "color": "#46C8A0"
+    },
+    {
+        "id": "sauditourism:categories/publicServices",
+        "color": "#46C8A0"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/resorts",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/hotel",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/villas",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/camps",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/studio",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/chalets",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/farms",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation/apartments",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/accommodation",
+        "color": "#78006E"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/historic_site",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/monuments",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/mosques",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/museum",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/art_gallery",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/religious_site",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/libraries",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history/architectural_sites",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/culture_history",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/nature/beaches",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/islands",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/mountains",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/natural_site",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/zoo",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/public_park",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/farm",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/coasts",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/valley",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/safari",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/harbours",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature/wildlife_reserve",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/nature",
+        "color": "#3CA06E"
+    },
+    {
+        "id": "sauditourism:categories/beauty_relax/spa",
+        "color": "#646EC8"
+    },
+    {
+        "id": "sauditourism:categories/beauty_relax/hair_salon",
+        "color": "#646EC8"
+    },
+    {
+        "id": "sauditourism:categories/beauty_relax/nail_salon",
+        "color": "#646EC8"
+    },
+    {
+        "id": "sauditourism:categories/beauty_relax",
+        "color": "#646EC8"
+    },
+    {
+        "id": "sauditourism:categories/adventure",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/horse_riding",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/cooking",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/sport",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/kayaking",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/dancing",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/art",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/conferences",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/parasailing_paragliding",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/calligraphy",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/camping",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/scuba_snorkelling",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training/language",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/classes_and_training",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/shopping/video_game_store",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/traditional_clothingshop",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/strip_center",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/telecommunicationstore",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/electronics",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/toys_store",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/appliance",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/bookstore",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/cell_phone_store",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/farmers_market",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/mini_market",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/furniture",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/gaming_store",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/shopping_mall",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/supermarket",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping/traditional_market",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/shopping",
+        "color": "#64A0DC"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/comedy_show",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/theater",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/concert_halls",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/sky_bridge",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/cinema",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/opera",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/concerts_shows",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/amusement_parks",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/entertainment_center",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/gaming_center",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment/exhibition",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/entertainment",
+        "color": "#FF4664"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/desserts/bakery",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/desserts/western_sweets",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/desserts/icecream",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/desserts/traditional_sweets",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/desserts",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/bbq",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/indian_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/asian_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/american_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/saudi_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/italian_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/international_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant/french_kitchen",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/restaurant",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/cafe/cafe",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/cafe/tea_house",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/cafe",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink/juices",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/food_drink",
+        "color": "#FA783C"
+    },
+    {
+        "id": "sauditourism:categories/sports/gymnastics",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/boxing",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/yoga",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/cycling",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/motorsports",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/tennis",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/fencing",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/basketball",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/gyms",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/football",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/baseball",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/swimming",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/volleyball",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports/golf",
+        "color": "#BE008D"
+    },
+    {
+        "id": "sauditourism:categories/sports",
+        "color": "#BE008D"
+    }
+]

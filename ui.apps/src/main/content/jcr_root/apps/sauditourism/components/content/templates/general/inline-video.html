@@ -1,0 +1,12 @@
+<sly
+    data-sly-template.video="${@ extraClass, poster, videoPath, mobileVideoPath, skipControl, firstVideo}">
+  <div class="inline-video ${ extraClass ? extraClass : ''}" data-component="inline-video">
+    <video data-single-video-element playsinline muted="muted" loop
+           poster="${poster}"  data-sly-attribute.video-mobile-src="${mobileVideoPath}"
+           style="object-position: center center" controls="${!skipControl}"
+           data-sly-attribute.autoplay="${firstVideo ? 'autoplay' : ''}"
+           data-sly-attribute.preload="${!firstVideo ? 'none' : ''}">
+      <source src="${videoPath @ context='uri'}" type="video/mp4">
+    </video>
+  </div>
+</sly>

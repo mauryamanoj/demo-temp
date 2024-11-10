@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Nature"
+          jcr:title.de="Natur"
+          jcr:title.es="Naturaleza"
+          jcr:title.ru="Природа"
+          jcr:title.zh="性質"
+          jcr:title.fr="La Nature"
+          jcr:title.ar="طبيعة"
+          jcr:title.ja="自然"
+          sling:resourceType="cq/tagging/components/tag"/>

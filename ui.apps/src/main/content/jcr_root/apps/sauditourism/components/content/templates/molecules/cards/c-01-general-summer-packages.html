@@ -1,0 +1,77 @@
+<template data-sly-template.c01summerPackagesCards="${@ card, layout, hideDescription, tagLine}"
+          data-sly-use.favButton="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+          data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html"
+          data-sly-use.cta02Link="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html"
+          data-sly-use.taglineG01SimpleTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-01-simple.html"
+          data-sly-use.taglineG02FeaturedTemplate="/apps/sauditourism/components/content/templates/molecules/tagline-groups/tagline-g-02-featured.html">
+
+
+			<div data-component="c-01-general-summer-packages" data-sly-set.link="${card.link}"
+				class="layout-${layout} ${card.isFeatured ? ' featured' : ''}${card.description ? '' : ' without-description'}"
+			>
+
+
+			<div class="image-wrapper">
+    
+      <div class="favorite-button-wrapper" data-sly-test="${link.url && !card.hideFav}">
+       <sly data-sly-call="${favButton.fav @ path=link.urlSlingExporter, variant='white'}"></sly>
+      </div>
+    
+    <a href="${link.url}" class="image-link"
+	data-sly-set.class="${link.urlSlingExporter && !card.hideNav ? 'with-favorite-button' : ''}"
+	>
+       <sly data-sly-call="${imageTemplate.pictureObj @ imageDesktop=card.image.s7fileReference||
+                                card.image.fileReference, altText=link.copy, simpleLabelList=card
+                                .simpleLabelList, componentType='c-01', tagLine=tagLine,
+                                extraClass=class}"></sly>
+    </a>
+  </div>
+			 <a href="${link.url}" class="content-wrapper">
+    
+      <div class="ornament-wrapper" data-sly-test="${layout == 'highlight'}">
+         <sly data-sly-call="${ornaments02BarsTemplate.ornaments02Bars @ orientation='horizontal',
+             patternDefault=(card.highlightOrnamentId || '01')}"></sly>
+      </div>
+   
+   <div class="info-wrapper">
+      <div class="inner-wrapper">
+        <div class="tagline-wrapper">
+            <sly data-sly-test="${card.featuredTagLineFeaturedCopy}"
+                         data-sly-call="${taglineG02FeaturedTemplate.taglineG02Featured @ card=card}">
+                    </sly>
+                    <sly data-sly-test="${!card.featuredTagLineFeaturedCopy && card
+                    .simpleTagLinesList}"
+                         data-sly-call="${taglineG01SimpleTemplate.taglineG01Simple @ card=card}">
+                    </sly>
+					
+        </div>
+		 <h5 class="title">${card.title}</h5>
+		  <sly data-sly-test="${card.description && !hideDescription}">
+                    <div class="description copy">${card.description @ context='html'}</div>
+                </sly>
+            </div>
+			 <div class="price-details">
+                <div class="discount-price">
+                    <span class="actual-price"></span>
+                    <span>
+                        <span class="org-price"></span>
+                        <span class="discount-percentage"></span>
+                    </span>
+                </div>
+            </div>
+    </div>
+	 <div class="cta-wrapper">
+	 
+       <sly data-sly-set.backgroundFeatured="${card.isFeatured ? 'image' : ''}"
+                 data-sly-call="${cta02Link.ctaLink @ copy=link.copy,
+                 background=backgroundFeatured}"></sly>
+    </div>
+</a>
+</div>
+
+
+</template>
+
+
+

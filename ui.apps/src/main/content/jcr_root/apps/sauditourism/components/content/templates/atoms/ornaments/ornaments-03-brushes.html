@@ -1,0 +1,11 @@
+<template data-sly-template.ornaments03Brushes="${@ orientation, id, direction, class}">
+  <div
+      data-component="ornaments-03-brushes"
+      data-brush-orientation="${orientation}"
+      data-brush-id="${id}"
+      data-assets-path="/etc.clientlibs/sauditourism/clientlibs/clientlib-site/resources/asset/ornaments-brushes"
+      data-sly-set.concat="/etc.clientlibs/sauditourism/clientlibs/clientlib-site/resources/asset/ornaments-brushes/${orientation}/desktop/${id}.png"
+      style="-webkit-mask-image: url('${concat @ context='text'}')"
+      class="orientation-${orientation} direction-${direction} ${class ? class : ''}">
+  </div>
+</template>

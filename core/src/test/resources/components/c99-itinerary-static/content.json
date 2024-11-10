@@ -1,0 +1,30 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "c99-itinerary-static": {
+          "jcr:primaryType": "nt:unstructured",
+          "events": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "eventPath": "/content/sauditourism/en/event"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "eventPath": "/content/sauditourism/en/event"
+            }
+          },
+          "ctaText": "Book this experience",
+          "sling:resourceType": "sauditourism/components/content/c99-itinerary-static/v1/c99-itinerary-static"
+        }
+      }
+    }
+  }
+}

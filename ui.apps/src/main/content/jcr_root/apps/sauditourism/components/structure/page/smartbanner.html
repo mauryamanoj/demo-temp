@@ -1,0 +1,139 @@
+<sly data-sly-use.smartBannerData="com.saudi.tourism.core.models.common.SmartBannerModel">
+  <sly data-sly-test="${smartBannerData.enabled && smartBannerData.enabled == 'true'}">
+    <meta name="apple-itunes-app" content="app-id=${smartBannerData.iosAppId ? smartBannerData.iosAppId : '818179871' @ context = 'text'}">
+    <meta name="smartbanner:exclude-user-agent-regex" content="^.*(Version).*Safari">
+    <meta name="smartbanner:title" content="${smartBannerData.smartBannerTitle ? smartBannerData.smartBannerTitle : 'Visit Saudi - روح السعودية' @ context = 'text'}">
+    <meta name="smartbanner:author" content="${smartBannerData.smartBannerAuthor ? smartBannerData.smartBannerAuthor : 'Saudi Tourism Authority' @ context = 'text'}">
+    <meta name="smartbanner:price" content="${smartBannerData.getLabel ? smartBannerData.getLabel : 'Get' @ context = 'text'}">
+    <meta name="smartbanner:price-suffix-apple" content=" - ${smartBannerData.iosLabel ? smartBannerData.iosLabel : 'On the App Store' @ context = 'text'}">
+    <meta name="smartbanner:price-suffix-google" content=" - ${smartBannerData.androidLabel ? smartBannerData.androidLabel : 'In Google Play' @ context = 'text'}">
+    <meta name="smartbanner:icon-apple" content="${smartBannerData.iosIcon ? smartBannerData.iosIcon : 'https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/51/aa/4d/51aa4d37-478c-5887-c02c-79664f8991a3/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.webp' @ context = 'text'}">
+    <meta name="smartbanner:icon-google" content="${smartBannerData.androidIcon ? smartBannerData.androidIcon : 'https://play-lh.googleusercontent.com/sOxdv4mI0s5rBVtlUT8M-s6g005EGFMzeuTSMzKxU6FyZWsthbpYxgwCckTcZFwyww=w480-h960-rw' @ context = 'text'}">
+    <meta name="smartbanner:button" content="${smartBannerData.smartBannerButtonLabel ? smartBannerData.smartBannerButtonLabel : 'View' @ context = 'text'}">
+    <meta name="smartbanner:button-url-apple" content="${smartBannerData.iosAppUrl ? smartBannerData.iosAppUrl : 'https://apps.apple.com/us/app/visit-saudi-%D8%B1%D9%88%D8%AD-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/id818179871' @ context = 'text'}">
+    <meta name="smartbanner:button-url-google" content="${smartBannerData.androidAppUrl ? smartBannerData.androidAppUrl : 'https://play.google.com/store/apps/details?id=sa.gov.apps.sauditourism&hl=en&gl=US' @ context = 'text'}">
+    <meta name="smartbanner:enabled-platforms" content="android,ios">
+    <meta name="smartbanner:close-label" content="${smartBannerData.closeLabel ? smartBannerData.closeLabel : 'Close' @ context = 'text'}">
+    <meta name="smartbanner:disable-positioning" content="true">
+    <meta name="smartbanner:hide-path" content="/">
+    <meta name="smartbanner:custom-design-modifier" content>
+    <!-- set below line to hide banner across site if specified -->
+    <!-- <meta name="smartbanner:enabled-platforms" content="none"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.19.0/smartbanner.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.19.0/smartbanner.min.js"></script>
+    <style>
+      .smartbanner {
+        position: fixed;
+        z-index: 16;
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 10px 0;
+      }
+      .smartbanner__exit {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-inline-start: 10px;
+      }
+      .smartbanner.smartbanner--android .smartbanner__exit {
+        left: 0px;
+        margin-right: 0px;
+        width: 18px;
+        height: 18px;
+        margin-inline-start: 10px;
+      }
+      .smartbanner__icon {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .smartbanner__info {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: auto;
+        height: auto;
+        flex: 1;
+        overflow-y: auto;
+      }
+      .smartbanner__button {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        max-width: 30%;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+      }
+      .smartbanner.smartbanner--android .smartbanner__button {
+        top: 0px;
+        right: 0px;
+        margin-inline-end: 15px;
+      }
+    </style>
+    <script>
+      window.mobileAndTabletCheck = function () {
+        if(screen.width <= 1024){
+            return true;
+        }   else{
+            return false;
+        }
+      };
+      const isMobileTabletCheck = mobileAndTabletCheck();
+  
+      document.addEventListener('smartbanner.view', () => {
+        const newNav = document.querySelector('[data-component="mod-new-nav-01-main-menu"]');
+        const nav = document.querySelector('[data-component="mod-new-nav-01-main-menu"]');
+        const heroBanner = document.querySelector('[data-component="hero-contents"]');
+        const heroBannerCopy = document.querySelector('[data-component="hero-contents-copy"]');
+        const weatherHeroBanner = document.querySelector('[data-component="hero-contents-weather"]');
+        const searchResults = document.querySelector('[data-component=search-results]');
+        const announcementBanner = document.querySelector('[data-component="announcement-banner"]');
+        const smartAppBanner = document.querySelector('.smartbanner');
+        !isMobileTabletCheck && smartAppBanner.remove();
+
+        let smartAppBannerHeight = smartAppBanner ? smartAppBanner.clientHeight : 0;
+        let announcementBannerHeight = announcementBanner ? announcementBanner.clientHeight : 0;
+        let smartAppAnnouncementBannerHeight = smartAppBannerHeight + announcementBannerHeight;
+        searchResults && searchResults?.setAttribute(
+          'style',
+          'margin-top: ' + smartAppAnnouncementBannerHeight.toString() + 'px;',
+        );
+        nav && nav?.setAttribute('style', 'top: ' + smartAppAnnouncementBannerHeight.toString() + 'px;');
+        newNav && newNav?.setAttribute('style', 'top: ' + smartAppAnnouncementBannerHeight.toString() + 'px;');
+        document.body.setAttribute('style', 'padding-top:' + smartAppAnnouncementBannerHeight.toString() + 'px;');
+      });
+  
+      document.addEventListener('smartbanner.exit', () => {
+        const newNav = document.querySelector('[data-component="mod-new-nav-01-main-menu"]');
+        const nav = document.querySelector('[data-component="mod-new-nav-01-main-menu"]');
+        const heroBanner = document.querySelector('[data-component="hero-contents"]');
+        const heroBannerCopy = document.querySelector('[data-component="hero-contents-copy"]');
+        const weatherHeroBanner = document.querySelector('[data-component="hero-contents-weather"]');
+        const searchResults = document.querySelector('[data-component=search-results]');
+        const announcementBanner = document.querySelector('[data-component="announcement-banner"]');
+        let announcementBannerHeight = announcementBanner ? announcementBanner.clientHeight : 0;
+
+        searchResults && announcementBanner && searchResults?.setAttribute(
+          'style',
+          'margin-top: ' + announcementBannerHeight.toString() + 'px;',
+        );
+        searchResults && !announcementBanner && searchResults?.setAttribute(
+          'style',
+          'margin-top: 0px',
+        );
+        newNav && announcementBanner && newNav?.setAttribute('style', 'top: ' + announcementBannerHeight.toString() + 'px;');
+        nav && announcementBanner && nav?.setAttribute('style', 'top: ' + announcementBannerHeight.toString() + 'px;');
+        newNav && !announcementBanner && newNav?.setAttribute('style', 'top: 0px;',);
+        nav && !announcementBanner && nav?.setAttribute('style', 'top: 0px;',);
+        announcementBanner && announcementBanner.setAttribute('style', 'top: 0px;');
+        document.body.setAttribute('style', 'padding-top:0');
+      });
+    </script>
+  </sly>
+</sly>
+

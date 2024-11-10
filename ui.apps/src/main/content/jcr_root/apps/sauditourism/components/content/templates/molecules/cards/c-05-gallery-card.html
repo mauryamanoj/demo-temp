@@ -1,0 +1,27 @@
+<template data-sly-template.galleryCard="${@ card, index, extraClass }"
+          data-sly-use.cta13IconButton="/apps/sauditourism/components/content/templates/atoms/ctas/cta-13-icon-button.html"
+          data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-set.isWithVideo="${card.videoPath}">
+  <div
+      data-component="c-05-gallery-card"
+      class="layout-${isWithVideo ? 'video' : 'image'} carousel-item cmp-carousel__item ${extraClass}"
+      data-open-modal data-carousel-item item-index="${index}">
+    <div class="preview-wrapper">
+        <span class="preview-icon-wrapper">
+          <sly data-sly-test.isWithVideo="${isWithVideo}"
+               data-sly-call="${cta13IconButton.cta13IconButtons @ icon='play', background='image',
+               variant='primary', class='preview-icon'}"></sly>
+          <sly data-sly-test.isWithVideo="${!isWithVideo}"
+               data-sly-call="${cta13IconButton.cta13IconButtons @ icon='expand', background='image',
+               variant='secondary', class='preview-icon'}"></sly>
+        </span>
+      <sly
+          data-sly-set.image="${card.videoBackgroundImage.s7fileReference || card.videoBackgroundImage.fileReference || card.image.s7fileReference || card.image.fileReference}"
+          data-sly-call="${imageTemplate.pictureObj @ imageDesktop=image, altText=card.title}"></sly>
+    </div>
+    <div class="copy-content-wrapper">
+      <h5 class="title heading-5" data-sly-test="${card.title}">${card.title @ context='text'}</h5>
+      <p class="description copy">${card.description @ context='text'}</p>
+    </div>
+  </div>
+</template>

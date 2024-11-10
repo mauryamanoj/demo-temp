@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Ahsa"
+    jcr:title.ar="الأحساء"
+    jcr:title.de="Al-Hasa"
+    jcr:title.es="Al Ahsa"
+    jcr:title.fr="Al-Hassa"
+    jcr:title.ja="アハサー"
+    jcr:title.ru="Аль-Ахса"
+    jcr:title.zh="哈萨"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-ahsa"/>

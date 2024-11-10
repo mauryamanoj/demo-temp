@@ -1,0 +1,48 @@
+<div class="reachus-wrapper lg:px-100">
+
+    <!-- start title component -->
+    <div data-sly-test.title="${properties.title}" class="font-primary-bold text-3xl lg:text-5xl leading-9 lg:leading-[59px] mb-5 lg:mb-10 lg:m-auto mx-[20px]">
+        ${title}
+    </div>
+
+    <!-- end title component -->
+
+    <!-- start wrapper container -->
+    <div class="wrapper lg:flex  content-center gap-10 lg:m-auto mx-[20px]">
+        <div class="w-full bg-white rounded-[16px] lg:mb-0 mb-[20px] h-auto">
+            <!-- start phone ReachUs component -->
+
+            <div data-sly-unwrap="${wcmmode.disabled}">
+                <sly data-sly-resource="${'REACH-US-1' @ resourceType='sauditourism/components/content/reach-us'}"></sly>
+            </div>
+            <!-- end phone ReachUs component -->
+        </div>
+
+        <!-- start media cards and quick link card wrapper -->
+        <div class="w-full">
+
+            <!-- start media ReachUs component -->
+            <div data-sly-unwrap="${wcmmode.disabled}">
+                <sly data-sly-resource="${'REACH-US-2' @ resourceType='sauditourism/components/content/reach-us'}"></sly>
+            </div>
+            <!-- end media ReachUs component -->
+
+            <!-- start quick link ReachUs component -->
+            <div class="lg:flex flex-row lg:gap-6 gap-[20px]">
+                <div data-sly-unwrap="${wcmmode.disabled}">
+                    <sly data-sly-resource="${'REACH-US-3' @ resourceType='sauditourism/components/content/reach-us'}"></sly>
+                </div>
+                <div data-sly-unwrap="${wcmmode.disabled}">
+                    <sly data-sly-resource="${'REACH-US-4' @ resourceType='sauditourism/components/content/reach-us'}"></sly>
+                </div>
+
+            </div>
+            <!-- end quick link ReachUs component -->
+        </div>
+        <!-- end media cards and quick link card wrapper -->
+
+
+    </div>
+    <!-- start wrapper container -->
+
+</div>

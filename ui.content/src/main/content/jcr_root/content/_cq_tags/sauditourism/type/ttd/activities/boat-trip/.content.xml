@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Boat Trip"
+          jcr:title.ar="رحلة بالقارب"
+          jcr:title.de="Bootstour"
+          jcr:title.es="Viaje en barco"
+          jcr:title.fr="Balade en bateau"
+          jcr:title.ja="ボート旅行"
+          jcr:title.ru="Поездка на лодке"
+          jcr:title.zh="船上之旅"
+          sling:resourceType="cq/tagging/components/tag"/>

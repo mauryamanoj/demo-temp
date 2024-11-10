@@ -1,0 +1,741 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "header-config",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "bd12ae26-5cd4-455d-bbaf-3708ecfaae61",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/header-config",
+    "cq:lastReplicatedBy": "admin",
+    "searchPlaceholder": "Search",
+    "searchPath": "/content/sauditourism/en/search",
+    "searchText": "Search",
+    "jcr:predecessors": [
+      "115eafca-2e4e-4c16-aad3-ca7410c8691d"
+    ],
+    "backcta": "back",
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+    "cq:lastReplicated": "Tue Apr 21 2020 21:28:57 GMT+0200",
+    "cq:lastModified": "Fri Apr 03 2020 15:07:45 GMT+0200",
+    "favoritesResultsPageUrl": "/content/sauditourism/en/your-favourites",
+    "accountPath": "/content/sauditourism/en/your-favourites",
+    "theme": "red",
+    "jcr:baseVersion": "115eafca-2e4e-4c16-aad3-ca7410c8691d",
+    "jcr:isCheckedOut": true,
+    "cq:conf": "/conf/sauditourism/visitsaudi",
+    "jcr:uuid": "7de6d7c5-43c4-40db-8cbf-97a36432f7fe",
+    "sling:resourceType": "sauditourism/components/structure/header-config",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap": "false",
+    "cq:lastModifiedBy": "maren.dethlefsen",
+    "logoPath": "/content/sauditourism/en",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    },
+    "signIn": {
+      "jcr:primaryType": "nt:unstructured",
+      "link": "#",
+      "text": "Sign In",
+      "title": "Sign In",
+      "openNewTab": "false"
+    },
+    "evisa": {
+      "jcr:primaryType": "nt:unstructured",
+      "url": "https://visa.visitsaudi.com/?_ga=2.234783326.1160299762.1585593923-1103161029.1585593923",
+      "link": "/content/sauditourism/app",
+      "text": "Apply for <span class=\"lowercase\">e</span>Visa",
+      "title": "Apply for <span class=\"lowercase\">e</span>Visa",
+      "openNewTab": "true"
+    },
+    "contacts": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "https://help.visitsaudi.com/hc/en-us",
+        "text": "Contact us",
+        "openNewTab": "false"
+      }
+    },
+    "phoneNumbers": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "930",
+        "text": "Local Call Centre:",
+        "openNewTab": "false"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "+966920000890",
+        "text": "International Call Centre:",
+        "openNewTab": "false"
+      }
+    }
+  },
+  "meet-saudi": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "MEET SAUDI",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "7d562d85-6f24-494c-b623-e653bae5576f",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "59922fc0-68ba-47de-a04d-3486fd2a1096"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+      "cq:lastReplicated": "Tue Apr 21 2020 20:38:51 GMT+0200",
+      "cq:lastModified": "Fri Apr 03 2020 11:34:00 GMT+0200",
+      "url": "/content/sauditourism/en/understand",
+      "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/meet-saudi/meet4.jpg",
+      "theme": "green",
+      "jcr:baseVersion": "59922fc0-68ba-47de-a04d-3486fd2a1096",
+      "jcr:isCheckedOut": true,
+      "disableCurrencyWeather": "true",
+      "jcr:uuid": "6e6aacfa-58d1-4d76-8f7a-2ae1f489c439",
+      "sling:resourceType": "sauditourism/components/structure/configuration-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "navType": "weathercurrency",
+      "navtype": "weathercurrency",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      },
+      "cities": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "currencies": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "getting-here": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Language & Culture",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "698c3263-0a12-4dff-9bb3-bab78219625e",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "feb3246a-6905-4ccc-858d-7d326e2bc7a0"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/en/understand/getting-here",
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:02 GMT+0200",
+        "cq:lastModified": "Mon Apr 06 2020 15:55:46 GMT+0200",
+        "url": "/content/sauditourism/en/understand/language-and-culture",
+        "link": "/content/sauditourism/en/language-and-culture",
+        "text": "Language and culture",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/meet-saudi/meet4.jpg",
+        "title": "Language and culture",
+        "openNewTab": "false",
+        "jcr:baseVersion": "feb3246a-6905-4ccc-858d-7d326e2bc7a0",
+        "jcr:isCheckedOut": true,
+        "pageTitle": "Language & Culture",
+        "jcr:uuid": "34b27720-7704-4987-bdbe-958afd13461a",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen",
+        "navTitle": "Language & Culture"
+      }
+    },
+    "getting-here1": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 11:55:00 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Climate & Seasons",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "c574ecc8-a63a-4dec-9f98-824d906fda4d",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "b269525e-41d7-4f74-96a2-c8282e967fd9"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/en/understand/language-and-culture",
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 11:55:00 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:02 GMT+0200",
+        "cq:lastModified": "Mon Apr 06 2020 15:56:13 GMT+0200",
+        "url": "/content/sauditourism/en/understand/climate-and-seasons",
+        "link": "/content/sauditourism/en/planning-tools/climate---seasons",
+        "text": "Climate and seasons",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/meet-saudi/climate3.jpg",
+        "title": "Climate and seasons",
+        "openNewTab": "false",
+        "jcr:baseVersion": "b269525e-41d7-4f74-96a2-c8282e967fd9",
+        "jcr:isCheckedOut": true,
+        "pageTitle": "Climate & Seasons",
+        "jcr:uuid": "5b9e0dd2-428a-4a02-9a3d-0d9b9745bee3",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen",
+        "navTitle": "Climate & Seasons"
+      }
+    },
+    "currencies---payments": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:25:57 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Currencies & Payments",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "4f3fdd3f-f4fb-4231-906a-0548108b0e50",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "f617cd40-c286-4faf-b7e3-fba514628290"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:25:57 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:02 GMT+0200",
+        "cq:lastModified": "Mon Apr 06 2020 15:56:33 GMT+0200",
+        "url": "/content/sauditourism/en/understand/currencies-and-payments",
+        "link": "/content/sauditourism/en/planning-tools/currencies---payments",
+        "text": "Currencies and payments",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/meet-saudi/payments3.jpg",
+        "theme": "red",
+        "title": "Currencies and payments",
+        "openNewTab": "false",
+        "jcr:baseVersion": "f617cd40-c286-4faf-b7e3-fba514628290",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "8e654c8b-75c9-4006-9a66-6dc5539a548a",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    },
+    "laws---etiquette": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:27:38 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Laws & Etiquette",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "67f82209-9f93-49cc-9b84-6f7f6970546d",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "459b6fda-f2c9-4f2e-8bed-d2169e5ff0f4"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:27:38 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:02 GMT+0200",
+        "cq:lastModified": "Mon Apr 06 2020 15:56:57 GMT+0200",
+        "url": "/content/sauditourism/en/understand/laws-and-etiquette",
+        "link": "/content/sauditourism/en/understand/laws-and-etiquette",
+        "text": "Laws and etiquette",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/meet-saudi/laws5.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "459b6fda-f2c9-4f2e-8bed-d2169e5ff0f4",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "8605cf98-c4b1-4b11-9f3d-08603d28ee3c",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    }
+  },
+  "see-do": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "SEE & DO",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "ac439f86-62a6-40c4-af45-95e9d2f37c7f",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "b3adc3ce-684a-4638-aafa-a90b482f07c0"
+      ],
+      "articleImage": "/content/dam/saudi-tourism/media/articles/a102/brand-page-hero.jpg",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+      "cq:lastReplicated": "Tue Apr 21 2020 20:38:51 GMT+0200",
+      "cq:lastModified": "Wed Apr 01 2020 22:48:07 GMT+0200",
+      "url": "/content/sauditourism/en/see-do",
+      "image": "/content/dam/saudi-tourism/media/see/brand-page-hero.jpg",
+      "theme": "purple",
+      "jcr:baseVersion": "b3adc3ce-684a-4638-aafa-a90b482f07c0",
+      "jcr:isCheckedOut": true,
+      "disableCurrencyWeather": "false",
+      "articlePath": "/content/sauditourism/en/do/adventure-activites/dive-into-jeddah-s-top-scuba-sites",
+      "jcr:uuid": "77b62ed2-9ee0-442a-8387-aa03b8f4bf9f",
+      "sling:resourceType": "sauditourism/components/structure/configuration-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "navType": "article",
+      "navtype": "article",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      },
+      "cities": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "currencies": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "places-to-see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:34:10 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Regions",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "61e097c6-b703-4092-b5f2-fd57b4eb8d70",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "67d9835a-fc33-43e1-88ef-6602216284d9"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:34:10 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:09 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 21:36:49 GMT+0200",
+        "url": "/content/sauditourism/en/see-do/regions",
+        "link": "/content/sauditourism/en/see",
+        "text": "Regions",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/see-and-do/art1.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "67d9835a-fc33-43e1-88ef-6602216284d9",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "a140534e-8bed-41ca-b796-7b1d2eb95be7",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    },
+    "activities": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:30:43 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Activities",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "eb6d56e3-7ea8-40dc-a20a-ac9603ea5f31",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "f7c552e5-969f-407d-810e-6ba06cf4ac9a"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:30:43 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:09 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 21:37:23 GMT+0200",
+        "url": "/content/sauditourism/en/do",
+        "link": "/content/sauditourism/en/do",
+        "text": "Activities",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/see-and-do/Activities5.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "f7c552e5-969f-407d-810e-6ba06cf4ac9a",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "ffdbeab4-6a2a-468a-bd2d-bfae1ac18419",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen",
+        "articlePath": "/content/sauditourism/en/calendar/past-events",
+        "articleImage": "/content/dam/saudi-tourism/media/red-sea-route-/dmc-content/my-trip"
+      }
+    },
+    "food---drink": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:32:37 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Food & Drink",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "61d94541-8343-4fef-9d05-f8c0b3bf2430",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "b5e84a79-797d-40f7-9e05-6068648b9702"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:32:37 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:09 GMT+0200",
+        "cq:lastModified": "Mon Apr 06 2020 16:00:51 GMT+0200",
+        "url": "/content/sauditourism/en/eat",
+        "link": "/content/sauditourism/en/eat",
+        "text": "Food and drink",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/see-and-do/food4.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "b5e84a79-797d-40f7-9e05-6068648b9702",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "8f796411-d269-4f29-8d5f-234dd0cc30b3",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen",
+        "articlePath": "/content/sauditourism/en/calendar/alula-season",
+        "articleImage": "/content/dam/saudi-tourism/media/articles/a248-dougha-pottery"
+      }
+    }
+  },
+  "Festivals-Events": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "FESTIVALS & EVENTS",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "d6e74365-59c9-4429-80d2-cf166dea9d69",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "5c957b24-e33f-471b-b828-7886c4e61a2a"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+      "cq:lastReplicated": "Tue Apr 21 2020 20:38:51 GMT+0200",
+      "cq:lastModified": "Thu Apr 09 2020 23:32:22 GMT+0200",
+      "url": "/content/sauditourism/en/calendar",
+      "image": "#",
+      "theme": "orange",
+      "jcr:baseVersion": "5c957b24-e33f-471b-b828-7886c4e61a2a",
+      "jcr:isCheckedOut": true,
+      "disableCurrencyWeather": "false",
+      "articlePath": "/content/sauditourism/en/apply-for-evisa",
+      "jcr:uuid": "483e4e95-ddd5-4577-937b-cda5d6921624",
+      "sling:resourceType": "sauditourism/components/structure/configuration-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "navtype": "article",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      },
+      "cities": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "currencies": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    }
+  },
+  "Plan-your-trip": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "PLAN YOUR TRIP",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "41a1a428-deb9-4394-9bc7-abc05dbe4c07",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "dac08ec2-f0d6-4683-b545-3b868196d9d5"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Wed Mar 25 2020 17:51:45 GMT+0100",
+      "cq:lastReplicated": "Tue Apr 21 2020 20:38:51 GMT+0200",
+      "cq:lastModified": "Wed Apr 01 2020 21:38:45 GMT+0200",
+      "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/plan-your-trip/about-evisa/About eVisa.jpg",
+      "theme": "teal",
+      "jcr:baseVersion": "dac08ec2-f0d6-4683-b545-3b868196d9d5",
+      "jcr:isCheckedOut": true,
+      "disableCurrencyWeather": "false",
+      "articlePath": "/content/sauditourism/en/apply-for-evisa",
+      "jcr:uuid": "02caec0b-b17d-402b-8207-acb804c26a8b",
+      "sling:resourceType": "sauditourism/components/structure/configuration-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "hideInSiteMap": "false",
+      "navType": "plan",
+      "navtype": "article",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      },
+      "cities": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "currencies": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "plans": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "about-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:42:26 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "About eVisa",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "617d2f21-2eee-443d-ab1c-8f1210dd4395",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "84fa32b2-e80a-418a-a7b3-7e8f1bcc0667"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:42:26 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:19 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 19:44:36 GMT+0200",
+        "url": "/content/sauditourism/en/about-e-visa",
+        "link": "/content/sauditourism/en/about-e-visa",
+        "text": "About eVisa",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/plan-your-trip/about-evisa/About eVisa.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "84fa32b2-e80a-418a-a7b3-7e8f1bcc0667",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "0ddb5bf6-98d3-49aa-9587-816480179089",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    },
+    "arabian-experiences": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 09 2020 13:06:40 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Arabian Experiences",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "3a7d1d21-1615-4391-b571-a1248599744b",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "3722b3c2-fd3f-4844-8ddf-9cbb02c53441"
+        ],
+        "jcr:created": "Thu Apr 09 2020 13:06:40 GMT+0200",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:19 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 19:58:29 GMT+0200",
+        "url": "/content/sauditourism/en/do/arabian-experiences",
+        "text": "Arabian Experiences",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/plan-your-trip/packages/Packages.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "3722b3c2-fd3f-4844-8ddf-9cbb02c53441",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "4ac3a13d-7c3e-4272-aa6e-af3fef1a1e13",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    },
+    "getting-here": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:45:34 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Getting Here",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "7b47794b-8f0b-4fdf-a651-81861b77928d",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "d8f93f7b-e3e9-45e4-a071-a181c249ea0f"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:45:34 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:19 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 19:45:10 GMT+0200",
+        "url": "/content/sauditourism/en/understand/getting-here",
+        "link": "/content/sauditourism/en/planning-tools/getting-here",
+        "text": "Getting Here",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/plan-your-trip/getting-here-and-around/Getting here and Around.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "d8f93f7b-e3e9-45e4-a071-a181c249ea0f",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "77e50da8-dff0-4bf3-baf9-b6ccaa4665f6",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:46:32 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Getting Around",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "f7f12f15-4dd8-4802-8505-0bcbe626715e",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "10027588-3229-49d9-a6e1-f35916b026fe"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:46:32 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:19 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 19:45:40 GMT+0200",
+        "url": "/content/sauditourism/en/understand/getting-around",
+        "link": "/content/sauditourism/en/getting-around",
+        "text": "Getting Around",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/plan-your-trip/getting-here-and-around/img3.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "10027588-3229-49d9-a6e1-f35916b026fe",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "511a9930-aae2-4995-a323-d920fa603971",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    },
+    "useful-contacts": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Mar 27 2020 12:47:38 GMT+0100",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Useful Contacts",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "d0ab4941-4ad9-4c63-b2e6-57029cf6eb01",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:predecessors": [
+          "6dad75c6-4e6e-4909-9e5b-d9314cee71d1"
+        ],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Fri Mar 27 2020 12:47:38 GMT+0100",
+        "cq:lastReplicated": "Tue Apr 21 2020 20:39:19 GMT+0200",
+        "cq:lastModified": "Wed Apr 01 2020 19:46:34 GMT+0200",
+        "url": "/content/sauditourism/en/understand/useful-contacts",
+        "link": "/content/sauditourism/en/planning-tools/useful-numbers",
+        "text": "Usuful Contacts",
+        "image": "/content/dam/saudi-tourism/media/new-navigation-imagery/plan-your-trip/useful-contacts/Useful Contacts.jpg",
+        "theme": "red",
+        "openNewTab": "false",
+        "jcr:baseVersion": "6dad75c6-4e6e-4909-9e5b-d9314cee71d1",
+        "jcr:isCheckedOut": true,
+        "cq:conf": "/conf/sauditourism/visitsaudi",
+        "jcr:uuid": "2feba0be-8cd0-4222-bead-03a53759f098",
+        "sling:resourceType": "sauditourism/components/structure/nav-item-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "hideInSiteMap": "false",
+        "cq:lastModifiedBy": "maren.dethlefsen"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Oct 03 2019 15:32:28 GMT+1000",
+  "riyadh": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "Riyadh",
+    "value": "Riyadh"
+  },
+  "salel": {
+    "jcr:primaryType": "nt:unstructured",
+    "text": "Salel",
+    "value": "Salel",
+    "latitude": "12345",
+    "longitude": "54321"
+  }
+}

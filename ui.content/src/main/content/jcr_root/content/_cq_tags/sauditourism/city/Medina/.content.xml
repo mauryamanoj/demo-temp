@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Medina"
+    jcr:title.ar="المدينة المنورة"
+    jcr:title.de="Medina"
+    jcr:title.es="Medina"
+    jcr:title.fr="Médine"
+    jcr:title.ja="メディナ"
+    jcr:title.ru="Медина"
+    jcr:title.zh="麦地那"
+    sling:resourceType="cq/tagging/components/tag"
+    city="madinah"/>

@@ -1,0 +1,36 @@
+<template data-sly-template.itineraryButton="${
+  @ class='Additional class for button/link',
+    label='Button/link title text',
+    type='Required. `booking` for package booking button, `planner` for trip planner wizard button, `link` for anchor hyper reference',
+    link='url reference only for the type `link`',
+    appData='Data Layer button click event json data',
+    expanded='Set this flag to get the button always expanded'}"
+          data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+          data-sly-set.isButton="${type != 'link'}"
+          data-sly-set.typeClass="${isButton ? ['type-', type] : ['type-booking'] @ join}"
+>
+  <button class="create-itinerary-button ${class} ${typeClass} ${expanded ? 'fix-width' : ''}"
+     data-component="create-itinerary-button"
+     data-sly-element="${isButton ? 'button' : 'a'}"
+     data-sly-attribute.href="${isButton ? '' : link @ context='uri'}"
+     data-sly-attribute.title="${isButton ? '' : label @ context='text'}"
+     data-sly-attribute.data-button="${isButton ? 'data-button' : ''}"
+     data-sly-attribute.data-type="${isButton ? type : 'booking'}"
+     data-sly-attribute.data-event-data="${appData}"
+	 data-track-name="${label @ context='text'}" 
+	data-track-section="Trip Planner"
+	data-track-packageName="${appData}"
+	data-track-destination=" "
+	data-track-eventName="${label @ context='text'}"
+  >
+      <span class="button-inner-wrapper"
+            data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js'
+                @ attributes=[expanded ? 'data-button-inner-wrapper-collapsable'
+                    : 'data-button-inner-wrapper']}"
+            data-sly-attribute="${attributesHelper.attributes}">
+      <sly data-sly-set.iconName="${type == 'planner' ? 'trips' : 'calendar-add'}"
+             data-sly-call="${iconTemplate.icon @ iconName=iconName}"></sly>
+      <span class="label cta-text" data-label>${label @ context='text'}</span>
+      </span>
+  </button>
+</template>

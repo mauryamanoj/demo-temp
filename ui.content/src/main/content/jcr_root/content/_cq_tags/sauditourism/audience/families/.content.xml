@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Families"
+          jcr:title.de="Familien"
+          jcr:title.es="Familias"
+          jcr:title.ru="Семьи"
+          jcr:title.zh="家庭"
+          jcr:title.fr="Familles"
+          jcr:title.ja="家族"
+          jcr:title.ar="العائلات"
+          sling:resourceType="cq/tagging/components/tag"/>

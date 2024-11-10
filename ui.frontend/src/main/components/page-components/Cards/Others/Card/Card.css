@@ -1,0 +1,35 @@
+@media only screen and (min-device-width: 768px) {
+    .map-blk {
+        max-width: 284px;
+        margin: auto;
+    }
+
+    .other-blk .img-blk {
+        max-width: 278px;
+        max-height: 157px;
+        width: 278px;
+    }
+
+}
+
+@media only screen and (max-device-width: 768px) {
+    .map-blk .img-blk {
+        max-width: 180px;
+        max-height: 180px;
+        margin: auto;
+    }
+
+    /* .map-blk {
+        max-width: 350px;
+    } */
+
+    .map-blk button {
+        font-size: 14px;
+    }
+
+    .other-blk .img-blk,.other-blk .picture-element {
+        max-height: 89px;
+        max-width: 158px;
+        width: 100%;
+    }
+}

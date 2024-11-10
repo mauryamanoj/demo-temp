@@ -1,0 +1,129 @@
+/*
+data to copy paste
+{
+   "commitChange" : "false",
+   "path": "/content/sauditourism/en",
+   "csvFilePath" : "/content/dam/metadata/en-articles-metadata.csv",
+   "cqTemplate":"cq:template",
+   "template":"/conf/sauditourism/settings/wcm/templates/story-page"
+}
+*/
+
+import org.apache.sling.api.resource.ResourceResolver
+import org.apache.sling.api.resource.Resource
+import com.day.cq.dam.api.Asset
+import javax.jcr.query.Query
+
+// Input path, template, and cqTemplate
+def commitChange = data.commitChange.toBoolean()
+def path = data.path
+def cqTemplate = data.cqTemplate
+def template = data.template
+def csvFilePath = data.csvFilePath
+
+// Get the Resource Resolver
+def resourceResolver = resourceResolver
+
+// Function to create the SQL2 Query
+def createSQL2Query(path, term, cqTemplate) {
+    def queryManager = session.workspace.queryManager
+    def statement = "SELECT * FROM [cq:PageContent] AS s WHERE ISDESCENDANTNODE([${path}]) and s.[${cqTemplate}] = '${term}' "
+    def query = queryManager.createQuery(statement, Query.JCR_SQL2)
+    return query
+}
+
+// Execute the Query
+def query = createSQL2Query(path, template, cqTemplate)
+def result = query.execute()
+
+// Get the Resource
+Resource csvResource = resourceResolver.getResource(csvFilePath)
+
+def data = []
+def csvData = [:]  // To store CSV data for quick lookup
+
+if (csvResource != null) {
+    // Get the Asset
+    def asset = csvResource.adaptTo(Asset)
+
+    if (asset != null) {
+        // Get the InputStream of the CSV file
+        InputStream inputStream = asset.getOriginal().getStream()
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"))
+
+        // Read the header line
+        def headerLine = reader.readLine()
+        def headers = headerLine.split(",")*.trim()
+
+        // Find the indices of the columns we're interested in
+        def pathIndex = headers.findIndexOf { it == "path" }
+        def seoKeysIndex = headers.findIndexOf { it == "seoKeys" }
+
+        if (pathIndex == -1 || seoKeysIndex == -1) {
+            println "Required columns not found in the CSV file"
+            return
+        }
+
+        // Process each subsequent line in the CSV file and store in map
+        String line
+        while ((line = reader.readLine()) != null) {
+            def values = line.split(",")*.trim()
+            def record = [:]
+
+            headers.eachWithIndex { header, index ->
+                record[header] = values[index]
+            }
+
+            def pathRecord = record["path"]
+            def extractedPageName = pathRecord.substring(pathRecord.lastIndexOf('/') + 1)
+            csvData[extractedPageName] = record["seoKeys"]
+        }
+
+        // Close the reader
+        reader.close()
+    } else {
+        println "Asset not found at path: ${csvFilePath}"
+    }
+} else {
+    println "Resource not found: ${csvFilePath}"
+}
+
+// Process the query results
+result.nodes.each { node ->
+    def url = node.path.substring(0, node.path.indexOf("/jcr:content"))
+    def pageName = url.substring(url.lastIndexOf("/") + 1)
+
+    if (csvData.containsKey(pageName)) {
+        def seoKeys = csvData[pageName]
+        def nodePath = node.path + "/seoKeys"
+        if (!session.nodeExists(nodePath)) {
+            def seoKeysNode = node.addNode("seoKeys", "nt:unstructured")
+            def i = 0
+            if (seoKeys != null) {
+                for (def item : seoKeys.split("\\|")) {
+                    def itemNode = seoKeysNode.addNode("item" + i++, "nt:unstructured")
+                    itemNode.setProperty("keyword", item)
+                }
+                data.add([url, seoKeys])
+            }
+        } else {
+            println "seoKeys already exist for : " + node.path
+        }
+    } else {
+        println "page '${pageName}' not found in the CSV file, full path : " + node.path
+    }
+}
+
+// Save the session if commitChange is true
+if (commitChange) {
+    session.save()
+    println "Session saved: Update success"
+} else {
+    println "Failed update: Change the value of commitChange to true and re-execute to save the session"
+}
+
+// Output the results in a table format
+table {
+    columns("Page Path", "SEO Keys")
+    rows(data)
+}

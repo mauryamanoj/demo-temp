@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.saudi.tourism.core.models.components.singleapppromotionalbanner.v1.SingleAppPromotionalBannerModel"
+     data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html">
+    <sly data-sly-call="${templates.placeholder @ isEmpty = !properties.title}"></sly>
+    <div data-component="SingleAppPromotionalBanner" data-props="${model.json @context='text'}">${model.json @context='text'}</div>
+</sly>

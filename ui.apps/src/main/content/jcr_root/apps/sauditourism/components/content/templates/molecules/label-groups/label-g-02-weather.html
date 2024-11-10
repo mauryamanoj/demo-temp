@@ -1,0 +1,18 @@
+<template data-sly-template.labelG02Weather="${@ weatherLabel, weatherIcon, simpleLabelList, copyColor, containerColor}"
+          data-sly-use.label01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/labels/label-01-simple.html"
+          data-sly-use.label02WeatherTemplate="/apps/sauditourism/components/content/templates/atoms/labels/label-02-weather.html">
+    <div data-component="label-g-02-weather">
+        <ul class="tags" data-list-container>
+            <li class="tag" data-list-item>
+                <sly data-sly-call="${label02WeatherTemplate.label02Weather @ weatherLabel=weatherLabel,
+                weatherIcon=weatherIcon}"></sly>
+            </li>
+            <sly data-sly-test="${simpleLabelList}" data-sly-list="${simpleLabelList}">
+                <li class="tag" data-list-item data-sly-test="${itemList.index < 2}">
+                    <sly data-sly-call="${label01SimpleTemplate.label01Simple @ label=item,
+                         containerColor=containerColor, copyColor=copyColor}"></sly>
+                </li>
+            </sly>
+        </ul>
+    </div>
+</template>

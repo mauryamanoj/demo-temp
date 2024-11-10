@@ -1,0 +1,101 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Mar 12 2020 16:20:19 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "About eVISA",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "2feda3e4-08f2-4bdd-a5b0-df942b218545",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:predecessors": [
+      "c9802570-7d1b-4172-bc75-a00e037ba9af"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Thu Mar 12 2020 16:20:19 GMT+1100",
+    "cq:lastReplicated": "Mon Dec 30 2019 15:54:11 GMT+0100",
+    "cq:lastModified": "Thu Mar 19 2020 18:47:02 GMT+1100",
+    "theme": "green-teal",
+    "jcr:description": "International visitors will discover the warm hospitality of Saudi people: The new visa system is a historic milestone in opening Saudi Arabia to tourism. ",
+    "jcr:baseVersion": "c9802570-7d1b-4172-bc75-a00e037ba9af",
+    "jcr:isCheckedOut": true,
+    "pageTitle": "About the eVisa - Visit Saudi Official Website",
+    "jcr:uuid": "794de18c-1d72-4124-bf86-e9c83ec53ce7",
+    "featureImage": "/content/dam/saudi-tourism/media/about-evisa/315x236/brand-page-hero-1920.jpg",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap": "false",
+    "cq:lastModifiedBy": "admin",
+    "navTitle": "ABOUT eVISA",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "list_component": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Thu Mar 19 2020 18:40:49 GMT+1100",
+          "jcr:lastModified": "Thu Mar 19 2020 18:47:02 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/list-component/v1/list-component",
+          "componentTitle": {
+            "jcr:primaryType": "nt:unstructured",
+            "weight": "h2",
+            "text": "Component Title, Edit me"
+          },
+          "cards": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "position": "Position, edit me",
+              "title": "Title, edit me",
+              "titleWeight": "h3",
+              "subtitle": "Subtitle, edit me",
+              "subtitleWeight": "h4",
+              "tableItems": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "key": "King",
+                  "value": "Value 1, edit me"
+                }
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/photo-1582560770014-b802f96a6020.jpeg",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/photo-1582560770014-b802f96a6020.jpeg"
+              }
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "position": "Position, edit me",
+              "title": "Title, edit me",
+              "titleWeight": "h3",
+              "subtitle": "Subtitle, edit me",
+              "subtitleWeight": "h4",
+              "tableItems": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "key": "Capital",
+                  "value": "Value 2, edit me"
+                }
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/saudi-tourism/media/photo-1582560770014-b802f96a6020.jpeg",
+                "mobileImageReference": "/content/dam/saudi-tourism/media/photo-1582560770014-b802f96a6020.jpeg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

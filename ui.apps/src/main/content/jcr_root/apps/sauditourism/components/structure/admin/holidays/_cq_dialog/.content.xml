@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Holidays Config"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[sauditourism.author]">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+      margin="{Boolean}true">
+    <items jcr:primaryType="nt:unstructured">
+      <column
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+          <holidays-multifield
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+              composite="{Boolean}true"
+              fieldLabel="List of all holidays"
+              fieldDescription="Add here all the holiday dates">
+            <field
+                jcr:primaryType="nt:unstructured"
+                name="./items"
+                granite:class="accordion-multifield-item"
+                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+              <items jcr:primaryType="nt:unstructured">
+                <holiday
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Holiday"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <items jcr:primaryType="nt:unstructured">
+                    <name
+                        granite:class="accordion-multifield-item-title"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter the name of this holiday"
+                        fieldLabel="Name"
+                        required="{Boolean}true"
+                        name="./name"/>
+                    <date
+                        granite:class="accordion-multifield-item-title"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                        displayedFormat="YYYY-MM-DD"
+                        fieldDescription="Enter here a date of the holiday"
+                        fieldLabel="Date"
+                        name="./date"
+                        required="{Boolean}true"
+                        type="date"
+                        typeHint="String"
+                        valueFormat="YYYY-MM-DD"/>
+                  </items>
+                </holiday>
+              </items>
+            </field>
+          </holidays-multifield>
+        </items>
+      </column>
+    </items>
+  </content>
+</jcr:root>

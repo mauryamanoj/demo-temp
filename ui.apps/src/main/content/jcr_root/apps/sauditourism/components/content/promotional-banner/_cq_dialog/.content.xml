@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Promotional Banner"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <promotionalsConfiguration
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Promotional Banner Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <id
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Component ID"
+                                        name="./componentId"/>
+                                    <heightType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Height Type"
+                                        name="./height"
+                                        required="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <large
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Large"
+                                                value="large"/>
+                                            <small
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Small"
+                                                value="small"/>
+                                            <medium
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Medium"
+                                                value="medium"/>
+                                        </items>
+                                    </heightType>
+                                    <isNotOnTop
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldLabel="is On Top"
+                                        name="./isNotOnTop"
+                                        text="Is Not On Top"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <showArrows
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldLabel="Show Arrows"
+                                        name="./showArrows"
+                                        text="Show Arrows"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <logoSize
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Logo size"
+                                        name="./logoSize">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <small
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Small"
+                                                value="small"/>
+                                            <large
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Large"
+                                                value="large"/>
+                                        </items>
+                                    </logoSize>
+                                    <transparency
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable logo transparency"
+                                        fieldLabel="Enable Image transparency"
+                                        name="./logo/isTransparent"
+                                        text="Enable logo transparency"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <logo
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        autoStart="{Boolean}false"
+                                        granite:class="cq-droptarget s7-image-listener component-type-showhide-target"
+                                        fieldLabel="Logo image"
+                                        fileNameParameter="./logo/fileName"
+                                        fileReferenceParameter="./logo/fileReference"
+                                        fieldDescription="logo image should be PNG"
+                                        mimeTypes="[image/png]"
+                                        multiple="{Boolean}false"
+                                        name="./logo/fileName"
+                                        title="Upload Desktop Image Asset"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true">
+                                    </logo>
+                                    <s7fileReference
+                                        granite:class="s7-fileReference component-type-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:id="s7-fileReference"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                        name="./logo/s7fileReference">
+                                    </s7fileReference>
+                                    <isHideImageBrush
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldLabel="Hide Image Brush"
+                                        name="./hideImageBrush"
+                                        text="Hide Image Brush"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+
+                                    <promotionals
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        validation="multifield-max-5"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add' to add a new Banner Data"
+                                        fieldLabel="Promotional Banner Data List">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./cards">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Promotional Banner"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Title"
+                                                            name="./title"
+                                                            required="{Boolean}true"/>
+                                                        <subTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Sub Title"
+                                                            name="./subTitle"
+                                                            required="{Boolean}false"/>
+                                                        <image
+                                                            granite:class="cq-droptarget s7-image-listener"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            fieldDescription="Image size:660x370 - Ratio 16:9. Select an image to be used for desktop view"
+                                                            fieldLabel="Image"
+                                                            fileNameParameter="./imgName"
+                                                            fileReferenceParameter="./image/fileReference"
+                                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./imgFile"
+                                                            title="Upload Desktop Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <s7fileReference
+                                                            granite:class="s7-fileReference"
+                                                            granite:id="s7-fileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./image/s7fileReference"/>
+                                                        <alt-image
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter an ALT text for the image."
+                                                            fieldLabel="Alt text of image"
+                                                            name="./image/alt"/>
+                                                        <video
+                                                            granite:class="cq-droptarget s7-video-listener component-type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            class="cq-droptarget"
+                                                            fieldDescription="Select the video to be used. If there is a video the image will be overwritten"
+                                                            fieldLabel="Video Asset"
+                                                            fileNameParameter="./videoFileName"
+                                                            fileReferenceParameter="./video/videoFileReference"
+                                                            mimeTypes="[video]"
+                                                            multiple="{Boolean}false"
+                                                            name="./videoFile"
+                                                            title="Video Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true">
+                                                        </video>
+                                                        <s7videoFileReference
+                                                            granite:class="s7-videoFileReference component-type-showhide-target"
+                                                            granite:id="s7-videoFileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./video/s7videoFileReference">
+                                                        </s7videoFileReference>
+                                                        <thumbnail-video
+                                                            granite:class="cq-droptarget s7-image-listener"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            fieldDescription="Image size:660x370 - Ratio 16:9. Select an thumbnail to be used for desktop view"
+                                                            fieldLabel="Thumbnail Video"
+                                                            fileNameParameter="./imgName"
+                                                            fileReferenceParameter="./thumbnail/fileReference"
+                                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./imgFile"
+                                                            title="Upload thumbnail video Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <s7fileReference-thumbnail-video
+                                                            granite:class="s7-fileReference"
+                                                            granite:id="s7-fileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./thumbnail/s7fileReference"/>
+                                                        <autorerun
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="component-type-showhide-target"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Autorerun"
+                                                            name="./video/autorerun"
+                                                            text="Autorerun"
+                                                            value="{Boolean}true"
+                                                            uncheckedValue="{Boolean}false">
+                                                        </autorerun>
+                                                        <autoplay
+                                                            granite:class="component-type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Autoplay"
+                                                            name="./video/autoplay"
+                                                            text="Autoplay"
+                                                            value="{Boolean}true"
+                                                            uncheckedValue="{Boolean}false">
+                                                        </autoplay>
+                                                        <copy
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Link that will be opened when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="CTA Label "
+                                                            name="./link/copy"/>
+                                                        <url
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Link that will be opened when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="CTA Url "
+                                                            name="./link/url"/>
+                                                        <targetInNewWindow
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Target In New Window"
+                                                            name="./link/targetInNewWindow"
+                                                            text="Target In New Window"
+                                                            value="{Boolean}true"
+                                                            uncheckedValue="{Boolean}false">
+                                                        </targetInNewWindow>
+                                                        <appEventData
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="app Event Data when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="Banner Event  "
+                                                            name="./appEventData"/>
+                                                        <ctaEventName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="CTA Event Name"
+                                                            name="./ctaData/ctaEventName"
+                                                            required="{Boolean}false"/>
+                                                        <pageCategory
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="CTA Event page Category"
+                                                            name="./ctaData/pageCategory"
+                                                            required="{Boolean}false"/>
+                                                        <pageSubCategory
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="CTA Event page Sub Category"
+                                                            name="./ctaData/pageSubCategory"
+                                                            required="{Boolean}false"/>
+                                                        <sectionName
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="CTA Event section Name"
+                                                            name="./ctaData/sectionName"
+                                                            required="{Boolean}false"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </promotionals>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </promotionalsConfiguration>
+        </items>
+    </content>
+</jcr:root>

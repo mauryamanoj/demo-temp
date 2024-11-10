@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Cycling"
+          jcr:title.ar="ركوب الدراجات"
+          jcr:title.de="Radfahren"
+          jcr:title.es="Ciclismo"
+          jcr:title.fr="Cyclisme"
+          jcr:title.ja="サイクリング"
+          jcr:title.ru="Велоспорт"
+          jcr:title.zh="骑自行车"
+    sling:resourceType="cq/tagging/components/tag"/>

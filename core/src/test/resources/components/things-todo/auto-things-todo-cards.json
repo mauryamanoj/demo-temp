@@ -1,0 +1,37 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Sun Dec 17 2023 14:03:55 GMT+0100",
+  "title":"Recommanded Activities & Tours (Auto)",
+  "jcr:lastModified":"Sun Dec 17 2023 14:05:23 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/things-todo-cards",
+  "display":{
+    "jcr:primaryType":"nt:unstructured",
+    "numberOfCards":"2",
+    "cardSize":"small",
+    "displayType":"scrollable"
+  },
+  "link":{
+    "jcr:primaryType":"nt:unstructured",
+    "url":"/content/sauditourism/en",
+    "text":"View all"
+  },
+  "sort":{
+    "jcr:primaryType":"nt:unstructured",
+    "sortBy":"randomized"
+  },
+  "filter":{
+    "jcr:primaryType":"nt:unstructured",
+    "type":["attraction", "activity"],
+    "poiTypes":[
+      "sauditourism:type/ttd/activities/dancing",
+      "sauditourism:type/ttd/activities/camping"
+    ],
+    "categories":[
+      "sauditourism:categories/nature",
+      "sauditourism:categories/entertainment",
+      "sauditourism:categories/beauty_relax"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          smtp.password="7LTYeNk0RGJriIzITznm2A"
+          smtp.user="Saudi Tourism Authority"
+          debug.email="{Boolean}false"
+          smtp.port="{Long}587"
+          smtp.ssl="{Boolean}false"
+          smtp.host="smtp.mandrillapp.com"
+          from.address="no-reply@visitsaudi.com"
+/>

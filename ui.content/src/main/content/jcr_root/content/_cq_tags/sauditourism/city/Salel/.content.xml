@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Sulayyil"
+    jcr:title.ar="السليل"
+    jcr:title.de="Salel"
+    jcr:title.es="Al Sulail"
+    jcr:title.fr="As Sulayyil"
+    jcr:title.ja="アル・サリル"
+    jcr:title.ru="Эс-Сулейиль"
+    jcr:title.zh="苏莱伊勒"
+    sling:resourceType="cq/tagging/components/tag"
+    city="salel"/>

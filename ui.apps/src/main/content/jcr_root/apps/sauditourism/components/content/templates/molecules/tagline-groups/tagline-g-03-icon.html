@@ -1,0 +1,11 @@
+<template data-sly-template.taglineG03Icon="${@ icon, copy}"
+          data-sly-use.icon01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"
+          data-sly-use.tagline01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/taglines/tagline-01-simple.html">
+<div data-component="tagline-g-03-icon">
+        <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name=icon, desktopSize='18',
+        mobileSize='22'}"></sly>
+        <span class="tagline">
+            <sly data-sly-call="${tagline01SimpleTemplate.tagline01Simple @ copy=copy}"></sly>
+        </span>
+    </div>
+</template>

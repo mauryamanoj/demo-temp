@@ -1,0 +1,20 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:created":"Sun Oct 15 2023 17:53:38 GMT+0200",
+  "title":"All Attractions",
+  "jcr:lastModified":"Sun Oct 15 2023 18:29:25 GMT+0200",
+  "sling:resourceType":"sauditourism/components/content/attractions-map",
+  "link":{
+    "jcr:primaryType":"nt:unstructured",
+    "url":"/content/sauditourism/en/shopping-in-saudi",
+    "text":"View on Maps"
+  },
+  "categoryFilter":{
+    "jcr:primaryType":"nt:unstructured",
+    "label":"All categories"
+  },
+  "destinationFilter":{
+    "jcr:primaryType":"nt:unstructured",
+    "label":"All destinations"
+  }
+}

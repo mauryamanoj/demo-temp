@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Nawwariyyah"
+    jcr:title.ar="النعيرية"
+    jcr:title.de="Nariyah"
+    jcr:title.es="Nariya"
+    jcr:title.fr="Al Nawwariyyah"
+    jcr:title.ja="アル・ナエリーヒ"
+    jcr:title.ru="Эль-Наввария"
+    jcr:title.zh="纳依里亚"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-noayriyah"/>

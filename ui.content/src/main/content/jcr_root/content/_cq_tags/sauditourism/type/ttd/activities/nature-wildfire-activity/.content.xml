@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Nature and Wildlife Activity"
+          jcr:title.ar="أنشطة الطبيعة والحياة البرية"
+          jcr:title.de="Natur- und Wildtieraktivitäten"
+          jcr:title.es="Actividades de naturaleza y vida silvestre"
+          jcr:title.fr="Activités de nature et de faune"
+          jcr:title.ja="自然と野生動物のアクティビティ"
+          jcr:title.ru="Природные и дикой природы активности"
+          jcr:title.zh="自然和野生动物活动"
+          sling:resourceType="cq/tagging/components/tag"/>
+

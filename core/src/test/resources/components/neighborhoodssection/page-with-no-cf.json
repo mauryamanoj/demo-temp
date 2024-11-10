@@ -1,0 +1,42 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Dec 04 2023 10:10:15 GMT+0100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "December story",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/story-page",
+    "searchCategories": [
+      "sauditourism:searchCategories/SeeDo"
+    ],
+    "noLoginModal": "false",
+    "jcr:created": "Mon Dec 04 2023 10:10:15 GMT+0100",
+    "cq:lastModified": "Mon Dec 04 2023 10:48:21 GMT+0100",
+    "branding": "visitsaudi",
+    "theme": "red",
+    "referencedFragmentPath": "/content/dam/sauditourism/cf/en/stories/story1",
+    "pageAuthor": "contentAuthors",
+    "sling:resourceType": "sauditourism/components/structure/story-page",
+    "hideInSiteMap": "false",
+    "searchHighlight": "false",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "neighborhoods": {
+          "jcr:primaryType": "nt:unstructured",
+          "title": "Title",
+          "link":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/en/winter-season",
+            "copy":"View all"
+          }
+        }
+      }
+    }
+  }
+}

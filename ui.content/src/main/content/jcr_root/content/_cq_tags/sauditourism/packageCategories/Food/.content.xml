@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Food"
+          jcr:title.ar="الأكل"
+          jcr:title.fr="Gastronomie"
+          jcr:title.es="Gastronomía"
+          jcr:title.ru="Гастрономия"
+          jcr:title.de="Essen"
+          jcr:title.zh="美食"
+          jcr:title.ja="食べ物"
+          sling:resourceType="cq/tagging/components/tag"/>

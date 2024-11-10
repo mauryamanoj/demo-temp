@@ -1,0 +1,36 @@
+<div class="configurator"
+     data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html"
+     data-sly-use.config="com.saudi.tourism.core.models.components.packages.PackagesSignupFormConfig"
+     data-sly-test.configured="${config.title}">
+  <h2> Package Request Form Configuration</h2>
+
+  <p>Title: ${config.title}</p>
+  <p>Subtitle: ${config.subtitle}</p>
+
+  <h4>Confirmation</h4>
+  <sly data-sly-use.confirmationSuccess="${resource.path}/confirmationCopies/success">
+    <p>Confirmation success Title: ${confirmationSuccess.title}</p>
+    <p>Confirmation success Subtitle: ${confirmationSuccess.subtitle}</p>
+  </sly>
+
+  <sly data-sly-use.confirmationSuccess="${resource.path}/confirmationCopies/error">
+    <p>Confirmation error Title: ${confirmationSuccess.title}</p>
+    <p>Confirmation error Subtitle: ${confirmationSuccess.subtitle}</p>
+  </sly>
+
+  <sly data-sly-use.exitConfirmation="${resource.path}/confirmationCopies/exit">
+    <p>Exit Confirmation Title: ${exitConfirmation.title}</p>
+    <p>Exit Confirmation Subtitle: ${exitConfirmation.subtitle}</p>
+    <p>Exit Confirmation Confirm copy: ${exitConfirmation.confirmCopy}</p>
+    <p>Exit Confirmation Deny Copy: ${exitConfirmation.denyCopy}</p>
+  </sly>
+
+  <h4>Inputs</h4>
+  <ul data-sly-list.input="${config.inputs}">
+    <li data-sly-set.props="${config.inputs[input]}">
+      Label: ${props.label} | Placeholder: ${props.placeholder} |
+      Pattern: ${props.pattern} | Required: ${props.required ? 'yes' : 'no'} | Type: ${props.type}
+    </li>
+  </ul>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!configured}"></sly>

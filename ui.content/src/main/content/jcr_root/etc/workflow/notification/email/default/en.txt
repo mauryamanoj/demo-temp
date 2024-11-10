@@ -1,0 +1,14 @@
+subject=National calendar: ${item.node.title}
+
+header=-------------------------------------------------------------------------------------\n \
+From | ${participant.name} (${participant.id})\n \
+Event Name | ${payload.data}\n \
+Step | ${item.node.title}\n \
+
+-------------------------------------------------------------------------------------\n\n
+message=Link | ${host.prefix}${payload.path.open}\n
+
+footer=\n \
+
+-------------------------------------------------------------------------------------\n \
+This is an automatically generated message. Please do not reply.

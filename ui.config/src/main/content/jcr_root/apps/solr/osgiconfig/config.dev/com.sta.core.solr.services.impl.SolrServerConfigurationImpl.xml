@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          solrUrl="http://10.100.3.85:8983/solr/"
+          solrCore="aem"
+          titleProperties="[jcr:title,jcr:description,cq:tags]"
+          textProperties="[title,subtitle,jcr:description,pageTitle,jcr:title,componentTitle,copy,description,mainTitle,text,keyword]"
+          cfProperties="[title,subtitle,authorText,aboutDescription,tags]"
+          cfTextProperties="[title,subtitle,copy,description,mainTitle,text]"
+          ignoredResourceTypes="[sauditourism/components/content/c28-destinations-and-map/v1/c28-destinations-and-map,sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards,sauditourism/components/content/c03-card/v1/c03-card]"
+          appIgnoredResourceTypes="[sauditourism/components/structure/app-legal-page,sauditourism/components/structure/app-package-page,sauditourism/components/structure/app-seasonal-campaign,sauditourism/components/structure/app-contact-page,sauditourism/components/structure/app-cruise-page]"
+          mobileIncludedResourceTypes="[sauditourism/components/structure/event-page,sauditourism/components/structure/story-page,sauditourism/components/structure/attraction-page,sauditourism/components/structure/tour-page,sauditourism/components/structure/poi-page,sauditourism/components/structure/activity-page]"
+          mobilePath="/content/sauditourism/mobile"
+          appSearchPaths="[/content/sauditourism/{locale}/events]"
+/>

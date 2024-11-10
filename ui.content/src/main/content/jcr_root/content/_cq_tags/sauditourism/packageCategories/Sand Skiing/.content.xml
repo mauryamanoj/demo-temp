@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Sand Skiing"
+          jcr:title.ar="التزلج على الرمال"
+          jcr:title.fr="Ski sur sable"
+          jcr:title.es="Esquí en arena"
+          jcr:title.ru="Сэндбординг"
+          jcr:title.de="Sand-Skifahren"
+          jcr:title.zh="滑沙"
+          jcr:title.ja="サンドスキー"
+          sling:resourceType="cq/tagging/components/tag"/>

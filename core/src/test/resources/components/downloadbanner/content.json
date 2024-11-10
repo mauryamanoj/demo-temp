@@ -1,0 +1,44 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "subtitle":"Discover everything on the go.",
+  "appstitle":"Download the App",
+  "jcr:created":"Tue Mar 09 2021 12:56:34 GMT+0100",
+  "title":"Live the full Visit Saudi experience",
+  "jcr:lastModified":"Tue Mar 09 2021 18:14:48 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/download-banner",
+  "banner":{
+    "jcr:primaryType":"nt:unstructured",
+    "s7fileReference":"https://scth.scene7.com/is/image/scth/donwload-iphoneX-mockup-desktop-full",
+    "fileReference":"/content/dam/saudi-tourism/media/donwload-iphoneX-mockup-desktop-full.png",
+    "mobileImageReference":"/content/dam/saudi-tourism/media/donwload-iphoneX-mockup-mobile-full.png",
+    "jcr:lastModified":"Tue Mar 09 2021 18:14:48 GMT+0100",
+    "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/donwload-iphoneX-mockup-mobile-full"
+  },
+  "image":{
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:lastModified":"Tue Mar 09 2021 18:14:48 GMT+0100"
+  },
+  "applications":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "appurl":"https://apps.apple.com/us/app/visit-saudi/id818179871",
+      "apptitle":"Apple",
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/content/dam/App-store-desktop.png",
+        "fileReference":"/content/dam/App-store-desktop.png"
+      }
+    },
+    "item1":{
+      "jcr:primaryType":"nt:unstructured",
+      "appurl":"https://play.google.com/store/apps/details?id=sa.gov.apps.sauditourism",
+      "apptitle":"App-store-desktop",
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/content/dam/google-play-blanco-desktop.png",
+        "fileReference":"/content/dam/google-play-blanco-desktop.png"
+      }
+    }
+  }
+}

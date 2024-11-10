@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+  <jcr:content
+      cq:template="/conf/sauditourism/settings/wcm/templates/event-details"
+      jcr:primaryType="cq:PageContent"
+      sling:resourceType="sauditourism/components/structure/event-detail-page"
+      city="Riyadh"
+      address="I am an address, edit me"
+      addressDetail="I am an address detail, edit me"
+      ctaText="CTA, edit me"
+      description="I am a description, edit me"
+      disableSecondaryNav="{Boolean}true"
+      eventIntro="I am an intro, edit me"
+      eventTitle="I am a title edit me"
+      externalLink="#"
+      featureEventImage="/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/featured-660x440.jpg"
+      headingLocationDetailType="h1"
+      headingshowHoursType="h1"
+      headingType="h1"
+      image="/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg"
+      imageListing="/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg"
+      imageMobile="/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg"
+      location="I am a location, edit me"
+      locationDistance="1"
+      locationInDetailLabel="I am a location label, edit me"
+      locationLabel="I am a label, edit me"
+      locationTitle="I am a location title, edit me"
+      phone="I am a phone number, edit me"
+      showHoursTitle="I am a show hours title, edit me"
+      title="I am a title, edit me">
+    <root
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/foundation/components/responsivegrid">
+      <header-block
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="sauditourism/components/content/headerblock"
+          title="I am a title, edit me"
+          ctaText="CTA, edit me"
+          ctaTitle="I am a title, edit me"
+          ctaLink="#"
+          backText="CTA, edit me"
+          backTitle="I am a title, edit me"
+          backLink="#">
+        <small
+            jcr:primaryType="nt:unstructured"
+            focalpoint="left top"
+            fileReference="/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"/>
+        <medium
+            jcr:primaryType="nt:unstructured"
+            focalpoint="left top"
+            fileReference="/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"/>
+        <large
+            jcr:primaryType="nt:unstructured"
+            focalpoint="left top"
+            fileReference="/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"/>
+      </header-block>
+      <responsivegrid
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="wcm/foundation/components/responsivegrid">
+      </responsivegrid>
+    </root>
+  </jcr:content>
+</jcr:root>

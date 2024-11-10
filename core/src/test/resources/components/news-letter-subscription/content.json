@@ -1,0 +1,46 @@
+{
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Oct 06 2022 10:30:13 GMT+0300",
+    "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Test Page",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+        "searchCategories": [
+            "sauditourism:searchCategories/Highlight",
+            "sauditourism:searchCategories/FestivalsEvents"
+        ],
+        "jcr:created": "Thu Oct 06 2022 10:30:13 GMT+0300",
+        "cq:lastModified": "Mon Nov 14 2022 11:29:59 GMT+0300",
+        "theme": "red",
+        "pageAuthor": "contentAuthors",
+        "sling:resourceType": "sauditourism/components/structure/page",
+        "hideInSiteMap": "false",
+        "searchHighlight": "false",
+        "cq:lastModifiedBy": "admin",
+        "root": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid",
+            "responsivegrid": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "wcm/foundation/components/responsivegrid",
+                "news_letter_subscrip": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "jcr:createdBy": "admin",
+                    "jcr:lastModifiedBy": "admin",
+                    "stayUpToDate": "Stay up to date",
+                    "subscribeButtonText": "Subscribe",
+                    "jcr:created": "Mon Nov 14 2022 11:29:40 GMT+0300",
+                    "emailInputPlaceholder": "Enter email address",
+                    "jcr:lastModified": "Mon Nov 14 2022 11:29:59 GMT+0300",
+                    "errorMessage": "Error Happened While Registering your email. Please, try again later.",
+                    "successMessage": "Email is registered",
+                    "sling:resourceType": "sauditourism/components/content/news-letter-subscription",
+                    "subscribeText": "Subscribe to our newsletter",
+                    "invalidEmailMessage": "Invalid Email Address."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Football"
+          jcr:title.ar="كرة القدم"
+          jcr:title.de="Fußball"
+          jcr:title.es="Fútbol"
+          jcr:title.fr="Football"
+          jcr:title.ja="サッカー"
+          jcr:title.ru="Футбол"
+          jcr:title.zh="足球"
+    sling:resourceType="cq/tagging/components/tag"/>

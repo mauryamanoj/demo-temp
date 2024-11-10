@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-23T15:02:20.178+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-23T15:02:20.178+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="2bc28e22-8525-375e-94c0-7dbc14850c34"
+    rep:authorizableId="vendors"
+    rep:members="{WeakReference}[0e46e4f7-82a0-3808-90d0-3e1652070380,843178a4-66f6-3f00-94ca-e05d967b1bde,ec457f93-68f6-31ec-a722-62a9c9775108]"
+    rep:principalName="vendors"/>

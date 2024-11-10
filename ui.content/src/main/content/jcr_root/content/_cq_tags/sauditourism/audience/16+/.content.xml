@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="16 +"
+          jcr:title.de="Über 16"
+          jcr:title.es="Mayores de 16 años"
+          jcr:title.ru="Старше 16"
+          jcr:title.zh="16岁以上"
+          jcr:title.fr="Plus de 16 ans"
+          jcr:title.ja="16歳以上"
+          jcr:title.ar="16 سنة فما فوق"
+          sling:resourceType="cq/tagging/components/tag"/>

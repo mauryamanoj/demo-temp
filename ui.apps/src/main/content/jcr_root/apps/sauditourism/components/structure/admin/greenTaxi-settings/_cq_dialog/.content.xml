@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Green Taxi Configs"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.common.wcm,sauditourism.author]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+            <green-taxi-settings-tab
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                jcr:title="Green Cars settings"
+                jcr:description="Green Cars settings">
+                <items jcr:primaryType="nt:unstructured">
+                    <download-configs
+                        jcr:description="Configure Green Taxi Download App Config"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Download App Configs"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Title."
+                                fieldLabel="Title"
+                                cq:showOnCreate="{Boolean}true"
+                                name="./title">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="title"/>
+                            </title>
+                            <sub-title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Subtitle."
+                                fieldLabel="Subtitle"
+                                name="./subTitle">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="subTitle"/>
+                            </sub-title>
+                            <qr-code-title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter QR code title."
+                                fieldLabel="Qr code title"
+                                name="./qrcodeTitle">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="qrcodeTitle"/>
+                            </qr-code-title>
+                            <qr-code-image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="QR code Image"
+                                fieldDescription="Select an image to be used for desktop view"
+                                name="./qrcodeImage"
+                                rootPath="/content/dam">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="qrcodeImage"/>
+                            </qr-code-image>
+                        </items>
+                    </download-configs>
+                </items>
+            </green-taxi-settings-tab>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

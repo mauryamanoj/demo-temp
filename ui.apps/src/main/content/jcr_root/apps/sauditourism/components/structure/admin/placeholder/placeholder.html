@@ -1,0 +1,66 @@
+<style>
+  table {
+      font-family: arial, sans-serif;
+      font-size: 30%;
+      border-collapse: collapse;
+      width: 80%;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+  
+  .saudi-admin-placeholder {
+    margin: 30px;
+  }
+  .saudi-admin-placeholder table,
+  .saudi-admin-placeholder coral-accordion-item-label,
+  .saudi-admin-placeholder coral-accordion-item-content {
+    font-size: small;
+  }
+  
+  .saudi-admin-placeholder coral-accordion-item-content .placeholder-content{
+    margin-bottom: 10px;
+  }
+  
+</style>
+
+<sly data-sly-use.model="com.saudi.tourism.core.models.components.PlaceholderModel" />
+
+<h2> Site placeholders: </h2>
+
+<section class="saudi-admin-placeholder">
+  <table>
+    <thead is="coral-table-head">
+      <tr is="coral-table-row">
+        <th is="coral-table-headercell">Placeholder keys</th>
+        <th is="coral-table-headercell">Translations</th>
+      </tr>
+    </thead>
+    <tbody is="coral-table-body" data-sly-list.key="${model.getKeysOrderedByTextAsc}">
+      <tr is="coral-table-row">
+        <td is="coral-table-cell">
+          <p>[{ ${key.text @ context = 'html'} }]</p>
+        </td>
+        <td is="coral-table-cell">
+          <coral-accordion>
+            <coral-accordion-item>
+              <coral-accordion-item-label>View/Hide</coral-accordion-item-label>
+              <coral-accordion-item-content data-sly-list.translation="${key.translations}">
+                <p class="placeholder-content">
+                  ${translation.language @ context = 'html'}: ${translation.translation @ context = 'html'}
+                </p>
+              </coral-accordion-item-content>
+            </coral-accordion-item>
+          </coral-accordion>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+</section>

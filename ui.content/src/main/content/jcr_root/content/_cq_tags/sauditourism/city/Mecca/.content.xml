@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Meccah"
+    jcr:title.ar="مكة المكرمة"
+    jcr:title.de="Mekka"
+    jcr:title.es="La Meca"
+    jcr:title.fr="La Mecque"
+    jcr:title.ja="メッカ"
+    jcr:title.ru="Мекка"
+    jcr:title.zh="麦加"
+    sling:resourceType="cq/tagging/components/tag"
+    city="makkah"/>

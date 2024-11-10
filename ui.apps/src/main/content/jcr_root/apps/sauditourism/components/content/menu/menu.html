@@ -1,0 +1,6 @@
+<sly data-sly-test="${!('app' in request.requestPathInfo.selectors)}">
+    <sly data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html"
+         data-sly-use.menu="com.saudi.tourism.core.models.components.menu.MenuModel" data-sly-test="${properties.fragmentPath}">
+        <div data-component="MainMenu" data-props="${menu.json @context='text'}"></div>
+    </sly>
+</sly>

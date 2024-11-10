@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="HomeBanner Component Configuration"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <homeBannerConfiguration
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="HomeBanner Configuration"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                            margin="{Boolean}true">
+
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                                <items jcr:primaryType="nt:unstructured">
+                                    <manual-authoring
+                                            granite:class="js-dialog-showhide"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldDescription="Enable Manual Authoring"
+                                            text="Enable Manual Authoring"
+                                            name="./enableManualAuthoring"
+                                            uncheckedValue="{Boolean}false"
+                                            value="{Boolean}true">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhide-target=".manual-authoring-showhide-target"/>
+                                    </manual-authoring>
+                                    <isNotOnTop
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldLabel="is Not OnTop"
+                                        name="./isNotOnTop"
+                                        text="Is Not On Top"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <!-- Hide Image Brush Checkbox -->
+                                    <hide-image-brush
+                                            granite:class="manual-authoring-showhide-target"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldDescription="Check this to hide image brush"
+                                            name="./hideImageBrush"
+                                            text="Hide Image Brush"
+                                            uncheckedValue="{Boolean}false"
+                                            value="{Boolean}true">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhide-target-value="true"/>
+                                    </hide-image-brush>
+                                    <cards
+                                            granite:class="coral-marker-multifield mf-level-2 manual-authoring-showhide-target"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldDescription="Click 'Add' to add a new Card"
+                                            fieldLabel="Cards"
+                                            validation="multifield-max-1"
+                                            required="{Boolean}true">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhide-target-value="true"/>
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./cards"
+                                                granite:class="accordion-multifield-item"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Item"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <!-- Card Title Textfield -->
+                                                        <card-title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                granite:class="accordion-multifield-item-title"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Card Title"
+                                                                maxlength="{Long}30"
+                                                                required="{Boolean}True"
+                                                                name="./title"/>
+
+                                                        <!-- Card Description Textarea -->
+                                                        <description
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                                fieldLabel="Card Description"
+                                                                maxlength="{Long}70"
+                                                                name="./description"/>
+                                                        <!-- Image Upload Configuration -->
+                                                        <image
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                allowUpload="{Boolean}false"
+                                                                autoStart="{Boolean}false"
+                                                                granite:class="cq-droptarget s7-image-listener component-type-showhide-target"
+                                                                fieldLabel="Desktop image"
+                                                                fileNameParameter="./image/fileName"
+                                                                fileReferenceParameter="./image/fileReference"
+                                                                fieldDescription="Select an image"
+                                                                mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                                multiple="{Boolean}false"
+                                                                name="./image/fileName"
+                                                                title="Upload Desktop Image Asset"
+                                                                uploadUrl="${suffix.path}"
+                                                                useHTML5="{Boolean}true">
+                                                        </image>
+
+                                                        <!-- Scene7 Image Reference -->
+                                                        <s7fileReference
+                                                                granite:class="s7-fileReference component-type-showhide-target"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                granite:id="s7-fileReference"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                name="./image/s7fileReference">
+                                                        </s7fileReference>
+
+                                                        <!-- Alt Text Textfield -->
+                                                        <alt-image
+                                                                jcr:primaryType="nt:unstructured"
+                                                                granite:class="component-type-showhide-target"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Enter an ALT text for the image."
+                                                                fieldLabel="Alt text of image"
+                                                                name="./image/alt">
+                                                        </alt-image>
+
+                                                        <!-- logo Upload Configuration -->
+                                                        <logo
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            granite:class="cq-droptarget s7-image-listener component-type-showhide-target"
+                                                            fieldLabel="Logo"
+                                                            fileNameParameter="./logo/fileName"
+                                                            fileReferenceParameter="./logo/fileReference"
+                                                            fieldDescription="Select an logo"
+                                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./logo/fileName"
+                                                            title="Upload Desktop logo Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true">
+                                                        </logo>
+
+                                                        <!-- Scene7 Image Reference -->
+                                                        <logo-s7fileReference
+                                                            granite:class="s7-logo-fileReference component-type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:id="s7-logo-fileReference"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./logo/s7fileReference">
+                                                        </logo-s7fileReference>
+
+                                                        <video
+                                                            granite:class="cq-droptarget s7-video-listener component-type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            class="cq-droptarget"
+                                                            fieldDescription="Select the video to be used. If there is a video the image will be overwritten"
+                                                            fieldLabel="Video Asset"
+                                                            fileNameParameter="./videoFileName"
+                                                            fileReferenceParameter="./video/videoFileReference"
+                                                            mimeTypes="[video]"
+                                                            multiple="{Boolean}false"
+                                                            name="./videoFile"
+                                                            title="Video Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true">
+                                                        </video>
+                                                        <s7videoFileReference
+                                                            granite:class="s7-videoFileReference component-type-showhide-target"
+                                                            granite:id="s7-videoFileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./video/s7videoFileReference">
+                                                        </s7videoFileReference>
+                                                        <posterImage
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            granite:class="cq-droptarget component-type-showhide-target"
+                                                            fieldLabel="Thumbnail Video"
+                                                            fileNameParameter="./video/posterImageFileName"
+                                                            fileReferenceParameter="./video/poster"
+                                                            fieldDescription="Select an image"
+                                                            mimeTypes="[image/png]"
+                                                            multiple="{Boolean}false"
+                                                            name="./video/posterImageFileName"
+                                                            title="Upload Poster Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true">
+                                                        </posterImage>
+                                                        <autorerun
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="component-type-showhide-target"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Autorerun"
+                                                            name="./video/autorerun"
+                                                            text="Autorerun"
+                                                            value="{Boolean}true"
+                                                            uncheckedValue="{Boolean}false">
+                                                        </autorerun>
+                                                        <autoplay
+                                                            granite:class="component-type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Autoplay"
+                                                            name="./video/autoplay"
+                                                            text="Autoplay"
+                                                            value="{Boolean}true"
+                                                            uncheckedValue="{Boolean}false">
+                                                        </autoplay>
+                                                    </items>
+                                                </column>
+
+                                            </items>
+                                        </field>
+                                    </cards>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </homeBannerConfiguration>
+        </items>
+    </content>
+</jcr:root>

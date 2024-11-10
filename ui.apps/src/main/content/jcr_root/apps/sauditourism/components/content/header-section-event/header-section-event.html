@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.saudi.tourism.core.models.components.header.HeaderSectionEventModel"
+data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html">
+<sly data-sly-call="${templates.placeholder @ isEmpty = !title}"></sly>
+        <div data-component="HeaderSection" data-props="${model.json @context='text'}"></div>
+</sly>

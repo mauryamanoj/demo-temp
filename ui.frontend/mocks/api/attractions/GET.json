@@ -1,0 +1,1161 @@
+{
+    "code": 200,
+    "message": "success",
+    "response": {
+        "data": [
+            {
+                "id": "agreatexperienceforeveryone",
+                "title": "A great experience for everyone",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/events-/AlUla_Desert_Polo.JPG",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/events-/AlUla_Desert_Polo.JPG",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/AlUla_Desert_Polo",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scth/AlUla_Desert_Polo",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/shopping",
+                        "title": "Shopping",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/shopping.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "26.3927",
+                "longitude": "49.9777",
+                "pageLink": {
+                    "hideMap": false,
+                    "url": "https://qa-revamp.visitsaudi.com/en/events",
+                    "targetInNewWindow": false
+                },
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "summerinsaudiisauniqueexperience",
+                "title": "Summer in Saudi is a unique experience",
+                "subTitle": "Summer in Saudi is a unique experience that offers a diverse range of activities and destinations",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/cafes/Bafarat_Cafe.jpg",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/cafes/Bafarat_Cafe.jpg",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/Bafarat_Cafe-1",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scth/Bafarat_Cafe-1",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/nature",
+                        "title": "Nature",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "21.54238",
+                "longitude": "39.19797",
+                "pageLink": {
+                    "hideMap": false,
+                    "url": "https://qa-revamp.visitsaudi.com/en/about-e-visa",
+                    "targetInNewWindow": false
+                },
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "crossingtheemptyquarter-umaheshlaketrip",
+                "title": "Crossing the Empty Quarter - Um Ahesh Lake Trip",
+                "subTitle": "Sub Title test",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/16545149221184857235.jpg",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/16545149221184857235.jpg",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/16545149221184857235",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scth/16545149221184857235",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/shopping",
+                        "title": "Shopping",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/shopping.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "24.7136",
+                "longitude": "46.6753",
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "fakiehaquariumaquariumfakieh",
+                "title": "Fakieh Aquarium  Aquarium Fakieh ",
+                "subTitle": "Elevate Your Experience with Our Outdoor Innovations",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/articles/top-summer-activities-for-families-in-jeddah/Jeddah_Oia-Beach.jpg",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/articles/top-summer-activities-for-families-in-jeddah/Jeddah_Oia-Beach.jpg",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/Jeddah_Oia-Beach-1",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scth/Jeddah_Oia-Beach-1",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/entertainment",
+                        "title": "Entertainment",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/entertainment.svg"
+                    },
+                    {
+                        "id": "sauditourism:categories/shopping",
+                        "title": "Shopping",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/shopping.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "22.2208",
+                "longitude": "42.5053",
+                "pageLink": {
+                    "hideMap": false,
+                    "url": "https://qa-revamp.visitsaudi.com/en",
+                    "targetInNewWindow": false
+                },
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "loremipsumdolorsitamet,consecteturadip",
+                "title": "Lorem ipsum dolor sit amet, consectetur adip ",
+                "subTitle": "Experience Sustainability in Action Under the Open Sky",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/articles/top-summer-activities-for-families-in-jeddah/Fakieh_Aquarium.jpg",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/articles/top-summer-activities-for-families-in-jeddah/Fakieh_Aquarium.jpg",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/Fakieh_Aquarium",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scth/Fakieh_Aquarium",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/culture_history",
+                        "title": "Culture \u0026 History",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/culture_history.svg"
+                    },
+                    {
+                        "id": "sauditourism:categories/shopping",
+                        "title": "Shopping",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/shopping.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "21.3891",
+                "longitude": "36.5552",
+                "pageLink": {
+                    "hideMap": false,
+                    "url": "https://qa-revamp.visitsaudi.com/en",
+                    "targetInNewWindow": false
+                },
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "alshallalthemeparksaudiarabia",
+                "title": "Al Shallal Theme Park Saudi Arabia",
+                "subTitle": "Sub Title",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/home-page/home-page-images/rec-1.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/home-page/home-page-images/rec-1.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/rec-1",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/rec-1",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/shopping",
+                        "title": "Shopping",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/shopping.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "21.3890824",
+                "longitude": "39.8579118",
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "futurevalleytrail",
+                "title": "Future Valley Trail",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/thingsNature3.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/thingsNature3.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/thingsNature3",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/thingsNature3",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/nature/valley",
+                        "title": "Valley",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/valley.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "27.5217",
+                "longitude": "41.6904",
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "princemohamedbinfahdstadium",
+                "title": "Prince Mohamed bin Fahd Stadium",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/entertainment-page/entertainment-images/attr-2.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/entertainment-page/entertainment-images/attr-2.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/attr-2",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/attr-2",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/sports",
+                        "title": "Sports",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/sports.svg"
+                    }
+                ],
+                "location": "Riyadh",
+                "latitude": "26.2836",
+                "longitude": "50.2081",
+                "destinationCFModel": {
+                    "title": "Riyadh",
+                    "tagline": "Riyadh",
+                    "subTitle": "Live the Modern Life to its Fullest",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/destinations/riyadh/riyadh-banner.jpg",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/destinations/riyadh/riyadh-banner.jpg",
+                        "s7fileReference": "https://scth.scene7.com/is/image/scthacc/riyadh-banner",
+                        "s7mobileImageReference": "https://scth.scene7.com/is/image/scthacc/riyadh-banner",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/keep-exploring/riyadhnew.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/keep-exploring/riyadhnew.png",
+                        "s7fileReference": "https://scth.scene7.com/is/image/scthacc/riyadhnew",
+                        "s7mobileImageReference": "https://scth.scene7.com/is/image/scthacc/riyadhnew",
+                        "transparent": false
+                    },
+                    "latitude": "24.687731",
+                    "longitude": "46.721851",
+                    "id": "riyadh",
+                    "aboutHeading": "About Riyadh",
+                    "aboutDescription": "\u003cp\u003eIn the ever-growing and flourishing city of Riyadh, you will discover the birthplace of the Kingdom of Saudi Arabia, along with its historical treasures hidden in the old palaces that witnessed the founding of the kingdom. It is a destination for tourists from all over the globe who wish to discover a world of shopping, entertainment and business. The malls offer the most exciting shopping experience, and the sand dunes combined with the brightest stars in the sky present the most magical experience in nature. It is an environment full of a natural variety and unique characteristics that are intriguing for explorers. On the other side of the bustling city, you can enjoy a variety of experiences in luxurious restaurants that offer their special services, and their elaborate international dishes. Simultaneously, the local Riyadh restaurants will tempt you with their authentic flavors and blend of spices originating from Saudi culture. Everyone is happy in the city of Riyadh where the biggest cultural events are always celebrated. Endless entertainment destinations are always emerging, for the city’s visitors to have intriguing and renewing experiences.\u003c/p\u003e\n",
+                    "categories": [
+                        {
+                            "title": "urban",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/conceptstores.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/conceptstores",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_shopping"
+                        },
+                        {
+                            "title": "Food",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/cafes.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/cafes",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_food"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/destinations/riyadh",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "bouncejeddah",
+                "title": "Bounce Jeddah",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/entertainment-page/entertainment-images/attr-1.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/entertainment-page/entertainment-images/attr-1.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/attr-1",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/attr-1",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/sports",
+                        "title": "Sports",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/sports.svg"
+                    }
+                ],
+                "location": "Jeddah",
+                "latitude": "28.3838",
+                "longitude": "36.5552",
+                "destinationCFModel": {
+                    "title": "Jeddah",
+                    "tagline": "Jeddah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newJeddah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "jeddah",
+                    "categories": [
+                        {
+                            "title": "URBAN",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/bestartists.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/bestartists",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_others"
+                        },
+                        {
+                            "title": "ART",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/museum.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/museum",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/jeddah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "gatheringathyaat,riyadhat9:00am",
+                "title": "Gathering at Hyaat , Riyadh at 9:00 AM",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/660x370_2.jpg",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/660x370_2.jpg",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/660x370_2",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/660x370_2",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/shopping",
+                        "title": "Shopping",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/shopping.svg"
+                    }
+                ],
+                "location": "Makkah",
+                "latitude": "24.5247",
+                "longitude": "39.5692",
+                "pageLink": {
+                    "hideMap": false,
+                    "url": "https://qa-revamp.visitsaudi.com/en/arabian-winter/partners",
+                    "targetInNewWindow": false
+                },
+                "destinationCFModel": {
+                    "title": "Makkah",
+                    "tagline": "Makkah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.3890824",
+                    "longitude": "39.8579118",
+                    "id": "makkah",
+                    "categories": [
+                        {
+                            "title": "nature",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/mountains.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/mountains",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_nature"
+                        },
+                        {
+                            "title": "Sea",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/drone2.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/drone2",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_nature"
+                        },
+                        {
+                            "title": "exploring",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/culture.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/culture",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/makkah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "crossingtheemptyquarter-umaheshlaketrip",
+                "title": "Crossing the Empty Quarter - Um Ahesh Lake Trip",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/thingsNature1.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/thingsNature1.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/thingsNature1",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/thingsNature1",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/nature/islands",
+                        "title": "Islands",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/islands.svg"
+                    }
+                ],
+                "location": "AlUla",
+                "latitude": "17.4924",
+                "longitude": "44.1277",
+                "destinationCFModel": {
+                    "title": "AlUla",
+                    "tagline": "AlUla",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/destinations/alula.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/destinations/alula.png",
+                        "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/alula",
+                        "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/alula",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/destinations/alula.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/destinations/alula.png",
+                        "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/alula",
+                        "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/alula",
+                        "transparent": false
+                    },
+                    "latitude": "26.6166642",
+                    "longitude": "37.916663",
+                    "id": "alula",
+                    "aboutHeading": "About",
+                    "aboutDescription": "\u003cp\u003eAl-Ula is a city located in the Medina Region of Saudi Arabia. It is renowned for its rich historical and archaeological significance, featuring ancient rock-cut tombs, petroglyphs, and well-preserved remnants of the Lihyanite and Nabataean civilizations.\u003c/p\u003e\n",
+                    "categories": [
+                        {
+                            "title": "nature",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/tayebat.png",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/tayebat",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        },
+                        {
+                            "title": "exploring",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/culture.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/culture",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/revamp/destinations/alula",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "kingfahdinternationalstadium",
+                "title": "King Fahd International Stadium",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/entertainment-page/entertainment-images/attr-3.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/entertainment-page/entertainment-images/attr-3.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/attr-3",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/attr-3",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/sports",
+                        "title": "Sports",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/sports.svg"
+                    }
+                ],
+                "location": "Makkah",
+                "latitude": "21.54238",
+                "longitude": "39.19797",
+                "destinationCFModel": {
+                    "title": "Makkah",
+                    "tagline": "Makkah",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newMakkah.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.3890824",
+                    "longitude": "39.8579118",
+                    "id": "makkah",
+                    "categories": [
+                        {
+                            "title": "nature",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/mountains.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/mountains",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_nature"
+                        },
+                        {
+                            "title": "Sea",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/drone2.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/drone2",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_nature"
+                        },
+                        {
+                            "title": "exploring",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/culture.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/culture",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/see-do/destinations/makkah",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "seetabukfromanothervision",
+                "title": "see Tabuk from another vision ",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/shopping2.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/shopping2.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/shopping2",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/shopping2",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/nature",
+                        "title": "Nature",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg"
+                    }
+                ],
+                "location": "tabuk",
+                "latitude": "21.54238",
+                "longitude": "37.19797",
+                "pageLink": {
+                    "hideMap": false,
+                    "url": "https://qa-revamp.visitsaudi.com/en",
+                    "targetInNewWindow": false
+                },
+                "destinationCFModel": {
+                    "title": "tabuk",
+                    "tagline": "tabuk",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "s7fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "s7mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/image/newTabuk.png",
+                        "transparent": false
+                    },
+                    "latitude": "21.54238",
+                    "longitude": "39.19797",
+                    "id": "tabuk",
+                    "categories": [
+                        {
+                            "title": "nature",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/tayebat.png",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/tayebat",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_culture"
+                        },
+                        {
+                            "title": "urban",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/conceptstores.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/conceptstores",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_shopping"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/ar/see-do/destinations/tabuk",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "adventureoftaif\u0027smountains\u0026farms",
+                "title": "Adventure of Taif\u0027s Mountains \u0026 Farms",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/thingsNature2.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/bob/nature-page/thingsNature2.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/thingsNature2",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/thingsNature2",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/nature/mountains",
+                        "title": "Mountains",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/mountains.svg"
+                    }
+                ],
+                "location": "Abha",
+                "latitude": "17.4924",
+                "longitude": "49.9777",
+                "destinationCFModel": {
+                    "title": "Abha",
+                    "tagline": "Abha",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/destinations/abha.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/fady_and_bob/fady/destinations/abha.png",
+                        "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/abha",
+                        "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/abha",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/shutterstock.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/shutterstock.png",
+                        "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/shutterstock",
+                        "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/shutterstock",
+                        "transparent": false
+                    },
+                    "latitude": "25.364574",
+                    "longitude": "49.565319",
+                    "id": "abha",
+                    "categories": [
+                        {
+                            "title": "Hike",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/16520356267369094706.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/16520356267369094706",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_nature"
+                        },
+                        {
+                            "title": "nature",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/mountains.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/mountains",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_nature"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/fr/see-do/destinations/abha",
+                        "targetInNewWindow": false
+                    }
+                }
+            },
+            {
+                "id": "boulevardriyadhcity",
+                "title": "Boulevard Riyadh City",
+                "subTitle": "A great experience for everyone",
+                "bannerImage": {
+                    "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/gallery11.png",
+                    "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/gallery11.png",
+                    "s7fileReference": "https://s7e5a.scene7.com/is/image/scthacc/gallery11",
+                    "s7mobileImageReference": "https://s7e5a.scene7.com/is/image/scthacc/gallery11",
+                    "transparent": false
+                },
+                "categories": [
+                    {
+                        "id": "sauditourism:categories/nature/natural_site",
+                        "title": "Natural site",
+                        "icon": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/natural_site.svg"
+                    }
+                ],
+                "location": "Riyadh",
+                "latitude": "25.364574",
+                "longitude": "49.565319",
+                "destinationCFModel": {
+                    "title": "Riyadh",
+                    "tagline": "Riyadh",
+                    "subTitle": "Live the Modern Life to its Fullest",
+                    "bannerImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/destinations/riyadh/riyadh-banner.jpg",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/destinations/riyadh/riyadh-banner.jpg",
+                        "s7fileReference": "https://scth.scene7.com/is/image/scthacc/riyadh-banner",
+                        "s7mobileImageReference": "https://scth.scene7.com/is/image/scthacc/riyadh-banner",
+                        "transparent": false
+                    },
+                    "popUpImage": {
+                        "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/keep-exploring/riyadhnew.png",
+                        "mobileImageReference": "https://qa-revamp.visitsaudi.com/content/dam/wvs/keep-exploring/riyadhnew.png",
+                        "s7fileReference": "https://scth.scene7.com/is/image/scthacc/riyadhnew",
+                        "s7mobileImageReference": "https://scth.scene7.com/is/image/scthacc/riyadhnew",
+                        "transparent": false
+                    },
+                    "latitude": "24.687731",
+                    "longitude": "46.721851",
+                    "id": "riyadh",
+                    "aboutHeading": "About Riyadh",
+                    "aboutDescription": "\u003cp\u003eIn the ever-growing and flourishing city of Riyadh, you will discover the birthplace of the Kingdom of Saudi Arabia, along with its historical treasures hidden in the old palaces that witnessed the founding of the kingdom. It is a destination for tourists from all over the globe who wish to discover a world of shopping, entertainment and business. The malls offer the most exciting shopping experience, and the sand dunes combined with the brightest stars in the sky present the most magical experience in nature. It is an environment full of a natural variety and unique characteristics that are intriguing for explorers. On the other side of the bustling city, you can enjoy a variety of experiences in luxurious restaurants that offer their special services, and their elaborate international dishes. Simultaneously, the local Riyadh restaurants will tempt you with their authentic flavors and blend of spices originating from Saudi culture. Everyone is happy in the city of Riyadh where the biggest cultural events are always celebrated. Endless entertainment destinations are always emerging, for the city’s visitors to have intriguing and renewing experiences.\u003c/p\u003e\n",
+                    "categories": [
+                        {
+                            "title": "urban",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/conceptstores.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/conceptstores",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_shopping"
+                        },
+                        {
+                            "title": "Food",
+                            "image": {
+                                "fileReference": "https://qa-revamp.visitsaudi.com/content/dam/saudi-tourism/media/updated-imagery/cafes.jpg",
+                                "s7fileReference": "https://s7e5a.scene7.com/is/image/scth/cafes",
+                                "transparent": false
+                            },
+                            "icon": "categories_xs_food"
+                        }
+                    ],
+                    "pagePath": {
+                        "hideMap": false,
+                        "url": "https://qa-revamp.visitsaudi.com/en/destinations/riyadh",
+                        "targetInNewWindow": false
+                    }
+                }
+            }
+        ],
+        "destinationList": [
+            {
+                "title": "Jeddah",
+                "path": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/destinations/jeddah"
+            },
+            {
+                "title": "Riyadh",
+                "path": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/destinations/riyadh"
+            },
+            {
+                "title": "Makkah",
+                "path": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/destinations/makkah"
+            },
+            {
+                "title": "AlUla",
+                "path": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/destinations/alula"
+            },
+            {
+                "title": "tabuk",
+                "path": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/destinations/tabuk"
+            },
+            {
+                "title": "Abha",
+                "path": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/cf/en/destinations/abha"
+            }
+        ],
+        "categoryList": [
+            {
+                "title": "Shopping",
+                "path": "sauditourism:categories/shopping"
+            },
+            {
+                "title": "Nature",
+                "path": "sauditourism:categories/nature"
+            },
+            {
+                "title": "Entertainment",
+                "path": "sauditourism:categories/entertainment"
+            },
+            {
+                "title": "Culture \u0026 History",
+                "path": "sauditourism:categories/culture_history"
+            },
+            {
+                "title": "Valley",
+                "path": "sauditourism:categories/nature/valley"
+            },
+            {
+                "title": "Sports",
+                "path": "sauditourism:categories/sports"
+            },
+            {
+                "title": "Islands",
+                "path": "sauditourism:categories/nature/islands"
+            },
+            {
+                "title": "Mountains",
+                "path": "sauditourism:categories/nature/mountains"
+            },
+            {
+                "title": "Natural site",
+                "path": "sauditourism:categories/nature/natural_site"
+            }
+        ],
+        "pagination": {
+            "total": 15,
+            "offset": 0,
+            "limit": 100
+        }
+    }
+}

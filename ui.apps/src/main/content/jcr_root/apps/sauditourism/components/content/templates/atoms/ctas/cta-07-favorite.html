@@ -1,0 +1,29 @@
+<sly data-sly-template.fav="${@ class, path, labels, favId, variant, title, cardtitle}">
+  <sly data-sly-use.icon01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"></sly>
+  <div data-component="cta-07-favorite"
+	  data-track-name="favorite"
+	  data-track-section="${title @ context='text'}"
+	  data-track-packageName="${title @ context='text'}"
+	  data-track-product="${title @ context='text'} ; ${cardtitle @ context='text'}"
+	  data-track-eventName="packagefavorited"
+       class="add-to-favorites-button ${class} ${variant == 'white' ? 'variant-white' : ''}"
+       data-favorite-api-base-path="/bin/api/v2/"
+       data-favorite-path="${path}"
+       data-favorites-id="${favId}">
+    <div class="heart-circle-wrapper">
+      <div class="heart-wrapper">
+        <div class="heart-inner-wrapper">
+          <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name='heart',
+               desktopSize='18', mobileSize='22', class='heart active'}"></sly>
+          <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name='heart-inactive',
+               desktopSize='18', mobileSize='22', class='heart inactive'}"></sly>
+        </div>
+      </div>
+    </div>
+    <sly data-sly-test="${labels}">
+      <span class="favorites-copy save-to-my-favorites-copy label-text white-text">${'saveFavLabel' @ i18n}</span>
+      <span class="favorites-copy saved-to-my-favorites-copy label-text white-text">${'saveFavAfterLabel' @ i18n}</span>
+    </sly>
+  </div>
+
+</sly>

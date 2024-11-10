@@ -1,0 +1,55 @@
+<sly data-sly-template.filterItem="${@ filter, label, name}">
+  <sly data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+       data-sly-use.buttonTemplate="/apps/sauditourism/components/content/templates/general/button.html"></sly>
+<div class="select-option-dropdown" data-component="select-option-dropdown" data-attr="${name}">
+  <span class="header-copy cta-text" data-widget-title>${label}</span>
+  <sly
+      data-sly-call="${iconTemplate.icon @ iconName='arrow-right-small',
+      iconClass='options-selector-icon theme-color-icon'}"></sly>
+  <div class="dropdown-wrapper" data-select-dropdown>
+    <div class="dropdown-header">
+
+      <div class="select-label cta-text">${label}</div>
+
+      <button class="close-button" data-close-modal>
+        <sly
+            data-sly-call="${iconTemplate.icon @ iconName='close'}"></sly>
+      </button>
+    </div>
+    <div class="options-scrollable-wrapper" data-scrollable-wrapper>
+      <ul class="options-list" data-options-list data-current-value>
+
+        <sly data-sly-test="${name == 'year'}" data-sly-list="${['2020', '2019']}">
+          <li class="option-item" data-widget-option="${item}">
+            <input data-label="${item}" data-attr="${name}-input" type="radio" id="${item}"
+                   name="${name}" value="${item}" class="input-element is-hidden" data-hidden-input-element>
+            <label for="${item}" class="option-label">
+              <span class="radio-button" data-component="radio-button"></span>
+              <span class="option-item-text label-text">${item}</span>
+            </label>
+          </li>
+        </sly>
+        <sly data-sly-test="${name == 'month'}" data-sly-list="${['01', '02','03', '04','05',
+        '06','07', '08','09', '10','11', '12']}">
+          <li class="option-item" data-widget-option="${item}">
+            <input data-label="${item}" data-attr="${name}-input" type="radio" id="${item}"
+                   name="${name}" value="${item}" class="input-element is-hidden" data-hidden-input-element>
+            <label for="${item}" class="option-label">
+              <span class="radio-button" data-component="radio-button"></span>
+              <span class="option-item-text label-text">${item}</span>
+            </label>
+          </li>
+        </sly>
+
+
+      </ul>
+    </div>
+
+    <div class="save-filter-button-wrapper" data-save-filters-button-wrapper>
+      <sly
+           data-sly-call="${buttonTemplate.buttonObj @ copy='Done', extraClass='filled-button',
+                                                           isDisabled=true, noChevron='true'}"></sly>
+    </div>
+  </div>
+</div>
+</sly>

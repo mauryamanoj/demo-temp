@@ -1,0 +1,337 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jul 29 2020 17:31:48 GMT+0600",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Two days in Jeddah",
+    "durationAuth": "2-day",
+    "bannerImage": "/content/dam/saudi-tourism/media/Red_Sea_Route/RSR_landing_and_detail_pages/Al_Balad/1920x810_AlBalad.png",
+    "headingLocationDetailType": "h1",
+    "jcr:versionHistory": "38024331-68cf-464b-a856-701ed5a0e22f",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/packages-details",
+    "packageTargetTags": [
+      "sauditourism:packageTargets/Large Families",
+      "sauditourism:packageTargets/Small Families",
+      "sauditourism:packageTargets/Couples",
+      "sauditourism:packageTargets/Friends",
+      "sauditourism:packageTargets/Female Travelers"
+    ],
+    "s7sliderImage": "https://s7g10.scene7.com/is/image/scth/315x236_AlBalad",
+    "areaTag": "Jeddah",
+    "jcr:predecessors": [
+      "6733989d-a947-4b89-b7cf-b88cbffdb4db"
+    ],
+    "sling:redirect": "true",
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Wed Jul 29 2020 17:31:48 GMT+0600",
+    "cardImage": "/content/dam/saudi-tourism/media/red-sea-route-/rsr-landing-and-detail-pages/al-balad/375x667_AlBalad.png",
+    "cq:lastModified": "Fri Jul 17 2020 16:47:33 GMT+0200",
+    "sliderImage": "/content/dam/saudi-tourism/media/red-sea-route-/rsr-landing-and-detail-pages/al-balad/315x236_AlBalad.png",
+    "s7featureImage": "https://s7g10.scene7.com/is/image/scth/260x195_AlBalad-3",
+    "dmc": "palms-land-tours",
+    "area": "JEDDAH   ",
+    "copy": "Jeddah is one of the most beautiful cities in the Kingdom of Saudi Arabia and its history and ancient heritage is deeply connected to the history and heritage of the Kingdom, which can be seen everywhere. Visit its historical old houses and the Jeddah Corniche on the Red Sea where you can enjoy a casual atmosphere and its many attractions. The trip includes a yacht cruise to enjoy marine activities.",
+    "s7featureEventImage": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/featured-660x440.jpg",
+    "image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "theme": "teal",
+    "title": "Two days in Jeddah ",
+    "headingType": "h1",
+    "packageCategoryTags": [
+      "sauditourism:packageCategories/Fishing",
+      "sauditourism:packageCategories/Urban",
+      "sauditourism:packageCategories/Art",
+      "sauditourism:packageCategories/Heritage",
+      "sauditourism:packageCategories/Food",
+      "sauditourism:packageCategories/Swimming",
+      "sauditourism:packageCategories/Diving",
+      "sauditourism:packageCategories/Sea",
+      "sauditourism:packageCategories/Culture"
+    ],
+    "sling:vanityPath": "/content/sauditourism/en/packages/two-days-in-jeddah-",
+    "jcr:description": "Explore the history of Jeddah and its ancient heritage with a Red Sea cruise during a two-day tour.",
+    "jcr:baseVersion": "6733989d-a947-4b89-b7cf-b88cbffdb4db",
+    "s7image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "jcr:isCheckedOut": true,
+    "packageAreaTags": [
+      "sauditourism:city/Jeddah"
+    ],
+    "imageListing": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+    "pageTitle": "Two days in Jeddah - Visit Saudi Official Website",
+    "jcr:uuid": "f6d49d08-b4d3-480d-9c2b-74628260db5c",
+    "featureImage": "/content/dam/saudi-tourism/media/Red_Sea_Route/RSR_landing_and_detail_pages/Al_Balad/260x195_AlBalad.png",
+    "sling:resourceType": "sauditourism/components/structure/package-detail-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "s7cardImage": "https://s7g10.scene7.com/is/image/scth/375x667_AlBalad",
+    "headingshowHoursType": "h1",
+    "hideInSiteMap": "false",
+    "featureEventImage": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/featured-660x440.jpg",
+    "cq:lastModifiedBy": "gift.okafor",
+    "shortDescription": "Explore the history of Jeddah and its ancient heritage with a Red Sea cruise during a two-day tour.",
+    "imageMobile": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+    "navTitle": "Two days in Jeddah",
+    "h01-brand-page-hero": {
+      "jcr:primaryType": "nt:unstructured",
+      "subtitleWeight": "h1",
+      "createItineraryLabel": "Book Now",
+      "jcr:lastModifiedBy": "anas.afadar",
+      "itineraryPath": "#vendor",
+      "itineraryType": "booking",
+      "title": "Two days in Jeddah",
+      "showFullHeight": "false",
+      "titleWeight": "h1",
+      "hideFav": "false",
+      "jcr:lastModified": "Sun May 31 2020 14:18:59 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/h01-brand-page-hero/v2/h01-brand-page-hero",
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "s7fileReference": "https://s7g10.scene7.com/is/image/scth/1920x1080_AlBalad-4",
+        "fileReference": "/content/dam/saudi-tourism/media/Red_Sea_Route/Red_Sea_Route/RSR_landing_and_detail_pages/Al_Balad/1920x1080_AlBalad.png",
+        "mobileImageReference": "/content/dam/saudi-tourism/media/Red_Sea_Route/Red_Sea_Route/RSR_landing_and_detail_pages/Al_Balad/375x667_AlBalad.png",
+        "s7mobileImageReference": "https://s7g10.scene7.com/is/image/scth/375x667_AlBalad-4"
+      }
+    },
+    "days-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "jcr:lastModified": "Tue Jun 09 2020 17:45:29 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/days",
+      "days": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "image": "/content/dam/saudi-tourism/media/red-sea-route-/dmc-content/plt/Jeddah Old City.jpg",
+          "title": "Day 1",
+          "s7image": "https://s7g10.scene7.com/is/image/scth/Jeddah Old City",
+          "details": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Meet at pick-up location"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Head to Jeddah Corniche"
+            },
+            "item2": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Floating Mosque & Jeddah Sign"
+            },
+            "item3": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Darat Safeya Binzagr Gallery"
+            },
+            "item4": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Enjoy a traditional lunch in a local restaurant"
+            },
+            "item5": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to Naseef and Al Jamjoom Houses"
+            },
+            "item6": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Drive to the Al Alawi Traditional Market"
+            },
+            "item7": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Jeddah Open-air Museum and the Jeddah Fountain"
+            },
+            "item8": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Abdulraouf Khalil Museum"
+            },
+            "item9": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Drive back to the Centro Shaheen by Rotana Hotel"
+            }
+          }
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "image": "/content/dam/saudi-tourism/media/red-sea-route-/rsr-content/generic-imagery/660x370/660x370_2.jpg",
+          "title": "Day 2",
+          "s7image": "https://s7g10.scene7.com/is/image/scth/660x370_2",
+          "details": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Morning breakfast in the hotel"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Drive to start the amazing Yacht Sea trip (Diving & Snorkeling)"
+            },
+            "item2": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "End of the trip and drive back to pick-up point"
+            }
+          }
+        }
+      }
+    },
+    "important-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "check",
+      "title": "Important Information",
+      "jcr:lastModified": "Tue Jun 09 2020 17:46:37 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info",
+      "details": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "This package is for groups with a minimum of 6 adults"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Children under the age of 10 will receive a 20% discount"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Payment must be made 15 days before the start of the trip"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "This package is changeable upon request"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "The maximum passenger capacity per car is 5 people"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "The maximum capacity per bus is 30 people"
+        },
+        "item6": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Appropriate shoes and clothing must be worn according to the nature of the place being visited"
+        }
+      }
+    },
+    "package-include": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "ticket",
+      "title": "Package includes",
+      "jcr:lastModified": "Tue Jun 09 2020 17:51:16 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info",
+      "details": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "4* Hotel accommodation in twin-shared rooms."
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Breakfast in the hotel, Lunch & Dinner at a traditional restaurant & one Lunch Onboard the Yacht"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Snacks & Drinks during the Tours"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Professional Local Tour Guide"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "8-Hour Yacht Sea Trip with Diving & Snorkeling"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Equipment"
+        },
+        "item6": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Transportation by Modern Air-Conditioned Buses and Cars"
+        }
+      }
+    },
+    "package-exclude": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "ticket-no",
+      "title": "Package excludes",
+      "jcr:lastModified": "Thu Jul 02 2020 15:50:56 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info",
+      "details": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Domestic Flights and other flight bookings"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Items of Personal Nature like: Laundry bills & Extra services"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Tips"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "15% Value Added Tax."
+        }
+      }
+    },
+    "price-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "price",
+      "title": "Price Info title, edit me",
+      "jcr:lastModified": "Fri Jul 03 2020 11:19:27 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info"
+    },
+    "booking-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "gift.okafor",
+      "weight": "h1",
+      "jcr:lastModified": "Fri Jul 17 2020 16:47:33 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/c01-quick-links/v1/c01-quick-links",
+      "componentTitle": "Check provider details at",
+      "links": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "url": "/content/sauditourism/ar/packages/palms-land-tours",
+          "copy": "Palms Land tours",
+          "targetInNewWindow": "false"
+        }
+      }
+    },
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    },
+    "package-slider": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "title": "More experiences you may like",
+      "hideTitle": "false",
+      "jcr:lastModified": "Sun May 31 2020 00:18:20 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/c05-simple-slider/v2/c05-package-slider",
+      "componentHeading": {
+        "jcr:primaryType": "nt:unstructured",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "weight": "h1",
+          "text": "More experiences"
+        },
+        "link": {
+          "jcr:primaryType": "nt:unstructured",
+          "url": "/content/sauditourism/en/packages",
+          "copy": "Explore all"
+        }
+      }
+    }
+  }
+}

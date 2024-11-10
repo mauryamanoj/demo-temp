@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Bahra"
+    jcr:title.ar="بحرة"
+    jcr:title.de="Bahra"
+    jcr:title.es="Bahra"
+    jcr:title.fr="Bahra"
+    jcr:title.ja="バーラ"
+    jcr:title.ru="Бахра"
+    jcr:title.zh="巴赫拉"
+    sling:resourceType="cq/tagging/components/tag"
+    city="bahra"/>

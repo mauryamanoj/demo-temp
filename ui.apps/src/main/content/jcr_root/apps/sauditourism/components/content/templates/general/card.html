@@ -1,0 +1,97 @@
+<template
+    data-sly-template.card="${@ cardModel, linkObject, titleWeight}"
+    data-sly-use.cta01ButtonTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-01-button.html"
+    data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+    data-sly-use.videoTemplate="/apps/sauditourism/components/content/templates/general/inline-video.html"
+    data-sly-use.styleModel="com.adobe.cq.wcm.style.ComponentStyleInfo"
+    data-sly-use.favButton="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+    data-sly-use.cta02Link="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html"
+    data-sly-set.appliedCssClasses="${styleModel.appliedCssClasses ? styleModel.appliedCssClasses : 'left'}"
+    data-sly-set.isTheme="${cardModel.cardBackground == 'theme'}"
+    data-sly-set.linkEnabled="${linkObject.copy && linkObject.url}"
+>
+<div
+    class="card-component ${cardModel.background == 'grey' ? 'background-grey' : ''} ${cardModel.cardBackground == 'theme' ? 'card-background-theme' : ''}"
+     data-component="card"
+     data-pic-orientation="${appliedCssClasses}"
+     itemscope itemtype="http://schema.org/Thing"
+     data-sly-attribute.data-editor="${wcmmode.edit ? 'true' : 'false'}">
+  <div
+      class="card-component-wrapper ${appliedCssClasses}">
+    <header class="card-image">
+      <div class="image-wrapper" data-image-wrapper>
+        <sly data-sly-test="${!cardModel.hideFav && linkObject.urlSlingExporter}"
+             data-sly-call="${favButton.fav @ path=linkObject.urlSlingExporter,
+             variant='white', class='outline-version'}"></sly>
+        <sly data-sly-test="${cardModel.videoPath}"
+             data-sly-call="${videoTemplate.video @
+             mobileVideoPath=cardModel.mobileVideoPath, videoPath=cardModel.videoPath, skipControl='true', firstVideo='true'}"></sly>
+        <sly data-sly-test="${!cardModel.videoPath}"
+             data-sly-call="${imageTemplate.pictureObj @ dataTransition='data-picture',
+                                        imageDesktop=cardModel.image.s7fileReference,
+                                        imageMobile=cardModel.image.s7fileReference,
+                                        altText=cardModel.image.alt,
+                                        desktopProfile='crop-760x570', mobileProfile='crop-375x280',
+                  breakpointDesktop='1280', breakpointMobile='420', caption=cardModel.caption}">
+        </sly>
+      </div>
+    </header>
+    <div class="copy-wrapper">
+      <div class="card-header"
+           data-sly-test="${cardModel.title}">
+        <hgroup data-sly-unwrap="${cardModel.subtitle}">
+          <h4 class="subtitle heading-5"
+              data-sly-test.subTitle="${cardModel.subtitle}">${subTitle}</h4>
+          <h3 class="title heading-4 cq-title" data-animated-item itemprop="name"
+              data-sly-element="${titleWeight}">
+            <a href="#"
+               data-sly-set.link="${linkObject.urlWithExtension @ context='uri'}"
+               data-sly-attribute.href="${link}"
+               data-sly-attribute.target="${linkObject.targetInNewWindow ? '_blank' : '_self'}"
+               data-sly-attribute.rel="${linkObject.targetInNewWindow ? 'noopener noreferrer' : ''}"
+               data-sly-unwrap="${!link}">
+              ${cardModel.title}
+            </a>
+          </h3>
+        </hgroup>
+      </div>
+      <div class="copy cq-description" data-animated-item data-description
+           data-sly-text="${cardModel.description @ context='html'}"></div>
+      <div class="cta-wrapper" data-animated-item
+           data-sly-test.isDownloadLink="${linkObject.type == 'download' && linkEnabled}">
+        <sly data-sly-test="${isTheme}"
+            data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObject, size='big', iconName='download', noChevron=true, background='image'}">
+        </sly>
+        <sly data-sly-test="${!isTheme}"
+            data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObject, size='big', iconName='download', noChevron=true}">
+        </sly>
+      </div>
+      <div class="cta-wrapper" data-animated-item
+           data-sly-test.isExternalLink="${linkObject.type == 'external-link' && linkEnabled}">
+        <sly data-sly-test="${isTheme}"
+             data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObject, size='big', iconName='external', background='image', noChevron=true}">
+        </sly>
+        <sly data-sly-test="${!isTheme}"
+             data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObject, size='big', iconName='external', background='solid', noChevron=true}">
+        </sly>
+      </div>
+      <div class="cta-wrapper" data-animated-item
+           data-sly-test="${!isDownloadLink && !isExternalLink && linkEnabled}"
+           data-sly-attribute.data-event-data="${linkObject.appEventData}">
+        <sly data-sly-test="${isTheme}"
+             data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObject, size='big', noChevron=true, background='image'}">
+        </sly>
+        <sly data-sly-test="${!isTheme}"
+             data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=linkObject, size='big', noChevron=true}">
+        </sly>
+      </div>
+    </div>
+  </div>
+  <div class="footnote-wrapper" data-sly-test="${cardModel.footnote.link.url}">
+    <h4 class="footnote-heading heading heading-4" data-sly-test="${cardModel.footnote.heading}">
+      ${cardModel.footnote.heading @ context='text'}</h4>
+    <sly data-sly-call="${cta02Link.ctaLink @ linkObj=cardModel.footnote.link}"></sly>
+  </div>
+</div>
+
+</template>

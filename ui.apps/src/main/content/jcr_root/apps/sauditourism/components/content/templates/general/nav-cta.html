@@ -1,0 +1,14 @@
+<sly data-sly-template.navCta="${@ navCtaItem}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+>
+  <div class="nav-cta" data-component="nav-cta">
+    <a href="#" class="nav-cta-large" data-nav-cta
+       data-sly-attribute.href="${navCtaItem.urlWithExtension || navCtaItem.url @ context='uri'}">
+      <span class="nav-cta-copy-wrapper">
+        ${navCtaItem.text || navCtaItem.title || navCtaItem.copy @ context='html'}
+      </span>
+      <sly data-sly-call="${iconTemplate.icon @ iconName='thin-chevron',
+          iconClass='chevron'}"></sly>
+    </a>
+  </div>
+</sly>

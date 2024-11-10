@@ -1,0 +1,185 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Nov 24 2021 07:45:49 GMT+0000",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Riyadh Season",
+    "cq:lastReplicationAction":"Activate",
+    "jcr:versionHistory":"1da46898-20c5-4d52-809f-975f574ccb1e",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:predecessors":[
+      "6f21443f-c7eb-4221-8f77-026889b40f6c"
+    ],
+    "jcr:created":"Wed Nov 24 2021 07:45:49 GMT+0000",
+    "cq:lastReplicated":"Sun Oct 23 2022 08:35:20 GMT+0000",
+    "cq:lastModified":"Sun Oct 23 2022 08:35:10 GMT+0000",
+    "s7featureImage":"https://scth.scene7.com/is/image/scth/abha-summer",
+    "theme":"red",
+    "jcr:baseVersion":"6f21443f-c7eb-4221-8f77-026889b40f6c",
+    "jcr:isCheckedOut":true,
+    "pageTitle":"Riyadh Season - Visit Saudi Official Website",
+    "jcr:uuid":"7cd7e275-becf-4213-a49b-bb6a43fdd1ce",
+    "featureImage":"/content/dam/abha-season/abha-summer.jpg",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "hideInSiteMap":"false",
+    "navTitle":"Riyadh Season",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero_c":{
+          "jcr:primaryType":"nt:unstructured",
+          "subtitle":"Feel the ultimate thrill with marvelous shows, fireworks, and parade floats performed by International performers.",
+          "setSubtitleBelow":"true",
+          "subtitleWeight":"h3",
+          "interactiveVideo":"false",
+          "enableCustomBranding":"false",
+          "jcr:created":"Sun Jun 05 2022 13:06:55 GMT+0000",
+          "title":"Riyadh Season",
+          "showFullHeight":"false",
+          "titleWeight":"h1",
+          "hideFav":"true",
+          "jcr:lastModified":"Sun Oct 23 2022 08:35:10 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "hideImageBrush":"false",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/abha-summer",
+            "fileReference":"/content/dam/abha-season/abha-summer.jpg",
+            "mobileImageReference":"/content/dam/abha-season/abha-summer.jpg",
+            "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/abha-summer"
+          },
+          "link":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/en/calendar/riyadh-season",
+            "copy":"Explore All Events"
+          },
+          "caption":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "video":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "browse_events_copy":{
+          "jcr:primaryType":"nt:unstructured",
+          "thisWeekEventsText":"This Week",
+          "thisMonthEventsText":"This Month",
+          "headline":"Browse Events",
+          "todayEventsText":"Today",
+          "eventsFilterPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Sun Jun 05 2022 13:08:37 GMT+0000",
+          "jcr:lastModified":"Sun Jun 05 2022 13:09:31 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/browse-events"
+        },
+        "breadcrumb":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:created":"Mon Jun 06 2022 07:45:46 GMT+0000",
+          "jcr:lastModified":"Mon Jun 06 2022 07:45:46 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/breadcrumb"
+        },
+        "events_cards_1253342":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"Culture Category",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Sun Jun 05 2022 14:20:02 GMT+0000",
+          "viewAllCategory":"View All",
+          "jcr:lastModified":"Mon Jun 06 2022 07:02:46 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "categoryTag":[
+            "sauditourism:events/culture"
+          ],
+          "componentType":"categoryBasedEvents",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "festivalcards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "titleSeason":"Riyadh Season",
+              "seasonType":"riyadh-season",
+              "seasonDescription":"Riyadh Season"
+            }
+          }
+        },
+        "events_cards_1696104":{
+          "jcr:primaryType":"nt:unstructured",
+          "venueTag":[
+            "sauditourism:events/Convention & Exhibition",
+            "sauditourism:events/Shows & Performing Arts"
+          ],
+          "headline":"All Venues",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Sun Jun 05 2022 14:23:01 GMT+0000",
+          "jcr:lastModified":"Sun Jun 05 2022 17:01:24 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "viewAllVenue":"View All",
+          "componentType":"grouped",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "events_cards_copy":{
+          "jcr:primaryType":"nt:unstructured",
+          "headline":"Upcoming Months",
+          "filtersPagePath":"/content/sauditourism/en/calendar",
+          "jcr:created":"Sun Jun 05 2022 13:13:09 GMT+0000",
+          "jcr:lastModified":"Sun Jun 05 2022 13:16:17 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/events-cards",
+          "componentType":"upcoming-months",
+          "hideOrnament":"false",
+          "nextMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/July_Desktop",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/July_Desktop.jpg"
+          },
+          "secondMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/August_Desktop",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/August_Desktop.jpg"
+          },
+          "thirdMonth":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"https://scth.scene7.com/is/image/scth/September_Desktop",
+            "fileReference":"/content/dam/saudi-tourism/media/saudi-by-month/September_Desktop.jpg"
+          }
+        },
+        "news_letter_subscrip":{
+          "jcr:primaryType":"nt:unstructured",
+          "stayUpToDate":"Stay up to date",
+          "subscribeButtonText":"Subscribe",
+          "jcr:created":"Sun Jun 05 2022 13:12:04 GMT+0000",
+          "emailInputPlaceholder":"Enter email address",
+          "jcr:lastModified":"Sun Jun 05 2022 13:12:16 GMT+0000",
+          "errorMessage":"Error Happened While Registering your email. Please, try again later.",
+          "successMessage":"Email is registered",
+          "sling:resourceType":"sauditourism/components/content/news-letter-subscription",
+          "subscribeText":"Subscribe to our newsletter",
+          "invalidEmailMessage":"Invalid Email Address."
+        }
+      }
+    }
+  }
+}

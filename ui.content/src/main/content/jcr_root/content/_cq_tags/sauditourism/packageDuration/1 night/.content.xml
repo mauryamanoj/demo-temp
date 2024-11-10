@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="1 Night"
+          jcr:title.ar="ليلة واحدة"
+          jcr:title.fr="1 nuit"
+          jcr:title.es="1 noche"
+          jcr:title.ru="1 ночь"
+          jcr:title.de="1 Nacht"
+          jcr:title.zh="一夜"
+          jcr:title.ja="1泊"
+          sling:resourceType="cq/tagging/components/tag"/>

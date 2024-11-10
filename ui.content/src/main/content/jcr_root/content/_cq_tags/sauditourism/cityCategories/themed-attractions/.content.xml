@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Themed Attractions"
+          jcr:title.de="Themenattraktionen"
+          jcr:title.es="Atracciones Temáticas"
+          jcr:title.ru="Тематические Аттракционы"
+          jcr:title.zh="主題景點"
+          jcr:title.fr="Attractions Thématiques"
+          jcr:title.ar="الجذب السياحي"
+          jcr:title.ja="テーマアトラクション"
+          sling:resourceType="cq/tagging/components/tag"/>

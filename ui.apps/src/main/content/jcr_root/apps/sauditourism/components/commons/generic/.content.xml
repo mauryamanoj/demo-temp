@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Generic"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      jcr:description="Imagery"
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Generic"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <headingType
+          cq:showOnCreate="{Boolean}true"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+          fieldDescription="Heading type"
+          fieldLabel="Heading Type"
+          multiple="{Boolean}false"
+          name="./headingType"
+          required="{Boolean}true">
+        <granite:data
+            jcr:primaryType="nt:unstructured"
+            cq-msm-lockable="headingType"
+            metaType="dropdown"/>
+        <items jcr:primaryType="nt:unstructured">
+          <h1
+              jcr:primaryType="nt:unstructured"
+              text="Heading 1"
+              selected="{Boolean}true"
+              value="h1"/>
+          <h2
+              jcr:primaryType="nt:unstructured"
+              text="Heading 2"
+              value="h2"/>
+          <h3
+              jcr:primaryType="nt:unstructured"
+              text="Heading 3"
+              value="h3"/>
+          <h4
+              jcr:primaryType="nt:unstructured"
+              text="Heading 4"
+              value="h4"/>
+          <h5
+              jcr:primaryType="nt:unstructured"
+              text="Heading 5"
+              value="h5"/>
+          <h6
+              jcr:primaryType="nt:unstructured"
+              text="Heading 6"
+              value="h6"/>
+        </items>
+      </headingType>
+      <freePaid
+          cq:showOnCreate="{Boolean}true"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+          fieldDescription="Free/Paid"
+          fieldLabel="Free/Paid"
+          name="./freePaid"
+          required="{Boolean}true">
+        <granite:data
+            jcr:primaryType="nt:unstructured"
+            cq-msm-lockable="freePaid"
+            metaType="dropdown"/>
+        <items jcr:primaryType="nt:unstructured">
+          <free
+              jcr:primaryType="nt:unstructured"
+              text="Free"
+              selected="{Boolean}true"
+              value="free"/>
+          <paid
+              jcr:primaryType="nt:unstructured"
+              text="Paid"
+              value="paid"/>
+        </items>
+      </freePaid>
+    </items>
+  </content>
+</jcr:root>

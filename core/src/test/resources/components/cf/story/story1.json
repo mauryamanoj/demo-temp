@@ -1,0 +1,103 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "3a4374c7-7fca-4f28-bfe3-1c485f7cc965",
+  "jcr:predecessors": [
+    "e7335ae1-929d-4f58-831a-c80098589829"
+  ],
+  "jcr:created": "Tue Oct 03 2023 16:59:12 GMT+0200",
+  "jcr:baseVersion": "e7335ae1-929d-4f58-831a-c80098589829",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "aa3d4576-ee46-4ab4-b838-1c7a57f3d742",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "story",
+    "jcr:lastModifiedBy": "admin",
+    "contentFragment": true,
+    "cq:name": "story",
+    "jcr:lastModified": "Tue Oct 03 2023 20:39:52 GMT+0200",
+    "cq:lastReplicated": "Tue Oct 03 2023 20:39:52 GMT+0200",
+    "lastFragmentSave": "Tue Oct 03 2023 20:39:52 GMT+0200",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Tue Oct 03 2023 16:59:12 GMT+0200"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/story",
+        "@stringArray@variations": [],
+        "string@s7image": "https://s7e5a.scene7.com/is/image/scthacc/story1",
+        "string@aboutDescription": "About Description",
+        "string@title": "Story title",
+        "string@subtitle": "Story Subtitle",
+        "boolean@hideFavorite": false,
+        "double@lat": 10.12,
+        "double@lng": 9.0,
+        "string@aboutTitle": "About title",
+        "jcr:uuid": "44a290b5-729c-41ff-aebf-fcca8a9ea62a"
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/story",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "title@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "subtitle": "Story Subtitle",
+        "aboutDescription@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "destination": "/content/dam/sauditourism/cf/destination1",
+        "lat@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "subtitle@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "lng@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "image@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "pagePath@LastModified": "Tue Oct 03 2023 20:39:51 GMT+0200",
+        "placeholder@LastModified": "Tue Oct 03 2023 16:59:12 GMT+0200",
+        "destination@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "lat": 10.12,
+        "lng": 9.0,
+        "categories": [
+          "sauditourism:story/natural-site"
+        ],
+        "image": "/content/dam/we-retail/en/activities/biking/cycling_1.jpg",
+        "title": "Story title",
+        "hideFavorite": false,
+        "aboutTitle@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "s7image@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "hideFavorite@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "s7image": "https://s7e5a.scene7.com/is/image/scthacc/story1",
+        "pagePath": "/content/sauditourism/en/Messi",
+        "cq:tags": [
+          "sauditourism:story/natural-site"
+        ],
+        "tag@LastModified": "Tue Oct 03 2023 17:00:13 GMT+0200",
+        "aboutDescription": "About Description",
+        "aboutTitle": "About title"
+      }
+    }
+  }
+}

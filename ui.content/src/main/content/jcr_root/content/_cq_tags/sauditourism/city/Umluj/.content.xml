@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Umluj"
+    jcr:title.ar="أملج"
+    jcr:title.de="Umluj"
+    jcr:title.es="Umluj"
+    jcr:title.fr="Umluj"
+    jcr:title.ja="ウムルジ"
+    jcr:title.ru="Умлудж"
+    jcr:title.zh="乌姆卢日"
+    sling:resourceType="cq/tagging/components/tag"
+    city="umluj"/>

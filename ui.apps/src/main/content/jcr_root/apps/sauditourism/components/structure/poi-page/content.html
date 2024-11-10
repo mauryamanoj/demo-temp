@@ -1,0 +1,44 @@
+<div data-sly-unwrap="${wcmmode.disabled}">
+    <sly data-sly-resource="${'/conf/sauditourism/settings/wcm/templates/poi-page/structure/jcr:content/root/menu' @ resourceType='sauditourism/components/content/menu'}"></sly>
+    <div data-sly-unwrap="${wcmmode.disabled}">
+        <sly data-sly-resource="${'root/breadcrumb' @ resourceType='sauditourism/components/content/breadcrumb', decorationTagName='div'}"></sly>
+    </div>
+    <div class="layout2Cols">
+        <div data-sly-unwrap="${wcmmode.disabled}">
+            <sly data-sly-resource="${'root/header_section' @resourceType='/apps/sauditourism/components/content/header-section', decorationTagName='div'}"></sly>
+        </div>
+    </div>
+    <div data-sly-unwrap="${wcmmode.disabled}">
+        <sly data-sly-resource="${'root/gallery_section' @resourceType='/apps/sauditourism/components/content/gallery-section', decorationTagName='div'}"></sly>
+    </div>
+    <div class="layout2Cols">
+        <!-- Main Content Area -->
+
+        <!-- About Section area -->
+        <div class="leftCol1">
+            <!-- Include another component -->
+            <sly data-sly-resource="${'root/about_section' @ resourceType='sauditourism/components/content/about-section', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/leftsidebar' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+        </div>
+        <div class="rightCol1">
+            <sly data-sly-resource="${'root/alerts' @ resourceType='sauditourism/components/content/alerts', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/date_widget' @ resourceType='sauditourism/components/content/event-date-widget', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/price_widget' @ resourceType='sauditourism/components/content/price-widget', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/information_list_widget' @ resourceType='sauditourism/components/content/information-list-widget', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/special_show_widget' @ resourceType='sauditourism/components/content/special-show-widget', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/map_widget' @ resourceType='sauditourism/components/content/map-widget', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/help_widget' @ resourceType='sauditourism/components/content/help-widget', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/rightsidebar' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+        </div>
+        <!-- Main Content Area -->
+        <div class="leftCol2">
+            <!-- Include another component -->
+            <sly data-sly-resource="${'root/information_section' @ resourceType='sauditourism/components/content/information-section', decorationTagName='div'}"></sly>
+            <sly data-sly-resource="${'root/responsivegrid' @ resourceType='wcm/foundation/components/responsivegrid'}">
+                <!-- Content will be injected here -->
+            </sly>
+        </div>
+    </div>
+
+    <sly data-sly-resource="${'/conf/sauditourism/settings/wcm/templates/poi-page/structure/jcr:content/root/footer-block' @ resourceType='sauditourism/components/content/contentfragmentfooter'}"></sly>
+</div>

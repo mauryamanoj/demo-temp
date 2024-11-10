@@ -1,0 +1,15 @@
+{
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "sling:resourceType": "sauditourism/components/content/m01-full-bleed-video/v1/m01-full-bleed-video",
+    "imageReference": "/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+    "layout": "full-bleed",
+    "videoReference": "/content/dam/saudi-tourism/media/red-sea-route-/dmc-content/my-trip/summber-vibes-video.mp4",
+    "alt": "alt",
+    "title": "Full Bleed",
+    "youtubeReference": "QDWQDQW",
+    "mobileImageReference": "/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+    "s7imageReference": "https://scth.scene7.com/is/image/scth/Saudi 2020_Images-1920x1080px7-1",
+    "s7mobileImageReference": "https://scth.scene7.com/is/image/scth/Saudi 2020_Images-1920x1080px7-1",
+    "videoType": "youtube"
+}

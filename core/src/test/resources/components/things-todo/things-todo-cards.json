@@ -1,0 +1,41 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Wed Dec 13 2023 22:51:20 GMT+0100",
+  "title":"Recommanded Activities & Tours",
+  "jcr:lastModified":"Wed Dec 13 2023 22:53:01 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/things-todo-cards",
+  "display":{
+    "jcr:primaryType":"nt:unstructured",
+    "cardSize":"small",
+    "displayType":"scrollable"
+  },
+  "link":{
+    "jcr:primaryType":"nt:unstructured",
+    "url":"/content/sauditourism/en",
+    "text":"View all"
+  },
+  "handpick":{
+    "jcr:primaryType":"nt:unstructured",
+    "thingsToDoCFPaths":[
+      "/content/dam/sauditourism/cf/en/attractions/medina-attraction",
+      "/content/dam/sauditourism/cf/en/attractions/jeddah-bobattraction"
+    ]
+  },
+  "tabs": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "category": "sauditourism:categories/nature",
+      "icon": "demo",
+      "title": "title"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "category": "sauditourism:categories/entertainment",
+      "icon": "demo2",
+      "title": "title"
+    }
+  }
+}

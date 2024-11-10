@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Relaxing"
+          jcr:title.ar="الاسترخاء"
+          jcr:title.fr="Détente"
+          jcr:title.es="Descanso"
+          jcr:title.ru="Отдых"
+          jcr:title.de="Entspannung"
+          jcr:title.zh="休闲"
+          jcr:title.ja="リラックス"
+          sling:resourceType="cq/tagging/components/tag"/>

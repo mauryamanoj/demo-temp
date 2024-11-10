@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Jeddah, Abha, Riyadh"
+    jcr:title.ar="جدة، أبها، الرياض"
+    jcr:title.de="Jeddah, Abha, Riyadh"
+    jcr:title.es="Jeddah, Abha, Riyadh"
+    jcr:title.fr="Jeddah, Abha, Riyadh"
+    jcr:title.ja="Jeddah, Abha, Riyadh"
+    jcr:title.ru="Jeddah, Abha, Riyadh"
+    jcr:title.zh="Jeddah, Abha, Riyadh"
+    sling:resourceType="cq/tagging/components/tag"/>

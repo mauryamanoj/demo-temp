@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    ugcAssetUploadUrl="https://s7ugc3.scene7.com/ugc/image"
+    companyName="scth"
+    dmSecretKey="85cc6ef7-8c2a-4d64-aff0-8a93e2b99c66"
+    tokenExpires="3600"/>

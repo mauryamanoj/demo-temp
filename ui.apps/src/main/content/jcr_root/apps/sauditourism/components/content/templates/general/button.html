@@ -1,0 +1,46 @@
+<sly data-sly-template.buttonObj="${@ extraClass, isDisabled, data_transition, copy, noChevron,
+linkObj, transition, iconName}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+  <sly data-sly-test.disabledClass="${isDisabled == true ? 'disabled' : ''}"></sly>
+  <sly data-sly-test="${linkObj}">
+  <button data-sly-element="${ linkObj.urlWithExtension ? 'a' : 'button'}"
+          formtarget="${linkObj.targetInNewWindow ? '_blank' : '_self'}"
+          data-sly-attribute.href="${linkObj.urlWithExtension @ context='uri'}"
+          data-sly-attribute.target="${linkObj.targetInNewWindow ? '_blank' : '_self'}"
+          data-sly-attribute.rel="${linkObj.targetInNewWindow ? 'noopener noreferrer' : ''}"
+          class="button ${extraClass}"
+          disabled="${disabledClass}"
+          data-component="button"
+          data-transition="${transition}"
+          data-id="${data_transition}"
+          data-url="${linkObj.urlWithExtension @ context='uri'}">
+    <span class="icon-container left-icon" data-sly-test="${iconName}">
+      <sly
+           data-sly-call="${iconTemplate.icon @ iconName=iconName}"></sly>
+    </span>
+    <span data-sly-test="${linkObj.copy || copy}" class="cta-copy cq-button-link-title cta-text"
+         data-sly-text="${linkObj.copy || copy}"></span>
+    <span class="icon-container" data-sly-test="${!noChevron}">
+      <sly
+          data-sly-call="${iconTemplate.icon @ iconName='chevron',iconClass='chevron'}"></sly>
+    </span>
+  </button>
+  </sly>
+  <sly data-sly-test="${!linkObj}">
+  <button filter-button
+          class="button ${extraClass}"
+          data-component="button"
+          data-transition="${transition}">
+    <span class="icon-container left-icon" data-sly-test="${iconName}">
+      <sly
+          data-sly-call="${iconTemplate.icon @ iconName=iconName}"></sly>
+    </span>
+    <span data-sly-test="${copy}" class="cta-copy cta-text"
+         data-sly-text="${copy}"></span>
+    <span class="icon-container" data-sly-test="${!noChevron}">
+      <sly
+          data-sly-call="${iconTemplate.icon @ iconName='chevron',iconClass='chevron'}"></sly>
+    </span>
+  </button>
+  </sly>
+</sly>

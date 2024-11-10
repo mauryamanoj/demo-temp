@@ -1,0 +1,17 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "fragmentPath": "/content/dam/sauditourism/cf/en/menu",
+  "variationName": "master",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "menu",
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/menu",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "pagePath": "/content/sauditourism/en/page"
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Search configuration"
+    extraClientlibs="[sauditourism.author]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <pageSearch
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        jcr:title="Page Search"
+                        jcr:description="Page Search">
+                        <items jcr:primaryType="nt:unstructured">
+                            <pageSearch
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                jcr:title="Page Search"
+                                jcr:description="Page Search">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <searchPagePath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        required="{Boolean}true"
+                                        fieldLabel="Search Page link URL"
+                                        fieldDescription="Enter the search page link"
+                                        name="./searchPagePath"
+                                        rootPath="/content/sauditourism" />
+                                    <numberOfItemsDisplayed
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Number of results to display in the search Page"
+                                        fieldLabel="Number of results to display in the search Page"
+                                        required="{Boolean}true"
+                                        name="./searchLimit" />
+                                    <resultsCountLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Results Count Label"
+                                        required="{Boolean}true"
+                                        name="./resultsCountLabel" />
+                                    <clearAllFiltersLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Clear All Filters Label"
+                                        fieldLabel="Clear All Filters Label"
+                                        required="{Boolean}true"
+                                        name="./clearAllFiltersLabel" />
+                                    <clearAllResultsLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Clear All Results Label"
+                                        fieldLabel="Clear All Results Label"
+                                        required="{Boolean}true"
+                                        name="./clearAllResultsLabel" />
+                                    <locationLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Location Label"
+                                        fieldLabel="Location Label"
+                                        required="{Boolean}true"
+                                        name="./locationLabel" />
+                                    <contentLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Content Label"
+                                        fieldLabel="Content Label"
+                                        required="{Boolean}true"
+                                        name="./contentLabel" />
+                                    <loadMoreLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Load More Label"
+                                        fieldLabel="Load More Label"
+                                        required="{Boolean}true"
+                                        name="./loadMoreLabel" />
+                                    <dateSort
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Sort results by most recent"
+                                        fieldLabel="Date Sort"
+                                        required="{Boolean}true"
+                                        name="./dateSort" />
+                                    <searchPlaceholderLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Search Placeholder Label"
+                                        fieldLabel="Search Placeholder"
+                                        required="{Boolean}true"
+                                        name="./searchPlaceholderLabel" />
+                                    <noResultsFoundLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="No Results Found Label"
+                                        fieldLabel="No Results Found"
+                                        required="{Boolean}true"
+                                        name="./noResultsFoundLabel" />
+                                    <noResultFoundDescriptionel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="No Result Found Description"
+                                        fieldLabel="No Result Found Description"
+                                        required="{Boolean}true"
+                                        name="./noResultFoundDescription" />
+                                    <sortFilterLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Sort Filter Label"
+                                        fieldLabel="Sort Filter"
+                                        required="{Boolean}true"
+                                        name="./sortFilterLabel" />
+                                    <viewAs
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="View As Label"
+                                        fieldLabel="View As Label"
+                                        required="{Boolean}true"
+                                        name="./viewAs" />
+                                    <filters
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Filters Label"
+                                        fieldLabel="Filters Label"
+                                        required="{Boolean}true"
+                                        name="./filters" />
+                                    <viewAllResultsLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="View All Results Label"
+                                        fieldLabel="View All Results Label"
+                                        required="{Boolean}true"
+                                        name="./viewAllResultsLabel" />
+                                    <recentlySearchedLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Recently Searched Label"
+                                        fieldLabel="Recently Searched Label"
+                                        required="{Boolean}true"
+                                        name="./recentlySearchedLabel" />
+                                    <modalFiltersTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Modal Filters title"
+                                        fieldLabel="Modal Filters title"
+                                        required="{Boolean}true"
+                                        name="./modalFiltersTitle" />
+                                    <resetAllFiltersLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Reset all filters label"
+                                        fieldLabel="Reset all filters label"
+                                        required="{Boolean}true"
+                                        name="./resetAllFiltersLabel" />
+                                    <buttonLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Button Label"
+                                        fieldLabel="Button Label"
+                                        required="{Boolean}true"
+                                        name="./buttonLabel" />
+                                    <selectLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Select Label"
+                                        fieldLabel="Select Label"
+                                        required="{Boolean}true"
+                                        name="./selectLabel" />
+                                    <clearAllButton
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Clear All Button"
+                                        fieldLabel="Clear All Button"
+                                        required="{Boolean}true"
+                                        name="./clearAllButton" />
+                                    <selectLocationLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Select Location Label"
+                                        fieldLabel="Select Location Label"
+                                        required="{Boolean}true"
+                                        name="./selectLocationLabel" />
+                                    <searchModalTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Search Modal Title"
+                                        fieldLabel="Search Modal Title"
+                                        required="{Boolean}true"
+                                        name="./searchModalTitle" />
+                                </items>
+                            </pageSearch>
+                        </items>
+                    </pageSearch>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

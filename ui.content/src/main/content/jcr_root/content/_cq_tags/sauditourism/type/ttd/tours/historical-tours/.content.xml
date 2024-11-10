@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Historical Tours"
+          jcr:title.ar="جولات تاريخية"
+          jcr:title.de="Historische Touren"
+          jcr:title.es="Recorridos históricos"
+          jcr:title.fr="Visites historiques"
+          jcr:title.ja="歴史ツアー"
+          jcr:title.ru="Исторические туры"
+          jcr:title.zh="历史游"
+          sling:resourceType="cq/tagging/components/tag"/>

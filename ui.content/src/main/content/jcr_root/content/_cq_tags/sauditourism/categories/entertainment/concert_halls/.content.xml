@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Concert halls"
+          jcr:title.ar="قاعات الحفلات"
+          jcr:title.de="Konzertsäle"
+          jcr:title.es="Salas de conciertos"
+          jcr:title.fr="Salles de concert"
+          jcr:title.ja="コンサートホール"
+          jcr:title.ru="Концертные залы"
+          jcr:title.zh="音乐厅"
+          sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          cq:showOnCreate="{Boolean}True"
+          jcr:primaryType="cq:Widget"
+          jcr:title="Green Taxi Details"
+          granite:class="core-wcm-edetailing dialog-container"
+          sling:resourceType="granite/ui/components/foundation/container">
+  <layout
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+      margin="{Boolean}false"/>
+  <items jcr:primaryType="nt:unstructured">
+    <column
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldDescription="Enter Title."
+            fieldLabel="Title"
+            cq:showOnCreate="{Boolean}true"
+            name="./title">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="title"/>
+        </title>
+        <city
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+            fieldLabel="City"
+            multiple="{Boolean}true"
+            rootPath="/content/cq:tags/sauditourism/city"
+            name="./city">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="city"/>
+        </city>
+        <taxi-date
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldDescription="Enter Date."
+            fieldLabel="Date"
+            name="./date">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="date"/>
+        </taxi-date>
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+            fieldLabel="Image"
+            fieldDescription="Select an image to be used for desktop view"
+            name="./image"
+            cq:showOnCreate="{Boolean}true"
+            rootPath="/content/dam">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="image"/>
+        </image>
+      </items>
+    </column>
+  </items>
+</jcr:root>

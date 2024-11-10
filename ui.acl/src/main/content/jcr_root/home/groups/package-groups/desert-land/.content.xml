@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="d5e8f163-2afb-30b7-8e98-83f2ead0470d"
+    rep:authorizableId="desert-land"
+    rep:principalName="desert-land"/>

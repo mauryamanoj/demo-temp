@@ -1,0 +1,19 @@
+<sly data-sly-template.menuLogo="${@ logoClass }">
+  <sly
+      data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"/>
+  <span class="menu-logo-old">
+  <span class="default-logo logo-wrapper">
+    <span class="colors-wrapper">
+      <sly data-sly-call="${iconTemplate.icon @ iconName='saudi-logo-latin-white-29-10-2020', iconClass='white-version no-fill'}"></sly>
+      <sly data-sly-call="${iconTemplate.icon @ iconName='saudi-logo-latin-colored-29-10-2020',
+      iconClass='color-version no-fill'}"></sly>
+    </span>
+  </span>
+  <span class="arabic-logo logo-wrapper">
+    <span class="colors-wrapper">
+      <sly data-sly-call="${iconTemplate.icon @ iconName='logo-branding-new-white-arabic', iconClass='white-version no-fill'}"></sly>
+      <sly data-sly-call="${iconTemplate.icon @ iconName='logo-branding-new-colored-arabic', iconClass='color-version no-fill'}"></sly>
+    </span>
+  </span>
+</span>
+</sly>

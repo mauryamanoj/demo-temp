@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Classes and Training"
+          jcr:title.ar="الدورات والتدريب"
+          jcr:title.de="Kurse und Schulungen"
+          jcr:title.es="Clases y Entrenamiento"
+          jcr:title.fr="Cours et Formation"
+          jcr:title.ja="クラスとトレーニング"
+          jcr:title.ru="Курсы и тренировки"
+          jcr:title.zh="课程和培训"
+          sling:resourceType="cq/tagging/components/tag">
+    <conferences/>
+    <cooking/>
+    <calligraphy/>
+    <language/>
+    <sport/>
+    <art/>
+    <dancing/>
+    <horse_riding/>
+    <scuba_snorkelling/>
+    <camping/>
+    <parasailing_paragliding/>
+    <kayaking/>
+</jcr:root>

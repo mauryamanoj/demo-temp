@@ -1,0 +1,167 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"30cc98d6-1c4c-4837-a2cc-d06f238a6178",
+  "jcr:predecessors":[
+    "f14c47c8-d2af-41cd-b47f-aef84b9349a3"
+  ],
+  "jcr:created":"Wed Nov 01 2023 14:56:02 GMT+0000",
+  "jcr:baseVersion":"f14c47c8-d2af-41cd-b47f-aef84b9349a3",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"0fc34e1f-383b-48da-8eb1-13bd0295c6af",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:mixinTypes":[
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title":"riyadh",
+    "cq:lastReplicationAction":"Activate",
+    "cq:lastReplicatedBy":"rmahafza-c@sta.gov.sa",
+    "jcr:lastModifiedBy":"admin",
+    "cq:lastReplicated":"Thu Feb 29 2024 08:34:43 GMT+0000",
+    "contentFragment":true,
+    "cq:name":"riyadh",
+    "jcr:lastModified":"Thu Feb 29 2024 13:49:57 GMT+0000",
+    "lastFragmentSave":"Thu Feb 29 2024 13:49:57 GMT+0000",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/destinations",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"youardi-c@sta.gov.sa",
+      "jcr:created":"Sun Dec 03 2023 08:50:53 GMT+0000"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/destination",
+        "@stringArray@variations":[
+
+        ],
+        "string@lat":"24.687731",
+        "string@lng":"46.721851",
+        "string@destinationGuideLabel":"City Guide",
+        "boolean@hideReadMore":true,
+        "string@s7image":"/content/dam/destinations/riyadh-banner.jpg",
+        "string@bestTimeLabel":"Best Time To Visit",
+        "string@aboutDescription":"<p>In the ever-growing and flourishing city of Riyadh, you will discover the birthplace of the Kingdom of Saudi Arabia, along with its historical treasures hidden in the old palaces that witnessed the founding of the kingdom. It is a destination for tourists from all over the globe who wish to discover a world of shopping, entertainment and business. The malls offer the most exciting shopping experience, and the sand dunes combined with the brightest stars in the sky present the most magical experience in nature. It is an environment full of a natural variety and unique characteristics that are intriguing for explorers. On the other side of the bustling city, you can enjoy a variety of experiences in luxurious restaurants that offer their special services, and their elaborate international dishes. Simultaneously, the local Riyadh restaurants will tempt you with their authentic flavors and blend of spices originating from Saudi culture. Everyone is happy in the city of Riyadh where the biggest cultural events are always celebrated. Endless entertainment destinations are always emerging, for the city’s visitors to have intriguing and renewing experiences.</p>\n",
+        "boolean@isPopUpImageTransparent":false,
+        "string@title":"Riyadh",
+        "string@transportationLabel":"Transportation",
+        "string@subTitle":"Live the Modern Life to its Fullest",
+        "string@weatherLabel":"Weather",
+        "string@id":"riyadh",
+        "boolean@replaceTitleWithLogo":false,
+        "boolean@isTransparency":false,
+        "string@readLessLabel":"Read Less ",
+        "boolean@hideShare":false,
+        "boolean@hideFavorite":false,
+        "string@aboutTitle":"About Riyadh",
+        "jcr:uuid":"2f01de49-b645-45da-8298-ef17464f2103",
+        "string@tagline":"Riyadh",
+        "string@transportationViewAllTitle":"View All",
+        "string@readMoreLabel":"Read More",
+        "string@s7popUpImage":"https://scth.scene7.com/is/image/scthacc/riyadh",
+        "stringArray@images":[
+          "{\"type\":\"image\",\"image\":\"/content/dam/wvs/destinations/riyadh/riyadh-banner.jpg\",\"s7image\":\"https://scth.scene7.com/is/image/scthacc/riyadh-banner\",\"alt\":\"Riyadh History and Culture\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"\"}"
+        ]
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ],
+      "cq:tags":[
+        "sauditourism:destination/food",
+        "sauditourism:destination/history",
+        "sauditourism:destination/culture"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/destination",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified":"Tue Oct 03 2023 07:19:41 GMT+0000",
+        "subTitle":"Live the Modern Life to its Fullest",
+        "transportationViewAllTitle":"View All",
+        "hideReadMore@LastModified":"Thu Jan 25 2024 09:49:50 GMT+0000",
+        "readLessLabel":"Read Less ",
+        "tagline":"Riyadh",
+        "aboutDescription@LastModified":"Tue Jan 30 2024 13:27:34 GMT+0000",
+        "hideShare@LastModified":"Wed Jan 03 2024 04:44:55 GMT+0000",
+        "lat@LastModified":"Wed Jan 03 2024 19:35:35 GMT+0000",
+        "isTransparency@LastModified":"Wed Feb 14 2024 11:40:19 GMT+0000",
+        "images":[
+          "{\"type\":\"image\",\"image\":\"/content/dam/wvs/destinations/riyadh/riyadh-banner.jpg\",\"s7image\":\"https://scth.scene7.com/is/image/scthacc/riyadh-banner\",\"alt\":\"Riyadh History and Culture\",\"video\":\"\",\"s7video\":\"\",\"thumbnail\":\"\",\"location\":\"\"}"
+        ],
+        "transportationLabel":"Transportation",
+        "hideFavorite@LastModified":"Wed Jan 03 2024 04:44:55 GMT+0000",
+        "destinationGuideLabel@LastModified":"Mon Feb 05 2024 06:56:40 GMT+0000",
+        "lng@LastModified":"Tue Jan 30 2024 13:27:34 GMT+0000",
+        "destinationGuideLabel":"City Guide",
+        "readMoreLabel@LastModified":"Thu Feb 08 2024 08:27:41 GMT+0000",
+        "aboutDescription@ContentType":"text/html",
+        "image@LastModified":"Wed Jan 03 2024 19:35:35 GMT+0000",
+        "pagePath@LastModified":"Wed Jan 24 2024 10:32:54 GMT+0000",
+        "replaceTitleWithLogo":false,
+        "bestTimeLabel@LastModified":"Mon Feb 05 2024 06:56:40 GMT+0000",
+        "weatherLabel":"Weather",
+        "isPopUpImageTransparent@LastModified":"Wed Jan 03 2024 04:44:55 GMT+0000",
+        "isPopUpImageTransparent":false,
+        "readLessLabel@LastModified":"Thu Feb 08 2024 08:27:41 GMT+0000",
+        "hideReadMore":true,
+        "popUpImage":"/content/dam/wvs/pop-up-images/riyadh.png",
+        "s7popUpImage@LastModified":"Wed Feb 14 2024 11:40:19 GMT+0000",
+        "readMoreLabel":"Read More",
+        "id":"riyadh",
+        "lat":"24.687731",
+        "lng":"46.721851",
+        "image":"/content/dam/destinations/riyadh-banner.jpg",
+        "title":"Riyadh",
+        "transportationViewAllTitle@LastModified":"Thu Jan 25 2024 09:49:50 GMT+0000",
+        "aboutTitle@LastModified":"Tue Jan 30 2024 13:27:34 GMT+0000",
+        "s7image@LastModified":"Wed Jan 03 2024 19:35:35 GMT+0000",
+        "seasonalTemperatures@LastModified":"Mon Feb 05 2024 08:02:09 GMT+0000",
+        "s7image":"/content/dam/destinations/riyadh-banner.jpg",
+        "weatherLabel@LastModified":"Tue Jan 30 2024 09:20:53 GMT+0000",
+        "subTitle@LastModified":"Tue Jan 30 2024 13:20:25 GMT+0000",
+        "hideShare":false,
+        "pagePath":"/content/sauditourism/en/destinations/riyadh",
+        "id@LastModified":"Tue Oct 03 2023 07:19:41 GMT+0000",
+        "categories@LastModified":"Thu Feb 29 2024 13:49:55 GMT+0000",
+        "categories":[
+          "sauditourism:categories/beauty_relax",
+          "sauditourism:categories/food_drink",
+          "sauditourism:categories/culture_history"
+        ],
+        "aboutDescription":"<p>In the ever-growing and flourishing city of Riyadh, you will discover the birthplace of the Kingdom of Saudi Arabia, along with its historical treasures hidden in the old palaces that witnessed the founding of the kingdom. It is a destination for tourists from all over the globe who wish to discover a world of shopping, entertainment and business. The malls offer the most exciting shopping experience, and the sand dunes combined with the brightest stars in the sky present the most magical experience in nature. It is an environment full of a natural variety and unique characteristics that are intriguing for explorers. On the other side of the bustling city, you can enjoy a variety of experiences in luxurious restaurants that offer their special services, and their elaborate international dishes. Simultaneously, the local Riyadh restaurants will tempt you with their authentic flavors and blend of spices originating from Saudi culture. Everyone is happy in the city of Riyadh where the biggest cultural events are always celebrated. Endless entertainment destinations are always emerging, for the city’s visitors to have intriguing and renewing experiences.</p>\n",
+        "replaceTitleWithLogo@LastModified":"Wed Feb 14 2024 11:40:19 GMT+0000",
+        "transportationLabel@LastModified":"Mon Feb 05 2024 06:56:40 GMT+0000",
+        "aboutTitle":"About Riyadh",
+        "isTransparency":false,
+        "tagline@LastModified":"Wed Nov 29 2023 13:49:49 GMT+0000",
+        "hideFavorite":false,
+        "s7popUpImage":"https://scth.scene7.com/is/image/scthacc/riyadh",
+        "bestTimeLabel":"Best Time To Visit",
+        "images@LastModified":"Thu Feb 29 2024 13:49:56 GMT+0000",
+        "popUpImage@LastModified":"Wed Feb 14 2024 11:40:19 GMT+0000"
+      }
+    }
+  }
+}

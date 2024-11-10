@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Tea House"
+          jcr:title.ar="منزل الشاي"
+          jcr:title.de="Teehaus"
+          jcr:title.es="Casa de té"
+          jcr:title.fr="Maison de thé"
+          jcr:title.ja="茶屋"
+          jcr:title.ru="Чайный дом"
+          jcr:title.zh="茶馆"
+          sling:resourceType="cq/tagging/components/tag"/>

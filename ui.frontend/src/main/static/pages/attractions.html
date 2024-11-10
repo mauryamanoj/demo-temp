@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Attractions page</title>
+  <meta name="template" content="page-content" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA79bBsHx0zBOtOlknt74mxJUS8RsU3o8I&callback=google.maps.__ib__"
+    async defer></script>
+
+</head>
+
+<body class="page basicpage" data-page-theme="purple">
+  <div data-component="AttractionsAndMap" data-props="{
+    &#34;noResultsFoundLabel&#34;: &#34;There are no items under this category&#34;,
+    &#34;enableManualAuthoring&#34;: false,
+    &#34;mapApiKey&#34;: &#34;AIzaSyA79bBsHx0zBOtOlknt74mxJUS8RsU3o8I&#34;,
+    &#34;title&#34;: &#34;auto - all Cat / all Dest&#34;,
+    &#34;subTitle&#34;: &#34;\u003cp\u003eAuto - all Cat / all Dest \u003cb\u003esub title\u003c/b\u003e\u003c/p\u003e\r\n\u003cul\u003e\r\n\u003cli\u003ethis is the \u003ci\u003eRTE\u003c/i\u003e\u003c/li\u003e\r\n\u003cli\u003e\u003ci\u003e\u003ca href\u003d\&#34;tel:990\&#34;\u003e990\u003c/a\u003e\u003c/i\u003e\u003c/li\u003e\r\n\u003c/ul\u003e\r\n&#34;,
+    &#34;link&#34;: {
+      &#34;hideMap&#34;: false,
+      &#34;url&#34;: &#34;https://map.visitsaudi.com/en&#34;,
+      &#34;urlWithExtension&#34;: &#34;https://map.visitsaudi.com/en&#34;,
+      &#34;urlSlingExporter&#34;: &#34;https://map.visitsaudi.com/en&#34;,
+      &#34;targetInNewWindow&#34;: false,
+      &#34;text&#34;: &#34;View On Saudi Map&#34;,
+      &#34;appType&#34;: &#34;external&#34;
+    },
+    &#34;categoryFilter&#34;: {
+      &#34;label&#34;: &#34;All&#34;,
+      &#34;apiUrl&#34;: &#34;/bin/api/v1/tags/categories&#34;
+    },
+    &#34;destinationFilter&#34;: {
+      &#34;label&#34;: &#34;All Destinations&#34;,
+      &#34;apiUrl&#34;: &#34;/bin/api/v1/destinations&#34;
+    },
+    &#34;allAttractionsFilter&#34;: {
+      &#34;apiUrl&#34;: &#34;https://qa-revamp.visitsaudi.com/bin/api/v1/attractions&#34;
+    },
+    &#34;destinationList&#34;: [
+      {
+        &#34;title&#34;: &#34;Jeddah&#34;,
+        &#34;path&#34;: &#34;/content/dam/sauditourism/cf/en/destinations/jeddah&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Riyadh&#34;,
+        &#34;path&#34;: &#34;/content/dam/sauditourism/cf/en/destinations/riyadh&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Makkah&#34;,
+        &#34;path&#34;: &#34;/content/dam/sauditourism/cf/en/destinations/makkah&#34;
+      },
+      {
+        &#34;title&#34;: &#34;AlUla&#34;,
+        &#34;path&#34;: &#34;/content/dam/sauditourism/cf/en/destinations/alula&#34;
+      },
+      {
+        &#34;title&#34;: &#34;tabuk&#34;,
+        &#34;path&#34;: &#34;/content/dam/sauditourism/cf/en/destinations/tabuk&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Abha&#34;,
+        &#34;path&#34;: &#34;/content/dam/sauditourism/cf/en/destinations/abha&#34;
+      }
+    ],
+    &#34;categoryList&#34;: [
+      {
+        &#34;title&#34;: &#34;Shopping&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/shopping&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Nature&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/nature&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature/natural_site.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Entertainment&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/entertainment&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Culture \u0026 History&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/culture_history&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Valley&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/nature/valley&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Sports&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/sports&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Islands&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/nature/islands&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Mountains&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/nature/mountains&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      },
+      {
+        &#34;title&#34;: &#34;Natural site&#34;,
+        &#34;id&#34;: &#34;sauditourism:categories/nature/natural_site&#34;,
+        &#34;icon&#34;: &#34;https://qa-revamp.visitsaudi.com/content/dam/sauditourism/tag-icons/categories/nature.svg&#34;
+      }
+    ]
+  }"></div>
+
+
+</body>
+
+</html>

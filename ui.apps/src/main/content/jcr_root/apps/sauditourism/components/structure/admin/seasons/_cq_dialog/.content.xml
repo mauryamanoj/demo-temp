@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Seasons Config"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[sauditourism.author]">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+        margin="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <seasons
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Add here all the seasons"
+                        fieldLabel="List of all Seasons">
+                        <field
+                            granite:class="accordion-multifield-item"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                            name="./listSeasons">
+                            <items jcr:primaryType="nt:unstructured">
+                                <seasonsList
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Seasons"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <seasonName
+                                            granite:class="accordion-multifield-item-title"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Enter the name of the Season. for eg Jeddah Season"
+                                            fieldLabel="Season Name"
+                                            name="./name"
+                                            required="{Boolean}false"/>
+                                    </items>
+                                </seasonsList>
+                            </items>
+                        </field>
+                    </seasons>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

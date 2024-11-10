@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          domain="https://dev.visitsaudi.com"
+          rootPath="/content/sauditourism"
+          includeTemplates="[/conf/sauditourism/settings/wcm/templates/base-content-page,/conf/sauditourism/settings/wcm/templates/story-page,/conf/sauditourism/settings/wcm/templates/event-page,/conf/sauditourism/settings/wcm/templates/attraction-page,/conf/sauditourism/settings/wcm/templates/activity-page,/conf/sauditourism/settings/wcm/templates/tour-page,/conf/sauditourism/settings/wcm/templates/poi-page]"
+          excludePaths="[/content/sauditourism/en/Configs,/content/sauditourism/es/Configs,/content/sauditourism/ru/Configs,/content/sauditourism/ja/Configs,/content/sauditourism/de/Configs,/content/sauditourism/fr/Configs,/content/sauditourism/ar/Configs,/content/sauditourism/zh/Configs]"
+/>

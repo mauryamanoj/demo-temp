@@ -1,0 +1,53 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Oct 10 2019 14:05:57 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "quick-links",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:created": "Thu Oct 10 2019 14:05:57 GMT+1100",
+    "cq:lastModified": "Thu Oct 10 2019 14:25:55 GMT+1100",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "c01_quick_links": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Thu Oct 10 2019 14:23:42 GMT+1100",
+          "jcr:lastModified": "Thu Oct 10 2019 14:25:55 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/c01-quick-links/v1/c01-quick-links",
+          "componentTitle": "My Title",
+          "weight": "h2",
+          "links": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "https://www.google.com",
+              "copy": "Google",
+              "targetInNewWindow": "true"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/fr",
+              "copy": "French",
+              "targetInNewWindow": "false"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en/quick-links",
+              "targetInNewWindow": "false"
+            }
+          }
+        }
+      }
+    }
+  }
+}

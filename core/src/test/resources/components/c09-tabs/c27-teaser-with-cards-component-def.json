@@ -1,0 +1,2531 @@
+{
+  "jcr:primaryType":"cq:Component",
+  "jcr:createdBy":"admin",
+  "jcr:title":"Teaser with Cards",
+  "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+  "jcr:description":"Text and Asset component. Allows you to set text with descriptive image. Ordering can be left or right.",
+  "cq:icon":"railRight",
+  "componentGroup":"sauditourism",
+  "cq:design_dialog":{
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:title":"Teaser Cards",
+    "helpPath":"https://www.adobe.com/go/aem_cmp_separator_v1",
+    "sling:resourceType":"cq/gui/components/authoring/dialog",
+    "content":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"granite/ui/components/coral/foundation/container",
+      "items":{
+        "jcr:primaryType":"nt:unstructured",
+        "tabs":{
+          "jcr:primaryType":"nt:unstructured",
+          "maximized":true,
+          "sling:resourceType":"granite/ui/components/coral/foundation/tabs",
+          "items":{
+            "jcr:primaryType":"nt:unstructured",
+            "styletab":{
+              "jcr:primaryType":"nt:unstructured",
+              "path":"/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab",
+              "sling:resourceType":"granite/ui/components/coral/foundation/include"
+            },
+            "dynamic-image-config":{
+              "jcr:primaryType":"nt:unstructured",
+              "path":"/apps/sauditourism/components/commons/smart-crops/content/items/crops",
+              "sling:resourceType":"granite/ui/components/coral/foundation/include"
+            }
+          }
+        }
+      }
+    }
+  },
+  "cq:editConfig":{
+    "jcr:primaryType":"cq:EditConfig",
+    "jcr:createdBy":"admin",
+    "cq:layout":"editbar",
+    "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+    "cq:dialogMode":"floating",
+    "cq:actions":[
+      "-",
+      "editannotate",
+      "delete",
+      "insert",
+      "copymove"
+    ],
+    "cq:listeners":{
+      "jcr:primaryType":"cq:EditListenersConfig",
+      "afterdelete":"REFRESH_PAGE",
+      "afterinsert":"REFRESH_PAGE",
+      "afteredit":"REFRESH_PAGE",
+      "aftermove":"REFRESH_PAGE"
+    }
+  },
+  "cq:dialog":{
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:title":"Teaser with Cards",
+    "extraClientlibs":[
+      "cq.common.wcm",
+      "sauditourism.author"
+    ],
+    "sling:resourceType":"cq/gui/components/authoring/dialog",
+    "content":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"granite/ui/components/coral/foundation/tabs",
+      "items":{
+        "jcr:primaryType":"nt:unstructured",
+        "cardConfiguration":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:title":"Card Configuration",
+          "sling:resourceType":"granite/ui/components/coral/foundation/container",
+          "items":{
+            "jcr:primaryType":"nt:unstructured",
+            "columns":{
+              "jcr:primaryType":"nt:unstructured",
+              "margin":true,
+              "sling:resourceType":"granite/ui/components/coral/foundation/fixedcolumns",
+              "items":{
+                "jcr:primaryType":"nt:unstructured",
+                "column":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                    "cq:ReplicationStatus"
+                  ],
+                  "cq:lastReplicationAction":"Activate",
+                  "cq:lastReplicatedBy":"admin",
+                  "cq:lastReplicated":"Tue Jun 22 2021 08:58:27 GMT+0200",
+                  "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                  "items":{
+                    "jcr:primaryType":"nt:unstructured",
+                    "jcr:mixinTypes":[
+                      "cq:ReplicationStatus"
+                    ],
+                    "cq:lastReplicationAction":"Activate",
+                    "cq:lastReplicatedBy":"admin",
+                    "cq:lastReplicated":"Tue Jun 22 2021 08:58:13 GMT+0200",
+                    "componentType":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":true,
+                      "granite:class":"js-dialog-showhide",
+                      "name":"./componentType",
+                      "fieldLabel":"Component Type",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target":".component-type-showhide-target",
+                        "metaType":"dropdown"
+                      },
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "generalCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"General Cards",
+                          "value":"a-general-cards",
+                          "selected":true
+                        },
+                        "textCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Text Cards",
+                          "value":"b-text-cards"
+                        },
+                        "fullImageCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Full Image Cards",
+                          "value":"e-full-image-cards"
+                        },
+                        "articleCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Article Cards",
+                          "value":"f-article-cards"
+                        },
+                        "roadTripCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Road Trip Cards",
+                          "value":"g-road-trip-cards"
+                        },
+                        "summerPackagesCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Summer Packages Cards",
+                          "value":"h-summer-packages-cards"
+                        },
+                        "seasonsCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Upcoming Seasons Cards",
+                          "value":"c-seasons-cards"
+                        },
+                        "suggestionsForYouCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Suggestions for you cards",
+                          "value":"suggestions-for-you"
+                        },
+                        "winterCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Winter Cards",
+                          "value":"full-img-winter-cards"
+                        },
+                        "winterExperienceCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Winter Experience Cards",
+                          "value":"winter2021"
+                        },
+                        "bookYourTripCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Book Your Trip Cards",
+                          "value":"book-your-trip"
+                        },
+                        "whereToStayCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Where To Stay Cards",
+                          "value":"where-to-stay"
+                        },
+                        "whereToEatCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Where To Eat Cards",
+                          "value":"where-to-eat"
+                        },
+                        "topAttractionCards":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Top attractions cards",
+                          "value":"top-attractions"
+                        }
+                      }
+                    },
+                    "cardStyle":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":true,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./cardStyle",
+                      "fieldLabel":"Card style for winter experience cards",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021"
+                      },
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "experience":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Experience",
+                          "value":"experience"
+                        },
+                        "dining":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Dining",
+                          "value":"dining"
+                        },
+                        "road":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Road Trip",
+                          "value":"roadTrip"
+                        }
+                      }
+                    },
+                    "buyCta":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Buy",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./buy",
+                      "fieldLabel":"Buy Button",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Buy Button Text (Used in card style experience and dining)",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021"
+                      }
+                    },
+                    "viewAllCta":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"View All",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./viewAllText",
+                      "fieldLabel":"View All Button",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"View All Button Text (Used in card style experience and dining)",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021 where-to-stay where-to-eat a-general-cards top-attractions"
+                      }
+                    },
+                    "viewAllLink":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Link that will be opened when this is clicked",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "rootPath":"/content/sauditourism",
+                      "name":"./viewAllLink",
+                      "fieldLabel":"URL",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                      "fieldDescription":"Link that will be opened when this is clicked",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021 where-to-stay where-to-eat a-general-cards top-attractions"
+                      }
+                    },
+                    "linkType":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"chevron",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./linkType",
+                      "fieldLabel":"Link Type",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Link Type",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"a-general-cards top-attractions"
+                      }
+                    },
+                    "componentId":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./componentId",
+                      "fieldLabel":"Component Id",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Link Type",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"a-general-cards where-to-stay where-to-eat top-attractions h-summer-packages-cards"
+                      }
+                    },
+                    "limit":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./limit",
+                      "fieldLabel":"Limit",
+                      "sling:resourceType":"granite/ui/components/foundation/form/numberfield",
+                      "fieldDescription":"Enter card limit for road trip cards.",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021"
+                      }
+                    },
+                    "dayText":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Day/Days",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./durationUnit",
+                      "fieldLabel":"Day/Days Text ",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Days Text (Used in card style road trip)",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021"
+                      }
+                    },
+                    "byText":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"By",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./byText",
+                      "fieldLabel":"By Text",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"By Text (Used in card style experience)",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021"
+                      }
+                    },
+                    "diningCards":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "composite":true,
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "fieldLabel":"Dining Cards",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                      "fieldDescription":"Click 'Add' to add a new Text Card",
+                      "field":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "granite:class":"accordion-multifield-item",
+                        "name":"./diningCards",
+                        "sling:resourceType":"granite/ui/components/coral/foundation/accordion",
+                        "items":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "column":{
+                            "jcr:primaryType":"nt:unstructured",
+                            "jcr:title":"Dining Sub Category",
+                            "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                            "items":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "title":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"accordion-multifield-item-title component-type-showhide-target showhide-target-card-type",
+                                "name":"./subCategory",
+                                "maxlength":50,
+                                "fieldLabel":"Sub Category (Mandatory to fill for Dining Cards)",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"winter2021"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"winter2021"
+                      }
+                    },
+                    "header":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Component Header",
+                      "required":false,
+                      "name":"./header/heading/text",
+                      "fieldLabel":"Component Header (Mandatory to fill in General Cards, Text Cards and Full Image Cards)",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Component Header"
+                    },
+                    "showSlider":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "uncheckedValue":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./header/showSlider",
+                      "text":"Show Slider",
+                      "value":true,
+                      "fieldLabel":"Show Slider",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                      "fieldDescription":"Show Slider",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"a-general-cards"
+                      }
+                    },
+                    "showUnderline":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "uncheckedValue":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./header/showUnderline",
+                      "text":"Show Diviser Underline",
+                      "value":true,
+                      "fieldLabel":"Show Diviser Underline",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                      "fieldDescription":"Show Diviser Underline",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"b-text-cards f-article-cards"
+                      }
+                    },
+                    "headerLinkUrl":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Header Link that will be opened when this is clicked",
+                      "required":false,
+                      "rootPath":"/content/sauditourism",
+                      "name":"./header/link/url",
+                      "fieldLabel":"Header Link URL",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                      "fieldDescription":"Header Link that will be opened when this is clicked"
+                    },
+                    "summerPackagesCardsCity":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./summerPackagesCardsCityId",
+                      "fieldLabel":"City",
+                      "emptyOption":true,
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"h-summer-packages-cards"
+                      },
+                      "datasource":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "saudi-tourism-listtype":"city",
+                        "sling:resourceType":"sauditourism/datasource/cities-regions"
+                      }
+                    },
+                    "hideDescription":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "uncheckedValue":false,
+                      "granite:class":"js-dialog-showhide component-type-showhide-target",
+                      "name":"./hideDescription",
+                      "text":"Hide Description field",
+                      "value":true,
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                      "fieldDescription":"Check this if Description field must be hidden in all cards",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target":".hide-description-field-target",
+                        "showhide-target-value":"a-general-cards top-attractions"
+                      }
+                    },
+                    "background":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":true,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./background",
+                      "fieldLabel":"Background for Article Cards",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"f-article-cards"
+                      },
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "white":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"White for Single card",
+                          "value":"white",
+                          "selected":true
+                        },
+                        "grey":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Grey for Single and Multiple cards",
+                          "value":"grey"
+                        },
+                        "themeColour":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"Theme colour for Multiple cards",
+                          "value":"theme"
+                        }
+                      }
+                    },
+                    "pattern":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":true,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./pattern",
+                      "fieldLabel":"Pattern for Text Cards",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"b-text-cards"
+                      },
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "one":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"01",
+                          "value":"01"
+                        },
+                        "two":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"02",
+                          "value":"02"
+                        },
+                        "three":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"03",
+                          "value":"03"
+                        },
+                        "four":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"04",
+                          "value":"04"
+                        },
+                        "five":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"05",
+                          "value":"05"
+                        },
+                        "six":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"06",
+                          "value":"06"
+                        },
+                        "sevenA":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"07",
+                          "value":"07",
+                          "selected":true
+                        },
+                        "eight":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"08",
+                          "value":"08"
+                        },
+                        "ten":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"10",
+                          "value":"10"
+                        }
+                      }
+                    },
+                    "isColorVariant":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "uncheckedValue":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./isColorVariant",
+                      "text":"Is Color Variant",
+                      "value":true,
+                      "fieldLabel":"Is Color Variant",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                      "fieldDescription":"Is Color Variant",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"a-general-cards b-text-cards top-attractions"
+                      }
+                    },
+                    "backgroundOrnamentId":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "required":false,
+                      "granite:class":"component-type-showhide-target",
+                      "name":"./backgroundOrnamentId",
+                      "fieldLabel":"Background Ornament ID for General and Article(Theme) Cards",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"a-general-cards f-article-cards top-attractions"
+                      },
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "none":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"None",
+                          "value":""
+                        },
+                        "two":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"02",
+                          "value":"02"
+                        },
+                        "three":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"03",
+                          "value":"03"
+                        },
+                        "four":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"04",
+                          "value":"04"
+                        },
+                        "five":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"05",
+                          "value":"05"
+                        },
+                        "six":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"06",
+                          "value":"06"
+                        },
+                        "sevenA":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"07 A",
+                          "value":"07A"
+                        },
+                        "ten":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "text":"10",
+                          "value":"10"
+                        }
+                      }
+                    },
+                    "cards":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "composite":true,
+                      "required":true,
+                      "granite:class":"coral-marker-multifield mf-level-2",
+                      "fieldLabel":"Highlight Cards",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                      "fieldDescription":"Click 'Add' to add a new Text Card",
+                      "field":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "granite:class":"accordion-multifield-item",
+                        "name":"./cards",
+                        "sling:resourceType":"granite/ui/components/coral/foundation/accordion",
+                        "items":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "column":{
+                            "jcr:primaryType":"nt:unstructured",
+                            "jcr:title":"New Highlight Card",
+                            "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                            "items":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "type":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"js-dialog-showhide component-type-showhide-target",
+                                "name":"./type",
+                                "fieldLabel":"Card Type",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "fieldDescription":"Choose card type, by default it's manual where you can fill all the data in this dialog. Another option is for choosing another object to be displayed in this card",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target":".showhide-target-card-type",
+                                  "showhide-target-value":"f-article-cards"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "manual":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Manual",
+                                    "value":"manual"
+                                  },
+                                  "activity":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Activity Card",
+                                    "value":"activity"
+                                  }
+                                }
+                              },
+                              "activityReference":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "emptyText":"Select existing activity",
+                                "predicate":"activity",
+                                "granite:class":"showhide-target-card-type component-type-showhide-target",
+                                "rootPath":"/content/sauditourism",
+                                "name":"./activityReference",
+                                "fieldLabel":"Activity Reference",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/pathbrowser",
+                                "fieldDescription":"Activity page reference. Select path to the activity.",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"activity f-article-cards"
+                                }
+                              },
+                              "use-activity-link":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "uncheckedValue":false,
+                                "granite:class":"showhide-target-card-type component-type-showhide-target",
+                                "name":"./useActivityLink",
+                                "text":"Use link from the activity",
+                                "value":true,
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                "fieldDescription":"Check this to use link from the content page reference of the specified activity. If the activity link is empty it won't be displayed.",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"activity f-article-cards"
+                                }
+                              },
+                              "region":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./regionId",
+                                "fieldLabel":"Region",
+                                "emptyOption":true,
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "fieldDescription":"Region",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"e-full-image-cards"
+                                },
+                                "datasource":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "saudi-tourism-listtype":"region",
+                                  "sling:resourceType":"sauditourism/datasource/cities-regions"
+                                }
+                              },
+                              "city":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./cityId",
+                                "fieldLabel":"City",
+                                "emptyOption":true,
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"e-full-image-cards"
+                                },
+                                "datasource":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "saudi-tourism-listtype":"city",
+                                  "sling:resourceType":"sauditourism/datasource/cities-regions"
+                                }
+                              },
+                              "description":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"hide-description-field-target showhide-target-card-type",
+                                "name":"./description",
+                                "maxlength":950,
+                                "fieldLabel":"Description (For the variant with button (download) the Char max must be 246.)",
+                                "sling:resourceType":"cq/gui/components/authoring/dialog/richtext",
+                                "useFixedInlineToolbar":true,
+                                "rtePlugins":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "sling:resourceSuperType":"/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"
+                                },
+                                "uiSettings":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "sling:resourceSuperType":"/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"
+                                },
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"false manual"
+                                }
+                              },
+                              "label":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"component-type-showhide-target",
+                                "fieldLabel":"Simple Label",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                "fieldDescription":"Simple Label",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                },
+                                "field":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "name":"./labels",
+                                  "fieldLabel":"Simple Label",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield"
+                                }
+                              },
+                              "tagLines":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"component-type-showhide-target",
+                                "validation":"multifield-max-3",
+                                "fieldLabel":"Simple/Featured Tag Line",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                "fieldDescription":"Tag Line will work as feature tag line if Featured tag copy is authored, else simple tag line",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards where-to-stay where-to-eat top-attractions"
+                                },
+                                "field":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "name":"./simpleTagLines",
+                                  "fieldLabel":"Tag Line",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                  "fieldDescription":"Tag Line will work as feature tag line if Featured tag copy is authored, else simple tag line"
+                                }
+                              },
+                              "title":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"accordion-multifield-item-title component-type-showhide-target showhide-target-card-type",
+                                "name":"./title",
+                                "maxlength":50,
+                                "fieldLabel":"Title (Mandatory to fill in General Cards, Text Cards and Article Cards)",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards b-text-cards f-article-cards full-img-winter-cards manual e-full-image-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "featuredTagLineFeaturedCopy":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./featuredTagLineFeaturedCopy",
+                                "fieldLabel":"Featured TagLine Featured Copy",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "tagline":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./tagline",
+                                "maxlength":33,
+                                "fieldLabel":"TagLine for Article Cards",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards full-img-winter-cards where-to-stay where-to-eat"
+                                }
+                              },
+                              "linkCopy":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "emptyText":"linkCopy",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./link/copy",
+                                "maxlength":20,
+                                "fieldLabel":"Link Copy (Mandatory to fill in General Cards and Full Image cards)",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "fieldDescription":"Text to appear as link copy",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards e-full-image-cards f-article-cards full-img-winter-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "linkUrl":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "emptyText":"Link that will be opened when this is clicked",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "rootPath":"/content/sauditourism",
+                                "name":"./link/url",
+                                "fieldLabel":"URL (Mandatory to fill in General Cards and Full Image cards)",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                "fieldDescription":"Link that will be opened when this is clicked",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards e-full-image-cards f-article-cards full-img-winter-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "targetInNewWindow":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "uncheckedValue":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./link/targetInNewWindow",
+                                "text":"Target in new window",
+                                "value":true,
+                                "fieldLabel":"Target in new window",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                "fieldDescription":"Opens the link in a new window",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards e-full-image-cards f-article-cards full-img-winter-cards top-attractions where-to-stay where-to-eat"
+                                }
+                              },
+                              "hideFav":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "uncheckedValue":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./hideFav",
+                                "text":"Hide Favorite icon",
+                                "value":true,
+                                "fieldLabel":"Hide Favorite icon",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                "fieldDescription":"Hide Favorite icon",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards f-article-cards where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "image":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "fileReferenceParameter":"./image/fileReference",
+                                "required":false,
+                                "useHTML5":true,
+                                "granite:class":"cq-droptarget s7-image-listener component-type-showhide-target showhide-target-card-type",
+                                "mimeTypes":[
+                                  "image/jpeg",
+                                  "image/png",
+                                  "image/tiff",
+                                  "image/svg+xml"
+                                ],
+                                "fileNameParameter":"./imgName",
+                                "name":"./imgFile",
+                                "title":"Upload Image Asset",
+                                "fieldLabel":"Image",
+                                "multiple":false,
+                                "allowUpload":false,
+                                "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                "uploadUrl":"${suffix.path}",
+                                "autoStart":false,
+                                "fieldDescription":"660x370 Ratio 16:9 - Desktop image",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"manual a-general-cards e-full-image-cards f-article-cards full-img-winter-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "s7fileReference":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"s7-fileReference",
+                                "name":"./image/s7fileReference",
+                                "granite:id":"s7-fileReference",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/hidden"
+                              },
+                              "mobile-image":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "fileReferenceParameter":"./image/mobileImageReference",
+                                "required":false,
+                                "useHTML5":true,
+                                "granite:class":"cq-droptarget s7-image-listener component-type-showhide-target showhide-target-card-type",
+                                "mimeTypes":[
+                                  "image/jpeg",
+                                  "image/png",
+                                  "image/tiff",
+                                  "image/svg+xml"
+                                ],
+                                "fileNameParameter":"./image/mobilefileName",
+                                "name":"./image/mobilefileName",
+                                "title":"Upload Mobile Image Asset",
+                                "fieldLabel":"Mobile image",
+                                "multiple":false,
+                                "allowUpload":false,
+                                "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                "uploadUrl":"${suffix.path}",
+                                "autoStart":false,
+                                "fieldDescription":"Image size:375 x 667 - Ratio 9:16. Select an image to be used for mobile view",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"manual a-general-cards e-full-image-cards f-article-cards full-img-winter-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "s7mobileImageReference":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"s7-mobileImageReference",
+                                "name":"./image/s7mobileImageReference",
+                                "granite:id":"s7-mobileImageReference",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/hidden"
+                              },
+                              "imageSpecial":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "fileReferenceParameter":"./image/imageSpecial",
+                                "required":false,
+                                "useHTML5":true,
+                                "granite:class":"cq-droptarget component-type-showhide-target",
+                                "mimeTypes":[
+                                  "image/jpeg",
+                                  "image/png",
+                                  "image/tiff",
+                                  "image/svg+xml"
+                                ],
+                                "fileNameParameter":"./image/imageSpecial",
+                                "name":"./image/mobilefileName",
+                                "title":"Upload Image Special 768 Asset",
+                                "fieldLabel":"Special Image 768",
+                                "multiple":false,
+                                "allowUpload":false,
+                                "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                "uploadUrl":"${suffix.path}",
+                                "autoStart":false,
+                                "fieldDescription":"Image size:375 x 667 - Ratio 9:16. Select an image to be used for mobile view",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                }
+                              },
+                              "alt-image":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "emptyText":"Image alt text",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target showhide-target-card-type",
+                                "name":"./image/alt",
+                                "fieldLabel":"Alt text of image",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "fieldDescription":"Enter an ALT text for the image.",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"manual a-general-cards e-full-image-cards f-article-cards book-your-trip where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "imagePosition":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":true,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./imagePosition",
+                                "fieldLabel":"Image Position",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "left":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Left Oriented",
+                                    "value":"left",
+                                    "selected":true
+                                  },
+                                  "right":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Right Oriented",
+                                    "value":"right"
+                                  }
+                                }
+                              },
+                              "video":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "fileReferenceParameter":"./videoPath",
+                                "useHTML5":true,
+                                "granite:class":"component-type-showhide-target",
+                                "mimeTypes":[
+                                  "video/mp4"
+                                ],
+                                "fileNameParameter":"./videoName",
+                                "name":"./video",
+                                "class":"cq-droptarget",
+                                "title":"Upload Image Asset",
+                                "fieldLabel":"Desktop video",
+                                "multiple":false,
+                                "allowUpload":false,
+                                "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                "uploadUrl":"${suffix.path}",
+                                "autoStart":false,
+                                "fieldDescription":"Select the video to be used. If there is a video the image will be overwritten",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                }
+                              },
+                              "mobile-video":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "fileReferenceParameter":"./mobileVideoPath",
+                                "useHTML5":true,
+                                "granite:class":"component-type-showhide-target",
+                                "mimeTypes":[
+                                  "video/mp4"
+                                ],
+                                "fileNameParameter":"./mobileVideoName",
+                                "name":"./mobileVideo",
+                                "class":"cq-droptarget",
+                                "title":"Upload mobile Video Asset",
+                                "fieldLabel":"Mobile video",
+                                "multiple":false,
+                                "allowUpload":false,
+                                "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                "uploadUrl":"${suffix.path}",
+                                "autoStart":false,
+                                "fieldDescription":"Select the video to be used in mobile. If there is a video the image will be overwritten",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                }
+                              },
+                              "isHighlight":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "uncheckedValue":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./highlight",
+                                "text":"Is Highlight",
+                                "value":true,
+                                "fieldLabel":"Is Highlight",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards f-article-cards full-img-winter-cards book-your-trip top-attractions"
+                                }
+                              },
+                              "isFeatured":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "uncheckedValue":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./isFeatured",
+                                "text":"Is Featured",
+                                "value":true,
+                                "fieldLabel":"Is Featured",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards b-text-cards e-full-image-cards where-to-stay where-to-eat top-attractions"
+                                }
+                              },
+                              "icon":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./icon",
+                                "fieldLabel":"Icon for Text Cards",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"b-text-cards full-img-winter-cards where-to-stay where-to-eat"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "none":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"None",
+                                    "value":"none",
+                                    "selected":true
+                                  },
+                                  "stay":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Where to stay",
+                                    "value":"where-to-stay"
+                                  },
+                                  "eat":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Where to eat",
+                                    "value":"where-to-eat"
+                                  },
+                                  "fun":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Where to have fun",
+                                    "value":"where-to-have-fun"
+                                  },
+                                  "car":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Rent a car",
+                                    "value":"rent-a-car"
+                                  },
+                                  "learnMore":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Learn more",
+                                    "value":"learn-more"
+                                  },
+                                  "currency":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Currency Exchange",
+                                    "value":"currency-exchange"
+                                  },
+                                  "money":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Send and Receive Money",
+                                    "value":"send-and-receive-money"
+                                  },
+                                  "taxes":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Taxes",
+                                    "value":"taxes"
+                                  },
+                                  "airports":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Flights",
+                                    "value":"airports"
+                                  },
+                                  "baggage":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"What to pack",
+                                    "value":"baggage"
+                                  },
+                                  "list-to-do":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Planning",
+                                    "value":"list-to-do"
+                                  },
+                                  "playlist":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Playlist",
+                                    "value":"playlist"
+                                  },
+                                  "drive":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Kids",
+                                    "value":"drive"
+                                  },
+                                  "train":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Train",
+                                    "value":"train"
+                                  },
+                                  "world-plane":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Tourism",
+                                    "value":"world-plane"
+                                  },
+                                  "shield":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Consumer protection",
+                                    "value":"shield"
+                                  },
+                                  "police":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Public security",
+                                    "value":"police"
+                                  },
+                                  "phone":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Phone",
+                                    "value":"phone"
+                                  },
+                                  "swimming":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Swimming",
+                                    "value":"swimming"
+                                  },
+                                  "entertainment":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Entertainment",
+                                    "value":"entertainment"
+                                  },
+                                  "diamond":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Diamond",
+                                    "value":"diamond-icon"
+                                  },
+                                  "wintersun":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Winter Sun",
+                                    "value":"winter-sun"
+                                  },
+                                  "discount":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Discount",
+                                    "value":"discount"
+                                  }
+                                }
+                              },
+                              "links":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "composite":true,
+                                "granite:class":"coral-marker-multifield mf-level-2 component-type-showhide-target",
+                                "fieldLabel":"Text Links for Text Cards",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                "fieldDescription":"Click 'Add' to add a new Text Card",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"b-text-cards"
+                                },
+                                "field":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "granite:class":"accordion-multifield-item",
+                                  "name":"./linkList",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/accordion",
+                                  "items":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "column":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "jcr:title":"New Links",
+                                      "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                                      "items":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "copy":{
+                                          "jcr:primaryType":"nt:unstructured",
+                                          "emptyText":"Link Copy",
+                                          "required":false,
+                                          "name":"./copy",
+                                          "fieldLabel":"Link Copy",
+                                          "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                          "fieldDescription":"Text to appear as Link Copy"
+                                        },
+                                        "targetInNewWindow":{
+                                          "jcr:primaryType":"nt:unstructured",
+                                          "uncheckedValue":false,
+                                          "name":"./targetInNewWindow",
+                                          "text":"External Link(link in a new window)",
+                                          "value":true,
+                                          "fieldLabel":"External Link(link in a new window)",
+                                          "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox"
+                                        },
+                                        "url":{
+                                          "jcr:primaryType":"nt:unstructured",
+                                          "emptyText":"Link that will be opened when this is clicked",
+                                          "required":false,
+                                          "rootPath":"/content/sauditourism",
+                                          "name":"./url",
+                                          "fieldLabel":"URL",
+                                          "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                          "fieldDescription":"Link that will be opened when this is clicked"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "caption":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "jcr:title":"Image Caption",
+                                "granite:class":"component-type-showhide-target",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/fieldset",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "copy":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "name":"./caption/copy",
+                                    "maxlength":25,
+                                    "fieldLabel":"Copy",
+                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                    "fieldDescription":"Copy"
+                                  },
+                                  "link-type":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "granite:class":"js-dialog-showhide",
+                                    "name":"./caption/linkType",
+                                    "fieldLabel":"Link Type",
+                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                    "fieldDescription":"Link type: none, internal, external",
+                                    "granite:data":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "showhide-target":".caption-link-type-showhide-target",
+                                      "metaType":"dropdown"
+                                    },
+                                    "items":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "none":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "text":"None",
+                                        "value":""
+                                      },
+                                      "internal":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "text":"Internal",
+                                        "value":"internal"
+                                      },
+                                      "booking":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "text":"External",
+                                        "value":"external"
+                                      }
+                                    }
+                                  },
+                                  "link":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "granite:class":"caption-link-type-showhide-target",
+                                    "rootPath":"/content/sauditourism",
+                                    "name":"./caption/link",
+                                    "fieldLabel":"Link",
+                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                    "fieldDescription":"Link that will be opened when Learn More is clicked",
+                                    "granite:data":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "showhide-target-value":"internal external"
+                                    }
+                                  }
+                                }
+                              },
+                              "highlightOrnamentId":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./highlightOrnamentId",
+                                "fieldLabel":"Highlight Ornament",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"a-general-cards top-attractions"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "none":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"None",
+                                    "value":""
+                                  },
+                                  "one":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"01",
+                                    "value":"01"
+                                  },
+                                  "two":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"02",
+                                    "value":"02"
+                                  },
+                                  "threeA":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"03 A",
+                                    "value":"03A"
+                                  },
+                                  "threeB":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"03 B",
+                                    "value":"03B"
+                                  },
+                                  "four":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"04",
+                                    "value":"04"
+                                  },
+                                  "fiveA":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"05 A",
+                                    "value":"05A"
+                                  },
+                                  "fiveB":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"05 B",
+                                    "value":"05B"
+                                  },
+                                  "six":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"06",
+                                    "value":"06"
+                                  },
+                                  "sevenA":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"07 A",
+                                    "value":"07A"
+                                  },
+                                  "sevenB":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"07 B",
+                                    "value":"07B"
+                                  },
+                                  "eight":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"08",
+                                    "value":"08"
+                                  },
+                                  "ten":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"10",
+                                    "value":"10"
+                                  }
+                                }
+                              },
+                              "ornamentBarId":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./ornamentBarId",
+                                "fieldLabel":"Ornament Bar ID",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "none":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"None",
+                                    "value":""
+                                  },
+                                  "one":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"01",
+                                    "value":"01"
+                                  },
+                                  "two":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"02",
+                                    "value":"02"
+                                  },
+                                  "threeA":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"03 A",
+                                    "value":"03A"
+                                  },
+                                  "threeB":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"03 B",
+                                    "value":"03B"
+                                  },
+                                  "four":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"04",
+                                    "value":"04"
+                                  },
+                                  "fiveA":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"05 A",
+                                    "value":"05A"
+                                  },
+                                  "fiveB":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"05 B",
+                                    "value":"05B"
+                                  },
+                                  "six":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"06",
+                                    "value":"06"
+                                  },
+                                  "sevenA":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"07 A",
+                                    "value":"07A"
+                                  },
+                                  "sevenB":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"07 B",
+                                    "value":"07B"
+                                  },
+                                  "eight":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"08",
+                                    "value":"08"
+                                  },
+                                  "ten":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"10",
+                                    "value":"10"
+                                  }
+                                }
+                              },
+                              "ctaType":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./ctaType",
+                                "fieldLabel":"CTA Type",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"f-article-cards"
+                                },
+                                "items":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "none":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"None",
+                                    "value":"none",
+                                    "selected":true
+                                  },
+                                  "link":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Link",
+                                    "value":"link"
+                                  },
+                                  "external-link":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"External Link",
+                                    "value":"external-link"
+                                  },
+                                  "button":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Button",
+                                    "value":"button"
+                                  },
+                                  "buttonWithoutIcon":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "text":"Button without Icon",
+                                    "value":"button without icon"
+                                  }
+                                }
+                              },
+                              "discountLabel":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./discountLabel",
+                                "maxlength":50,
+                                "fieldLabel":"Discount Label",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"where-to-stay"
+                                }
+                              },
+                              "location":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./location",
+                                "maxlength":50,
+                                "fieldLabel":"Location",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"where-to-stay where-to-eat"
+                                }
+                              },
+                              "rating":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "required":false,
+                                "granite:class":"component-type-showhide-target",
+                                "name":"./rating",
+                                "maxlength":50,
+                                "fieldLabel":"Rating",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"where-to-eat"
+                                }
+                              },
+                              "cuisines":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "granite:class":"component-type-showhide-target",
+                                "validation":"multifield-max-4",
+                                "fieldLabel":"Cuisines",
+                                "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                "granite:data":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "showhide-target-value":"where-to-eat"
+                                },
+                                "field":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "name":"./cuisines",
+                                  "fieldLabel":"Cuisine",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                  "fieldDescription":"Tag Line will work as feature tag line if Featured tag copy is authored, else simple tag line"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "sar":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"SAR",
+                      "required":false,
+                      "name":"./sar",
+                      "fieldLabel":"SAR label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"SAR label"
+                    },
+                    "off":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"off",
+                      "required":false,
+                      "name":"./off",
+                      "fieldLabel":"off label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"off label"
+                    },
+                    "person":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"person",
+                      "name":"./person",
+                      "fieldLabel":"person label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"person label"
+                    },
+                    "notAvailable":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Not available",
+                      "required":false,
+                      "name":"./notAvailable",
+                      "fieldLabel":"Not available label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Not available label"
+                    },
+                    "free":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Free",
+                      "required":false,
+                      "name":"./free",
+                      "fieldLabel":"Free label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Free label"
+                    },
+                    "bookNow":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Book Now",
+                      "name":"./bookNow",
+                      "fieldLabel":"Book Now label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Book Now label"
+                    },
+                    "checkDates":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Check Dates",
+                      "name":"./checkDates",
+                      "fieldLabel":"Check Dates label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Check Dates label"
+                    },
+                    "from":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "jcr:mixinTypes":[
+                        "cq:ReplicationStatus"
+                      ],
+                      "cq:lastReplicationAction":"Activate",
+                      "emptyText":"From",
+                      "cq:lastReplicatedBy":"admin",
+                      "defaultValue":"From",
+                      "cq:lastReplicated":"Tue Jun 22 2021 09:45:48 GMT+0200",
+                      "name":"./from",
+                      "fieldLabel":"From Label",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"From Label"
+                    },
+                    "headerLinkCopy":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "emptyText":"Header Link Copy",
+                      "required":false,
+                      "name":"./header/link/copy",
+                      "fieldLabel":"Header Link Copy",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                      "fieldDescription":"Text to appear as Header Link Copy"
+                    },
+                    "headerConfiguration":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "jcr:title":"Header configuration",
+                      "margin":true,
+                      "granite:class":"component-type-showhide-target",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "columns":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "margin":true,
+                          "sling:resourceType":"granite/ui/components/coral/foundation/fixedcolumns",
+                          "items":{
+                            "jcr:primaryType":"nt:unstructured",
+                            "column":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                              "items":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "topText":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "emptyText":"Text shown as the top text of the component",
+                                  "name":"./componentHeading/heading/text",
+                                  "maxlength":40,
+                                  "fieldLabel":"Top Text",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                  "fieldDescription":"Text shown as the top text of the component"
+                                },
+                                "headingWeight":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "name":"./componentHeading/heading/weight",
+                                  "fieldLabel":"Heading Weight",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                  "fieldDescription":"In what weight the main heading is displayed.",
+                                  "datasource":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "path":"sauditourism/components/content/utils/headingweight",
+                                    "sling:resourceType":"sauditourism/generic/datasource"
+                                  }
+                                },
+                                "linkTitle":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "emptyText":"Link title",
+                                  "required":false,
+                                  "name":"./componentHeading/link/copy",
+                                  "maxlength":25,
+                                  "fieldLabel":"Link title",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                  "fieldDescription":"Link title"
+                                },
+                                "link":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "emptyText":"Link that will be opened when this is clicked",
+                                  "required":false,
+                                  "rootPath":"/content/sauditourism",
+                                  "name":"./componentHeading/link/url",
+                                  "fieldLabel":"Link",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                  "fieldDescription":"Link that will be opened when this is clicked"
+                                },
+                                "targetInNewWindow":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "uncheckedValue":false,
+                                  "name":"./componentHeading/link/targetInNewWindow",
+                                  "text":"Target in new window",
+                                  "value":true,
+                                  "fieldLabel":"Target in new window",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                  "fieldDescription":"Opens the link in a new window"
+                                },
+                                "ornamentId":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "name":"./ornamentId",
+                                  "fieldLabel":"Ornament ID",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                  "items":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "one":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"01",
+                                      "value":"01",
+                                      "selected":true
+                                    },
+                                    "two":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"02",
+                                      "value":"02"
+                                    },
+                                    "threeA":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"03A",
+                                      "value":"03A"
+                                    },
+                                    "threeB":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"03B",
+                                      "value":"03B"
+                                    },
+                                    "four":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"04",
+                                      "value":"04"
+                                    },
+                                    "six":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"06",
+                                      "value":"06"
+                                    },
+                                    "sevenA":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"07A",
+                                      "value":"07A",
+                                      "selected":true
+                                    },
+                                    "eight":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"08",
+                                      "value":"08"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"top-attractions"
+                      }
+                    },
+                    "slides":{
+                      "jcr:primaryType":"nt:unstructured",
+                      "jcr:title":"Slides Configurations",
+                      "granite:class":"component-type-showhide-target",
+                      "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                      "items":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "columns":{
+                          "jcr:primaryType":"nt:unstructured",
+                          "margin":true,
+                          "sling:resourceType":"granite/ui/components/coral/foundation/fixedcolumns",
+                          "items":{
+                            "jcr:primaryType":"nt:unstructured",
+                            "column":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                              "items":{
+                                "jcr:primaryType":"nt:unstructured",
+                                "variant":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "granite:class":"js-dialog-showhide",
+                                  "name":"./variant",
+                                  "fieldLabel":"Variant",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                  "fieldDescription":"Slider variant",
+                                  "granite:data":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "showhide-target":".list-option-listfrom-showhide-target"
+                                  },
+                                  "items":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "event":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"Event",
+                                      "value":"event"
+                                    },
+                                    "category":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"Category",
+                                      "value":"category"
+                                    },
+                                    "map":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"Map",
+                                      "value":"map"
+                                    },
+                                    "simple":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"Simple",
+                                      "value":"simple"
+                                    },
+                                    "attraction":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "text":"Attraction",
+                                      "value":"attraction"
+                                    }
+                                  }
+                                },
+                                "mapWidgets":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "granite:class":"list-option-listfrom-showhide-target",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                                  "granite:data":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "showhide-target-value":"map"
+                                  },
+                                  "items":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "well":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "sling:resourceType":"granite/ui/components/coral/foundation/well",
+                                      "items":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "slides":{
+                                          "jcr:primaryType":"nt:unstructured",
+                                          "composite":true,
+                                          "required":false,
+                                          "validation":"multifield-max-10",
+                                          "fieldLabel":"Select region or city in each slide",
+                                          "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                          "fieldDescription":"All content items displayed in the slide",
+                                          "field":{
+                                            "jcr:primaryType":"nt:unstructured",
+                                            "granite:class":"accordion-multifield-item",
+                                            "name":"./mapSlides",
+                                            "sling:resourceType":"granite/ui/components/coral/foundation/accordion",
+                                            "items":{
+                                              "jcr:primaryType":"nt:unstructured",
+                                              "column":{
+                                                "jcr:primaryType":"nt:unstructured",
+                                                "jcr:title":"New Slide",
+                                                "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                                                "items":{
+                                                  "jcr:primaryType":"nt:unstructured",
+                                                  "region":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "ordered":true,
+                                                    "granite:class":"accordion-multifield-item-title",
+                                                    "name":"./region",
+                                                    "fieldLabel":"Region",
+                                                    "emptyOption":true,
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                                    "fieldDescription":"Specify region property for the destination page.",
+                                                    "datasource":{
+                                                      "jcr:primaryType":"nt:unstructured",
+                                                      "saudi-tourism-listtype":"region",
+                                                      "sling:resourceType":"sauditourism/datasource/cities-regions"
+                                                    }
+                                                  },
+                                                  "city":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "ordered":true,
+                                                    "name":"./city",
+                                                    "fieldLabel":"City",
+                                                    "emptyOption":true,
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                                    "fieldDescription":"Specify city property for the destination page.",
+                                                    "datasource":{
+                                                      "jcr:primaryType":"nt:unstructured",
+                                                      "saudi-tourism-listtype":"city",
+                                                      "sling:resourceType":"sauditourism/datasource/cities-regions"
+                                                    }
+                                                  },
+                                                  "description":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Text shown as the description of the component",
+                                                    "name":"./description",
+                                                    "maxlength":300,
+                                                    "fieldLabel":"Description",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textarea",
+                                                    "fieldDescription":"Text shown as the description of the component"
+                                                  },
+                                                  "linkTitle":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Link title",
+                                                    "name":"./link/copy",
+                                                    "maxlength":20,
+                                                    "fieldLabel":"Link title",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                                    "fieldDescription":"Link title"
+                                                  },
+                                                  "link":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Link that will be opened when this is clicked",
+                                                    "rootPath":"/content/sauditourism",
+                                                    "name":"./link/url",
+                                                    "fieldLabel":"Link",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                                    "fieldDescription":"Link that will be opened when this is clicked"
+                                                  },
+                                                  "targetInNewWindow":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "uncheckedValue":false,
+                                                    "name":"./link/targetInNewWindow",
+                                                    "text":"Target in new window",
+                                                    "value":true,
+                                                    "fieldLabel":"Target in new window",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                                    "fieldDescription":"Opens the link in a new window"
+                                                  },
+                                                  "desktopImage":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "fileReferenceParameter":"./image/fileReference",
+                                                    "useHTML5":true,
+                                                    "granite:class":"cq-droptarget s7-image-listener",
+                                                    "mimeTypes":[
+                                                      "image/jpeg",
+                                                      "image/png",
+                                                      "image/tiff",
+                                                      "image/svg+xml"
+                                                    ],
+                                                    "fileNameParameter":"./image/fileName",
+                                                    "name":"./image/fileName",
+                                                    "title":"Upload Desktop Image Asset",
+                                                    "fieldLabel":"Desktop image",
+                                                    "multiple":false,
+                                                    "allowUpload":false,
+                                                    "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                                    "uploadUrl":"${suffix.path}",
+                                                    "autoStart":false,
+                                                    "fieldDescription":"Image size: 1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+                                                  },
+                                                  "s7fileReference":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "granite:class":"s7-fileReference",
+                                                    "name":"./image/s7fileReference",
+                                                    "granite:id":"s7-fileReference",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/hidden"
+                                                  },
+                                                  "alt-image":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Image alt text",
+                                                    "name":"./image/alt",
+                                                    "fieldLabel":"Alt text of image",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                                    "fieldDescription":"Enter an ALT text for the image."
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "categoryWidgets":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "granite:class":"list-option-listfrom-showhide-target",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                                  "granite:data":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "showhide-target-value":"category"
+                                  },
+                                  "items":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "well":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "sling:resourceType":"granite/ui/components/coral/foundation/well",
+                                      "items":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "multi-path":{
+                                          "jcr:primaryType":"nt:unstructured",
+                                          "validation":"multifield-max-10",
+                                          "fieldLabel":"Slide pages",
+                                          "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                          "fieldDescription":"Page of the Item",
+                                          "field":{
+                                            "jcr:primaryType":"nt:unstructured",
+                                            "rootPath":"/content/sauditourism",
+                                            "name":"./path",
+                                            "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "simpleWidgets":{
+                                  "jcr:primaryType":"nt:unstructured",
+                                  "granite:class":"list-option-listfrom-showhide-target",
+                                  "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                                  "granite:data":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "showhide-target-value":"attraction"
+                                  },
+                                  "items":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "well":{
+                                      "jcr:primaryType":"nt:unstructured",
+                                      "sling:resourceType":"granite/ui/components/coral/foundation/well",
+                                      "items":{
+                                        "jcr:primaryType":"nt:unstructured",
+                                        "slides":{
+                                          "jcr:primaryType":"nt:unstructured",
+                                          "composite":true,
+                                          "required":false,
+                                          "validation":"multifield-max-10",
+                                          "fieldLabel":"Slides",
+                                          "sling:resourceType":"granite/ui/components/coral/foundation/form/multifield",
+                                          "fieldDescription":"All content items displayed in the slide",
+                                          "field":{
+                                            "jcr:primaryType":"nt:unstructured",
+                                            "granite:class":"accordion-multifield-item",
+                                            "name":"./authorSlides",
+                                            "sling:resourceType":"granite/ui/components/coral/foundation/accordion",
+                                            "items":{
+                                              "jcr:primaryType":"nt:unstructured",
+                                              "column":{
+                                                "jcr:primaryType":"nt:unstructured",
+                                                "jcr:title":"New Slide",
+                                                "sling:resourceType":"granite/ui/components/coral/foundation/container",
+                                                "items":{
+                                                  "jcr:primaryType":"nt:unstructured",
+                                                  "isHidden":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "uncheckedValue":false,
+                                                    "name":"./hideSlide",
+                                                    "text":"Hidden slide",
+                                                    "value":true,
+                                                    "fieldLabel":"Hidden slide",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox"
+                                                  },
+                                                  "title":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "granite:class":"accordion-multifield-item-title",
+                                                    "name":"./title",
+                                                    "maxlength":50,
+                                                    "fieldLabel":"Title",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                                    "fieldDescription":"Enter title of the slide"
+                                                  },
+                                                  "description":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Text shown as the description of the component",
+                                                    "name":"./description",
+                                                    "maxlength":200,
+                                                    "fieldLabel":"Description",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textarea",
+                                                    "fieldDescription":"Text shown as the description of the component"
+                                                  },
+                                                  "linkTitle":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Link title",
+                                                    "name":"./link/copy",
+                                                    "maxlength":20,
+                                                    "fieldLabel":"Link title",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                                    "fieldDescription":"Link title"
+                                                  },
+                                                  "link":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Link that will be opened when this is clicked",
+                                                    "rootPath":"/content/sauditourism",
+                                                    "name":"./link/url",
+                                                    "fieldLabel":"Link",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                                    "fieldDescription":"Link that will be opened when this is clicked"
+                                                  },
+                                                  "targetInNewWindow":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "uncheckedValue":false,
+                                                    "name":"./link/targetInNewWindow",
+                                                    "text":"Target in new window",
+                                                    "value":true,
+                                                    "fieldLabel":"Target in new window",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/checkbox",
+                                                    "fieldDescription":"Opens the link in a new window"
+                                                  },
+                                                  "desktopImage":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "fileReferenceParameter":"./image/fileReference",
+                                                    "useHTML5":true,
+                                                    "granite:class":"cq-droptarget s7-image-listener",
+                                                    "mimeTypes":[
+                                                      "image/jpeg",
+                                                      "image/png",
+                                                      "image/tiff",
+                                                      "image/svg+xml"
+                                                    ],
+                                                    "fileNameParameter":"./image/fileName",
+                                                    "name":"./image/fileName",
+                                                    "title":"Upload Desktop Image Asset",
+                                                    "fieldLabel":"Desktop image",
+                                                    "multiple":false,
+                                                    "allowUpload":false,
+                                                    "sling:resourceType":"cq/gui/components/authoring/dialog/fileupload",
+                                                    "uploadUrl":"${suffix.path}",
+                                                    "autoStart":false,
+                                                    "fieldDescription":"Image size: 1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+                                                  },
+                                                  "s7fileReference":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "granite:class":"s7-fileReference",
+                                                    "name":"./image/s7fileReference",
+                                                    "granite:id":"s7-fileReference",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/hidden"
+                                                  },
+                                                  "alt-image":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Image alt text",
+                                                    "name":"./image/alt",
+                                                    "fieldLabel":"Alt text of image",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                                    "fieldDescription":"Enter an ALT text for the image."
+                                                  },
+                                                  "labelText":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Label Text",
+                                                    "name":"./labelText",
+                                                    "maxlength":200,
+                                                    "fieldLabel":"Label text",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                                                    "fieldDescription":"Label Text"
+                                                  },
+                                                  "favoritePath":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "emptyText":"Favorite Path",
+                                                    "rootPath":"/content/sauditourism",
+                                                    "name":"./favoritePath",
+                                                    "fieldLabel":"Favorite Path",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/pathfield",
+                                                    "fieldDescription":"Favorite Path"
+                                                  },
+                                                  "ornamentBarId":{
+                                                    "jcr:primaryType":"nt:unstructured",
+                                                    "required":false,
+                                                    "name":"./ornamentId",
+                                                    "fieldLabel":"Ornament ID",
+                                                    "sling:resourceType":"granite/ui/components/coral/foundation/form/select",
+                                                    "items":{
+                                                      "jcr:primaryType":"nt:unstructured",
+                                                      "none":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"None",
+                                                        "value":""
+                                                      },
+                                                      "one":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"01",
+                                                        "value":"01"
+                                                      },
+                                                      "two":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"02",
+                                                        "value":"02"
+                                                      },
+                                                      "threeA":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"03 A",
+                                                        "value":"03A"
+                                                      },
+                                                      "threeB":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"03 B",
+                                                        "value":"03B"
+                                                      },
+                                                      "four":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"04",
+                                                        "value":"04"
+                                                      },
+                                                      "fiveA":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"05 A",
+                                                        "value":"05A"
+                                                      },
+                                                      "fiveB":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"05 B",
+                                                        "value":"05B"
+                                                      },
+                                                      "six":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"06",
+                                                        "value":"06"
+                                                      },
+                                                      "sevenA":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"07 A",
+                                                        "value":"07A"
+                                                      },
+                                                      "sevenB":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"07 B",
+                                                        "value":"07B"
+                                                      },
+                                                      "eight":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"08",
+                                                        "value":"08"
+                                                      },
+                                                      "ten":{
+                                                        "jcr:primaryType":"nt:unstructured",
+                                                        "text":"10",
+                                                        "value":"10"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "granite:data":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "showhide-target-value":"top-attractions"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "cq:htmlTag":{
+    "jcr:primaryType":"nt:unstructured"
+  },
+  "c27-teaser-with-cards.html":{
+    "jcr:primaryType":"nt:file",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+    "jcr:content":{
+      "jcr:primaryType":"nt:resource",
+      "jcr:lastModifiedBy":"admin",
+      "jcr:mimeType":"text/html",
+      "jcr:lastModified":"Wed Aug 31 2022 10:40:48 GMT+0200",
+      ":jcr:data":373,
+      "jcr:uuid":"2e245353-fb04-48f8-bd22-34f5757ebf78"
+    }
+  },
+  "templates":{
+    "jcr:primaryType":"nt:folder",
+    "jcr:mixinTypes":[
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy":"admin",
+    "cq:lastReplicationAction":"Activate",
+    "cq:lastReplicatedBy":"admin",
+    "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+    "cq:lastReplicated":"Wed May 26 2021 13:08:36 GMT+0200",
+    "h-summer-packages.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Wed Aug 31 2022 10:40:48 GMT+0200",
+        ":jcr:data":2431,
+        "jcr:uuid":"8aa35c1f-5e83-45f2-8885-96787ff7d3de"
+      }
+    },
+    "where-to-eat-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":876,
+        "jcr:uuid":"0f4ff699-3654-436f-b886-922e06c4f2de"
+      }
+    },
+    "winter-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":670,
+        "jcr:uuid":"d71195be-8fa1-4f45-a6cc-44dbf467e071"
+      }
+    },
+    "big-slider.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":6042,
+        "jcr:uuid":"83cb33bb-3fd6-449d-893e-cae4f170101b"
+      }
+    },
+    "c-upcoming-seasons-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":988,
+        "jcr:uuid":"63a952c4-5f42-49f0-bfab-d89d4c520e21"
+      }
+    },
+    "where-to-stay-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":883,
+        "jcr:uuid":"cdfc2380-7f81-4232-bd81-a20801bc5b3f"
+      }
+    },
+    "a-general-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Wed Aug 31 2022 10:40:48 GMT+0200",
+        ":jcr:data":1998,
+        "jcr:uuid":"2069aa0b-8137-4e60-888f-cd6118ad1435"
+      }
+    },
+    "e-full-image-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":948,
+        "jcr:uuid":"8375419b-e7ce-445d-9002-d03b03ae14fb"
+      }
+    },
+    "book-your-trip-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":1590,
+        "jcr:uuid":"3935f2f2-1c40-4ee8-8bdb-f5aed42e101e"
+      }
+    },
+    "b-text-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":1023,
+        "jcr:uuid":"6c16506e-4023-4969-8d04-0fa65dbbb356"
+      }
+    },
+    "winter-2021-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":3185,
+        "jcr:uuid":"87f93219-b0f5-490f-a1ed-eca1911af31d"
+      }
+    },
+    "suggestions-for-you.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":2423,
+        "jcr:uuid":"11247cb7-c6d7-4218-b73c-d75b436a79d8"
+      }
+    },
+    "g-road-trip-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":1782,
+        "jcr:uuid":"3eeba8ae-cd51-4294-b58b-3c8bb07b89c0"
+      }
+    },
+    "f-article-cards.html":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Jun 26 2022 18:05:38 GMT+0200",
+      "jcr:content":{
+        "jcr:primaryType":"nt:resource",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:mimeType":"text/html",
+        "jcr:lastModified":"Sun Jun 26 2022 18:05:38 GMT+0200",
+        ":jcr:data":622,
+        "jcr:uuid":"4d4df87b-ff99-41fe-95af-c7ffc91b8887"
+      }
+    }
+  },
+  "cq:template":{
+    "jcr:primaryType":"nt:unstructured",
+    "title":"Mod-Te-04"
+  }
+}

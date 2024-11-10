@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceSuperType="granite/ui/content/shell/solutionswitcher">
+    <advertising jcr:primaryType="nt:unstructured">
+        <analytics
+            jcr:primaryType="nt:unstructured"
+            href_i18n="https://experience.adobe.com/#/@scth/analytics/spa/index.html"
+            icon="adobeAnalytics"
+            text="Saudi Tourism Analytics"
+            text_commentI18n="Branding Name"/>
+    </advertising>
+</jcr:root>

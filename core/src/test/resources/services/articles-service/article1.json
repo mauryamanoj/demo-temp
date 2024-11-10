@@ -1,0 +1,77 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"65e46a56-f7df-4a77-baf4-c3dfbbc217ca",
+  "jcr:predecessors":[
+    "72e4d177-3f71-4a68-a096-5f953c44f014"
+  ],
+  "jcr:created":"Sun Nov 12 2023 11:56:32 GMT+0100",
+  "jcr:baseVersion":"72e4d177-3f71-4a68-a096-5f953c44f014",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"fbec9df2-d6fe-4a8e-9035-18ee42e5ffc2",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:title":"article1",
+    "jcr:lastModifiedBy":"admin",
+    "contentFragment":true,
+    "cq:name":"article1",
+    "jcr:lastModified":"Mon Nov 13 2023 13:49:13 GMT+0100",
+    "lastFragmentSave":"Mon Nov 13 2023 13:49:13 GMT+0100",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/articles",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Nov 12 2023 11:56:32 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/article",
+        "@stringArray@variations":[
+
+        ],
+        "string@title":"article1"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/article",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "title":"article1",
+        "splashImage":"/content/dam/sauditourism/splashImage.png",
+        "publishingDate":"2021-01-01T00:00:00.000Z",
+        "author":"author",
+        "timeToReadMinutes":5,
+        "timeToReadSuffix":"min",
+        "content":"content",
+        "tags":[
+          "sauditourism:article/insights"
+          ],
+        "category":"new"
+      }
+    }
+  }
+}

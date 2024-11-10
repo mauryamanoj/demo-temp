@@ -1,0 +1,189 @@
+.react-calendar__month-view__weekdays {
+    font-family: "Gilroy-Regular";
+    text-align: center;
+    color: var(--colors-text-black-base, #000);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    text-decoration: none !important;
+}
+
+.react-calendar__month-view__weekdays>div>abbr {
+    text-decoration: none !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    padding: 0.5em;
+}
+
+
+.react-calendar__tile {
+    max-width: 100%;
+    background: none;
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    font: "Gilroy-SemiBold";
+}
+
+.react-calendar__tile:disabled {
+    background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background-color: rgb(var(--color-theme-200));
+    background-color: #f0f0f0;
+}
+
+
+.react-calendar__tile--hasActive,
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+    background-color: rgb(var(--color-theme-200)) !important;
+    color: #fff;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: transparent;
+}
+
+.react-calendar--selectRange .react-calendar__month-view .react-calendar__tile--hover {
+    background-color: #f0f0f0;
+}
+
+
+.react-calendar__tile--active {
+    background-color: transparent;
+}
+
+.react-calendar__month-view .react-calendar__tile--active {
+    background-color: rgb(var(--color-theme-100));
+    border-radius: 100%;
+    color: #fff;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background-color: rgb(var(--color-theme-100));
+}
+
+.react-calendar__navigation__label {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Gilroy-SemiBold";
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.things-container .react-calendar {
+    width: 100%;
+    border: 0px;
+}
+
+
+.things-container .react-calendar__tile--rangeEnd {
+    color: #fff !important;
+}
+
+.react-calendar__tile--rangeStart {
+    background-color: rgb(var(--color-theme-100)) !important;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.react-calendar__tile--rangeEnd {
+    background-color: rgb(var(--color-theme-100)) !important;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.things-container .react-calendar button {
+    font-size: 22px;
+    margin: 0px 0;
+    padding: 15.9px 0;
+}
+
+.things-container .react-calendar__tile:disabled {
+    background: #fff;
+}
+
+.react-calendar__navigation {
+    display: flex;
+    height: 44px;
+    margin-bottom: 1em;
+}
+
+.react-calendar__navigation button:disabled {
+    background-color: #f0f0f0;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: transparent;
+}
+
+.things-container .react-calendar__navigation button:disabled {
+    background-color: #f0f0f0;
+}
+
+.things-container .react-calendar__month-view__weekdays {
+    color: var(--colors-text-black-base, #000);
+    font-size: 14px;
+}
+
+.react-calendar__month-view__days {
+    font-family: "Gilroy-SemiBold";
+}
+
+
+.things-container .react-calendar__month-view__weekdays__weekday {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+[dir="rtl"] .things-container .react-calendar__month-view__weekdays__weekday {
+    font-size: 18px;
+}
+
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #4B4B4B;
+}
+
+@media only screen and (max-width: 600px) {
+    .things-container .react-calendar button {
+        font-size: 18px !important;
+        font-family: "Gilroy-SemiBold";
+        padding: 0;
+        line-height: 40px;
+    }
+
+    .things-container .react-calendar__month-view__weekdays__weekday {
+        font-size: 18px !important;
+        padding: 8px 0;
+    }
+
+    .things-container .react-calendar {
+        width: 90% !important;
+    }
+}

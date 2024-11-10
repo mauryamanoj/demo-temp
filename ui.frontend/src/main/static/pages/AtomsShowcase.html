@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Atoms page</title>
+  <meta name="template" content="page-content" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="page basicpage" data-page-theme="purple">
+
+
+  <div class="flex z-10 items-center mb-40 lg:order-2 bg-theme-100 text-sm fixed top-0 w-full">
+    <button class="text-white p-2 hover:bg-theme-200"
+      onclick="document.querySelector('body').setAttribute('data-page-theme', 'purple')">Purple</button>
+    <button class="text-white p-2 hover:bg-theme-200"
+      onclick="document.querySelector('body').setAttribute('data-page-theme', 'red')">Red</button>
+    <button class="text-white p-2 hover:bg-theme-200"
+      onclick="document.querySelector('body').setAttribute('data-page-theme', 'blue')">Blue</button>
+    <button class="text-white p-2 hover:bg-theme-200"
+      onclick="document.querySelector('body').setAttribute('data-page-theme', 'green')">Green</button>
+
+  </div>
+  <div class="h-20"></div>
+
+<div class="flex gap-5">
+  <div class="mx-5 h-28 w-28 bg-theme-100  flex items-center justify-center text-white"> Primary -100</div>
+  <div class="mx-5 h-28 w-28 bg-theme-200  flex items-center justify-center text-white"> Primary -200</div>
+</div>
+
+  <div class="h-20"></div>
+
+
+  <div>
+    <h2 class="text-center mb-8 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Buttons</h2>
+    <div class="m-4 flex justify-evenly">
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"title": "Button Labelsdsd sdsd sd s ds dss dasd asd as das das das a",
+		"size": "big"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"title": "Button Label",
+		"size": "medium"
+	  }'></div>
+
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"title": "Button Label",
+		"size": "small"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"title": "Button Label",
+		"state": "default",
+		"size": "small",
+		"disabled": "true"
+	  }'></div>
+    </div>
+
+    <div class="m-4 flex justify-evenly">
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"title": "Button Label",
+		"size": "big"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"title": "Button Label",
+		"size": "medium"
+	  }'></div>
+
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"title": "Button Label",
+		"size": "small"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"title": "Button Label",
+		"state": "default",
+		"size": "small",
+		"disabled": "true"
+	  }'></div>
+    </div>
+
+    <div class="m-4 flex justify-evenly">
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type3",
+		"title": "Button Label",
+		"size": "big"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type3",
+		"title": "Button Label",
+		"size": "medium"
+	  }'></div>
+
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type3",
+		"title": "Button Label",
+		"size": "small"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type3",
+		"title": "Button Label",
+		"state": "default",
+		"size": "small",
+		"disabled": "true"
+	  }'></div>
+    </div>
+
+    <div class="flex justify-evenly bg-black p-6">
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"transparent": "true",
+		"title": "Button Label",
+		"size": "big"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"transparent": "true",
+		"title": "Button Label",
+		"size": "medium"
+	  }'></div>
+
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"transparent": "true",
+		"title": "Button Label",
+		"size": "small"
+	  }'></div>
+
+      <div data-component="AtomsShowcase" data-props='{
+		"atom": "Button",
+		"buttonType": "type2",
+		"transparent": "true",
+		"title": "Button Label",
+		"state": "default",
+		"size": "small",
+		"disabled": "true"
+	  }'></div>
+
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Overlay</h2>
+
+    <div class="mt-20">
+      <div data-component="AtomsShowcase" data-props='{"atom": "Overlay"}'></div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Ornaments Bars</h2>
+    <!-- we will be using icon component to display ornaments -->
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-full">
+
+        <div data-component="AtomsShowcase"
+          data-props='{"atom": "Icon","name":"ornament-h-80", "svgClass": "text-theme-100 w-full h-20"}'></div>
+
+        <div data-component="AtomsShowcase"
+          data-props='{"atom": "Icon","name":"ornament-h-90", "svgClass": "text-theme-100 w-full h-20"}'></div>
+
+        <div data-component="AtomsShowcase"
+          data-props='{"atom": "Icon","name":"ornament-v-80", "svgClass": "text-theme-100 h-full w-20"}'></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Ornaments Brushes</h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-full">
+        <div style="position: relative; height:400px; background-color: black;">
+
+          <div data-component="AtomsShowcase"
+            data-props='{"atom": "OrnamentsBrushes","direction":"bottom", "className": "bg-theme-100"}'></div>
+          <div data-component="AtomsShowcase"
+            data-props='{"atom": "OrnamentsBrushes","direction":"top", "className": "bg-theme-100"}'></div>
+          <div data-component="AtomsShowcase" data-props='{"atom": "OrnamentsBrushes",
+      "direction":"right",
+      "orientation":"vertical",
+      "className": "bg-theme-100",
+      "brushId":"02"}'></div>
+          <div data-component="AtomsShowcase" data-props='{"atom": "OrnamentsBrushes",
+      "direction":"left",
+      "orientation":"vertical",
+      "className": "bg-theme-100",
+      "brushId":"02"}'></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Picture Comp</h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-96">
+        <div data-component="AtomsShowcase" data-props='{
+          "atom": "Picture",
+          "image":"https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile",
+          "alt":"Four friends enjoying their summer time in the Saudi nature ",
+          "breakpoints":[
+                      {
+                         "srcset":"https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile:crop-375x280?defaultImage\u003dhero-summer-mobile\u0026wid\u003d375\u0026hei\u003d280 375w,https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile:crop-375x280?defaultImage\u003dhero-summer-mobile\u0026wid\u003d750\u0026hei\u003d560 750w",
+                         "media":"(max-width: 767px)"
+                      },
+                      {
+                        "srcset":"https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile:crop-360x480?defaultImage\u003dhero-summer-mobile\u0026wid\u003d780\u0026hei\u003d1040 780w,https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile:crop-360x480?defaultImage\u003dhero-summer-mobile\u0026wid\u003d1024\u0026hei\u003d1365 1024w,https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile:crop-360x480?defaultImage\u003dhero-summer-mobile\u0026wid\u003d1200\u0026hei\u003d1600 1200w,https://s7e5a.scene7.com/is/image/scthacc/hero-summer-mobile:crop-360x480?defaultImage\u003dhero-summer-mobile\u0026wid\u003d1400\u0026hei\u003d1866 1400w"
+                         ,
+                         "sizes": "(max-width: 1023px) 204, (max-width: 1279px) 258px, 360px"
+                        }
+                   ]
+        }'></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Collapsible Comp</h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-96">
+        <div data-component="AtomsShowcase" data-props='{"atom": "Collapsible",
+        "title":"collapse",
+        "children":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }'></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Stars Comp</h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-96">
+        <div data-component="AtomsShowcase" data-props='{"atom": "Stars","count": 5}'></div>
+        <div data-component="AtomsShowcase" data-props='{"atom": "Stars","count": 4}'></div>
+        <div data-component="AtomsShowcase" data-props='{"atom": "Stars","count": 3}'></div>
+        <div data-component="AtomsShowcase" data-props='{"atom": "Stars","count": 2}'></div>
+        <div data-component="AtomsShowcase" data-props='{"atom": "Stars","count": 1}'></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Date Card Comp</h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-96 flex gap-2">
+        <div data-component="AtomsShowcase" data-props='{"atom": "DateCard","from": "2022-12-06","to": "2022-12-07"}'>
+        </div>
+        <div data-component="AtomsShowcase" data-props='{"atom": "DateCard","from": "2022-12-06","to": "2022-12-06"}'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Pill Comp</h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-96 flex gap-2">
+        <div data-component="AtomsShowcase" data-props='{"atom": "Pill","children":"NEW OFFERS INCLUDED"}'></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <h2 class="text-center mb-8 mt-20 text-3xl font-extrabold leading-none tracking-tight text-theme-200 md:text-4xl">
+      Slider Arrows comp
+    </h2>
+    <div class="m-4 flex justify-evenly">
+      <div class="m-4 w-96 h-96 relative">
+        <div data-component="AtomsShowcase" data-props='{"atom": "SliderArrow",
+          "className":"left-0"
+        }'></div>
+        <div data-component="AtomsShowcase" data-props='{"atom": "SliderArrow",
+          "icon":"arrow-right",
+          "className":"right-0"
+        }'></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

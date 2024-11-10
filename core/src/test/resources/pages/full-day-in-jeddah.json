@@ -1,0 +1,295 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jul 29 2020 17:31:48 GMT+0600",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Full day in Jeddah",
+    "durationAuth": "1-day",
+    "bannerImage": "/content/dam/saudi-tourism/media/tour-packages/jeddah/1920x1080/161652_7360 x 4140.jpg",
+    "headingLocationDetailType": "h1",
+    "jcr:versionHistory": "bfe85e0a-d98b-4a43-b7ed-0a651b9364ca",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/packages-details",
+    "packageTargetTags": [
+      "sauditourism:packageTargets/Couples",
+      "sauditourism:packageTargets/Small Families"
+    ],
+    "s7sliderImage": "https://s7g10.scene7.com/is/image/scth/North of KSA",
+    "areaTag": "Jeddah",
+    "jcr:predecessors": [
+      "5c849fbf-439c-4641-b1af-5ca50031b212"
+    ],
+    "sling:redirect": "true",
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Wed Jul 29 2020 17:31:48 GMT+0600",
+    "cardImage": "/content/dam/saudi-tourism/media/tour-packages/jeddah/760x570/161652_5914 x 4436.jpg",
+    "cq:lastModified": "Tue Jul 21 2020 15:26:51 GMT+0200",
+    "sliderImage": "/content/dam/saudi-tourism/media/tour-packages/jeddah/760x570/161652_5914 x 4436.jpg",
+    "s7featureImage": "https://s7g10.scene7.com/is/image/scth/161652_5914 x 4436-3",
+    "dmc": "palms-land-tours",
+    "area": "JEDDAH   ",
+    "copy": "Jeddah is one of the most beautiful cities in the Kingdom of Saudi Arabia and its history and ancient heritage is deeply connected to the history and heritage of the Kingdom, which can be seen everywhere. Visit its historical old houses and the Jeddah Corniche on the Red Sea where you can enjoy a casual atmosphere and its many attractions. The trip includes a yacht cruise to enjoy marine activities.",
+    "s7featureEventImage": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/featured-660x440.jpg",
+    "image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "title": "Full Day in Jeddah",
+    "headingType": "h1",
+    "price": "349",
+    "packageCategoryTags": [
+      "sauditourism:packageCategories/Hike",
+      "sauditourism:packageCategories/Snorkeling"
+    ],
+    "sling:vanityPath": "/content/sauditourism/en/packages/full-day-in-jeddah-",
+    "jcr:description": "Explore the history of Jeddah its ancient heritage through a unique full-day tour. ",
+    "jcr:baseVersion": "5c849fbf-439c-4641-b1af-5ca50031b212",
+    "s7image": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "jcr:isCheckedOut": true,
+    "packageAreaTags": [
+      "sauditourism:city/Jeddah"
+    ],
+    "imageListing": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+    "pageTitle": "Full day in Jeddah - Visit Saudi Official Website",
+    "jcr:uuid": "1cdd1da5-2e61-4d4c-8f94-2305cdba8418",
+    "featureImage": "/content/dam/saudi-tourism/media/tour-packages/jeddah/260x195/161652_5914 x 4436.jpg",
+    "sling:resourceType": "sauditourism/components/structure/package-detail-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "s7cardImage": "https://s7g10.scene7.com/is/image/scth/4Oct_womenlookup_1440 x 1080-2",
+    "headingshowHoursType": "h1",
+    "hideInSiteMap": "false",
+    "featureEventImage": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/featured-660x440.jpg",
+    "cq:lastModifiedBy": "george.goodliffe",
+    "shortDescription": "Explore the history of Jeddah its ancient heritage through a unique full-day tour. ",
+    "imageMobile": "/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+    "navTitle": "Full day in Jeddah ",
+    "h01-brand-page-hero": {
+      "jcr:primaryType": "nt:unstructured",
+      "subtitleWeight": "h1",
+      "createItineraryLabel": "Book Now",
+      "jcr:lastModifiedBy": "guillermo.morgan",
+      "itineraryPath": "#vendor",
+      "itineraryType": "booking",
+      "title": "Full Day in Jeddah",
+      "showFullHeight": "false",
+      "titleWeight": "h1",
+      "hideFav": "false",
+      "jcr:lastModified": "Thu Jul 02 2020 00:20:14 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/h01-brand-page-hero/v2/h01-brand-page-hero",
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "s7fileReference": "https://s7g10.scene7.com/is/image/scth/Diving Trip-5",
+        "fileReference": "/content/dam/saudi-tourism/media/red-sea-route-/dmc-content/plt/1920x810/Diving Trip.jpg",
+        "mobileImageReference": "/content/dam/saudi-tourism/media/red-sea-route-/dmc-content/plt/375x667/Diving Trip.jpg",
+        "s7mobileImageReference": "https://s7g10.scene7.com/is/image/scth/Diving Trip-3"
+      }
+    },
+    "days-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "jcr:lastModified": "Tue Jun 09 2020 17:39:20 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/days",
+      "days": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "image": "/content/dam/saudi-tourism/media/red-sea-route-/dmc-content/plt/660x370/Jeddah Old City (2).jpg",
+          "title": "Itinerary",
+          "s7image": "https://s7g10.scene7.com/is/image/scth/Jeddah Old City (2)-3",
+          "details": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Meet at the pick-up point"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Head to Jeddah Corniche and visit the Floating Mosque and the Jeddah Sign"
+            },
+            "item2": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Darat Safeya Binzagr Gallery."
+            },
+            "item3": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Enjoy a traditional lunch at a local restaurant"
+            },
+            "item4": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to Nassif House"
+            },
+            "item5": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Driving to the traditional Al Alawi Drive to the Al Alawi Traditional Market"
+            },
+            "item6": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Jeddah Open-air Museum and the Jeddah Fountain"
+            },
+            "item7": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Visit to the Abdul Raouf Khalil Museum"
+            },
+            "item8": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Return to pick-up point"
+            }
+          }
+        }
+      }
+    },
+    "important-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "check",
+      "title": "Important Information",
+      "jcr:lastModified": "Tue Jun 09 2020 17:40:23 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info",
+      "details": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "This package is for groups with a minimum of 4 adults"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Children under the age of 10 will receive a 20% discount"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Payment must be made 15 days before the start of the trip"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "This package is changeable upon request"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "The maximum passenger capacity per car is 5 people"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "The maximum capacity per bus is 30 people."
+        },
+        "item6": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Appropriate shoes and clothing must be worn according to the nature of the place being visited."
+        }
+      }
+    },
+    "package-include": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "ticket",
+      "title": "Package includes",
+      "jcr:lastModified": "Tue Jun 09 2020 17:48:27 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info",
+      "details": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Professional Local Tour Guide"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "All Sightseeing & Monument Entry Fees"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Lunch & Dinner at Traditional Restaurants"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Snacks & Drinks during the Tours"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Transportation by Modern Air-Conditioned Buses and Cars"
+        }
+      }
+    },
+    "package-exclude": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "francesco.lo.bello",
+      "icon": "ticket-no",
+      "title": "Package excludes",
+      "jcr:lastModified": "Thu Jul 02 2020 15:50:21 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info",
+      "details": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Flight bookings"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Items of Personal Nature like: Laundry bills & Extra services "
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "Tips"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": "15% Value Added Tax."
+        }
+      }
+    },
+    "price-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "anas.afadar",
+      "icon": "price",
+      "title": "Price Info title, edit me",
+      "jcr:lastModified": "Mon Jul 13 2020 12:03:34 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/package/package-info"
+    },
+    "booking-info": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "gift.okafor",
+      "weight": "h1",
+      "jcr:lastModified": "Fri Jul 17 2020 16:46:48 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/c01-quick-links/v1/c01-quick-links",
+      "componentTitle": "Check provider details at",
+      "links": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "url": "/content/sauditourism/ar/packages/palms-land-tours",
+          "copy": "Palms Land Tours",
+          "targetInNewWindow": "false"
+        }
+      }
+    },
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    },
+    "package-slider": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "title": "More experiences you may like",
+      "hideTitle": "false",
+      "jcr:lastModified": "Sun May 31 2020 00:18:26 GMT+0200",
+      "sling:resourceType": "sauditourism/components/content/c05-simple-slider/v2/c05-package-slider",
+      "componentHeading": {
+        "jcr:primaryType": "nt:unstructured",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "weight": "h1",
+          "text": "More experiences"
+        },
+        "link": {
+          "jcr:primaryType": "nt:unstructured",
+          "url": "/content/sauditourism/en/packages",
+          "copy": "Explore all"
+        }
+      }
+    },
+    "searchCategories": ["sauditourism:searchCategories/MeetSaudi"]
+  }
+}

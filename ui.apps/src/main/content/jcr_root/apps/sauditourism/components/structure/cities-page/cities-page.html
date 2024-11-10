@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+  <meta charset="utf-8">
+  <title>${currentPage.title || properties['jcr:title']}</title>
+  <meta name="template" content="${properties['cq:template']}"/>
+  <sly data-sly-test="${!wcmmode.disabled}"
+       data-sly-call="${clientlib.all @ categories = [
+            'cq.authoring.page',
+            'cq.shared',
+            'cq.foundation-main',
+            'wcm.foundation.components.parsys.allowedcomponents'
+        ]
+    }"></sly>
+  <sly data-sly-test.clientlibCategories="${currentStyle['clientlibs']}"
+       data-sly-call="${clientlib.all @ categories = clientlibCategories}"></sly>
+</head>
+<body class="${componentContext.cssClassNames}">
+<section style="margin:20px"
+         data-sly-use.model="com.saudi.tourism.core.models.components.CityExtendedSlingModel"
+>
+  <h1>Cities regions page</h1>
+
+  <sly data-sly-list.city="${model.cityList}">
+    <hr style="margin-top: 20px; margin-bottom:20px">
+    <h2 data-sly-test.isRegion="${city.region}">
+      ${city.name}
+      <hr style="margin-top:10px">
+    </h2>
+
+    <div style="margin-bottom:10px;font-size:14px">
+      <strong>${city.text || city.name} [${city.id}]</strong>
+      <p data-sly-test.navigationTitle="${city.navigationValue}">
+        Short name to be displayed in navigation: ${navigationTitle @ i18n, locale='en'}
+      </p>
+      <p data-sly-test="${city.latitude && city.longitude}"
+         data-sly-set.coordinates="${[city.latitude,city.longitude] @ join=','}">
+        Coordinates:
+        <a href="https://www.google.com/maps/@${coordinates},12z" target="_blank" rel="noopener noreferrer">${coordinates}</a>
+      </p>
+      <p>
+        Weather service station:
+        <a data-sly-test.weatherId="${city.weatherCityId}"
+           href="https://openweathermap.org/city/${weatherId}" target="_blank" rel="noopener noreferrer">${weatherId}</a>
+        <strong data-sly-test="${!weatherId}">[NOT SET]</strong>
+      </p>
+
+      <div data-sly-resource="${city.id @ resourceType='sauditourism/components/content/city'}"
+      ></div>
+    </div>
+  </sly>
+</section>
+</body>
+</html>

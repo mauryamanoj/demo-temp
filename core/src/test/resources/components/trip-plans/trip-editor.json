@@ -1,0 +1,107 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "favoritesPath":"/bin/api/v1/",
+  "redirectionUrl":"/content/sauditourism/en/plan-your-trip",
+  "jcr:created":"Wed Sep 16 2020 22:49:27 GMT+0200",
+  "jcr:lastModified":"Thu Feb 25 2021 17:32:41 GMT+0100",
+  "notFoundUrl":"/not-found",
+  "sling:resourceType":"sauditourism/components/content/trip-planner/v1/trip-editor",
+  "copies":{
+    "jcr:primaryType":"nt:unstructured",
+    "weekLabel":"Week",
+    "seeMoreCtaLabel":"See More",
+    "addCtaLabel":"Add",
+    "dayFullActivitiesCopy":"Your day is full! Try deleting some activities if you wish to add more",
+    "addActivityLabel":"+ Add Activity",
+    "activityAdded":"The activity was added",
+    "moveCtaLabel":"Move",
+    "departureLabel":"Departure from $0",
+    "previousWeekButtonLabel":"View previous week",
+    "dayFullLabelCopy":"Full day",
+    "nightsCopy":"$0 Nights",
+    "nextWeekButtonLabel":"View next week",
+    "holidayNotice":"Hours of service may differ",
+    "deleteCtaLabel":"Delete",
+    "datePickerPlaceholder":"Select the start date",
+    "activityRemoved":"The activity was removed",
+    "removeCtaLabel":"Remove",
+    "dayLabel":"Day",
+    "daysCopy":"$0 Days",
+    "emptyDay":{
+      "jcr:primaryType":"nt:unstructured",
+      "description":"Start adding activities to this day",
+      "title":"The day is empty"
+    },
+    "hero":{
+      "jcr:primaryType":"nt:unstructured",
+      "singleDestinationCopy":"Single Destination",
+      "editLabel":"Edit",
+      "multipleDestinationsCopy":"Multiple Destinations"
+    },
+    "loginModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "copy":"You need to have an account in order to create your trip.",
+      "title":"Please login or Signup!",
+      "ctaText":"Login or Signup up"
+    },
+    "loadingTripModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "copy":"Customise it day by day to make it your own",
+      "title":"Loading trip itinerary"
+    },
+    "moveScheduleItemModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "subtitle":"Select the day you want to move it to",
+      "secondaryButtonLabel":"Cancel",
+      "title":"Move Activity",
+      "primaryButtonLabel":"Confirm",
+      "dayLabel":"Day $0: $1"
+    },
+    "scheduleModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "attractionsTabLabel":"Attractions",
+      "favoritesTabLabel":"Favorites",
+      "eventsTabLabel":"Events"
+    },
+    "removeActivityModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "subtitle":"Are you sure you want to remove this activity?",
+      "description":"You are about to remove an activity from your itinerary",
+      "secondaryButtonLabel":"No, keep it",
+      "title":"Hey!",
+      "primaryButtonLabel":"Yes, remove it"
+    },
+    "editYourTripModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "editDestinationsLabel":"Edit Destination",
+      "addDestinationsLabel":"Add Destinations",
+      "regionDeleteClarification":"This city and all activities included will be removed from your itinerary",
+      "saveButtonLabel":"Save changes",
+      "maxDaysClarification":"Up to 5 days per destination",
+      "title":"Edit your trip",
+      "daysTitle":"Days",
+      "amountDaysTitle":"Select amount of days",
+      "startDayTitle":"Edit start date"
+    },
+    "deleteTripPlanModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "subtitle":"Are you sure you want to delete your trip?",
+      "secondaryButtonLabel":"No, Keep it",
+      "title":"Hey!",
+      "primaryButtonLabel":"Yes, Delete",
+      "paragraph":"You are about to take an irreversible action."
+    },
+    "genericErrorModal":{
+      "jcr:primaryType":"nt:unstructured",
+      "title":"Oops!",
+      "primaryButtonLabel":"Try Again",
+      "paragraph":"There was an error performing this action."
+    },
+    "dayFullActivities":{
+      "jcr:primaryType":"nt:unstructured",
+      "description":"Try deleting some activities if you wish to add more",
+      "title":"Your day is full"
+    }
+  }
+}

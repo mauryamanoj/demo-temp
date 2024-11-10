@@ -1,0 +1,15 @@
+<div data-sly-unwrap="${wcmmode.disabled}">
+    <sly data-sly-resource="${'/conf/sauditourism/settings/wcm/templates/search-results-page/structure/jcr:content/root/menu' @ resourceType='sauditourism/components/content/menu'}"></sly>
+    <div data-sly-unwrap="${wcmmode.disabled}">
+        <sly data-sly-resource="${'root/breadcrumb' @ resourceType='sauditourism/components/content/breadcrumb', decorationTagName='div'}"></sly>
+    </div>
+    <div data-sly-unwrap="${wcmmode.disabled}">
+        <sly data-sly-resource="${'root/search_result' @resourceType='/apps/sauditourism/components/content/search-result'}"></sly>
+    </div>
+    <div class="other-components">
+        <sly data-sly-resource="${'root/responsivegrid' @ resourceType='wcm/foundation/components/responsivegrid', decorationTagName='div'}"></sly>
+    </div>
+    <div data-sly-unwrap="${wcmmode.disabled}">
+        <sly data-sly-resource="${'/conf/sauditourism/settings/wcm/templates/search-results-page/structure/jcr:content/root/footer-block' @ resourceType='sauditourism/components/content/contentfragmentfooter'}"></sly>
+    </div>
+</div>

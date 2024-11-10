@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+          getEventUri="http://10.104.2.5:4502/bin/author/api/v1/entry/event?vendor=%s&amp;name=%s"
+          getEventsUri="http://10.104.2.5:4502/bin/author/api/v1/entry/event/list?vendor=%s"
+          postEventUri="http://10.104.2.5:4502/bin/author/api/v1/entry/event?vendor=%s"
+          putEventUri="http://10.104.2.5:4502/bin/author/api/v1/entry/event?vendor=%s&amp;name=%s"
+          deleteEventUri="http://10.104.2.5:4502/bin/author/api/v1/entry/event?vendor=%s&amp;name=%s"
+          encodedAuth="ZXZlbnRmb3JtczpXZU42QDZUNg=="/>

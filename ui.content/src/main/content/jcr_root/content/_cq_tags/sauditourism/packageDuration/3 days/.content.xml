@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="3 Days"
+          jcr:title.ar="3 أيام"
+          jcr:title.fr="3 jours"
+          jcr:title.es="3 días"
+          jcr:title.ru="3 дней"
+          jcr:title.de="3 Tage"
+          jcr:title.zh="三天"
+          jcr:title.ja="3日"
+          sling:resourceType="cq/tagging/components/tag"/>

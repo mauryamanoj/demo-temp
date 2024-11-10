@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Ras"
+    jcr:title.ar="الرس"
+    jcr:title.de="Ar-Rass"
+    jcr:title.es="Ar Rass"
+    jcr:title.fr="Ar Rass"
+    jcr:title.ja="アル・ラス"
+    jcr:title.ru="Эр-Расс"
+    jcr:title.zh="拉斯"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-ras"/>

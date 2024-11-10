@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+    #promotionalBanner .swiper-pagination {
+        bottom: -10px;
+    }
+    #promotionalBanner .small-cover .text-blk,
+    #promotionalBanner .medium-cover .text-blk{
+        bottom: inherit;
+    }
+}
+
+@media (min-width: 600px) {
+    #promotionalBanner.small-hight .swiper-pagination {
+        bottom: -12px;
+    }
+    #promotionalBanner .small-cover .text-blk{
+        bottom: 20px;
+    }
+    #promotionalBanner .medium-cover .text-blk{
+        bottom: 38px;
+    }
+    #promotionalBanner .medium-cover .text-blk{
+        bottom: 38px;
+    }
+    #promotionalBanner  .show-arrows.medium-cover .text-blk{
+        bottom: 78px;
+    }
+}

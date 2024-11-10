@@ -1,0 +1,17 @@
+<sly data-sly-use.data="com.saudi.tourism.core.models.app.page.AppCarousel"></sly>
+<h3>
+  App hero carousel
+</h3>
+<ul data-sly-list.appPapge="${data.appPages}">
+  <li>
+    <h5> - ${appPapge.url}</h5>
+      <h5> - ${appPapge.path}</h5>
+      <h5> - ${appPapge.id}</h5>
+      <h5> - ${appPapge.type}</h5>
+      <h5> - ${appPapge.theme}</h5>
+      <h5> - ${appPapge.title}</h5>
+      <h5> - ${appPapge.subTitle}</h5>
+      <h5> - ${appPapge.backgroundImage}</h5>
+      <h5> - ${appPapge.ctaTitle}</h5>
+  </li>
+</ul>

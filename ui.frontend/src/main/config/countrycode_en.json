@@ -1,0 +1,1559 @@
+{
+  "data": [
+    {
+      "id": "966",
+      "name": "Saudi Arabia",
+      "displayText": "+966",
+      "locale": "en",
+      "flag": "133-saudi-arabia.png"
+    },
+    {
+      "id": "93",
+      "name": "Afghanistan",
+      "displayText": "+93",
+      "locale": "en",
+      "flag": "111-afghanistan.png"
+    },
+    {
+      "id": "355",
+      "name": "Albania",
+      "displayText": "+355",
+      "locale": "en",
+      "flag": "099-albania.png"
+    },
+    {
+      "id": "213",
+      "name": "Algeria",
+      "displayText": "+213",
+      "locale": "en",
+      "flag": "144-algeria.png"
+    },
+    {
+      "id": "685 ",
+      "name": "American Samoa",
+      "displayText": "+685",
+      "locale": "en",
+      "flag": "027-american-samoa.png"
+    },
+    {
+      "id": "376",
+      "name": "Andorra",
+      "displayText": "+376",
+      "locale": "en",
+      "flag": "045-andorra.png"
+    },
+    {
+      "id": "244",
+      "name": "Angola",
+      "displayText": "+244",
+      "locale": "en",
+      "flag": "117-angola.png"
+    },
+    {
+      "id": "264 ",
+      "name": "Anguilla",
+      "displayText": "+264",
+      "locale": "en",
+      "flag": "025-anguilla.png"
+    },
+    {
+      "id": "268 ",
+      "name": "Antigua and Barbuda",
+      "displayText": "+268",
+      "locale": "en",
+      "flag": "075-antigua-and-barbuda.png"
+    },
+    {
+      "id": "54",
+      "name": "Argentina",
+      "displayText": "+54",
+      "locale": "en",
+      "flag": "198-argentina.png"
+    },
+    {
+      "id": "374",
+      "name": "Armenia",
+      "displayText": "+374",
+      "locale": "en",
+      "flag": "108-armenia.png"
+    },
+    {
+      "id": "297",
+      "name": "Aruba",
+      "displayText": "+297",
+      "locale": "en",
+      "flag": "042-aruba.png"
+    },
+    {
+      "id": "61 ",
+      "name": "Australia",
+      "displayText": "+61",
+      "locale": "en",
+      "flag": "234-australia.png"
+    },
+    {
+      "id": "43",
+      "name": "Austria",
+      "displayText": "+43",
+      "locale": "en",
+      "flag": "003-austria.png"
+    },
+    {
+      "id": "994",
+      "name": "Azerbaijan",
+      "displayText": "+994",
+      "locale": "en",
+      "flag": "141-azerbaijan.png"
+    },
+    {
+      "id": "242",
+      "name": "Bahamas",
+      "displayText": "+242",
+      "locale": "en",
+      "flag": "120-bahamas.png"
+    },
+    {
+      "id": "973",
+      "name": "Bahrain",
+      "displayText": "+973",
+      "locale": "en",
+      "flag": "138-bahrain.png"
+    },
+    {
+      "id": "880",
+      "name": "Bangladesh",
+      "displayText": "+880",
+      "locale": "en",
+      "flag": "147-bangladesh.png"
+    },
+    {
+      "id": "246",
+      "name": "Barbados",
+      "displayText": "+246",
+      "locale": "en",
+      "flag": "084-barbados.png"
+    },
+    {
+      "id": "375",
+      "name": "Belarus",
+      "displayText": "+375",
+      "locale": "en",
+      "flag": "135-belarus.png"
+    },
+    {
+      "id": "32",
+      "name": "Belgium",
+      "displayText": "+32",
+      "locale": "en",
+      "flag": "165-belgium.png"
+    },
+    {
+      "id": "501",
+      "name": "Belize",
+      "displayText": "+501",
+      "locale": "en",
+      "flag": "078-belize.png"
+    },
+    {
+      "id": "229",
+      "name": "Benin",
+      "displayText": "+229",
+      "locale": "en",
+      "flag": "060-benin.png"
+    },
+    {
+      "id": "441",
+      "name": "Bermuda",
+      "displayText": "+441",
+      "locale": "en",
+      "flag": "081-bermuda.png"
+    },
+    {
+      "id": "975",
+      "name": "Bhutan",
+      "displayText": "+975",
+      "locale": "en",
+      "flag": "040-bhutan.png"
+    },
+    {
+      "id": "591",
+      "name": "Bolivia",
+      "displayText": "+591",
+      "locale": "en",
+      "flag": "150-bolivia.png"
+    },
+    {
+      "id": "387",
+      "name": "Bosnia and Herzegovina",
+      "displayText": "+387",
+      "locale": "en",
+      "flag": "132-bosnia-and-herzegovina.png"
+    },
+    {
+      "id": "267",
+      "name": "Botswana",
+      "displayText": "+267",
+      "locale": "en",
+      "flag": "126-botswana.png"
+    },
+    {
+      "id": "55",
+      "name": "Brazil",
+      "displayText": "+55",
+      "locale": "en",
+      "flag": "255-brazil.png"
+    },
+    {
+      "id": "246",
+      "name": "British Indian Ocean Territory",
+      "displayText": "+246",
+      "locale": "en",
+      "flag": "069-british-indian-ocean-territory.png"
+    },
+    {
+      "id": "284",
+      "name": "British Virgin Islands",
+      "displayText": "+284",
+      "locale": "en",
+      "flag": "114-british-virgin-islands.png"
+    },
+    {
+      "id": "673",
+      "name": "Brunei",
+      "displayText": "+673",
+      "locale": "en",
+      "flag": "119-brunei.png"
+    },
+    {
+      "id": "359",
+      "name": "Bulgaria",
+      "displayText": "+359",
+      "locale": "en",
+      "flag": "168-bulgaria.png"
+    },
+    {
+      "id": "226",
+      "name": "Burkina Faso",
+      "displayText": "+226",
+      "locale": "en",
+      "flag": "090-burkina-faso.png"
+    },
+    {
+      "id": "257",
+      "name": "Burundi",
+      "displayText": "+257",
+      "locale": "en",
+      "flag": "057-burundi.png"
+    },
+    {
+      "id": "855",
+      "name": "Cambodia",
+      "displayText": "+855",
+      "locale": "en",
+      "flag": "159-cambodia.png"
+    },
+    {
+      "id": "237",
+      "name": "Cameroon",
+      "displayText": "+237",
+      "locale": "en",
+      "flag": "105-cameroon.png"
+    },
+    {
+      "id": "1 ",
+      "name": "Canada",
+      "displayText": "+1",
+      "locale": "en",
+      "flag": "243-canada.png"
+    },
+    {
+      "id": "238",
+      "name": "Cape Verde",
+      "displayText": "+238",
+      "locale": "en",
+      "flag": "038-cape-verde.png"
+    },
+    {
+      "id": "345",
+      "name": "Cayman Islands",
+      "displayText": "+345",
+      "locale": "en",
+      "flag": "051-cayman-islands.png"
+    },
+    {
+      "id": "236",
+      "name": "Central African Republic",
+      "displayText": "+236",
+      "locale": "en",
+      "flag": "036-central-african-republic.png"
+    },
+    {
+      "id": "235",
+      "name": "Chad",
+      "displayText": "+235",
+      "locale": "en",
+      "flag": "066-chad.png"
+    },
+    {
+      "id": "56",
+      "name": "Chile",
+      "displayText": "+56",
+      "locale": "en",
+      "flag": "131-chile.png"
+    },
+    {
+      "id": "86",
+      "name": "China",
+      "displayText": "+86",
+      "locale": "en",
+      "flag": "034-china.png"
+    },
+    {
+      "id": "61  ",
+      "name": "Christmas Island",
+      "displayText": "+61",
+      "locale": "en",
+      "flag": "017-christmas-island.png"
+    },
+    {
+      "id": "61",
+      "name": "Cocos Islands",
+      "displayText": "+61",
+      "locale": "en",
+      "flag": "023-cocos-island.png"
+    },
+    {
+      "id": "57",
+      "name": "Colombia",
+      "displayText": "+57",
+      "locale": "en",
+      "flag": "177-colombia.png"
+    },
+    {
+      "id": "269",
+      "name": "Comoros",
+      "displayText": "+269",
+      "locale": "en",
+      "flag": "029-comoros.png"
+    },
+    {
+      "id": "682",
+      "name": "Cook Islands",
+      "displayText": "+682",
+      "locale": "en",
+      "flag": "021-cook-islands.png"
+    },
+    {
+      "id": "506",
+      "name": "Costa Rica",
+      "displayText": "+506",
+      "locale": "en",
+      "flag": "156-costa-rica.png"
+    },
+    {
+      "id": "385",
+      "name": "Croatia",
+      "displayText": "+385",
+      "locale": "en",
+      "flag": "164-croatia.png"
+    },
+    {
+      "id": "53",
+      "name": "Cuba",
+      "displayText": "+53",
+      "locale": "en",
+      "flag": "153-cuba.png"
+    },
+    {
+      "id": "599 ",
+      "name": "Curacao",
+      "displayText": "+599",
+      "locale": "en",
+      "flag": "116-curacao.png"
+    },
+    {
+      "id": "357",
+      "name": "Cyprus",
+      "displayText": "+357",
+      "locale": "en",
+      "flag": "101-northern-cyprus.png"
+    },
+    {
+      "id": "420",
+      "name": "Czech Republic",
+      "displayText": "+420",
+      "locale": "en",
+      "flag": "149-czech-republic.png"
+    },
+    {
+      "id": "243",
+      "name": "Democratic Republic of the Congo",
+      "displayText": "+243",
+      "locale": "en",
+      "flag": "249-democratic-republic-of-congo.png"
+    },
+    {
+      "id": "45",
+      "name": "Denmark",
+      "displayText": "+45",
+      "locale": "en",
+      "flag": "174-denmark.png"
+    },
+    {
+      "id": "253",
+      "name": "Djibouti",
+      "displayText": "+253",
+      "locale": "en",
+      "flag": "068-djibouti.png"
+    },
+    {
+      "id": "767",
+      "name": "Dominica",
+      "displayText": "+767",
+      "locale": "en",
+      "flag": "186-dominica.png"
+    },
+    {
+      "id": "829",
+      "name": "Dominican Republic",
+      "displayText": "+829",
+      "locale": "en",
+      "flag": "047-dominican-republic.png"
+    },
+    {
+      "id": "670 ",
+      "name": "East Timor",
+      "displayText": "+670",
+      "locale": "en",
+      "flag": "140-east-timor.png"
+    },
+    {
+      "id": "593",
+      "name": "Ecuador",
+      "displayText": "+593",
+      "locale": "en",
+      "flag": "104-ecuador.png"
+    },
+    {
+      "id": "20",
+      "name": "Egypt",
+      "displayText": "+20",
+      "locale": "en",
+      "flag": "158-egypt.png"
+    },
+    {
+      "id": "503",
+      "name": "El Salvador",
+      "displayText": "+503",
+      "locale": "en",
+      "flag": "015-el-salvador.png"
+    },
+    {
+      "id": "240",
+      "name": "Equatorial Guinea",
+      "displayText": "+240",
+      "locale": "en",
+      "flag": "189-equatorial-guinea.png"
+    },
+    {
+      "id": "291",
+      "name": "Eritrea",
+      "displayText": "+291",
+      "locale": "en",
+      "flag": "065-eritrea.png"
+    },
+    {
+      "id": "372",
+      "name": "Estonia",
+      "displayText": "+372",
+      "locale": "en",
+      "flag": "008-estonia.png"
+    },
+    {
+      "id": "251",
+      "name": "Ethiopia",
+      "displayText": "+251",
+      "locale": "en",
+      "flag": "005-ethiopia.png"
+    },
+    {
+      "id": "500",
+      "name": "Falkland Islands",
+      "displayText": "+500",
+      "locale": "en",
+      "flag": "215-falkland-islands.png"
+    },
+    {
+      "id": "679",
+      "name": "Fiji",
+      "displayText": "+679",
+      "locale": "en",
+      "flag": "137-fiji.png"
+    },
+    {
+      "id": "358",
+      "name": "Finland",
+      "displayText": "+358",
+      "locale": "en",
+      "flag": "125-finland.png"
+    },
+    {
+      "id": "33",
+      "name": "France",
+      "displayText": "+33",
+      "locale": "en",
+      "flag": "195-france.png"
+    },
+    {
+      "id": "689",
+      "name": "French Polynesia",
+      "displayText": "+689",
+      "locale": "en",
+      "flag": "180-french-polynesia.png"
+    },
+    {
+      "id": "241",
+      "name": "Gabon",
+      "displayText": "+241",
+      "locale": "en",
+      "flag": "059-gabon.png"
+    },
+    {
+      "id": "220",
+      "name": "Gambia",
+      "displayText": "+220",
+      "locale": "en",
+      "flag": "146-gambia.png"
+    },
+    {
+      "id": "995",
+      "name": "Georgia",
+      "displayText": "+995",
+      "locale": "en",
+      "flag": "256-georgia.png"
+    },
+    {
+      "id": "49",
+      "name": "Germany",
+      "displayText": "+49",
+      "locale": "en",
+      "flag": "162-germany.png"
+    },
+    {
+      "id": "233",
+      "name": "Ghana",
+      "displayText": "+233",
+      "locale": "en",
+      "flag": "053-ghana.png"
+    },
+    {
+      "id": "350",
+      "name": "Gibraltar",
+      "displayText": "+350",
+      "locale": "en",
+      "flag": "213-gibraltar.png"
+    },
+    {
+      "id": "30",
+      "name": "Greece",
+      "displayText": "+30",
+      "locale": "en",
+      "flag": "170-greece.png"
+    },
+    {
+      "id": "299",
+      "name": "Greenland",
+      "displayText": "+299",
+      "locale": "en",
+      "flag": "113-greenland.png"
+    },
+    {
+      "id": "473",
+      "name": "Grenada",
+      "displayText": "+473",
+      "locale": "en",
+      "flag": "210-grenada.png"
+    },
+    {
+      "id": "671",
+      "name": "Guam",
+      "displayText": "+671",
+      "locale": "en",
+      "flag": "207-guam.png"
+    },
+    {
+      "id": "502",
+      "name": "Guatemala",
+      "displayText": "+502",
+      "locale": "en",
+      "flag": "098-guatemala.png"
+    },
+    {
+      "id": "44 ",
+      "name": "Guernsey",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "204-guernsey.png"
+    },
+    {
+      "id": "224",
+      "name": "Guinea",
+      "displayText": "+224",
+      "locale": "en",
+      "flag": "110-guinea.png"
+    },
+    {
+      "id": "245",
+      "name": "Guinea-Bissau",
+      "displayText": "+245",
+      "locale": "en",
+      "flag": "056-guinea-bissau.png"
+    },
+    {
+      "id": "509",
+      "name": "Haiti",
+      "displayText": "+509",
+      "locale": "en",
+      "flag": "185-haiti.png"
+    },
+    {
+      "id": "504",
+      "name": "Honduras",
+      "displayText": "+504",
+      "locale": "en",
+      "flag": "024-honduras.png"
+    },
+    {
+      "id": "852",
+      "name": "Hong Kong",
+      "displayText": "+852",
+      "locale": "en",
+      "flag": "183-hong-kong.png"
+    },
+    {
+      "id": "36",
+      "name": "Hungary",
+      "displayText": "+36",
+      "locale": "en",
+      "flag": "115-hungary.png"
+    },
+    {
+      "id": "354",
+      "name": "Iceland",
+      "displayText": "+354",
+      "locale": "en",
+      "flag": "080-iceland.png"
+    },
+    {
+      "id": "91",
+      "name": "India",
+      "displayText": "+91",
+      "locale": "en",
+      "flag": "246-india.png"
+    },
+    {
+      "id": "62",
+      "name": "Indonesia",
+      "displayText": "+62",
+      "locale": "en",
+      "flag": "209-indonesia.png"
+    },
+    {
+      "id": "98",
+      "name": "Iran",
+      "displayText": "+98",
+      "locale": "en",
+      "flag": "136-iran.png"
+    },
+    {
+      "id": "964",
+      "name": "Iraq",
+      "displayText": "+964",
+      "locale": "en",
+      "flag": "020-iraq.png"
+    },
+    {
+      "id": "353",
+      "name": "Ireland",
+      "displayText": "+353",
+      "locale": "en",
+      "flag": "179-ireland.png"
+    },
+    {
+      "id": "44  ",
+      "name": "Isle of Man",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "219-isle-of-man.png"
+    },
+    {
+      "id": "972",
+      "name": "Israel",
+      "displayText": "+972",
+      "locale": "en",
+      "flag": "155-israel.png"
+    },
+    {
+      "id": "39",
+      "name": "Italy",
+      "displayText": "+39",
+      "locale": "en",
+      "flag": "013-italy.png"
+    },
+    {
+      "id": "225",
+      "name": "Ivory Coast",
+      "displayText": "+225",
+      "locale": "en",
+      "flag": "161-ivory-coast.png"
+    },
+    {
+      "id": "876",
+      "name": "Jamaica",
+      "displayText": "+876",
+      "locale": "en",
+      "flag": "037-jamaica.png"
+    },
+    {
+      "id": "81",
+      "name": "Japan",
+      "displayText": "+81",
+      "locale": "en",
+      "flag": "063-japan.png"
+    },
+    {
+      "id": "44   ",
+      "name": "Jersey",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "245-jersey.png"
+    },
+    {
+      "id": "962",
+      "name": "Jordan",
+      "displayText": "+962",
+      "locale": "en",
+      "flag": "077-jordan.png"
+    },
+    {
+      "id": "7 ",
+      "name": "Kazakhstan",
+      "displayText": "+7",
+      "locale": "en",
+      "flag": "074-kazakhstan.png"
+    },
+    {
+      "id": "254",
+      "name": "Kenya",
+      "displayText": "+254",
+      "locale": "en",
+      "flag": "067-kenya.png"
+    },
+    {
+      "id": "686",
+      "name": "Kiribati",
+      "displayText": "+686",
+      "locale": "en",
+      "flag": "261-kiribati.png"
+    },
+    {
+      "id": "383",
+      "name": "Kosovo",
+      "displayText": "+383",
+      "locale": "en",
+      "flag": "052-kosovo.png"
+    },
+    {
+      "id": "996",
+      "name": "Kyrgyzstan",
+      "displayText": "+996",
+      "locale": "en",
+      "flag": "152-kyrgyzstan.png"
+    },
+    {
+      "id": "856",
+      "name": "Laos",
+      "displayText": "+856",
+      "locale": "en",
+      "flag": "112-laos.png"
+    },
+    {
+      "id": "371",
+      "name": "Latvia",
+      "displayText": "+371",
+      "locale": "en",
+      "flag": "044-latvia.png"
+    },
+    {
+      "id": "961",
+      "name": "Lebanon",
+      "displayText": "+961",
+      "locale": "en",
+      "flag": "018-lebanon.png"
+    },
+    {
+      "id": "266",
+      "name": "Lesotho",
+      "displayText": "+266",
+      "locale": "en",
+      "flag": "176-lesotho.png"
+    },
+    {
+      "id": "231",
+      "name": "Liberia",
+      "displayText": "+231",
+      "locale": "en",
+      "flag": "169-liberia.png"
+    },
+    {
+      "id": "218",
+      "name": "Libya",
+      "displayText": "+218",
+      "locale": "en",
+      "flag": "231-libya.png"
+    },
+    {
+      "id": "423",
+      "name": "Liechtenstein",
+      "displayText": "+423",
+      "locale": "en",
+      "flag": "134-liechtenstein.png"
+    },
+    {
+      "id": "370",
+      "name": "Lithuania",
+      "displayText": "+370",
+      "locale": "en",
+      "flag": "064-lithuania.png"
+    },
+    {
+      "id": "352",
+      "name": "Luxembourg",
+      "displayText": "+352",
+      "locale": "en",
+      "flag": "035-luxembourg.png"
+    },
+    {
+      "id": "389",
+      "name": "Macedonia",
+      "displayText": "+389",
+      "locale": "en",
+      "flag": "236-republic-of-macedonia.png"
+    },
+    {
+      "id": "261",
+      "name": "Madagascar",
+      "displayText": "+261",
+      "locale": "en",
+      "flag": "242-madagascar.png"
+    },
+    {
+      "id": "265",
+      "name": "Malawi",
+      "displayText": "+265",
+      "locale": "en",
+      "flag": "214-malawi.png"
+    },
+    {
+      "id": "60",
+      "name": "Malaysia",
+      "displayText": "+60",
+      "locale": "en",
+      "flag": "118-malasya.png"
+    },
+    {
+      "id": "960",
+      "name": "Maldives",
+      "displayText": "+960",
+      "locale": "en",
+      "flag": "225-maldives.png"
+    },
+    {
+      "id": "223",
+      "name": "Mali",
+      "displayText": "+223",
+      "locale": "en",
+      "flag": "173-mali.png"
+    },
+    {
+      "id": "356",
+      "name": "Malta",
+      "displayText": "+356",
+      "locale": "en",
+      "flag": "194-malta.png"
+    },
+    {
+      "id": "692",
+      "name": "Marshall Islands",
+      "displayText": "+692",
+      "locale": "en",
+      "flag": "103-marshall-island.png"
+    },
+    {
+      "id": "222",
+      "name": "Mauritania",
+      "displayText": "+222",
+      "locale": "en",
+      "flag": "050-mauritania.png"
+    },
+    {
+      "id": "230",
+      "name": "Mauritius",
+      "displayText": "+230",
+      "locale": "en",
+      "flag": "001-mauritius.png"
+    },
+    {
+      "id": "52",
+      "name": "Mexico",
+      "displayText": "+52",
+      "locale": "en",
+      "flag": "252-mexico.png"
+    },
+    {
+      "id": "691",
+      "name": "Micronesia",
+      "displayText": "+691",
+      "locale": "en",
+      "flag": "046-micronesia.png"
+    },
+    {
+      "id": "373",
+      "name": "Moldova",
+      "displayText": "+373",
+      "locale": "en",
+      "flag": "212-moldova.png"
+    },
+    {
+      "id": "377",
+      "name": "Monaco",
+      "displayText": "+377",
+      "locale": "en",
+      "flag": "039-monaco.png"
+    },
+    {
+      "id": "976",
+      "name": "Mongolia",
+      "displayText": "+976",
+      "locale": "en",
+      "flag": "258-mongolia.png"
+    },
+    {
+      "id": "382",
+      "name": "Montenegro",
+      "displayText": "+382",
+      "locale": "en",
+      "flag": "239-montenegro.png"
+    },
+    {
+      "id": "664",
+      "name": "Montserrat",
+      "displayText": "+664",
+      "locale": "en",
+      "flag": "043-montserrat.png"
+    },
+    {
+      "id": "212",
+      "name": "Morocco",
+      "displayText": "+212",
+      "locale": "en",
+      "flag": "166-morocco.png"
+    },
+    {
+      "id": "258",
+      "name": "Mozambique",
+      "displayText": "+258",
+      "locale": "en",
+      "flag": "096-mozambique.png"
+    },
+    {
+      "id": "95",
+      "name": "Myanmar",
+      "displayText": "+95",
+      "locale": "en",
+      "flag": "058-myanmar.png"
+    },
+    {
+      "id": "264",
+      "name": "Namibia",
+      "displayText": "+264",
+      "locale": "en",
+      "flag": "062-namibia.png"
+    },
+    {
+      "id": "674",
+      "name": "Nauru",
+      "displayText": "+674",
+      "locale": "en",
+      "flag": "228-nauru.png"
+    },
+    {
+      "id": "977",
+      "name": "Nepal",
+      "displayText": "+977",
+      "locale": "en",
+      "flag": "016-nepal.png"
+    },
+    {
+      "id": "31",
+      "name": "Netherlands",
+      "displayText": "+31",
+      "locale": "en",
+      "flag": "237-netherlands.png"
+    },
+    {
+      "id": "599",
+      "name": "Netherlands Antilles",
+      "displayText": "+599",
+      "locale": "en",
+      "flag": "237-netherlands.png"
+    },
+    {
+      "id": "64",
+      "name": "New Zealand",
+      "displayText": "+64",
+      "locale": "en",
+      "flag": "121-new-zealand.png"
+    },
+    {
+      "id": "505",
+      "name": "Nicaragua",
+      "displayText": "+505",
+      "locale": "en",
+      "flag": "007-nicaragua.png"
+    },
+    {
+      "id": "227",
+      "name": "Niger",
+      "displayText": "+227",
+      "locale": "en",
+      "flag": "222-niger.png"
+    },
+    {
+      "id": "234",
+      "name": "Nigeria",
+      "displayText": "+234",
+      "locale": "en",
+      "flag": "086-nigeria.png"
+    },
+    {
+      "id": "683",
+      "name": "Niue",
+      "displayText": "+683",
+      "locale": "en",
+      "flag": "182-niue.png"
+    },
+    {
+      "id": "850",
+      "name": "North Korea",
+      "displayText": "+850",
+      "locale": "en",
+      "flag": "030-north-korea.png"
+    },
+    {
+      "id": "670",
+      "name": "Northern Mariana Islands",
+      "displayText": "+670",
+      "locale": "en",
+      "flag": "160-northern-marianas-islands.png"
+    },
+    {
+      "id": "47",
+      "name": "Norway",
+      "displayText": "+47",
+      "locale": "en",
+      "flag": "143-norway.png"
+    },
+    {
+      "id": "968",
+      "name": "Oman",
+      "displayText": "+968",
+      "locale": "en",
+      "flag": "004-oman.png"
+    },
+    {
+      "id": "92",
+      "name": "Pakistan",
+      "displayText": "+92",
+      "locale": "en",
+      "flag": "100-pakistan.png"
+    },
+    {
+      "id": "680",
+      "name": "Palau",
+      "displayText": "+680",
+      "locale": "en",
+      "flag": "178-palau.png"
+    },
+    {
+      "id": "970",
+      "name": "Palestine",
+      "displayText": "+970",
+      "locale": "en",
+      "flag": "208-palestine.png"
+    },
+    {
+      "id": "507",
+      "name": "Panama",
+      "displayText": "+507",
+      "locale": "en",
+      "flag": "106-panama.png"
+    },
+    {
+      "id": "675",
+      "name": "Papua New Guinea",
+      "displayText": "+675",
+      "locale": "en",
+      "flag": "163-papua-new-guinea.png"
+    },
+    {
+      "id": "595",
+      "name": "Paraguay",
+      "displayText": "+595",
+      "locale": "en",
+      "flag": "041-paraguay.png"
+    },
+    {
+      "id": "51",
+      "name": "Peru",
+      "displayText": "+51",
+      "locale": "en",
+      "flag": "188-peru.png"
+    },
+    {
+      "id": "63",
+      "name": "Philippines",
+      "displayText": "+63",
+      "locale": "en",
+      "flag": "192-philippines.png"
+    },
+    {
+      "id": "48",
+      "name": "Poland",
+      "displayText": "+48",
+      "locale": "en",
+      "flag": "211-poland.png"
+    },
+    {
+      "id": "351",
+      "name": "Portugal",
+      "displayText": "+351",
+      "locale": "en",
+      "flag": "224-portugal.png"
+    },
+    {
+      "id": "787",
+      "name": "Puerto Rico",
+      "displayText": "+787",
+      "locale": "en",
+      "flag": "028-puerto-rico.png"
+    },
+    {
+      "id": "974",
+      "name": "Qatar",
+      "displayText": "+974",
+      "locale": "en",
+      "flag": "026-qatar.png"
+    },
+    {
+      "id": "242 ",
+      "name": "Republic of the Congo",
+      "displayText": "+242",
+      "locale": "en",
+      "flag": "157-republic-of-the-congo.png"
+    },
+    {
+      "id": "40",
+      "name": "Romania",
+      "displayText": "+40",
+      "locale": "en",
+      "flag": "109-romania.png"
+    },
+    {
+      "id": "7",
+      "name": "Russia",
+      "displayText": "+7",
+      "locale": "en",
+      "flag": "248-russia.png"
+    },
+    {
+      "id": "250",
+      "name": "Rwanda",
+      "displayText": "+250",
+      "locale": "en",
+      "flag": "206-rwanda.png"
+    },
+    {
+      "id": "869",
+      "name": "Saint Kitts and Nevis",
+      "displayText": "+869",
+      "locale": "en",
+      "flag": "033-saint-kitts-and-nevis.png"
+    },
+    {
+      "id": "685",
+      "name": "Samoa",
+      "displayText": "+685",
+      "locale": "en",
+      "flag": "251-samoa.png"
+    },
+    {
+      "id": "378",
+      "name": "San Marino",
+      "displayText": "+378",
+      "locale": "en",
+      "flag": "097-san-marino.png"
+    },
+    {
+      "id": "239",
+      "name": "Sao Tome and Principe",
+      "displayText": "+239",
+      "locale": "en",
+      "flag": "012-sao-tome-and-prince.png"
+    },
+
+    {
+      "id": "221",
+      "name": "Senegal",
+      "displayText": "+221",
+      "locale": "en",
+      "flag": "227-senegal.png"
+    },
+    {
+      "id": "381",
+      "name": "Serbia",
+      "displayText": "+381",
+      "locale": "en",
+      "flag": "071-serbia.png"
+    },
+    {
+      "id": "248",
+      "name": "Seychelles",
+      "displayText": "+248",
+      "locale": "en",
+      "flag": "253-seychelles.png"
+    },
+    {
+      "id": "232",
+      "name": "Sierra Leone",
+      "displayText": "+232",
+      "locale": "en",
+      "flag": "092-sierra-leone.png"
+    },
+    {
+      "id": "65",
+      "name": "Singapore",
+      "displayText": "+65",
+      "locale": "en",
+      "flag": "230-singapore.png"
+    },
+    {
+      "id": "721",
+      "name": "Sint Maarten",
+      "displayText": "+721",
+      "locale": "en",
+      "flag": "089-sint-maarten.png"
+    },
+    {
+      "id": "421",
+      "name": "Slovakia",
+      "displayText": "+421",
+      "locale": "en",
+      "flag": "091-slovakia.png"
+    },
+    {
+      "id": "386",
+      "name": "Slovenia",
+      "displayText": "+386",
+      "locale": "en",
+      "flag": "010-slovenia.png"
+    },
+    {
+      "id": "677",
+      "name": "Solomon Islands",
+      "displayText": "+677",
+      "locale": "en",
+      "flag": "085-solomon-islands.png"
+    },
+    {
+      "id": "252",
+      "name": "Somalia",
+      "displayText": "+252",
+      "locale": "en",
+      "flag": "083-somalia.png"
+    },
+    {
+      "id": "27",
+      "name": "South Africa",
+      "displayText": "+27",
+      "locale": "en",
+      "flag": "200-south-africa.png"
+    },
+    {
+      "id": "82",
+      "name": "South Korea",
+      "displayText": "+82",
+      "locale": "en",
+      "flag": "094-south-korea.png"
+    },
+    {
+      "id": "211",
+      "name": "South Sudan",
+      "displayText": "+211",
+      "locale": "en",
+      "flag": "244-south-sudan.png"
+    },
+    {
+      "id": "34",
+      "name": "Spain",
+      "displayText": "+34",
+      "locale": "en",
+      "flag": "128-spain.png"
+    },
+    {
+      "id": "94",
+      "name": "Sri Lanka",
+      "displayText": "+94",
+      "locale": "en",
+      "flag": "127-sri-lanka.png"
+    },
+    {
+      "id": "249",
+      "name": "Sudan",
+      "displayText": "+249",
+      "locale": "en",
+      "flag": "199-sudan.png"
+    },
+    {
+      "id": "597",
+      "name": "Suriname",
+      "displayText": "+597",
+      "locale": "en",
+      "flag": "076-suriname.png"
+    },
+    {
+      "id": "268",
+      "name": "Swaziland",
+      "displayText": "+268",
+      "locale": "en",
+      "flag": "154-swaziland.png"
+    },
+    {
+      "id": "46",
+      "name": "Sweden",
+      "displayText": "+46",
+      "locale": "en",
+      "flag": "184-sweden.png"
+    },
+    {
+      "id": "41",
+      "name": "Switzerland",
+      "displayText": "+41",
+      "locale": "en",
+      "flag": "205-switzerland.png"
+    },
+    {
+      "id": "963",
+      "name": "Syria",
+      "displayText": "+963",
+      "locale": "en",
+      "flag": "022-syria.png"
+    },
+    {
+      "id": "886",
+      "name": "Taiwan",
+      "displayText": "+886",
+      "locale": "en",
+      "flag": "202-taiwan.png"
+    },
+    {
+      "id": "992",
+      "name": "Tajikistan",
+      "displayText": "+992",
+      "locale": "en",
+      "flag": "196-tajikistan.png"
+    },
+    {
+      "id": "255",
+      "name": "Tanzania",
+      "displayText": "+255",
+      "locale": "en",
+      "flag": "006-tanzania.png"
+    },
+    {
+      "id": "66",
+      "name": "Thailand",
+      "displayText": "+66",
+      "locale": "en",
+      "flag": "238-thailand.png"
+    },
+    {
+      "id": "228",
+      "name": "Togo",
+      "displayText": "+228",
+      "locale": "en",
+      "flag": "073-togo.png"
+    },
+    {
+      "id": "690",
+      "name": "Tokelau",
+      "displayText": "+690",
+      "locale": "en",
+      "flag": "235-tokelau.png"
+    },
+    {
+      "id": "676",
+      "name": "Tonga",
+      "displayText": "+676",
+      "locale": "en",
+      "flag": "191-tonga.png"
+    },
+    {
+      "id": "868",
+      "name": "Trinidad and Tobago",
+      "displayText": "+868",
+      "locale": "en",
+      "flag": "181-trinidad-and-tobago.png"
+    },
+    {
+      "id": "216",
+      "name": "Tunisia",
+      "displayText": "+216",
+      "locale": "en",
+      "flag": "049-tunisia.png"
+    },
+    {
+      "id": "90",
+      "name": "Turkey",
+      "displayText": "+90",
+      "locale": "en",
+      "flag": "218-turkey.png"
+    },
+    {
+      "id": "993",
+      "name": "Turkmenistan",
+      "displayText": "+993",
+      "locale": "en",
+      "flag": "229-turkmenistan.png"
+    },
+    {
+      "id": "649",
+      "name": "Turks and Caicos Islands",
+      "displayText": "+649",
+      "locale": "en",
+      "flag": "223-turks-and-caicos.png"
+    },
+    {
+      "id": "688",
+      "name": "Tuvalu",
+      "displayText": "+688",
+      "locale": "en",
+      "flag": "221-tuvalu.png"
+    },
+    {
+      "id": "340",
+      "name": "U.S. Virgin Islands",
+      "displayText": "+340",
+      "locale": "en",
+      "flag": "217-virgin-islands.png"
+    },
+    {
+      "id": "256",
+      "name": "Uganda",
+      "displayText": "+256",
+      "locale": "en",
+      "flag": "009-uganda.png"
+    },
+    {
+      "id": "380",
+      "name": "Ukraine",
+      "displayText": "+380",
+      "locale": "en",
+      "flag": "145-ukraine.png"
+    },
+    {
+      "id": "971",
+      "name": "United Arab Emirates",
+      "displayText": "+971",
+      "locale": "en",
+      "flag": "151-united-arab-emirates.png"
+    },
+    {
+      "id": "44",
+      "name": "United Kingdom",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "260-united-kingdom.png"
+    },
+    {
+      "id": "1",
+      "name": "United States",
+      "displayText": "+1",
+      "locale": "en",
+      "flag": "226-united-states.png"
+    },
+    {
+      "id": "598",
+      "name": "Uruguay",
+      "displayText": "+598",
+      "locale": "en",
+      "flag": "088-uruguay.png"
+    },
+    {
+      "id": "998",
+      "name": "Uzbekistan",
+      "displayText": "+998",
+      "locale": "en",
+      "flag": "190-uzbekistn.png"
+    },
+    {
+      "id": "678",
+      "name": "Vanuatu",
+      "displayText": "+678",
+      "locale": "en",
+      "flag": "187-vanuatu.png"
+    },
+    {
+      "id": "379",
+      "name": "Vatican",
+      "displayText": "+379",
+      "locale": "en",
+      "flag": "124-vatican-city.png"
+    },
+    {
+      "id": "58",
+      "name": "Venezuela",
+      "displayText": "+58",
+      "locale": "en",
+      "flag": "139-venezuela.png"
+    },
+    {
+      "id": "84",
+      "name": "Vietnam",
+      "displayText": "+84",
+      "locale": "en",
+      "flag": "220-vietnam.png"
+    },
+    {
+      "id": "967",
+      "name": "Yemen",
+      "displayText": "+967",
+      "locale": "en",
+      "flag": "232-yemen.png"
+    },
+    {
+      "id": "260",
+      "name": "Zambia",
+      "displayText": "+260",
+      "locale": "en",
+      "flag": "032-zambia.png"
+    },
+    {
+      "id": "263",
+      "name": "Zimbabwe",
+      "displayText": "+263",
+      "locale": "en",
+      "flag": "011-zimbabwe.png"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Dhahran Aljanoub"
+    jcr:title.ar="ظهران الجنوب"
+    jcr:title.de="Dhahran Al Janub"
+    jcr:title.es="Dhahran Al Janub"
+    jcr:title.fr="Dhahran Al Janub"
+    jcr:title.ja="ダーラン・アルジャヌーブ"
+    jcr:title.ru="Дахран аль-Джаноуб"
+    jcr:title.zh="扎赫兰詹努"
+    sling:resourceType="cq/tagging/components/tag"
+    city="dhahran-aljanoub"/>

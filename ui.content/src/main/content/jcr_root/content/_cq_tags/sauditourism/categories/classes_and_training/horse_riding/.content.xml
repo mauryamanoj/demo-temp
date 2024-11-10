@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Horse riding"
+          jcr:title.ar="ركوب الخيل"
+          jcr:title.de="Reiten"
+          jcr:title.es="Equitación"
+          jcr:title.fr="Équitation"
+          jcr:title.ja="乗馬"
+          jcr:title.ru="Верховая езда"
+          jcr:title.zh="骑马"
+          sling:resourceType="cq/tagging/components/tag"/>

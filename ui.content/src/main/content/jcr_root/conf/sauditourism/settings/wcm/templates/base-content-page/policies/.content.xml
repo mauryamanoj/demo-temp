@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="wcm/foundation/components/responsivegrid/content-default"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <menu
+                cq:policy="sauditourism/components/content/menu/policy_1696353654060"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <responsivegrid
+                cq:policy="wcm/foundation/components/responsivegrid/content-default"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <sauditourism jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <content jcr:primaryType="nt:unstructured">
+                            <latest-stories
+                                    cq:policy="sauditourism/components/content/latest-stories/policy_1696402582833"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <menu
+                                cq:policy="sauditourism/components/content/menu/policy_1696353654060"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <guide-cards
+                                cq:policy="sauditourism/components/content/guide-cards/policy_1695223714794"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <destinations-guide-cards
+                                cq:policy="sauditourism/components/content/destinations-guide-cards/policy_1695223714800"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <promotional-section
+                                cq:policy="sauditourism/components/content/promotional-section/policy_1695224017073"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <banner-slider jcr:primaryType="nt:unstructured">
+                                <v1 jcr:primaryType="nt:unstructured">
+                                    <banner-slider
+                                        cq:policy="sauditourism/components/content/banner-slider/v1/banner-slider/policy_1696165140508"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                                </v1>
+                            </banner-slider>
+                            <page-banner
+                                    cq:policy="sauditourism/components/content/page-banner/policy_1696244643235"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <all-destinations
+                                cq:policy="sauditourism/components/content/all-destinations/policy_1696150900159"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <destinations-map
+                                cq:policy="sauditourism/components/content/destinations-map/policy_1696331226181"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <promotional-banner
+                                cq:policy="sauditourism/components/content/promotional-banner/policy_1696502574566"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <small-stories
+                                    cq:policy="sauditourism/components/content/small-stories/policy_1697706495593"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <keep-exploring-section
+                                    cq:policy="sauditourism/components/content/keep-exploring-section/policy_1697706589321"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <offers_deals
+                                cq:policy="sauditourism/components/content/offers_deals/policy_2588911491465"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <text-image
+                                    cq:policy="sauditourism/components/content/text-image/policy_1701280445434"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <breadcrumb
+                                    cq:policy="sauditourism/components/content/breadcrumb/policy_1702895362859"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </content>
+                    </components>
+                </sauditourism>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

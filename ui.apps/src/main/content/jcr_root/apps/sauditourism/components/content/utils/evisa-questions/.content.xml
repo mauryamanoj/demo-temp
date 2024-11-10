@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured">
+    <us-uk-schengen-visa
+        jcr:primaryType="nt:unstructured"
+        text="US_UK_SCHENGEN_VISA"
+        value="US_UK_SCHENGEN_VISA"/>
+    <gcc-residency
+        jcr:primaryType="nt:unstructured"
+        text="GCC_RESIDENCY"
+        value="GCC_RESIDENCY"/>
+    <other
+        jcr:primaryType="nt:unstructured"
+        text="OTHER"
+        value="OTHER"/>
+</jcr:root>

@@ -1,0 +1,72 @@
+<template data-sly-template.teaserWrapper="${@ partialBlock, datacomponent, textCardsModel,
+   isCarousel,winterCardModel}"
+   data-sly-use.bwithButtonTemplate="/apps/sauditourism/components/content/headers/header-01-main/variants/b-with-button.html"
+   data-sly-use.text_link_chevron="/apps/sauditourism/components/content/headers/header-01-main/variants/text-link-chevron.html"
+   data-sly-use.bigSliderTemplate="/apps/sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards/templates/big-slider.html"
+   data-sly-use.headerTemplateWithSlider="/apps/sauditourism/components/content/headers/header-01-main/header-01-main-with-slider.html"
+   data-sly-use.ornament01SheetsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-01-sheets.html">
+   <section data-component="${datacomponent}"
+      data-sly-attribute.data-editor="${wcmmode.edit ? 'true' : 'false'}"
+      class="section-margin-small background-${textCardsModel.background ?
+      textCardsModel.background : 'white'} ${textCardsModel.header.heading.text ? 'with-header' : ''}
+      ${textCardsModel.componentType == 'f-article-cards' ? ' variant-f-article-cards' : ''}" scroll-section id="${textCardsModel.componentId}" cards-length="${textCardsModel.cards.size}">
+       <sly data-sly-test="${textCardsModel.enableFullOrnament == 'true'}">
+           <div class="full-ornament-wrapper" data-sly-call="${ornament01SheetsTemplate.ornaments01Sheets @
+     patternOrientation='ltr', patternDefault=textCardsModel.backgroundOrnamentId, patterCustomBranding=textCardsModel.enableFullOrnament}"></div>
+       </sly>
+       <sly data-sly-test="${textCardsModel.componentType=='winter2021'}">
+         <sly data-sly-call="${text_link_chevron.textLinkChevron @ winterCardModel = winterCardModel, partialModel=textCardsModel,
+            header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline}"></sly>
+      </sly>
+      <sly data-sly-test="${textCardsModel.componentType=='where-to-stay'}">
+         <sly data-sly-call="${text_link_chevron.textLinkChevron @ winterCardModel = winterCardModel,partialModel=textCardsModel,
+            header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline}"></sly>
+      </sly>
+      <sly data-sly-test="${textCardsModel.componentType=='where-to-eat'}">
+         <sly data-sly-call="${text_link_chevron.textLinkChevron @ winterCardModel = winterCardModel,partialModel=textCardsModel,
+            header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline}"></sly>
+      </sly>
+      <sly data-sly-test="${textCardsModel.linkType && textCardsModel.linkType=='chevron'}">
+         <sly data-sly-call="${text_link_chevron.textLinkChevron @ winterCardModel = winterCardModel,partialModel=textCardsModel,
+            header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline}"></sly>
+      </sly>
+      <sly data-sly-test="${textCardsModel.header.showViewAllSlider && textCardsModel.cards.size <= 8}">
+    <sly data-sly-test="${textCardsModel.header.heading.text}"
+            data-sly-set.background="${textCardsModel.background == 'theme' ? 'theme' : 'solid'}"
+            data-sly-call="${bwithButtonTemplate.bwithButton @ partialModel=textCardsModel,
+            header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline,
+            background=background}"></sly>
+      </sly>
+            <sly data-sly-test="${textCardsModel.header.showViewAllSlider && !(textCardsModel.cards.size <= 8)}">
+         <sly data-sly-call="${text_link_chevron.textLinkChevron @ winterCardModel = winterCardModel,partialModel=textCardsModel,
+            header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline}"></sly>
+      </sly>
+      <sly data-sly-test="${textCardsModel.componentType!='winter2021' && textCardsModel.componentType!='where-to-stay' && textCardsModel.componentType!='where-to-eat' && !textCardsModel.linkType && !textCardsModel.header.showViewAllSlider}">
+         <sly data-sly-test.notImageBackground="${textCardsModel.background != 'image'}">
+              <sly data-sly-test="${textCardsModel.header.heading.text}"
+                data-sly-set.background="${textCardsModel.background == 'theme' ? 'theme' : 'solid'}"
+                data-sly-call="${bwithButtonTemplate.bwithButton @ partialModel=textCardsModel,
+                header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline,
+                background=background}"></sly>
+         </sly>
+          <sly data-sly-test="${!notImageBackground}">
+              <span class="full-ornament-header">
+                <sly data-sly-test="${textCardsModel.header.heading.text}"
+                 data-sly-set.background="${textCardsModel.background}"
+                 data-sly-call="${bwithButtonTemplate.bwithButton @ partialModel=textCardsModel,
+                 header=textCardsModel.header, hideUnderline=!textCardsModel.header.showUnderline,
+                 background=background}"></sly>
+              </span>
+          </sly>
+      </sly>
+      <div class="${textCardsModel.componentType=='a-general-cards' ||
+         textCardsModel.componentType=='b-text-cards' ? 'general-card-wrapper' : 'component-wrapper'}"
+         data-sly-attribute.data-carousel="${isCarousel}"
+         data-sly-attribute.data-cmp-is="${isCarousel ? 'carousel' : ''}">
+         <sly data-sly-call="${partialBlock @ textCardsModel=textCardsModel, winterCardModel=winterCardModel}"></sly>
+      </div>
+   </section>
+	<sly data-sly-test="${textCardsModel.componentType=='top-attractions'}">
+		<sly data-sly-call="${bigSliderTemplate.sliderTemplate @ textCardsModel=textCardsModel, winterCardModel=winterCardModel}"></sly>
+    </sly>
+</template>

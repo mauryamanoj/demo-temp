@@ -1,0 +1,28 @@
+<sly
+    data-sly-template.link="${@ linkClass, buttonType, dataTransition, dataLocation, linkObj,
+    copy, link, linkTitle, slidetitle, copyAnalytics, analyticsTitle}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+     data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js' @
+         attributes=[dataTransition]}">
+  <a href="${link || linkObj.urlWithExtension || linkObj.url @ context='uri'}"
+     title="${linkObj.title || linkTitle}"
+     class="hero-button-${buttonType} ${linkClass}"
+     data-sly-attribute="${attributesHelper.attributes}"
+     data-sly-attribute.data-location="${dataLocation}" data-component="main-hero-button"
+	 data-track-name="${linkObj.analyticsDataCopy || copyAnalytics @ i18n}"
+	data-track-section="${analyticsTitle @ context='text'}"
+	data-track-product="summer campaign;saudi summervibes"
+	data-track-eventName="${linkObj.analyticsDataCopy || copyAnalytics @ i18n}">
+    <span class="button-inner-wrapper">
+        <span class="icon-wrapper" data-sly-test="${buttonType == 'play'}">
+          <sly data-sly-call="${iconTemplate.icon @ iconName='play'}"></sly>
+        </span>
+      <span class="link-copy cta-text">${linkObj.copy || copy @ i18n}</span>
+        <span class="icon-wrapper" data-sly-test="${buttonType == 'link'}">
+          <sly
+              data-sly-call="${iconTemplate.icon @ iconName='arrow-right-small', iconClass='chevron'}"></sly>
+        </span>
+    </span>
+  </a>
+
+</sly>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Najran Region"
+    jcr:title.ar="منطقة نجران"
+    jcr:title.de="Provinz Nadschran"
+    jcr:title.es="Provincia de Najrán"
+    jcr:title.fr="Province de Najran"
+    jcr:title.ja="ナジュラーン州"
+    jcr:title.ru="Провинция Наджран"
+    jcr:title.zh="奈季兰地区"
+    sling:resourceType="cq/tagging/components/tag"
+    city="najran-region"/>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Urban"
+          jcr:title.ar="أنشطة المدينة"
+          jcr:title.fr="Ville"
+          jcr:title.es="Entorno urbano"
+          jcr:title.ru="Город"
+          jcr:title.de="Urban"
+          jcr:title.zh="城市"
+          jcr:title.ja="都市"
+          sling:resourceType="cq/tagging/components/tag"/>

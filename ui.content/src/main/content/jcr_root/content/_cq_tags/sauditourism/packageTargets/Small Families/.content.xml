@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Small Families"
+          jcr:title.ar="عائلة صغيرة"
+          jcr:title.fr="Familles de petite taille"
+          jcr:title.es="Familias pequeñas"
+          jcr:title.ru="Небольшие семьи"
+          jcr:title.de="Kleine Familien"
+          jcr:title.zh="小家庭"
+          jcr:title.ja="小家族"
+          sling:resourceType="cq/tagging/components/tag"/>

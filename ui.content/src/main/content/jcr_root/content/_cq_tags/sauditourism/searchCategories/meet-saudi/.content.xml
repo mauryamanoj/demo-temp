@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Meet Saudi"
+          jcr:title.ar="تعرف على المملكة العربية السعودية"
+          jcr:title.fr="Découvrir l'Arabie saoudite"
+          jcr:title.es="Comprender Arabia Saudí"
+          jcr:title.ru="Откройте для себя Саудовскую Аравию"
+          jcr:title.de="Entdecken Sie Saudi-Arabien"
+          jcr:title.zh="了解沙特阿拉伯"
+          jcr:title.ja="サウジアラビアを知る"
+          sling:resourceType="cq/tagging/components/tag"/>

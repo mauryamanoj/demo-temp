@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:mixinTypes="[rep:AccessControllable]"
+          jcr:primaryType="nt:unstructured">
+  <webformsQueryIndex
+      jcr:primaryType="oak:QueryIndexDefinition"
+      async="async"
+      compatVersion="{Long}2"
+      evaluatePathRestrictions="{Boolean}true"
+      includePropertyTypes="String"
+      reindex="{Boolean}false"
+      type="lucene">
+    <indexRules jcr:primaryType="nt:unstructured">
+      <nt:base jcr:primaryType="nt:unstructured"
+               includePropertyTypes="all">
+        <properties jcr:primaryType="nt:unstructured">
+          <slingResType jcr:primaryType="nt:unstructured"
+                        name="sling:resourceType"
+                        propertyIndex="{Boolean}true"/>
+        </properties>
+      </nt:base>
+    </indexRules>
+  </webformsQueryIndex>
+</jcr:root>

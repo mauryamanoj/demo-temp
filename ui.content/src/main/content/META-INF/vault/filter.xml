@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/home/groups/sauditourism" mode="merge"/>
+    <filter root="/home/users/system/readservice" mode="merge"/>
+    <filter root="/home/users/system/sitemapUser" mode="merge"/>
+    <filter root="/home/users/system/writeservice" mode="merge"/>
+    <filter root="/apps/cq/core"  mode="merge"/>
+    <filter root="/apps/granite/ui/content"  mode="merge"/>
+    <filter
+        root="/apps/system/config/com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory.config"  mode="replace"/>
+    <filter root="/apps/msm"  mode="merge"/>
+    <filter root="/apps/msm/saudi-tourism/blueprint-configs/saudi-tourism-content-blueprint"  mode="merge"/>
+    <filter root="/apps/msm/saudi-tourism/blueprint-configs/saudi-tourism-app-blueprint"
+            mode="merge"/>
+    <filter root="/oak:index/sauditourism" mode="replace"/>
+    <filter root="/content/campaigns/saudi-tourism" mode="update"/>
+    <filter root="/content/dam/static-images" mode="update"/>
+    <filter root="/content/dam/sauditourism/favicon.png" mode="update"/>
+    <filter root="/content/dam/sauditourism/placeholder.jpg" mode="update"/>
+    <filter root="/conf/sauditourism" mode="replace"/>
+    <filter root="/content/sauditourism/languages" mode="merge"/>
+
+    <filter root="/content/dam/sauditourism" mode="merge"/>
+
+
+    <filter root="/content/cq:tags/sauditourism/searchCategories" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/userFeedbackCategories" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/tabCategories" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/packageCategories" mode="replace"/>
+    <filter root="/content/cq:tags/sauditourism/packageTargets" mode="replace"/>
+    <filter root="/content/cq:tags/sauditourism/packageDuration" mode="replace"/>
+    <filter root="/content/cq:tags/sauditourism/events" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/story" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/attraction" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/accessibility" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/type" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/categories" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/city" mode="merge"/>
+    <filter root="/content/cq:tags/sauditourism/article" mode="merge"/>
+    <filter root="/content/cq:tags" mode="update">
+        <exclude pattern="/content/cq:tags(/.*)"/>
+    </filter>
+    <filter root="/content/cq:tags/sauditourism" mode="merge"/>
+    <filter root="/conf/global/settings/workflow/models/trip_package_approval" mode="replace"/>
+    <filter root="/conf/global/settings/workflow/models/event_approval" mode="replace"/>
+    <filter root="/conf/global/settings/inbox" mode="replace"/>
+    <filter root="/var/workflow/models/trip_package_approval" mode="replace"/>
+    <filter root="/var/workflow/models/event_approval" mode="replace"/>
+    <filter root="/var/groovyconsole/scripts/sauditourism" />
+    <!-- This will package the whole directly in snapshot, un comment when needed-->
+    <filter root="/conf/sauditourism/settings/dam/cfm/models" mode="update"/>
+    <filter root="/content/sauditourism/app1/en/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/ar/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/fr/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/es/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/de/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/ru/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/ja/i18n" mode="merge"/>
+    <filter root="/content/sauditourism/app1/zh/i18n" mode="merge"/>
+    <filter root="/content/cq:graphql" mode="replace"/>
+</workspaceFilter>

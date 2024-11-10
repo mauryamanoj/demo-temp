@@ -1,0 +1,128 @@
+{
+  "jcr:primaryType":"cq:PageContent",
+  "jcr:mixinTypes":[
+    "mix:versionable"
+  ],
+  "startTime":"Sun Jun 26 2022 18:00:00 GMT+0300",
+  "priceText":"Price",
+  "getDirectionCtaLink":"https://www.google.com/maps/place/Jabal+AlFil+(Elephant+Rock)+%D8%AC%D8%A8%D9%84+%D8%A7%D9%84%D9%81%D9%8A%D9%84%E2%80%AD/@26.6913991,37.977565,14z/data=!4m5!3m4!1s0x0:0x295d71dd0d147d21!8m2!3d26.6893459!4d37.9816139",
+  "getDirectionCtaText":"Get Direction",
+  "jcr:createdBy":"admin",
+  "averageTime":"2",
+  "jcr:title":"Elephant Rock Visit",
+  "durationText":"Date",
+  "headingLocationDetailType":"h1",
+  "showOnMap":"true",
+  "locationLabel":"I am a label, edit me",
+  "locationTitle":"Location Information",
+  "description":"I am a description, edit me",
+  "suitableForText":"Audience",
+  "cq:lastReplicationAction":"Activate",
+  "endTime":"Sun Jun 26 2022 02:00:00 GMT+0300",
+  "noCacheHeaderCdn":"false",
+  "jcr:versionHistory":"0247edb1-131c-4885-a6e3-ae012a18ac84",
+  "freePaid":"free",
+  "noCacheHeaderDispatcher":"false",
+  "isHalaYallaLink":"false",
+  "latitude":"26.6913991",
+  "readLessButton":"Read Less",
+  "externalLink":"#",
+  "addressInfo":"Jabal AlFil ",
+  "cq:template":"/conf/sauditourism/settings/wcm/templates/event-details",
+  "showHoursTitle":"I am a show hours title, edit me",
+  "addressDetail":"I am an address detail, edit me",
+  "address":"I am an address, edit me",
+  "roundTheClock":"false",
+  "templateType":"new",
+  "season":"alula-season",
+  "eventLink-url":"https://www.experiencealula.com/en/discover-alula/nature-outdoors/jabal-alfil",
+  "eventLink-copy":"Buy Tickets",
+  "calendarEndDate":"Thu Sep 15 2022 00:00:00 GMT+0300",
+  "jcr:predecessors":[
+    "94d507ce-6d58-4435-8fae-4b9ccaec631f"
+  ],
+  "jcr:created":"Thu Aug 04 2022 15:56:19 GMT+0200",
+  "featured":"false",
+  "cq:lastReplicated":"Thu Aug 25 2022 08:23:25 GMT+0000",
+  "cq:lastModified":"Thu Aug 25 2022 08:22:37 GMT+0000",
+  "eventLink-targetInNewWindow":"true",
+  "locationName":"Jabal AlFil ",
+  "city":"alula",
+  "copy":"<p>Set in golden desert sands and climbing three stories into the Saudi Arabian sky, is the awe-inspiring elephant rock (also known as jabal alfil), one of alula’s many geological marvels.</p>\r\n<p>Open 24 hours Seating Area and Service Daily: Weekdays: 6:00 PM - 1:00 AM Weekends: 6:00 PM - 2:00 AM</p>\r\n",
+  "noSeasonTitle":" ",
+  "s7featureEventImage":"https://scth.scene7.com/is/image/scth/Elephant Rock Visit",
+  "image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+  "phone":"I am a phone number, edit me",
+  "theme":"orange",
+  "title":"Elephant Rock Visit",
+  "longitude":"37.977565",
+  "locationInDetailLabel":"I am a location label, edit me",
+  "headingType":"h1",
+  "categoryTags":[
+    "sauditourism:events/themed-attractions"
+  ],
+  "locationDistance":"1",
+  "readMoreButton":"Read More",
+  "jcr:baseVersion":"94d507ce-6d58-4435-8fae-4b9ccaec631f",
+  "jcr:isCheckedOut":true,
+  "targetGroupTags":[
+    "sauditourism:audience/all"
+  ],
+  "pageAuthor":"contentAuthors",
+  "imageListing":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+  "mapType":"google",
+  "eventIntro":"I am an intro, edit me",
+  "eventTitle":"I am a title edit me",
+  "jcr:uuid":"fa42ef24-6219-45c6-ab81-a4022390d26c",
+  "ctaText":"CTA, edit me",
+  "activitiesText":"Category",
+  "addToCalendarText":"Add to Calendar",
+  "sling:resourceType":"sauditourism/components/structure/event-detail-page",
+  "headingshowHoursType":"h1",
+  "calendarStartDate":"Wed Jun 15 2022 00:00:00 GMT+0300",
+  "workingTimeText":"Working Hours",
+  "textIsRich":"true",
+  "hideInSiteMap":"false",
+  "featureEventImage":"/content/dam/saudi-tourism/media/events-/Elephant Rock Visit.jpg",
+  "searchHighlight":"false",
+  "disableSecondaryNav":true,
+  "location":"I am a location, edit me",
+  "imageMobile":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+  "activities":[
+    "sauditourism:events/themed-attractions"
+  ],
+  "root":{
+    "jcr:primaryType":"nt:unstructured",
+    "sling:resourceType":"wcm/foundation/components/responsivegrid",
+    "header-block":{
+      "jcr:primaryType":"nt:unstructured",
+      "ctaTitle":"I am a title, edit me",
+      "title":"I am a title, edit me",
+      "ctaLink":"#",
+      "ctaText":"CTA, edit me",
+      "sling:resourceType":"sauditourism/components/content/headerblock",
+      "backTitle":"I am a title, edit me",
+      "backLink":"#",
+      "backText":"CTA, edit me",
+      "small":{
+        "jcr:primaryType":"nt:unstructured",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+      },
+      "medium":{
+        "jcr:primaryType":"nt:unstructured",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+      },
+      "large":{
+        "jcr:primaryType":"nt:unstructured",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+      }
+    },
+    "responsivegrid":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid"
+    }
+  }
+}

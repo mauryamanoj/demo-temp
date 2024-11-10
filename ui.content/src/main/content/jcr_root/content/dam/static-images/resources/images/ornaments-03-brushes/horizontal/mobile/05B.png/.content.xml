@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="f7c8bf6d-b606-4d9a-91b2-82b1263276e0">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2022-11-22T15:48:55.150+04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}32"
+            dam:Comments="XML:com.adobe.xmp: &lt;?xpacket begin=&quot;﻿&quot; id=&quot;W5M0MpCehiHzreSzNTczkc9d&quot;?> &lt;x:xmpmeta xmlns:x=&quot;adobe:ns:meta/&quot; x:xmptk=&quot;Adobe XMP Core 6.0-c005 79.164590, 2020/12/09-11:57:44        &quot;> &lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;> &lt;rdf:Description rdf:about=&quot;&quot; xmlns:xmp=&quot;http://ns.adobe.com/xap/1.0/&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; xmlns:photoshop=&quot;http://ns.adobe.com/photoshop/1.0/&quot; xmlns:xmpMM=&quot;http://ns.adobe.com/xap/1.0/mm/&quot; xmlns:stEvt=&quot;http://ns.adobe.com/xap/1.0/sType/ResourceEvent#&quot; xmp:CreatorTool=&quot;Adobe Photoshop 22.1 (Macintosh)&quot; xmp:CreateDate=&quot;2021-02-02T17:23:15-03:00&quot; xmp:ModifyDate=&quot;2021-02-02T17:23:57-03:00&quot; xmp:MetadataDate=&quot;2021-02-02T17:23:57-03:00&quot; dc:format=&quot;image/png&quot; photoshop:ColorMode=&quot;3&quot; photoshop:ICCProfile=&quot;sRGB IEC61966-2.1&quot; xmpMM:InstanceID=&quot;xmp.iid:09d831e7-7398-4805-ae75-71f57d8b255c&quot; xmpMM:DocumentID=&quot;xmp.did:09d831e7-7398-4805-ae75-71f57d8b255c&quot; xmpMM:OriginalDocumentID=&quot;xmp.did:09d831e7-7398-4805-ae75-71f57d8b255c&quot;> &lt;xmpMM:History> &lt;rdf:Seq> &lt;rdf:li stEvt:action=&quot;created&quot; stEvt:instanceID=&quot;xmp.iid:09d831e7-7398-4805-ae75-71f57d8b255c&quot; stEvt:when=&quot;2021-02-02T17:23:15-03:00&quot; stEvt:softwareAgent=&quot;Adobe Photoshop 22.1 (Macintosh)&quot;/> &lt;/rdf:Seq> &lt;/xmpMM:History> &lt;/rdf:Description> &lt;/rdf:RDF> &lt;/x:xmpmeta> &lt;?xpacket end=&quot;r&quot;?>&#xa;"
+            dam:extracted="{Date}2022-11-22T15:48:53.605+04:00"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}1"
+            dam:Physicalheightindpi="{Long}72"
+            dam:Physicalheightininches="{Decimal}0.27774307131767273"
+            dam:Physicalwidthindpi="{Long}72"
+            dam:Physicalwidthininches="{Decimal}5.2076826095581055"
+            dam:Progressive="no"
+            dam:sha1="9cb7d512e7ba345bdfb852fe4777c07872a6324d"
+            dam:size="{Long}4993"
+            dc:format="image/png"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            photoshop:ColorMode="{Long}3"
+            photoshop:ICCProfile="sRGB IEC61966-2.1"
+            tiff:ImageLength="{Long}20"
+            tiff:ImageWidth="{Long}375"
+            xmp:CreateDate="{Date}2021-02-02T17:23:15.000-03:00"
+            xmp:CreatorTool="Adobe Photoshop 22.1 (Macintosh)"
+            xmp:MetadataDate="{Date}2021-02-02T17:23:57.000-03:00"
+            xmp:ModifyDate="{Date}2021-02-02T17:23:57.000-03:00"
+            xmpMM:DocumentID="xmp.did:09d831e7-7398-4805-ae75-71f57d8b255c"
+            xmpMM:InstanceID="xmp.iid:09d831e7-7398-4805-ae75-71f57d8b255c"
+            xmpMM:OriginalDocumentID="xmp.did:09d831e7-7398-4805-ae75-71f57d8b255c">
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}1"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="created"
+                    stEvt:instanceID="xmp.iid:09d831e7-7398-4805-ae75-71f57d8b255c"
+                    stEvt:softwareAgent="Adobe Photoshop 22.1 (Macintosh)"
+                    stEvt:when="{Date}2021-02-02T17:23:15.000-03:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

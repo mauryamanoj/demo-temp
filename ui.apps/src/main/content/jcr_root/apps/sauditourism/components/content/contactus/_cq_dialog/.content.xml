@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Contact Us"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+<content
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/coral/foundation/tabs">
+    <items jcr:primaryType="nt:unstructured">
+        <contactUsConfig
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Contact Us Configuration"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <columns
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                    margin="{Boolean}true">
+                    <items jcr:primaryType="nt:unstructured">
+                        <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                            <items
+                                jcr:primaryType="nt:unstructured">
+                                <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Title"
+                                    name="./title"/>
+                                <description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Description"
+                                    name="./description"/>
+                                <firstNameText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="First Name Text"
+                                    name="./firstNameText"
+                                    required="{Boolean}True"/>
+                                <firstNamePlaceholderText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="First Name Placeholder Text"
+                                    name="./firstNamePlaceholderText"/>
+                                <firstNameErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if field is blank"
+                                    fieldLabel="First Name Error Text"
+                                    name="./firstNameErrorText"/>
+                                <firstNameValidationErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if text is numeric or alpha numeric"
+                                    fieldLabel="First Name Validation Error Text"
+                                    name="./firstNameValidationErrorText"/>
+                                <lastNameText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Last Name Text"
+                                    name="./lastNameText"
+                                    required="{Boolean}True"/>
+                                <lastNamePlaceholderText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Last Name Placeholder Text"
+                                    name="./lastNamePlaceholderText"/>
+                                <lastNameErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if field is blank"
+                                    fieldLabel="Last Name Error Text"
+                                    name="./lastNameErrorText"/>
+                                <lastNameValidationErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if text is numeric or alpha numeric"
+                                    fieldLabel="Last Name Validation Error Text"
+                                    name="./lastNameValidationErrorText"/>
+                                <emailAddressText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Email Address Text"
+                                    name="./emailAddressText"
+                                    required="{Boolean}True"/>
+                                <emailAddressPlaceholderText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Email Address Placeholder Text"
+                                    name="./emailAddressPlaceholderText"/>
+                                <emailAddressErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if field is blank"
+                                    fieldLabel="Email Address Error Text"
+                                    name="./emailAddressErrorText"/>
+                                <emailValidationErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if entered email is not correct"
+                                    fieldLabel="Email Validation Error Text"
+                                    name="./emailValidationErrorText"/>
+                                <phoneNumberText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Phone Number Text"
+                                    name="./phoneNumberText"
+                                    required="{Boolean}True"/>
+                                <phoneNumberPlaceholderText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Phone Number Placeholder Text"
+                                    name="./phoneNumberPlaceholderText"/>
+                                <phoneNumberErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if field is blank"
+                                    fieldLabel="Phone Number Error Text"
+                                    name="./phoneNumberErrorText"/>
+                                <phoneValidationErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Error text will display if entered number is not correct"
+                                    fieldLabel="Phone Validation Error Text"
+                                    name="./phoneValidationErrorText"/>
+                                <messageTypeText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Message Type Text"
+                                    name="./messageTypeText"
+                                    required="{Boolean}True"/>
+                                <messageText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Message Text"
+                                    name="./messageText"
+                                    required="{Boolean}True"/>
+                                <messagePlaceholderText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Message Placeholder Text"
+                                    name="./messagePlaceholderText"
+                                    required="{Boolean}True"/>
+                                <messageErrorText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Message Error Text"
+                                    name="./messageErrorText"/>
+                                <ctaButtonText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="CTA Button Text"
+                                    name="./ctaButtonText"/>
+                                <messageSuccessText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Message Success Text"
+                                    name="./messageSuccessText"/>
+                                <messageFailureText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Message Failure Text"
+                                    name="./messageFailureText"/>
+                                <componentHtmlId
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="HTML id attribute value. Can be used to target content for Anchor Bar component"
+                                    fieldLabel="HTML ID"
+                                    name="./componentHtmlId"
+                                    required="{Boolean}false"/>
+                                <flagsPath
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Flags path"
+                                    name="./flagsPath"
+                                    value="/content/dam/saudi-tourism/media/flags"/>
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                    allowUpload="{Boolean}false"
+                                    required="{Boolean}True"
+                                    autoStart="{Boolean}false"
+                                    granite:class="cq-droptarget s7-image-listener"
+                                    fieldLabel="Desktop image"
+                                    fileNameParameter="./image/fileName"
+                                    fileReferenceParameter="./image/fileReference"
+                                    fieldDescription="Image size: 360 x 480. Select an image to be used for desktop view"
+                                    mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                    multiple="{Boolean}false"
+                                    name="./image/fileName"
+                                    title="Upload Desktop Image Asset"
+                                    uploadUrl="${suffix.path}"
+                                    useHTML5="{Boolean}true"/>
+                                <s7fileReference
+                                    granite:class="s7-fileReference"
+                                    jcr:primaryType="nt:unstructured"
+                                    granite:id="s7-fileReference"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                    name="./image/s7fileReference"/>
+                                <transparency
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    fieldDescription="Enable Image transparency"
+                                    fieldLabel="Enable Image transparency"
+                                    name="./image/isTransparent"
+                                    text="Enable Image transparency"
+                                    uncheckedValue="false"
+                                    value="true"/>
+                                </items>
+                        </column>
+                    </items>
+                </columns>
+            </items>
+        </contactUsConfig>
+    </items>
+</content>
+</jcr:root>
+
+
+

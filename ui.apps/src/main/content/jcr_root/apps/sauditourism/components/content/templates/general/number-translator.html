@@ -1,0 +1,13 @@
+<template data-sly-template.date="${@ input, separator}">
+  <sly data-sly-test.dateSeparator="${separator ? separator : '-'}"></sly>
+  <sly
+      data-sly-use.translator="${'com.saudi.tourism.core.models.common.NumberTranslationModel' @ input=input, type='date', separator=dateSeparator}">
+    ${translator.translatedNumber @ context='html'}
+  </sly>
+</template>
+<template data-sly-template.number="${@ input}">
+  <sly
+      data-sly-use.translator="${'com.saudi.tourism.core.models.common.NumberTranslationModel' @ input=input, type='number'}">
+    ${translator.translatedNumber @ context='html'}
+  </sly>
+</template>

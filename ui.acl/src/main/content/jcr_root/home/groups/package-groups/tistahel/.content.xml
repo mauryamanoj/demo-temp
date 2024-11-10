@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="bca4ccd0-81bd-3a1f-9bc7-58c7ca81d5bc"
+    rep:authorizableId="tistahel"
+    rep:principalName="tistahel"/>

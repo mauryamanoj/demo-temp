@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Traditional cuisine"
+    jcr:title.ar="المأكولات التقليدية"
+    jcr:title.de="Traditionelle Küche"
+    jcr:title.es="Cocina tradicional"
+    jcr:title.fr="Cuisine traditionnelle"
+    jcr:title.ja="伝統料理"
+    jcr:title.ru="Традиционная кухня"
+    jcr:title.zh="传统料理"
+    sling:resourceType="cq/tagging/components/tag"/>

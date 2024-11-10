@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Header Section"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <saudi-tourism-header-section
+                cq:showOnCreate="{Boolean}true"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Header Basic Config"
+                sling:orderBefore="thumbnail"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <section
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                title="Basic">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <manual-authoring
+                                        granite:class="js-dialog-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable Manual Authoring"
+                                        text="Enable Manual Authoring"
+                                        name="./enableManualAuthoring"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target=".manual-authoring-showhide-target"/>
+                                    </manual-authoring>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText=" title"
+                                        fieldDescription="Page  title"
+                                        fieldLabel=" Title"
+                                        name="./title"
+                                        required="{Boolean}false">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </title>
+                                    <subtitle
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="sub title"
+                                        fieldDescription="Page sub title"
+                                        fieldLabel="Sub Title"
+                                        name="./subtitle"
+                                        required="{Boolean}false">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </subtitle>
+                                    <author-avatar
+                                        granite:class="cq-droptarget s7-image-listener manual-authoring-showhide-target"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        autoStart="{Boolean}false"
+                                        fieldDescription="Image size: 1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+                                        fieldLabel="Author Image"
+                                        fileNameParameter="./author/image/fileName"
+                                        fileReferenceParameter="./author/image/fileReference"
+                                        mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                        multiple="{Boolean}false"
+                                        name="./author/image/fileName"
+                                        required="{Boolean}false"
+                                        title="Upload Author Image Asset"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </author-avatar>
+                                    <s7fileReference
+                                        granite:class="s7-fileReference"
+                                        granite:id="s7-fileReference"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                        name="./author/image/s7fileReference"/>
+                                    <author-alt-image
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter an ALT text for the image."
+                                        fieldLabel="Alt text of author image"
+                                        name="./author/image/alt">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </author-alt-image>
+                                    <author-text
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="author Text"
+                                        fieldDescription="Page sub title"
+                                        fieldLabel="Author Text"
+                                        name="./author/authorText"
+                                        required="{Boolean}false">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </author-text>
+                                    <author-url
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:class="manual-authoring-showhide-target"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Select the Author url for Page."
+                                        fieldLabel="Author Url"
+                                        name="./author/authorCtaLink"
+                                        rootPath="/content/sauditourism">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            showhide-target-value="true"/>
+                                    </author-url>
+                                </items>
+                            </section>
+                        </items>
+                    </column>
+                </items>
+            </saudi-tourism-header-section>
+        </items>
+    </content>
+</jcr:root>

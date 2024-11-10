@@ -1,0 +1,39 @@
+<!--/* Include Header Navigation */-->
+<sly data-sly-test="${!('app' in request.requestPathInfo.selectors)}"
+     data-sly-use.switchModel="com.saudi.tourism.core.models.components.nav.NavSwitchSlingModel"
+     data-sly-use.bannerAlert="com.saudi.tourism.core.models.components.AnnouncementBannerAlertModel"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+
+    <sly data-sly-test="${bannerAlert.bannerAlert != null && bannerAlert.bannerAlert}">
+        <div class="announcement-banner" data-component="announcement-banner" data-announcement-banner>
+            <div class="component-wrapper">
+                <div class="announcement-advice">
+                    <a href="${bannerAlert.url}" target="${bannerAlert.target}" class="announcement-advisory-link copy" title="${bannerAlert.title}">${bannerAlert.title}</a>
+                    <span class="announcement-close" data-close-announcement-banner>
+                        <sly data-sly-call="${iconTemplate.icon @ iconName='close'}"></sly>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </sly>
+
+    <sly data-sly-test.isV4="${switchModel.enabledHeaderV4}"
+      data-sly-include="/apps/sauditourism/components/content/n01-navigation-menu/v4/n01-navigation-menu/n01-navigation-menu.html"></sly>
+  <sly data-sly-test="${!isV4}"
+       data-sly-include="/apps/sauditourism/components/content/n01-navigation-menu/v3/n01-navigation-menu/n01-navigation-menu.html"></sly>
+</sly>
+
+
+<!--/* Old header (v1) */-->
+<!--/*
+<sly data-sly-test="${!newHeader}"
+     data-sly-set.mainNavComponent="${'sauditourism/components/content/n01-navigation-menu/v1/n01-navigation-menu'}">
+  <sly data-sly-use.configModel="${'com.saudi.tourism.core.models.common.ConfigurationModel'
+     @ resourceType=mainNavComponent, configPage='Configs/navigation-menu-configs', isRelativePath=true}"></sly>
+
+
+  <div
+      data-sly-resource="${ configModel.resourcePath || 'n01-navigation-menu' @ wcmmode='disabled', resourceType=mainNavComponent}"
+      data-sly-unwrap></div>
+</sly>
+*/-->

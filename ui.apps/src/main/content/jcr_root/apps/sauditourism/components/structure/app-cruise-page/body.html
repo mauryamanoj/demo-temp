@@ -1,0 +1,35 @@
+<h2>${'Cruise Information' @ i18n}</h2>
+
+<h3>${'General Info' @ i18n} (${'from page properties' @ i18n})</h3>
+
+<p>${'Title' @ i18n}:
+  <span class="cq-title">${properties.jcr:title @ context='text'}</span>
+</p>
+<p>${'Subtitle' @ i18n}:
+  <span class="cq-subtitle">${properties.subtitle @ context='text'}</span>
+</p>
+<p>${'Description' @ i18n}:
+  <span class="cq-description">${properties.jcr:description @ context='text'}</span>
+</p>
+<p>${'Feature Image' @ i18n}:
+  <span>${properties.featuredImage @ context='uri'}</span>
+</p>
+
+<h4>${'CTA' @ i18n}</h4>
+
+<p>${'Text' @ i18n}:
+  <span class="cq-cta-text">${properties.ctaText @ context='text'}</span>
+</p>
+<p>${'URL' @ i18n}: ${properties.ctaUrl @ context='text'}</p>
+
+<sly data-sly-set.cruiseCompsPath="/apps/sauditourism/components/app-content/cruise/v1/"
+     data-sly-set.rtDetails="${[cruiseCompsPath, 'app-cruise-details'] @ join}"
+     data-sly-set.rtItineraries="${[cruiseCompsPath, 'app-cruise-itineraries'] @ join}"
+     data-sly-set.rtContact="${[cruiseCompsPath, 'app-cruise-contact-information'] @ join}"
+></sly>
+
+<div data-sly-resource="${ 'details' @ resourceType=rtDetails, decoration=true}"></div>
+
+<div data-sly-resource="${ 'itineraries' @ resourceType=rtItineraries, decoration=true}"></div>
+
+<div data-sly-resource="${ 'contactInformation' @ resourceType=rtContact, decoration=true}"></div>

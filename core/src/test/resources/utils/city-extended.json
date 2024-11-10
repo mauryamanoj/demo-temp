@@ -1,0 +1,17 @@
+{
+  "jcr:primaryType": "cq:PageContent",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Oct 03 2019 15:32:28 GMT+1000",
+  "Riyadh": {
+    "jcr:primaryType": "nt:unstructured",
+    "bestFeature": "sauditourism:cityBestFeatures/biggest-city",
+    "destinationFeatureTags": "sauditourism:destination/shopping",
+    "preferredTripDaysCount": 2
+  },
+  "Salel": {
+    "jcr:primaryType": "nt:unstructured",
+    "bestFeature": "sauditourism:cityBestFeatures/biggest-city",
+    "destinationFeatureTags": "sauditourism:destination/history",
+    "preferredTripDaysCount": 3
+  }
+}

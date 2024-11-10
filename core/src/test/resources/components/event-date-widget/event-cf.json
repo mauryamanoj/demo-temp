@@ -1,0 +1,168 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "dbb754f0-d8f4-4469-9ec7-12e833fe631a",
+  "jcr:predecessors": [
+    "1b3a9eeb-3a32-4cd9-98d5-4abf7d173d3a"
+  ],
+  "jcr:created": "Sun Oct 29 2023 07:34:22 GMT+0100",
+  "jcr:baseVersion": "1b3a9eeb-3a32-4cd9-98d5-4abf7d173d3a",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "92dc6b00-08e0-475c-8008-90a4bd0fdb3e",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "event-cfm-1",
+    "jcr:lastModifiedBy": "admin",
+    "contentFragment": true,
+    "cq:name": "event-cfm-1",
+    "jcr:lastModified": "Sun Oct 29 2023 16:10:08 GMT+0100",
+    "lastFragmentSave": "Sun Oct 29 2023 16:10:08 GMT+0100",
+    "cq:parentPath": "/content/dam/sauditourism/cf/en/events",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Oct 29 2023 07:34:22 GMT+0100"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "indexedData": {
+      "jcr:primaryType": "nt:unstructured",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model": "/conf/sauditourism/settings/dam/cfm/models/event",
+        "@stringArray@variations": [],
+        "boolean@qaHideReadMore": false,
+        "boolean@hideReadMore": false,
+        "stringArray@specialShowDetails": [
+          "{\"key\":\"\",\"value\":\"\"}"
+        ],
+        "string@title": "event",
+        "string@analyticsTitle": "aaavvvvaa",
+        "string@s7titleImage": "https://scth.scene7.com/is/image/scthacc/saudi-destinations-banner",
+        "string@iconAlignement": "left",
+        "double@lat": 1.0,
+        "double@lng": 2.0,
+        "stringArray@questionAnswer": [
+          "{\"question\":\"q1\",\"answer\":\"<p>r1</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}",
+          "{\"question\":\"q2\",\"answer\":\"<p>r2</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}"
+        ],
+        "boolean@hideShare": false,
+        "boolean@hideFavorite": false,
+        "calendar@startDate": "Wed Oct 04 2023 00:00:00 GMT+0000",
+        "jcr:uuid": "e6012156-ea33-4bbc-9a17-b4cf5a59023f",
+        "string@expiredLabel": "a",
+        "string@alertColor": "Grey",
+        "string@comingSoonLabel": "c",
+        "stringArray@images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}"
+        ]
+      }
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "_strucVersion": 1,
+      "cq:model": "/conf/sauditourism/settings/dam/cfm/models/event",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "startDate": "Wed Oct 04 2023 00:00:00 GMT+0000",
+        "title@LastModified": "Sun Oct 29 2023 10:33:38 GMT+0100",
+        "durationLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "helpWidgetHeading@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "hideReadMore@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "qaReadMoreLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "locationValue": "/content/dam/sauditourism/cf/en/destinations/al-ahsa",
+        "titleImage": "/content/dam/sauditourism/saudi-destinations-banner.png",
+        "getDirectionsLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "titleImage@LastModified": "Sun Oct 29 2023 08:06:22 GMT+0100",
+        "locationValue@LastModified": "Sun Oct 29 2023 08:06:22 GMT+0100",
+        "aboutDescription@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "hideShare@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "lat@LastModified": "Sun Oct 29 2023 08:06:22 GMT+0100",
+        "helpWidgetCTALabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "images": [
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}",
+          "{\"type\":\"image\",\"image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"s7image\":\"/content/dam/we-retail/en/activities/biking/cycling_1.jpg\",\"alt\":\"\"}"
+        ],
+        "locationLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "hideFavorite@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "lng@LastModified": "Sun Oct 29 2023 08:06:22 GMT+0100",
+        "helpWidgetCTALink@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "readMoreLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "placeholder@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "agesValue@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "readLessLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "hideReadMore": false,
+        "agesLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "alert@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "lat": 1.0,
+        "lng": 2.0,
+        "analyticsTitle@LastModified": "Sun Oct 29 2023 10:57:27 GMT+0100",
+        "accessibilityValue@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "title": "event",
+        "s7titleImage": "https://scth.scene7.com/is/image/scthacc/saudi-destinations-banner",
+        "qaHideReadMore": false,
+        "qaHideReadMore@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "alert@ContentType": "text/html",
+        "aboutTitle@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "accessibilityLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "qaTitle@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "iconAlignement@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "comingSoonLabel@LastModified": "Sun Oct 29 2023 08:06:22 GMT+0100",
+        "s7titleImage@LastModified": "Sun Oct 29 2023 10:57:27 GMT+0100",
+        "specialShowLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "hideShare": false,
+        "questionAnswer@LastModified": "Sun Oct 29 2023 16:10:08 GMT+0100",
+        "helpWidgetDescription@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "idealForLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "analyticsTitle": "aaavvvvaa",
+        "expiredLabel": "a",
+        "questionAnswer": [
+          "{\"question\":\"q1\",\"answer\":\"<p>r1</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}",
+          "{\"question\":\"q2\",\"answer\":\"<p>r2</p>\\n\",\"upload\":\"\",\"textIsRich\":\"true\"}"
+        ],
+        "hideFavorite": false,
+        "expiredLabel@LastModified": "Sun Oct 29 2023 08:06:22 GMT+0100",
+        "endDate@LastModified": "Sun Oct 29 2023 16:10:06 GMT+0100",
+        "informationLabel@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100",
+        "startDate@LastModified": "Sun Oct 29 2023 16:10:06 GMT+0100",
+        "images@LastModified": "Sun Oct 29 2023 16:10:08 GMT+0100",
+        "iconAlignement": "left",
+        "alertColor@LastModified": "Sun Oct 29 2023 07:45:25 GMT+0100",
+        "specialShowDetails@LastModified": "Sun Oct 29 2023 16:10:08 GMT+0100",
+        "specialShowDetails": [
+          "{\"key\":\"\",\"value\":\"\"}"
+        ],
+        "alertColor": "Grey",
+        "comingSoonLabel": "c",
+        "durationValue@LastModified": "Sun Oct 29 2023 07:34:22 GMT+0100"
+      }
+    }
+  }
+}

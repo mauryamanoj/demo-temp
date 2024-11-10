@@ -1,0 +1,8 @@
+<sly data-sly-use.apptradLabel="com.saudi.tourism.core.models.app.i18n.AppTradLabel"/>
+<div data-sly-test="${apptradLabel.keyAppTrad}" class="app-entry">
+    <div class="app-entry-key">${apptradLabel.keyAppTrad}</div>
+    <div class="app-entry-value">${apptradLabel.valueAppTrad @ context='html'}</div>
+</div>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !apptradLabel.keyAppTrad}"></sly>

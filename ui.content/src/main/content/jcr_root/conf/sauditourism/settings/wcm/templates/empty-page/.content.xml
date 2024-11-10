@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="cq:Template"
+          ranking="{Long}2">
+  <jcr:content
+      cq:templateType="/conf/sauditourism/settings/wcm/template-types/empty-page"
+      jcr:description="Just empty page for intermediate pages to support structure"
+      jcr:primaryType="cq:PageContent"
+      jcr:title="Empty Page"
+      allowedPaths="[/content/sauditourism/\\w{2}/Configs(/.*)?,/content/sauditourism/app1/.+]"
+      status="enabled"/>
+</jcr:root>

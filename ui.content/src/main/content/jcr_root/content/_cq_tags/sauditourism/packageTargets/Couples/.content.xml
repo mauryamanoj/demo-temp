@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Couples"
+          jcr:title.ar="زوجان"
+          jcr:title.fr="Couples"
+          jcr:title.es="Parejas"
+          jcr:title.ru="Пары"
+          jcr:title.de="Paare"
+          jcr:title.zh="伴侣"
+          jcr:title.ja="カップル"
+          sling:resourceType="cq/tagging/components/tag"/>

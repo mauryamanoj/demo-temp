@@ -1,0 +1,133 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Jul 25 2023 08:33:19 GMT+0200",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "destinations_guide":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:created":"Thu Jan 04 2024 10:10:36 GMT+0100",
+          "title":"DEMO",
+          "subTitle":"Sub DEMO",
+          "background":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"/content/dam/static-images/resources/flags/png/171-galapagos-islands.png",
+            "fileReference":"/content/dam/static-images/resources/flags/png/171-galapagos-islands.png"
+          },
+          "haveBackgroundImage": "true",
+          "jcr:lastModified":"Fri Jan 05 2024 10:21:44 GMT+0100",
+          "sling:resourceType":"sauditourism/components/content/destinations-guide-cards",
+          "textIsRich":[
+            "true",
+            "true",
+            "true"
+          ],
+          "link":{
+            "jcr:primaryType":"nt:unstructured",
+            "url":"/content/sauditourism/app1",
+            "text":"CTA Text",
+            "targetInNewWindow":"true"
+          },
+          "cards":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "type":"item",
+              "title":"Card Title",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/app1",
+                "text":"Card Label Link",
+                "targetInNewWindow":"true"
+              },
+              "items":{
+                "jcr:primaryType":"nt:unstructured",
+                "item0":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "subTitle":"Item Sub Title",
+                  "title":"Item Title",
+                  "logo":{
+                    "jcr:primaryType":"nt:unstructured",
+                    "s7fileReference":"/content/dam/static-images/resources/flags/png/171-galapagos-islands.png",
+                    "fileReference":"/content/dam/static-images/resources/flags/png/171-galapagos-islands.png"
+                  },
+                  "link":{
+                    "jcr:primaryType":"nt:unstructured",
+                    "url":"/content/sauditourism/dmeo",
+                    "text":"Item Label Link",
+                    "targetInNewWindow":"true"
+                  }
+                }
+              },
+              "logo":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "description":"<p>Card DescriptionCard DescriptionCard Description</p>\r\n",
+              "type":"text",
+              "title":"Card Title",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/app1",
+                "text":"Card Label Link",
+                "targetInNewWindow":"true"
+              },
+              "logo":{
+                "jcr:primaryType":"nt:unstructured",
+                "s7fileReference":"/content/dam/static-images/resources/flags/png/065-eritrea.png",
+                "fileReference":"/content/dam/static-images/resources/flags/png/065-eritrea.png"
+              }
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "cityId":"riyadh",
+              "type":"weather",
+              "title":"Card Title",
+              "link":{
+                "jcr:primaryType":"nt:unstructured",
+                "url":"/content/sauditourism/app1",
+                "text":"Card Label Link",
+                "targetInNewWindow":"true"
+              },
+              "logo":{
+                "jcr:primaryType":"nt:unstructured",
+                "fileReference":"/content/dam/sauditourism/visit_saudi_logo.png",
+                "alt":"ALT",
+                "mobileImageReference":"/content/dam/sauditourism/visit_saudi_logo.png"
+              },
+              "items":{
+                "jcr:primaryType":"nt:unstructured",
+                "item0":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "title":"Item Weather Title",
+                  "lowTemp":"10",
+                  "lowTempIcon":"/content/dam/icon.png",
+                  "highTempIcon":"/content/dam/icon.png"
+                }
+              }
+            }
+          },
+          "logo":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/sauditourism/visit_saudi_logo.png",
+            "alt":"ALT",
+            "mobileImageReference":"/content/dam/sauditourism/visit_saudi_logo.png"
+          }
+        }
+      }
+    }
+  }
+}

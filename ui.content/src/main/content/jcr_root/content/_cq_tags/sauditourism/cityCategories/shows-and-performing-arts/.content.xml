@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Shows &amp; Performing Arts"
+          jcr:title.de="Shows &amp; Darstellende Künste"
+          jcr:title.es="Espectáculos y Artes Escénicas"
+          jcr:title.ru="Шоу и Исполнительское Искусство"
+          jcr:title.zh="表演藝術"
+          jcr:title.fr="Spectacles et Arts de la Scène"
+          jcr:title.ar="العروض والفنون المسرحية"
+          jcr:title.ja="ショー＆舞台芸術"
+          sling:resourceType="cq/tagging/components/tag"/>

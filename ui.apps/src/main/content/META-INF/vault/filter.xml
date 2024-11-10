@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/sauditourism"/>
+    <filter root="/apps/sauditourism-app/i18n/native-app/en" mode="replace"/>
+    <filter root="/apps/sauditourism-app/i18n/native-app" mode="replace"/>
+    <filter root="/apps/sauditourism-app" mode="merge"/>
+    <filter root="/apps/sling"/>
+    <!-- <filter root="/apps/solr"/> -->
+    <filter root="/apps/msm"  mode="merge"/>
+    <filter root="/apps/cq"  mode="merge"/>
+    <filter root="/apps/granite"  mode="merge"/>
+    <filter root="/apps/msm"  mode="merge"/>
+    <filter root="/apps/msm/saudi-tourism/blueprint-configs/saudi-tourism-content-blueprint"  mode="merge"/>
+    <filter root="/apps/msm/saudi-tourism/blueprint-configs/saudi-tourism-app-blueprint" mode="merge"/>
+    <filter root="/apps/wcm/core"/>
+
+    <filter root="/etc/map.publish.dev" />
+    <filter root="/etc/map.publish.qa" />
+    <filter root="/etc/map.publish.acc" />
+    <filter root="/etc/map.publish.acc.cn" />
+    <filter root="/etc/map.publish.prod" />
+    <filter root="/etc/map.publish.prod.cn" />
+
+</workspaceFilter>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          cq:showOnCreate="{Boolean}True"
+          jcr:primaryType="cq:Widget"
+          jcr:title="Package Detail"
+          granite:class="core-wcm-edetailing dialog-container"
+          sling:resourceType="granite/ui/components/foundation/container">
+  <layout
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+      margin="{Boolean}false"/>
+  <items jcr:primaryType="nt:unstructured">
+    <column
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+        <packageAreaTags
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+            fieldLabel="Areas"
+            multiple="{Boolean}true"
+            required="{Boolean}true"
+            fieldDescription="Select All Area/City where this package is applicable"
+            cq:showOnCreate="{Boolean}true"
+            forceSelection="{Boolean}true"
+            rootPath="/content/cq:tags/sauditourism/city"
+            name="./packageAreaTags">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="packageAreaTags"/>
+        </packageAreaTags>
+        <duration
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+            fieldLabel="Duration of Package"
+            fieldDescription="Select Duration of Your Trip Package"
+            cq:showOnCreate="{Boolean}true"
+            name="./durationAuth">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="durationAuth"/>
+          <datasource
+              jcr:primaryType="nt:unstructured"
+              path="sauditourism/components/content/utils/duration"
+              sling:resourceType="sauditourism/generic/datasource"/>
+        </duration>
+        <packageCategoryTags
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+            fieldLabel="Category Tags"
+            multiple="{Boolean}true"
+            fieldDescription="Select All Matching Categories applicable for your Package"
+            forceSelection="{Boolean}true"
+            cq:showOnCreate="{Boolean}true"
+            rootPath="/content/cq:tags/sauditourism/packageCategories"
+            required="{Boolean}true"
+            name="./packageCategoryTags">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="packageCategoryTags"/>
+        </packageCategoryTags>
+        <packageTargetTags
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+            fieldDescription="Select All Matching Target Groups applicable for your Package"
+            fieldLabel="Target Tags"
+            multiple="{Boolean}true"
+            required="{Boolean}true"
+            forceSelection="{Boolean}true"
+            cq:showOnCreate="{Boolean}true"
+            rootPath="/content/cq:tags/sauditourism/packageTargets"
+            name="./packageTargetTags">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="packageTargetTags"/>
+        </packageTargetTags>
+        <price
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+            fieldLabel="Package Price (Per Person Price in SAR)"
+            fieldDescription="Package Price will be displayed like this, Starting From: {price} SAR per Person"
+            cq:showOnCreate="{Boolean}true"
+            name="./price">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="price"/>
+        </price>
+        <bookPath
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+            fieldLabel="Booking Page Path/URL"
+            fieldDescription="URL/Page Path for Booking"
+            name="./bookNow"
+            cq:showOnCreate="{Boolean}true"
+            rootPath="/content">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="bookNow"/>
+        </bookPath>
+        <bannerImage
+            jcr:primaryType="nt:unstructured"
+            granite:class="s7-image-listener"
+            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+            fieldLabel="Big Banner Image (1920 x 1080 - Ratio 16:9)"
+            fieldDescription="Image size:1920 x 1080 - Ratio 16:9. Select an image to be used for desktop view"
+            name="./bannerImage"
+            cq:showOnCreate="{Boolean}true"
+            rootPath="/content/dam">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="bannerImage"/>
+        </bannerImage>
+        <s7bannerImage
+            granite:class="s7-bannerImage"
+            jcr:primaryType="nt:unstructured"
+            granite:id="s7-bannerImage"
+            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+            name="./s7bannerImage">
+        </s7bannerImage>
+        <copy
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+            fieldDescription="Enter Package description. First sentence will be used for slider and subtitle"
+            fieldLabel="Package Description"
+            required="{Boolean}true"
+            cq:showOnCreate="{Boolean}true"
+            name="./copy">
+          <granite:data
+              jcr:primaryType="nt:unstructured"
+              cq-msm-lockable="copy"/>
+        </copy>
+      </items>
+    </column>
+  </items>
+</jcr:root>

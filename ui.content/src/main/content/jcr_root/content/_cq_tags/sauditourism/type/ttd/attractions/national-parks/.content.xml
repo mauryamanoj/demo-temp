@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="National parks"
+          jcr:title.ar="الحدائق الوطنية"
+          jcr:title.de="Naturparks"
+          jcr:title.es="Parques nacionales"
+          jcr:title.fr="Parcs nationaux"
+          jcr:title.ja="国立公園"
+          jcr:title.ru="Национальные парки"
+          jcr:title.zh="国家公园"
+
+          sling:resourceType="cq/tagging/components/tag"/>

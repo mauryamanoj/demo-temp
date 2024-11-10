@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="American Kitchen"
+          jcr:title.ar="مطبخ أمريكي"
+          jcr:title.de="Amerikanische Küche"
+          jcr:title.es="Cocina americana"
+          jcr:title.fr="Cuisine américaine"
+          jcr:title.ja="アメリカ料理"
+          jcr:title.ru="Американская кухня"
+          jcr:title.zh="美式厨房"
+          sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,82 @@
+<template
+   data-sly-template.heroSliderCard="${@ heroModel}"
+   data-sly-use.overlay="/apps/sauditourism/components/content/templates/general/full-overlay.html"
+   data-sly-use.picture="/apps/sauditourism/components/content/templates/general/picture.html"
+   data-sly-use.icon="/apps/sauditourism/components/content/templates/general/icon.html"
+   data-sly-use.cta01Button="/apps/sauditourism/components/content/templates/atoms/ctas/cta-01-button.html"
+   data-sly-use.window="/apps/sauditourism/components/content/templates/general/modal-window.html"
+   data-sly-use.fullImageCards="/apps/sauditourism/components/content/winter-hero-slider/templates/full-image-theme-cards.html">
+   <div class="hero-with-slider-cards hero-component is-negative section-margin-small"
+      data-component="hero-with-slider-cards">
+      <div data-component="hero-contents-copy" data-wrapper class="hero-contents hero-wrapper">
+         <div class="visual-wrapper" data-transition-visual>
+            <sly data-sly-call="${overlay.fullOverlay}"></sly>
+            <sly data-sly-call="${picture.pictureObj @ extraClass='visual', breakpointDesktop='768'}"></sly>
+         </div>
+         <div class="content-wrapper static-content center-content wide-version">
+            <div class="grid-wrapper">
+               <div class="text-area">
+                  <div class="hero-text-content">
+                     <div class="inner-wrapper  event-wrapper">
+                        <div class="copy-wrapper">
+                           <div class="copy-inner-wrapper">
+                              <h1 class="slide-title heading heading-1 white-text" data-split-text>${heroModel.title}</h1>
+                           </div>
+                           <sly data-sly-test="${heroModel.description}">
+                              <p class="description copy white-text">${heroModel.description}</p>
+                           </sly>
+                        </div>
+                     </div>
+                  </div>
+                   <sly data-sly-test = "${heroModel.cta}">
+                  <div class="button button-hero-video">
+                     <sly data-sly-call="${icon.icon @ iconName='play', iconClass='play' }"></sly>
+                     <div class="button-hero-video-desktop">
+                        ${heroModel.cta}
+                     </div>
+                  </div>
+                   </sly>
+               </div>
+               <div class="theme-card-container" data-carousel>
+                  <div class="desktop-theme-card-area" data-carousel-list>
+                     <sly data-sly-list="${heroModel.sliderList}">
+                        <div data-theme-card-id="${item.id}" data-order="${itemList.index}" data-carousel-item data-url="${item.cardUrl  @ context = 'uri'}"
+                           class="${itemList.index==0 ? 'theme-card active-theme-card' : 'theme-card'}" data-theme-image="${item.sliderImage.s7fileReference || item.sliderImage.fileReference}">
+                           <img src="${item.sliderImage.s7fileReference || item.sliderImage.fileReference}" alt="${item.sliderImage.alt}" />
+                           <div class="text-container">
+                              <div class="top-section">
+                                 <sly data-sly-test="${item.sliderIcon}">
+                                    <div class="icon-container">
+                                       <sly data-sly-call="${icon.icon @ iconName=item.sliderIcon}"></sly>
+                                    </div>
+                                 </sly>
+                                 <h5 class="card-wrapper-title">${item.sliderTitle}</h5>
+                              </div>
+                              <div class="details-btn" data-sly-set.url="${item.cardUrl  @ context = 'uri'}">
+                                 <sly data-sly-call="${cta01Button.ctaButton @ link=url , copy=item.sliderCta, copyAnalytics=item.sliderAnalyticsCtaText, extraClass='details-cta-btn'}"></sly>
+                              </div>
+                           </div>
+                        </div>
+                     </sly>
+                  </div>
+               </div>
+            </div>
+            <div class="tab-area">
+               <ul class="theme-card-nav">
+                  <sly data-sly-list="${heroModel.sliderList}">
+                     <li data-theme-card-nav-id=${item.id} class="${itemList.index==0 ? 'theme-card-nav-item active-list' : 'theme-card-nav-item' }">${item.sliderTitle}</li>
+                  </sly>
+               </ul>
+            </div>
+         </div>
+         <div class="video-content-wrapper">
+            <sly data-sly-call="${window.modalWindow @ model=heroModel, breakpoint='320',isOpenButton='true'}"></sly>
+         </div>
+      </div>
+      <div class="mobile-theme-card-area">
+         <div class="component-wrapper">
+            <sly data-sly-call="${fullImageCards.fullImage @ heroModel = heroModel}"></sly>
+         </div>
+      </div>
+   </div>
+</template>

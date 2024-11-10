@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="About Go Landing"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <screensConfiguration
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content Sections"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <screen-title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Screen Title"
+                                            name="./screenTitle"/>
+                                    <content-section
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add' to add a new Content Section"
+                                        fieldLabel="Content Sections List"
+                                        >
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./content">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Content Section"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Content Section Title"
+                                                            name="./title"/>
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                            fieldLabel="Content Section description"
+                                                            name="./description"/>
+                                                        <componentUIType
+                                                            granite:class="cq-dialog-dropdown-showhide"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Section ComponentUIType"
+                                                            name="./componentUIType">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <empty-option
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text=""
+                                                                    value=""/>
+                                                            <saudi-rewards-main
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="SAUDI_REWARDS_MAIN"
+                                                                    value="SAUDI_REWARDS_MAIN"/>
+                                                            <saudi-rewards-tier
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="SAUDI_REWARDS_TIERS"
+                                                                    value="SAUDI_REWARDS_TIERS"/>
+                                                        </items>
+                                                    </componentUIType>
+
+                                                        <item-section
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldDescription="Click 'Add' to add a new Item "
+                                                                fieldLabel="Item Page"
+                                                        >
+                                                            <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                    name="./items">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <column
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            jcr:title="Items"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldLabel="Item Title"
+                                                                                    name="./title"/>
+                                                                            <field
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                    required="{Boolean}True"
+                                                                                    fieldLabel="Item Path"
+                                                                                    rootPath="/content/sauditourism"
+                                                                                    name="./itemPath"/>
+                                                                            <iconUrl
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                    fieldLabel="Item Icon URL"
+                                                                                    rootPath="/content/dam"
+                                                                                    name="./iconUrl"/>
+                                                                        </items>
+                                                                    </column>
+                                                                </items>
+                                                            </field>
+                                                        </item-section>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </content-section>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </screensConfiguration>
+        </items>
+    </content>
+</jcr:root>
+
+

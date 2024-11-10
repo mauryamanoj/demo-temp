@@ -1,0 +1,83 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Places To See",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "59913766-24c9-480f-a42c-4bca3406e618",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:predecessors": [
+      "128784ba-bc11-40c8-8ea7-5e297d29d823"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Sun Dec 08 2019 08:02:02 GMT+1100",
+    "cq:lastReplicated": "Mon Jan 06 2020 14:32:50 GMT+1100",
+    "cq:lastModified": "Fri Jan 24 2020 15:37:32 GMT+1100",
+    "theme": "red",
+    "jcr:description": "From red-hued mountains to azure desert lakes, all the way to ancient sites that trace the history of mankind, Saudi Arabia is a destination like no other.",
+    "jcr:baseVersion": "128784ba-bc11-40c8-8ea7-5e297d29d823",
+    "jcr:isCheckedOut": true,
+    "pageTitle": "Places to See - Visit Saudi Official Website",
+    "jcr:uuid": "27ead9b9-c7b7-4448-b587-34c31c04434a",
+    "featureImage": "/content/dam/saudi-tourism/media/see/brand-page-hero.jpg",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap": "false",
+    "cq:lastModifiedBy": "admin",
+    "navTitle": "Places To See",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "traveller_quotes": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Fri Jan 24 2020 15:37:32 GMT+1100",
+          "jcr:lastModified": "Fri Jan 24 2020 15:37:32 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/traveller-quotes/v1/traveller-quotes",
+          "quotesSlides": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "quote": "Quote text, edit me",
+              "audioFile": "/content/dam/sauditourism/quote-mario.mp3",
+              "quoterNameWeight": "h3",
+              "quoterCity": "City of the quoter, edit me",
+              "quoterName": "Name of the quoter, edit me",
+              "quoterCityWeight": "h4",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/apps/sauditourism/clientlibs/clientlib-site/resources/default-assets/secondary-hero/image.png",
+                "alt": "Quote 1 image ALT text"
+              }
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "quote": "Quote text, edit me",
+              "audioFile": "/content/dam/sauditourism/quote-mario.mp3",
+              "quoterNameWeight": "h3",
+              "quoterCity": "City of the quoter, edit me",
+              "quoterName": "Name of the quoter, edit me",
+              "quoterCityWeight": "h4",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/apps/sauditourism/clientlibs/clientlib-site/resources/default-assets/secondary-hero/image.png",
+                "alt": "Quote 2 image ALT text"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

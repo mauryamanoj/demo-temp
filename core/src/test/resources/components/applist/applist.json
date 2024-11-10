@@ -1,0 +1,34 @@
+{
+  "title": "Intercom apps",
+  "sling:resourceType": "sauditourism/components/content/app-list",
+  "link": {
+    "url": "sauditourism/link/url",
+    "text": "See All",
+    "targetInNewWindow": "true"
+  },
+  "display": {
+    "cardSize": "big"
+  },
+  "appListCards": {
+    "item0": {
+      "pillLabel": "new",
+      "title": "First line",
+      "subTitle": "Second line",
+      "openInNewTab": "true",
+      "image": {
+        "s7fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "alt": "Placeholder image"
+      },
+      "link": {
+        "url": "/content/sauditourism/ar/abha-festival"
+      },
+      "ctaData": {
+        "pageCategory": "pageCategory",
+        "pageSubCategory": "pageSubCategory",
+        "sectionName": "sectionName",
+        "ctaEventName": "ctaEventName"
+      }
+    }
+  }
+}

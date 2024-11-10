@@ -1,0 +1,63 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Wed Jun 29 2022 16:24:27 GMT+0200",
+  "variant": "map",
+  "jcr:lastModified": "Sun Jul 03 2022 11:14:14 GMT+0200",
+  "sling:resourceType": "sauditourism/components/content/c25-big-slider/v1/c25-big-slider",
+  "ornamentId": "07A",
+  "componentHeading": {
+    "jcr:primaryType": "nt:unstructured",
+    "heading": {
+      "jcr:primaryType": "nt:unstructured",
+      "weight": "h2",
+      "text": "Hello I'm a big slider"
+    },
+    "link": {
+      "jcr:primaryType": "nt:unstructured",
+      "url": "/content/sauditourism/en/about-e-visa",
+      "copy": "Open",
+      "targetInNewWindow": "true"
+    }
+  },
+  "mapSlides": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Description 1",
+      "region": "al-baha-region",
+      "city": "abha",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "/content/sauditourism/en/regions/central",
+        "copy": "Link Title 1",
+        "targetInNewWindow": "true"
+      },
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "s7fileReference": "https://scene7.adobe.com/is/image/placeholder.jpg",
+        "fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "alt": "Image Alt Test 1"
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Description 2",
+      "region": "al-jouf-region",
+      "city": "abu-arish",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "/content/sauditourism/en/regions/eastern",
+        "copy": "Link Title 2",
+        "targetInNewWindow": "true"
+      },
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "s7fileReference": "https://scene7.adobe.com/is/image/placeholder.jpg",
+        "fileReference": "/content/dam/sauditourism/placeholder.jpg",
+        "alt": "Image Alt Test 2"
+      }
+    }
+  }
+}

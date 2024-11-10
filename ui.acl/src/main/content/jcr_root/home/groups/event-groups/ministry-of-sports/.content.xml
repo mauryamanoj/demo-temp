@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-13T22:49:19.711+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-13T22:49:19.711+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="b3e49d78-6034-3410-bf47-80f4ca58861d"
+    rep:authorizableId="ministry-of-sports"
+    rep:members="{WeakReference}[]"
+    rep:principalName="ministry-of-sports">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="ministry-of-sports"/>
+</jcr:root>

@@ -1,0 +1,68 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 14:39:56 GMT+0100",
+  "jcr:uuid":"6a47bb00-5d18-47e2-b333-9c5072bcd21f",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:title":"Urban",
+    "jcr:lastModifiedBy":"admin",
+    "contentFragment":true,
+    "jcr:lastModified":"Tue Sep 26 2023 14:40:25 GMT+0100",
+    "lastFragmentSave":"Tue Sep 26 2023 14:40:25 GMT+0100",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Tue Sep 26 2023 14:39:56 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/category",
+        "@stringArray@variations":[
+
+        ],
+        "string@icon":"categories_xs_shopping",
+        "string@s7image":"https://scth.scene7.com/is/image/scthacc/app_apple",
+        "string@title":"Urban",
+        "jcr:uuid":"9d8392ed-3b99-44ed-9e42-617d3e6ddb06"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/category",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "title@LastModified":"Tue Sep 26 2023 14:40:25 GMT+0100",
+        "image@LastModified":"Tue Sep 26 2023 14:40:25 GMT+0100",
+        "icon":"categories_xs_shopping",
+        "image":"/content/dam/sauditourism/app_apple.png",
+        "title":"Urban",
+        "s7image@LastModified":"Tue Sep 26 2023 14:40:25 GMT+0100",
+        "s7image":"https://scth.scene7.com/is/image/scthacc/app_apple",
+        "icon@LastModified":"Tue Sep 26 2023 14:40:25 GMT+0100"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Entertainment Center"
+          jcr:title.ar="مركز الترفيه"
+          jcr:title.de="Unterhaltungszentrum"
+          jcr:title.es="Centro de entretenimiento"
+          jcr:title.fr="Centre de divertissement"
+          jcr:title.ja="エンターテイメントセンター"
+          jcr:title.ru="Центр развлечений"
+          jcr:title.zh="娱乐中心"
+          sling:resourceType="cq/tagging/components/tag"/>

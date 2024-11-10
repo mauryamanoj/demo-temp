@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Hofuf and Al Mubarraz"
+    jcr:title.ar="الهفوف والمبرز"
+    jcr:title.de="Hofuf und al-Mubarraz"
+    jcr:title.es="Hofuf y Al Mubarraz"
+    jcr:title.fr="Hofuf et Al Mubarraz"
+    jcr:title.ja="ホフーフ＆アルムバレズ"
+    jcr:title.ru="Эль-Хуфуф и Эль-Мубарраз"
+    jcr:title.zh="胡富夫与穆巴利兹"
+    sling:resourceType="cq/tagging/components/tag"
+    city="hofuf-and-almabarraz"/>

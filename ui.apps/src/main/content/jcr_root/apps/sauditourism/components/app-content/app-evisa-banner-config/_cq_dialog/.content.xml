@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="App e-Visa Banner config"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+          <eVisaConfig
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              jcr:title="e-Visa Config"
+              jcr:description="Carousel Pages list">
+            <items jcr:primaryType="nt:unstructured">
+              <e-visa-logo
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  fieldLabel="e-Visa Logo image"
+                  name="./eVisaLogo"
+                  rootPath="/content/dam"
+                  required="{Boolean}false"/>
+              <powered-by-logo
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  fieldLabel="PoweredBy Logo image"
+                  name="./poweredByLogo"
+                  rootPath="/content/dam"
+                  required="{Boolean}false"/>
+              <description
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                  emptyText="Text shown as the description of the component"
+                  fieldDescription="Text shown as the description of the component"
+                  fieldLabel="Description"
+                  maxlength="{Long}1000"
+                  name="./description"
+                  required="{Boolean}false"/>
+              <ctaText
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldDescription="Enter CTA Text"
+                  fieldLabel="CTA Text"
+                  name="./ctaText"
+                  required="{Boolean}false"/>
+              <ctaUrl
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  fieldDescription="Enter CTA URL"
+                  fieldLabel="CTA URL"
+                  name="./ctaUrl"
+                  rootPath="/content/sauditourism"
+                  required="{Boolean}false"/>
+            </items>
+          </eVisaConfig>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

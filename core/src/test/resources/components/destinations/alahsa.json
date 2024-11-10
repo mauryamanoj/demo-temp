@@ -1,0 +1,102 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"bc7fb54e-4026-4310-bbc9-327b9b881cf4",
+  "jcr:predecessors":[
+    "b5bd44ab-ed18-4360-a739-cebc8356b5fd"
+  ],
+  "jcr:created":"Wed Oct 18 2023 18:06:12 GMT+0200",
+  "jcr:baseVersion":"b5bd44ab-ed18-4360-a739-cebc8356b5fd",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"8fcc71a7-8655-43b2-9593-8b78ca766f9b",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:mixinTypes":[
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title":"al-ahsa",
+    "cq:lastReplicationAction":"Activate",
+    "cq:lastReplicated":"Wed Oct 04 2023 12:13:56 GMT+0000",
+    "contentFragment":true,
+    "cq:name":"al-ahsa",
+    "jcr:lastModified":"Wed Oct 04 2023 12:11:45 GMT+0000",
+    "lastFragmentSave":"Wed Oct 04 2023 12:11:45 GMT+0000",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/destinations",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Sun Oct 29 2023 08:08:20 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/destination",
+        "@stringArray@variations":[
+
+        ],
+        "string@lat":"25.364571",
+        "string@lng":"49.565319",
+        "string@s7image":"https://s7e5a.scene7.com/is/image/scth/tarout",
+        "string@title":"Al Ahsa",
+        "string@id":"al-ahsa",
+        "jcr:uuid":"0063261c-9170-4921-b2ab-4a08f217187b",
+        "string@s7popUpImage":"https://s7e5a.scene7.com/is/image/scth/tarout"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/destination",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "cq:Taggable",
+          "dam:cfVariationNode"
+        ],
+        "title@LastModified":"Wed Oct 04 2023 12:10:23 GMT+0000",
+        "aboutDescription@LastModified":"Wed Oct 04 2023 12:09:23 GMT+0000",
+        "lat@LastModified":"Wed Oct 04 2023 12:10:23 GMT+0000",
+        "lng@LastModified":"Wed Oct 04 2023 12:10:23 GMT+0000",
+        "image@LastModified":"Wed Oct 04 2023 12:10:23 GMT+0000",
+        "pagePath@LastModified":"Wed Oct 04 2023 12:11:39 GMT+0000",
+        "popUpImage":"/content/dam/saudi-tourism/media/updated-imagery/tarout.png",
+        "s7popUpImage@LastModified":"Wed Oct 04 2023 12:11:39 GMT+0000",
+        "id":"al-ahsa",
+        "lat":"25.364571",
+        "lng":"49.565319",
+        "image":"/content/dam/saudi-tourism/media/updated-imagery/tarout.png",
+        "title":"Al Ahsa",
+        "aboutTitle@LastModified":"Wed Oct 04 2023 12:09:23 GMT+0000",
+        "s7image@LastModified":"Wed Oct 04 2023 12:11:39 GMT+0000",
+        "s7image":"https://s7e5a.scene7.com/is/image/scth/tarout",
+        "subTitle@LastModified":"Wed Oct 04 2023 12:09:23 GMT+0000",
+        "pagePath":"/content/sauditourism/en/see-do/destinations/al-ahsa",
+        "id@LastModified":"Wed Oct 04 2023 12:10:23 GMT+0000",
+        "categories@LastModified":"Wed Oct 04 2023 12:11:39 GMT+0000",
+        "categories":[
+          "/content/dam/sauditourism/cf/en/categories/culture",
+          "/content/dam/sauditourism/cf/en/categories/history"
+        ],
+        "s7popUpImage":"https://s7e5a.scene7.com/is/image/scth/tarout",
+        "popUpImage@LastModified":"Wed Oct 04 2023 12:10:23 GMT+0000"
+      }
+    }
+  }
+}

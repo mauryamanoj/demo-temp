@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+          eVisaConfigPath="/content/sauditourism/{0}/Configs/evisa/evisa-config/jcr:content/root/responsivegrid/evisa_config"
+          eVisaCountriesGroupsConfigPath="/content/sauditourism/{0}/Configs/evisa/e-visa-countries-groups/jcr:content/root/responsivegrid/evisa_countries_grou"
+/>

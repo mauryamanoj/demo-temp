@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Tabuk region"
+    jcr:title.ar="منطقة تبوك"
+    jcr:title.de="Provinz Tabuk"
+    jcr:title.es="Provincia de Tabuk"
+    jcr:title.fr="Province de Tabuk"
+    jcr:title.ja="タブーク州"
+    jcr:title.ru="Провинция Табук"
+    jcr:title.zh="塔布克地区"
+    sling:resourceType="cq/tagging/components/tag"
+    city="tabuk-region"/>

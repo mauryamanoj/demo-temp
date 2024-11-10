@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Promotional Section"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <promotionalSectionConfiguration
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Promotional Section Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}true">
+                                    </title>
+                                    <subTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Sub Title"
+                                        name="./subTitle"
+                                        required="{Boolean}false">
+                                    </subTitle>
+                                    <ctaLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Cta Label"
+                                        name="./ctaLabel"
+                                        required="{Boolean}false">
+                                    </ctaLabel>
+                                    <ctaLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Link that will be opened when this is clicked"
+                                        rootPath="/content/sauditourism"
+                                        fieldLabel="CTA Link"
+                                        name="./ctaLink"
+                                        required="{Boolean}false"/>
+                                    <image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        required="{Boolean}True"
+                                        autoStart="{Boolean}false"
+                                        granite:class="cq-droptarget s7-image-listener"
+                                        fieldLabel="Image"
+                                        fileNameParameter="./imgName"
+                                        fileReferenceParameter="./image/fileReference"
+                                        fieldDescription="Image size:660x370 - Ratio 16:9. Select an image to be used for desktop view"
+                                        mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                        multiple="{Boolean}false"
+                                        name="./imgFile"
+                                        title="Upload Desktop Image Asset"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true"/>
+                                    <s7fileReference
+                                        granite:class="s7-fileReference"
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:id="s7-fileReference"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                        name="./image/s7fileReference"/>
+                                    <alt-image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter an ALT text for the image."
+                                        fieldLabel="Alt text of image"
+                                        name="./image/alt"/>
+                                    <transparency
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable Image transparency"
+                                        fieldLabel="Enable Image transparency"
+                                        name="./image/isTransparent"
+                                        text="Enable Image transparency"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <ctaEventName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Event Name"
+                                        name="./ctaData/ctaEventName"
+                                        required="{Boolean}false"/>
+                                    <pageCategory
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Event page Category"
+                                        name="./ctaData/pageCategory"
+                                        required="{Boolean}false"/>
+                                    <pageSubCategory
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Event page Sub Category"
+                                        name="./ctaData/pageSubCategory"
+                                        required="{Boolean}false"/>
+                                    <sectionName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Event section Name"
+                                        name="./ctaData/sectionName"
+                                        required="{Boolean}false"/>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </promotionalSectionConfiguration>
+        </items>
+    </content>
+</jcr:root>

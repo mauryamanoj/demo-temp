@@ -1,0 +1,79 @@
+{
+  "jcr:primaryType": "nt:folder",
+  "jcr:mixinTypes": [
+    "mix:language"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:language": "en",
+  "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100",
+  "targetlabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "Target Audience",
+    "sling:key": "targetlabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "locationlabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "Location",
+    "sling:key": "locationlabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "tolabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "to",
+    "sling:key": "tolabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "filterlabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "filter",
+    "sling:key": "filterlabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "startendlabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "Start & End Date",
+    "sling:key": "startendlabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "clearall": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "clear all",
+    "sling:key": "clearall",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "fromlabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "from",
+    "sling:key": "fromlabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "citylabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "City",
+    "sling:key": "citylabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "explorelabel": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "explore",
+    "sling:key": "explorelabel",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  },
+  "pricelowtohigh": {
+    "jcr:primaryType": "sling:MessageEntry",
+    "jcr:createdBy": "admin",
+    "sling:message": "Event Type",
+    "sling:key": "eventtype",
+    "jcr:created": "Sat Dec 07 2019 12:39:10 GMT+1100"
+  }
+}

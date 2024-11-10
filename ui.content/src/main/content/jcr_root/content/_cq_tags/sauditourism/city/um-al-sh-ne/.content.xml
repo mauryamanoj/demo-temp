@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Umluj, AlWajh, Sharma, Neom"
+    jcr:title.ar="أملج، الوجه، شرما، نيوم"
+    jcr:title.de="Umluj, AlWajh, Sharma, Neom"
+    jcr:title.es="Umluj, AlWajh, Sharma, Neom"
+    jcr:title.fr="Umluj, AlWajh, Sharma, Neom"
+    jcr:title.ja="Umluj, AlWajh, Sharma, Neom"
+    jcr:title.ru="Umluj, AlWajh, Sharma, Neom"
+    jcr:title.zh="Umluj, AlWajh, Sharma, Neom"
+    sling:resourceType="cq/tagging/components/tag"/>

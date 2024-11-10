@@ -1,0 +1,29 @@
+<sly data-sly-use.titleTemplate="/apps/sauditourism/components/content/event-sticky/v1/event-sticky/templates/title-sticky.html"
+     data-sly-use.eventTemplate="/apps/sauditourism/components/content/event-sticky/v1/event-sticky/event-sticky.html"
+     data-sly-use.model="com.saudi.tourism.core.models.components.events.StickyEventModel"
+     data-sly-use.photoGalleryModel="com.saudi.tourism.core.models.components.photogallery.v1.PhotoGalleryModel"
+     data-sly-set.decorationTag="${wcmmode.edit ? 'div' : ''}"
+     data-sly-use.relatedEventsTemplate="/apps/sauditourism/components/structure/event-detail-page/templates/related-events.html"
+	 data-sly-use.happeningNearbyTemplate="/apps/sauditourism/components/structure/event-detail-page/templates/happening-nearby.html"
+>
+
+
+<div
+      data-sly-resource="${'detail-hero'
+      @resourceType='/apps/sauditourism/components/content/h03-detail-hero/v2/h03-detail-hero'}">
+  </div>
+ <div
+      data-sly-resource="${'breadcrumb'
+      @resourceType='/apps/sauditourism/components/content/breadcrumb'}">
+  </div>
+
+<section class="section-margin-small background-white">
+    <div data-component="CalendarEventDetails" data-props="${model.json @context='text'}">
+    </div>
+    <sly data-sly-call="${happeningNearbyTemplate.happeningNearby}"></sly>
+</section>
+
+<sly data-sly-call="${relatedEventsTemplate.relatedEvents}"></sly>
+
+
+</sly>

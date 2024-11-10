@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2020-10-31T22:04:18.728+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Trip Package Approval"
+        sling:resourceType="cq/workflow/components/pages/model"
+        transient="true">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <process_copy
+                jcr:created="{Date}2020-10-08T18:10:05.623+06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-10-29T14:19:30.796+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Submit for Approval By Commercial team"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                    PROCESS_ARGS="commertial-team"
+                    PROCESS_AUTO_ADVANCE="true"
+                    PROCESS_SUBMIT_GROUP="Vendor"/>
+            </process_copy>
+            <participant
+                jcr:created="{Date}2020-07-01T11:46:19.701+02:00"
+                jcr:createdBy="admin"
+                jcr:description="Assigned to commercial team"
+                jcr:lastModified="{Date}2020-10-29T14:19:03.219+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Approval by Commercial team"
+                sling:resourceType="cq/workflow/components/model/participant">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PARTICIPANT="commertial-team"/>
+            </participant>
+            <or
+                jcr:created="{Date}2020-07-01T11:48:08.548+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-07-27T15:21:31.719+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="First Verification"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Accept Trip Package"
+                branchName2="Decline Trip Package"
+                branchOrder="[1,0]"
+                default2="true"
+                orSplit="true">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <process_copy
+                        jcr:created="{Date}2020-10-08T18:48:50.867+06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-10-15T00:42:02.344+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Submit for Approval By STA Team"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                            PROCESS_ARGS="mt-content"
+                            PROCESS_AUTO_ADVANCE="true"
+                            PROCESS_SUBMIT_GROUP="National Calendar Team"/>
+                    </process_copy>
+                    <participant
+                        jcr:created="{Date}2020-07-01T11:48:35.400+02:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Accepted by Commercial team"
+                        jcr:lastModified="{Date}2020-10-29T14:20:15.832+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Approve and send to STA team Participant"
+                        sling:resourceType="cq/workflow/components/model/participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PARTICIPANT="mt-content"/>
+                    </participant>
+                    <or_1872267730
+                        jcr:created="{Date}2020-07-21T11:39:39.209+06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-07-27T15:21:45.027+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/workflow/components/model/or"
+                        branches="2"
+                        branchName1="Accept Trip Package"
+                        branchName2="Decline Trip Package"
+                        branchOrder="[1,0]"
+                        default2="true"
+                        orSplit="true">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <process_copy
+                                jcr:created="{Date}2020-10-08T18:50:11.344+06:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-10-15T00:17:15.246+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Submit for Approval By Authors Team"
+                                sling:resourceType="cq/workflow/components/model/process">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                                    PROCESS_ARGS="content-approvers"
+                                    PROCESS_AUTO_ADVANCE="true"
+                                    PROCESS_SUBMIT_GROUP="STA Team"/>
+                            </process_copy>
+                            <participant_copy_cop
+                                jcr:created="{Date}2020-07-01T11:48:35.400+02:00"
+                                jcr:createdBy="admin"
+                                jcr:description="Approve and Send to Authors Participant"
+                                jcr:lastModified="{Date}2020-10-29T14:22:16.053+01:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Approve and Send to Authors Participant"
+                                sling:resourceType="cq/workflow/components/model/participant">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PARTICIPANT="content-approvers"/>
+                            </participant_copy_cop>
+                            <or_copy
+                                jcr:created="{Date}2020-07-13T19:13:02.823+06:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-07-27T15:21:53.415+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/workflow/components/model/or"
+                                branches="2"
+                                branchName1="Accept Trip Package"
+                                branchName2=" Decline Trip Package"
+                                branchOrder="[1,0]"
+                                default2="true"
+                                orSplit="true">
+                                <_x0031_
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/flow/components/parsys">
+                                    <process
+                                        jcr:created="{Date}2020-07-07T11:11:06.473+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:description="Approve and Publish Event"
+                                        jcr:lastModified="{Date}2020-10-29T14:22:43.140+01:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Approve and Publish Event"
+                                        sling:resourceType="cq/workflow/components/model/process">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                                            PROCESS_AUTO_ADVANCE="true"/>
+                                    </process>
+                                    <process_107873596_co
+                                        jcr:created="{Date}2020-10-08T00:03:56.068+06:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-10-15T00:07:02.449+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Event Successfully Published"
+                                        sling:resourceType="cq/workflow/components/model/process">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                                            PROCESS_ARGS="vendor"
+                                            PROCESS_AUTO_ADVANCE="true"
+                                            PROCESS_SUBMIT_GROUP="Authors"/>
+                                    </process_107873596_co>
+                                </_x0031_>
+                                <_x0032_
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/flow/components/parsys">
+                                    <process_copy_copy_co
+                                        jcr:created="{Date}2020-10-08T18:10:05.623+06:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-10-15T00:07:20.189+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Reject and Send back to STA team"
+                                        sling:resourceType="cq/workflow/components/model/process">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                                            PROCESS_ARGS="mt-content"
+                                            PROCESS_AUTO_ADVANCE="true"
+                                            PROCESS_SUBMIT_GROUP="Authors"/>
+                                    </process_copy_copy_co>
+                                    <goto_copy_copy_copy
+                                        jcr:created="{Date}2020-07-02T17:08:25.183+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:description="Declined by Authors"
+                                        jcr:lastModified="{Date}2020-07-27T15:22:37.258+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Rejection. Assigned to STA team"
+                                        sling:resourceType="cq/workflow/components/model/goto">
+                                        <metaData
+                                            jcr:primaryType="nt:unstructured"
+                                            PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                            PROCESS_AUTO_ADVANCE="false"
+                                            script="function check(){&#xd;&#xa;return true;&#xd;&#xa;}"
+                                            TARGET_NODE_PATH="/conf/global/settings/workflow/models/trip_package_approval/jcr:content/flow/or/1/participant"/>
+                                    </goto_copy_copy_copy>
+                                </_x0032_>
+                            </or_copy>
+                        </_x0031_>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <process_copy_copy_co
+                                jcr:created="{Date}2020-10-08T18:10:05.623+06:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-10-15T00:42:30.029+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Reject and send back to commercial team"
+                                sling:resourceType="cq/workflow/components/model/process">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                                    PROCESS_ARGS="national-calender-team"
+                                    PROCESS_AUTO_ADVANCE="true"
+                                    PROCESS_SUBMIT_GROUP="STA Team"/>
+                            </process_copy_copy_co>
+                            <goto_copy_copy
+                                jcr:created="{Date}2020-07-02T17:08:25.183+02:00"
+                                jcr:createdBy="admin"
+                                jcr:description="Declined by STA team"
+                                jcr:lastModified="{Date}2020-07-21T13:05:32.343+06:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Rejection. Assigned to Commercial team"
+                                sling:resourceType="cq/workflow/components/model/goto">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                    PROCESS_AUTO_ADVANCE="false"
+                                    script="function check(){&#xd;&#xa;return true;&#xd;&#xa;}"
+                                    TARGET_NODE_PATH="/conf/global/settings/workflow/models/trip_package_approval/jcr:content/flow/participant"/>
+                            </goto_copy_copy>
+                        </_x0032_>
+                    </or_1872267730>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <process_copy_copy
+                        jcr:created="{Date}2020-10-08T18:10:05.623+06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-10-29T14:20:54.085+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Reject and Send back to the submitter"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.sta.core.vendors.EventFormEmailNotificationProcess"
+                            PROCESS_ARGS="vendor"
+                            PROCESS_AUTO_ADVANCE="true"
+                            PROCESS_SUBMIT_GROUP="Commercial Team"/>
+                    </process_copy_copy>
+                    <participant_copy
+                        jcr:created="{Date}2020-10-13T23:25:30.811+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-10-31T22:04:18.622+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Standby Feedback"
+                        sling:resourceType="cq/workflow/components/model/participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PARTICIPANT="workflow-administrators"/>
+                    </participant_copy>
+                </_x0032_>
+            </or>
+        </flow>
+    </jcr:content>
+</jcr:root>

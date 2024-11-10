@@ -1,0 +1,23 @@
+<sly data-sly-use.packageModel="com.saudi.tourism.core.models.components.packages.PackageDetailSlingModel"></sly>
+<script>
+  window.appEventData = [{
+    "event": "Data Layer Established",
+    "page": {
+      "canonicalURL": (location.protocol + '//' + location.host + "${currentPage.path @ context='text'}").replace("/content/sauditourism",""),
+      "siteLanguage": "${currentPage.language @ context='text'}",
+      "lastModifiedDate": ("${pageProperties['cq:lastModified'].toInstant.toString @
+      context='text'}").split(".")[0] + "Z",
+      "authoredByManifest": ("${pageProperties['pageAuthor'] @ context='text'}").includes
+      ("manifest") ? "${pageProperties['pageAuthor'] @ context='text'}" : ""
+    },
+    "tour": {
+      "packageName":
+          "${pageProperties['globalPackageTitle'] || pageProperties['title'] @ context='text'}",
+      "vendorName": "${pageProperties['dmc'] @ i18n, locale='en', context='text'}"
+    },
+    "destination": {
+      "name": "${packageModel.areasEn @ context='scriptComment'}",
+      "title": "${packageModel.areas @ context='scriptComment'}"
+    }
+  }];
+</script>

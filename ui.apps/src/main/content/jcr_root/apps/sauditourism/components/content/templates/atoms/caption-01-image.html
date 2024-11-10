@@ -1,0 +1,30 @@
+<template
+    data-sly-template.caption01Image="${ @ caption='ImageCaption object',
+      url='Link Url (is used if caption does not contain a link)',
+      linkObj='Link Object (is used if Link Url is not passed'}"
+    data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+    data-sly-set.link="${caption.link || url || linkObj.url @ context='uri'}"
+    data-sly-set.copy="${caption.copy}"
+    data-sly-set.linkType="${caption.linkType}"
+    data-sly-set.hasLink="${link && linkType && linkType != 'none'}"
+>
+  <div data-component="caption-01-image"
+       data-sly-attribute.class="${hasLink ? 'with-link' : ''}"
+       data-sly-test="${hasLink || copy}">
+    <a href="#" target="_blank" rel="noopener noreferrer" class="caption-link external"
+       data-sly-test="${hasLink && linkType == 'external'}"
+       data-sly-attribute.href="${link}">
+      <span class="caption-copy label-text white-text">${copy}</span>
+      <sly data-sly-call="${iconTemplate.icon @ iconName='compass'}"></sly>
+    </a>
+
+    <a href="#" class="caption-link internal"
+       data-sly-test="${hasLink && linkType == 'internal'}"
+       data-sly-attribute.href="${link}">
+      <span class="caption-copy label-text white-text">${copy}</span>
+      <sly data-sly-call="${iconTemplate.icon @ iconName='chevron'}"></sly>
+    </a>
+
+    <span class="caption-copy label-text white-text" data-sly-test="${!hasLink}">${copy}</span>
+  </div>
+</template>

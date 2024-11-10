@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Female Travelers"
+          jcr:title.ar="مسافرات"
+          jcr:title.fr="Voyageuses"
+          jcr:title.es="Mujeres viajeras"
+          jcr:title.ru="Женщины-путешественницы"
+          jcr:title.de="Weibliche Reisende"
+          jcr:title.zh="女性游客"
+          jcr:title.ja="女性旅行者"
+          sling:resourceType="cq/tagging/components/tag"/>

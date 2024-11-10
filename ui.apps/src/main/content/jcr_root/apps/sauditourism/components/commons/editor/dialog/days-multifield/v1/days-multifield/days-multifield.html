@@ -1,0 +1,41 @@
+<coral-multifield
+    data-cmp-is="childrenEditor"
+    data-st-cmp-is="daysMultifield"
+    class="cmp-childreneditor"
+    data-sly-use.iconTemplate="icon.html"
+    data-sly-use.childrenEditor="com.adobe.cq.wcm.core.components.commons.editor.dialog.childreneditor.Editor"
+    data-sly-attribute.data-container-path="${childrenEditor.container.path @ context='uri'}">
+
+  <coral-multifield-item
+      data-name="${item.name @ context='text'}"
+      data-sly-repeat.item="${childrenEditor.items}">
+    <div class="cmp-childreneditor__item">
+      <sly data-sly-call="${iconTemplate.icon @ item=item}"></sly>
+      <input is="coral-textfield"
+             class="cmp-childreneditor__item-title"
+             data-cmp-hook-childreneditor="itemTitle"
+             name="./${item.name}/cq:panelTitle"
+             value="${item.value}"
+             placeholder="${item.title}"
+             variant="quiet"
+             readonly>
+    </div>
+  </coral-multifield-item>
+
+  <button data-cmp-hook-childreneditor="add" type="button" is="coral-button">
+    ${'Add a day' @  i18n}
+  </button>
+
+  <template coral-multifield-template="">
+    <div class="cmp-childreneditor__item">
+            <span class="cmp-childreneditor__item-icon"
+                  data-cmp-hook-childreneditor="itemIcon"></span>
+      <input is="coral-textfield"
+             class="cmp-childreneditor__item-title"
+             data-cmp-hook-childreneditor="itemTitle"
+             variant="quiet"
+             readonly>
+      <input type="hidden" data-cmp-hook-childreneditor="itemResourceType">
+    </div>
+  </template>
+</coral-multifield>

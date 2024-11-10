@@ -1,0 +1,45 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Mon Oct 31 2022 11:47:23 GMT+0400",
+  "title": "Download Apps",
+  "jcr:lastModified": "Mon Oct 31 2022 18:35:55 GMT+0400",
+  "sling:resourceType": "sauditourism/components/content/e-visa-download-apps",
+  "eVisaApplications": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Tawakkalna",
+      "description": "Tawakkalna (Covid-19 KSA) is the official Saudi Contact Tracing app. approved by the Saudi Ministry of Health",
+      "brandIcon": "/content/dam/icons/favicon-16x16.png",
+      "appsList": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "appUrl": "www.google.com",
+          "appStoreIcon": "/content/dam/icons/favicon-16x16.png"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "appUrl": "www.google.com",
+          "appStoreIcon": "/content/dam/icons/favicon-16x16.png"
+        }
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Nusuk",
+      "description": "Nusuk (Eatmarna Previously) Based on the responsibility of the Ministry of Hajj and Umrah",
+      "brandIcon": "/content/dam/icons/favicon-16x16.png",
+      "appsList": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "appUrl": "www.google.com",
+          "appStoreIcon": "/content/dam/icons/favicon-16x16.png"
+        }
+      }
+    }
+  }
+}

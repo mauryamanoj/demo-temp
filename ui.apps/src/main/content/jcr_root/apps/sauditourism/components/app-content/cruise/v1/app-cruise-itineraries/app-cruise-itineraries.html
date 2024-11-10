@@ -1,0 +1,19 @@
+<sly data-sly-use.data="com.saudi.tourism.core.models.app.cruise.AppCruiseItineraries"></sly>
+<h3>
+  ${'Cruise Itineraries' @ i18n}
+</h3>
+
+<p>${'Title' @ i18n}:
+  <span class="cruise-itineraries__cq-title">${data.title @ context='text'}</span>
+</p>
+
+<h4>${'Items' @ i18n}</h4>
+<ul data-sly-list.itineraryItem="${data.items}">
+  <li>
+    <span>${itineraryItem.title}</span>
+    <p>${'Description' @ i18n}: ${itineraryItem.description}</p>
+    <p>${'Image' @ i18n}: ${itineraryItem.image}</p>
+    <p>${'From' @ i18n}: ${itineraryItem.from}</p>
+    <p>${'To' @ i18n}: ${itineraryItem.to}</p>
+  </li>
+</ul>

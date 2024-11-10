@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="ar"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <ACCEPT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ACCEPT"
+        sling:message="موافق"/>
+    <ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ACCOUNT"
+        sling:message="حسابي"/>
+    <ACTIVITY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ACTIVITY"
+        sling:message="نشاط"/>
+    <AFTERNOON
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="AFTERNOON"
+        sling:message="بعد الظهر"/>
+    <AFTERNOON_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="AFTERNOON_SHORT"
+        sling:message="ب. ظ."/>
+    <ALL_CONTINENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ALL_CONTINENTS"
+        sling:message="جميع القارات"/>
+    <ALL_LOCATIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ALL_LOCATIONS"
+        sling:message="جميع الأماكن"/>
+    <APPLIED_FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="APPLIED_FILTERS"
+        sling:message="الاختيارات المطبقة"/>
+    <APPLY_FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="APPLY_FILTERS"
+        sling:message="تطبيق الاختيارات"/>
+    <APPLY_TO_EVISA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="APPLY_TO_EVISA"
+        sling:message="طلب التأشيرة الإلكترونية"/>
+    <BE_OUR_GUEST
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BE_OUR_GUEST"
+        sling:message="كن ضيفنا"/>
+    <BOOK_NOW
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOK_NOW"
+        sling:message="احجز الآن"/>
+    <BOOK_TOUR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOK_TOUR"
+        sling:message="احجز الآن"/>
+    <BOOKING_HEADING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOKING_HEADING"
+        sling:message="الحجز المسبق لرحلتك"/>
+    <BOOKING_RESTAURANTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="BOOKING_RESTAURANTS"
+        sling:message="حجز المطاعم"/>
+    <CANCEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="CANCEL"
+        sling:message="إلغاء"/>
+    <CLEAR_ALL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="CLEAR_ALL"
+        sling:message="امسح الكل"/>
+    <DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DATE"
+        sling:message="التاريخ"/>
+    <DAY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DAY"
+        sling:message="يوم"/>
+    <DETAIL_ABOUT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_ABOUT"
+        sling:message="المزيد من التفاصيل"/>
+    <DETAIL_AUDIENCE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_AUDIENCE"
+        sling:message="الفئة المستهدفة"/>
+    <DETAIL_DATE_FROM
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_DATE_FROM"
+        sling:message="من"/>
+    <DETAIL_DATE_TO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_DATE_TO"
+        sling:message="إلى"/>
+    <DETAIL_DIRECTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_DIRECTIONS"
+        sling:message="احصل على الاتجاهات"/>
+    <DETAIL_EVENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_EVENT"
+        sling:message="تفاصيل الفعالية"/>
+    <DETAIL_SIMILAR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_SIMILAR"
+        sling:message="فعاليات مماثلة"/>
+    <DETAIL_SUGGESTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_SUGGESTIONS"
+        sling:message="اقتراحات لك"/>
+    <DETAIL_TIME
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_TIME"
+        sling:message="الوقت"/>
+    <DETAIL_TIME_ENDING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_TIME_ENDING"
+        sling:message="وقت النهاية"/>
+    <DETAIL_TIME_STARTING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DETAIL_TIME_STARTING"
+        sling:message="وقت البداية"/>
+    <DISCOVER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DISCOVER"
+        sling:message="اكتشف"/>
+    <DONT_HAVE_AN_ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="DONT_HAVE_AN_ACCOUNT"
+        sling:message="أليس لديك حساب؟"/>
+    <E_VISA_MESSAGE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="E_VISA_MESSAGE"
+        sling:message="تُمنح تأشيرة الدخول إلى السعودية للجميع. نتطلع إلى استقبالك واستضافتك في المملكة العربية السعودية"/>
+    <EMAIL_ADDRESS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMAIL_ADDRESS"
+        sling:message="البريد الإلكتروني"/>
+    <EMAIL_REQUIRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMAIL_REQUIRED"
+        sling:message="البريد الإلكتروني مطلوب"/>
+    <EMBASSY_LIST
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMBASSY_LIST"
+        sling:message="قائمة السفارات"/>
+    <EMERGENCY_NUMBERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMERGENCY_NUMBERS"
+        sling:message="أرقام الطوارئ"/>
+    <EMPTY_EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EMPTY_EVENTS"
+        sling:message="تماشيًا مع التدابير الدولية لاحتواء تفشي فيروس كوفيد-19، تم تعليق جميع الفعاليات. تابعوا موقعنا للاطلاع على الفعاليات القادمة."/>
+    <EVENING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENING"
+        sling:message="مساء"/>
+    <EVENING_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENING_SHORT"
+        sling:message="م"/>
+    <EVENT_FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS"
+        sling:message="اختيارات الفعاليات"/>
+    <EVENT_FILTERS_CLEAR_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_CLEAR_DATE"
+        sling:message="امسح اختيارات التاريخ"/>
+    <EVENT_FILTERS_END_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_END_DATE"
+        sling:message="تاريخ النهاية"/>
+    <EVENT_FILTERS_OPTION_CATEGORIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_CATEGORIES"
+        sling:message="التصنيفات"/>
+    <EVENT_FILTERS_OPTION_CITIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_CITIES"
+        sling:message="المدن"/>
+    <EVENT_FILTERS_OPTION_FREEPAID
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_FREEPAID"
+        sling:message="السعر"/>
+    <EVENT_FILTERS_OPTION_REGIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_REGIONS"
+        sling:message="المناطق"/>
+    <EVENT_FILTERS_OPTION_SEASON
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_SEASON"
+        sling:message="الموسم"/>
+    <EVENT_FILTERS_OPTION_TARGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_OPTION_TARGET"
+        sling:message="الفئة المستهدفة"/>
+    <EVENT_FILTERS_START_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_START_DATE"
+        sling:message="تاريخ البداية"/>
+    <EVENT_FILTERS_VIEW_N_EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_VIEW_N_EVENTS"
+        sling:message="الفعاليات التي تم العثور عليها: {{n}}"/>
+    <EVENT_FILTERS_VIEW_ONE_EVENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_FILTERS_VIEW_ONE_EVENT"
+        sling:message="الفعاليات التي تم العثور عليها: 1"/>
+    <EVENT_HAS_PASSED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENT_HAS_PASSED"
+        sling:message="انتهت هذه الفعالية"/>
+    <EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS"
+        sling:message="فعاليات"/>
+    <EVENTS_END_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_END_DATE"
+        sling:message="إلى: {{date}}"/>
+    <EVENTS_ETA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_ETA"
+        sling:message="أيام باقية على الفعالية: {{n}}"/>
+    <EVENTS_FILTERS_NO_FOUND_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_FILTERS_NO_FOUND_BODY"
+        sling:message="حاول تغيير بعض الخيارات للعثور على ما تبحث عنه."/>
+    <EVENTS_FILTERS_NO_FOUND_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_FILTERS_NO_FOUND_TITLE"
+        sling:message="لم يتم العثور على نتائج"/>
+    <EVENTS_FOR_YOU
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_FOR_YOU"
+        sling:message="الفعاليات الخاصة بك"/>
+    <EVENTS_START_DATE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_START_DATE"
+        sling:message="من: {{date}}"/>
+    <EVENTS_SUSPENDED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_SUSPENDED"
+        sling:message="قريبا..."/>
+    <EVENTS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_TITLE"
+        sling:message="المهرجانات والفعاليات"/>
+    <EVENTS_TRENDING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_TRENDING"
+        sling:message="الفعاليات الأكثر تداولًا"/>
+    <EVENTS_UPCOMING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVENTS_UPCOMING"
+        sling:message="الفعاليات القادمة"/>
+    <EVISA_ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="EVISA_ACCOUNT"
+        sling:message="حساب eVisa"/>
+    <FEATURED_TOUR_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FEATURED_TOUR_PACKAGES"
+        sling:message="الباقات الأكثر شعبية"/>
+    <FILTER_OPTION_ALL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTER_OPTION_ALL"
+        sling:message="الكل"/>
+    <FILTERED_ENTITY_GRID_NO_RESULTS_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTERED_ENTITY_GRID_NO_RESULTS_BODY"
+        sling:message="حاول تغيير كلمات البحث حتى نجد أفضل باقة لك."/>
+    <FILTERED_ENTITY_GRID_NO_RESULTS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTERED_ENTITY_GRID_NO_RESULTS_TITLE"
+        sling:message="لا توجد نتائج \ud83d\ude30"/>
+    <FILTERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FILTERS"
+        sling:message="اختيارات"/>
+    <FOLLOW_US
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FOLLOW_US"
+        sling:message="تابعونا للمزيد من المستجدات"/>
+    <FROM_PRICE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="FROM_PRICE"
+        sling:message="من {{price}}"/>
+    <GENDER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="GENDER"
+        sling:message="جنسي"/>
+    <GET_DIRECTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="GET_DIRECTIONS"
+        sling:message="احصل على الاتجاهات"/>
+    <HALF_DAY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HALF_DAY"
+        sling:message="نصف يوم"/>
+    <HOME
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME"
+        sling:message="الرئيسية"/>
+    <HOME_GREETINGS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME_GREETINGS"
+        sling:message="مرحبا"/>
+    <HOME_GREETINGS_SUBTITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME_GREETINGS_SUBTITLE"
+        sling:message="احصل على إلهامك"/>
+    <HOME_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOME_TITLE"
+        sling:message="اكتشف السعودية"/>
+    <HOTELS_FILTER_TITLE_AREA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_FILTER_TITLE_AREA"
+        sling:message="المكان المقصود"/>
+    <HOTELS_FILTER_TITLE_CITIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_FILTER_TITLE_CITIES"
+        sling:message="مدن"/>
+    <HOTELS_HEADER_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_HEADER_TITLE"
+        sling:message="عروض الفنادق &#xa; الصيفية الرائعة"/>
+    <HOTELS_HEADER_TITLE_ONE_LINE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_HEADER_TITLE_ONE_LINE"
+        sling:message="عروض الفنادق الصيفية الرائعة"/>
+    <HOTELS_OFFERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="HOTELS_OFFERS"
+        sling:message="عروض الفنادق"/>
+    <I_AM_TRAVELLING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="I_AM_TRAVELLING"
+        sling:message="سأسافر"/>
+    <INVALID_EMAIL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="INVALID_EMAIL"
+        sling:message="بريد إلكتروني غير صالح"/>
+    <KEEP_EXPLORING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="KEEP_EXPLORING"
+        sling:message="اكتشف أكثر"/>
+    <LANGUAGE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LANGUAGE"
+        sling:message="اللغة"/>
+    <LEAD_GENERATION_FORM_USER_AGREEMENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LEAD_GENERATION_FORM_USER_AGREEMENT"
+        sling:message="أوافق على مشاركة معلوماتي مع شركة التنظيم السياحي"/>
+    <LEARN_MORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LEARN_MORE"
+        sling:message="اعرف أكثر"/>
+    <LOG_IN
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LOG_IN"
+        sling:message="تسجيل الدخول"/>
+    <LOG_IN_TO_YOUR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="LOG_IN_TO_YOUR"
+        sling:message="تسجيل الدخول إلى الحساب الخاص بك"/>
+    <MAIN_ATTRACTIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MAIN_ATTRACTIONS"
+        sling:message="معالم الجذب الرئيسية"/>
+    <MORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORE"
+        sling:message="المزيد"/>
+    <MORE_SCREEN_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORE_SCREEN_TITLE"
+        sling:message="كل ما تحتاج أن تعرفه وأكثر"/>
+    <MORNING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORNING"
+        sling:message="صباح"/>
+    <MORNING_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MORNING_SHORT"
+        sling:message="ص"/>
+    <MULTIPLE_LOCATIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MULTIPLE_LOCATIONS"
+        sling:message="مواقع متعددة"/>
+    <MY_INTERESTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_INTERESTS"
+        sling:message="اهتماماتي"/>
+    <MY_TRIP
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP"
+        sling:message="رحلتي"/>
+    <MY_TRIP_NO_FAVORITES_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_NO_FAVORITES_TITLE"
+        sling:message="لا يوجد لديك مفضلات"/>
+    <MY_TRIP_RECENT_FAVORITES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_RECENT_FAVORITES"
+        sling:message="المفضلات الأخيرة"/>
+    <MY_TRIP_YOU_MAY_LIKE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_YOU_MAY_LIKE"
+        sling:message="قد يعجبك"/>
+    <MY_TRIP_YOUR_TRIP_STARTS_HERE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="MY_TRIP_YOUR_TRIP_STARTS_HERE"
+        sling:message="رحلتك&#xa; إلى السعودية تبدأ هنا"/>
+    <N_HOTELS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="N_HOTELS"
+        sling:message="\{{n}} فنادق"/>
+    <NO_CONNECTION_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NO_CONNECTION_BODY"
+        sling:message="يبدو أنه ليس لديك اتصال ثابت في الوقت الحالي. الرجاء معاودة المحاولة في وقت لاحق."/>
+    <NO_CONNECTION_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NO_CONNECTION_TITLE"
+        sling:message="عذرًا! لا يوجد اتصال!"/>
+    <NO_RESULTS_FOUND
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NO_RESULTS_FOUND"
+        sling:message="لم يتم العثور على نتائج"/>
+    <NOON
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NOON"
+        sling:message="ظهر"/>
+    <NOON_SHORT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="NOON_SHORT"
+        sling:message="ظ"/>
+    <ONE_DAY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="ONE_DAY"
+        sling:message="يوم واحد"/>
+    <PASSWORD
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PASSWORD"
+        sling:message="كلمة المرور"/>
+    <PASSWORD_REQUIRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PASSWORD_REQUIRED"
+        sling:message="كلمة المرور مطلوبة"/>
+    <PAST_EVENTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PAST_EVENTS"
+        sling:message="الفعاليات الماضية"/>
+    <PAST_EVENTS_NO_CONNECTION_DISCLAIMER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PAST_EVENTS_NO_CONNECTION_DISCLAIMER"
+        sling:message="يبدو أنه ليس لديك اتصال ثابت حالياً. يرجى التحقق من الاتصال لتحميل فعاليات إضافية."/>
+    <PERSONALIZATION_AGE_OPTION_BETWEEN_30_50
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTION_BETWEEN_30_50"
+        sling:message="50-30"/>
+    <PERSONALIZATION_AGE_OPTION_LESS_30
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTION_LESS_30"
+        sling:message="30-"/>
+    <PERSONALIZATION_AGE_OPTION_MORE_50
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTION_MORE_50"
+        sling:message="50+"/>
+    <PERSONALIZATION_AGE_OPTIONS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_OPTIONS_TITLE"
+        sling:message="الفئة العمرية"/>
+    <PERSONALIZATION_AGE_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_QUESTION"
+        sling:message="أولاً ، كم عمرك؟"/>
+    <PERSONALIZATION_AGE_QUESTION_RESPONSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_AGE_QUESTION_RESPONSE"
+        sling:message="ممتاز! \ud83d\udc4d"/>
+    <PERSONALIZATION_CATEGORY_OPTION_ADVENTURE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_ADVENTURE_LABEL"
+        sling:message="مغامرة"/>
+    <PERSONALIZATION_CATEGORY_OPTION_CONVENTIONS_EXHIBITIONS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_CONVENTIONS_EXHIBITIONS_LABEL"
+        sling:message="المؤتمرات والمعارض"/>
+    <PERSONALIZATION_CATEGORY_OPTION_CULTURE_ARTS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_CULTURE_ARTS_LABEL"
+        sling:message="الثقافة والفنون"/>
+    <PERSONALIZATION_CATEGORY_OPTION_DIGITAL_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_DIGITAL_LABEL"
+        sling:message="التكنولوجيا"/>
+    <PERSONALIZATION_CATEGORY_OPTION_DINING_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_DINING_LABEL"
+        sling:message="الطعام"/>
+    <PERSONALIZATION_CATEGORY_OPTION_NATURE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_NATURE_LABEL"
+        sling:message="الطبيعة"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SHOPPING_RETAIL_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SHOPPING_RETAIL_LABEL"
+        sling:message="التسوق"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SHOWS_PERFORMING_ARTS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SHOWS_PERFORMING_ARTS_LABEL"
+        sling:message="العروض والفنون المسرحية"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SIGHTSEEING_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SIGHTSEEING_LABEL"
+        sling:message="زيارة معالم المدينة"/>
+    <PERSONALIZATION_CATEGORY_OPTION_SPORT_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_SPORT_LABEL"
+        sling:message="الرياضة"/>
+    <PERSONALIZATION_CATEGORY_OPTION_THEMED_ATTRACTIONS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_OPTION_THEMED_ATTRACTIONS_LABEL"
+        sling:message="مناطق الجذب السياحي"/>
+    <PERSONALIZATION_CATEGORY_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_QUESTION"
+        sling:message="ما الذي تبحث عنه في رحلة؟"/>
+    <PERSONALIZATION_CATEGORY_QUESTION_CHOOSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_CATEGORY_QUESTION_CHOOSE"
+        sling:message="اختر ما تريد من معرض اهتماماتنا"/>
+    <PERSONALIZATION_GENDER_OPTION_FEMALE_CONTENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_FEMALE_CONTENT"
+        sling:message="\ud83d\udc69"/>
+    <PERSONALIZATION_GENDER_OPTION_FEMALE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_FEMALE_LABEL"
+        sling:message="أنثى"/>
+    <PERSONALIZATION_GENDER_OPTION_MALE_CONTENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_MALE_CONTENT"
+        sling:message="\ud83d\udc68"/>
+    <PERSONALIZATION_GENDER_OPTION_MALE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_MALE_LABEL"
+        sling:message="ذكر"/>
+    <PERSONALIZATION_GENDER_OPTION_NOT_SAY_CONTENT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_NOT_SAY_CONTENT"
+        sling:message="\ud83e\udd2b"/>
+    <PERSONALIZATION_GENDER_OPTION_NOT_SAY_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_OPTION_NOT_SAY_LABEL"
+        sling:message="أفضل ألا أقول"/>
+    <PERSONALIZATION_GENDER_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_QUESTION"
+        sling:message="ما هو جنسك؟"/>
+    <PERSONALIZATION_GENDER_QUESTION_RESPONSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_GENDER_QUESTION_RESPONSE"
+        sling:message="ممتاز!"/>
+    <PERSONALIZATION_INTRODUCTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_INTRODUCTION"
+        sling:message="نرغب في تخصيص تجربتك على هذا التطبيق."/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_FAMILY_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_FAMILY_LABEL"
+        sling:message="عائلتي"/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_FRIENDS_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_FRIENDS_LABEL"
+        sling:message="أصدقائي"/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_OWN_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_OWN_LABEL"
+        sling:message=" وحدي"/>
+    <PERSONALIZATION_TRAVELLING_WITH_OPTION_PARTNER_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_OPTION_PARTNER_LABEL"
+        sling:message="زوجي/زوجتي"/>
+    <PERSONALIZATION_TRAVELLING_WITH_QUESTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_QUESTION"
+        sling:message="حسنًا ، من سيسافر معك؟"/>
+    <PERSONALIZATION_TRAVELLING_WITH_QUESTION_RESPONSE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_TRAVELLING_WITH_QUESTION_RESPONSE"
+        sling:message="بقي سؤال أخير فقط! \ud83e\udd29"/>
+    <PERSONALIZATION_WELCOME
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PERSONALIZATION_WELCOME"
+        sling:message="مرحبا!"/>
+    <PRIVACY_POLICY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="PRIVACY_POLICY"
+        sling:message="سياسة الخصوصية"/>
+    <RED_SEA_ACTIVITIES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ACTIVITIES"
+        sling:message="الأنشطة"/>
+    <RED_SEA_AREA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_AREA"
+        sling:message="المنطقة"/>
+    <RED_SEA_BOOK_PACKAGE_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_BOOK_PACKAGE_CTA"
+        sling:message="احجز الآن"/>
+    <RED_SEA_DURATION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_DURATION"
+        sling:message="المدة"/>
+    <RED_SEA_FILTER_SUBTITLE_BUDGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_SUBTITLE_BUDGET"
+        sling:message="للشخص الواحد"/>
+    <RED_SEA_FILTER_TITLE_AREA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_AREA"
+        sling:message="المكان المقصود"/>
+    <RED_SEA_FILTER_TITLE_BUDGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_BUDGET"
+        sling:message="ما هي ميزانيتك؟"/>
+    <RED_SEA_FILTER_TITLE_CATEGORY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_CATEGORY"
+        sling:message="الإهتمامات"/>
+    <RED_SEA_FILTER_TITLE_DURATION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_DURATION"
+        sling:message="مدة الرحلة"/>
+    <RED_SEA_FILTER_TITLE_TARGET
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_FILTER_TITLE_TARGET"
+        sling:message="نوع المسافرين"/>
+    <RED_SEA_HERO_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_HERO_CTA"
+        sling:message="اكتشف الآن"/>
+    <RED_SEA_HERO_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_HERO_DESCRIPTION"
+        sling:message="استمتع بجميع الأنشطة الصيفية والباقات السياحية التي تقدمها لك السعودية"/>
+    <RED_SEA_HERO_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_HERO_TITLE"
+        sling:message="تنفّس روح السعودية"/>
+    <RED_SEA_N_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_N_PACKAGES"
+        sling:message="عدد الباقات {{n}} "/>
+    <RED_SEA_PACKAGES_RECOMMENDED_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_PACKAGES_RECOMMENDED_PACKAGES"
+        sling:message="باقات مقترحة"/>
+    <RED_SEA_PACKAGES_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_PACKAGES_TITLE"
+        sling:message="الباقات السياحية للصيف"/>
+    <RED_SEA_PACKAGES_TITLE_ONE_LINE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_PACKAGES_TITLE_ONE_LINE"
+        sling:message="الباقات السياحية للصيف"/>
+    <RED_SEA_ROUTE_CONTENT_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_CONTENT_TITLE"
+        sling:message="تفاصيل الطريق"/>
+    <RED_SEA_ROUTE_DOWNLOAD_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_DOWNLOAD_BODY"
+        sling:message="تحميل الدليل"/>
+    <RED_SEA_ROUTE_HEADER_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_HEADER_LABEL"
+        sling:message="العالم في وجهة واحدة"/>
+    <RED_SEA_ROUTE_SLIDER_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_SLIDER_TITLE"
+        sling:message="اكتشف صيف المملكة"/>
+    <RED_SEA_ROUTE_SUMMER_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_ROUTE_SUMMER_PACKAGES"
+        sling:message="باقات الصيف"/>
+    <RED_SEA_TRAVELERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_TRAVELERS"
+        sling:message="المسافرون"/>
+    <RED_SEA_VENDORS_HEADER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RED_SEA_VENDORS_HEADER"
+        sling:message="هذه الجولة تدار من قبل {{vendor}}"/>
+    <REGION_SELECTION_ALL_REGIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REGION_SELECTION_ALL_REGIONS"
+        sling:message="كل المناطق"/>
+    <REGION_SELECTION_CHOOSE_REGION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REGION_SELECTION_CHOOSE_REGION"
+        sling:message="اختر المنطقة"/>
+    <REQUEST_QUOTE_ERROR_OVERLAY_BUTTON_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_ERROR_OVERLAY_BUTTON_LABEL"
+        sling:message="حسناً"/>
+    <REQUEST_QUOTE_ERROR_OVERLAY_TITLE_ONE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_ERROR_OVERLAY_TITLE_ONE"
+        sling:message="عذراً! \ud83d\ude1e"/>
+    <REQUEST_QUOTE_ERROR_OVERLAY_TITLE_TWO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_ERROR_OVERLAY_TITLE_TWO"
+        sling:message="خطأ في طلبك!"/>
+    <REQUEST_QUOTE_FORM_COMMENT_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_COMMENT_LABEL"
+        sling:message="تعليقات"/>
+    <REQUEST_QUOTE_FORM_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_CTA"
+        sling:message="إرسال"/>
+    <REQUEST_QUOTE_FORM_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_DESCRIPTION"
+        sling:message="املأ النموذج وسيقوم أحد الموظفين بالتواصل معك لإتمام حجزك"/>
+    <REQUEST_QUOTE_FORM_EMAIL_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_EMAIL_LABEL"
+        sling:message="البريد الإلكتروني"/>
+    <REQUEST_QUOTE_FORM_ERROR_FIELD_REQUIRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_ERROR_FIELD_REQUIRED"
+        sling:message="* مطلوب"/>
+    <REQUEST_QUOTE_FORM_ERROR_INVALID_FIELD
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_ERROR_INVALID_FIELD"
+        sling:message="البيانات المدخلة غير صالحة"/>
+    <REQUEST_QUOTE_FORM_FIRST_NAME_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_FIRST_NAME_LABEL"
+        sling:message="الاسم الاول"/>
+    <REQUEST_QUOTE_FORM_LAST_NAME_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_LAST_NAME_LABEL"
+        sling:message="اسم العائلة"/>
+    <REQUEST_QUOTE_FORM_NATIONALITY_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_NATIONALITY_LABEL"
+        sling:message="الجنسية"/>
+    <REQUEST_QUOTE_FORM_PHONE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_PHONE_LABEL"
+        sling:message="رقم الهاتف"/>
+    <REQUEST_QUOTE_FORM_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_FORM_TITLE"
+        sling:message="ابدأ الحجز"/>
+    <REQUEST_QUOTE_SUCCESS_OVERLAY_BUTTON_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_SUCCESS_OVERLAY_BUTTON_LABEL"
+        sling:message="حسناً"/>
+    <REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_ONE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_ONE"
+        sling:message="تم!\ud83d\udc4d"/>
+    <REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_TWO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="REQUEST_QUOTE_SUCCESS_OVERLAY_TITLE_TWO"
+        sling:message="شكراً لطلبك!"/>
+    <RETRY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="RETRY"
+        sling:message="أعد المحاولة"/>
+    <SAUDI_ESSENTIALS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SAUDI_ESSENTIALS"
+        sling:message="أساسيات السعودية"/>
+    <SAVE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SAVE"
+        sling:message="احفظ"/>
+    <SAVE_CHANGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SAVE_CHANGES"
+        sling:message="احفظ التغييرات"/>
+    <SEARCH_FOR_YOUR_EMBASSY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_FOR_YOUR_EMBASSY"
+        sling:message="ابحث عن سفارتك"/>
+    <SEARCH_FOUND_N_RESULTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_FOUND_N_RESULTS"
+        sling:message="عدد النتائج: {{n}}"/>
+    <SEARCH_INPUT_PLACEHOLDER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_INPUT_PLACEHOLDER"
+        sling:message="أكتب هنا"/>
+    <SEARCH_NO_RESULTS_BODY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_NO_RESULTS_BODY"
+        sling:message="حاول البحث عن شيء مختلف."/>
+    <SEARCH_NO_RESULTS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_NO_RESULTS_TITLE"
+        sling:message="لا توجد نتائج"/>
+    <SEARCH_SUGGESTED_SEARCHES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_SUGGESTED_SEARCHES"
+        sling:message="البحوث المقترحة"/>
+    <SEARCH_VISA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_VISA"
+        sling:message="تأشيرة"/>
+    <SEARCH_WHAT_ARE_YOU_LOOGIN_FOR
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_ARE_YOU_LOOGIN_FOR"
+        sling:message="مرحبا، عما تبحث؟"/>
+    <SEARCH_WHAT_TO_DO_IN_JEDDAH
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_TO_DO_IN_JEDDAH"
+        sling:message="أنشطة يمكن القيام بها في جدة"/>
+    <SEARCH_WHAT_TO_DO_IN_MAKKAH
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_TO_DO_IN_MAKKAH"
+        sling:message="أنشطة يمكن القيام بها في مكة"/>
+    <SEARCH_WHAT_TO_DO_IN_RIYADH
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_WHAT_TO_DO_IN_RIYADH"
+        sling:message="أنشطة يمكن القيام بها في الرياض"/>
+    <SEARCH_YOUR_COUNTRY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEARCH_YOUR_COUNTRY"
+        sling:message="ابحث في بلدك"/>
+    <SEE_AND_DO
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO"
+        sling:message="معالم وأنشطة"/>
+    <SEE_AND_DO_ALL_REGIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_ALL_REGIONS"
+        sling:message="كل المناطق"/>
+    <SEE_AND_DO_EXPLORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_EXPLORE"
+        sling:message="استكشف"/>
+    <SEE_AND_DO_ITEMS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_ITEMS"
+        sling:message="عدد العناصر: {{items}}"/>
+    <SEE_AND_DO_OPEN_MAP
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_OPEN_MAP"
+        sling:message="افتح الخريطة"/>
+    <SEE_AND_DO_TRENDING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SEE_AND_DO_TRENDING"
+        sling:message="الأنشطة الأكثر شعبية"/>
+    <SELECT_A_LANGUAGE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SELECT_A_LANGUAGE"
+        sling:message="اختر لغة"/>
+    <SKIP
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SKIP"
+        sling:message="تخطِ"/>
+    <SPEECH_RECOGNITION_ERROR_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SPEECH_RECOGNITION_ERROR_DESCRIPTION"
+        sling:message="يمكنك تمكينه في إعدادات هاتفك"/>
+    <SPEECH_RECOGNITION_ERROR_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SPEECH_RECOGNITION_ERROR_TITLE"
+        sling:message="التعرف على الكلام غير متوفر"/>
+    <START_DISCOVERING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="START_DISCOVERING"
+        sling:message="ابدأ الاكتشاف"/>
+    <START_PLANNING
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="START_PLANNING"
+        sling:message="لبدء التخطيط لرحلتك القادمة"/>
+    <SUMMER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER"
+        sling:message="الصيف"/>
+    <SUMMER_DESTINATIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_DESTINATIONS"
+        sling:message="وجهات الصيف"/>
+    <SUMMER_EXPERIENCE_PAGE_HEADER
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_PAGE_HEADER"
+        sling:message="صيف في السعودية"/>
+    <SUMMER_EXPERIENCE_PAGE_SUBTITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_PAGE_SUBTITLE"
+        sling:message="خطط لمغامرتك القادمة"/>
+    <SUMMER_EXPERIENCE_PAGE_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_PAGE_TITLE"
+        sling:message="صيف في السعودية"/>
+    <SUMMER_EXPERIENCE_TOURS_FOR_YOU
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="SUMMER_EXPERIENCE_TOURS_FOR_YOU"
+        sling:message="جولات لك فقط"/>
+    <TELEPHONE_PROVIDERS_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TELEPHONE_PROVIDERS_TITLE"
+        sling:message="مزودو الخدمات الهاتفية"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_LABEL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_LABEL"
+        sling:message="مفتاح المملكة العربية السعودية"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_VALUE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_VALUE"
+        sling:message="966"/>
+    <TERMS_AND_CONDITIONS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TERMS_AND_CONDITIONS"
+        sling:message="الأحكام والشروط"/>
+    <TODAY_HIGHLIGHT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TODAY_HIGHLIGHT"
+        sling:message="نشاط اليوم"/>
+    <TOUR_DETAILS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_DETAILS"
+        sling:message="تفاصيل الجولة"/>
+    <TOUR_END
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_END"
+        sling:message="نهاية الجولة"/>
+    <TOUR_ITINERARY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_ITINERARY"
+        sling:message="برنامج الجولة"/>
+    <TOUR_PACKAGES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES"
+        sling:message="اكتشف السعودية"/>
+    <TOUR_PACKAGES_2_LINES
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_2_LINES"
+        sling:message="باقات سياحية"/>
+    <TOUR_PACKAGES_HERO_CTA
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_HERO_CTA"
+        sling:message="اعرض جميع الجولات"/>
+    <TOUR_PACKAGES_HERO_DESCRIPTION
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_HERO_DESCRIPTION"
+        sling:message="استمتع بكل لحظة من زيارتك مع هذه الباقات السياحية المصممة خصيصا لك."/>
+    <TOUR_PACKAGES_HERO_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="TOUR_PACKAGES_HERO_TITLE"
+        sling:message="اكتشف السعودية"/>
+    <UNEXPECTED_ERROR_HAS_OCCURRED
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="UNEXPECTED_ERROR_HAS_OCCURRED"
+        sling:message="لقد حدث خطأ غير متوقع"/>
+    <USEFUL_CONTACTS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="USEFUL_CONTACTS"
+        sling:message="اتصالات مفيدة"/>
+    <USEFUL_NUMBERS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="USEFUL_NUMBERS"
+        sling:message="أرقام مفيدة"/>
+    <VENDOR_SELECTION_TITLE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VENDOR_SELECTION_TITLE"
+        sling:message="اختر شركة"/>
+    <VIEW_ALL
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIEW_ALL"
+        sling:message="اعرض الكل"/>
+    <VIEW_LESS
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIEW_LESS"
+        sling:message="عرض أقل"/>
+    <VIEW_MORE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VIEW_MORE"
+        sling:message="عرض المزيد"/>
+    <VISIT_WEBSITE
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="VISIT_WEBSITE"
+        sling:message="زور موقعهم"/>
+    <WE_ARE_SORRY
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="WE_ARE_SORRY"
+        sling:message="عذرًا"/>
+    <YOUR_ACCOUNT
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="YOUR_ACCOUNT"
+        sling:message="حسابك"/>
+</jcr:root>

@@ -1,0 +1,21 @@
+query getCategories($locale: String!, $offset: Int!, $limit: Int) {
+  categoryList(_locale: $locale, offset: $offset, limit: $limit) {
+    items {
+      _path
+      title
+      alt
+      image {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+          mimeType
+        }
+      }
+      s7image
+      icon
+    }
+  }
+}

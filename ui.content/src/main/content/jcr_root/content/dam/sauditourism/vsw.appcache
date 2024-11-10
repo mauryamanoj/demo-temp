@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# 2021-11-10 v1.0.0
+# Explicitly cached 'master entries'.
+CACHE:
+/etc.clientlibs/sauditourism/clientlibs/clientlib-site/resources/asset/font/39FF51_0_0.7f83d63.woff2
+/etc.clientlibs/sauditourism/clientlibs/clientlib-site/resources/asset/font/3A7CD9_1_0.84ace4b.woff2
+https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2
+https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2
+https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap
+
+# Resources that require the user to be online.
+NETWORK:
+# never cached
+
+FALLBACK:
+# Fallback

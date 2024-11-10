@@ -1,0 +1,55 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "mobileImage":"/content/dam/articles/batch-1/saudi-tourism-the-pros-of-guided-tours/guided_tours_hero_app_feature.jpg",
+  "imageAlt":"Placeholder",
+  "tripDetailsUrl":"/content/sauditourism/en/trip-detail-page",
+  "jcr:lastModified":"Mon Feb 08 2021 21:38:47 GMT+0100",
+  "desktopImage":"/content/dam/articles/batch-1/saudi-tourism-the-pros-of-guided-tours/guided_tours_hero_desktop_1920x860.jpg",
+  "sling:resourceType":"sauditourism/components/structure/admin/create-itinerary-config",
+  "s7mobileImage":"https://scth.scene7.com/is/image/scth/guided_tours_hero_app_feature",
+  "steps":{
+    "jcr:primaryType":"nt:unstructured",
+    "step1":{
+      "jcr:primaryType":"nt:unstructured",
+      "buttonTitle":"Save & Continue",
+      "inputPlaceholder":"Enter your trip's name",
+      "label":"Name",
+      "title":"Personalize your trip"
+    },
+    "step2":{
+      "jcr:primaryType":"nt:unstructured",
+      "buttonTitle":"Save & Continue",
+      "multipleSelectionLabel":"Multiple destinations",
+      "label":"Where",
+      "title":"Where are you travelling?"
+    },
+    "step3":{
+      "jcr:primaryType":"nt:unstructured",
+      "buttonTitle":"Create itinerary",
+      "description":"Leave it up to us, and enjoy your travels!",
+      "dateLabel":"Select the start date",
+      "label":"When",
+      "title":"When are you travelling?"
+    }
+  },
+  "loginModal":{
+    "jcr:primaryType":"nt:unstructured",
+    "title":"Please login or Signup!",
+    "primaryButtonLabel":"Login or Signup",
+    "paragraph":"You need to have an account in order to create your trip."
+  },
+  "errorModal":{
+    "jcr:primaryType":"nt:unstructured",
+    "title":"Oops!",
+    "primaryButtonLabel":"Try Again",
+    "paragraph":"There was an error performing this action"
+  },
+  "closeModal":{
+    "jcr:primaryType":"nt:unstructured",
+    "subtitle":"Are you sure you want to exit?",
+    "secondaryButtonLabel":"I´ll Stay",
+    "title":"Don´t leave!",
+    "primaryButtonLabel":"Leave",
+    "paragraph":"It looks like you are in the middle of creating an itinerary.\nChanges you made won´t be saved."
+  }
+}

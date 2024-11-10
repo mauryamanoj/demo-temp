@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Al Gomom"
+    jcr:title.ar="الجموم"
+    jcr:title.de="Al-Gomom"
+    jcr:title.es="Al Gomom"
+    jcr:title.fr="Al Gomom"
+    jcr:title.ja="アル・ジュムム"
+    jcr:title.ru="Эль-Гомом"
+    jcr:title.zh="朱穆姆"
+    sling:resourceType="cq/tagging/components/tag"
+    city="al-gomom"/>

@@ -1,0 +1,48 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "cardType": "SOCIAL_MEDIA_CARD",
+  "title": "On Social Media",
+  "jcr:lastModified": "Fri Oct 27 2023 12:01:14 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/reach-us",
+
+  "socialMediaCards": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "categories_xs_shopping",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "facebook.com/visit-saudi",
+        "targetInNewWindow": "true"
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "categories_xs_culture",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "instagram.com/visit-saudi",
+        "targetInNewWindow": "true"
+      }
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "categories_xs_nature",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "x.com/visit-saudi",
+        "targetInNewWindow": "true"
+      }
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "categories_xs_entertainment",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "url": "linkedin.com/visit-saudi",
+        "text": "Visit Saudi",
+        "targetInNewWindow": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<h2> Upcoming Seasons Configuration </h2>
+<div class="configurator"
+     data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html"
+     data-sly-use.holidays="com.saudi.tourism.core.models.common.UpcomingSeasons"
+     data-sly-test.configured="${!holidays.empty}">
+  <h2> Upcoming Seasons Configuration </h2>
+  <br>
+  <ul data-sly-list.date="${holidays}">
+    <li>
+      ${date} &nbsp; ${holidays[date]}
+    </li>
+  </ul>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!configured}"></sly>

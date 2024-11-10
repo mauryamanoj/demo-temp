@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header Config Page"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="dialog-container"
+        jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <logoPath
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Select Path to open when logo is clicked"
+                                        fieldLabel="Logo Link Path"
+                                        name="./logoPath"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="logoPath"/>
+                                    </logoPath>
+                                    <searchPath
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Search Path"
+                                        fieldLabel="Search Path"
+                                        name="./searchPath"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="searchPath"/>
+                                    </searchPath>
+                                    <hideSearch
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="check to hide the search icon"
+                                        fieldLabel="Hide Search Icon on Header"
+                                        name="./hideSearch"
+                                        text="Hide Search Icon"
+                                        uncheckedValue="false"
+                                        value="true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="hideSearch"/>
+                                    </hideSearch>
+                                    <fav-feed-url
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Please select favorite results page URL."
+                                        fieldLabel="URL of favorite Results page"
+                                        name="./favoritesResultsPageUrl"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="favoritesResultsPageUrl"/>
+                                    </fav-feed-url>
+                                    <account-url
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Please select Account page URL."
+                                        fieldLabel="URL of Account page"
+                                        name="./accountPath"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="accountPath"/>
+                                    </account-url>
+                                    <myFavorites
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Please select My Favorites page URL."
+                                        fieldLabel="URL of My Favorites page"
+                                        name="./myFavorites"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="myFavorites"/>
+                                    </myFavorites>
+                                    <myTrips
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Please select My Trips page URL."
+                                        fieldLabel="URL of My Trips page"
+                                        name="./myTrips"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="myTrips"/>
+                                    </myTrips>
+                                    <hideLogin
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="check to hide the login button"
+                                        fieldLabel="Hide Login Button on Header"
+                                        name="./hideLogin"
+                                        text="Hide Login Button"
+                                        uncheckedValue="false"
+                                        value="true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="hideLogin"/>
+                                    </hideLogin>
+                                    <evisaTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Evisa Title"
+                                            cq:showOnCreate="{Boolean}true"
+                                            name="./evisa/title">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                cq-msm-lockable="evisa/title"/>
+                                    </evisaTitle>
+                                    <evisaText
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Evisa Text"
+                                        name="./evisa/text">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="evisa/text"/>
+                                    </evisaText>
+                                    <evisaAnalyticsText
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Evisa Text (Analytics data must be in English only)"
+                                        name="./evisa/analyticsDataCopy">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="evisa/analyticsDataCopy"/>
+                                    </evisaAnalyticsText>
+                                    <evisaLink
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Either internal or external URL"
+                                        fieldLabel="Evisa URL"
+                                        name="./evisa/url"
+                                        rootPath="/content">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="evisa/url"/>
+                                    </evisaLink>
+                                    <evisaOpenNewTab
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Open new tab if checked"
+                                        fieldLabel="Evisa Open New Tab"
+                                        name="./evisa/openNewTab"
+                                        text="Open New Tab"
+                                        uncheckedValue="false"
+                                        value="true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="evisa/openNewTab"/>
+                                    </evisaOpenNewTab>
+                                    <contacts
+                                        cq:showOnCreate="{Boolean}true"
+                                        granite:class="coral-marker-multifield dataset-cta-multifield"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        cq-msm-lockable="contacts"
+                                        fieldDescription="Click 'Add' button to add new contact"
+                                        fieldLabel="Contact Links">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="contacts"
+                                            max="{Long}2"/>
+                                        <field
+                                            granite:class="accordion-multifield-item"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./contacts">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <ctaItem
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="New CTA"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <cta
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                            path="sauditourism/components/commons/cta-link/content/items/columns/items/column"/>
+                                                    </items>
+                                                </ctaItem>
+                                            </items>
+                                        </field>
+                                    </contacts>
+                                    <hideLangSelector
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="check to hide the language selector"
+                                        fieldLabel="Hide Language Selector on Header"
+                                        name="./hideLangSelector"
+                                        text="Hide language Selector"
+                                        uncheckedValue="false"
+                                        value="true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="hideLangSelector"/>
+                                    </hideLangSelector>
+                                    <faq
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="FAQ"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <copy
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="FAQ copy"
+                                                fieldLabel="FAQ copy"
+                                                name="./faq/copy"
+                                                value="FAQ"/>
+                                            <url
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Please select FAQ link."
+                                                fieldLabel="FAQ link"
+                                                name="./faq/url"
+                                                required="{Boolean}false"
+                                                rootPath="/content"/>
+                                        </items>
+                                    </faq>
+                                    <whatsapp
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Whatsapp"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <copy
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Whatsapp copy"
+                                                fieldLabel="Whatsapp copy"
+                                                name="./whatsapp/copy"/>
+                                            <url
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please select Whatsapp number."
+                                                fieldLabel="Whatsapp number"
+                                                name="./whatsapp/url"
+                                                required="{Boolean}false"/>
+                                            <icon
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Whatsapp icon"
+                                                fieldLabel="Whatsapp icon"
+                                                name="./whatsapp/icon"
+                                                value="whatsapp"/>
+                                        </items>
+                                    </whatsapp>
+                                    <phoneNumbers
+                                        cq:showOnCreate="{Boolean}true"
+                                        granite:class="coral-marker-multifield dataset-cta-multifield"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        cq-msm-lockable="phoneNumbers"
+                                        fieldDescription="Click 'Add' button to add new phoneNumer"
+                                        fieldLabel="Nav Phone Numers">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="phoneNumbers"
+                                            max="{Long}2"/>
+                                        <field
+                                            granite:class="accordion-multifield-item"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./phoneNumbers">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <ctaItem
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="New Phone Item"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <text
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            granite:class="accordion-multifield-item-title"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Label for Desktop"
+                                                            fieldLabel="Label for Desktop"
+                                                            name="./text"/>
+                                                        <copy
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Label for Mobile"
+                                                            fieldLabel="Label for Mobile"
+                                                            name="./copy"/>
+                                                        <url
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Select or Enter action path or url for CTA"
+                                                            fieldLabel="Phone Number"
+                                                            name="./url"
+                                                            rootPath="/content">
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                allowNonExistingPath="{Boolean}true"/>
+                                                        </url>
+                                                    </items>
+                                                </ctaItem>
+                                            </items>
+                                        </field>
+                                    </phoneNumbers>
+                                    <menuLabel
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Menu label for the mobile view"
+                                        fieldLabel="Menu label"
+                                        name="./menuLabel"
+                                        required="{Boolean}false"/>
+                                    <toolTipTitle
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Provide tool tip title"
+                                        fieldLabel="Tool tip title"
+                                        name="./toolTipTitle"/>
+                                    <toolTipDescription
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Provide tool tip description"
+                                        fieldLabel="Tool tip description"
+                                        name="./toolTipDescription"/>
+                                    <toolTipNewText
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Provide tool tip new text"
+                                        fieldLabel="Tool tip new text"
+                                        name="./toolTipNewText"/>
+                                    <hideMap
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Select this to hide the Map icon"
+                                        fieldLabel="Hide Map Icon"
+                                        name="./map/hideMap"
+                                        text="Hide Map Icon"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="map/hideMap"/>
+                                    </hideMap>
+                                    <regionId
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Provide map region id"
+                                        fieldLabel="Map region id"
+                                        name="./map/regionId"/>
+                                    <cityId
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Provide map city id"
+                                        fieldLabel="Map city id"
+                                        name="./map/cityId"/>
+                                    <locationType
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Provide map location type"
+                                        fieldLabel="Map location type"
+                                        name="./map/locationType"/>
+                                    <mapLink
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Select Path to open when map is clicked"
+                                        fieldLabel="Map Link"
+                                        name="./map/mapLink"
+                                        rootPath="/content/sauditourism"/>
+                                </items>
+                            </column>
+                        </items>
+                    </general>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

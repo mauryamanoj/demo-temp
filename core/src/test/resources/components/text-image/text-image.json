@@ -1,0 +1,44 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "description": "<p>This is a small description</p>",
+  "jcr:lastModifiedBy": "admin",
+  "componentId":"text_image",
+  "whiteBackground": "true",
+  "skipMargin": "true",
+  "jcr:created": "Mon Dec 18 2023 13:19:30 GMT+0100",
+  "title": "Test title",
+  "position": "left",
+  "jcr:lastModified": "Mon Dec 18 2023 13:50:23 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/text-image",
+  "textIsRich": "true",
+  "link": {
+    "jcr:primaryType": "nt:unstructured",
+    "url": "/content/sauditourism/en/live-the-moment",
+    "text": "View more",
+    "targetInNewWindow": "true"
+  },
+  "image": {
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/sauditourism/red-sea.jpeg",
+    "jcr:lastModifiedBy": "admin",
+    "alt": "Alt test",
+    "jcr:lastModified": "Mon Dec 18 2023 13:50:23 GMT+0100"
+  },
+  "logo": {
+    "jcr:primaryType": "nt:unstructured",
+    "s7fileReference": "/content/dam/sauditourism/healthcare ministry.png",
+    "fileReference": "/content/dam/sauditourism/healthcare ministry.png",
+    "jcr:lastModifiedBy": "admin",
+    "alt": "Alt logo test",
+    "jcr:lastModified": "Mon Dec 18 2023 13:50:23 GMT+0100",
+    "isTransparent": "true"
+  },
+  "ctaData": {
+    "jcr:primaryType": "nt:unstructured",
+    "pageCategory": "cta event page category",
+    "pageSubCategory": "cta event page sub category",
+    "sectionName": "cta event section name",
+    "ctaEventName": "cta event name"
+  }
+}

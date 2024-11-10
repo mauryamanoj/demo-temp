@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Traditional Market"
+          jcr:title.ar="السوق التقليدي"
+          jcr:title.de="Traditioneller Markt"
+          jcr:title.es="Mercado tradicional"
+          jcr:title.fr="Marché traditionnel"
+          jcr:title.ja="伝統的な市場"
+          jcr:title.ru="Традиционный рынок"
+          jcr:title.zh="传统市场"
+          sling:resourceType="cq/tagging/components/tag"/>

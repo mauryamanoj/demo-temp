@@ -1,0 +1,20 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "storyCFPath": "/content/dam/sauditourism/cf/en/stories/story-2",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Tue Nov 28 2023 14:47:57 GMT+0100",
+  "jcr:lastModified": "Tue Nov 28 2023 20:24:26 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/sub-story",
+  "directionsLink": {
+    "jcr:primaryType": "nt:unstructured",
+    "url": "/content/sauditourism/en/abha-festival",
+    "targetInNewWindow": "true"
+  },
+  "link": {
+    "jcr:primaryType": "nt:unstructured",
+    "url": "/content/sauditourism/en/about-e-visa",
+    "text": "See All",
+    "targetInNewWindow": "true"
+  }
+}

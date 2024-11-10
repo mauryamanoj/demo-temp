@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2020-07-23T15:09:10.961+02:00"
+    cq:lastModifiedBy="admin"
+    jcr:lastModified="{Date}2020-07-23T15:09:10.961+02:00"
+    jcr:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="0a11cf42-4fc6-356a-ae49-46369c24c7f5"
+    rep:authorizableId="general-entertainment-authority"
+    rep:members="{WeakReference}[]"
+    rep:principalName="general-entertainment-authority">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        givenName="general-entertainment-authority"/>
+</jcr:root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="f1dea5a8-76cb-3ce0-b593-ee11ed9c7f81"
+    rep:authorizableId="palms-land-tours"
+    rep:principalName="palms-land-tours"/>

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "SaudiSerif-Regular";
+  src:url("/src/main/resources/fonts/saudiSerif/SaudiSerif-VF.woff2") format("woff2"),
+      url("/src/main/resources/fonts/saudiSerif/SaudiSerif-VF.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SaudiSerif-SemiBold";
+  src:url("/src/main/resources/fonts/saudiSerif/SaudiSerif-VF.woff2") format("woff2"),
+      url("/src/main/resources/fonts/saudiSerif/SaudiSerif-VF.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SaudiSerif-Bold";
+  src:url("/src/main/resources/fonts/saudiSerif/SaudiSerif-VF.woff2") format("woff2"),
+      url("/src/main/resources/fonts/saudiSerif/SaudiSerif-VF.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SaudiSans-Regular";
+  src:url("/src/main/resources/fonts/saudiSans/SaudiSans-VF.woff2") format("woff2"),
+      url("/src/main/resources/fonts/saudiSans/SaudiSans-VF.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SaudiSans-SemiBold";
+  src:url("/src/main/resources/fonts/saudiSans/SaudiSans-VF.woff2") format("woff2"),
+      url("/src/main/resources/fonts/saudiSans/SaudiSans-VF.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SaudiSans-Bold";
+  src:url("/src/main/resources/fonts/saudiSans/SaudiSans-VF.woff2") format("woff2"),
+      url("/src/main/resources/fonts/saudiSans/SaudiSans-VF.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+}
+
+
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('/src/main/resources/fonts/gotham/Gotham-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Regular';
+    src: url('/src/main/resources/fonts/gotham/Gotham-Light.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham SemiBold';
+    src: url('/src/main/resources/fonts/gotham/Gotham-Bold.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("/src/main/resources/fonts/gilroy/39FF51_0_0.eot");
+  src: url("/src/main/resources/fonts/gilroy/39FF51_0_0.eot?#iefix") format("embedded-opentype"),
+      url("/src/main/resources/fonts/gilroy/39FF51_0_0.woff2") format("woff2"),
+      url("/src/main/resources/fonts/gilroy/39FF51_0_0.woff") format("woff"),
+      url("/src/main/resources/fonts/gilroy/39FF51_0_0.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url('/src/main/resources/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+    --font-primary-regular: SaudiSans-Regular;
+    --font-primary-bold: SaudiSans-Bold;
+    --font-primary-semibold: SaudiSans-Semibold;
+
+    --font-secondary-bold: SaudiSerif-Bold;
+    --font-secondary-regular: SaudiSerif-Regular;
+    --font-secondary-semibold: SaudiSerif-SemiBold;
+
+    --font-tertiary: Gotham Medium;
+    --font-tertiary-bold: Gotham SemiBold;
+    --font-tertiary-regular: Gotham Regular;
+    --font-tertiary-semibold: Gotham SemiBold;
+}
+
+html[lang='ar'] {
+    --font-tertiary: SaudiSerif-Regular;
+    --font-tertiary-bold: SaudiSerif-Bold;
+    --font-tertiary-regular: SaudiSerif-Regular;
+    --font-tertiary-semibold: SaudiSerif-Bold;
+}

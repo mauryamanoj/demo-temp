@@ -1,0 +1,33 @@
+<template data-sly-template.pictureCarousel="${@ winterCardModel,images}"
+          data-sly-use.g01SimpleLabel="/apps/sauditourism/components/content/templates/molecules/label-groups/label-g-01-simple.html"
+          data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+<div data-component="picture-with-carousel" class="picture-wrapper">
+
+<sly data-sly-test="${images}">
+  <div class="carousel">
+    <div class="slides">
+      <sly data-sly-list="${images}">
+      <picture class="picture slide">
+        <source data-srcset="${images[itemList.index]}" media="(min-width:768px)">
+        <img data-src="${images[itemList.index]}" class="image lazyload">
+      </picture>
+    </sly>
+    </div>
+    <div class="controls">
+      <div class="control prev-slide">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='Arrow_long', iconClass='arrow-left'}"></sly>
+      </div>
+      <div class="control next-slide">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='Arrow_long', iconClass='arrow-right'}"></sly>
+      </div>
+    </div>
+    <div class="counter">
+      <sly data-sly-list="${images}">
+       <span class="${itemList.index==0 ? 'dot current-dot' : 'dot'}"></span>
+      </sly>
+    </div>
+  </div>
+ </sly>
+</div> 
+
+</template>

@@ -1,0 +1,7 @@
+<template data-sly-template.pill03Weather="${@ color, icon, copy}"
+          data-sly-use.icon01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html">
+    <div data-component="pill-03-weather" class="color-${color ? color : 'default'}">
+        <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name=icon, desktopSize='18', mobileSize='22', class='pill-icon'}"
+        <span class="pill-copy cta-text">${copy}</span>
+    </div>
+</template>

@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "c97-card-grid": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "sling:resourceType": "sauditourism/components/content/c99-card-grid/v1/c99-card-grid",
+          "image": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:lastModified": "Fri Nov 22 2019 16:55:09 GMT+0100"
+          },
+          "events": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "cardImage": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+              "copy": "ssBeethoven was and remains synonym with virtuosity and artistry. At \\\"Winter at Tantora\\\" we revitalize his ledsd",
+              "title": "Beethoven Night",
+              "eventSubtitle": "Beethoven Night Sub",
+              "titleWeight": "h1",
+              "calendarStartDate": "Thu Nov 21 2019 00:00:00 GMT+0100",
+              "cardImageMobile": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+              "eventLink": {
+                "jcr:primaryType": "nt:unstructured",
+                "url": "/content/sauditourism/en/events/al/beethoven-night",
+                "copy": "book"
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured"
+              }
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitleWeight": "h1",
+              "calendarEndDate": "Fri Nov 29 2019 00:00:00 GMT+0100",
+              "cardImage": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+              "copy": "ssBeethoven was and remains synonym with virtuosity and artistry. At \\\"Winter at Tantora\\\" we revitalize his ledsd",
+              "title": "Beethoven Night",
+              "eventSubtitle": "Beethoven Night Sub",
+              "titleWeight": "h1",
+              "calendarStartDate": "Thu Nov 21 2019 00:00:00 GMT+0100",
+              "cardImageMobile": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+              "eventLink": {
+                "jcr:primaryType": "nt:unstructured",
+                "url": "/content/sauditourism/en/events/al/beethoven-night",
+                "copy": "book"
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

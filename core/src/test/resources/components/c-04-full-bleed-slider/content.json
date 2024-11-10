@@ -1,0 +1,65 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Oct 18 2019 11:23:06 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "full-bleed-slider",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:created": "Fri Oct 18 2019 11:23:06 GMT+1100",
+    "cq:lastModified": "Tue Oct 22 2019 12:02:32 GMT+1100",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "c04_full_bleed_slide": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Fri Oct 18 2019 14:00:28 GMT+1100",
+          "jcr:lastModified": "Tue Oct 22 2019 12:02:31 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/c04-full-bleed-slider",
+          "componentHeading": {
+            "jcr:primaryType": "nt:unstructured",
+            "heading": {
+              "jcr:primaryType": "nt:unstructured",
+              "text": "Top Text Header"
+            },
+            "link": {
+              "jcr:primaryType": "nt:unstructured",
+              "url": "/content/sauditourism/en",
+              "copy": "Link Header",
+              "targetInNewWindow": "true"
+            }
+          },
+          "slides": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "subtitle": "subtitle",
+              "description": "description",
+              "title": "Slide",
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "url": "/content/sauditourism/en",
+                "copy": "Link",
+                "targetInNewWindow": "false"
+              },
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "fileReference": "/content/dam/sauditourism/card-01.jpg",
+                "alt": "alt",
+                "mobileImageReference": "/content/dam/sauditourism/card-mobile-02.jpg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

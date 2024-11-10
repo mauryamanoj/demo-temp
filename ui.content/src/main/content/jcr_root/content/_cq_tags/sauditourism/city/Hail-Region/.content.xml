@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Hail Region"
+    jcr:title.ar="منطقة حائل"
+    jcr:title.de="Provinz Ha'il"
+    jcr:title.es="Provincia de Hail"
+    jcr:title.fr="Province d'Haïl"
+    jcr:title.ja="ハーイル州"
+    jcr:title.ru="Провинция Хаиль"
+    jcr:title.zh="哈伊勒地区"
+    sling:resourceType="cq/tagging/components/tag"
+    city="hail-region"/>

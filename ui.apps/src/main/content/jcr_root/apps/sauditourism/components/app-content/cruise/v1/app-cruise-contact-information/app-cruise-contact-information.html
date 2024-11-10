@@ -1,0 +1,14 @@
+<sly data-sly-use.data="com.saudi.tourism.core.models.app.cruise.AppCruiseContactInformation"></sly>
+<h3>
+  ${'Cruise Contact Information' @ i18n}
+</h3>
+
+<p>${'Title' @ i18n}:
+  <span class="cruise-contact-information__cq-title">${data.title @ context='text'}</span>
+</p>
+<p>${'Message' @ i18n}:
+  <span class="cruise-contact-information__cq-message">${data.message @ context='text'}</span>
+</p>
+<p>${'Phone' @ i18n}:
+  <span class="cruise-contact-information__cq-phone">${data.phone @ context='text'}</span>
+</p>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Honeymoon"
+          jcr:title.ar="شهر العسل"
+          jcr:title.fr="Lune de miel"
+          jcr:title.es="Lune de miel"
+          jcr:title.ru="Медовый месяц"
+          jcr:title.de="Flitterwochen"
+          jcr:title.zh="蜜月"
+          jcr:title.ja="ハネムーン"
+          sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Loyalty Enrollment"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[sauditourism.author]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Query Parameter"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <queryParameterName
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Query Parameter Name"
+                                    fieldLabel="Query Parameter Name"
+                                    required="{Boolean}true"
+                                    name="./queryParameter/name"/>
+                            <queryParameterValue
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Query Parameter Value"
+                                    fieldLabel="Query Parameter Value"
+                                    required="{Boolean}true"
+                                    name="./queryParameter/value"/>
+                        </items>
+                    </tab1>
+                    <tab2
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Login Modal"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Title"
+                                    fieldLabel="Title"
+                                    required="{Boolean}true"
+                                    name="./loginModal/title"/>
+                            <paragraph
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Paragraph"
+                                    fieldLabel="Paragraph"
+                                    required="{Boolean}true"
+                                    name="./loginModal/paragraph"/>
+                            <buttonCopy
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Button Label"
+                                    fieldLabel="Button Label"
+                                    required="{Boolean}true"
+                                    name="./loginModal/button/copy"/>
+                        </items>
+                    </tab2>
+                    <tab3
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Enrollment Messages"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <alreadyEnrolledMessage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Already Enrolled Message"
+                                    fieldLabel="Already Enrolled Message"
+                                    required="{Boolean}true"
+                                    name="./enrollmentModal/alreadyEnrolledMessage"/>
+                            <successfullyEnrolledMessage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Successfully Enrolled Message"
+                                    fieldLabel="Successfully Enrolled Message"
+                                    required="{Boolean}true"
+                                    name="./enrollmentModal/successfullyEnrolledMessage"/>
+                            <unsuccessfullyEnrolledMessage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Unsuccessfully Enrolled Message"
+                                    fieldLabel="Unsuccessfully Enrolled Message"
+                                    required="{Boolean}true"
+                                    name="./enrollmentModal/unsuccessfullyEnrolledMessage"/>
+                            <buttonLabel
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Button Label"
+                                    fieldLabel="Button Label"
+                                    required="{Boolean}true"
+                                    name="./enrollmentModal/copy"/>
+                        </items>
+                    </tab3>
+
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

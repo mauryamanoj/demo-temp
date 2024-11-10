@@ -1,0 +1,213 @@
+<template data-sly-template.head="${ @ page, language, seo ,analyticData}"
+          data-sly-use.headlibRenderer="headlibs.html"
+          data-sly-use.headResources="head.resources.html">
+    <link rel="dns-prefetch" href="//dpm.demdex.net"/>
+    <link rel="dns-prefetch" href="//scth.demdex.net"/>
+    <link rel="dns-prefetch" href="//saudicommissionforto.tt.omtrdc.net"/>
+    <link rel="dns-prefetch" href="//aas.visitsaudi.com"/>
+    <!-- need to add these dsn-prefetch links in the html head: -->
+    <link href="http://assets.adobedtm.com" rel="dns-prefetch" />
+    <link href="http://connect.facebook.net/" rel="dns-prefetch" />
+    <link href="http://tpc.googlesyndication.com" rel="dns-prefetch" />
+    <link href="http://pagead2.googlesyndication.com" rel="dns-prefetch" />
+    <link href="https://www.facebook.com" rel="dns-prefetch" />
+    <link href="https://platform.twitter.com/" rel="dns-prefetch" />
+    <link href="https://staticxx.facebook.com" rel="dns-prefetch" />
+    <!--Chatbot starts here-->
+    <sly data-sly-use.chatBot="com.saudi.tourism.core.models.components.Chatbot">
+        <sly data-sly-test="${chatBot.enablePage}">
+            <script crossorigin="anonymous" src="https://unpkg.com/@babel/standalone@7.8.7/babel.min.js"></script>
+            <script crossorigin="anonymous" src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+            <script crossorigin="anonymous" src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+            <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+            <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+            <link rel="stylesheet" href="https://sahib.visitsaudi.com/style.css">
+        </sly>
+    </sly>
+    <!--Chatbot ends here-->
+
+    <sly data-sly-use.prefetch="prefetch.js" data-sly-list.prefetchLink="${prefetch.prefetchLinks}">
+        <link rel="${prefetchLink.rel}" href="${prefetchLink.href}" as="${prefetchLink.type}">
+    </sly>
+
+    <meta data-sly-test.templateName="${page.templateName}" name="template"
+          content="${templateName}"/>
+    <meta charSet="utf-8">
+    <sly data-sly-test.brandName="${inheritedPageProperties.branding}">
+        <sly data-sly-test="${inheritedPageProperties.branding == 'visitsaudi'}">
+            <title>${properties['jcr:title'] || page.title} - ${'visitsaudiwebsite' @ i18n}</title>
+        </sly>
+        <sly data-sly-test="${inheritedPageProperties.branding == 'nusuk'}">
+            <title>${properties['jcr:title'] || page.title} - ${'nusuk' @ i18n}</title>
+        </sly>
+    </sly>
+
+    <!--Tags for Korean language-->
+    <sly data-sly-test.koreanLocale="${seo.primaryLocale == 'ko'}">
+        <title>사우디아라비아 관광청</title>
+        <meta name="naver-site-verification" content="395c5b388c411f49347372b25dc613e1deb47519" />
+        <link rel="canonical" href="https://www.visitsaudi.com/" />
+        <meta name="robots" content="index,follow" />
+        <meta name="subject" content="사우디아라비아 관광청" />
+        <meta name="title" content="사우디아라비아 관광청" />
+        <meta name="author" content="사우디아라비아 관광청">
+        <meta name="description" content="사우디아라비아 관광청 홈페이지. 사우디아라비아 지도 수록, 여행 프로그램, 관광 정보, 개별 여행 플래너 제공, 축제 안내."/>
+        <meta name="keywords" content="사우디아라비아 관광청 홈페이지. 사우디아라비아 지도 수록, 여행 프로그램, 관광 정보, 개별 여행 플래너 제공, 축제 안내." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:rich_attachment" content="true" />
+        <meta property="og:site_name" content="사우디아라비아 관광청" />
+        <meta property="og:title" content="사우디아라비아 관광청" />
+        <meta property="og:description" content="사우디아라비아 관광청 홈페이지. 사우디아라비아 지도 수록, 여행 프로그램, 관광 정보, 개별 여행 플래너 제공, 축제 안내." />
+        <meta property="og:url" content="https://www.visitsaudi.com/" />
+    </sly>
+    <!--Tags for EN language-->
+    <sly data-sly-test="${!koreanLocale}">
+        <sly data-sly-test="${!brandName}">
+            <title>${properties['jcr:title'] || page.title} - ${'visitsaudiwebsite' @ i18n}</title>
+        </sly>
+        <meta data-sly-test.keywords="${seo.seoKeywords}" name="keywords" content="${keywords}"/>
+        <meta data-sly-test.description="${properties['jcr:description']}" name="description"
+              content="${description}"/>
+        <meta property="og:title" data-sly-test="${page.title}" content=${page.title}>
+        <meta property="og:description" data-sly-test="${inheritedPageProperties.jcr:description}"
+              content=${inheritedPageProperties.jcr:description}>
+        <meta property="og:image" data-sly-test="${pageProperties.featureImage}"
+              content="${pageProperties.featureImage  @ context='uri'}">
+    </sly>
+
+    <meta name="twitter:card" data-sly-test="${inheritedPageProperties.jcr:description}"
+          content=${inheritedPageProperties.jcr:description}>
+    <meta name="twitter:description" data-sly-test="${inheritedPageProperties.jcr:description}"
+          content=${inheritedPageProperties.jcr:description}>
+    <meta name="twitter:image" data-sly-test="${pageProperties.featureImage}"
+          content="${pageProperties.featureImage @ context='uri'}">
+    <meta httpEquiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta data-sly-test="${pageProperties.metaRobots}"
+          name="robots" content="${pageProperties.metaRobots}"/>
+    <meta data-sly-test="${language == 'zh'}" name="baidu-site-verification"
+          content="code-KyZB9YpFrQ" />
+    <!-- smartbanner starts here-->
+    <!-- <sly data-sly-include="smartbanner.html"></sly> -->
+    <!--smart banner ends here-->
+    <link rel="canonical"
+          href="${analyticData.processedUrl @ context='uri'}">
+    <sly data-sly-test.iconFavicon="${inheritedPageProperties.faviconIcon}">
+        <link rel="icon" href="${inheritedPageProperties.faviconIcon}" type="image/x-icon">
+    </sly>
+    <sly data-sly-test="${!iconFavicon}">
+        <link rel="icon" href="/favicon.png" type="image/x-icon">
+    </sly>
+    <!-- Enable i18n script -->
+  <script>
+    const i18nLabels = {};
+    i18nLabels["Book this experience"] = "${'Book this experience' @ i18n, context='text'}";
+    i18nLabels["hs"] = "${'hs' @ i18n, context='text'}";
+    i18nLabels["from"] = "${'from' @ i18n, context='text'}";
+    i18nLabels["to"] = "${'to' @ i18n, context='text'}";
+    i18nLabels["cityLabel"] = "${'cityLabel' @ i18n, context='text'}";
+    i18nLabels["Learn More"] = "${'Learn More' @ i18n, context='text'}";
+    i18nLabels["See More"] = "${'See More' @ i18n, context='text'}";
+    i18nLabels["Day"] = "${'Day' @ i18n, context='text'}";
+  </script>
+    <!-- End Enable i18n script -->
+    <!-- Adobe Analytics Embed Code start -->
+    <script>
+window.digitalData = {
+page: {
+server: "${request.serverName @ context='text'}", // <Server Name>, //Server name is the domain of the web page
+channel: "",// <Channel>, //Site section
+pageType: "${templateName @ context='text'}", // <Page Type>
+pageName: "${analyticData.analyticsPageName ? analyticData.analyticsPageName : page.title @ context='text'}", // < customized page name>, as per page name strategy, delimited using colon
+siteCountry: "${analyticData.country @context='text'}" // <Site Country>, country of website opened
+ },
+userinfo: {
+loggedIn: "guest",//<login Status> //can have values 'logged-in' or 'guest',
+userID: "",//<should only be tracked if activated for the site (default no tracking of the ID)> set this only for logged in user
+countryCode: "${language @context='text'}",// <countryCode:<country from the login, not from current website country>
+language: "${language @context='text'}"//<language from the login, not from current website country>
+ }
+ };
+</script>
+    <!-- Adobe Analytics Embed Code end-->
+    <sly data-sly-include="datalayer.html"></sly>
+
+    <script>
+    window.pageInfo = {
+      category: '',
+      country: '',
+      language: '',
+      path: "${currentPage.path @ context='text'}",
+      search: {
+        keyword: '',
+        results: ''
+      },
+      title: "${page.title @ context='text'}",
+      type: "${templateName @ context='text'}"
+    }
+  </script>
+    <script data-sly-test="${language == 'zh'}">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2db45f24dda7bec534199088d12193bd";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+    <sly data-sly-call="${headlibRenderer.headlibs @
+                                designPath                = page.designPath,
+                                staticDesignPath          = page.staticDesignPath,
+                                clientLibCategories       = page.clientLibCategories,
+                                clientLibCategoriesJsHead = page.clientLibCategoriesJsHead,
+                                hasCloudconfigSupport     = page.hasCloudconfigSupport}"></sly>
+    <!-- Google Tag Manager -->
+    <script data-sly-test="${language != 'zh'}">
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PQKR2QZ');
+  </script>
+    <script data-sly-include="adobescript.html">
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start New Data Layer -->
+    <script>
+        var city = "${analyticData.city @context='text'}";
+        var pageCategory = "${analyticData.pageCategory @context='text'}";
+        var pageSubCategory = "${analyticData.pageSubCategory @context='text'}";
+        var language = "${language @context='text'}";
+
+        var eventProperties = {};
+        if (city) eventProperties.city = city;
+        if (pageCategory) eventProperties.page_category = pageCategory;
+        if (pageSubCategory) eventProperties.page_subcategory = pageSubCategory;
+        if (language) eventProperties.language = language;
+
+        dataLayer.push({
+            event: "dl_push",
+            event_name: "page_meta_data",
+            event_properties: eventProperties,
+            user_properties: {
+                user_id:"",
+                user_visa:""
+            }
+        });
+    </script>
+    <!-- End New Data Layer -->
+
+    <sly data-sly-include="bridge.html"></sly>
+
+    <sly data-sly-include="customheaderlibs.html"></sly>
+
+</template>

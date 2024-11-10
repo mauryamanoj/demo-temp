@@ -1,0 +1,336 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Mar 25 2020 17:51:45 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Admin",
+    "cq:lastReplicationAction":"Activate",
+    "jcr:versionHistory":"a20acf09-5a05-4bd0-acba-b7306f7f81af",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/admin",
+    "cq:lastReplicatedBy":"admin",
+    "jcr:predecessors":[
+      "1da826e3-d506-4551-8326-b6bbeba687c5"
+    ],
+    "jcr:created":"Wed Mar 25 2020 17:51:45 GMT+0100",
+    "cq:lastReplicated":"Sat Jul 04 2020 19:08:25 GMT+0200",
+    "cq:lastModified":"Sat Jul 04 2020 19:07:19 GMT+0200",
+    "theme":"red",
+    "jcr:baseVersion":"1da826e3-d506-4551-8326-b6bbeba687c5",
+    "jcr:isCheckedOut":true,
+    "jcr:uuid":"93d2bb7f-27e1-463b-a7c6-f0fc7c2bb1ec",
+    "sling:resourceType":"sauditourism/components/structure/admin",
+    "hideInSiteMap":"false",
+    "cq:lastModifiedBy":"admin",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "options":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+
+      ],
+      "jcr:lastModifiedBy":"guillermo.morgan",
+      "newHeader":"true",
+      "jcr:lastModified":"Wed Apr 01 2020 20:07:39 GMT+0200",
+      "eventsPath":"/content/sauditourism/en/events",
+      "sling:resourceType":"sauditourism/components/structure/admin/options",
+      "headerPath":"/content/sauditourism/en/Configs/header-config"
+    },
+    "alerts":{
+      "jcr:primaryType":"nt:unstructured",
+      "enableAlert":"true",
+      "jcr:lastModifiedBy":"george.goodliffe",
+      "middleText":"your safety is our priority",
+      "jcr:lastModified":"Fri Apr 10 2020 14:51:48 GMT+0200",
+      "sling:resourceType":"sauditourism/components/structure/admin/alerts",
+      "leftText":"Vi",
+      "leftText2":"sit at home",
+      "middleTextHash":"#stayhome",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "url":"/content/sauditourism/en/covid-19-information-page",
+        "text":"Read our travel advisory on coronavirus (COVID-19)",
+        "openNewTab":"false"
+      }
+    },
+    "create-itinerary-config":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:lastModifiedBy":"admin",
+      "jcr:lastModified":"Thu Jun 11 2020 14:29:24 GMT+0200",
+      "sling:resourceType":"sauditourism/components/structure/admin/create-itinerary-config",
+      "backgroundImage":"/content/dam/saudi-tourism/media/red-sea-route-/rsr-content/umluj/1920x1080IMAGE_01 (2).png",
+      "destinations":{
+        "jcr:primaryType":"nt:unstructured",
+        "item0":{
+          "jcr:primaryType":"nt:unstructured",
+          "mobileImage":"/content/dam/saudi-tourism/media/traveller-quotes/A233 King Fahd_s Fountain_1.jpg",
+          "name":"Riyadh",
+          "desktopImage":"/content/dam/saudi-tourism/media/Red_Sea_Route/Red_Sea_Route/RSR_content/Taif/1920x810/1920x810IMAGE_08.png",
+          "s7mobileImage":"https://s7g10.scene7.com/is/image/scth/A233 King Fahd_s Fountain_1-7"
+        },
+        "item1":{
+          "jcr:primaryType":"nt:unstructured",
+          "mobileImage":"/content/dam/saudi-tourism/media/red-sea-route-/rsr-content/tabuk/375x667/375x667IMAGE_10.png",
+          "name":"Mecca",
+          "desktopImage":"/content/dam/saudi-tourism/media/red-sea-route-/rsr-content/tabuk/1920x810/1920x810IMAGE_11.png",
+          "s7mobileImage":"https://s7g10.scene7.com/is/image/scth/375x667IMAGE_10-2"
+        }
+      },
+      "steps":{
+        "jcr:primaryType":"nt:unstructured",
+        "step1":{
+          "jcr:primaryType":"nt:unstructured",
+          "buttonTitle":"Save",
+          "inputPlaceholder":"Enter your trip's name",
+          "id":"0",
+          "name":"tripName",
+          "label":"Trip name",
+          "title":"Personalize your trip"
+        },
+        "step2":{
+          "jcr:primaryType":"nt:unstructured",
+          "buttonTitle":"Select",
+          "id":"1",
+          "name":"destination",
+          "label":"Where",
+          "title":"Where are you travelling?"
+        },
+        "step3":{
+          "jcr:primaryType":"nt:unstructured",
+          "startCopy":"Start date",
+          "subtitle":"The max. you can stay are 15 days",
+          "buttonTitle":"Create itinerary",
+          "endCopy":"End date",
+          "id":"2",
+          "name":"dateSelection",
+          "label":"When",
+          "title":"When are you travelling?",
+          "selectionText":"Your selection"
+        }
+      },
+      "closeModal":{
+        "jcr:primaryType":"nt:unstructured",
+        "subtitle":"Are you sure you want to exit?",
+        "secondaryButtonLabel":"I'll stay",
+        "title":"Don’t leave! 😰",
+        "primaryButtonLabel":"Leave",
+        "paragraph":"It looks like you are in the middle of creating an itinerary. Changes you made won’t be saved."
+      }
+    },
+    "holidays":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:lastModifiedBy":"admin",
+      "jcr:lastModified":"Thu Jun 11 2020 14:33:14 GMT+0200",
+      "sling:resourceType":"sauditourism/components/structure/admin/holidays",
+      "items":{
+        "jcr:primaryType":"nt:unstructured",
+        "item0":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-03-20",
+          "name":"March Equinox"
+        },
+        "item1":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-06-20",
+          "name":"June Solstice"
+        },
+        "item2":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-09-22",
+          "name":"September Equinox"
+        },
+        "item3":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-09-23",
+          "name":"Saudi National Day"
+        },
+        "item4":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-12-21",
+          "name":"December Solstice"
+        },
+        "item5":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-07-30",
+          "name":"Arafat Day"
+        },
+        "item6":{
+          "jcr:primaryType":"nt:unstructured",
+          "date":"2020-08-20",
+          "name":"Muharram (Muslim New Year)"
+        }
+      }
+    },
+    "package-form-config":{
+      "jcr:primaryType":"nt:unstructured",
+      "subtitle":" Fill out the form and the agent will get in touch with you to complete your booking ",
+      "jcr:lastModifiedBy":"admin",
+      "submit":"Submit",
+      "title":"Start Booking",
+      "requiredTip":"*Required",
+      "jcr:lastModified":"Sat Jul 04 2020 03:26:53 GMT+0200",
+      "sling:resourceType":"sauditourism/components/structure/admin/package-form-config",
+      "textIsRich":[
+        "true",
+        "true"
+      ],
+      "confirmationCopies":{
+        "jcr:primaryType":"nt:unstructured",
+        "success":{
+          "jcr:primaryType":"nt:unstructured",
+          "subtitle":"<p>The agent will get in touch with you soon. If you haven’t received a response within 48hrs please contact the provider by visiting this link:<br />\r\n<a href=\"%7B%7Bdmc-link%7D%7D\" target=\"_blank\">{{dmc}}</a></p>\r\n",
+          "title":"Thanks for your request!"
+        },
+        "error":{
+          "jcr:primaryType":"nt:unstructured",
+          "subtitle":"<p>There was an error, please try again. or contact directly <a href=\"%7B%7Bdmc-link%7D%7D\">{{dmc}}</a></p>\r\n",
+          "title":"Oops!"
+        }
+      },
+      "inputs":{
+        "jcr:primaryType":"nt:unstructured",
+        "firstName":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+          ],
+          "cq:lastReplicationAction":"Activate",
+          "cq:lastReplicatedBy":"admin",
+          "pattern":"[a-zA-Zء-ي ]{0,100}",
+          "required":"true",
+          "cq:lastReplicated":"Sat Jul 04 2020 00:34:20 GMT+0200",
+          "name":"firstName",
+          "type":"text",
+          "label":"First Name",
+          "placeholder":"Enter your name"
+        },
+        "lastName":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+          ],
+          "cq:lastReplicationAction":"Activate",
+          "cq:lastReplicatedBy":"admin",
+          "pattern":"[a-zA-Zء-ي ]{0,100}",
+          "required":"false",
+          "cq:lastReplicated":"Sat Jul 04 2020 00:34:18 GMT+0200",
+          "name":"lastName",
+          "type":"text",
+          "label":"Last Name",
+          "placeholder":"Enter your last name"
+        },
+        "email":{
+          "jcr:primaryType":"nt:unstructured",
+          "pattern":"^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+          "required":"true",
+          "name":"email",
+          "type":"email",
+          "label":"Email address",
+          "placeholder":"Enter your email address"
+        },
+        "phone":{
+          "jcr:primaryType":"nt:unstructured",
+          "pattern":"^[0-9\\u0600-\\u06FF +]{0,50}$",
+          "required":"true",
+          "name":"phone",
+          "type":"tel",
+          "label":"Phone Number",
+          "placeholder":"+9665XXXXXXXX"
+        },
+        "nationality":{
+          "jcr:primaryType":"nt:unstructured",
+          "required":"true",
+          "name":"nationality",
+          "type":"dropdown",
+          "label":"Nationality",
+          "placeholder":"Select"
+        },
+        "comment":{
+          "jcr:primaryType":"nt:unstructured",
+          "pattern":"^[.]{0,200}",
+          "required":"false",
+          "name":"comment",
+          "type":"textarea",
+          "label":"Comments"
+        }
+      }
+    },
+    "suggestions":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"sauditourism/components/structure/admin/suggestions",
+      "solrKey":{
+        "jcr:primaryType":"nt:unstructured",
+        "item0":{
+          "jcr:primaryType":"nt:unstructured",
+          "solrKey":"saudi"
+        },
+        "item1":{
+          "jcr:primaryType":"nt:unstructured",
+          "solrKey":"arabia"
+        }
+      },
+      "trendingPage":{
+        "jcr:primaryType":"nt:unstructured",
+        "item0":{
+          "jcr:primaryType":"nt:unstructured",
+          "trendingPage":"/content/sauditourism/en/packages/full-day-in-jeddah"
+        }
+      }
+    },
+    "countries-groups":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:lastModified":"Tue Nov 01 2022 09:24:20 GMT+0100",
+      "sling:resourceType":"sauditourism/components/structure/admin/countries-groups",
+      "listCountriesGroups":{
+        "jcr:primaryType":"nt:unstructured",
+        "item0":{
+          "jcr:primaryType":"nt:unstructured",
+          "name":"gcc"
+        },
+        "item1":{
+          "jcr:primaryType":"nt:unstructured",
+          "name":"eligibleplus"
+        },
+        "item2":{
+          "jcr:primaryType":"nt:unstructured",
+          "name":"eligible"
+        },
+        "item3":{
+          "jcr:primaryType":"nt:unstructured",
+          "name":"noneligible"
+        }
+      }
+    },
+    "user-feedback-settings": {
+    "jcr:primaryType": "nt:unstructured",
+    "surveyLinkURL": "surveyLinkURL",
+    "surveyLinkTitle": "surveyLinkTitle",
+    "modalTitle": "modalTitle",
+    "thankYouMessage": "thankYouMessage",
+    "messageTitle": "messageTitle",
+      "placeholder": "placeholder",
+      "jcr:lastModifiedBy": "admin",
+    "reportProblem": "reportProblem",
+    "submit": "submit",
+    "modalThankYouMessage": "modalThankYouMessage",
+    "modalDescription": "modalDescription",
+    "no": "no",
+    "yes": "yes",
+    "close": "close",
+    "title": "title",
+    "openNewTab": "true",
+    "jcr:lastModified": "Thu Jul 06 2023 10:27:25 GMT+0200",
+    "sling:resourceType": "sauditourism/components/structure/admin/user-feedback-settings"
+  }
+  }
+}

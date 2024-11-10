@@ -1,0 +1,30 @@
+{
+  "title": "You might also like",
+  "line": true,
+  "showInResponsive": false,
+  "links": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "number":"02",
+      "hideMap":false,
+      "url":"/content/sauditourism/en/events",
+      "urlWithExtension":"/content/sauditourism/en/events.html",
+      "urlSlingExporter":"/events",
+      "targetInNewWindow":false,
+      "text":"Riyadh",
+      "appType":"calendar"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "number":"03",
+      "hideMap":false,
+      "url":"/content/sauditourism/en/ataya",
+      "urlWithExtension":"/content/sauditourism/en/ataya.html",
+      "urlSlingExporter":"/ataya",
+      "targetInNewWindow":true,
+      "text":"XYZ",
+      "appType":"calendar"
+    }
+  }
+}

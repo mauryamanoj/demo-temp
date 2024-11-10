@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:language="de"
+          jcr:mixinTypes="[mix:language]"
+          jcr:primaryType="nt:folder">
+    <ABOUT jcr:primaryType="sling:MessageEntry" sling:key="ABOUT" sling:message="Über"/>
+    <ACCOUNT_DELETE_ACCOUNT jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_DELETE_ACCOUNT"
+                            sling:message="Konto löschen"/>
+    <ACCOUNT_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_DESCRIPTION"
+                         sling:message="Sie können Ihr Konto auf Visit Saudi löschen. Dann werden alle Ihre Kontoinformationen dauerhaft gelöscht."/>
+    <ACCOUNT_NOT_NOW jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_NOT_NOW" sling:message="Jetzt nicht"/>
+    <ACCOUNT_TITLE jcr:primaryType="sling:MessageEntry" sling:key="ACCOUNT_TITLE" sling:message="Mein Konto löschen"/>
+    <ACTIVITY_DETAILS_ADD jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_DETAILS_ADD"
+                          sling:message="Zum Reiseplan hinzufügen"/>
+    <ACTIVITY_DETAILS_REMOVE jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_DETAILS_REMOVE"
+                             sling:message="Aus dem Reiseplan entfernen"/>
+    <ACTIVITY_DETAILS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_DETAILS_TITLE"
+                            sling:message="Details zur Aktivität"/>
+    <ACTIVITY_LOCATION_DETAILS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="ACTIVITY_LOCATION_DETAILS_TITLE"
+                                     sling:message="Details zum Standort"/>
+    <ADVENTURE jcr:primaryType="sling:MessageEntry" sling:key="ADVENTURE" sling:message="Abenteuer"/>
+    <ALL_ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="ALL_ATTRACTIONS"
+                     sling:message="Alle Attraktionen"/>
+    <ALL_CONTINENTS jcr:primaryType="sling:MessageEntry" sling:key="ALL_CONTINENTS" sling:message="Alle Kontinente"/>
+    <ALL_DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="ALL_DESTINATIONS"
+                      sling:message="Alle Reiseziele"/>
+    <ALL_EVENTS jcr:primaryType="sling:MessageEntry" sling:key="ALL_EVENTS" sling:message="Alle Veranstaltungen"/>
+    <ALL_HOTELS jcr:primaryType="sling:MessageEntry" sling:key="ALL_HOTELS" sling:message="Alle Hotels"/>
+    <ALL_PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="ALL_PACKAGES" sling:message="Alle Erfahrungen"/>
+    <AN_ERROR_OCCURRED_WHILE_LOADING_THIS_SECTION jcr:primaryType="sling:MessageEntry"
+                                                  sling:key="AN_ERROR_OCCURRED_WHILE_LOADING_THIS_SECTION"
+                                                  sling:message="Beim Laden dieses Abschnitts ist ein Fehler aufgetreten"/>
+    <APP_LANGUAGE jcr:primaryType="sling:MessageEntry" sling:key="APP_LANGUAGE" sling:message="Sprache der Anwendung"/>
+    <APP_VERSION jcr:primaryType="sling:MessageEntry" sling:key="APP_VERSION" sling:message="Version der Anwendung"/>
+    <APPLE_PAY_BUTTON_TITLE jcr:primaryType="sling:MessageEntry" sling:key="APPLE_PAY_BUTTON_TITLE"
+                            sling:message="Mit Apple bezahlen"/>
+    <APPLY jcr:primaryType="sling:MessageEntry" sling:key="APPLY" sling:message="Anwenden"/>
+    <APPLY_FILTERS jcr:primaryType="sling:MessageEntry" sling:key="APPLY_FILTERS" sling:message="Filter anwenden"/>
+    <ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="ATTRACTIONS" sling:message="Attraktionen"/>
+    <ATTRACTIONS_BY_TYPE jcr:primaryType="sling:MessageEntry" sling:key="ATTRACTIONS_BY_TYPE"
+                         sling:message="Attraktionen nach Kategorie"/>
+    <AUTHOR jcr:primaryType="sling:MessageEntry" sling:key="AUTHOR" sling:message="Autor"/>
+    <BACK jcr:primaryType="sling:MessageEntry" sling:key="BACK" sling:message="Zurück"/>
+    <BACK_TO_HOMEPAGE jcr:primaryType="sling:MessageEntry" sling:key="BACK_TO_HOMEPAGE"
+                      sling:message="Zurück zur Startseite"/>
+    <BICYCLE jcr:primaryType="sling:MessageEntry" sling:key="BICYCLE" sling:message="Fahrrad"/>
+    <BLOGGER jcr:primaryType="sling:MessageEntry" sling:key="BLOGGER" sling:message="Blogger"/>
+    <BOOK_NOW jcr:primaryType="sling:MessageEntry" sling:key="BOOK_NOW" sling:message="Jetzt buchen"/>
+    <BOOKING_ADD_TO_WALLET jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ADD_TO_WALLET"
+                           sling:message="Zum Apple-Wallet hinzufügen"/>
+    <BOOKING_CANCELLED jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_CANCELLED" sling:message="Abgesagt"/>
+    <BOOKING_CONFIRMATION_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_CONFIRMATION_DESCRIPTION"
+                                      sling:message="Eine Bestätigungs-E-Mail mit Ihren Buchungsdaten wurde an Ihre E-Mail-Adresse gesendet."/>
+    <BOOKING_CONFIRMATION_TITLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_CONFIRMATION_TITLE"
+                                sling:message="Vielen Dank für Ihre Buchung!"/>
+    <BOOKING_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_DETAILS"
+                     sling:message="Details zur Buchung"/>
+    <BOOKING_DISCOUNT jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_DISCOUNT" sling:message="Rabatt"/>
+    <BOOKING_EMAIL_CONFIRMATION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_EMAIL_CONFIRMATION"
+                                sling:message="Ihre Zahlung ist abgeschlossen. Eine Bestätigungs-E-Mail mit Ihren Buchungsdaten wurde an Ihre E-Mail-Adresse gesendet."/>
+    <BOOKING_ENTER_PROMO_CODE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ENTER_PROMO_CODE"
+                              sling:message="Promo-Code eingeben"/>
+    <BOOKING_ERROR_CODE_1 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_1"
+                          sling:message="Authentifizierung fehlgeschlagen"/>
+    <BOOKING_ERROR_CODE_100 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_100"
+                            sling:message="Transaktionskosten oder ungültige Währung"/>
+    <BOOKING_ERROR_CODE_101 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_101"
+                            sling:message="Warenkorb-ID ist ungültig"/>
+    <BOOKING_ERROR_CODE_102 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_102"
+                            sling:message="Beschreibung ist nicht gültig"/>
+    <BOOKING_ERROR_CODE_103 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_103"
+                            sling:message="Name ist nicht gültig"/>
+    <BOOKING_ERROR_CODE_104 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_104"
+                            sling:message="Adresse ist nicht gültig"/>
+    <BOOKING_ERROR_CODE_105 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_105"
+                            sling:message="Land ungültig"/>
+    <BOOKING_ERROR_CODE_106 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_106"
+                            sling:message="E-Mail ungültig"/>
+    <BOOKING_ERROR_CODE_107 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_107"
+                            sling:message="Telefonnummer ungültig"/>
+    <BOOKING_ERROR_CODE_108 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_108"
+                            sling:message="IP-Adresse nicht gültig"/>
+    <BOOKING_ERROR_CODE_109 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_109"
+                            sling:message="Ungültiger Transaktionsmodus"/>
+    <BOOKING_ERROR_CODE_110 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_110"
+                            sling:message="Ungültiger Transaktionstyp"/>
+    <BOOKING_ERROR_CODE_111 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_111"
+                            sling:message="Ungültige Transaktionskategorie"/>
+    <BOOKING_ERROR_CODE_112 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_112"
+                            sling:message="Kombination von Methode/Klasse/Währung nicht unterstützt"/>
+    <BOOKING_ERROR_CODE_113 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_113"
+                            sling:message="Ungültiger Transaktionsbezug"/>
+    <BOOKING_ERROR_CODE_114 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_114"
+                            sling:message="Der Betrag unterscheidet sich vom Original"/>
+    <BOOKING_ERROR_CODE_115 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_115"
+                            sling:message="Ursprüngliche Transaktion nicht genehmigt"/>
+    <BOOKING_ERROR_CODE_116 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_116"
+                            sling:message="Ursprüngliche Transaktion bereits storniert"/>
+    <BOOKING_ERROR_CODE_117 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_117"
+                            sling:message="Abweichung von der ursprünglichen Transaktion"/>
+    <BOOKING_ERROR_CODE_118 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_118"
+                            sling:message="Der Betrag ist größer als das verfügbare Guthaben"/>
+    <BOOKING_ERROR_CODE_119 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_119"
+                            sling:message="Ursprüngliche Transaktion kann nicht storniert werden"/>
+    <BOOKING_ERROR_CODE_120 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_120"
+                            sling:message="Vorherige Transaktion steht noch aus"/>
+    <BOOKING_ERROR_CODE_121 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_121"
+                            sling:message="Der Transaktionsmodus unterscheidet sich vom Original"/>
+    <BOOKING_ERROR_CODE_122 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_122"
+                            sling:message="Kontinuierliche Berechtigung für referenzierte Transaktion nicht verfügbar"/>
+    <BOOKING_ERROR_CODE_2 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_2"
+                          sling:message="Ungültige Anfrage"/>
+    <BOOKING_ERROR_CODE_200 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_200"
+                            sling:message="Ungültige Kartennummer"/>
+    <BOOKING_ERROR_CODE_201 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_201"
+                            sling:message="Ungültiges Ablaufdatum der Karte"/>
+    <BOOKING_ERROR_CODE_202 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_202"
+                            sling:message="Ungültige Sicherheitsnummer der Karte (CVV)"/>
+    <BOOKING_ERROR_CODE_203 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_203"
+                            sling:message="Ungültiges Konto"/>
+    <BOOKING_ERROR_CODE_204 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_204"
+                            sling:message="Vorherige Transaktion im Einsatz"/>
+    <BOOKING_ERROR_CODE_205 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_205"
+                            sling:message="Ungültige Zahlungsmethode"/>
+    <BOOKING_ERROR_CODE_206 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_206"
+                            sling:message="Währungsinkongruenz"/>
+    <BOOKING_ERROR_CODE_207 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_207"
+                            sling:message="Ungültiges Terminal"/>
+    <BOOKING_ERROR_CODE_208 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_208"
+                            sling:message="Ungültige Rückgabe-URL"/>
+    <BOOKING_ERROR_CODE_209 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_209"
+                            sling:message="Ungültiger Händlertoken"/>
+    <BOOKING_ERROR_CODE_210 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_210"
+                            sling:message="Ungültige Callback-Url"/>
+    <BOOKING_ERROR_CODE_3 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_3"
+                          sling:message="Ungültige Profil-ID"/>
+    <BOOKING_ERROR_CODE_300 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_300"
+                            sling:message="Nicht zulässig"/>
+    <BOOKING_ERROR_CODE_301 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_301"
+                            sling:message="Gültigkeitsdatum der Karte erforderlich"/>
+    <BOOKING_ERROR_CODE_302 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_302"
+                            sling:message="Karte abgelaufen/falsches Ablaufdatum"/>
+    <BOOKING_ERROR_CODE_303 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_303"
+                            sling:message="Die Karte ist nur für die Verwendung am Geldautomaten bestimmt."/>
+    <BOOKING_ERROR_CODE_304 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_304"
+                            sling:message="Sicherheitscode der Karte (CVV) erforderlich"/>
+    <BOOKING_ERROR_CODE_305 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_305"
+                            sling:message="Kartenprüfnummer (CVV) stimmt nicht überein"/>
+    <BOOKING_ERROR_CODE_306 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_306"
+                            sling:message="Unstimmigkeit bei der Adressüberprüfung (AVS)"/>
+    <BOOKING_ERROR_CODE_307 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_307"
+                            sling:message="Sicherheitscode der Karte (CVV) und Adressüberprüfung (AVS) stimmen nicht überein"/>
+    <BOOKING_ERROR_CODE_308 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_308"
+                            sling:message="Die Karte ist nicht für den elektronischen Handel freigegeben"/>
+    <BOOKING_ERROR_CODE_309 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_309"
+                            sling:message="3D Secure für diese Karte nicht verfügbar"/>
+    <BOOKING_ERROR_CODE_310 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_310"
+                            sling:message="3DSecure-Authentifizierung zurückgewiesen"/>
+    <BOOKING_ERROR_CODE_311 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_311"
+                            sling:message="Karte gesperrt"/>
+    <BOOKING_ERROR_CODE_312 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_312"
+                            sling:message="Kein/ungültiges Konto"/>
+    <BOOKING_ERROR_CODE_313 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_313"
+                            sling:message="Transaktion vom Herausgeber nicht gestattet"/>
+    <BOOKING_ERROR_CODE_314 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_314"
+                            sling:message="Nicht zugelassen"/>
+    <BOOKING_ERROR_CODE_315 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_315"
+                            sling:message="Nicht zugelassen"/>
+    <BOOKING_ERROR_CODE_316 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_316"
+                            sling:message="Unzureichende Geldmittel"/>
+    <BOOKING_ERROR_CODE_317 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_317"
+                            sling:message="Vom Erwerber gesperrt"/>
+    <BOOKING_ERROR_CODE_318 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_318"
+                            sling:message="Autorisierung abgelaufen"/>
+    <BOOKING_ERROR_CODE_319 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_319"
+                            sling:message="Kann nicht storniert werden"/>
+    <BOOKING_ERROR_CODE_320 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_320"
+                            sling:message="Keine Rückerstattung möglich"/>
+    <BOOKING_ERROR_CODE_321 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_321"
+                            sling:message="storniert"/>
+    <BOOKING_ERROR_CODE_322 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_322"
+                            sling:message="Nicht vom Erwerber unterstützt"/>
+    <BOOKING_ERROR_CODE_323 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_323"
+                            sling:message="Kartenlimits überschritten"/>
+    <BOOKING_ERROR_CODE_324 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_324"
+                            sling:message="Grenzwerte überschritten"/>
+    <BOOKING_ERROR_CODE_325 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_325"
+                            sling:message="Händler-Limits überschritten"/>
+    <BOOKING_ERROR_CODE_326 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_326"
+                            sling:message="Kontolimits überschritten"/>
+    <BOOKING_ERROR_CODE_327 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_327"
+                            sling:message="OTP-Zeitüberschreitung"/>
+    <BOOKING_ERROR_CODE_4 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_4"
+                          sling:message="Doppelte Anfrage"/>
+    <BOOKING_ERROR_CODE_400 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_400"
+                            sling:message="Interner Systemfehler"/>
+    <BOOKING_ERROR_CODE_401 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_401"
+                            sling:message="Keine Antwort"/>
+    <BOOKING_ERROR_CODE_402 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_402"
+                            sling:message="Fehler beim Verbinden mit dem Dienstanbieter"/>
+    <BOOKING_ERROR_CODE_5 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_5"
+                          sling:message="Anfragelimit überschritten"/>
+    <BOOKING_ERROR_CODE_500 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_500"
+                            sling:message="Abgelehnt"/>
+    <BOOKING_ERROR_CODE_501 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_501"
+                            sling:message="Abgelehnt"/>
+    <BOOKING_ERROR_CODE_502 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_502"
+                            sling:message="Abgelehnt"/>
+    <BOOKING_ERROR_CODE_503 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_503"
+                            sling:message="Abgelehnt"/>
+    <BOOKING_ERROR_CODE_600 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_600"
+                            sling:message="Ausstehend"/>
+    <BOOKING_ERROR_CODE_601 jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_CODE_601"
+                            sling:message="In Wartestellung"/>
+    <BOOKING_ERROR_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_ERROR_DESCRIPTION"
+                               sling:message="Bei der Bearbeitung Ihrer Zahlung ist ein Fehler aufgetreten. Bitte stellen Sie sicher, dass alle Informationen korrekt sind, bevor Sie es erneut versuchen."/>
+    <BOOKING_EXCLUDING_VAT jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_EXCLUDING_VAT"
+                           sling:message="Ohne MwSt."/>
+    <BOOKING_HELP jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_HELP"
+                  sling:message="Hilfe &amp; Unterstützung"/>
+    <BOOKING_LOCATION jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_LOCATION" sling:message="Standort"/>
+    <BOOKING_NUMBER_OF_PEOPLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_NUMBER_OF_PEOPLE"
+                              sling:message="Anzahl der Buchungen"/>
+    <BOOKING_OPTIONS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_OPTIONS_TITLE"
+                           sling:message="Möglichkeiten zur Buchung"/>
+    <BOOKING_PAST jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_PAST" sling:message="Vorherige Buchungen"/>
+    <BOOKING_PRICES_PER_PERSON jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_PRICES_PER_PERSON"
+                               sling:message="*Preis pro Person"/>
+    <BOOKING_PROMO_CODE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_PROMO_CODE" sling:message="Promo-Code"/>
+    <BOOKING_REFUND_POLICY jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_REFUND_POLICY"
+                           sling:message="Rückerstattungsrichtlinien für Buchungen"/>
+    <BOOKING_SCAN_QR_CODE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SCAN_QR_CODE"
+                          sling:message="Scannen Sie diesen QR-Code"/>
+    <BOOKING_SELECT_DATE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SELECT_DATE"
+                         sling:message="Datum auswählen"/>
+    <BOOKING_SELECT_DATE_AND_TIME jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SELECT_DATE_AND_TIME"
+                                  sling:message="Datum und Uhrzeit auswählen"/>
+    <BOOKING_SUBTOTAL jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SUBTOTAL" sling:message="Zwischensumme"/>
+    <BOOKING_SUMMARY jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SUMMARY"
+                     sling:message="Zusammenfassung der Buchung"/>
+    <BOOKING_SUPPORTED_METHODS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_SUPPORTED_METHODS_TITLE"
+                                     sling:message="Bei uns sind folgende Zahlungsmethoden möglich"/>
+    <BOOKING_TERMS jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_TERMS"
+                   sling:message="Bedingungen und Bestimmungen"/>
+    <BOOKING_TOTAL jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_TOTAL" sling:message="Insgesamt"/>
+    <BOOKING_UPCOMING jcr:primaryType="sling:MessageEntry" sling:key="BOOKING_UPCOMING" sling:message="Bevorstehendes"/>
+    <BRAND jcr:primaryType="sling:MessageEntry" sling:key="BRAND" sling:message="Marke"/>
+    <BUS jcr:primaryType="sling:MessageEntry" sling:key="BUS" sling:message="Busse"/>
+    <BUS_STOPS_AND_TAXIS jcr:primaryType="sling:MessageEntry" sling:key="BUS_STOPS_AND_TAXIS"
+                         sling:message="Bushaltestellen &amp; Taxis"/>
+    <BY_BICYCLE jcr:primaryType="sling:MessageEntry" sling:key="BY_BICYCLE" sling:message="Mit dem Fahrrad"/>
+    <BY_CAR jcr:primaryType="sling:MessageEntry" sling:key="BY_CAR" sling:message="Mit dem Auto"/>
+    <CALENDAR jcr:primaryType="sling:MessageEntry" sling:key="CALENDAR" sling:message="Kalender"/>
+    <CALL_TOURISM_HOTLINE jcr:primaryType="sling:MessageEntry" sling:key="CALL_TOURISM_HOTLINE"
+                          sling:message="Rufen Sie unsere Tourismus-Hotline rund um die Uhr an"/>
+    <CANCEL jcr:primaryType="sling:MessageEntry" sling:key="CANCEL" sling:message="Stornieren"/>
+    <CAR jcr:primaryType="sling:MessageEntry" sling:key="CAR" sling:message="Auto"/>
+    <CATEGORIES jcr:primaryType="sling:MessageEntry" sling:key="CATEGORIES" sling:message="Kategorien"/>
+    <CATEGORY jcr:primaryType="sling:MessageEntry" sling:key="CATEGORY" sling:message="Kategorie"/>
+    <CHAT_TO_US_ON_WHATSAPP jcr:primaryType="sling:MessageEntry" sling:key="CHAT_TO_US_ON_WHATSAPP"
+                            sling:message="Kontaktieren Sie uns auf whatsApp"/>
+    <CHAUFFEUR jcr:primaryType="sling:MessageEntry" sling:key="CHAUFFEUR" sling:message="Fahrer"/>
+    <CITIES jcr:primaryType="sling:MessageEntry" sling:key="CITIES" sling:message="Städte"/>
+    <CITIES_OF jcr:primaryType="sling:MessageEntry" sling:key="CITIES_OF" sling:message="Städte von"/>
+    <CLEAR_ALL jcr:primaryType="sling:MessageEntry" sling:key="CLEAR_ALL" sling:message="Alles löschen"/>
+    <CONNECT_TO_INTERNET jcr:primaryType="sling:MessageEntry" sling:key="CONNECT_TO_INTERNET"
+                         sling:message="Bitte verbinden Sie sich mit dem Internet"/>
+    <CONTENETS jcr:primaryType="sling:MessageEntry" sling:key="CONTENETS" sling:message="Kontinente"/>
+    <CONTINENTS jcr:primaryType="sling:MessageEntry" sling:key="CONTINENTS" sling:message="Kontinente"/>
+    <CONTINUE jcr:primaryType="sling:MessageEntry" sling:key="CONTINUE" sling:message="Weiter"/>
+    <CONVENTIONS_And_EXHIBITIONS jcr:primaryType="sling:MessageEntry" sling:key="CONVENTIONS_And_EXHIBITIONS"
+                                 sling:message="Konferenzen und Ausstellungen"/>
+    <COUNTRIES jcr:primaryType="sling:MessageEntry" sling:key="COUNTRIES" sling:message="Länder"/>
+    <COUNTRY_CODE jcr:primaryType="sling:MessageEntry" sling:key="COUNTRY_CODE" sling:message="Ländercode"/>
+    <CREATE_TRIP_CREATE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_CREATE" sling:message="Erstellen"/>
+    <CREATE_TRIP_DRAG_HINT jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_DRAG_HINT"
+                           sling:message="Sie können Städte durch Ziehen und Ablegen neu anordnen"/>
+    <CREATE_TRIP_ENTER_NAME jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_ENTER_NAME"
+                            sling:message="Geben Sie einen Namen für Ihre Reise ein"/>
+    <CREATE_TRIP_HOW_MANY_DAYS jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_HOW_MANY_DAYS"
+                               sling:message="Wie viele Tage bleiben Sie hier?"/>
+    <CREATE_TRIP_LOADING_SUBTITLE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_LOADING_SUBTITLE"
+                                  sling:message="Das dauert eine Sekunde..."/>
+    <CREATE_TRIP_LOADING_TITLE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_LOADING_TITLE"
+                               sling:message="Ihre Reise laden"/>
+    <CREATE_TRIP_SELECT_DATE_PLACE_HOLDER jcr:primaryType="sling:MessageEntry"
+                                          sling:key="CREATE_TRIP_SELECT_DATE_PLACE_HOLDER"
+                                          sling:message="Bitte wählen Sie ein Datum aus"/>
+    <CREATE_TRIP_SELECT_DATE_TITLE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_SELECT_DATE_TITLE"
+                                   sling:message="Wählen Sie den Starttermin Ihrer Reise aus"/>
+    <CREATE_TRIP_START_DATE jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_START_DATE"
+                            sling:message="Starttermin"/>
+    <CREATE_TRIP_TRIP_NAME jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_TRIP_NAME"
+                           sling:message="Name der Reise"/>
+    <CREATE_TRIP_WHERE_ARE_YOU_GOING jcr:primaryType="sling:MessageEntry" sling:key="CREATE_TRIP_WHERE_ARE_YOU_GOING"
+                                     sling:message="Wohin gehen Sie?"/>
+    <CULTURE_ARTS jcr:primaryType="sling:MessageEntry" sling:key="CULTURE_ARTS"
+                  sling:message="Kultur &amp; Bildende Kunst"/>
+    <DAY jcr:primaryType="sling:MessageEntry" sling:key="DAY" sling:message="Tag"/>
+    <DAY_ITINERARY jcr:primaryType="sling:MessageEntry" sling:key="DAY_ITINERARY"
+                   sling:message="Reiseplan für einen Tag"/>
+    <DAYS jcr:primaryType="sling:MessageEntry" sling:key="DAYS" sling:message="Tage"/>
+    <DELETE_TRIP_ALERT_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="DELETE_TRIP_ALERT_MESSAGE"
+                               sling:message="Diese Aktion ist nicht rückgängig zu machen. Sind Sie sicher, dass Sie fortfahren wollen?"/>
+    <DELETE_TRIP_ALERT_TITLE jcr:primaryType="sling:MessageEntry" sling:key="DELETE_TRIP_ALERT_TITLE"
+                             sling:message="Diese Reise löschen?"/>
+    <DELETE_TRIP_DELETE jcr:primaryType="sling:MessageEntry" sling:key="DELETE_TRIP_DELETE" sling:message="Löschen"/>
+    <DESTINATION jcr:primaryType="sling:MessageEntry" sling:key="DESTINATION" sling:message="Reiseziel"/>
+    <DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="DESTINATIONS" sling:message="Reiseziele"/>
+    <DETAIL_DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="DETAIL_DIRECTIONS"
+                       sling:message="Wegbeschreibung"/>
+    <DETAILS jcr:primaryType="sling:MessageEntry" sling:key="DETAILS" sling:message="Details"/>
+    <DID_YOU_MEAN jcr:primaryType="sling:MessageEntry" sling:key="DID_YOU_MEAN" sling:message="Meinten Sie"/>
+    <DINING jcr:primaryType="sling:MessageEntry" sling:key="DINING" sling:message="Restaurants"/>
+    <DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="DIRECTIONS" sling:message="Wegbeschreibung"/>
+    <DIRECTIONS_TO jcr:primaryType="sling:MessageEntry" sling:key="DIRECTIONS_TO"
+                   sling:message="Wegbeschreibung zu / nach"/>
+    <DISCOVER jcr:primaryType="sling:MessageEntry" sling:key="DISCOVER" sling:message="Entdecken Sie"/>
+    <DISCOVER_ACTIVITIES_ON_MAP_MESSAGE jcr:primaryType="sling:MessageEntry"
+                                        sling:key="DISCOVER_ACTIVITIES_ON_MAP_MESSAGE"
+                                        sling:message="Finden Sie die neuesten Veranstaltungen und Top-Attraktionen, direkt auf der Karte"/>
+    <DISCOVER_ROAD_TRIP jcr:primaryType="sling:MessageEntry" sling:key="DISCOVER_ROAD_TRIP"
+                        sling:message="Autofahrten entdecken"/>
+    <DONE jcr:primaryType="sling:MessageEntry" sling:key="DONE" sling:message="Erledigt"/>
+    <DURATION jcr:primaryType="sling:MessageEntry" sling:key="DURATION" sling:message="Dauer"/>
+    <EDIT_TRIP_ALERT_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="EDIT_TRIP_ALERT_MESSAGE"
+                             sling:message="Die von Ihnen vorgenommenen Änderungen wirken sich auf den Reiseplan aus, einschließlich der Aktivitäten oder Veranstaltungen, die Sie bereits hinzugefügt haben."/>
+    <EDIT_TRIP_TITLE jcr:primaryType="sling:MessageEntry" sling:key="EDIT_TRIP_TITLE" sling:message="Reise bearbeiten"/>
+    <EDIT_TRIP_UPDATE_BUTTON jcr:primaryType="sling:MessageEntry" sling:key="EDIT_TRIP_UPDATE_BUTTON"
+                             sling:message="Aktualisieren"/>
+    <EDITORIAL jcr:primaryType="sling:MessageEntry" sling:key="EDITORIAL" sling:message="Impressum"/>
+    <EMERGENCY_NUMBERS jcr:primaryType="sling:MessageEntry" sling:key="EMERGENCY_NUMBERS" sling:message="Notrufnummer"/>
+    <END_DATE jcr:primaryType="sling:MessageEntry" sling:key="END_DATE" sling:message="Enddatum"/>
+    <ENTER_PHONE_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="ENTER_PHONE_NUMBER"
+                        sling:message="Telefonnummer eingeben"/>
+    <ENTER_PHONE_NUMBER_PALCEHOLDER jcr:primaryType="sling:MessageEntry" sling:key="ENTER_PHONE_NUMBER_PALCEHOLDER"
+                                    sling:message="Telefonnummer eingeben"/>
+    <ENTER_VERIFICATION_CODE jcr:primaryType="sling:MessageEntry" sling:key="ENTER_VERIFICATION_CODE"
+                             sling:message="Verifizierungscode eingeben"/>
+    <ENTER_YOUR_PHONE_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="ENTER_YOUR_PHONE_NUMBER"
+                             sling:message="Geben Sie Ihre Telefonnummer ein"/>
+    <ENTRANCES jcr:primaryType="sling:MessageEntry" sling:key="ENTRANCES" sling:message="Eingänge"/>
+    <ERROR_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="ERROR_MESSAGE"
+                   sling:message="Etwas ist schief gelaufen"/>
+    <ESSENTIALS jcr:primaryType="sling:MessageEntry" sling:key="ESSENTIALS" sling:message="Wesentliche Informationen"/>
+    <EVENT jcr:primaryType="sling:MessageEntry" sling:key="EVENT" sling:message="Veranstaltung"/>
+    <EVENT_ABOUT jcr:primaryType="sling:MessageEntry" sling:key="EVENT_ABOUT" sling:message="Über"/>
+    <EVENT_AUDIENCE jcr:primaryType="sling:MessageEntry" sling:key="EVENT_AUDIENCE" sling:message="Publikum"/>
+    <EVENT_DETAILS_LOCATION jcr:primaryType="sling:MessageEntry" sling:key="EVENT_DETAILS_LOCATION"
+                            sling:message="Standort"/>
+    <EVENT_END_DATE jcr:primaryType="sling:MessageEntry" sling:key="EVENT_END_DATE" sling:message="zu"/>
+    <EVENT_GET_DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="EVENT_GET_DIRECTIONS"
+                          sling:message="Wegbeschreibung der Veranstaltung abrufen"/>
+    <EVENT_RELATED_EVENTS jcr:primaryType="sling:MessageEntry" sling:key="EVENT_RELATED_EVENTS"
+                          sling:message="Ähnliche Veranstaltungen"/>
+    <EVENT_SEASON jcr:primaryType="sling:MessageEntry" sling:key="EVENT_SEASON" sling:message="Saison"/>
+    <EVENT_START_DATE jcr:primaryType="sling:MessageEntry" sling:key="EVENT_START_DATE" sling:message="Von"/>
+    <EVENT_TIME_ENDING jcr:primaryType="sling:MessageEntry" sling:key="EVENT_TIME_ENDING" sling:message="Endtermin"/>
+    <EVENT_TIME_STARTING jcr:primaryType="sling:MessageEntry" sling:key="EVENT_TIME_STARTING"
+                         sling:message="Beginnt am"/>
+    <EVENTS jcr:primaryType="sling:MessageEntry" sling:key="EVENTS" sling:message="Veranstaltungen"/>
+    <EVENTS_BUY_TICKETS jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_BUY_TICKETS"
+                        sling:message="Eintrittskarten kaufen"/>
+    <EVENTS_FEATURED jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FEATURED" sling:message="Ausgewählt"/>
+    <EVENTS_FILTERS_NO_FOUND_BODY jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FILTERS_NO_FOUND_BODY"
+                                  sling:message="Versuchen Sie, einige Filter zu ändern, um das zu finden, wonach Sie suchen."/>
+    <EVENTS_FILTERS_NO_FOUND_TITLE jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FILTERS_NO_FOUND_TITLE"
+                                   sling:message="Keine Ergebnisse gefunden"/>
+    <EVENTS_FREE_EVENT jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_FREE_EVENT"
+                       sling:message="Kostenlose Veranstaltung"/>
+    <EVENTS_GET_TICKETS jcr:primaryType="sling:MessageEntry" sling:key="EVENTS_GET_TICKETS"
+                        sling:message="Eintrittskarten kaufen"/>
+    <EXIT jcr:primaryType="sling:MessageEntry" sling:key="EXIT" sling:message="Beenden"/>
+    <EXIT_DRIVING_MODE jcr:primaryType="sling:MessageEntry" sling:key="EXIT_DRIVING_MODE"
+                       sling:message="Fahrmodus beenden"/>
+    <EXPLORE_CITY jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_CITY" sling:message="Die Stadt erkunden"/>
+    <EXPLORE_DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_DESTINATIONS"
+                          sling:message="Reiseziele erkunden"/>
+    <EXPLORE_NOW jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_NOW" sling:message="Jetzt erkunden"/>
+    <EXPLORE_SAUDI_ARABIA jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_SAUDI_ARABIA"
+                          sling:message="Saudi-Arabien erkunden"/>
+    <EXPLORE_SAUDI_MAP jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_SAUDI_MAP"
+                       sling:message="Erkunden Sie die Karte von Saudi-Arabien"/>
+    <EXPLORE_SEASONS jcr:primaryType="sling:MessageEntry" sling:key="EXPLORE_SEASONS" sling:message="Saisons erfahren"/>
+    <FACILITIES jcr:primaryType="sling:MessageEntry" sling:key="FACILITIES" sling:message="Dienstleistungen"/>
+    <FAVORITE jcr:primaryType="sling:MessageEntry" sling:key="FAVORITE" sling:message="Favorit"/>
+    <FAVORITES jcr:primaryType="sling:MessageEntry" sling:key="FAVORITES" sling:message="Favoriten"/>
+    <FAVORITES_SIGNIN_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="FAVORITES_SIGNIN_MESSAGE"
+                              sling:message="Melden Sie sich an oder erstellen Sie ein Konto, um Ihre Favoriten zu speichern und zu synchronisieren"/>
+    <FEATURED jcr:primaryType="sling:MessageEntry" sling:key="FEATURED" sling:message="Ausgewählt"/>
+    <FILTERS jcr:primaryType="sling:MessageEntry" sling:key="FILTERS" sling:message="Filter"/>
+    <FINDING_AVAILABLE_DATES jcr:primaryType="sling:MessageEntry" sling:key="FINDING_AVAILABLE_DATES"
+                             sling:message="Verfügbare Termine finden..."/>
+    <FOLLOW_STEPS jcr:primaryType="sling:MessageEntry" sling:key="FOLLOW_STEPS" sling:message="Schritte folgen"/>
+    <FORCE_UPDATE_TO_LATEST_VERSION jcr:primaryType="sling:MessageEntry" sling:key="FORCE_UPDATE_TO_LATEST_VERSION"
+                                    sling:message="Wir haben ein neues Update für unsere Anwendung zur Verfügung gestellt. Um sie weiterhin zu nutzen, müssen Sie sie auf die neueste Version aktualisieren."/>
+    <FREE jcr:primaryType="sling:MessageEntry" sling:key="FREE" sling:message="Kostenlos"/>
+    <FREE_EVENT jcr:primaryType="sling:MessageEntry" sling:key="FREE_EVENT" sling:message="Kostenlose Veranstaltung"/>
+    <FROM_PRICE jcr:primaryType="sling:MessageEntry" sling:key="FROM_PRICE" sling:message="Von"/>
+    <FROM_PRICE_PACKAGE jcr:primaryType="sling:MessageEntry" sling:key="FROM_PRICE_PACKAGE" sling:message="Von"/>
+    <GAME_BUTTON_REDEEM jcr:primaryType="sling:MessageEntry" sling:key="GAME_BUTTON_REDEEM"
+                        sling:message="Prämienpunkte einlösen"/>
+    <GAME_CHECK_ARRIVAL_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="GAME_CHECK_ARRIVAL_MESSAGE"
+                                sling:message="Sind Sie in \{{1}} angekommen? Bitte tippen Sie auf die Schaltfläche Einchecken, um Ihre Prämien freizuschalten"/>
+    <GAME_COMPLETED_STATUS jcr:primaryType="sling:MessageEntry" sling:key="GAME_COMPLETED_STATUS"
+                           sling:message="Abgeschlossen"/>
+    <GAME_FINISH_FAIL_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_FAIL_DESCRIPTION"
+                                  sling:message="Es scheint, dass Sie nicht in \{{1}} sind. Um Ihre Prämien freizuschalten, müssen Sie in der Stadt einchecken!"/>
+    <GAME_FINISH_FAIL_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_FAIL_TITLE"
+                            sling:message="Oh nein!"/>
+    <GAME_FINISH_SUCCESS_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_SUCCESS_DESCRIPTION"
+                                     sling:message="Sie haben erfolgreich eine ganze Liste von Prämien freigeschaltet. Genießen Sie Rabatte auf Restaurants, Attraktionen, Cafés, Schönheits- und Fitness-Produkte!"/>
+    <GAME_FINISH_SUCCESS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_FINISH_SUCCESS_TITLE"
+                               sling:message="Herzlichen Glückwunsch!"/>
+    <GAME_IN_PROGRESS_STATUS jcr:primaryType="sling:MessageEntry" sling:key="GAME_IN_PROGRESS_STATUS"
+                             sling:message="In Arbeit"/>
+    <GAME_INTERMEDIATE_SUCCESS_DESCRIPTION jcr:primaryType="sling:MessageEntry"
+                                           sling:key="GAME_INTERMEDIATE_SUCCESS_DESCRIPTION"
+                                           sling:message="Sie haben erfolgreich in \{{1}} eingecheckt. Ihr nächstes Ziel ist \{{2}}."/>
+    <GAME_NEXT_DESTINATION_ANNOUNCEMENT jcr:primaryType="sling:MessageEntry"
+                                        sling:key="GAME_NEXT_DESTINATION_ANNOUNCEMENT"
+                                        sling:message="Bitte gehen Sie zu \{{1}} und checken Sie dort ein"/>
+    <GAME_START_FAIL_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_START_FAIL_DESCRIPTION"
+                                 sling:message="Es scheint, dass Sie bereits in \{{1}} sind. Nur Leute von außerhalb der Stadt können teilnehmen."/>
+    <GAME_START_SUCCESS_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_START_SUCCESS_DESCRIPTION"
+                                    sling:message="Sie haben erfolgreich eingecheckt. Bitte kommen Sie wieder, wenn Sie in \{{1}} angekommen sind. Gute Reise!"/>
+    <GAME_START_SUCCESS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_START_SUCCESS_TITLE"
+                              sling:message="Ihre Reise hat begonnen!"/>
+    <GAME_STEP1_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP1_DESCRIPTION"
+                            sling:message="Beginnen Sie Ihre Reise von einer beliebigen Stadt aus, indem Sie den Ort Ihrer Abfahrt eingeben"/>
+    <GAME_STEP1_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP1_TITLE"
+                      sling:message="Beginnen Sie Ihre Reise"/>
+    <GAME_STEP2_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP2_DESCRIPTION"
+                            sling:message="Kommen Sie an Ihrem Reiseziel an und vergewissern Sie sich, dass Sie an Ihrem Standort angekommen sind."/>
+    <GAME_STEP2_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP2_TITLE"
+                      sling:message="Einchecken am Reiseziel"/>
+    <GAME_STEP3_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP3_DESCRIPTION"
+                            sling:message="Rabatte auf Restaurants, Sehenswürdigkeiten, Cafés, Schönheits- und Fitness-Produkte"/>
+    <GAME_STEP3_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAME_STEP3_TITLE"
+                      sling:message="Prämienpunkte einlösen"/>
+    <GAMES_HOMEPAGE_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="GAMES_HOMEPAGE_DESCRIPTION"
+                                sling:message="Wählen Sie eine Route aus, um fortzufahren"/>
+    <GAMES_HOMEPAGE_TITLE jcr:primaryType="sling:MessageEntry" sling:key="GAMES_HOMEPAGE_TITLE"
+                          sling:message="Exklusive Rabatte bei Reisen in Saudi-Arabien"/>
+    <GENERAL_LINKS jcr:primaryType="sling:MessageEntry" sling:key="GENERAL_LINKS" sling:message="Allgemeine Links"/>
+    <GENERAL_SETTINGS jcr:primaryType="sling:MessageEntry" sling:key="GENERAL_SETTINGS" sling:message="Einstellungen"/>
+    <GET_DIRECTIONS jcr:primaryType="sling:MessageEntry" sling:key="GET_DIRECTIONS"
+                    sling:message="Wegbeschreibung erhalten"/>
+    <GET_DIRECTIONS_ON_MAP jcr:primaryType="sling:MessageEntry" sling:key="GET_DIRECTIONS_ON_MAP"
+                           sling:message="Wegbeschreibung auf Karte abrufen"/>
+    <GET_THIS_DEAL jcr:primaryType="sling:MessageEntry" sling:key="GET_THIS_DEAL"
+                   sling:message="Holen Sie sich dieses Angebot"/>
+    <GO_SAUDI jcr:primaryType="sling:MessageEntry" sling:key="GO_SAUDI" sling:message="Reisen Sie nach Saudi-Arabien"/>
+    <GUIDANCE jcr:primaryType="sling:MessageEntry" sling:key="GUIDANCE" sling:message="Leitfaden"/>
+    <GUIDED jcr:primaryType="sling:MessageEntry" sling:key="GUIDED" sling:message="Geleitet"/>
+    <HALA_YALLA jcr:primaryType="sling:MessageEntry" sling:key="HALA_YALLA" sling:message="Hala Yalla"/>
+    <HALAYALLA_CONTACT jcr:primaryType="sling:MessageEntry" sling:key="HALAYALLA_CONTACT"
+                       sling:message="Kontakt zum HalaYalla-Support"/>
+    <HELP_CENTER jcr:primaryType="sling:MessageEntry" sling:key="HELP_CENTER" sling:message="Hilfe-Center"/>
+    <HOTEL jcr:primaryType="sling:MessageEntry" sling:key="HOTEL" sling:message="Hotel"/>
+    <HOTEL_CHAIN jcr:primaryType="sling:MessageEntry" sling:key="HOTEL_CHAIN" sling:message="Hotelkette"/>
+    <HOTELS jcr:primaryType="sling:MessageEntry" sling:key="HOTELS" sling:message="Hotels"/>
+    <IN_THIS_AREA jcr:primaryType="sling:MessageEntry" sling:key="IN_THIS_AREA" sling:message="In diesem Gebiet"/>
+    <IN_THIS_TRIP jcr:primaryType="sling:MessageEntry" sling:key="IN_THIS_TRIP" sling:message="Auf dieser Reise"/>
+    <INVALID_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="INVALID_NUMBER"
+                    sling:message="Ungültige Telefonnummer"/>
+    <INVALID_PROMO_CODE jcr:primaryType="sling:MessageEntry" sling:key="INVALID_PROMO_CODE"
+                        sling:message="Ungültiger Promo-Code"/>
+    <IT_IS_REQUIRED_TO_COMPLETE_YOUR_BOOKING jcr:primaryType="sling:MessageEntry"
+                                             sling:key="IT_IS_REQUIRED_TO_COMPLETE_YOUR_BOOKING"
+                                             sling:message="Das ist erforderlich, um Ihre Buchung vollständig abzuschließen"/>
+    <ITEM jcr:primaryType="sling:MessageEntry" sling:key="ITEM" sling:message="Artikel"/>
+    <ITEMS jcr:primaryType="sling:MessageEntry" sling:key="ITEMS" sling:message="Artikel"/>
+    <ITINERARY_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="ITINERARY_DETAILS"
+                       sling:message="Details zum Reiseplan"/>
+    <KILO_METER jcr:primaryType="sling:MessageEntry" sling:key="KILO_METER" sling:message="km"/>
+    <LANGUAGE jcr:primaryType="sling:MessageEntry" sling:key="LANGUAGE" sling:message="Sprache"/>
+    <LEARN_MORE jcr:primaryType="sling:MessageEntry" sling:key="LEARN_MORE" sling:message="Weitere Informationen"/>
+    <LEGAL jcr:primaryType="sling:MessageEntry" sling:key="LEGAL" sling:message="Rechtlich"/>
+    <LOAD_MORE jcr:primaryType="sling:MessageEntry" sling:key="LOAD_MORE" sling:message="Mehr laden"/>
+    <LOADING jcr:primaryType="sling:MessageEntry" sling:key="LOADING" sling:message="Laden..."/>
+    <LOADING_PLEASE_WAIT jcr:primaryType="sling:MessageEntry" sling:key="LOADING_PLEASE_WAIT"
+                         sling:message="Laden, bitte warten..."/>
+    <LOCATION_DENIED_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="LOCATION_DENIED_MESSAGE"
+                             sling:message="Bitte stellen Sie sicher, dass der Standort in Ihren Einstellungen aktiviert ist"/>
+    <LOCATION_DENIED_TITLE jcr:primaryType="sling:MessageEntry" sling:key="LOCATION_DENIED_TITLE"
+                           sling:message="Standort ist deaktiviert"/>
+    <LOCATION_DETAILS_DIRECTIONS_BUTTON jcr:primaryType="sling:MessageEntry"
+                                        sling:key="LOCATION_DETAILS_DIRECTIONS_BUTTON"
+                                        sling:message="Wegbeschreibung auf der Karte anzeigen"/>
+    <LOCATION_OPEN_SETTINGS jcr:primaryType="sling:MessageEntry" sling:key="LOCATION_OPEN_SETTINGS"
+                            sling:message="Einstellungen öffnen"/>
+    <LOG_IN jcr:primaryType="sling:MessageEntry" sling:key="LOG_IN" sling:message="Anmelden"/>
+    <LOG_IN_SIGN_UP jcr:primaryType="sling:MessageEntry" sling:key="LOG_IN_SIGN_UP" sling:message="Anmelden"/>
+    <LOG_OUT_ERROR_BODY jcr:primaryType="sling:MessageEntry" sling:key="LOG_OUT_ERROR_BODY"
+                        sling:message="Bitte versuchen Sie es gleich noch einmal."/>
+    <LOG_OUT_ERROR_TITLE jcr:primaryType="sling:MessageEntry" sling:key="LOG_OUT_ERROR_TITLE"
+                         sling:message="Beim Abmelden ist ein Fehler aufgetreten"/>
+    <LOGOUT jcr:primaryType="sling:MessageEntry" sling:key="LOGOUT" sling:message="Abmelden"/>
+    <LOGOUT_ALERT_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="LOGOUT_ALERT_DESCRIPTION"
+                              sling:message="Sie können jederzeit wieder auf Ihr Konto zugreifen, indem Sie sich erneut anmelden"/>
+    <LOGOUT_ALERT_TITLE jcr:primaryType="sling:MessageEntry" sling:key="LOGOUT_ALERT_TITLE"
+                        sling:message="Möchten Sie sich wirklich abmelden?"/>
+    <MAP jcr:primaryType="sling:MessageEntry" sling:key="MAP" sling:message="Karte"/>
+    <MAP_SEARCH_BODY jcr:primaryType="sling:MessageEntry" sling:key="MAP_SEARCH_BODY"
+                     sling:message="Versuchen Sie, Ihr Passwort für etwas anderes zu aktualisieren"/>
+    <METER jcr:primaryType="sling:MessageEntry" sling:key="METER" sling:message="m"/>
+    <METERS jcr:primaryType="sling:MessageEntry" sling:key="METERS" sling:message="METER"/>
+    <MINUTES jcr:primaryType="sling:MessageEntry" sling:key="MINUTES" sling:message="MINUTEN"/>
+    <MOBILE_ALREADY_VERIFIED jcr:primaryType="sling:MessageEntry" sling:key="MOBILE_ALREADY_VERIFIED"
+                             sling:message="Handynummer bereits verifiziert"/>
+    <MOBILE_USED_BY_ANOTHER_ACCOUNT jcr:primaryType="sling:MessageEntry" sling:key="MOBILE_USED_BY_ANOTHER_ACCOUNT"
+                                    sling:message="Die Telefonnummer wird von einem anderen Konto verwendet, bitte ändern Sie sie und versuchen Sie es erneut!"/>
+    <MORE_ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="MORE_ATTRACTIONS"
+                      sling:message="Weitere Attraktionen"/>
+    <MORE_IN_THIS_AREA jcr:primaryType="sling:MessageEntry" sling:key="MORE_IN_THIS_AREA"
+                       sling:message="Mehr in diesem Gebiet"/>
+    <MY_BOOKING jcr:primaryType="sling:MessageEntry" sling:key="MY_BOOKING" sling:message="Meine Buchungen"/>
+    <MY_FAVORITES jcr:primaryType="sling:MessageEntry" sling:key="MY_FAVORITES" sling:message="Meine Favoriten"/>
+    <MY_SMART_PASS jcr:primaryType="sling:MessageEntry" sling:key="MY_SMART_PASS" sling:message="Mein Smart-Pass"/>
+    <MY_TRIP jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIP" sling:message="Meine Reise"/>
+    <MY_TRIP_NO_FAVORITES_TITLE jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIP_NO_FAVORITES_TITLE"
+                                sling:message="Sie haben noch keine Favoriten gespeichert"/>
+    <MY_TRIPS jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS" sling:message="Meine Reisen"/>
+    <MY_TRIPS_EMPTY_ACTION jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS_EMPTY_ACTION"
+                           sling:message="Eine Reise erstellen"/>
+    <MY_TRIPS_EMPTY_BODY jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS_EMPTY_BODY"
+                         sling:message="Erstellen Sie einen vollständig individuellen Reiseplan für jeden Tag und entdecken Sie die verborgenen Schätze Saudi-Arabiens."/>
+    <MY_TRIPS_EMPTY_TITLE jcr:primaryType="sling:MessageEntry" sling:key="MY_TRIPS_EMPTY_TITLE"
+                          sling:message="Eine Reise erstellen"/>
+    <NATURE jcr:primaryType="sling:MessageEntry" sling:key="NATURE" sling:message="Natur"/>
+    <NETWORK_ERROR jcr:primaryType="sling:MessageEntry" sling:key="NETWORK_ERROR" sling:message="Netzwerkfehler"/>
+    <NEW_VERSION_AVAILABLE jcr:primaryType="sling:MessageEntry" sling:key="NEW_VERSION_AVAILABLE"
+                           sling:message="App-Update verfügbar!"/>
+    <NEXT_DAY jcr:primaryType="sling:MessageEntry" sling:key="NEXT_DAY" sling:message="Nächster Tag"/>
+    <NO_CANCELLED_BOOKINGS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_CANCELLED_BOOKINGS_FOUND"
+                                 sling:message="Keine stornierten Buchungen gefunden"/>
+    <NO_ITEMS_AVAILABLE jcr:primaryType="sling:MessageEntry" sling:key="NO_ITEMS_AVAILABLE"
+                        sling:message="Keine Artikel verfügbar"/>
+    <NO_PREVIOUS_BOOKINGS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_PREVIOUS_BOOKINGS_FOUND"
+                                sling:message="Keine vorherigen Buchungen gefunden"/>
+    <NO_RESULTS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_RESULTS_FOUND"
+                      sling:message="Keine Ergebnisse gefunden"/>
+    <NO_ROUTE_AVAILABLE jcr:primaryType="sling:MessageEntry" sling:key="NO_ROUTE_AVAILABLE"
+                        sling:message="Keine Route verfügbar"/>
+    <NO_TRIPS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_TRIPS_FOUND"
+                    sling:message="Sie haben keinen Reiseverlauf"/>
+    <NO_TRIPS_FOUND_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="NO_TRIPS_FOUND_DESCRIPTION"
+                                sling:message="Ihr Reiseverlauf wird hier angezeigt."/>
+    <NO_UPCOMING_BOOKINGS_FOUND jcr:primaryType="sling:MessageEntry" sling:key="NO_UPCOMING_BOOKINGS_FOUND"
+                                sling:message="Keine bevorstehenden Buchungen gefunden"/>
+    <NOT_NOW jcr:primaryType="sling:MessageEntry" sling:key="NOT_NOW" sling:message="Jetzt nicht"/>
+    <OF jcr:primaryType="sling:MessageEntry" sling:key="OF" sling:message="Von"/>
+    <OFF jcr:primaryType="sling:MessageEntry" sling:key="OFF" sling:message="aus"/>
+    <OK jcr:primaryType="sling:MessageEntry" sling:key="OK" sling:message="Ok"/>
+    <ON_FOOT jcr:primaryType="sling:MessageEntry" sling:key="ON_FOOT" sling:message="Zu Fuß"/>
+    <OTHER_DESTINATIONS jcr:primaryType="sling:MessageEntry" sling:key="OTHER_DESTINATIONS"
+                        sling:message="Andere Reiseziele"/>
+    <PACKAGE jcr:primaryType="sling:MessageEntry" sling:key="PACKAGE" sling:message="Pauschalangebot"/>
+    <PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="PACKAGES" sling:message="Pauschalangebote"/>
+    <PAGE_GAME_BANNER_LABEL jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BANNER_LABEL"
+                            sling:message="Prämien anzeigen"/>
+    <PAGE_GAME_BANNER_TEXT jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BANNER_TEXT"
+                           sling:message="Rabatte auf Restaurants, Attraktionen, Schönheitsprodukte, Gesundheit und vieles mehr!"/>
+    <PAGE_GAME_BUTTON_CHECKIN jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BUTTON_CHECKIN"
+                              sling:message="Einchecken in \{{1}}"/>
+    <PAGE_GAME_BUTTON_START jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_BUTTON_START"
+                            sling:message="Einchecken zum Start"/>
+    <PAGE_GAME_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_DESCRIPTION"
+                           sling:message="Erhalten Sie sofortigen Zugriff auf Rabattangebote im ganzen Königreich Saudi-Arabien. Bei so viel Auswahl und so vielen Möglichkeiten zum Sparen haben Sie nicht viel nachzudenken - worauf warten Sie noch?"/>
+    <PAGE_GAME_SECONDARY_TITLE jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_SECONDARY_TITLE"
+                               sling:message="Hier ein kleiner Vorgeschmack auf das, was drin ist!"/>
+    <PAGE_GAME_TITLE jcr:primaryType="sling:MessageEntry" sling:key="PAGE_GAME_TITLE"
+                     sling:message="Wie kann man teilnehmen?"/>
+    <PAID_EVENT jcr:primaryType="sling:MessageEntry" sling:key="PAID_EVENT" sling:message="Bezahlte Veranstaltung"/>
+    <PARKINGS jcr:primaryType="sling:MessageEntry" sling:key="PARKINGS" sling:message="Parkplätze"/>
+    <PAY_CREDIT_BUTTON_TITLE jcr:primaryType="sling:MessageEntry" sling:key="PAY_CREDIT_BUTTON_TITLE"
+                             sling:message="Mit Kreditkarte bezahlen"/>
+    <PEOPLE jcr:primaryType="sling:MessageEntry" sling:key="PEOPLE" sling:message="Leute"/>
+    <PERFORMING_ARTS_And_SHOWS jcr:primaryType="sling:MessageEntry" sling:key="PERFORMING_ARTS_And_SHOWS"
+                               sling:message="Künste &amp; Shows darstellen"/>
+    <PHONE_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="PHONE_NUMBER" sling:message="Telefonnummer"/>
+    <PHONE_NUMBER_REQUIRED jcr:primaryType="sling:MessageEntry" sling:key="PHONE_NUMBER_REQUIRED"
+                           sling:message="Telefonnummer ist erforderlich"/>
+    <PHOTO jcr:primaryType="sling:MessageEntry" sling:key="PHOTO" sling:message="Foto"/>
+    <PHOTO_GALLERY jcr:primaryType="sling:MessageEntry" sling:key="PHOTO_GALLERY" sling:message="Fotogalerie"/>
+    <PHOTOS jcr:primaryType="sling:MessageEntry" sling:key="PHOTOS" sling:message="Fotos"/>
+    <POWERED_BY_HALAYALLA jcr:primaryType="sling:MessageEntry" sling:key="POWERED_BY_HALAYALLA"
+                          sling:message="Angetrieben von HalaYalla"/>
+    <PREVIOUS_DAY jcr:primaryType="sling:MessageEntry" sling:key="PREVIOUS_DAY" sling:message="Voriger Tag"/>
+    <PRIVACY_POLICY jcr:primaryType="sling:MessageEntry" sling:key="PRIVACY_POLICY"
+                    sling:message="Datenschutzrichtlinie"/>
+    <PROVIDER_CONTACT_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="PROVIDER_CONTACT_NUMBER"
+                             sling:message="Kontaktnummer des Anbieters"/>
+    <READ_LESS jcr:primaryType="sling:MessageEntry" sling:key="READ_LESS" sling:message="Weniger lesen"/>
+    <READ_MORE jcr:primaryType="sling:MessageEntry" sling:key="READ_MORE" sling:message="Mehr lesen"/>
+    <REFUNDED jcr:primaryType="sling:MessageEntry" sling:key="REFUNDED" sling:message="Zurückerstattet"/>
+    <RELATED_PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="RELATED_PACKAGES"
+                      sling:message="Ähnliche Pauschalangebote"/>
+    <RELOAD jcr:primaryType="sling:MessageEntry" sling:key="RELOAD" sling:message="neu laden"/>
+    <REMOVE_CODE jcr:primaryType="sling:MessageEntry" sling:key="REMOVE_CODE" sling:message="Code löschen"/>
+    <REMOVE_FROM_TRIP jcr:primaryType="sling:MessageEntry" sling:key="REMOVE_FROM_TRIP"
+                      sling:message="Aus der Reise entfernen"/>
+    <RESEND_CODE jcr:primaryType="sling:MessageEntry" sling:key="RESEND_CODE" sling:message="Code erneut senden"/>
+    <RESULT jcr:primaryType="sling:MessageEntry" sling:key="RESULT" sling:message="Ergebnis"/>
+    <RESULTS jcr:primaryType="sling:MessageEntry" sling:key="RESULTS" sling:message="Ergebnisse"/>
+    <RETRY jcr:primaryType="sling:MessageEntry" sling:key="RETRY" sling:message="Wiederholen"/>
+    <ROAD_TRIP_Departure_FROM jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_Departure_FROM"
+                              sling:message="Abreise von"/>
+    <ROAD_TRIP_FACEBOOK jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_FACEBOOK" sling:message="Facebook"/>
+    <ROAD_TRIP_INSTAGRAM jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_INSTAGRAM"
+                         sling:message="Instagram"/>
+    <ROAD_TRIP_LINKEDIN jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_LINKEDIN" sling:message="LinkedIn"/>
+    <ROAD_TRIP_NEXT_DAY jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_NEXT_DAY"
+                        sling:message="Nächster Tag"/>
+    <ROAD_TRIP_PREVIOUS_DAY jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_PREVIOUS_DAY"
+                            sling:message="Vorheriger Tag"/>
+    <ROAD_TRIP_TWITTER jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIP_TWITTER" sling:message="Twitter"/>
+    <ROAD_TRIPS jcr:primaryType="sling:MessageEntry" sling:key="ROAD_TRIPS" sling:message="Autofahrten"/>
+    <SAR jcr:primaryType="sling:MessageEntry" sling:key="SAR" sling:message="SAR"/>
+    <SAUDI_SMART_ID jcr:primaryType="sling:MessageEntry" sling:key="SAUDI_SMART_ID" sling:message="Saudische Smart-ID"/>
+    <SAVE jcr:primaryType="sling:MessageEntry" sling:key="SAVE" sling:message="Speichern"/>
+    <SAVE_CHANGES jcr:primaryType="sling:MessageEntry" sling:key="SAVE_CHANGES" sling:message="Änderungen speichern"/>
+    <SEARCH_FOR_A_COUNTRY jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_FOR_A_COUNTRY"
+                          sling:message="Ein Land suchen"/>
+    <SEARCH_FOR_YOUR_COUNTRY jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_FOR_YOUR_COUNTRY"
+                             sling:message="Suchen Sie Ihr Land"/>
+    <SEARCH_FOR_YOUR_EMBASSY jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_FOR_YOUR_EMBASSY"
+                             sling:message="Suchen Sie Ihre Botschaft"/>
+    <SEARCH_HERE jcr:primaryType="sling:MessageEntry" sling:key="SEARCH_HERE" sling:message="Hier suchen"/>
+    <SECURITY_ALERT jcr:primaryType="sling:MessageEntry" sling:key="SECURITY_ALERT"
+                    sling:message="Sicherheitswarnung!"/>
+    <SECURITY_MSG jcr:primaryType="sling:MessageEntry" sling:key="SECURITY_MSG"
+                  sling:message="Aus Sicherheitsgründen wird unsere Anwendung auf gerooteten Geräten nicht unterstützt. Um darauf zuzugreifen, verwenden Sie bitte ein anderes Gerät."/>
+    <SEE_AND_DO jcr:primaryType="sling:MessageEntry" sling:key="SEE_AND_DO" sling:message="Sehen &amp; Handeln"/>
+    <SEE_AND_DO_EXPLORE jcr:primaryType="sling:MessageEntry" sling:key="SEE_AND_DO_EXPLORE"
+                        sling:message="Erkunden Sie"/>
+    <SELECT_A_LANGUAGE jcr:primaryType="sling:MessageEntry" sling:key="SELECT_A_LANGUAGE"
+                       sling:message="Eine Sprache auswählen"/>
+    <SELECT_ALL jcr:primaryType="sling:MessageEntry" sling:key="SELECT_ALL" sling:message="Alles auswählen"/>
+    <SELECT_COUNTRY jcr:primaryType="sling:MessageEntry" sling:key="SELECT_COUNTRY" sling:message="Land auswählen"/>
+    <SELF_GUIDED jcr:primaryType="sling:MessageEntry" sling:key="SELF_GUIDED" sling:message="Selbstgeführt"/>
+    <SESSION_EXPIRED_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="SESSION_EXPIRED_MESSAGE"
+                             sling:message="Ihre Sitzung ist abgelaufen, bitte melden Sie sich erneut an"/>
+    <SETTINGS_PRIVACY jcr:primaryType="sling:MessageEntry" sling:key="SETTINGS_PRIVACY"
+                      sling:message="Einstellungen &amp; Privatsphäre"/>
+    <SHARE jcr:primaryType="sling:MessageEntry" sling:key="SHARE" sling:message="Teilen"/>
+    <SHOPPING jcr:primaryType="sling:MessageEntry" sling:key="SHOPPING" sling:message="Einkaufen"/>
+    <SHOPPING_RETAIL jcr:primaryType="sling:MessageEntry" sling:key="SHOPPING_RETAIL"
+                     sling:message="Einkaufen &amp; Einzelhandel"/>
+    <SHOW_FAVORITES_ONLY jcr:primaryType="sling:MessageEntry" sling:key="SHOW_FAVORITES_ONLY"
+                         sling:message="Nur Favoriten anzeigen"/>
+    <SHOW_FILTERS jcr:primaryType="sling:MessageEntry" sling:key="SHOW_FILTERS" sling:message="Filter anzeigen"/>
+    <SHOW_SAUDI_DATE_TIME_TEXT jcr:primaryType="sling:MessageEntry" sling:key="SHOW_SAUDI_DATE_TIME_TEXT"
+                               sling:message="Anzeige des Datums und der Uhrzeit von Saudi Arabien"/>
+    <SIGHTSEEING jcr:primaryType="sling:MessageEntry" sling:key="SIGHTSEEING" sling:message="Sehenswürdigkeiten"/>
+    <SPORT jcr:primaryType="sling:MessageEntry" sling:key="SPORT" sling:message="Sportarten"/>
+    <START jcr:primaryType="sling:MessageEntry" sling:key="START" sling:message="Start"/>
+    <START_DATE jcr:primaryType="sling:MessageEntry" sling:key="START_DATE" sling:message="Starttermin"/>
+    <START_DRIVING jcr:primaryType="sling:MessageEntry" sling:key="START_DRIVING" sling:message="Losfahren"/>
+    <START_DRIVING_MODE jcr:primaryType="sling:MessageEntry" sling:key="START_DRIVING_MODE"
+                        sling:message="Fahrmodus starten"/>
+    <STARTING jcr:primaryType="sling:MessageEntry" sling:key="STARTING" sling:message="Start"/>
+    <STARTS_FROM jcr:primaryType="sling:MessageEntry" sling:key="STARTS_FROM" sling:message="Beginnt am"/>
+    <STEP jcr:primaryType="sling:MessageEntry" sling:key="STEP" sling:message="Schritt"/>
+    <STEP_1 jcr:primaryType="sling:MessageEntry" sling:key="STEP_1" sling:message="Schritt 1"/>
+    <STEP_2 jcr:primaryType="sling:MessageEntry" sling:key="STEP_2" sling:message="Schritt 2"/>
+    <STEP_3 jcr:primaryType="sling:MessageEntry" sling:key="STEP_3" sling:message="Schritt 3"/>
+    <STEP_OF jcr:primaryType="sling:MessageEntry" sling:key="STEP_OF" sling:message="Schritt \{{1}} von \{{2}}"/>
+    <SUITABLE_FOR jcr:primaryType="sling:MessageEntry" sling:key="SUITABLE_FOR" sling:message="Geeignet für"/>
+    <TELEPHONE_PROVIDERS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TELEPHONE_PROVIDERS_TITLE"
+                               sling:message="Telefon-Anbieter"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_LABEL jcr:primaryType="sling:MessageEntry"
+                                        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_LABEL"
+                                        sling:message="Ländercode von Saudi-Arabien"/>
+    <TELEPHONE_SAUDI_COUNTRY_CODE_VALUE jcr:primaryType="sling:MessageEntry"
+                                        sling:key="TELEPHONE_SAUDI_COUNTRY_CODE_VALUE" sling:message="966"/>
+    <TERMS_AND_CONDITIONS jcr:primaryType="sling:MessageEntry" sling:key="TERMS_AND_CONDITIONS"
+                          sling:message="Bedingungen und Bestimmungen"/>
+    <THE_ADDED_FAVORITES_APPEAR_HERE jcr:primaryType="sling:MessageEntry" sling:key="THE_ADDED_FAVORITES_APPEAR_HERE"
+                                     sling:message="Die hinzugefügten Favoriten werden hier angezeigt"/>
+    <THEMED_ATTRACTIONS jcr:primaryType="sling:MessageEntry" sling:key="THEMED_ATTRACTIONS"
+                        sling:message="Thematische Attraktionen"/>
+    <THIS_BOOKING_IS_BY_OUR_OPERATOR jcr:primaryType="sling:MessageEntry" sling:key="THIS_BOOKING_IS_BY_OUR_OPERATOR"
+                                     sling:message="Diese Buchung erfolgt durch unseren Operator"/>
+    <THIS_MONTH jcr:primaryType="sling:MessageEntry" sling:key="THIS_MONTH" sling:message="Diesen Monat"/>
+    <THIS_WEEK jcr:primaryType="sling:MessageEntry" sling:key="THIS_WEEK" sling:message="Diese Woche"/>
+    <TODAY jcr:primaryType="sling:MessageEntry" sling:key="TODAY" sling:message="Heute"/>
+    <TOMORROW jcr:primaryType="sling:MessageEntry" sling:key="TOMORROW" sling:message="Morgen"/>
+    <TOP_EVENTS_AND_ATTRACTIONS_ALL_IN_ONE_PLACE jcr:primaryType="sling:MessageEntry"
+                                                 sling:key="TOP_EVENTS_AND_ATTRACTIONS_ALL_IN_ONE_PLACE"
+                                                 sling:message="Die besten Veranstaltungen und Attraktionen, alles an einem Ort"/>
+    <TOP_PACKAGES jcr:primaryType="sling:MessageEntry" sling:key="TOP_PACKAGES"
+                  sling:message="Die besten Pauschalangebote"/>
+    <TOTAL_AMOUNT jcr:primaryType="sling:MessageEntry" sling:key="TOTAL_AMOUNT" sling:message="Gesamtbetrag"/>
+    <TOTAL_DISTANCE jcr:primaryType="sling:MessageEntry" sling:key="TOTAL_DISTANCE" sling:message="Gesamte Entfernung"/>
+    <TRANSPORTATION jcr:primaryType="sling:MessageEntry" sling:key="TRANSPORTATION" sling:message="Transport"/>
+    <TRAVELEXPERT jcr:primaryType="sling:MessageEntry" sling:key="TRAVELEXPERT" sling:message="Experte für Reisen"/>
+    <TRAVELLER jcr:primaryType="sling:MessageEntry" sling:key="TRAVELLER" sling:message="Reisende"/>
+    <TRENDING jcr:primaryType="sling:MessageEntry" sling:key="TRENDING" sling:message="Am Beliebtesten"/>
+    <TRIP jcr:primaryType="sling:MessageEntry" sling:key="TRIP" sling:message="Reise"/>
+    <TRIP_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="TRIP_DETAILS" sling:message="Details zur Reise"/>
+    <TRIP_HISTORY_BODY jcr:primaryType="sling:MessageEntry" sling:key="TRIP_HISTORY_BODY"
+                       sling:message="Ihre bisherigen Reisen werden hier angezeigt"/>
+    <TRIP_HISTORY_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_HISTORY_TITLE"
+                        sling:message="Reiseverlauf"/>
+    <TRIP_INFO jcr:primaryType="sling:MessageEntry" sling:key="TRIP_INFO" sling:message="Infos zur Reise"/>
+    <TRIP_NAME_SHOULD_NOT_BE_EMPTY jcr:primaryType="sling:MessageEntry" sling:key="TRIP_NAME_SHOULD_NOT_BE_EMPTY"
+                                   sling:message="Der Reisename sollte nicht leer sein"/>
+    <TRIP_OVERVIEW jcr:primaryType="sling:MessageEntry" sling:key="TRIP_OVERVIEW"
+                   sling:message="Überblick über die Reise"/>
+    <TRIP_PLAN_DAY_DELETE_DESCRIPTION jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLAN_DAY_DELETE_DESCRIPTION"
+                                      sling:message="Sie werden zu Meine Reise weitergeleitet."/>
+    <TRIP_PLAN_DAY_DELETE_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLAN_DAY_DELETE_TITLE"
+                                sling:message="Sind Sie sicher, dass Sie diese Reise löschen möchten?"/>
+    <TRIP_PLAN_DAY_SCHEDULE_ADD_ACTIVITY jcr:primaryType="sling:MessageEntry"
+                                         sling:key="TRIP_PLAN_DAY_SCHEDULE_ADD_ACTIVITY"
+                                         sling:message="Aktivität hinzufügen"/>
+    <TRIP_PLAN_DAY_SCHEDULE_DELETE_ACTIVITY_TITLE jcr:primaryType="sling:MessageEntry"
+                                                  sling:key="TRIP_PLAN_DAY_SCHEDULE_DELETE_ACTIVITY_TITLE"
+                                                  sling:message="Sind Sie sicher, dass Sie diese Aktivität löschen möchten?"/>
+    <TRIP_PLAN_DAY_SCHEDULE_EMPTY_DESCRIPTION jcr:primaryType="sling:MessageEntry"
+                                              sling:key="TRIP_PLAN_DAY_SCHEDULE_EMPTY_DESCRIPTION"
+                                              sling:message="Fügen Sie Aktivitäten zu diesem Tag hinzu."/>
+    <TRIP_PLAN_DAY_SCHEDULE_EMPTY_TITLE jcr:primaryType="sling:MessageEntry"
+                                        sling:key="TRIP_PLAN_DAY_SCHEDULE_EMPTY_TITLE"
+                                        sling:message="Dieser Tag ist leer"/>
+    <TRIP_PLAN_DAY_SCHEDULE_FULL_DESCRIPTION jcr:primaryType="sling:MessageEntry"
+                                             sling:key="TRIP_PLAN_DAY_SCHEDULE_FULL_DESCRIPTION"
+                                             sling:message="Versuchen Sie, einige Aktivitäten zu löschen, wenn Sie weitere hinzufügen möchten."/>
+    <TRIP_PLAN_DAY_SCHEDULE_FULL_TITLE jcr:primaryType="sling:MessageEntry"
+                                       sling:key="TRIP_PLAN_DAY_SCHEDULE_FULL_TITLE" sling:message="Ihr Tag ist voll"/>
+    <TRIP_PLANNER_CREATE_TRIP jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_CREATE_TRIP"
+                              sling:message="Eine Reise erstellen"/>
+    <TRIP_PLANNER_EXPLORE_TRIPS_TITLE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_EXPLORE_TRIPS_TITLE"
+                                      sling:message="AUTOFAHRTEN ERKUNDEN"/>
+    <TRIP_PLANNER_MY_TRIPS jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_MY_TRIPS"
+                           sling:message="Meine Reisen"/>
+    <TRIP_PLANNER_SIGNIN_MESSAGE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_SIGNIN_MESSAGE"
+                                 sling:message="Melden Sie sich an oder erstellen Sie ein Konto, um Ihre Reisen zu speichern und zu synchronisieren."/>
+    <TRIP_PLANNER_TRIP_STARTS_HERE jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_TRIP_STARTS_HERE"
+                                   sling:message="Ihre Reise nach Saudi-Arabien beginnt hier"/>
+    <TRIP_PLANNER_VIEW_HISTORY jcr:primaryType="sling:MessageEntry" sling:key="TRIP_PLANNER_VIEW_HISTORY"
+                               sling:message="Verlauf anzeigen"/>
+    <TRIPS jcr:primaryType="sling:MessageEntry" sling:key="TRIPS" sling:message="Reisen"/>
+    <TRY_UPDATING_FILTERS jcr:primaryType="sling:MessageEntry" sling:key="TRY_UPDATING_FILTERS"
+                          sling:message="Versuchen Sie, Ihre Filter für etwas anderes zu aktualisieren"/>
+    <UNEXPECTED_ERROR_HAS_OCCURRED jcr:primaryType="sling:MessageEntry" sling:key="UNEXPECTED_ERROR_HAS_OCCURRED"
+                                   sling:message="Ein unerwarteter Fehler ist aufgetreten"/>
+    <UPCOMING_MONTHS jcr:primaryType="sling:MessageEntry" sling:key="UPCOMING_MONTHS" sling:message="Kommende Monate"/>
+    <UPDATE jcr:primaryType="sling:MessageEntry" sling:key="UPDATE" sling:message="Update herunterladen"/>
+    <UPDATE_TO_LATEST_VERSION jcr:primaryType="sling:MessageEntry" sling:key="UPDATE_TO_LATEST_VERSION"
+                              sling:message="Wir haben ein neues Update für unsere Anwendung zur Verfügung gestellt. Um von den neuesten Funktionen zu profitieren, tippen Sie bitte auf die Schaltfläche unten."/>
+    <USEFUL_CONTACTS jcr:primaryType="sling:MessageEntry" sling:key="USEFUL_CONTACTS"
+                     sling:message="Nützliche Kontakte"/>
+    <VAT jcr:primaryType="sling:MessageEntry" sling:key="VAT" sling:message="MEHRWERTSTEUER"/>
+    <VAT_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="VAT_NUMBER" sling:message="Mehrwertsteuer-Nummer"/>
+    <VAT_VIEW_CERTIFICATE jcr:primaryType="sling:MessageEntry" sling:key="VAT_VIEW_CERTIFICATE"
+                          sling:message="Zertifikat anzeigen"/>
+    <VERIFICATION_CODE jcr:primaryType="sling:MessageEntry" sling:key="VERIFICATION_CODE"
+                       sling:message="Verifizierungscode"/>
+    <VERIFY_CODE_NOT_VALID jcr:primaryType="sling:MessageEntry" sling:key="VERIFY_CODE_NOT_VALID"
+                           sling:message="Der Code ist nicht gültig. Bitte versuchen Sie es erneut."/>
+    <VERIFY_CODE_REQUIRED jcr:primaryType="sling:MessageEntry" sling:key="VERIFY_CODE_REQUIRED"
+                          sling:message="Der Verifizierungscode ist erforderlich"/>
+    <VERIFY_NUMBER jcr:primaryType="sling:MessageEntry" sling:key="VERIFY_NUMBER" sling:message="Nummer überprüfen"/>
+    <VIEW_ALL jcr:primaryType="sling:MessageEntry" sling:key="VIEW_ALL" sling:message="Alles anzeigen"/>
+    <VIEW_ALL_RESULTS jcr:primaryType="sling:MessageEntry" sling:key="VIEW_ALL_RESULTS"
+                      sling:message="Alle Ergebnisse anzeigen"/>
+    <VIEW_DETAILS jcr:primaryType="sling:MessageEntry" sling:key="VIEW_DETAILS" sling:message="Details anzeigen"/>
+    <VIEW_OFFER jcr:primaryType="sling:MessageEntry" sling:key="VIEW_OFFER" sling:message="Angebot anzeigen"/>
+    <VIEW_ON_MAP jcr:primaryType="sling:MessageEntry" sling:key="VIEW_ON_MAP" sling:message="Auf Karte anzeigen"/>
+    <VIEW_PROFILE jcr:primaryType="sling:MessageEntry" sling:key="VIEW_PROFILE" sling:message="Profil anzeigen"/>
+    <VIEW_THE_TRIP_LOCATIONS_ON_THE_MAP jcr:primaryType="sling:MessageEntry"
+                                        sling:key="VIEW_THE_TRIP_LOCATIONS_ON_THE_MAP"
+                                        sling:message="Sehen Sie sich die Reiseziele auf der Karte an"/>
+    <VISIT_SAUDI jcr:primaryType="sling:MessageEntry" sling:key="VISIT_SAUDI" sling:message="Visit Saudi"/>
+    <VISIT_WEBSITE jcr:primaryType="sling:MessageEntry" sling:key="VISIT_WEBSITE"
+                   sling:message="Besuchen Sie ihre Website"/>
+    <WALKING jcr:primaryType="sling:MessageEntry" sling:key="WALKING" sling:message="Wander"/>
+    <WE_ARE_SORRY jcr:primaryType="sling:MessageEntry" sling:key="WE_ARE_SORRY" sling:message="Es tut uns leid"/>
+    <WE_SENT_VERIFICATION_CODE_TO jcr:primaryType="sling:MessageEntry" sling:key="WE_SENT_VERIFICATION_CODE_TO"
+                                  sling:message="Wir sandten Ihnen den Verifizierungscode an"/>
+    <WEATHER jcr:primaryType="sling:MessageEntry" sling:key="WEATHER" sling:message="Wetter"/>
+    <WELCOME jcr:primaryType="sling:MessageEntry" sling:key="WELCOME" sling:message="Herzlich willkommen"/>
+    <WHATS_IN jcr:primaryType="sling:MessageEntry" sling:key="WHATS_IN" sling:message="Was ist in"/>
+    <WHATS_INCLUDED jcr:primaryType="sling:MessageEntry" sling:key="WHATS_INCLUDED" sling:message="Was enthalten ist"/>
+    <WHATS_NOT_INCLUDED jcr:primaryType="sling:MessageEntry" sling:key="WHATS_NOT_INCLUDED"
+                        sling:message="Was nicht enthalten ist"/>
+    <YEARS_OLD jcr:primaryType="sling:MessageEntry" sling:key="YEARS_OLD" sling:message="Jahre alt"/>
+    <YOU_HAVENT_ADDED_ANY_FAVORITE_YET jcr:primaryType="sling:MessageEntry"
+                                       sling:key="YOU_HAVENT_ADDED_ANY_FAVORITE_YET"
+                                       sling:message="Sie haben noch keine Favoriten hinzugefügt"/>
+    <YOU_MIGHT_LIKE jcr:primaryType="sling:MessageEntry" sling:key="YOU_MIGHT_LIKE"
+                    sling:message="DAS KÖNNTE SIE INTERESSIEREN"/>
+    <YOU_MUST_BE_LOGGED_IN_BOOKINGS jcr:primaryType="sling:MessageEntry" sling:key="YOU_MUST_BE_LOGGED_IN_BOOKINGS"
+                                    sling:message="Sie müssen sich anmelden, um Ihre Buchungen zu sehen"/>
+    <YOUR_CANCELLED_BOOKINGS_WILL_APPEAR_HERE jcr:primaryType="sling:MessageEntry"
+                                              sling:key="YOUR_CANCELLED_BOOKINGS_WILL_APPEAR_HERE"
+                                              sling:message="Ihre stornierten Buchungen werden hier angezeigt"/>
+    <YOUR_PAST_BOOKINGS_WILL_APPEAR_HERE jcr:primaryType="sling:MessageEntry"
+                                         sling:key="YOUR_PAST_BOOKINGS_WILL_APPEAR_HERE"
+                                         sling:message="Ihre früheren Buchungen werden hier angezeigt"/>
+    <YOUR_UPCOMING_BOOKINGS_WILL_APPEAR_HERE jcr:primaryType="sling:MessageEntry"
+                                             sling:key="YOUR_UPCOMING_BOOKINGS_WILL_APPEAR_HERE"
+                                             sling:message="Ihre nächsten Buchungen werden hier angezeigt"/>
+
+
+</jcr:root>

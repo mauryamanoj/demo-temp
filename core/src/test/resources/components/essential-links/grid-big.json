@@ -1,0 +1,31 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "subTitle":"For support",
+  "jcr:lastModifiedBy":"admin",
+  "isFullWidth":"false",
+  "jcr:created":"Fri Jul 17 2020 16:50:44 GMT+0200",
+  "title":"Contact us on WhatsApp",
+  "fullHeightImage":"false",
+  "variant":"grid-big",
+  "hideCta":"false",
+  "jcr:lastModified":"Sun Nov 06 2022 10:06:02 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/essential-links",
+  "hideMiddleOrnament":"true",
+  "hideBackground":"false",
+  "image":{
+    "jcr:primaryType":"nt:unstructured",
+    "s7fileReference":"/content/dam/sauditourism/placeholder.jpg",
+    "fileReference":"/content/dam/sauditourism/placeholder.jpg",
+    "jcr:lastModifiedBy":"admin",
+    "mobileImageReference":"/content/dam/sauditourism/placeholder.jpg",
+    "jcr:lastModified":"Sun Nov 06 2022 10:06:02 GMT+0100",
+    "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/wa_bg_mob-1"
+  },
+  "linkButton":{
+    "jcr:primaryType":"nt:unstructured",
+    "url":"966920000890",
+    "copy":"Start Chat",
+    "type":"whatsapp",
+    "targetInNewWindow":"true"
+  }
+}

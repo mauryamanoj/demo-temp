@@ -1,0 +1,77 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 13:09:04 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"demo-cf-page",
+    "cq:lastReplicationAction":"Activate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"41e055a4-87c0-4a13-9cbf-73c5c71c24ff",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy":"aghachi-c@sta.gov.sa",
+    "isFeatured":"false",
+    "searchCategories":[
+      "sauditourism:searchCategories/FestivalsEvents"
+    ],
+    "jcr:predecessors":[
+      "dcff6da1-787a-4ee3-b4ad-9f264f55081e"
+    ],
+    "noLoginModal":"false",
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Tue Sep 26 2023 13:09:04 GMT+0100",
+    "cq:lastReplicated":"Tue Sep 12 2023 17:40:35 GMT+0000",
+    "cq:lastModified":"Mon Oct 09 2023 23:42:44 GMT+0200",
+    "branding":"visitsaudi",
+    "theme":"red",
+    "jcr:description":"demo-cf-page",
+    "jcr:baseVersion":"dcff6da1-787a-4ee3-b4ad-9f264f55081e",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "pageTitle":"demo-cf-page",
+    "jcr:uuid":"2d505a1f-bd7b-4839-a2e1-65ec9a67e7b3",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "cq:lastModifiedBy":"admin",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "about_section":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"admin",
+          "enableManualAuthoring":"true",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:created":"Mon Oct 09 2023 10:21:51 GMT+0200",
+          "jcr:lastModified":"Mon Oct 09 2023 18:07:00 GMT+0200",
+          "aboutDescription":"\nfreestar\n\nfreestar\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum consectetur urna, et vulputate odio consectetur eu. Donec vulputate risus id faucibus elementum. Nulla convallis magna vel urna iaculis, consectetur vestibulum lorem volutpat. Praesent mauris nulla, fringilla interdum massa sed, interdum tempus metus. Praesent convallis eu leo in condimentum. Nullam pulvinar et tortor vel gravida. Vivamus sodales mi ut orci tristique maximus. Donec rhoncus libero vitae neque lacinia aliquet.",
+          "sling:resourceType":"sauditourism/components/content/about-section",
+          "aboutTitle":"About",
+          "categoryCFPaths":[
+            "/content/dam/sauditourism/cf/en/categories/food"
+          ],
+          "categories":[
+            "sauditourism:sports/art",
+            "sauditourism:food-drink/restaurant/international-kitchen"
+          ],
+          "shareIcon":"categories_xs_culture",
+          "favoriteIcon":"categories_xs_shopping",
+          "hideReadMore":"false",
+          "readMoreLabel":"Read more",
+          "readLessLabel":"Read less",
+          "hideShare":"true",
+          "hideFavorite":"false"
+        }
+      }
+    }
+  }
+}

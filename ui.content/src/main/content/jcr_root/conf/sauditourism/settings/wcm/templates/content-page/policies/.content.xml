@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+  <jcr:content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="wcm/core/components/policies/mappings">
+    <root
+        cq:policy="wcm/foundation/components/responsivegrid/content-default"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mapping">
+      <menu
+            cq:policy="sauditourism/components/content/menu/policy_1696353654060"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping"/>
+      <responsivegrid
+          cq:policy="wcm/foundation/components/responsivegrid/content-default"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="wcm/core/components/policies/mapping">
+        <sauditourism jcr:primaryType="nt:unstructured">
+          <components jcr:primaryType="nt:unstructured">
+            <content jcr:primaryType="nt:unstructured">
+                <latest-stories
+                        cq:policy="sauditourism/components/content/latest-stories/policy_1696402582833"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+              <c04-full-bleed-slider jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c04-full-bleed-slider
+                      cq:policy="sauditourism/components/content/c04-full-bleed-slider/v1/c04-full-bleed-slider/policy_1571884608740"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c04-full-bleed-slider>
+              <c03-card jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c03-card
+                      cq:policy="sauditourism/components/content/c03-card/v1/c03-card/policy_1573616858927"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c03-card>
+              <c09-tabs jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c09-tabs
+                      cq:policy="sauditourism/components/content/c09-tabs/v1/c09-tabs/policy_1571742724092"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c09-tabs>
+              <c25-big-slider jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c25-big-slider
+                      cq:policy="sauditourism/components/content/c25-big-slider/v1/c25-big-slider/policy_1573111158927"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c25-big-slider>
+              <c02-title jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c02-title
+                      cq:policy="sauditourism/components/content/c02-title/v1/c02-title/policy_1573222258927"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c02-title>
+              <c26-secondary-hero-with-weather
+                  cq:policy="sauditourism/components/content/c26-secondary-hero-with-weather/policy_1607028173189"
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="wcm/core/components/policies/mapping">
+              </c26-secondary-hero-with-weather>
+              <h02-secondary-hero jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <h02-secondary-hero
+                      cq:policy="sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero/policy_1611596345855"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </h02-secondary-hero>
+              <h01-brand-page-hero jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <h01-brand-page-hero
+                      cq:policy="sauditourism/components/content/h01-brand-page-hero/v1/h01-brand-page-hero/policy_1666531735382"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </h01-brand-page-hero>
+              <traveller-quotes jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <traveller-quotes
+                      cq:policy="sauditourism/components/content/traveller-quotes/v1/traveller-quotes/policy_1613596521922"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </traveller-quotes>
+              <m01-full-bleed-video jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <m01-full-bleed-video
+                      cq:policy="sauditourism/components/content/m01-full-bleed-video/v1/m01-full-bleed-video/policy_1613596421074"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </m01-full-bleed-video>
+              <gallery-component jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <gallery-component
+                      cq:policy="sauditourism/components/content/gallery-component/v1/gallery-component/policy_1614014599058"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </gallery-component>
+              <c27-teaser-with-cards jcr:primaryType="nt:unstructured">
+                <v0 jcr:primaryType="nt:unstructured">
+                      <c27-teaser-with-cards
+                          cq:policy="sauditourism/components/content/c27-teaser-with-cards/v0/c27-teaser-with-cards/policy_1614023948995"
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v0>
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c27-teaser-with-cards
+                      cq:policy="sauditourism/components/content/c27-teaser-with-cards/v1/c27-teaser-with-cards/policy_1614023948994"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c27-teaser-with-cards>
+              <list-component jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <list-component
+                      cq:policy="sauditourism/components/content/list-component/v1/list-component/policy_1614078481131"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </list-component>
+              <c13-article-card jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                  <c13-article-card
+                      cq:policy="sauditourism/components/content/c13-article-card/v1/c13-article-card/policy_1615996607872"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+              </c13-article-card>
+              <make-a-reservation
+                  cq:policy="sauditourism/components/content/make-a-reservation/policy_1668248386990"
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="wcm/core/components/policies/mapping"/>
+	      <h03-detail-hero jcr:primaryType="nt:unstructured">
+                <v2 jcr:primaryType="nt:unstructured">
+                    <h03-detail-hero
+                        cq:policy="sauditourism/components/content/h03-detail-hero/v2/h03-detail-hero/policy_1669456815547"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v2>
+              </h03-detail-hero>
+            <c07-evisa jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                    <c07-evisa cq:policy="sauditourism/components/content/c07-evisa/v1/c07-evisa/policy_1669653301333"
+                               jcr:primaryType="nt:unstructured"
+                               sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+            </c07-evisa>
+            <c28-destinations-and-map jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                    <c28-destinations-and-map
+                        cq:policy="sauditourism/components/content/c28-destinations-and-map/v1/c28-destinations-and-map/policy_1670163947467"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+            </c28-destinations-and-map>
+            <c17-interest-points jcr:primaryType="nt:unstructured">
+                <v1 jcr:primaryType="nt:unstructured">
+                    <c17-interest-points
+                        cq:policy="sauditourism/components/content/c17-interest-points/v1/c17-interest-points/policy_1670778187671"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                </v1>
+            </c17-interest-points>
+            <essential-links
+                cq:policy="sauditourism/components/content/essential-links/policy_1670858443414"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <winter-hero-slider
+                cq:policy="sauditourism/components/content/winter-hero-slider/policy_1673458498942"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+                <banner-slider jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <banner-slider
+                            cq:policy="sauditourism/components/content/banner-slider/v1/banner-slider/policy_1696165140508"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </v1>
+                </banner-slider>
+            <all-destinations
+                cq:policy="sauditourism/components/content/all-destinations/policy_1696150900159"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <destinations-map
+                cq:policy="sauditourism/components/content/destinations-map/policy_1696331226181"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <menu
+                cq:policy="sauditourism/components/content/menu/policy_1696353654060"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <promotional-banner
+                cq:policy="sauditourism/components/content/promotional-banner/policy_1696502574566"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <small-stories
+                    cq:policy="sauditourism/components/content/small-stories/policy_1697706495593"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            <keep-exploring-section
+                    cq:policy="sauditourism/components/content/keep-exploring-section/policy_1697706589321"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            <contactus
+                    cq:policy="sauditourism/components/content/contactus/policy_1698911491665"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            <offers_deals
+                cq:policy="sauditourism/components/content/offers_deals/policy_2588911491465"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+                <text-image
+                        cq:policy="sauditourism/components/content/text-image/policy_1701280445434"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+            </content>
+          </components>
+        </sauditourism>
+      </responsivegrid>
+    </root>
+  </jcr:content>
+</jcr:root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:templateType="/conf/sauditourism/settings/wcm/template-types/empty-page"
+        jcr:description="This template is used for app region creation purposes."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="App Region Page"
+        allowedPaths="[/content/sauditourism/app1/\\w{2}/regions(/.*)?]"
+        ranking="{Long}101"
+        status="enabled"/>
+</jcr:root>

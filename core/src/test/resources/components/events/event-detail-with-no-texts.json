@@ -1,0 +1,113 @@
+{
+  "jcr:primaryType":"cq:PageContent",
+  "jcr:mixinTypes":[
+    "mix:versionable"
+  ],
+  "startTime":"Sun Dec 05 2021 15:00:00 GMT+0300",
+  "jcr:createdBy":"admin",
+  "averageTime":"2",
+  "jcr:title":"Oasis",
+  "headingLocationDetailType":"h1",
+  "locationLabel":"I am a label, edit me",
+  "locationTitle":"I am a location title, edit me",
+  "description":"I am a description, edit me",
+  "cq:lastReplicationAction":"Deactivate",
+  "endTime":"Sun Dec 05 2021 01:00:00 GMT+0300",
+  "noCacheHeaderCdn":"false",
+  "jcr:versionHistory":"2da52e1b-64ec-44d6-a76c-b7ff27052443",
+  "freePaid":"paid",
+  "noCacheHeaderDispatcher":"false",
+  "latitude":"25.354776",
+  "externalLink":"#",
+  "cq:template":"/conf/sauditourism/settings/wcm/templates/event-details",
+  "showHoursTitle":"I am a show hours title, edit me",
+  "addressDetail":"I am an address detail, edit me",
+  "address":"I am an address, edit me",
+  "roundTheClock":"true",
+  "templateType":"new",
+  "season":"riyadh-season",
+  "eventLink-url":"https://thechefz.co/en/",
+  "eventLink-copy":"Buy Ticket",
+  "calendarEndDate":"Mon Feb 28 2022 00:00:00 GMT+0300",
+  "jcr:predecessors":[
+    "90108572-9b8c-4d71-a736-5499db106dea"
+  ],
+  "jcr:created":"Thu Jul 21 2022 16:22:24 GMT+0200",
+  "featured":"true",
+  "cq:lastReplicated":"Tue Mar 01 2022 08:59:20 GMT+0000",
+  "cq:lastModified":"Thu Aug 04 2022 18:34:18 GMT+0200",
+  "eventLink-targetInNewWindow":"true",
+  "city":"riyadh",
+  "copy":"Riyadh Oasis\r\nFar away from the city's light, on golden sand, Oasis is located. Not only will you discover unique experiences and fine places, but you're also here to stay, making the distance you traveled worth it.",
+  "s7featureEventImage":"https://scth.scene7.com/is/image/scth/Oasis",
+  "image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+  "phone":"I am a phone number, edit me",
+  "theme":"orange",
+  "title":"Oasis",
+  "longitude":"46.455399",
+  "locationInDetailLabel":"I am a location label, edit me",
+  "headingType":"h1",
+  "categoryTags":[
+    "sauditourism:events/dining"
+  ],
+  "locationDistance":"1",
+  "jcr:baseVersion":"90108572-9b8c-4d71-a736-5499db106dea",
+  "s7image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+  "jcr:isCheckedOut":true,
+  "targetGroupTags":[
+    "sauditourism:audience/public"
+  ],
+  "pageAuthor":"contentAuthors",
+  "imageListing":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+  "eventIntro":"I am an intro, edit me",
+  "eventTitle":"I am a title edit me",
+  "jcr:uuid":"1ae522e0-867e-4ada-b410-62ba7dd9802c",
+  "ctaText":"CTA, edit me",
+  "sling:resourceType":"sauditourism/components/structure/event-detail-page",
+  "headingshowHoursType":"h1",
+  "calendarStartDate":"Sat Dec 04 2021 00:00:00 GMT+0300",
+  "hideInSiteMap":"false",
+  "featureEventImage":"/content/dam/saudi-tourism/media/events-/Oasis.jpg",
+  "searchHighlight":"false",
+  "disableSecondaryNav":true,
+  "location":"I am a location, edit me",
+  "cq:lastModifiedBy":"admin",
+  "imageMobile":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+  "root":{
+    "jcr:primaryType":"nt:unstructured",
+    "sling:resourceType":"wcm/foundation/components/responsivegrid",
+    "header-block":{
+      "jcr:primaryType":"nt:unstructured",
+      "ctaTitle":"I am a title, edit me",
+      "title":"I am a title, edit me",
+      "ctaLink":"#",
+      "ctaText":"CTA, edit me",
+      "sling:resourceType":"sauditourism/components/content/headerblock",
+      "backTitle":"I am a title, edit me",
+      "backLink":"#",
+      "backText":"CTA, edit me",
+      "small":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+      },
+      "medium":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+      },
+      "large":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+      }
+    },
+    "responsivegrid":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid"
+    }
+  }
+}

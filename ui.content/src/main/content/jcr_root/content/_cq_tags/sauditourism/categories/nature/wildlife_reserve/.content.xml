@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Wildlife reserve"
+          jcr:title.ar="محمية الحياة البرية"
+          jcr:title.de="Wildschutzgebiet"
+          jcr:title.es="Reserva de vida silvestre"
+          jcr:title.fr="Réserve faunique"
+          jcr:title.ja="野生動物保護区"
+          jcr:title.ru="Заповедник дикой природы"
+          jcr:title.zh="野生动物保护区"
+          sling:resourceType="cq/tagging/components/tag"/>

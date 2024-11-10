@@ -1,0 +1,14 @@
+<sly data-sly-template.filter="${@ filters, eventHero}">
+  <sly
+      data-sly-use.dropdownTemplate="/apps/sauditourism/components/content/templates/general/select-option-dropdown.html"></sly>
+  <div class="select-year-and-month-filter" data-component="select-year-and-month-filter">
+    <div class="filters-wrapper">
+
+      <sly data-sly-list.filterItem="${filters}">
+        <sly data-sly-call="${dropdownTemplate.filterItem @
+      label=filterItem.filterTitle, name=filterItem.type}"></sly>
+      </sly>
+
+    </div>
+  </div>
+</sly>

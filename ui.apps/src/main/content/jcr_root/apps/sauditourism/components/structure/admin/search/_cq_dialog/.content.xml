@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+xmlns:cq="http://www.day.com/jcr/cq/1.0"
+xmlns:jcr="http://www.jcp.org/jcr/1.0"
+xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+jcr:primaryType="nt:unstructured"
+jcr:title="Solr search Config"
+extraClientlibs="[sauditourism.author]"
+sling:resourceType="cq/gui/components/authoring/dialog">
+<content
+    granite:class="dialog-container"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+        <tabs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs"
+            maximized="{Boolean}true">
+            <items jcr:primaryType="nt:unstructured">
+                <solrSuggestions
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    jcr:title="Solr suggestions"
+                    jcr:description="Solr suggestions dictionary">
+                    <items jcr:primaryType="nt:unstructured">
+                        <keyWords
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            cq:showOnCreate="{Boolean}true"
+                            composite="{Boolean}true"
+                            fieldLabel="Words and phrases for autocomplete"
+                            fieldDescription="Words and phrases for autocomplete"
+                            required="{Boolean}false">
+
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                name="./solrKey"
+                                granite:class="accordion-multifield-item"
+                                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <solrkey-item
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Suggestion item"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+
+                                            <solr-key
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Key word or phrase"
+                                                fieldLabel="Key word or phrase"
+                                                required="{Boolean}true"
+                                                name="./solrKey"/>
+
+                                            <type
+                                                granite:class="js-dialog-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Enter the type of suggestion"
+                                                fieldLabel="Type of suggestion"
+                                                required="{Boolean}true"
+                                                name="./type">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    metaType="dropdown"
+                                                    showhide-target=".filter-key-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <keyword
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Keyword"
+                                                        value="keyword"/>
+                                                    <directlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Direct Link"
+                                                        value="directlink"/>
+                                                </items>
+                                            </type>
+                                            <url-web
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                required="{Boolean}false"
+                                                fieldLabel="Web Direct link URL"
+                                                fieldDescription="Enter Direct Link for type directlink for Web"
+                                                name="./urlWeb"
+                                                rootPath="/content/sauditourism"/>
+                                            <url-app
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                required="{Boolean}false"
+                                                fieldLabel="App Direct link URL"
+                                                fieldDescription="Enter Direct Link for type directlink for App"
+                                                name="./urlApp"
+                                                rootPath="/content/sauditourism"/>
+
+                                        </items>
+                                    </solrkey-item>
+                                </items>
+                            </field>
+                        </keyWords>
+                    </items>
+                </solrSuggestions>
+            <solrTrendings
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                jcr:title="Trending pages"
+                jcr:description="Solr trending pages">
+                <items jcr:primaryType="nt:unstructured">
+                    <TrendingPages
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        cq:showOnCreate="{Boolean}true"
+                        validation="multifield-max-6"
+                        composite="{Boolean}true"
+                        fieldLabel="List of Trending pages"
+                        fieldDescription="List of Trending pages"
+                        required="{Boolean}false">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            name="./trendingPage"
+                            granite:class="accordion-multifield-item"
+                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                            <items jcr:primaryType="nt:unstructured">
+                                <trending-item
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Trending item"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            required="{Boolean}true"
+                                            fieldLabel="Web Trending page"
+                                            fieldDescription="Web Trending page"
+                                            name="./trendingPage"
+                                            rootPath="/content/sauditourism"/>
+                                        <field-app
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            required="{Boolean}true"
+                                            fieldLabel="App Trending page "
+                                            fieldDescription="App Trending page"
+                                            name="./trendingPageApp"
+                                            rootPath="/content/sauditourism"/>
+                                    </items>
+                                </trending-item>
+                            </items>
+                        </field>
+                    </TrendingPages>
+                </items>
+            </solrTrendings>
+                <solrFeatured
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    jcr:title="Featured pages"
+                    jcr:description="Solr featured pages">
+                    <items jcr:primaryType="nt:unstructured">
+                        <featuredPages
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            cq:showOnCreate="{Boolean}true"
+                            validation="multifield-max-6"
+                            composite="{Boolean}true"
+                            fieldLabel="List of Featured pages"
+                            fieldDescription="List of Featured pages"
+                            required="{Boolean}false">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Trending page"
+                                fieldDescription="Featured page"
+                                name="./featuredPage">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    path="sauditourism/components/content/utils/headingweight"
+                                    sling:resourceType="sauditourism/generic/datasource/featured"/>
+                            </field>
+                        </featuredPages>
+                    </items>
+                </solrFeatured>
+                <solrCategories
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    jcr:title="Search Categories"
+                    jcr:description="Search Categories">
+                    <items jcr:primaryType="nt:unstructured">
+                        <SearchCategories
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            cq:showOnCreate="{Boolean}true"
+                            composite="{Boolean}true"
+                            fieldLabel="List of Search Categories"
+                            fieldDescription="List of Search Categories"
+                            required="{Boolean}false">
+                            <field
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="Select search category"
+                                fieldLabel="Search category"
+                                forceSelection="{Boolean}true"
+                                multiple="{Boolean}false"
+                                name="./searchCategory"
+                                rootPath="/content/cq:tags/sauditourism/searchCategories">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="searchCategory"/>
+                            </field>
+                        </SearchCategories>
+                    </items>
+                </solrCategories>
+                <solrTypes
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    jcr:title="Search Types"
+                    jcr:description="Search Types">
+                    <items jcr:primaryType="nt:unstructured">
+                        <SearchTypes
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            cq:showOnCreate="{Boolean}true"
+                            composite="{Boolean}true"
+                            fieldLabel="List of Search Types"
+                            fieldDescription="List of Search Types"
+                            required="{Boolean}false">
+                            <field
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="Select search type"
+                                fieldLabel="Search type"
+                                forceSelection="{Boolean}true"
+                                multiple="{Boolean}false"
+                                name="./searchType"
+                                rootPath="/content/cq:tags/sauditourism/type">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="searchType"/>
+                            </field>
+                        </SearchTypes>
+                    </items>
+                </solrTypes>
+                <solrRegions
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    jcr:title="Regions"
+                    jcr:description="Search Regions">
+                    <items jcr:primaryType="nt:unstructured">
+                        <regions
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            jcr:title="Solr Regions"
+                            jcr:description="Solr Regions">
+                            <items jcr:primaryType="nt:unstructured">
+                                <keyWords
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    cq:showOnCreate="{Boolean}true"
+                                    composite="{Boolean}true"
+                                    fieldLabel="Locations"
+                                    fieldDescription="Locations"
+                                    required="{Boolean}false">
+                                    <field
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                        fieldDescription="Select a region"
+                                        fieldLabel="region"
+                                        forceSelection="{Boolean}true"
+                                        multiple="{Boolean}false"
+                                        name="./region"
+                                        rootPath="/content/cq:tags/sauditourism/city">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="regions"/>
+                                    </field>
+                                </keyWords>
+                            </items>
+                        </regions>
+                    </items>
+                </solrRegions>
+            </items>
+        </tabs>
+    </items>
+</content>
+</jcr:root>

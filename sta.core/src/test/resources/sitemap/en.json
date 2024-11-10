@@ -1,0 +1,52 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:mixinTypes":[
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 13:07:49 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Visit Saudi",
+    "cq:lastReplicationAction":"Activate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"85d4b2bf-98ea-4882-9251-50ad137ddc36",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy":"admin",
+    "isFeatured":"false",
+    "jcr:language":"en",
+    "searchCategories":[
+      "sauditourism:searchCategories/SeeDo",
+      "sauditourism:searchCategories/Highlight"
+    ],
+    "jcr:predecessors":[
+      "93ddb867-a5c7-4e5d-a89f-a8f7c41884ac"
+    ],
+    "sling:redirect":"true",
+    "noLoginModal":"false",
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Tue Sep 26 2023 13:07:49 GMT+0100",
+    "cq:lastReplicated":"Tue Sep 26 2023 07:36:41 GMT+0000",
+    "cq:lastModified":"Wed Sep 13 2023 15:14:40 GMT+0000",
+    "s7featureImage":"/content/dam/saudi-tourism/media/winter-saudi/winter-desktop.jpg",
+    "theme":"teal",
+    "jcr:description":"Explore Saudi’s top destinations, ancient heritage and culture, breathtaking outdoor activities, and delicious local food. Discover more! ",
+    "jcr:baseVersion":"93ddb867-a5c7-4e5d-a89f-a8f7c41884ac",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"manifestNew",
+    "pageTitle":"Visit Saudi",
+    "cq:conf":"/conf/sauditourism/visitsaudi",
+    "jcr:uuid":"97b308a2-8c8a-405b-a948-8aaa48178ca7",
+    "featureImage":"/content/dam/saudi-tourism/media/winter-saudi/winter-desktop.jpg",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "cq:lastModifiedBy":"admin"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:created": "Tue Oct 25 2022 12:12:37 GMT+0200",
+  "jcr:lastModified": "Sun Oct 30 2022 14:19:45 GMT+0100",
+  "sling:resourceType": "sauditourism/components/content/c29-evisa-config/v1/c29-evisa-config",
+  "textIsRich": [
+    "true",
+    "true"
+  ],
+  "image":{
+    "jcr:primaryType":"nt:unstructured",
+    "s7fileReference":"https://scth.scene7.com/is/image/scth/riyadh-season-desktop-hero-banner-slider",
+    "fileReference":"/content/dam/sauditourism/favicon.png"
+  },
+  "title": "Check if you need an entry visa to Saudi Arabia",
+  "selectCountryLabel": "Select Country of Residency",
+  "selectCountryPlaceholder": "Select a country",
+  "searchCountryPlaceholder": "Quick Search",
+  "orText": "OR",
+  "selectQuestionLabel": "Tell us a bit more about you",
+  "selectQuestionPlaceholder": "Please select an option",
+  "requirementsLabel":"Requirements",
+  "informationsLabel":"Informations",
+  "questionsByVisaGroup": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "visaGroup": "eligible-country",
+      "questions": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "code": "US_UK_SCHENGEN_VISA",
+          "label": "I have a US, UK or Schengen visa?"
+        }
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "visaGroup": "non-eligible-country",
+      "questions": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "code": "US_UK_SCHENGEN_VISA",
+          "label": "I have a US, UK or Schengen visa?"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "code": "GCC_RESIDENCY",
+          "label": "I have a GCC residency"
+        }
+      }
+    }
+  },
+  "visaTypes": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "visaGroup": "eligible-country-not-us-uk-schengen",
+      "visaTypesTitle" : "Three visa type available to choose from:",
+      "questions": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "response": "false",
+          "code": "US_UK_SCHENGEN_VISA"
+        }
+      },
+      "sections": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "icon": "/content/dam/sauditourism/favicon.png",
+          "mobileIcon": "/content/dam/sauditourism/mobile/favicon.png",
+          "title": "You are eligible for an eVisa",
+          "requirementsAndDocumentation": "<h1><b>Required</b> <b>Documents</b></h1>\n<h1> </h1>\n<h3>PCR Test</h3>\n<ul>\n<li>A PCR test with a negative result is required.</li>\n<li>Test must be performed at maximum of 72 hours prior to your trip</li>\n</ul>\n<h3>Medical Insurance</h3>\n<ul>\n<li>Have a medical insurance test that covers the costs of COVID-19 treatment in outpatient clinics, emergencies and hospitals, including the institutional quarantine for a period of 14 days.</li>\n</ul>\n<h3>COVID 19</h3>\n<ul>\n<li>Visitors must monitor COVID-19 Symptoms</li>\n<li>Immediately call 937 is any symptoms appear.</li>\n<li>Go to primary healthcare center or emergency if necessary</li>\n</ul>\n",
+          "informations":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "key":"Visa on Arrival Price",
+              "value":"SAR 300 (about USD 80)."
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "key":"Medical Insurance Fees",
+              "value":"SAR 180 (about  USD 48.03)."
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "key":"Entry",
+              "value":"Multiple Entry or single entry depending on Ministry of Foreign Affairs."
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "key":"Validity",
+              "value":"The multiple entry visa is valid for a year from its issue date. The visa allows for stays of up to 90 days."
+            }
+          },
+          "card":{
+            "jcr:primaryType":"nt:unstructured",
+            "title":"Apply to eVisa!",
+            "icon": "/content/dam/sauditourism/favicon.png",
+            "viewMoreLabel": "View All",
+            "viewMoreMobileLabel": "View All",
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "url":"/content/sauditourism/en/apply-for-evisa",
+              "text":"Apply For eVisa",
+              "targetInNewWindow":"true"
+            }
+          }
+        }
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "visaGroup": "eligible-country-not-us-uk-schengen",
+      "visaTypesTitle" : "Three visa type available to choose from:",
+      "questions": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "response": "true",
+          "code": "US_UK_SCHENGEN_VISA"
+        }
+      },
+      "sections": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "title": "You are eligible for an eVisa US UK Schengen",
+          "icon": "/content/dam/sauditourism/favicon.png",
+          "mobileIcon": "/content/dam/sauditourism/mobile/favicon.png",
+          "requirementsAndDocumentation": "<h1><b>Required</b> <b>Documents</b></h1>\n<h1> </h1>\n<h3>PCR Test</h3>\n<ul>\n<li>A PCR test with a negative result is required.</li>\n<li>Test must be performed at maximum of 72 hours prior to your trip</li>\n</ul>\n<h3>Medical Insurance</h3>\n<ul>\n<li>Have a medical insurance test that covers the costs of COVID-19 treatment in outpatient clinics, emergencies and hospitals, including the institutional quarantine for a period of 14 days.</li>\n</ul>\n<h3>COVID 19</h3>\n<ul>\n<li>Visitors must monitor COVID-19 Symptoms</li>\n<li>Immediately call 937 is any symptoms appear.</li>\n<li>Go to primary healthcare center or emergency if necessary</li>\n</ul>\n",
+          "card":{
+            "jcr:primaryType":"nt:unstructured",
+            "title":"Apply to eVisa!",
+            "icon": "/content/dam/sauditourism/favicon.png",
+            "viewMoreLabel": "View All",
+            "viewMoreMobileLabel": "View All",
+            "link":{
+              "jcr:primaryType":"nt:unstructured",
+              "url":"/content/sauditourism/en/apply-for-evisa",
+              "text":"Apply For eVisa US UK Schengen",
+              "targetInNewWindow":"true"
+            }
+          }
+        }
+      }
+    }
+  },
+  "downloadApps": {
+    "jcr:primaryType": "nt:unstructured",
+    "title": "Download App",
+    "eVisaApplications": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "description": "App Description",
+        "brandIcon": "/content/dam/core-components-examples/library/adobe-logo.svg",
+        "title": "App title",
+        "appsList": {
+          "jcr:primaryType": "nt:unstructured",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "appPlatform": "android",
+            "appUrl": "androidappstore",
+            "appStoreIcon": "/content/dam/core-components-examples/library/adobe-logo.svg"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "appPlatform": "ios",
+            "appUrl": "iosappstore"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "appPlatform": "all",
+            "appUrl": "allappstore"
+          }
+        }
+      }
+    }
+  }
+}

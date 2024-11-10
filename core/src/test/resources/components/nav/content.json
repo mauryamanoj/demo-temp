@@ -1,0 +1,18 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Oct 04 2019 14:43:58 GMT+1000",
+  "jcr:content": {
+    "root": {
+      "responsivegrid": {
+        "n01-navigation-menu": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Fri Oct 04 2019 15:00:56 GMT+1000",
+          "jcr:lastModified": "Fri Oct 04 2019 15:02:12 GMT+1000"
+        }
+      }
+    }
+  }
+}

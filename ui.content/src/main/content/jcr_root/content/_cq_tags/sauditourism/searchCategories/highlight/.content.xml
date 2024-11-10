@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Highlight"
+          jcr:title.ar="مقالات مختارة"
+          jcr:title.fr="À ne pas rater"
+          jcr:title.es="Destacados"
+          jcr:title.ru="Самое интересное"
+          jcr:title.de="Höhepunkte"
+          jcr:title.zh="精选"
+          jcr:title.ja="ハイライト"
+          sling:resourceType="cq/tagging/components/tag"/>

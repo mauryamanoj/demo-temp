@@ -1,0 +1,68 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Dec 16 2019 17:20:01 GMT+1100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "event-page-hero",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+    "jcr:created": "Mon Dec 16 2019 17:20:01 GMT+1100",
+    "cq:lastModified": "Mon Dec 16 2019 17:33:37 GMT+1100",
+    "theme": "red",
+    "sling:resourceType": "sauditourism/components/structure/page",
+    "hideInSiteMap": "false",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "c01_quick_links": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "weight": "h3",
+          "jcr:created": "Mon Dec 16 2019 17:20:12 GMT+1100",
+          "jcr:lastModified": "Mon Dec 16 2019 17:20:12 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/c01-quick-links/v1/c01-quick-links",
+          "componentTitle": "Title, Edit me",
+          "links": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "linkTitle": "",
+              "isInternal": "",
+              "url": "",
+              "targetInNewWindow": ""
+            }
+          }
+        },
+        "h04_event_page_hero": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Mon Dec 16 2019 17:32:58 GMT+1100",
+          "jcr:lastModified": "Mon Dec 16 2019 17:33:37 GMT+1100",
+          "sling:resourceType": "sauditourism/components/content/h04-event-page-hero/v1/h04-event-page-hero",
+          "events": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "path": "/content/sauditourism/en/events/enrique-iglesias-"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "path": "/content/sauditourism/en/events/cabevent"
+            },
+            "item2": {
+              "jcr:primaryType": "nt:unstructured",
+              "path": "/content/sauditourism/en/events/aladdin-show"
+            }
+          }
+        }
+      }
+    }
+  }
+}

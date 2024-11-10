@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Event Filters Config"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.common.wcm,sauditourism.author]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+  <content
+      granite:class="dialog-container"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <tabs
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/tabs"
+          maximized="{Boolean}true">
+        <items jcr:primaryType="nt:unstructured">
+          <filters-tab
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                jcr:title="Events filter settings"
+                jcr:description="Events filter settings">
+                <items jcr:primaryType="nt:unstructured">
+                    <filters
+                        jcr:description="Configure  Events filters"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Events Filters"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <filters-multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="List of all Events Filters"
+                                fieldDescription="Add here all the Events Filters">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./filters"
+                                    granite:class="accordion-multifield-item"
+                                    sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <filter-item
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Event Filter"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <key
+                                                    granite:class="js-dialog-showhide"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Enter the field or key of the event filter"
+                                                    fieldLabel="Filter"
+                                                    required="{Boolean}true"
+                                                    name="./key">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        metaType="dropdown"
+                                                        showhide-target=".filter-key-showhide-target"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <none
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="None"
+                                                                value=""/>
+                                                        <city
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="City"
+                                                            value="city"/>
+                                                        <region
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Region"
+                                                                value="region"/>
+                                                        <category
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Category"
+                                                                value="category"/>
+                                                        <target
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Target"
+                                                                value="target"/>
+                                                        <free-paid
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Free Paid"
+                                                                value="freePaid"/>
+                                                        <season
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Season"
+                                                                value="season"/>
+                                                        <date
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Date"
+                                                                value="date"/>
+                                                    </items>
+                                                </key>
+                                                <name
+                                                    granite:class="accordion-multifield-item-title"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter the name of the event filter"
+                                                    fieldLabel="Name"
+                                                    required="{Boolean}true"
+                                                    name="./name"/>
+                                                <type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Select the type of the field in event filter"
+                                                    fieldLabel="Type"
+                                                    required="{Boolean}true"
+                                                    name="./type">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None"
+                                                            value=""/>
+                                                        <radio
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="RadioButton"
+                                                            value="radioButton"/>
+                                                        <checkbox
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Checkbox"
+                                                            value="checkbox"/>
+                                                        <range
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Range"
+                                                            value="range"/>
+                                                        <dateRange
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Date Range"
+                                                            value="dateRange"/>
+                                                        <boolean
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Boolean"
+                                                            value="boolean"/>
+                                                    </items>
+                                                </type>
+                                            </items>
+                                        </filter-item>
+                                    </items>
+                                </field>
+                            </filters-multifield>
+                        </items>
+                    </filters>
+                </items>
+          </filters-tab>
+        </items>
+      </tabs>
+    </items>
+  </content>
+</jcr:root>

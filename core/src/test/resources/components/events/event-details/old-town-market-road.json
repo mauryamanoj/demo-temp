@@ -1,0 +1,128 @@
+{
+  "jcr:primaryType":"cq:PageContent",
+  "jcr:mixinTypes":[
+    "mix:versionable"
+  ],
+  "startTime":"Thu Jun 23 2022 09:00:00 GMT+0300",
+  "priceText":"Price",
+  "getDirectionCtaLink":"https://www.google.com/maps/place/26%C2%B037'40.4%22N+37%C2%B054'46.1%22E/@26.6278889,37.9128056,846m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d26.6278744!4d37.9128062!5m1!1e4",
+  "getDirectionCtaText":"Get Direction",
+  "jcr:createdBy":"admin",
+  "averageTime":"1",
+  "jcr:title":"Old Town Market Road",
+  "durationText":"Date",
+  "headingLocationDetailType":"h1",
+  "showOnMap":"true",
+  "locationLabel":"I am a label, edit me",
+  "locationTitle":"Location Information",
+  "description":"I am a description, edit me",
+  "suitableForText":"Audience",
+  "cq:lastReplicationAction":"Activate",
+  "endTime":"Thu Jun 23 2022 00:00:00 GMT+0300",
+  "noCacheHeaderCdn":"false",
+  "jcr:versionHistory":"6fd55d5b-8a5f-4d0d-8b26-bb50dd64574d",
+  "freePaid":"free",
+  "noCacheHeaderDispatcher":"false",
+  "isHalaYallaLink":"false",
+  "latitude":"26.627889",
+  "readLessButton":"Read Less",
+  "externalLink":"#",
+  "addressInfo":"Old Town Market Road",
+  "cq:template":"/conf/sauditourism/settings/wcm/templates/event-details",
+  "showHoursTitle":"I am a show hours title, edit me",
+  "addressDetail":"I am an address detail, edit me",
+  "address":"I am an address, edit me",
+  "roundTheClock":"false",
+  "templateType":"new",
+  "season":"alula-season",
+  "eventLink-url":"https://www.experiencealula.com/en/plan-your-trip/what-to-do/old-town-market",
+  "eventLink-copy":"Buy Tickets",
+  "calendarEndDate":"Sat Apr 01 2023 00:00:00 GMT+0300",
+  "jcr:predecessors":[
+    "21a91267-f648-4b98-bb7d-a3a1733fc459"
+  ],
+  "jcr:created":"Thu Aug 04 2022 15:56:18 GMT+0200",
+  "featured":"false",
+  "cq:lastReplicated":"Thu Aug 25 2022 08:11:08 GMT+0000",
+  "cq:lastModified":"Thu Aug 25 2022 08:08:59 GMT+0000",
+  "eventLink-targetInNewWindow":"true",
+  "locationName":"Old Town Market Road",
+  "city":"alula",
+  "copy":"<p>Stroll through the outdoor market and shop local artisans, traditional crafts and cafes.</p>\r\n",
+  "noSeasonTitle":" ",
+  "s7featureEventImage":"https://scth.scene7.com/is/image/scth/Alula-Market",
+  "image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+  "phone":"I am a phone number, edit me",
+  "theme":"orange",
+  "title":"Old Town Market Road",
+  "longitude":"37.912806",
+  "locationInDetailLabel":"I am a location label, edit me",
+  "headingType":"h1",
+  "categoryTags":[
+    "sauditourism:events/shopping-retail"
+  ],
+  "locationDistance":"1",
+  "readMoreButton":"Read More",
+  "jcr:baseVersion":"21a91267-f648-4b98-bb7d-a3a1733fc459",
+  "jcr:isCheckedOut":true,
+  "targetGroupTags":[
+    "sauditourism:audience/all"
+  ],
+  "pageAuthor":"contentAuthors",
+  "imageListing":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+  "mapType":"google",
+  "eventIntro":"I am an intro, edit me",
+  "eventTitle":"I am a title edit me",
+  "jcr:uuid":"88d94a2d-cc0f-41ab-a8d4-1a64d7ff084b",
+  "ctaText":"CTA, edit me",
+  "activitiesText":"Category",
+  "addToCalendarText":"Add to Calendar",
+  "sling:resourceType":"sauditourism/components/structure/event-detail-page",
+  "headingshowHoursType":"h1",
+  "calendarStartDate":"Sun May 08 2022 00:00:00 GMT+0300",
+  "workingTimeText":"Working Hours",
+  "textIsRich":"true",
+  "hideInSiteMap":"false",
+  "featureEventImage":"/content/dam/saudi-tourism/media/events-/Alula-Market.jpg",
+  "searchHighlight":"false",
+  "disableSecondaryNav":true,
+  "location":"I am a location, edit me",
+  "imageMobile":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+  "activities":[
+    "sauditourism:events/shopping-retail"
+  ],
+  "root":{
+    "jcr:primaryType":"nt:unstructured",
+    "sling:resourceType":"wcm/foundation/components/responsivegrid",
+    "header-block":{
+      "jcr:primaryType":"nt:unstructured",
+      "ctaTitle":"I am a title, edit me",
+      "title":"I am a title, edit me",
+      "ctaLink":"#",
+      "ctaText":"CTA, edit me",
+      "sling:resourceType":"sauditourism/components/content/headerblock",
+      "backTitle":"I am a title, edit me",
+      "backLink":"#",
+      "backText":"CTA, edit me",
+      "small":{
+        "jcr:primaryType":"nt:unstructured",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+      },
+      "medium":{
+        "jcr:primaryType":"nt:unstructured",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+      },
+      "large":{
+        "jcr:primaryType":"nt:unstructured",
+        "focalpoint":"left top",
+        "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+      }
+    },
+    "responsivegrid":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid"
+    }
+  }
+}

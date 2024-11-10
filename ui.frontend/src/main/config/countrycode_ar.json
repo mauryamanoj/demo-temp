@@ -1,0 +1,1559 @@
+{
+  "data": [
+    {
+      "id": "966",
+      "name": "السعودية",
+      "displayText": "+966",
+      "locale": "en",
+      "flag": "133-saudi-arabia.png"
+    },
+    {
+      "id": "93",
+      "name": "افغانستان",
+      "displayText": "+93",
+      "locale": "en",
+      "flag": "111-afghanistan.png"
+    },
+    {
+      "id": "355",
+      "name": "البانيا",
+      "displayText": "+355",
+      "locale": "en",
+      "flag": "099-albania.png"
+    },
+    {
+      "id": "213",
+      "name": "الجزائر",
+      "displayText": "+213",
+      "locale": "en",
+      "flag": "144-algeria.png"
+    },
+    {
+      "id": "685 ",
+      "name": "ساموا الامريكية",
+      "displayText": "+685",
+      "locale": "en",
+      "flag": "027-american-samoa.png"
+    },
+    {
+      "id": "376",
+      "name": "اندورا",
+      "displayText": "+376",
+      "locale": "en",
+      "flag": "045-andorra.png"
+    },
+    {
+      "id": "244",
+      "name": "انجولا",
+      "displayText": "+244",
+      "locale": "en",
+      "flag": "117-angola.png"
+    },
+    {
+      "id": "264 ",
+      "name": "انجويلا",
+      "displayText": "+264",
+      "locale": "en",
+      "flag": "025-anguilla.png"
+    },
+    {
+      "id": "268 ",
+      "name": "انتيغا وباربودا",
+      "displayText": "+268",
+      "locale": "en",
+      "flag": "075-antigua-and-barbuda.png"
+    },
+    {
+      "id": "54",
+      "name": "الآرجنتين",
+      "displayText": "+54",
+      "locale": "en",
+      "flag": "198-argentina.png"
+    },
+    {
+      "id": "374",
+      "name": "ارمينيا",
+      "displayText": "+374",
+      "locale": "en",
+      "flag": "108-armenia.png"
+    },
+    {
+      "id": "297",
+      "name": "اروبا",
+      "displayText": "+297",
+      "locale": "en",
+      "flag": "042-aruba.png"
+    },
+    {
+      "id": "61 ",
+      "name": "استراليا",
+      "displayText": "+61",
+      "locale": "en",
+      "flag": "234-australia.png"
+    },
+    {
+      "id": "43",
+      "name": "النمسا",
+      "displayText": "+43",
+      "locale": "en",
+      "flag": "003-austria.png"
+    },
+    {
+      "id": "994",
+      "name": "اذربيجان",
+      "displayText": "+994",
+      "locale": "en",
+      "flag": "141-azerbaijan.png"
+    },
+    {
+      "id": "242",
+      "name": "البهاما",
+      "displayText": "+242",
+      "locale": "en",
+      "flag": "120-bahamas.png"
+    },
+    {
+      "id": "973",
+      "name": "البحرين",
+      "displayText": "+973",
+      "locale": "en",
+      "flag": "138-bahrain.png"
+    },
+    {
+      "id": "880",
+      "name": "بنجلاديش",
+      "displayText": "+880",
+      "locale": "en",
+      "flag": "147-bangladesh.png"
+    },
+    {
+      "id": "246",
+      "name": "باربادوس",
+      "displayText": "+246",
+      "locale": "en",
+      "flag": "084-barbados.png"
+    },
+    {
+      "id": "375",
+      "name": "روسيا البيضاء",
+      "displayText": "+375",
+      "locale": "en",
+      "flag": "135-belarus.png"
+    },
+    {
+      "id": "32",
+      "name": "بلجيكا",
+      "displayText": "+32",
+      "locale": "en",
+      "flag": "165-belgium.png"
+    },
+    {
+      "id": "501",
+      "name": "بيليز",
+      "displayText": "+501",
+      "locale": "en",
+      "flag": "078-belize.png"
+    },
+    {
+      "id": "229",
+      "name": "بنين",
+      "displayText": "+229",
+      "locale": "en",
+      "flag": "060-benin.png"
+    },
+    {
+      "id": "441",
+      "name": "برمودا",
+      "displayText": "+441",
+      "locale": "en",
+      "flag": "081-bermuda.png"
+    },
+    {
+      "id": "975",
+      "name": "بوتان",
+      "displayText": "+975",
+      "locale": "en",
+      "flag": "040-bhutan.png"
+    },
+    {
+      "id": "591",
+      "name": "بوليفيا",
+      "displayText": "+591",
+      "locale": "en",
+      "flag": "150-bolivia.png"
+    },
+    {
+      "id": "387",
+      "name": "البوسنة والهرسك",
+      "displayText": "+387",
+      "locale": "en",
+      "flag": "132-bosnia-and-herzegovina.png"
+    },
+    {
+      "id": "267",
+      "name": "بوتسوانا",
+      "displayText": "+267",
+      "locale": "en",
+      "flag": "126-botswana.png"
+    },
+    {
+      "id": "55",
+      "name": "البرازيل",
+      "displayText": "+55",
+      "locale": "en",
+      "flag": "255-brazil.png"
+    },
+    {
+      "id": "246",
+      "name": "إقليم المحيط الهندي البريطاني",
+      "displayText": "+246",
+      "locale": "en",
+      "flag": "069-british-indian-ocean-territory.png"
+    },
+    {
+      "id": "284",
+      "name": "جزر فيرجن البريطانية",
+      "displayText": "+284",
+      "locale": "en",
+      "flag": "114-british-virgin-islands.png"
+    },
+    {
+      "id": "673",
+      "name": "بروناي دار السلام",
+      "displayText": "+673",
+      "locale": "en",
+      "flag": "119-brunei.png"
+    },
+    {
+      "id": "359",
+      "name": "بلغاريا",
+      "displayText": "+359",
+      "locale": "en",
+      "flag": "168-bulgaria.png"
+    },
+    {
+      "id": "226",
+      "name": "بوركينا فاسو",
+      "displayText": "+226",
+      "locale": "en",
+      "flag": "090-burkina-faso.png"
+    },
+    {
+      "id": "257",
+      "name": "بوروندي",
+      "displayText": "+257",
+      "locale": "en",
+      "flag": "057-burundi.png"
+    },
+    {
+      "id": "855",
+      "name": "كمبوديا",
+      "displayText": "+855",
+      "locale": "en",
+      "flag": "159-cambodia.png"
+    },
+    {
+      "id": "237",
+      "name": "الكاميرون",
+      "displayText": "+237",
+      "locale": "en",
+      "flag": "105-cameroon.png"
+    },
+    {
+      "id": "1 ",
+      "name": "كندا",
+      "displayText": "+1",
+      "locale": "en",
+      "flag": "243-canada.png"
+    },
+    {
+      "id": "238",
+      "name": "الراس الاخضر",
+      "displayText": "+238",
+      "locale": "en",
+      "flag": "038-cape-verde.png"
+    },
+    {
+      "id": "345",
+      "name": "جزر الكايمان",
+      "displayText": "+345",
+      "locale": "en",
+      "flag": "051-cayman-islands.png"
+    },
+    {
+      "id": "236",
+      "name": "جمهورية إفريقيا الوسطى",
+      "displayText": "+236",
+      "locale": "en",
+      "flag": "036-central-african-republic.png"
+    },
+    {
+      "id": "235",
+      "name": "تشاد",
+      "displayText": "+235",
+      "locale": "en",
+      "flag": "066-chad.png"
+    },
+    {
+      "id": "56",
+      "name": "تشيلي",
+      "displayText": "+56",
+      "locale": "en",
+      "flag": "131-chile.png"
+    },
+    {
+      "id": "86",
+      "name": "الصين",
+      "displayText": "+86",
+      "locale": "en",
+      "flag": "034-china.png"
+    },
+    {
+      "id": "61  ",
+      "name": "جزيرة عيد الميلاد ",
+      "displayText": "+61",
+      "locale": "en",
+      "flag": "017-christmas-island.png"
+    },
+    {
+      "id": "61",
+      "name": "جزر كوكس",
+      "displayText": "+61",
+      "locale": "en",
+      "flag": "023-cocos-island.png"
+    },
+    {
+      "id": "57",
+      "name": "كولومبيا",
+      "displayText": "+57",
+      "locale": "en",
+      "flag": "177-colombia.png"
+    },
+    {
+      "id": "269",
+      "name": "جزر القمر",
+      "displayText": "+269",
+      "locale": "en",
+      "flag": "029-comoros.png"
+    },
+    {
+      "id": "682",
+      "name": "جزر كوك",
+      "displayText": "+682",
+      "locale": "en",
+      "flag": "021-cook-islands.png"
+    },
+    {
+      "id": "506",
+      "name": "كوستاريكا",
+      "displayText": "+506",
+      "locale": "en",
+      "flag": "156-costa-rica.png"
+    },
+    {
+      "id": "385",
+      "name": "كرواتيا",
+      "displayText": "+385",
+      "locale": "en",
+      "flag": "164-croatia.png"
+    },
+    {
+      "id": "53",
+      "name": "كوبا",
+      "displayText": "+53",
+      "locale": "en",
+      "flag": "153-cuba.png"
+    },
+    {
+      "id": "599 ",
+      "name": "كوراساو",
+      "displayText": "+599",
+      "locale": "en",
+      "flag": "116-curacao.png"
+    },
+    {
+      "id": "357",
+      "name": "قبرص",
+      "displayText": "+357",
+      "locale": "en",
+      "flag": "101-northern-cyprus.png"
+    },
+    {
+      "id": "420",
+      "name": "تشيكيا",
+      "displayText": "+420",
+      "locale": "en",
+      "flag": "149-czech-republic.png"
+    },
+    {
+      "id": "243",
+      "name": "جمهورية الكونغو الديمقراطية",
+      "displayText": "+243",
+      "locale": "en",
+      "flag": "249-democratic-republic-of-congo.png"
+    },
+    {
+      "id": "45",
+      "name": "الدنمارك",
+      "displayText": "+45",
+      "locale": "en",
+      "flag": "174-denmark.png"
+    },
+    {
+      "id": "253",
+      "name": "جيبوتي",
+      "displayText": "+253",
+      "locale": "en",
+      "flag": "068-djibouti.png"
+    },
+    {
+      "id": "767",
+      "name": "دومينيكا",
+      "displayText": "+767",
+      "locale": "en",
+      "flag": "186-dominica.png"
+    },
+    {
+      "id": "829",
+      "name": "جمهورية الدومينيكان",
+      "displayText": "+829",
+      "locale": "en",
+      "flag": "047-dominican-republic.png"
+    },
+    {
+      "id": "670 ",
+      "name": "تيمور الشرقية",
+      "displayText": "+670",
+      "locale": "en",
+      "flag": "140-east-timor.png"
+    },
+    {
+      "id": "593",
+      "name": "الاكوادور",
+      "displayText": "+593",
+      "locale": "en",
+      "flag": "104-ecuador.png"
+    },
+    {
+      "id": "20",
+      "name": "مصر",
+      "displayText": "+20",
+      "locale": "en",
+      "flag": "158-egypt.png"
+    },
+    {
+      "id": "503",
+      "name": "السلفادور",
+      "displayText": "+503",
+      "locale": "en",
+      "flag": "015-el-salvador.png"
+    },
+    {
+      "id": "240",
+      "name": "غينيا الاستوائية",
+      "displayText": "+240",
+      "locale": "en",
+      "flag": "189-equatorial-guinea.png"
+    },
+    {
+      "id": "291",
+      "name": "إرتريا",
+      "displayText": "+291",
+      "locale": "en",
+      "flag": "065-eritrea.png"
+    },
+    {
+      "id": "372",
+      "name": "إستونيا",
+      "displayText": "+372",
+      "locale": "en",
+      "flag": "008-estonia.png"
+    },
+    {
+      "id": "251",
+      "name": "اثيوبيا",
+      "displayText": "+251",
+      "locale": "en",
+      "flag": "005-ethiopia.png"
+    },
+    {
+      "id": "500",
+      "name": "جزر فوكلاند",
+      "displayText": "+500",
+      "locale": "en",
+      "flag": "215-falkland-islands.png"
+    },
+    {
+      "id": "679",
+      "name": "فيجي",
+      "displayText": "+679",
+      "locale": "en",
+      "flag": "137-fiji.png"
+    },
+    {
+      "id": "358",
+      "name": "فنلندا",
+      "displayText": "+358",
+      "locale": "en",
+      "flag": "125-finland.png"
+    },
+    {
+      "id": "33",
+      "name": "فرنسا",
+      "displayText": "+33",
+      "locale": "en",
+      "flag": "195-france.png"
+    },
+    {
+      "id": "689",
+      "name": "بولينيزيا الفرنسية",
+      "displayText": "+689",
+      "locale": "en",
+      "flag": "180-french-polynesia.png"
+    },
+    {
+      "id": "241",
+      "name": "الغابون",
+      "displayText": "+241",
+      "locale": "en",
+      "flag": "059-gabon.png"
+    },
+    {
+      "id": "220",
+      "name": "جامبيا",
+      "displayText": "+220",
+      "locale": "en",
+      "flag": "146-gambia.png"
+    },
+    {
+      "id": "995",
+      "name": "جورجيا",
+      "displayText": "+995",
+      "locale": "en",
+      "flag": "256-georgia.png"
+    },
+    {
+      "id": "49",
+      "name": "المانيا",
+      "displayText": "+49",
+      "locale": "en",
+      "flag": "162-germany.png"
+    },
+    {
+      "id": "233",
+      "name": "غانا",
+      "displayText": "+233",
+      "locale": "en",
+      "flag": "053-ghana.png"
+    },
+    {
+      "id": "350",
+      "name": "جبل طارق",
+      "displayText": "+350",
+      "locale": "en",
+      "flag": "213-gibraltar.png"
+    },
+    {
+      "id": "30",
+      "name": "اليونان",
+      "displayText": "+30",
+      "locale": "en",
+      "flag": "170-greece.png"
+    },
+    {
+      "id": "299",
+      "name": "جرينلاند",
+      "displayText": "+299",
+      "locale": "en",
+      "flag": "113-greenland.png"
+    },
+    {
+      "id": "473",
+      "name": "غرينادا",
+      "displayText": "+473",
+      "locale": "en",
+      "flag": "210-grenada.png"
+    },
+    {
+      "id": "671",
+      "name": "غوام",
+      "displayText": "+671",
+      "locale": "en",
+      "flag": "207-guam.png"
+    },
+    {
+      "id": "502",
+      "name": "جواتيمالا",
+      "displayText": "+502",
+      "locale": "en",
+      "flag": "098-guatemala.png"
+    },
+    {
+      "id": "44 ",
+      "name": "غيرنزي",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "204-guernsey.png"
+    },
+    {
+      "id": "224",
+      "name": "غينيا",
+      "displayText": "+224",
+      "locale": "en",
+      "flag": "110-guinea.png"
+    },
+    {
+      "id": "245",
+      "name": "غينيا بيساو",
+      "displayText": "+245",
+      "locale": "en",
+      "flag": "056-guinea-bissau.png"
+    },
+    {
+      "id": "509",
+      "name": "هايتي",
+      "displayText": "+509",
+      "locale": "en",
+      "flag": "185-haiti.png"
+    },
+    {
+      "id": "504",
+      "name": "هندوراس",
+      "displayText": "+504",
+      "locale": "en",
+      "flag": "024-honduras.png"
+    },
+    {
+      "id": "852",
+      "name": "هونغ كونغ",
+      "displayText": "+852",
+      "locale": "en",
+      "flag": "183-hong-kong.png"
+    },
+    {
+      "id": "36",
+      "name": "المجر",
+      "displayText": "+36",
+      "locale": "en",
+      "flag": "115-hungary.png"
+    },
+    {
+      "id": "354",
+      "name": "ايسلندا",
+      "displayText": "+354",
+      "locale": "en",
+      "flag": "080-iceland.png"
+    },
+    {
+      "id": "91",
+      "name": "الهند",
+      "displayText": "+91",
+      "locale": "en",
+      "flag": "246-india.png"
+    },
+    {
+      "id": "62",
+      "name": "إندونيسيا",
+      "displayText": "+62",
+      "locale": "en",
+      "flag": "209-indonesia.png"
+    },
+    {
+      "id": "98",
+      "name": "إيران",
+      "displayText": "+98",
+      "locale": "en",
+      "flag": "136-iran.png"
+    },
+    {
+      "id": "964",
+      "name": "العراق",
+      "displayText": "+964",
+      "locale": "en",
+      "flag": "020-iraq.png"
+    },
+    {
+      "id": "353",
+      "name": "ايرلندا",
+      "displayText": "+353",
+      "locale": "en",
+      "flag": "179-ireland.png"
+    },
+    {
+      "id": "44  ",
+      "name": "جزيرة مان",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "219-isle-of-man.png"
+    },
+    {
+      "id": "972",
+      "name": "Israel",
+      "displayText": "+972",
+      "locale": "en",
+      "flag": "155-israel.png"
+    },
+    {
+      "id": "39",
+      "name": "ايطاليا",
+      "displayText": "+39",
+      "locale": "en",
+      "flag": "013-italy.png"
+    },
+    {
+      "id": "225",
+      "name": "ساحل العاج",
+      "displayText": "+225",
+      "locale": "en",
+      "flag": "161-ivory-coast.png"
+    },
+    {
+      "id": "876",
+      "name": "جامايكا",
+      "displayText": "+876",
+      "locale": "en",
+      "flag": "037-jamaica.png"
+    },
+    {
+      "id": "81",
+      "name": "اليابان",
+      "displayText": "+81",
+      "locale": "en",
+      "flag": "063-japan.png"
+    },
+    {
+      "id": "44   ",
+      "name": "جيرسي",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "245-jersey.png"
+    },
+    {
+      "id": "962",
+      "name": "الاردن",
+      "displayText": "+962",
+      "locale": "en",
+      "flag": "077-jordan.png"
+    },
+    {
+      "id": "7 ",
+      "name": "كازاخستان",
+      "displayText": "+7",
+      "locale": "en",
+      "flag": "074-kazakhstan.png"
+    },
+    {
+      "id": "254",
+      "name": "كينيا",
+      "displayText": "+254",
+      "locale": "en",
+      "flag": "067-kenya.png"
+    },
+    {
+      "id": "686",
+      "name": "كيريباس",
+      "displayText": "+686",
+      "locale": "en",
+      "flag": "261-kiribati.png"
+    },
+    {
+      "id": "383",
+      "name": "كوسوفو",
+      "displayText": "+383",
+      "locale": "en",
+      "flag": "052-kosovo.png"
+    },
+    {
+      "id": "996",
+      "name": "قرغيزستان",
+      "displayText": "+996",
+      "locale": "en",
+      "flag": "152-kyrgyzstan.png"
+    },
+    {
+      "id": "856",
+      "name": "لاوس",
+      "displayText": "+856",
+      "locale": "en",
+      "flag": "112-laos.png"
+    },
+    {
+      "id": "371",
+      "name": "لاتفيا",
+      "displayText": "+371",
+      "locale": "en",
+      "flag": "044-latvia.png"
+    },
+    {
+      "id": "961",
+      "name": "لبنان",
+      "displayText": "+961",
+      "locale": "en",
+      "flag": "018-lebanon.png"
+    },
+    {
+      "id": "266",
+      "name": "ليسوتو",
+      "displayText": "+266",
+      "locale": "en",
+      "flag": "176-lesotho.png"
+    },
+    {
+      "id": "231",
+      "name": "ليبيريا",
+      "displayText": "+231",
+      "locale": "en",
+      "flag": "169-liberia.png"
+    },
+    {
+      "id": "218",
+      "name": "ليبيا",
+      "displayText": "+218",
+      "locale": "en",
+      "flag": "231-libya.png"
+    },
+    {
+      "id": "423",
+      "name": "ليختنشتاين",
+      "displayText": "+423",
+      "locale": "en",
+      "flag": "134-liechtenstein.png"
+    },
+    {
+      "id": "370",
+      "name": "ليتوانيا",
+      "displayText": "+370",
+      "locale": "en",
+      "flag": "064-lithuania.png"
+    },
+    {
+      "id": "352",
+      "name": "لوكسمبورغ",
+      "displayText": "+352",
+      "locale": "en",
+      "flag": "035-luxembourg.png"
+    },
+    {
+      "id": "389",
+      "name": "مقدونيا",
+      "displayText": "+389",
+      "locale": "en",
+      "flag": "236-republic-of-macedonia.png"
+    },
+    {
+      "id": "261",
+      "name": "مدغشقر",
+      "displayText": "+261",
+      "locale": "en",
+      "flag": "242-madagascar.png"
+    },
+    {
+      "id": "265",
+      "name": "مالاوي",
+      "displayText": "+265",
+      "locale": "en",
+      "flag": "214-malawi.png"
+    },
+    {
+      "id": "60",
+      "name": "ماليزيا",
+      "displayText": "+60",
+      "locale": "en",
+      "flag": "118-malasya.png"
+    },
+    {
+      "id": "960",
+      "name": "مالديفز",
+      "displayText": "+960",
+      "locale": "en",
+      "flag": "225-maldives.png"
+    },
+    {
+      "id": "223",
+      "name": "مالي",
+      "displayText": "+223",
+      "locale": "en",
+      "flag": "173-mali.png"
+    },
+    {
+      "id": "356",
+      "name": "مالطا",
+      "displayText": "+356",
+      "locale": "en",
+      "flag": "194-malta.png"
+    },
+    {
+      "id": "692",
+      "name": "جزر مارشال",
+      "displayText": "+692",
+      "locale": "en",
+      "flag": "103-marshall-island.png"
+    },
+    {
+      "id": "222",
+      "name": "موريتانيا",
+      "displayText": "+222",
+      "locale": "en",
+      "flag": "050-mauritania.png"
+    },
+    {
+      "id": "230",
+      "name": "موريشيوس",
+      "displayText": "+230",
+      "locale": "en",
+      "flag": "001-mauritius.png"
+    },
+    {
+      "id": "52",
+      "name": "المكسيك",
+      "displayText": "+52",
+      "locale": "en",
+      "flag": "252-mexico.png"
+    },
+    {
+      "id": "691",
+      "name": "ولايات ميكرونيسيا المتحدة",
+      "displayText": "+691",
+      "locale": "en",
+      "flag": "046-micronesia.png"
+    },
+    {
+      "id": "373",
+      "name": "مولدوفا",
+      "displayText": "+373",
+      "locale": "en",
+      "flag": "212-moldova.png"
+    },
+    {
+      "id": "377",
+      "name": "موناكو",
+      "displayText": "+377",
+      "locale": "en",
+      "flag": "039-monaco.png"
+    },
+    {
+      "id": "976",
+      "name": "منغوليا",
+      "displayText": "+976",
+      "locale": "en",
+      "flag": "258-mongolia.png"
+    },
+    {
+      "id": "382",
+      "name": "الجبل الاسود",
+      "displayText": "+382",
+      "locale": "en",
+      "flag": "239-montenegro.png"
+    },
+    {
+      "id": "664",
+      "name": "مونتسرات",
+      "displayText": "+664",
+      "locale": "en",
+      "flag": "043-montserrat.png"
+    },
+    {
+      "id": "212",
+      "name": "المغرب",
+      "displayText": "+212",
+      "locale": "en",
+      "flag": "166-morocco.png"
+    },
+    {
+      "id": "258",
+      "name": "موزمبيق",
+      "displayText": "+258",
+      "locale": "en",
+      "flag": "096-mozambique.png"
+    },
+    {
+      "id": "95",
+      "name": "ميانمار",
+      "displayText": "+95",
+      "locale": "en",
+      "flag": "058-myanmar.png"
+    },
+    {
+      "id": "264",
+      "name": "ناميبيا",
+      "displayText": "+264",
+      "locale": "en",
+      "flag": "062-namibia.png"
+    },
+    {
+      "id": "674",
+      "name": "ناورو",
+      "displayText": "+674",
+      "locale": "en",
+      "flag": "228-nauru.png"
+    },
+    {
+      "id": "977",
+      "name": "نيبال",
+      "displayText": "+977",
+      "locale": "en",
+      "flag": "016-nepal.png"
+    },
+    {
+      "id": "31",
+      "name": "هولندا",
+      "displayText": "+31",
+      "locale": "en",
+      "flag": "237-netherlands.png"
+    },
+    {
+      "id": "599",
+      "name": "جزر الانتيل الهولندية",
+      "displayText": "+599",
+      "locale": "en",
+      "flag": "237-netherlands.png"
+    },
+    {
+      "id": "64",
+      "name": "نيوزيلندا",
+      "displayText": "+64",
+      "locale": "en",
+      "flag": "121-new-zealand.png"
+    },
+    {
+      "id": "505",
+      "name": "نيكاراجوا",
+      "displayText": "+505",
+      "locale": "en",
+      "flag": "007-nicaragua.png"
+    },
+    {
+      "id": "227",
+      "name": "النيجر",
+      "displayText": "+227",
+      "locale": "en",
+      "flag": "222-niger.png"
+    },
+    {
+      "id": "234",
+      "name": "نيجيريا",
+      "displayText": "+234",
+      "locale": "en",
+      "flag": "086-nigeria.png"
+    },
+    {
+      "id": "683",
+      "name": "نييوي",
+      "displayText": "+683",
+      "locale": "en",
+      "flag": "182-niue.png"
+    },
+    {
+      "id": "850",
+      "name": "كوريا الشمالية",
+      "displayText": "+850",
+      "locale": "en",
+      "flag": "030-north-korea.png"
+    },
+    {
+      "id": "670",
+      "name": "جزر ماريانا الشمالية",
+      "displayText": "+670",
+      "locale": "en",
+      "flag": "160-northern-marianas-islands.png"
+    },
+    {
+      "id": "47",
+      "name": "النرويج",
+      "displayText": "+47",
+      "locale": "en",
+      "flag": "143-norway.png"
+    },
+    {
+      "id": "968",
+      "name": "عمان",
+      "displayText": "+968",
+      "locale": "en",
+      "flag": "004-oman.png"
+    },
+    {
+      "id": "92",
+      "name": "باكستان",
+      "displayText": "+92",
+      "locale": "en",
+      "flag": "100-pakistan.png"
+    },
+    {
+      "id": "680",
+      "name": "بالاو",
+      "displayText": "+680",
+      "locale": "en",
+      "flag": "178-palau.png"
+    },
+    {
+      "id": "970",
+      "name": "فلسطين",
+      "displayText": "+970",
+      "locale": "en",
+      "flag": "208-palestine.png"
+    },
+    {
+      "id": "507",
+      "name": "بنما",
+      "displayText": "+507",
+      "locale": "en",
+      "flag": "106-panama.png"
+    },
+    {
+      "id": "675",
+      "name": "بابوا غينيا الجديدة",
+      "displayText": "+675",
+      "locale": "en",
+      "flag": "163-papua-new-guinea.png"
+    },
+    {
+      "id": "595",
+      "name": "باراغواي",
+      "displayText": "+595",
+      "locale": "en",
+      "flag": "041-paraguay.png"
+    },
+    {
+      "id": "51",
+      "name": "بيرو",
+      "displayText": "+51",
+      "locale": "en",
+      "flag": "188-peru.png"
+    },
+    {
+      "id": "63",
+      "name": "الفلبين",
+      "displayText": "+63",
+      "locale": "en",
+      "flag": "192-philippines.png"
+    },
+    {
+      "id": "48",
+      "name": "بولندا",
+      "displayText": "+48",
+      "locale": "en",
+      "flag": "211-poland.png"
+    },
+    {
+      "id": "351",
+      "name": "البرتغال",
+      "displayText": "+351",
+      "locale": "en",
+      "flag": "224-portugal.png"
+    },
+    {
+      "id": "787",
+      "name": "بورتوريكو",
+      "displayText": "+787",
+      "locale": "en",
+      "flag": "028-puerto-rico.png"
+    },
+    {
+      "id": "974",
+      "name": "قطر",
+      "displayText": "+974",
+      "locale": "en",
+      "flag": "026-qatar.png"
+    },
+    {
+      "id": "242 ",
+      "name": "الكونغو",
+      "displayText": "+242",
+      "locale": "en",
+      "flag": "157-republic-of-the-congo.png"
+    },
+    {
+      "id": "40",
+      "name": "رومانيا",
+      "displayText": "+40",
+      "locale": "en",
+      "flag": "109-romania.png"
+    },
+    {
+      "id": "7",
+      "name": "روسيا",
+      "displayText": "+7",
+      "locale": "en",
+      "flag": "248-russia.png"
+    },
+    {
+      "id": "250",
+      "name": "رواندا",
+      "displayText": "+250",
+      "locale": "en",
+      "flag": "206-rwanda.png"
+    },
+    {
+      "id": "869",
+      "name": "سانت كيتس ونيفيس",
+      "displayText": "+869",
+      "locale": "en",
+      "flag": "033-saint-kitts-and-nevis.png"
+    },
+    {
+      "id": "685",
+      "name": "ساموا",
+      "displayText": "+685",
+      "locale": "en",
+      "flag": "251-samoa.png"
+    },
+    {
+      "id": "378",
+      "name": "سان مارينو",
+      "displayText": "+378",
+      "locale": "en",
+      "flag": "097-san-marino.png"
+    },
+    {
+      "id": "239",
+      "name": "ساو تومي وبرينسيبي",
+      "displayText": "+239",
+      "locale": "en",
+      "flag": "012-sao-tome-and-prince.png"
+    },
+
+    {
+      "id": "221",
+      "name": "السنغال",
+      "displayText": "+221",
+      "locale": "en",
+      "flag": "227-senegal.png"
+    },
+    {
+      "id": "381",
+      "name": "صربيا",
+      "displayText": "+381",
+      "locale": "en",
+      "flag": "071-serbia.png"
+    },
+    {
+      "id": "248",
+      "name": "سيشيل",
+      "displayText": "+248",
+      "locale": "en",
+      "flag": "253-seychelles.png"
+    },
+    {
+      "id": "232",
+      "name": "سيراليون",
+      "displayText": "+232",
+      "locale": "en",
+      "flag": "092-sierra-leone.png"
+    },
+    {
+      "id": "65",
+      "name": "سنغافورة",
+      "displayText": "+65",
+      "locale": "en",
+      "flag": "230-singapore.png"
+    },
+    {
+      "id": "721",
+      "name": "سينت مارتن",
+      "displayText": "+721",
+      "locale": "en",
+      "flag": "089-sint-maarten.png"
+    },
+    {
+      "id": "421",
+      "name": "سلوفاكيا",
+      "displayText": "+421",
+      "locale": "en",
+      "flag": "091-slovakia.png"
+    },
+    {
+      "id": "386",
+      "name": "سلوفينيا",
+      "displayText": "+386",
+      "locale": "en",
+      "flag": "010-slovenia.png"
+    },
+    {
+      "id": "677",
+      "name": "جزر سليمان",
+      "displayText": "+677",
+      "locale": "en",
+      "flag": "085-solomon-islands.png"
+    },
+    {
+      "id": "252",
+      "name": "الصومال",
+      "displayText": "+252",
+      "locale": "en",
+      "flag": "083-somalia.png"
+    },
+    {
+      "id": "27",
+      "name": "جنوب افريقيا",
+      "displayText": "+27",
+      "locale": "en",
+      "flag": "200-south-africa.png"
+    },
+    {
+      "id": "82",
+      "name": "كوريا الجنوبية",
+      "displayText": "+82",
+      "locale": "en",
+      "flag": "094-south-korea.png"
+    },
+    {
+      "id": "211",
+      "name": "جنوب السودان",
+      "displayText": "+211",
+      "locale": "en",
+      "flag": "244-south-sudan.png"
+    },
+    {
+      "id": "34",
+      "name": "اسبانيا",
+      "displayText": "+34",
+      "locale": "en",
+      "flag": "128-spain.png"
+    },
+    {
+      "id": "94",
+      "name": "سريلانكا",
+      "displayText": "+94",
+      "locale": "en",
+      "flag": "127-sri-lanka.png"
+    },
+    {
+      "id": "249",
+      "name": "السودان",
+      "displayText": "+249",
+      "locale": "en",
+      "flag": "199-sudan.png"
+    },
+    {
+      "id": "597",
+      "name": "سورينام",
+      "displayText": "+597",
+      "locale": "en",
+      "flag": "076-suriname.png"
+    },
+    {
+      "id": "268",
+      "name": "اسواتيني",
+      "displayText": "+268",
+      "locale": "en",
+      "flag": "154-swaziland.png"
+    },
+    {
+      "id": "46",
+      "name": "السويد",
+      "displayText": "+46",
+      "locale": "en",
+      "flag": "184-sweden.png"
+    },
+    {
+      "id": "41",
+      "name": "سويسرا",
+      "displayText": "+41",
+      "locale": "en",
+      "flag": "205-switzerland.png"
+    },
+    {
+      "id": "963",
+      "name": "سوريا",
+      "displayText": "+963",
+      "locale": "en",
+      "flag": "022-syria.png"
+    },
+    {
+      "id": "886",
+      "name": "تايوان",
+      "displayText": "+886",
+      "locale": "en",
+      "flag": "202-taiwan.png"
+    },
+    {
+      "id": "992",
+      "name": "طاجيكستان",
+      "displayText": "+992",
+      "locale": "en",
+      "flag": "196-tajikistan.png"
+    },
+    {
+      "id": "255",
+      "name": "تنزانيا",
+      "displayText": "+255",
+      "locale": "en",
+      "flag": "006-tanzania.png"
+    },
+    {
+      "id": "66",
+      "name": "تايلاند",
+      "displayText": "+66",
+      "locale": "en",
+      "flag": "238-thailand.png"
+    },
+    {
+      "id": "228",
+      "name": "توجو",
+      "displayText": "+228",
+      "locale": "en",
+      "flag": "073-togo.png"
+    },
+    {
+      "id": "690",
+      "name": "توكلو",
+      "displayText": "+690",
+      "locale": "en",
+      "flag": "235-tokelau.png"
+    },
+    {
+      "id": "676",
+      "name": "تونغا",
+      "displayText": "+676",
+      "locale": "en",
+      "flag": "191-tonga.png"
+    },
+    {
+      "id": "868",
+      "name": "ترينيداد وتوباغو",
+      "displayText": "+868",
+      "locale": "en",
+      "flag": "181-trinidad-and-tobago.png"
+    },
+    {
+      "id": "216",
+      "name": "تونس",
+      "displayText": "+216",
+      "locale": "en",
+      "flag": "049-tunisia.png"
+    },
+    {
+      "id": "90",
+      "name": "تركيا",
+      "displayText": "+90",
+      "locale": "en",
+      "flag": "218-turkey.png"
+    },
+    {
+      "id": "993",
+      "name": "تركمانستان",
+      "displayText": "+993",
+      "locale": "en",
+      "flag": "229-turkmenistan.png"
+    },
+    {
+      "id": "649",
+      "name": "جزر تركس وكايكوس",
+      "displayText": "+649",
+      "locale": "en",
+      "flag": "223-turks-and-caicos.png"
+    },
+    {
+      "id": "688",
+      "name": "توفالو",
+      "displayText": "+688",
+      "locale": "en",
+      "flag": "221-tuvalu.png"
+    },
+    {
+      "id": "340",
+      "name": "جزر العذراء الامريكية",
+      "displayText": "+340",
+      "locale": "en",
+      "flag": "217-virgin-islands.png"
+    },
+    {
+      "id": "256",
+      "name": "اوغندا",
+      "displayText": "+256",
+      "locale": "en",
+      "flag": "009-uganda.png"
+    },
+    {
+      "id": "380",
+      "name": "اوكرانيا",
+      "displayText": "+380",
+      "locale": "en",
+      "flag": "145-ukraine.png"
+    },
+    {
+      "id": "971",
+      "name": "الإمارات العربية المتحدة",
+      "displayText": "+971",
+      "locale": "en",
+      "flag": "151-united-arab-emirates.png"
+    },
+    {
+      "id": "44",
+      "name": "المملكة المتحدة",
+      "displayText": "+44",
+      "locale": "en",
+      "flag": "260-united-kingdom.png"
+    },
+    {
+      "id": "1",
+      "name": "الولايات المتحدة",
+      "displayText": "+1",
+      "locale": "en",
+      "flag": "226-united-states.png"
+    },
+    {
+      "id": "598",
+      "name": "اوروغواي",
+      "displayText": "+598",
+      "locale": "en",
+      "flag": "088-uruguay.png"
+    },
+    {
+      "id": "998",
+      "name": "اوزبكستان",
+      "displayText": "+998",
+      "locale": "en",
+      "flag": "190-uzbekistn.png"
+    },
+    {
+      "id": "678",
+      "name": "فانواتو",
+      "displayText": "+678",
+      "locale": "en",
+      "flag": "187-vanuatu.png"
+    },
+    {
+      "id": "379",
+      "name": "الفاتيكان",
+      "displayText": "+379",
+      "locale": "en",
+      "flag": "124-vatican-city.png"
+    },
+    {
+      "id": "58",
+      "name": "فنزويلا",
+      "displayText": "+58",
+      "locale": "en",
+      "flag": "139-venezuela.png"
+    },
+    {
+      "id": "84",
+      "name": "فيتنام",
+      "displayText": "+84",
+      "locale": "en",
+      "flag": "220-vietnam.png"
+    },
+    {
+      "id": "967",
+      "name": "اليمن",
+      "displayText": "+967",
+      "locale": "en",
+      "flag": "232-yemen.png"
+    },
+    {
+      "id": "260",
+      "name": "زامبيا",
+      "displayText": "+260",
+      "locale": "en",
+      "flag": "032-zambia.png"
+    },
+    {
+      "id": "263",
+      "name": "زيمبابوي",
+      "displayText": "+263",
+      "locale": "en",
+      "flag": "011-zimbabwe.png"
+    }
+  ]
+}

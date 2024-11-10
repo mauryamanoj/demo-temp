@@ -1,0 +1,8 @@
+
+<div class="container author-view" data-sly-unwrap="${wcmmode.disabled}">
+  <sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+       data-sly-repeat.child="${templatedContainer.structureResources}"
+       data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}">
+  </sly>
+  <!--<sly data-sly-include="loader.html"></sly>-->
+</div>

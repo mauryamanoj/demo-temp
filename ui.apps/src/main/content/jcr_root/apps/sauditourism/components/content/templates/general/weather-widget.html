@@ -1,0 +1,65 @@
+<template data-sly-template.weatherWidget="${@ weatherRegionCity, language}">
+    <div data-component="weather-widget">
+      <script type="text/json">
+
+      {
+        "basePath": "/bin/api/v1/",
+        "endpoint": "weather-extended/",
+        "saudiIANATimeZone": "Asia/Riyadh",
+        "parameters": "city=${weatherRegionCity @ context='scriptComment'}&locale=${language
+        @ context='scriptComment'}",
+        "decimalQuantity": 1,
+        "currentWeatherText": {
+          "title": "${'today' @ context='scriptComment', i18n}",
+          "bigTemperatureCardText": {
+            "title": "${'Now' @ context='scriptComment', i18n}",
+            "feelsLike": "${'Feels like' @ context='scriptComment', i18n}",
+            "celsiusSymbol": "${'°C' @ context='scriptComment', i18n}",
+            "fahrenheitSymbol": "${'°F' @ context='scriptComment', i18n}"
+          },
+          "meteorologicalInformationText": {
+            "sunriseTitle": "${'Sunrise' @ context='scriptComment', i18n}",
+            "maxTitle": "${'High' @ context='scriptComment', i18n}",
+            "minTitle": "${'Low' @ context='scriptComment', i18n}",
+            "humidityTitle": "${'Humidity' @ context='scriptComment', i18n}",
+            "windSpeedTitle": "${'Wind' @ context='scriptComment', i18n}",
+            "sunsetTitle": "${'Sunset' @ context='scriptComment', i18n}",
+            "windSpeedMeasure": {
+              "celsius": "${'m/s' @ context='scriptComment', i18n}",
+              "fahrenheit": "${'mph' @ context='scriptComment', i18n}"
+            }
+          },
+          "temperatureByHourSliderText": {
+            "firstPillTitleCopy": "${'Now' @ context='scriptComment', i18n}"
+          }
+        },
+        "weekWeatherText": {
+          "title": "${'this-week' @ context='scriptComment', i18n}"
+        },
+        "dayTranslation": {
+            "sunday": "${'Sun' @ context='scriptComment', i18n}",
+            "monday": "${'Mon' @ context='scriptComment', i18n}",
+            "tuesday": "${'Tue' @ context='scriptComment', i18n}",
+            "wednesday": "${'Wed' @ context='scriptComment', i18n}",
+            "thursday": "${'Thu' @ context='scriptComment', i18n}",
+            "friday": "${'Fri' @ context='scriptComment', i18n}",
+            "saturday": "${'Sat' @ context='scriptComment', i18n}"
+          },
+        "monthTranslation": {
+          "January": "${'January' @ context='scriptComment', i18n}",
+          "February": "${'February' @ context='scriptComment', i18n}",
+          "March": "${'March' @ context='scriptComment', i18n}",
+          "April": "${'April' @ context='scriptComment', i18n}",
+          "May": "${'May' @ context='scriptComment', i18n}",
+          "June": "${'June' @ context='scriptComment', i18n}",
+          "July": "${'July' @ context='scriptComment', i18n}",
+          "August": "${'August' @ context='scriptComment', i18n}",
+          "September": "${'September' @ context='scriptComment', i18n}",
+          "October": "${'October' @ context='scriptComment', i18n}",
+          "November": "${'November' @ context='scriptComment', i18n}",
+          "December": "${'December' @ context='scriptComment', i18n}"
+        }
+      }
+      </script>
+    </div>
+</template>

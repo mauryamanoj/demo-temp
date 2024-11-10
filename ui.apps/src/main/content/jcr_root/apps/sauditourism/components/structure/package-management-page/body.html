@@ -1,0 +1,25 @@
+<form method="POST" action="/bin/api/v1/entry/package">
+<!--  <label for="name-ar">Package Name (Arabic):</label>-->
+<!--  <input type="text" id="name-ar" name="name-ar"><br>-->
+  <label for="packageName">Package Name (English):</label>
+  <input type="text" id="packageName" name="packageName"><br>
+<!--  <label for="brief-desc-ar">Brief Description (Arabic):</label>-->
+<!--  <input type="text" id="brief-desc-ar" name="brief-desc-ar"><br>-->
+  <label for="briefDescription">Brief Description (English):</label>
+  <input type="text" id="briefDescription" name="briefDescription"><br>
+<!--  <label for="desc-ar">Long Description (Arabic):</label>-->
+<!--  <textarea id="desc-ar" name="desc-ar"></textarea><br>-->
+  <label for="longDescription">Long Description (English):</label>
+  <textarea id="longDescription" name="longDescription"></textarea><br>
+  <label for="itineraryDetails">Package Itinerary (English):</label>
+  <textarea id="itineraryDetails" name="itineraryDetails"></textarea><br><br>
+  <label for="termsAndConditions">T&Cs/Information (English):</label>
+  <textarea id="termsAndConditions" name="termsAndConditions"></textarea><br>
+  <label for="packageInclude">Package Includes (English):</label>
+  <textarea id="packageInclude" name="packageInclude"></textarea><br>
+  <label for="packageExclude">Package excludes (English):</label>
+  <textarea id="packageExclude" name="packageExclude"></textarea><br>
+  <p><input id="packageFile" type="file" name="packageFile" />
+    <input type="button" value="Upload" id="upload-button-id"/></p>
+  <input type="submit" value="Submit">
+</form>

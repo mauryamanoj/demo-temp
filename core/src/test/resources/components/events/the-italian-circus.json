@@ -1,0 +1,144 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Nov 24 2021 07:45:56 GMT+0000",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "startTime":"Tue Aug 10 2021 16:00:00 GMT+0300",
+    "jcr:createdBy":"admin",
+    "averageTime":"2",
+    "jcr:title":"The Italian Circus",
+    "headingLocationDetailType":"h1",
+    "showOnMap":"false",
+    "locationLabel":"I am a label, edit me",
+    "locationTitle":"I am a location title, edit me",
+    "description":"I am a description, edit me",
+    "cq:lastReplicationAction":"Activate",
+    "endTime":"Tue Aug 10 2021 22:00:00 GMT+0300",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"e7d5356c-919a-429d-977e-12e5438abfe4",
+    "freePaid":"paid",
+    "noCacheHeaderDispatcher":"false",
+    "isHalaYallaLink":"false",
+    "latitude":"18.223047365871544",
+    "externalLink":"#",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/event-details",
+    "cq:lastReplicatedBy":"bdiafallah@sta.gov.sa",
+    "showHoursTitle":"I am a show hours title, edit me",
+    "addressDetail":"I am an address detail, edit me",
+    "address":"I am an address, edit me",
+    "roundTheClock":"false",
+    "templateType":"new",
+    "season":"all-seasons",
+    "eventLink-url":"https://e-ticket.app/p/italian-circus-28721",
+    "eventLink-copy":"Buy Tickets",
+    "calendarEndDate":"Fri Dec 30 2022 00:00:00 GMT+0300",
+    "jcr:predecessors":[
+      "ec188397-a10c-4732-81d3-0790be729284"
+    ],
+    "jcr:created":"Wed Nov 24 2021 07:45:56 GMT+0000",
+    "featured":"false",
+    "cq:lastReplicated":"Tue Oct 04 2022 14:15:14 GMT+0000",
+    "cq:lastModified":"Wed Aug 03 2022 06:13:28 GMT+0000",
+    "eventLink-targetInNewWindow":"false",
+    "city":"abha",
+    "copy":"In the Italian Circus, you will live its history and ancient background, with various shows along with family-friendly performances. \n\n*Entry is for covid immune only.",
+    "s7featureEventImage":"/content/dam/saudi-tourism/media/events-/shutterstock_518827906.jpg",
+    "image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "phone":"I am a phone number, edit me",
+    "theme":"red",
+    "title":"The Italian Circus",
+    "longitude":"42.490316622208574",
+    "locationInDetailLabel":"I am a location label, edit me",
+    "headingType":"h1",
+    "categoryTags":[
+      "sauditourism:events/Performing-Arts"
+    ],
+    "locationDistance":"1",
+    "jcr:baseVersion":"ec188397-a10c-4732-81d3-0790be729284",
+    "s7image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "jcr:isCheckedOut":true,
+    "targetGroupTags":[
+      "sauditourism:audience/12+"
+    ],
+    "pageAuthor":"contentAuthors",
+    "imageListing":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+    "mapType":"google",
+    "eventIntro":"I am an intro, edit me",
+    "eventTitle":"I am a title edit me",
+    "jcr:uuid":"5eac7915-5c63-4aeb-bb37-401c7a250a65",
+    "ctaText":"CTA, edit me",
+    "sling:resourceType":"sauditourism/components/structure/event-detail-page",
+    "headingshowHoursType":"h1",
+    "calendarStartDate":"Mon Dec 12 2022 00:00:00 GMT+0300",
+    "textIsRich":"true",
+    "hideInSiteMap":"false",
+    "featureEventImage":"/content/dam/saudi-tourism/media/events-/shutterstock_518827906.jpg",
+    "searchHighlight":"false",
+    "disableSecondaryNav":true,
+    "location":"I am a location, edit me",
+    "cq:lastModifiedBy":"ohasan-c@sta.gov.sa",
+    "imageMobile":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+    "copyLinkText": "Copy Link Text",
+    "copyClipboardTooltipText": "Copy Clipboard Tooltip Text",
+    "readMoreButton": "Read more",
+    "locationName": "The Italian Circus",
+    "addToCalendarText": "Add to calendar",
+    "priceText": "Price",
+    "priceValue": "10",
+    "activities":[
+      "sauditourism:events/sightseeing",
+      "sauditourism:events/shopping-retail",
+      "sauditourism:events/adventure",
+      "sauditourism:events/nature"
+    ],
+    "targetGroupTags":[
+      "sauditourism:audience/12+"
+    ],
+    "accessibiltyValue":"Ramps, etc",
+    "mapType":"google",
+    "zoom":"1",
+    "getDirectionCtaText":"Get Directions",
+    "addressInfo":"2293 King Abdul Aziz Rd، حي الفيصلية، 8475, Abha 62521, Arabie saoudite",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "header-block":{
+        "jcr:primaryType":"nt:unstructured",
+        "ctaTitle":"I am a title, edit me",
+        "title":"I am a title, edit me",
+        "ctaLink":"#",
+        "ctaText":"CTA, edit me",
+        "sling:resourceType":"sauditourism/components/content/headerblock",
+        "backTitle":"I am a title, edit me",
+        "backLink":"#",
+        "backText":"CTA, edit me",
+        "small":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+        },
+        "medium":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+        },
+        "large":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+        }
+      },
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    }
+  }
+}

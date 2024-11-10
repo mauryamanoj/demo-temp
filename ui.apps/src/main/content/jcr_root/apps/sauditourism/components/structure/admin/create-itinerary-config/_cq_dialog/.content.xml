@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Create Itinerary Config"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[sauditourism.author]">
+  <content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/tabs"
+      margin="{Boolean}true">
+    <items jcr:primaryType="nt:unstructured">
+      <general-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="General"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <general
+              jcr:primaryType="nt:unstructured"
+              jcr:title="General"
+              sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+              <trip-plan-view-edit-page
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                  emptyText="/content/sauditourism/&lt;language&gt;/trip-detail"
+                  fieldLabel="Trip Plan View/Edit Path"
+                  fieldDescription="Path to the page for viewing/editing created trip plan"
+                  name="./tripDetailsUrl"
+                  rootPath="/content/sauditourism"
+                  />
+              <image-alt
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Placeholder"
+                  fieldDescription="Image alternative text"
+                  fieldLabel="Image alternative text"
+                  name="./imageAlt"
+                  required="{Boolean}true"/>
+              <desktop-image
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                  allowUpload="{Boolean}false"
+                  autoStart="{Boolean}false"
+                  fieldLabel="Desktop background image"
+                  fileReferenceParameter="./desktopImage"
+                  fieldDescription="Full-size desktop background image"
+                  mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                  multiple="{Boolean}false"
+                  name="./desktopImageName"
+                  required="{Boolean}true"
+                  useHTML5="{Boolean}true"/>
+              <mobile-image
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                  allowUpload="{Boolean}false"
+                  autoStart="{Boolean}false"
+                  fieldLabel="Mobile background image"
+                  fileReferenceParameter="./mobileImage"
+                  fieldDescription="Mobile background image"
+                  mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                  multiple="{Boolean}false"
+                  name="./mobileImageName"
+                  required="{Boolean}true"
+                  useHTML5="{Boolean}true"/>
+            </items>
+          </general>
+        </items>
+      </general-tab>
+      <step1-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Step 1. Trip Name"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <step1
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+            <items jcr:primaryType="nt:unstructured">
+              <label
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Trip name"
+                  fieldDescription="This step displaying label"
+                  fieldLabel="Label"
+                  name="./steps/step1/label"
+                  required="{Boolean}true"/>
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Personalize your trip"
+                  fieldDescription="This step title"
+                  fieldLabel="Title"
+                  name="./steps/step1/title"
+                  required="{Boolean}true"/>
+              <input-placeholder
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Enter your trip's name"
+                  fieldDescription="This step input field placeholder"
+                  fieldLabel="Input placeholder"
+                  name="./steps/step1/inputPlaceholder"
+                  required="{Boolean}true"/>
+              <buttonTitle
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Save &amp; Continue"
+                  fieldDescription="This step button title"
+                  fieldLabel="Button title"
+                  name="./steps/step1/buttonTitle"
+                  required="{Boolean}true"/>
+            </items>
+          </step1>
+        </items>
+      </step1-tab>
+      <step2-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Step 2. Cities"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <step2
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+            <items jcr:primaryType="nt:unstructured">
+              <label
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Where"
+                  fieldDescription="This step displaying label"
+                  fieldLabel="Label"
+                  name="./steps/step2/label"
+                  required="{Boolean}true"/>
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Where are you travelling?"
+                  fieldDescription="This step title"
+                  fieldLabel="Title"
+                  name="./steps/step2/title"
+                  required="{Boolean}true"/>
+              <multipleSelectionLabel
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Multitple selection"
+                  fieldDescription="This step multiple selection label"
+                  fieldLabel="Multiple selection label"
+                  name="./steps/step2/multipleSelectionLabel"
+                  required="{Boolean}true"/>
+              <buttonTitle
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Save &amp; Continue"
+                  fieldDescription="This step button title"
+                  fieldLabel="Button title"
+                  name="./steps/step2/buttonTitle"
+                  required="{Boolean}true"/>
+            </items>
+          </step2>
+        </items>
+      </step2-tab>
+      <step3-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Step 3. Date Selection"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <step3
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+            <items jcr:primaryType="nt:unstructured">
+              <label
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="When"
+                  fieldDescription="This step displaying label"
+                  fieldLabel="Label"
+                  name="./steps/step3/label"
+                  required="{Boolean}true"/>
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="When are you travelling?"
+                  fieldDescription="This step title"
+                  fieldLabel="Title"
+                  name="./steps/step3/title"
+                  required="{Boolean}true"/>
+              <date-label
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Start date"
+                  fieldDescription="This step label for the date"
+                  fieldLabel="Date label"
+                  name="./steps/step3/dateLabel"
+                  required="{Boolean}true"/>
+              <buttonTitle
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Create itinerary"
+                  fieldDescription="This step button title"
+                  fieldLabel="Button title"
+                  name="./steps/step3/buttonTitle"
+                  required="{Boolean}true"/>
+              <description
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                  value="Leave it up to us, and enjoy your travels"
+                  fieldDescription="Description"
+                  fieldLabel="Description"
+                  name="./steps/step3/description"
+                  required="{Boolean}true"/>
+            </items>
+          </step3>
+        </items>
+      </step3-tab>
+      <login-modal-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Login"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <login-modal
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+            <items jcr:primaryType="nt:unstructured">
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Please login or Sign up!"
+                  fieldDescription="Login window title"
+                  fieldLabel="Title"
+                  name="./loginModal/title"
+                  required="{Boolean}true"/>
+              <paragraph
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                  value="You need to have an account in order to create your trip"
+                  fieldDescription="Text to display to user in the login window"
+                  fieldLabel="Paragraph"
+                  name="./loginModal/paragraph"
+                  required="{Boolean}true"/>
+              <primaryButtonLabel
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Login or Sign up"
+                  fieldDescription="Login button text"
+                  fieldLabel="Login button label"
+                  name="./loginModal/primaryButtonLabel"
+                  required="{Boolean}true"/>
+            </items>
+          </login-modal>
+        </items>
+      </login-modal-tab>
+      <error-modal-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Error"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <error-modal
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+            <items jcr:primaryType="nt:unstructured">
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Sorry!"
+                  fieldDescription="Error window title"
+                  fieldLabel="Title"
+                  name="./errorModal/title"
+                  required="{Boolean}true"/>
+              <paragraph
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                  value="Something went wrong. Please try again."
+                  fieldDescription="Text to display to user in the error window"
+                  fieldLabel="Paragraph"
+                  name="./errorModal/paragraph"
+                  required="{Boolean}true"/>
+              <primaryButtonLabel
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Try Again"
+                  fieldDescription="Error window button text"
+                  fieldLabel="Error window button label"
+                  name="./errorModal/primaryButtonLabel"
+                  required="{Boolean}true"/>
+            </items>
+          </error-modal>
+        </items>
+      </error-modal-tab>
+      <close-modal-tab
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Closing"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+          <close-modal
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+            <items jcr:primaryType="nt:unstructured">
+              <title
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Don’t leave! 😰"
+                  fieldDescription="Close window title"
+                  fieldLabel="Title"
+                  name="./closeModal/title"
+                  required="{Boolean}true"/>
+              <subtitle
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Are you sure you want to exit?"
+                  fieldDescription="Close window subtitle"
+                  fieldLabel="Subtitle"
+                  name="./closeModal/subtitle"
+                  required="{Boolean}true"/>
+              <paragraph
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                  value="It looks like you are in the middle of creating an itinerary. Changes you made won’t be saved."
+                  fieldDescription="Text to display to user in the close window"
+                  fieldLabel="Paragraph"
+                  name="./closeModal/paragraph"
+                  required="{Boolean}true"/>
+              <primaryButtonLabel
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="Leave"
+                  fieldDescription="Primary (leave) button text"
+                  fieldLabel="Primary button label"
+                  name="./closeModal/primaryButtonLabel"
+                  required="{Boolean}true"/>
+              <secondaryButtonLabel
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  value="I'll stay"
+                  fieldDescription="Secondary (stay) button text"
+                  fieldLabel="Secondary button label"
+                  name="./closeModal/secondaryButtonLabel"
+                  required="{Boolean}true"/>
+            </items>
+          </close-modal>
+        </items>
+      </close-modal-tab>
+    </items>
+  </content>
+</jcr:root>

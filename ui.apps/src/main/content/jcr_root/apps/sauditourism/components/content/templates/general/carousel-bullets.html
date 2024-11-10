@@ -1,0 +1,24 @@
+<sly data-sly-template.carouselBullets="${@ extraClass, dataId}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html">
+  <div class="carousel-bullets ${ extraClass ? extraClass : ''}" data-id="${dataId}"
+       data-component="carousel-bullets" data-carousel-bullets>
+    <ul class="bullet-list cmp-carousel__indicators" data-cmp-hook-carousel="indicators">
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-bullet-index="0" data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-bullet-index="1" data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-bullet-index="2" data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+      <li class="bullet cmp-carousel__indicator slide-indicator" data-carousel-bullet
+          data-bullet-index="3" data-cmp-hook-carousel="indicator">
+        <sly data-sly-call="${iconTemplate.icon @ iconName='diamond'}"></sly>
+      </li>
+    </ul>
+  </div>
+</sly>

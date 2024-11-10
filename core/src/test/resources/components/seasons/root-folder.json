@@ -1,0 +1,16 @@
+{
+  "jcr:primaryType":"sling:Folder",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Tue Sep 26 2023 14:18:26 GMT+0100",
+  "jcr:content":{
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:mixinTypes":[
+      "cq:ReplicationStatus"
+    ],
+    "jcr:title":"seasons",
+    "cq:lastReplicationAction":"Activate",
+    "dam:noThumbnail":true,
+    "cq:lastReplicated":"Sun Oct 15 2023 08:13:29 GMT+0000",
+    "sourcing":"false"
+  }
+}

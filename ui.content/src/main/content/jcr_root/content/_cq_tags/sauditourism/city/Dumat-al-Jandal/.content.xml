@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Dumat al Jandal"
+    jcr:title.ar="دومة الجندل"
+    jcr:title.de="Dumat Al-Djandal"
+    jcr:title.es="Dumah Al Jandal"
+    jcr:title.fr="Dumat Al-Djandal"
+    jcr:title.ja="ドゥーマ・アル・ジャンダニ"
+    jcr:title.ru="Думат-эд-Джандай"
+    jcr:title.zh="杜瑪占達"
+    sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,5 @@
+<template data-sly-template.cardWrapper="${@ partialBlock, card, datacomponent, index}">
+    <div data-wrapper="card-wrapper" data-component="${datacomponent}" data-index="${index}">
+        <sly data-sly-call="${partialBlock @ card=card}"></sly>
+    </div>
+</template>

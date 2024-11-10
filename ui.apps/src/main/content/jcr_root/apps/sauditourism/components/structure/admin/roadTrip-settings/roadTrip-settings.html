@@ -1,0 +1,13 @@
+<div class="configurator">
+<h2> Road Trip Settings: </h2>
+    <sly data-sly-use.data="com.saudi.tourism.core.models.components.RoadTripSettings"></sly>
+    <ul data-sly-list ="${data.filters}">
+        <h4> Road trip filter${itemList.count} Config: </h4>
+        <li>
+            <h5> Name - ${item.name}</h5>
+            <h5> Key - ${item.key}</h5>
+            <h5> Type - ${item.type}</h5>
+        </li>
+        <br>
+    </ul>
+</div>

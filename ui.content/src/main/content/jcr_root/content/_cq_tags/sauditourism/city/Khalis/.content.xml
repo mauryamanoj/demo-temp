@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Khulais"
+    jcr:title.ar="خليص"
+    jcr:title.de="Kahlis"
+    jcr:title.es="Khalis"
+    jcr:title.fr="Khalis"
+    jcr:title.ja="クライス"
+    jcr:title.ru="Халис"
+    jcr:title.zh="哈利斯"
+    sling:resourceType="cq/tagging/components/tag"
+    city="khalis"/>

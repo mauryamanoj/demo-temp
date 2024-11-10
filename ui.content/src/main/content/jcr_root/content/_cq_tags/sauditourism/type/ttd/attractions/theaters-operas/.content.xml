@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Theaters, operas"
+          jcr:title.ar="المسارح والأوبرا"
+          jcr:title.de="Theater, Opern"
+          jcr:title.es="Teatros, óperas"
+          jcr:title.fr="Théâtres, opéras"
+          jcr:title.ja="劇場、オペラ"
+          jcr:title.ru="Театры, оперы"
+          jcr:title.zh="剧院、歌剧院"
+
+          sling:resourceType="cq/tagging/components/tag"/>

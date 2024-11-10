@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Cruise Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.commons.wcm,sauditourism.author]">
+  <content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+      <column
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+          <title
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldDescription="Title of the Cruise Details"
+              fieldLabel="Title"
+              name="./title"/>
+          <items-multifield
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+              composite="{Boolean}true"
+              fieldDescription="Items of the Cruise Details"
+              fieldLabel="Items">
+            <field
+                jcr:primaryType="nt:unstructured"
+                name="./items"
+                granite:class="accordion-multifield-item"
+                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+              <items jcr:primaryType="nt:unstructured">
+                <column
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Item"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <items jcr:primaryType="nt:unstructured">
+                    <title
+                        granite:class="accordion-multifield-item-title"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Title of the Item"
+                        fieldLabel="Title"
+                        name="./title"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldDescription="Description of the Item"
+                        fieldLabel="Description"
+                        name="./description"/>
+                    <multi
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        fieldLabel="Images"
+                        fieldDescription="Images of the Item">
+                      <field
+                          jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          name="./images"
+                          rootPath="/content/dam"/>
+                    </multi>
+                  </items>
+                </column>
+              </items>
+            </field>
+          </items-multifield>
+        </items>
+      </column>
+    </items>
+  </content>
+</jcr:root>

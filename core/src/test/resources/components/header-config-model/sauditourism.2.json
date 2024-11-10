@@ -1,0 +1,1501 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "sauditourism",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "3bf0cd28-5bf3-4855-8755-eaaefee6b3f5",
+    "cq:lastReplicatedBy": "admin",
+    "redirectTarget": "/content/sauditourism/en",
+    "jcr:predecessors": [
+      "f7c3ec72-f23e-46f3-a9b0-5c646d111b44"
+    ],
+    "sling:redirect": "true",
+    "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+    "cq:lastReplicated": "Fri Jan 10 2020 14:15:47 GMT+0100",
+    "cq:lastModified": "Thu Dec 19 2019 19:05:46 GMT+0100",
+    "sling:redirectStatus": 302,
+    "jcr:baseVersion": "f7c3ec72-f23e-46f3-a9b0-5c646d111b44",
+    "jcr:isCheckedOut": true,
+    "cq:deviceGroups": [
+      "/etc/mobile/groups/responsive"
+    ],
+    "cq:conf": "/conf/sauditourism/visitsaudi",
+    "jcr:uuid": "994d7d41-39f0-4166-b4ef-9999812a011c",
+    "sling:resourceType": "foundation/components/redirect",
+    "cq:allowedTemplates": "/conf/sauditourism/settings/wcm/templates/.*",
+    "cq:lastModifiedBy": "admin",
+    "image": {
+      "jcr:primaryType": "nt:unstructured"
+    }
+  },
+  "en": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:26 GMT+0100",
+      "cq:lastReplicated": "Mon Dec 09 2019 13:45:19 GMT+0100"
+    },
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "Welcome to Saudi Arabia ",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "87a12c5b-c111-4af3-a468-80a42ddbdf8a",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "en",
+      "jcr:predecessors": [
+        "28c7d6f7-3bf0-4776-bb16-1ff1716e5f3b"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+      "cq:lastReplicated": "Wed Apr 01 2020 14:13:15 GMT+0200",
+      "cq:lastModified": "Wed Apr 22 2020 18:13:52 GMT+0200",
+      "theme": "green",
+      "jcr:description": "Plan your holiday in Saudi Arabia and explore its ancient heritage and culture, breathtaking outdoor activities and delicious local food.",
+      "jcr:baseVersion": "28c7d6f7-3bf0-4776-bb16-1ff1716e5f3b",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Welcome to Saudi Arabia - Visit Saudi Official Website",
+      "jcr:uuid": "5a20d5c1-76e9-499d-9b11-2b20aaa863a0",
+      "featureImage": "/content/dam/saudi-tourism/media/homepage/brand-page-hero-poster.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/en/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "admin",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "English"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:27 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:27 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:28 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:29 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:29 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:29 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:29 GMT+0100"
+    },
+    "meet-saudi": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:29 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:30 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:34 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:34 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:03 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:03 GMT+0200"
+    },
+    "language-and-culture1": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Mon Apr 06 2020 17:20:18 GMT+0200"
+    }
+  },
+  "es": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:29:34 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "Bienvenido a Arabia Saudí.",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "80f61ef0-35c3-4b3d-a44c-c91344b5853c",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "es",
+      "jcr:predecessors": [
+        "3ebae25c-409e-4679-aa7d-8718ac901094"
+      ],
+      "cq:lastTranslationUpdate": "Tue Nov 26 2019 13:49:43 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:29:34 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 12:48:58 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 12:48:51 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "Prepare sus vacaciones en Arabia Saudí y descubra su patrimonio y cultura, las sorprendentes actividades al aire libre y la deliciosa cocina local. ",
+      "jcr:baseVersion": "3ebae25c-409e-4679-aa7d-8718ac901094",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Bienvenido a Arabia Saudí.",
+      "jcr:uuid": "01684fef-dfcc-487b-97cc-c4bfd0209d56",
+      "featureImage": "/content/dam/saudi-tourism/media/homepage/315x236/brand-page-hero-poster.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/es/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "Español"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:34 GMT+0100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:28:04 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:36 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:36 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:37 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:38 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:15 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:15 GMT+0200"
+    }
+  },
+  "ru": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "Добро пожаловать в Саудовскую Аравию",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "067552d5-1051-4f1a-bc6f-3f2607841314",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "ru",
+      "jcr:predecessors": [
+        "42a60346-98d4-4aa8-bc7e-0b4be07b3932"
+      ],
+      "cq:lastTranslationUpdate": "Mon Nov 25 2019 09:43:52 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 12:49:45 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 12:49:39 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "Спланируйте путешествие в Саудовскую Аравию и познакомьтесь с ее древним наследием, культурой, захватывающими мероприятиями на свежем воздухе и вкусными блюдами местной кухни.",
+      "jcr:baseVersion": "42a60346-98d4-4aa8-bc7e-0b4be07b3932",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Добро пожаловать в Саудовскую Аравию - Официальный сайт Visit Saudi",
+      "jcr:uuid": "53316624-cd85-4421-a4e7-b4a8fb19683e",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/ru/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "Pусский"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:30:25 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:42 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:43 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:44 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:45 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:48 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:48 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:48 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:25 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:25 GMT+0200"
+    }
+  },
+  "ja": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:29:49 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "サウジアラビアへようこそ",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "715e11df-8000-4d45-b2a3-bab720d5fd3b",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "ja",
+      "jcr:predecessors": [
+        "34c71942-6d92-45d2-8a61-3a407bfa7459"
+      ],
+      "cq:lastTranslationUpdate": "Mon Nov 25 2019 09:42:50 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:29:49 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 12:50:30 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 12:50:24 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "サウジアラビアでの休暇を計画し、その古代の遺産と文化、驚異的な野外アクティビティ、おいしい郷土料理をお楽しみください。",
+      "jcr:baseVersion": "34c71942-6d92-45d2-8a61-3a407bfa7459",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "サウジアラビアへようこそ - 公式ウェブサイトVisit Saudi",
+      "jcr:uuid": "ba1f0bb1-7711-4115-add6-f49ae60842c1",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/ja/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "日本語"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "kristof.lomjanszki",
+      "jcr:created": "Fri Jan 24 2020 14:29:49 GMT+0100",
+      "cq:lastReplicated": "Sat Dec 21 2019 06:56:52 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:49 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:49 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:50 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:51 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:51 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:51 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:52 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:55 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:55 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:55 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:33 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:33 GMT+0200"
+    }
+  },
+  "de": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:29:55 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "Willkommen in Saudi-Arabien",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "8d10b369-8c0f-4ce3-aa36-25b3bd601e38",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "de",
+      "jcr:predecessors": [
+        "ea9504bc-2d62-457c-bb41-bce9aafe2223"
+      ],
+      "cq:lastTranslationUpdate": "Mon Nov 25 2019 09:38:25 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:29:55 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 12:51:24 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 12:51:17 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "Planen Sie Ihren Urlaub in Saudi-Arabien und entdecken Sie die Kultur, die atemberaubende Natur und das köstliche Essen.",
+      "jcr:baseVersion": "ea9504bc-2d62-457c-bb41-bce9aafe2223",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Willkommen in Saudi-Arabien - die offizielle Webseite von Visit Saudi",
+      "jcr:uuid": "4672745b-9e1d-4c50-86d9-e50d5a027ba0",
+      "featureImage": "/content/dam/saudi-tourism/media/homepage/315x236/brand-page-hero-poster.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/de/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "Deutsch"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:55 GMT+0100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:32:07 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:56 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:56 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:56 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:57 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:57 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:57 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:57 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:57 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:57 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:58 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:58 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:58 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:58 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:58 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:29:58 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:01 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:01 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:01 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:42 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:42 GMT+0200"
+    }
+  },
+  "fr": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "Bienvenue en Arabie Saoudite",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "41e5a22f-ce8b-4da6-a779-1ce40d392488",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "fr",
+      "jcr:predecessors": [
+        "db2ab58f-5e1f-4b1e-b29e-e8c8c668c467"
+      ],
+      "cq:lastTranslationUpdate": "Mon Nov 25 2019 09:36:22 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 12:52:10 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 12:52:04 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "Planifiez votre séjour en Arabie Saoudite pour découvrir son patrimoine historique, sa culture, ses spécialités culinaires et vivre des aventures inoubliables.",
+      "jcr:baseVersion": "db2ab58f-5e1f-4b1e-b29e-e8c8c668c467",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "Bienvenue en Arabie Saoudite - Site officiel Visit Saudi",
+      "jcr:uuid": "811a22b4-7487-4496-b48e-3e09b6ed77eb",
+      "featureImage": "/content/dam/saudi-tourism/media/homepage/315x236/brand-page-hero-poster.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/fr/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "Français"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:01 GMT+0100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:33:58 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:02 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:02 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:03 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:03 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:04 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:06 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:06 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:06 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:49 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:50 GMT+0200"
+    }
+  },
+  "ar": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:30:06 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "مرحبًا بك في المملكة العربية السعودية.",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "c3b3cead-7978-42de-ac2e-afd6ff955477",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "ar",
+      "jcr:predecessors": [
+        "d18aa827-9063-484b-9629-d826bcbbc4b2"
+      ],
+      "cq:lastTranslationUpdate": "Mon Nov 25 2019 09:29:20 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:30:06 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 18:43:58 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 18:43:16 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "خطط غطلتك في المملكة العربية السعودية، واستكشف تاريخها وثقافتها العريقتين، واستمتع بالأنشطة الخارجية المثيرة، وتذوق مأكولاتها المحلية الشهية.",
+      "jcr:baseVersion": "d18aa827-9063-484b-9629-d826bcbbc4b2",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "مرحبًا بك في المملكة العربية السعودية. - الموقع الرسمي للسياحة السعودية ",
+      "jcr:uuid": "e42b0f5e-60f7-4a71-88e4-61cd2f924ff5",
+      "isRightToLeftLanguage": "rtl",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/ar/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "العربية"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:07 GMT+0100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:36:02 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:07 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:08 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:08 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:09 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:10 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:10 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:10 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:10 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:12 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:12 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:12 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:57 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:50:57 GMT+0200"
+    }
+  },
+  "zh": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:30:12 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "socialMedia": [
+        "facebook"
+      ],
+      "jcr:title": "沙特阿拉伯欢迎你",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "2bea8778-acaf-4059-839b-d3b1482693c6",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "maren.dethlefsen",
+      "jcr:language": "zh",
+      "jcr:predecessors": [
+        "e510adbe-a181-48f1-88db-61a8dc337133"
+      ],
+      "cq:lastTranslationUpdate": "Mon Nov 25 2019 09:26:18 GMT+0000",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Jan 24 2020 14:30:12 GMT+0100",
+      "cq:lastReplicated": "Mon Mar 30 2020 12:53:48 GMT+0200",
+      "cq:lastModified": "Mon Mar 30 2020 12:53:41 GMT+0200",
+      "theme": "green",
+      "cq:translationSourcePath": "/content/sauditourism/en",
+      "jcr:description": "规划一下你在沙特阿拉伯的行程，尽情感受这里悠久的历史和古老文化的传承，参加激动人心的室外活动，品尝可口美味的当地美食。",
+      "jcr:baseVersion": "e510adbe-a181-48f1-88db-61a8dc337133",
+      "jcr:isCheckedOut": true,
+      "pageTitle": "沙特阿拉伯欢迎你 - Visit Saudi官方网站",
+      "jcr:uuid": "9932faf3-d595-4955-91f3-70945826f3e0",
+      "featureImage": "/content/dam/saudi-tourism/media/homepage/brand-page-hero-poster.jpg",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "errorPages": "/content/sauditourism/zh/errors",
+      "hideInSiteMap": "false",
+      "cq:lastModifiedBy": "maren.dethlefsen",
+      "cq:isLanguageRoot": "true",
+      "navTitle": "中文"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:12 GMT+0100",
+      "cq:lastReplicated": "Tue Dec 10 2019 13:37:05 GMT+0100"
+    },
+    "understand": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:13 GMT+0100"
+    },
+    "see": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:14 GMT+0100"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:14 GMT+0100"
+    },
+    "eat": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "calendar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "about-e-visa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "book": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "heritage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "planning-tools": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "regions": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:15 GMT+0100"
+    },
+    "keep-in-touch-with-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:16 GMT+0100"
+    },
+    "contact-us": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:16 GMT+0100"
+    },
+    "apply-for-evisa": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:16 GMT+0100"
+    },
+    "language-and-culture": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:16 GMT+0100"
+    },
+    "events": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:16 GMT+0100"
+    },
+    "getting-around": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100"
+    },
+    "errors": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100"
+    },
+    "search": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100"
+    },
+    "your-favourites": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:05 GMT+0200"
+    },
+    "covid-19-information-page": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:05 GMT+0200"
+    }
+  },
+  "app": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "app",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "07af62a0-e223-41eb-b0db-eb85dd13c30c",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:predecessors": [
+        "c45c088b-75d4-4287-b83c-8c1299c4dd3a"
+      ],
+      "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100",
+      "cq:lastReplicated": "Wed Dec 04 2019 11:15:31 GMT+1100",
+      "cq:lastModified": "Mon Nov 25 2019 17:25:07 GMT+1100",
+      "jcr:baseVersion": "c45c088b-75d4-4287-b83c-8c1299c4dd3a",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "eafc77e1-e8d0-421e-b9e9-ca3ebdf0590c",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:lastModifiedBy": "admin"
+    },
+    "en": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100"
+    },
+    "ar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:19 GMT+0100"
+    },
+    "de": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:20 GMT+0100"
+    },
+    "es": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:21 GMT+0100"
+    },
+    "ru": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:21 GMT+0100"
+    },
+    "ja": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:22 GMT+0100"
+    },
+    "fr": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:30:22 GMT+0100"
+    },
+    "zh": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:41:03 GMT+0100"
+    }
+  },
+  "global-configs": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Global-configs",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+      "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100",
+      "hideInNav": "true",
+      "sling:resourceType": "sauditourism/components/structure/configuration-page",
+      "hideInSiteMap": "true"
+    },
+    "Configs": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:created": "Fri Jan 24 2020 14:28:51 GMT+0100"
+    }
+  },
+  "app1": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Apr 02 2020 10:51:08 GMT+0200",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "app",
+      "jcr:versionHistory": "5b735c3d-09af-41d1-82bb-fce0fdf512bb",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/content-page",
+      "jcr:predecessors": [
+        "17d3d6c5-656f-41e9-8e3c-14b26533df45"
+      ],
+      "jcr:created": "Thu Apr 02 2020 10:51:08 GMT+0200",
+      "cq:lastModified": "Fri Mar 20 2020 11:28:47 GMT+0100",
+      "jcr:baseVersion": "17d3d6c5-656f-41e9-8e3c-14b26533df45",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "edaca61d-103e-456d-9f81-643ee8309323",
+      "sling:resourceType": "sauditourism/components/structure/page",
+      "cq:lastModifiedBy": "admin"
+    },
+    "en": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:08 GMT+0200"
+    },
+    "ar": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:08 GMT+0200"
+    },
+    "de": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:09 GMT+0200"
+    },
+    "es": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:10 GMT+0200"
+    },
+    "ru": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:11 GMT+0200"
+    },
+    "ja": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:12 GMT+0200"
+    },
+    "fr": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:12 GMT+0200"
+    },
+    "zh": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 10:51:13 GMT+0200"
+    }
+  },
+  "languages": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Multi Site Configs",
+      "jcr:versionHistory": "258e0b87-b7b6-4872-9ff3-95059af381a1",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/nav-item-page",
+      "jcr:predecessors": [
+        "92ea92d5-d80d-412c-b122-a50692bc7fa9"
+      ],
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200",
+      "jcr:baseVersion": "92ea92d5-d80d-412c-b122-a50692bc7fa9",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "0bd3a2f5-f63e-4398-aff0-562fa7a42de6",
+      "sling:resourceType": "sauditourism/components/structure/nav-item-page"
+    },
+    "arabic": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "chinese": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "deutsch": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "english": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "espanol": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "french": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "japanese": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    },
+    "russian": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 02 2020 15:05:29 GMT+0200"
+    }
+  }
+}

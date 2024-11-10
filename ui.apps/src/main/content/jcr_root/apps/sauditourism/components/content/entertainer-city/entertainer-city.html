@@ -1,0 +1,20 @@
+<sly data-sly-use.cityModel="com.saudi.tourism.core.models.app.entertainer.EntertainerCityModel"/>
+
+
+<div  style="background: ${properties.locationId ? 'palegreen' : 'none' @ context='styleToken'}">
+<sly data-sly-set.cityId="${resource.name}"></sly>
+<span style="margin-bottom:10px;font-size:14px;">
+    <strong>[${cityModel.cityId}]</strong></span>
+
+    <!-- cityId: ${cityId} -->
+    <p>Edit additional settings for ${cityId @ i18n, locale='en'} here</p>
+
+    <p data-sly-test="${properties.destinationFeatureTags}">
+        City destination tags: ${properties.destinationFeatureTags @ join=", "}
+    </p>
+
+    <p data-sly-test="${properties.locationId}">
+        Entertainer location id: ${properties.locationId}
+    </p>
+
+</div>

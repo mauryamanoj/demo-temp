@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Farmers Market"
+          jcr:title.ar="سوق المزارعين"
+          jcr:title.de="Bauernmarkt"
+          jcr:title.es="Mercado de agricultores"
+          jcr:title.fr="Marché des agriculteurs"
+          jcr:title.ja="農民市場"
+          jcr:title.ru="Фермерский рынок"
+          jcr:title.zh="农民市场"
+          sling:resourceType="cq/tagging/components/tag"/>

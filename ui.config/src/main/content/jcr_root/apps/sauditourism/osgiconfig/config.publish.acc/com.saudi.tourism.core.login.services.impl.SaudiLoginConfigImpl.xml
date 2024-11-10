@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+          clientId="Rab8Wgo2OPjEwzjnrf6VoVfGEA6vgZei"
+          clientSecret="OPh-V8gY4Z3CSrVMw8C687czxJHHXBlBlwvLb61_JTw0e93a708nvGIZWeecRt94"
+          audience="https://visitsaudi-acc.sauditourism.auth0.com/api/v2/"
+          auth0Domain="visitsaudi-acc.sauditourism.auth0.com"
+          auth0BaseUrl="https://visitsaudi-acc.sauditourism.auth0.com"
+          auth0OauthTokenEndpoint="/oauth/token"
+          auth0GetUserEndpoint="/api/v2/users/{id}"
+/>

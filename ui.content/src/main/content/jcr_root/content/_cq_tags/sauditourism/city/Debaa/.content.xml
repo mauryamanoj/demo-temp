@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Debaa"
+    jcr:title.ar="ضبا"
+    jcr:title.de="Duba"
+    jcr:title.es="Duba"
+    jcr:title.fr="Douba"
+    jcr:title.ja="デバー"
+    jcr:title.ru="Дуба"
+    jcr:title.zh="杜巴"
+    sling:resourceType="cq/tagging/components/tag"/>

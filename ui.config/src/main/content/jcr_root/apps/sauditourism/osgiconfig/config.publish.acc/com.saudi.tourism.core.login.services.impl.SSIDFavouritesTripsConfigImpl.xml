@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+          middlewareDomain="http://172.22.16.251:30007"
+          fetchFavoritesTripsEndpoint="/auth/v2/userDetails"
+          modifyFavoritesTripsEndpoint="/auth/userDetails"
+          nativeAppUserDetailsEndpoint="/auth/v2/userDetails"
+          entertainerLocationsEndpoint="https://acc-api.sta.gov.sa/mobileapp/api/v1/locations"
+
+/>

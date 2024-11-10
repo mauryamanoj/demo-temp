@@ -1,0 +1,35 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Sun Dec 17 2023 14:03:55 GMT+0100",
+  "jcr:lastModified":"Sun Dec 17 2023 14:05:23 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/things-todo-explorer",
+  "filtersLabel":"Filters",
+  "clearAllButton":"Cleat all",
+  "loadingLabel":"Loading...",
+  "modalFiltersTitle":"Filters",
+  "noResultFoundDescription":"Try updating your search or filters for something else Here",
+  "noResultsFoundLabel":"No results found",
+  "searchLimit":10,
+  "searchPlaceholderLabel":"Search",
+  "selectLocationLabel":"Select Location",
+  "title":"Things to do",
+  "types": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "All"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Activities",
+      "id": "activity"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Events",
+      "id": "event"
+    }
+  }
+}

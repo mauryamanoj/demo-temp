@@ -1,0 +1,13 @@
+<sly data-sly-template.mapFrame="${@ longitude, latitude, mapType, zoom, hideControls}"
+     data-sly-use.mapModel="com.saudi.tourism.core.models.components.map.v1.MapModel">
+  <div class="mapouter" data-component="map-frame">
+    <div class="gmap_canvas">
+      <div class="map-frame" data-google-apiKey="${mapModel.googleMapsKey}"
+           data-custom-zoom="${zoom || mapModel.zoom}" data-map data-latitude="${latitude || mapModel.latitude}"
+           data-longitude="${longitude || mapModel.longitude}"
+           data-token=""
+           data-sly-attribute.data-map-type="${mapType || mapModel.mapType}"
+           data-control="${hideControls ? 'none' : ''}"></div>
+    </div>
+  </div>
+</sly>

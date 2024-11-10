@@ -1,0 +1,91 @@
+<sly
+    data-sly-template.pictureObj="${@ extraClass, dataTransition, imageDesktop, imageMobile,
+        altText, breakpointDesktop, breakpointMobile, breakpoint, breakpoints, desktopProfile,
+        mobileProfile, caption, enableSharpImage, isTransparent, simpleLabelList, weatherLabel, weatherIcon,
+         componentType, tagLine, isPreviewImage}"
+    data-sly-use.caption01ImageTemplate="/apps/sauditourism/components/content/templates/atoms/caption-01-image.html"
+    data-sly-use.attributesHelper="${'/apps/sauditourism/components/htl-helpers/attributes-helper.js' @
+         attributes=[dataTransition]}"
+    data-sly-use.labelG01SimpleTemplate="/apps/sauditourism/components/content/templates/molecules/label-groups/label-g-01-simple.html"
+    data-sly-use.labelG02WeatherTemplate="/apps/sauditourism/components/content/templates/molecules/label-groups/label-g-02-weather.html">
+    <sly
+        data-sly-use.desktop="${'com.saudi.tourism.core.models.common.DynamicMediaMapperModel' @
+      imageSrc=imageDesktop, componentProfile=desktopProfile, enableImageSharpen=enableSharpImage}"
+        data-sly-use.mobile="${'com.saudi.tourism.core.models.common.DynamicMediaMapperModel' @ imageSrc=imageMobile, componentProfile=mobileProfile}"></sly>
+    <sly data-sly-use.styleModel="com.adobe.cq.wcm.style.ComponentStyleInfo"></sly>
+    <div data-component="picture" class="picture-wrapper ${extraClass ? extraClass : ''}
+          ${styleModel.appliedCssClasses}">
+        <div class="caption-wrapper" data-sly-test="${caption}">
+            <sly data-sly-call="${caption01ImageTemplate.caption01Image @ caption=caption}"></sly>
+        </div>
+        <sly data-sly-test="${simpleLabelList}"
+             data-sly-test="${componentType == 'c-01' || componentType == 'full-image'}">
+            <div class="overlay-for-labels"></div>
+            <div class="label-wrapper">
+                <sly data-sly-call="${labelG01SimpleTemplate.labelG01Simple @ labelList=simpleLabelList,
+        taglinePosition='top', taglineColor='white', copyColor='white',
+        containerColor='transparent-black', tagLine=tagLine}"></sly>
+            </div>
+        </sly>
+        <sly data-sly-test="${weatherLabel && componentType == 'c-08'}">
+            <div class="overlay-for-labels"></div>
+            <div class="label-wrapper">
+                <sly data-sly-call="${labelG02WeatherTemplate.labelG02Weather @ weatherLabel=weatherLabel,
+        weatherIcon=weatherIcon, simpleLabelList=simpleLabelList, copyColor='white',
+        containerColor='transparent-black'}"></sly>
+            </div>
+        </sly>
+
+        <picture
+            data-sly-use.smartCropModel="${'com.saudi.tourism.core.models.common.SmartCropsInfoModel'
+         @ imageSrc=imageDesktop, isPreviewImage=isPreviewImage || false}"
+            data-sly-test="${smartCropModel.defImgSrc}" class="picture"
+            data-sly-attribute="${attributesHelper.attributes}" class="picture-desktop">
+            <sly data-sly-list.cropInfo="${smartCropModel.smartCropRenditions}">
+                <source
+                    data-sly-attribute.data-srcset="${cropInfo.srcsetList @ join=','}"
+                    data-sly-attribute.sizes="${cropInfo.imgRelativeWidth == '100vw' ? '' : cropInfo.imgRelativeWidth}"
+                    data-sly-attribute.media="${cropInfo.breakpoint ? '(max-width: {0}px)' : '' @ format=[cropInfo.breakpoint]}">
+            </sly>
+            <img data-src="${smartCropModel.defImgSrc @ context='uri'}"
+                 class="image lazyload" alt="${altText}">
+        </picture>
+        <picture
+            data-sly-use.smartCropModel="${'com.saudi.tourism.core.models.common.SmartCropsInfoModel'
+         @ imageSrc=imageMobile, isPreviewImage=isPreviewImage || false}"
+            data-sly-test="${smartCropModel.defImgSrc}" class="picture"
+            data-sly-attribute="${attributesHelper.attributes}" class="picture-mobile">
+            <sly data-sly-list.cropInfo="${smartCropModel.smartCropRenditions}">
+                <source
+                    data-sly-attribute.data-srcset="${cropInfo.srcsetList @ join=','}"
+                    data-sly-attribute.sizes="${cropInfo.imgRelativeWidth == '100vw' ? '' : cropInfo.imgRelativeWidth}"
+                    data-sly-attribute.media="${cropInfo.breakpoint ? '(max-width: {0}px)' : '' @ format=[cropInfo.breakpoint]}">
+            </sly>
+            <img data-src="${smartCropModel.defImgSrc @ context='uri'}"
+                 class="image lazyload" alt="${altText}">
+        </picture>
+
+        <picture data-sly-test="${!smartCropModel.defImgSrc}"
+                 class="picture is-supported"
+                 data-component="picture"
+                 data-sly-attribute="${attributesHelper.attributes}">
+            <sly data-sly-test="${breakpoints}">
+                <sly data-sly-list.breakpoint="${breakpoints}">
+                    <source data-srcset="${breakpoint.srcset}" media="${breakpoint.media}">
+                </sly>
+                <img data-src="${mobile.src || desktop.src @ context='uri'}" class="image lazyload"
+                     alt="${altText}">
+            </sly>
+
+            <sly data-sly-test="${!breakpoints}">
+                <sly data-sly-test="${imageDesktop}">
+                    <source data-srcset="${desktop.src @ context='uri'}"
+                            media="(min-width:${breakpointDesktop || '768'}px)">
+                </sly>
+                <img data-src="${mobile.src || desktop.src @ context='uri'}" class="image lazyload"
+                     alt="${altText}">
+            </sly>
+        </picture>
+
+    </div>
+</sly>

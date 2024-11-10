@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Strip Center"
+          jcr:title.ar="مركز الشريط"
+          jcr:title.de="Strip Center"
+          jcr:title.es="Centro Comercial"
+          jcr:title.fr="Centre commercial"
+          jcr:title.ja="ストリップセンター"
+          jcr:title.ru="Торговый Центр"
+          jcr:title.zh="购物中心"
+          sling:resourceType="cq/tagging/components/tag"/>

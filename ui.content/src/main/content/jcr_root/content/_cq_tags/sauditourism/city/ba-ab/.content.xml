@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Baljurashi, Abha"
+    jcr:title.ar="بلجرشي، أبها"
+    jcr:title.de="Baljurashi, Abha"
+    jcr:title.es="Baljurashi, Abha"
+    jcr:title.fr="Baljurashi, Abha"
+    jcr:title.ja="Baljurashi, Abha"
+    jcr:title.ru="Baljurashi, Abha"
+    jcr:title.zh="Baljurashi, Abha"
+    sling:resourceType="cq/tagging/components/tag"/>

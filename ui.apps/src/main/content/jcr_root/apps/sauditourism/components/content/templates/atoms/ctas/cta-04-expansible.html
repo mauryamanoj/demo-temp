@@ -1,0 +1,11 @@
+<template data-sly-template.cta04Expansible="${@ variant, copy, icon, link}"
+          data-sly-use.cta01ButtonTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-01-button.html">
+  <div data-component="cta-04-expansible">
+    <sly data-sly-test="${variant == 'white'}"
+         data-sly-call="${cta01ButtonTemplate.ctaButton @ copy=copy, iconName=icon, size='big',
+         isExpansible=true, link=link, background='image', variant='secondary'}"></sly>
+    <sly data-sly-test="${variant != 'white'}"
+         data-sly-call="${cta01ButtonTemplate.ctaButton @ copy=copy, iconName=icon, size='big',
+         isExpansible=true, link=link, background='solid'}"></sly>
+  </div>
+</template>

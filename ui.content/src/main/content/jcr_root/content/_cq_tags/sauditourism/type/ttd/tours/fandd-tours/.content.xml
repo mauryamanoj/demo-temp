@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="F&amp;D Tours"
+          jcr:title.ar="جولات طعام وشراب"
+          jcr:title.de="Essen und Trinken Touren"
+          jcr:title.es="Recorridos de comida y bebida"
+          jcr:title.fr="Visites gastronomiques"
+          jcr:title.ja="フード＆ドリンクツアー"
+          jcr:title.ru="Туры по еде и напиткам"
+          jcr:title.zh="美食与美酒游"
+          sling:resourceType="cq/tagging/components/tag"/>

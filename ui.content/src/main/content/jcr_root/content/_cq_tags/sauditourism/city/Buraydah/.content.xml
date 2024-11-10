@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Buraydah"
+    jcr:title.ar="بريدة"
+    jcr:title.de="Buraida"
+    jcr:title.es="Buraidá"
+    jcr:title.fr="Buraydah"
+    jcr:title.ja="ブライダ"
+    jcr:title.ru="Бурайда"
+    jcr:title.zh="布赖代"
+    sling:resourceType="cq/tagging/components/tag"
+    city="buraydah"/>

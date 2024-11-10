@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="4 Days"
+          jcr:title.ar="4 أيام"
+          jcr:title.fr="4 jours"
+          jcr:title.es="4 días"
+          jcr:title.ru="4 дней"
+          jcr:title.de="4 Tage"
+          jcr:title.zh="4天"
+          jcr:title.ja="四天"
+          sling:resourceType="cq/tagging/components/tag"/>

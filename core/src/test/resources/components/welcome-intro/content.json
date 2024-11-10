@@ -1,0 +1,10 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "subTitle":"Weather to expect in Saudi",
+  "description":"Contrary to popular belief, it’s not always hot in Saudi Arabia. The kingdom experiences four distinct seasons —from chilly winter breezes in January to peak desert heat in August —and a climate that varies between regions. Read on for a seasonal overview of the kingdom’s weather.",
+  "jcr:created":"Fri Feb 26 2021 13:46:23 GMT+0100",
+  "mainTitle":"Climate control",
+  "jcr:lastModified":"Fri Feb 26 2021 13:46:55 GMT+0100",
+  "sling:resourceType":"sauditourism/components/content/welcome-intro",
+  "textIsRich":"true"
+}

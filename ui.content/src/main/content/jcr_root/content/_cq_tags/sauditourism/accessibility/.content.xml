@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description="Story categories."
+          jcr:primaryType="cq:Tag"
+          jcr:title="Accessibility"
+          jcr:title.ar="الوصولية"
+          jcr:title.de="Zugänglichkeit"
+          jcr:title.es="Accesibilidad"
+          jcr:title.fr="Accessibilité"
+          jcr:title.ja="アクセシビリティ"
+          jcr:title.ru="Доступность"
+          jcr:title.zh="可访问性"
+          sling:resourceType="cq/tagging/components/tag">
+    <nature/>
+</jcr:root>

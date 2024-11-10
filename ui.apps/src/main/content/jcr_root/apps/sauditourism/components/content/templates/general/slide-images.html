@@ -1,0 +1,15 @@
+<sly data-sly-template.slideObj="${@ class, slideObj, isDark}">
+  <sly
+      data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"></sly>
+  <div class="slide-images ${class ? class : ''}" data-component="slide-images">
+    <sly data-sly-list.slide="${slideObj.slides}">
+      <sly data-sly-test.picClass="${isDark ? 'slide-image is-dark-mode' : 'slide-image'}"></sly>
+      <sly data-sly-call="${imageTemplate.pictureObj @ extraClass=picClass,
+                                        imageDesktop=slide.image.s7fileReference||slide.image.fileReference,
+                                        imageMobile=slide.image.s7mobileImageReference||slide.image.mobileImageReference,
+                                        altText=slide.image.alt,
+                                        desktopProfile='crop-1920x1080', mobileProfile='crop-375x667',
+                  breakpointDesktop='1280', breakpointMobile='420'}"></sly>
+    </sly>
+  </div>
+</sly>

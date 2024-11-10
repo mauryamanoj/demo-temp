@@ -1,0 +1,37 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+  <sly data-sly-call="${clientlib.css @ categories='sauditourism.base'}"></sly>
+  <sly data-sly-test="${wcmmode.preview || wcmmode.edit}"
+       data-sly-call="${clientlib.css @ categories='sauditourism.author'}"/>
+</sly>
+
+<!-- pre-hiding code snippet -->
+<script>
+    !function(o){var e="at-body-style";function t(){return o.getElementsByTagName("head")[0]}!function(e,t,n){if(e){var i=o.createElement("style");i.id=t,i.innerHTML=n,e.appendChild(i)}}(t(),e,"body {opacity: 0 !important}"),setTimeout(function(){!function(e,t){if(e){var n=o.getElementById(t);n&&e.removeChild(n)}}(t(),e)},3001)}((window,document));
+</script>
+<!-- Adobe Launch Embed Code -->
+<sly data-sly-use.mode="com.saudi.tourism.core.models.app.page.ModeModel">
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'air'}">
+        <script>
+            function targetPageParams() {
+                return {
+                    "at_property": "56ed5f6c-d67f-c490-62d0-d0c7e95f5f95"
+                };
+            }
+        </script>
+         <script type="text/javascript" src="https://assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-7032a1efcd16-development.min.js" async></script>
+     </sly>
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'dev'}">
+         <script type="text/javascript" src="//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-ea208b6d49a1-development.min.js" async></script>
+     </sly>
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'acc'}">
+         <script type="text/javascript" src="//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d1d2f74bada3-staging.min.js" async></script>
+     </sly>
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'prod'}">
+         <sly data-sly-test.publish="${mode.saudiModeConfig.publish}">
+           <script type="text/javascript" src="//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d7d511425437.min.js" async></script>
+         </sly>
+         <sly data-sly-test="${!publish}">
+           <script type="text/javascript" src="//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d1d2f74bada3-staging.min.js" async></script>
+         </sly>
+     </sly>
+</sly>

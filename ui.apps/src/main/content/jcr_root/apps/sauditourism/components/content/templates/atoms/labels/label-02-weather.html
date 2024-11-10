@@ -1,0 +1,7 @@
+<template data-sly-template.label02Weather="${@ weatherLabel, weatherIcon}"
+          data-sly-use.iconSimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html">
+    <div data-component="label-02-weather">
+        <sly data-sly-call="${iconSimpleTemplate.iconSimple @ name=weatherIcon, desktopSize='18', mobileSize='22'}"></sly>
+        <span class="label-copy label-text">${weatherLabel}</span>
+    </div>
+</template>

@@ -1,0 +1,81 @@
+<template data-sly-template.c09ArticleCard="${@ card, background}"
+          data-sly-use.textCardsModel="com.saudi.tourism.core.models.components.TextCardsModel"
+          data-sly-use.c07FavoriteTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-07-favorite.html"
+          data-sly-use.videoTemplate="/apps/sauditourism/components/content/templates/general/inline-video.html"
+          data-sly-use.pictureTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+          data-sly-use.cta01ButtonTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-01-button.html"
+          data-sly-use.cta02LinkTemplate="/apps/sauditourism/components/content/templates/atoms/ctas/cta-02-link.html"
+          data-sly-use.ornaments02BarsTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-02-bars.html"
+          data-sly-use.ornaments03BrushesTemplate="/apps/sauditourism/components/content/templates/atoms/ornaments/ornaments-03-brushes.html">
+  <div
+      data-component="c-09-article-card"
+      class="image-position-${card.imagePosition ? card.imagePosition : 'left'}
+      background-${background ? background : 'white'} ${card.highlight ? 'highlight' : ''}
+        ${card.ornamentBarId ? (background!='theme' ? 'has-bar-ornament' : '') : ''}">
+    <div class="image-wrapper">
+      <sly data-sly-test="${card.link.urlSlingExporter && !card.hideFav}">
+        <div class="favorite-button-overlay"
+           data-sly-call="${c07FavoriteTemplate.fav @ path=card.link.urlSlingExporter,
+              class='outline-version', variant='white'}"></div>
+      </sly>
+      <sly data-sly-test="${card.videoPath}"
+           data-sly-call="${videoTemplate.video @ skipControl='true',
+             mobileVideoPath=card.mobileVideoPath, videoPath=card.videoPath, firstVideo='true'}"></sly>
+      <sly data-sly-test="${!card.videoPath}"
+           data-sly-call="${pictureTemplate.pictureObj @ dataTransition='data-picture',
+                                        imageDesktop=card.image.s7fileReference,
+                                        imageMobile=card.image.s7mobileImageReference,
+                                        altText=card.image.alt,
+                                        desktopProfile='crop-760x570', mobileProfile='crop-375x280',
+                  breakpointDesktop='1280', breakpointMobile='420', caption=card.caption}">
+      </sly>
+        <sly data-sly-test="${!card.hideImageBrush || card.hideImageBrush == 'false'}">
+          <sly data-sly-test.hasOrnamentBarId="${card.ornamentBarId && background!='theme'}">
+            <sly data-sly-call="${ornaments03BrushesTemplate.ornaments03Brushes @ id='02',
+                 orientation='vertical', direction='left', class='ornament-brush side'}"></sly>
+            <sly data-sly-call="${ornaments03BrushesTemplate.ornaments03Brushes @ id='03',
+                 orientation='horizontal', direction='top', class='ornament-brush side mobile'}"></sly>
+          </sly>
+        </sly>
+        <sly data-sly-test="${!card.hideImageBrush || card.hideImageBrush == 'false'}">
+          <sly data-sly-test="${!hasOrnamentBarId || background=='theme'}">
+            <sly data-sly-call="${ornaments03BrushesTemplate.ornaments03Brushes @ id='02',
+                 orientation='vertical', direction='right', class='ornament-brush'}"></sly>
+            <sly data-sly-call="${ornaments03BrushesTemplate.ornaments03Brushes @ id='03',
+                 orientation='horizontal', direction='bottom', class='ornament-brush mobile'}"></sly>
+          </sly>
+        </sly>
+    </div>
+    <div class="copy-wrapper${card.link.url ? ' with-cta' : ''}
+            ${textCardsModel.enableFullOrnament && textCardsModel.enableFullOrnament == 'true' ? 'custom-branding-copy-wrapper' : ''}">
+      <sly data-sly-test="${background!='theme' && card.ornamentBarId}"
+           data-sly-call="${ornaments02BarsTemplate.ornaments02Bars @ orientation='vertical',
+                    class='ornament-bar', patternDefault=card.ornamentBarId}"></sly>
+      <hgroup>
+          <h5 class="tagline" data-sly-test="${card.tagline}">${card.tagline}</h5>
+        <h4 class="title">${card.title}</h4>
+      </hgroup>
+      <div class="copy description">${card.description @ context='html'}</div>
+      <div data-sly-test="${card.ctaType != 'none'}"
+           class="cta-wrapper type-${card.ctaType}">
+        <sly data-sly-test="${card.ctaType == 'button' || card.ctaType == 'button without icon'}"
+             data-sly-set.icon="${card.ctaType == 'button' ? 'download' : ''}"
+             data-sly-set.backgroundHighlight="${background == 'white' && card.highlight ? 'image' : ''}"
+             data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=card.link, size='big',
+             iconName=icon, background=backgroundHighlight, noChevron=true}">
+        </sly>
+        <sly data-sly-test="${card.ctaType == 'link'}"
+             data-sly-set.backgroundHighlight="${background == 'white' && card.highlight ? 'image' : ''}"
+             data-sly-call="${cta02LinkTemplate.ctaLink @ linkObj=card.link,
+             background=backgroundHighlight}">
+        </sly>
+        <sly data-sly-test="${card.ctaType == 'external-link'}"
+             data-sly-set.backgroundHighlight="${background == 'white' && card.highlight ?
+             'image' : 'solid'}"
+             data-sly-call="${cta01ButtonTemplate.ctaButton @ linkObj=card.link, size='big',
+             iconName='external', background=backgroundHighlight, noChevron=true}">
+        </sly>
+      </div>
+    </div>
+  </div>
+</template>

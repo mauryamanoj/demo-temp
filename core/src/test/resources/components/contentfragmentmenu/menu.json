@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "variationName": "master",
+  "sling:resourceType": "sauditourism/components/content/menu",
+  "displayMode": "multi",
+  "fragmentPath": "/content/dam/sauditourism/cf/{language}/menu"
+}

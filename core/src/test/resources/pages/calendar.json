@@ -1,0 +1,153 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Nov 24 2021 07:45:49 GMT+0000",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:lockable",
+      "mix:versionable"
+    ],
+    "jcr:createdBy":"admin",
+    "jcr:title":"Festivals & Events",
+    "cq:lastReplicationAction":"Activate",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"65d693e2-f239-4e7b-82c7-13510d8198b2",
+    "noCacheHeaderDispatcher":"false",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/content-page",
+    "cq:lastReplicatedBy":"halmahasneh-c@sta.gov.sa",
+    "searchCategories":[
+      "sauditourism:searchCategories/SeeDo"
+    ],
+    "jcr:predecessors":[
+      "27549f1e-340e-4afe-bc8e-81e3c1178cc8"
+    ],
+    "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+    "jcr:created":"Wed Nov 24 2021 07:45:49 GMT+0000",
+    "cq:lastReplicated":"Sun Nov 13 2022 14:50:59 GMT+0000",
+    "cq:lastModified":"Sun Nov 13 2022 14:50:53 GMT+0000",
+    "s7featureImage":"/content/dam/umrah/banner/appointment.png",
+    "theme":"orange",
+    "jcr:description":"From flame throwing acrobatics to world-renowned musical experiences, business opportunities and more events, for kids and adults alike.",
+    "jcr:baseVersion":"27549f1e-340e-4afe-bc8e-81e3c1178cc8",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "pageTitle":"Event Calendar - Visit Saudi Official Website",
+    "cq:tags":[
+
+    ],
+    "jcr:uuid":"4e3067d4-0861-4adc-83c5-f93b73916b4f",
+    "featureImage":"/content/dam/umrah/banner/appointment.png",
+    "sling:resourceType":"sauditourism/components/structure/page",
+    "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+    "hideInSiteMap":"false",
+    "searchHighlight":"false",
+    "cq:lastModifiedBy":"halmahasneh-c@sta.gov.sa",
+    "navTitle":"Festivals & Events",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "h02_secondary_hero_687935111":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"george.goodliffe@mediamonks.com",
+          "setSubtitleBelow":"false",
+          "subtitleWeight":"h4",
+          "jcr:lastModifiedBy":"mkariapper-c@sta.gov.sa",
+          "interactiveVideo":"false",
+          "jcr:created":"Thu Apr 09 2020 21:36:26 GMT+0200",
+          "itineraryType":"planner",
+          "title":"Saudi Calendar",
+          "showFullHeight":"false",
+          "titleWeight":"h1",
+          "hideFav":"true",
+          "jcr:lastModified":"Sun Aug 28 2022 10:28:06 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/h02-secondary-hero/v1/h02-secondary-hero",
+          "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "s7fileReference":"/content/dam/umrah/banner/appointment.png",
+            "fileReference":"/content/dam/umrah/banner/appointment.png",
+            "alt":"Calendar",
+            "mobileImageReference":"/content/dam/umrah/banner/appointment.png",
+            "s7mobileImageReference":"/content/dam/umrah/banner/appointment.png"
+          },
+          "caption":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "link":{
+            "jcr:primaryType":"nt:unstructured"
+          },
+          "video":{
+            "jcr:primaryType":"nt:unstructured"
+          }
+        },
+        "c08_events":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:createdBy":"EKamal@sta.gov.sa",
+          "jcr:lastModifiedBy":"halmahasneh-c@sta.gov.sa",
+          "resultsPerPageAuth":"29",
+          "templateType":"new-template",
+          "eventDetailsLinkLabel":"Learn More",
+          "loadMoreButtonLabel":"Load More",
+          "jcr:created":"Mon Aug 02 2021 18:56:08 GMT+0200",
+          "title":"Events just for you",
+          "noResultTitle":"No Events Found",
+          "foundText":"Found Text",
+          "jcr:lastModified":"Sun Nov 13 2022 14:50:53 GMT+0000",
+          "sling:resourceType":"sauditourism/components/content/c08-events/v1/c08-events",
+          "searchEventPlaceholder":"Search for an event",
+          "ornamentId":"07A",
+          "noResultsMessage":{
+            "jcr:primaryType":"nt:unstructured",
+            "icon":"😞",
+            "firstLine":"Sorry!",
+            "smallMessage":"There are no results. Try looking up for something else."
+          },
+          "loginModal":{
+            "jcr:primaryType":"nt:unstructured",
+            "copy":"Log In or Sign Up to save your favorite attractions",
+            "title":"Hey!",
+            "ctaText":"Log In or Sign Up"
+          },
+          "filters":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+              "jcr:primaryType":"nt:unstructured",
+              "filterTitle":"Location",
+              "placeHolderText":"City, Region",
+              "type":"city"
+            },
+            "item1":{
+              "jcr:primaryType":"nt:unstructured",
+              "filterTitle":"Season",
+              "type":"season"
+            },
+            "item2":{
+              "jcr:primaryType":"nt:unstructured",
+              "filterTitle":"Event Type",
+              "type":"freePaid"
+            },
+            "item3":{
+              "jcr:primaryType":"nt:unstructured",
+              "filterTitle":"Date",
+              "type":"date"
+            },
+            "item4":{
+              "jcr:primaryType":"nt:unstructured",
+              "filterTitle":"Interests",
+              "placeHolderText":"Event Category",
+              "type":"category"
+            },
+            "item5":{
+              "jcr:primaryType":"nt:unstructured",
+              "filterTitle":"Audience",
+              "type":"target"
+            }
+          }
+        }
+      }
+    }
+  }
+}

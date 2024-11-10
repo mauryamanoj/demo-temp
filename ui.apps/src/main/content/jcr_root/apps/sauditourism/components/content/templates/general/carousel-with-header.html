@@ -1,0 +1,49 @@
+<sly data-sly-template.carouselWithHeader="${@ isModalWindow, modelObj, columns,
+         favorite, hideCarouselHeader, itemCount, withControls, class, desktopProfile,
+         mobileProfile, breakpointDesktop, breakpointMobile, previewProfile, breakpointPreview}"
+     data-sly-use.modalWindowTemplate="/apps/sauditourism/components/content/templates/general/modal-window.html"
+     data-sly-use.generalCardTemplate="/apps/sauditourism/components/content/templates/general/general-card.html"
+     data-sly-use.stepperBulletsTemplate="/apps/sauditourism/components/content/templates/atoms/pagination/pag-01-slider-stepper-bullets.html"
+     data-sly-use.cwithSliderArrowsTemplate="/apps/sauditourism/components/content/headers/header-01-main/variants/c-with-slider-arrows.html"
+     data-sly-set.columnsCount="${columns || 3}"
+     data-sly-set.hideHeaderClass="${hideCarouselHeader ? 'hide-header' : ''}"
+     data-sly-set.header="${modelObj.header || modelObj.componentTitle}"
+     data-sly-set.cards="${modelObj.cards}"
+>
+
+  <div class="carousel-with-header columns-${columnsCount} ${hideHeaderClass} ${class}"
+       data-component="carousel-with-header" data-carousel-with-header
+       data-sly-attribute.data-editor="${wcmmode.edit ? 'true' : 'false'}">
+
+    <sly data-sly-call="${cwithSliderArrowsTemplate.cwithSliderArrows @ header=header, withControls=withControls}"></sly>
+
+    <div class="content-wrapper offset-container">
+      <sly data-sly-test="${isModalWindow}"
+           data-sly-call="${modalWindowTemplate.modalWindow @ model=modelObj, desktopProfile=desktopProfile,
+                mobileProfile=mobileProfile,
+                breakpointDesktop=breakpointDesktop,
+                breakpointMobile=breakpointMobile,
+                previewProfile=previewProfile,
+                breakpointPreview=breakpointPreview}"></sly>
+      <div class="carousel-wrapper cmp-carousel" data-carousel data-cmp-is="carousel"
+           data-sly-test="${!isModalWindow}">
+        <ul class="carousel-list cmp-carousel__content" data-carousel-list
+            data-sly-list.card="${cards}">
+          <sly data-sly-call="${generalCardTemplate.generalCard @
+              isModalWindow=false, card=card, imageIndex=cardList.index, favorite=favorite,
+              isCarousel=true, itemCount = itemCount || cardList.count,
+              desktopProfile=desktopProfile,
+                mobileProfile=mobileProfile,
+                breakpointDesktop=breakpointDesktop,
+                breakpointMobile=breakpointMobile,
+                previewProfile=previewProfile,
+                breakpointPreview=breakpointPreview}"></sly>
+        </ul>
+      </div>
+    </div>
+    <div class="bullets-wrapper cmp-carousel__actions" data-bullets-wrapper>
+      <sly data-sly-call="${stepperBulletsTemplate.sliderStepperBullets}"
+           data-sly-test="${cards}"></sly>
+    </div>
+  </div>
+</sly>

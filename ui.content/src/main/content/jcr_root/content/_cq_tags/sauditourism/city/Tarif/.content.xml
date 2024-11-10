@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Tarif"
+    jcr:title.ar="طريف"
+    jcr:title.de="Tarif"
+    jcr:title.es="Turaif"
+    jcr:title.fr="Tarif"
+    jcr:title.ja="タリーフ"
+    jcr:title.ru="Тураиф"
+    jcr:title.zh="图赖夫"
+    sling:resourceType="cq/tagging/components/tag"
+    city="tarif"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Jeddah, KAEC, Yanbu"
+    jcr:title.ar="جدة، مدينة الملك عبدالله الاقتصادية، ينبع"
+    jcr:title.de="Jeddah, KAEC, Yanbu"
+    jcr:title.es="Jeddah, KAEC, Yanbu"
+    jcr:title.fr="Jeddah, KAEC, Yanbu"
+    jcr:title.ja="Jeddah, KAEC, Yanbu"
+    jcr:title.ru="Jeddah, KAEC, Yanbu"
+    jcr:title.zh="Jeddah, KAEC, Yanbu"
+    sling:resourceType="cq/tagging/components/tag"/>

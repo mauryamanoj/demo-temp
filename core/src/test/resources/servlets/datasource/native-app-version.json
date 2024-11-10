@@ -1,0 +1,19 @@
+{
+  "appVersion": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "androidversion",
+      "value": "4.4.2",
+      "forceUpdateEnabled": true,
+      "message": "test to user"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "IOS",
+      "value": "1.3.3",
+      "forceUpdateEnabled": false,
+      "message": "Test to user"
+    }
+  }
+}

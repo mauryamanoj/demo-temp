@@ -1,0 +1,1091 @@
+{
+  "jcr:primaryType": "nt:folder",
+  "jcr:mixinTypes": [
+    "cq:ReplicationStatus"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+  "entertainer-cities": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Nov 17 2022 09:54:07 GMT+0100",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "entertainer cities",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/entertainer-cities-page",
+      "jcr:created": "Thu Nov 17 2022 09:54:07 GMT+0100",
+      "cq:lastModified": "Sun Nov 20 2022 10:57:35 GMT+0100",
+      "sling:resourceType": "sauditourism/components/structure/entertainer-cities-page",
+      "cq:lastModifiedBy": "admin",
+      "riyadh-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "1",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:lastModified": "Thu Nov 17 2022 10:24:08 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "test": {
+        "jcr:primaryType": "nt:unstructured",
+        "enfant": {
+          "jcr:primaryType": "nt:unstructured",
+          "preferredTripDaysCount": "42",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:lastModified": "Thu Nov 17 2022 11:28:56 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/city",
+          "image": {
+            "jcr:primaryType": "nt:unstructured"
+          }
+        }
+      },
+      "afif": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "12",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:lastModified": "Thu Nov 17 2022 11:31:40 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "null": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "3",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:lastModified": "Thu Nov 17 2022 12:12:36 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "String1-String2-String3": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "2",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:lastModified": "Thu Nov 17 2022 12:18:16 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "citieslist": {
+        "jcr:primaryType": "nt:unstructured",
+        "riyadh": {
+          "jcr:primaryType": "nt:unstructured",
+          "preferredTripDaysCount": "1",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:lastModified": "Thu Nov 17 2022 12:19:51 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/city",
+          "image": {
+            "jcr:primaryType": "nt:unstructured"
+          }
+        },
+        "al-sayeeh": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "destinationFeatureTags": [
+            "sauditourism:destination/art"
+          ],
+          "jcr:lastModified": "Thu Nov 17 2022 12:48:48 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/city",
+          "image": {
+            "jcr:primaryType": "nt:unstructured"
+          }
+        }
+      },
+      "citiesList": {
+        "jcr:primaryType": "nt:unstructured",
+        "riyadh": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "destinationFeatureTags": [
+            "sauditourism:destination/agriculture",
+            "sauditourism:destination/art"
+          ],
+          "image": "/content/dam/we-retail/en/activities/biking/cycling_1.jpg",
+          "jcr:lastModified": "Thu Nov 17 2022 19:32:35 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/entertainer-city",
+          "locationId": "tabuk-region",
+          "coordinates": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "latitude": "12",
+              "longitude": "12"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "latitude": "13",
+              "longitude": "13"
+            }
+          }
+        },
+        "abha": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:lastModified": "Sun Nov 20 2022 10:57:35 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/entertainer-city",
+          "coordinates": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "latitude": "12",
+              "longitude": "12"
+            }
+          }
+        },
+        "afif": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "destinationFeatureTags": [
+            "sauditourism:destination/cruises"
+          ],
+          "jcr:lastModified": "Thu Nov 17 2022 21:18:23 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/entertainer-city",
+          "locationId": "tabuk-region",
+          "coordinates": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "latitude": "2",
+              "longitude": "1"
+            }
+          }
+        },
+        "abu-arish": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "destinationFeatureTags": [
+            "sauditourism:destination/camping"
+          ],
+          "jcr:lastModified": "Thu Nov 17 2022 21:30:40 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/entertainer-city",
+          "locationId": "riyadh-region",
+          "coordinates": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "latitude": "1",
+              "longitude": "1"
+            }
+          }
+        },
+        "ahad-rufida": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:lastModified": "Thu Nov 17 2022 21:22:11 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/entertainer-city",
+          "locationId": "riyadh-region",
+          "coordinates": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "latitude": "2",
+              "longitude": "1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "multi-site-configs": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Multi Site Configs",
+      "jcr:versionHistory": "5114d83c-ff85-47ef-8e21-c3703c0ae477",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+      "jcr:predecessors": [
+        "4cbfafe4-c260-4fbf-8f94-b9a9a7dbe635"
+      ],
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:baseVersion": "4cbfafe4-c260-4fbf-8f94-b9a9a7dbe635",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "74635627-9b52-4640-9388-39182ab1dd93",
+      "sling:resourceType": "sauditourism/components/structure/configuration-page",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "arabic": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Arabic",
+        "jcr:versionHistory": "fee5f8d6-1565-43b7-af80-baebe7efa449",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "e25bb7f5-2714-4aa8-9790-f798950549dc"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/ar",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "e25bb7f5-2714-4aa8-9790-f798950549dc",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "37f64ebb-1fbc-4c19-973b-929b4c067919",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "chinese": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Chinese",
+        "jcr:versionHistory": "392b2552-293d-4354-9091-13259189a12d",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "83f05d8f-105b-46ed-9b7c-f3c7d6761c5a"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/zh",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "83f05d8f-105b-46ed-9b7c-f3c7d6761c5a",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "3848ec3e-2b27-4086-96cb-ea48ee5fb36a",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "deutsch": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Deutsch",
+        "jcr:versionHistory": "6e37b3d5-eb29-4041-8256-aea23144d2be",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "e0aced54-7975-48ee-b9a1-eb62a54fd693"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/de",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "e0aced54-7975-48ee-b9a1-eb62a54fd693",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "7a9591dd-5e8c-4fdd-9bba-c89731d9e84c",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "english": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "English",
+        "jcr:versionHistory": "7a9495c6-bdc2-4dcc-9fab-717df9426b73",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "bc30ac65-152e-45e6-b92b-a32221a82839"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/en",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "bc30ac65-152e-45e6-b92b-a32221a82839",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "04f17074-6760-40de-be04-5b42b903343b",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "espanol": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Espanol",
+        "jcr:versionHistory": "16fe4f37-5432-464d-84ec-615e64486d02",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "64b54cff-1f39-4b04-b199-a5af3183dabe"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/es",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "64b54cff-1f39-4b04-b199-a5af3183dabe",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "1534cfdb-eca6-414a-9c8b-730f2ed947b1",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "french": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "French",
+        "jcr:versionHistory": "deb3ffa9-4b1f-4a08-b5e7-59f4b4234c6f",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "3c3b843c-8328-4d3b-add6-ce2891a0f4a1"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/fr",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "3c3b843c-8328-4d3b-add6-ce2891a0f4a1",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "f8e1192e-f3d4-485f-a113-265976783609",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "japanese": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Japanese",
+        "jcr:versionHistory": "d514e457-a732-46a4-b8d6-fa604453e895",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "16c33905-19c0-432e-b9e2-c0100f1b190d"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/ja",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "16c33905-19c0-432e-b9e2-c0100f1b190d",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "6ee46578-ec1f-466b-9ca7-0184cdfbad59",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "russian": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Russian",
+        "jcr:versionHistory": "4b3f6fb9-e8b3-4dd2-aed1-5801370efbac",
+        "cq:template": "/conf/sauditourism/settings/wcm/templates/configuration-page",
+        "jcr:predecessors": [
+          "f3ef1b77-e71c-4d30-b93e-800f0df995da"
+        ],
+        "cq:redirectTarget": "/content/sauditourism/ru",
+        "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+        "jcr:baseVersion": "f3ef1b77-e71c-4d30-b93e-800f0df995da",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "5595adb7-a0a8-4e60-ba06-543d32eaf46f",
+        "sling:resourceType": "sauditourism/components/structure/configuration-page",
+        "root": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "responsivegrid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    }
+  },
+  "cities": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "cities",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "30b8c0eb-9c72-4fba-8f24-bb7ff759daf4",
+      "cq:template": "/conf/sauditourism/settings/wcm/templates/cities-page",
+      "cq:lastReplicatedBy": "dnaim@esensesoftware.com",
+      "jcr:predecessors": [
+        "7d2f0231-7b42-4ea6-b781-2561921ca331"
+      ],
+      "jcr:created": "Wed May 25 2022 11:49:55 GMT+0200",
+      "cq:lastReplicated": "Mon Oct 24 2022 15:26:50 GMT+0000",
+      "cq:lastModified": "Mon Oct 24 2022 15:26:27 GMT+0000",
+      "theme": "red",
+      "jcr:baseVersion": "7d2f0231-7b42-4ea6-b781-2561921ca331",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "9ff17ec1-771d-4ecc-a6da-449f926f6ed5",
+      "sling:resourceType": "sauditourism/components/structure/cities-page",
+      "hideInSiteMap": "false",
+      "searchHighlight": "false",
+      "cq:lastModifiedBy": "dnaim@esensesoftware.com",
+      "al-ahsa": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "4",
+        "mobileImage": "/content/dam/660x370_2.jpg",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/exploring",
+          "sauditourism:destination/nature",
+          "sauditourism:destination/heritage"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/adventures",
+          "sauditourism:cityCategories/nature",
+          "sauditourism:cityCategories/food-and-drink",
+          "sauditourism:cityCategories/culture-and-arts"
+        ],
+        "bestFeature": "sauditourism:cityBestFeatures/biggest-city",
+        "jcr:lastModified": "Tue Dec 22 2020 17:13:49 GMT+0100",
+        "desktopImage": "/content/dam/cruise/16579_660x370.jpg",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_ahasa_break_free_landing_page_winter_campaign_1920x1080_2.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_ahasa_break_free_landing_page_winter_campaign_1920x1080_2.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_ahasa_break_free_landing_page_winter_campaign_1920x1080_2.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_ahasa_break_free_landing_page_winter_campaign_1920x1080_2.jpg"
+        }
+      },
+      "riyadh": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "4",
+        "mobileImage": "/content/dam/Cable Cars of Abha_InArticle_2.jpg",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/urban",
+          "sauditourism:destination/food",
+          "sauditourism:destination/culture"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/conventions-and-exhibitions",
+          "sauditourism:cityCategories/shows-and-performing-arts",
+          "sauditourism:cityCategories/shopping-and-retail"
+        ],
+        "bestFeature": "sauditourism:cityBestFeatures/biggest-city",
+        "jcr:lastModified": "Tue Dec 22 2020 17:12:03 GMT+0100",
+        "desktopImage": "/content/dam/road-trip_desktop.png",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/riyadh_break_free_landing_page_winter_campaign_1920x1080_3.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/riyadh_break_free_landing_page_winter_campaign_1920x1080_3.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/riyadh_break_free_landing_page_winter_campaign_1920x1080_3.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/riyadh_break_free_landing_page_winter_campaign_1920x1080_3.jpg"
+        }
+      },
+      "jeddah": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "4",
+        "mobileImage": "/content/dam/saudi-tourism/media/makkah/brand-page-hero.jpg",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/urban",
+          "sauditourism:destination/art",
+          "sauditourism:destination/culture"
+        ],
+        "categoryTags": "sauditourism:cityCategories/food-and-drink",
+        "jcr:lastModified": "Tue Dec 22 2020 20:39:21 GMT+0100",
+        "desktopImage": "/content/dam/saudi-tourism/media/makkah/brand-page-hero.jpg",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/jeddah_break_free_landing_page_winter_campaign_1920x1080_6_light",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/jeddah_break_free_landing_page_winter_campaign_1920x1080_6_light.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/jeddah_break_free_landing_page_winter_campaign_1920x1080_6_light.jpg",
+          "s7mobileImageReference": "https://scth.scene7.com/is/image/scth/jeddah_break_free_landing_page_winter_campaign_1920x1080_6_light"
+        }
+      },
+      "asir": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/hike",
+          "sauditourism:destination/nature",
+          "sauditourism:destination/history"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:33:47 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/1920x1080_Asir-1",
+          "fileReference": "/content/dam/saudi-tourism/media/Red_Sea_Route/RSR_landing_and_detail_pages/Asir_National_Park/1920x1080_Asir.png",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/Red_Sea_Route/RSR_landing_and_detail_pages/Asir_National_Park/375x667_Asir.png",
+          "s7mobileImageReference": "https://scth.scene7.com/is/image/scth/375x667_Asir-1"
+        }
+      },
+      "taif": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "3",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/hike",
+          "sauditourism:destination/exploring",
+          "sauditourism:destination/history"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 20:39:37 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/1920x1080_Explore-11",
+          "fileReference": "/content/dam/saudi-tourism/media/Red_Sea_Route/RSR_landing_and_detail_pages/Explore_Taif/1920x1080_Explore.png",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/Red_Sea_Route/RSR_landing_and_detail_pages/Explore_Taif/375x667_Explore.png",
+          "s7mobileImageReference": "https://scth.scene7.com/is/image/scth/375x667_Explore-10"
+        }
+      },
+      "al-baha": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/camping",
+          "sauditourism:destination/exploring",
+          "sauditourism:destination/history"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:09:15 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_baha_break_free_landing_page_winter_campaign_1920x1080_13_light.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_baha_break_free_landing_page_winter_campaign_1920x1080_13_light.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_baha_break_free_landing_page_winter_campaign_1920x1080_13_light.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/al_baha_break_free_landing_page_winter_campaign_1920x1080_13_light.jpg"
+        }
+      },
+      "tabuk": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "3",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/heritage",
+          "sauditourism:destination/food",
+          "sauditourism:destination/history"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/sightseeing",
+          "sauditourism:cityCategories/adventures",
+          "sauditourism:cityCategories/conventions-and-exhibitions"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 20:37:54 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/tabuk_break_free_landing_page_winter_campaign_1920x1080_7.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/tabuk_break_free_landing_page_winter_campaign_1920x1080_7.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/tabuk_break_free_landing_page_winter_campaign_1920x1080_7.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/tabuk_break_free_landing_page_winter_campaign_1920x1080_7.jpg"
+        }
+      },
+      "jazan": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/water-activities",
+          "sauditourism:destination/food",
+          "sauditourism:destination/culture"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:10:54 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/jazan_break_free_landing_page_winter_campaign_1920x1080_14.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/jazan_break_free_landing_page_winter_campaign_1920x1080_14.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/jazan_break_free_landing_page_winter_campaign_1920x1080_14.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/jazan_break_free_landing_page_winter_campaign_1920x1080_14.jpg"
+        }
+      },
+      "dammam": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "2",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/camping",
+          "sauditourism:destination/sand-skiing",
+          "sauditourism:destination/exploring"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:10:12 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/dammam_break_free_landing_page_winter_campaign_1920x1080_1.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/dammam_break_free_landing_page_winter_campaign_1920x1080_1.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/dammam_break_free_landing_page_winter_campaign_1920x1080_1.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/dammam_break_free_landing_page_winter_campaign_1920x1080_1.jpg"
+        }
+      },
+      "al-khobar": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:lastModified": "Tue Oct 27 2020 00:05:45 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/shutterstock_286224719 (2)",
+          "fileReference": "/content/dam/saudi-tourism/media/red-sea-route-/rsr-landing-and-detail-pages/al-khobar-waterfront/shutterstock_286224719 (2).jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/red-sea-route-/rsr-landing-and-detail-pages/al-khobar-waterfront/shutterstock_286224719 (2).jpg",
+          "s7mobileImageReference": "https://scth.scene7.com/is/image/scth/shutterstock_286224719 (2)"
+        }
+      },
+      "diriyah": {
+        "jcr:primaryType": "nt:unstructured",
+        "preferredTripDaysCount": "2",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/heritage",
+          "sauditourism:destination/food",
+          "sauditourism:destination/shopping"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:12:59 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/ad_diriyah_break_free_landing_page_winter_campaign_1920x1080_5.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/ad_diriyah_break_free_landing_page_winter_campaign_1920x1080_5.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/ad_diriyah_break_free_landing_page_winter_campaign_1920x1080_5.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/ad_diriyah_break_free_landing_page_winter_campaign_1920x1080_5.jpg"
+        }
+      },
+      "king-abdullah-economic-city": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/fishing",
+          "sauditourism:destination/golfing",
+          "sauditourism:destination/cruises"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/culture-and-arts",
+          "sauditourism:cityCategories/shows-and-performing-arts",
+          "sauditourism:cityCategories/themed-attractions"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 20:39:02 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/kaec_break_free_landing_page_winter_campaign_1920x1080_9.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/kaec_break_free_landing_page_winter_campaign_1920x1080_9.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/kaec_break_free_landing_page_winter_campaign_1920x1080_9.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/kaec_break_free_landing_page_winter_campaign_1920x1080_9.jpg"
+        }
+      },
+      "alula": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/history",
+          "sauditourism:destination/culture",
+          "sauditourism:destination/nature"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:14:27 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg"
+        }
+      },
+      "yanbu": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/diving",
+          "sauditourism:destination/beach",
+          "sauditourism:destination/sea"
+        ],
+        "jcr:lastModified": "Wed Mar 16 2022 14:44:21 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/AlNawrasBeach_1920x1080",
+          "fileReference": "/content/dam/saudi-tourism/media/red-sea-route-/summer-campaign-articles/batch_1/8---yanbu---the-family-friendly-shores-of-yanbu/1920x1080/AlNawrasBeach_1920x1080.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/destination-hero-images/yanbu_hero_desktop.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/destination-hero-images/yanbu_hero_desktop.jpg"
+        }
+      },
+      "hail": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/history",
+          "sauditourism:destination/sand-skiing",
+          "sauditourism:destination/shopping"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:13:22 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/no-dynamic-media-folder/manifest-batch3r/destination-page-hail/destination_page_hail_hero_secondary.jpg",
+          "fileReference": "/content/dam/no-dynamic-media-folder/manifest-batch3r/destination-page-hail/destination_page_hail_hero_secondary.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/hail_break_free_landing_page_winter_campaign_1920x1080_10.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/hail_break_free_landing_page_winter_campaign_1920x1080_10.jpg"
+        }
+      },
+      "al-jouf": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "dnaim@esensesoftware.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/history",
+          "sauditourism:destination/food",
+          "sauditourism:destination/culture"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/themed-attractions",
+          "sauditourism:cityCategories/digital",
+          "sauditourism:cityCategories/shopping-and-retail"
+        ],
+        "jcr:lastModified": "Mon Oct 24 2022 15:26:27 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/destination-al-jouf",
+          "fileReference": "/content/dam/home-page/destination-al-jouf.jpg",
+          "mobileImageReference": "/content/dam/articles/batch-1/saudi-agriculture-the-al-jouf-olive-farm/al-jouf.jpg",
+          "s7mobileImageReference": "https://scth.scene7.com/is/image/scth/al-jouf"
+        }
+      },
+      "abha": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/hike",
+          "sauditourism:destination/nature",
+          "sauditourism:destination/history"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:09:52 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/asir_break_free_landing_page_winter_campaign_1920x1080_12_light.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/asir_break_free_landing_page_winter_campaign_1920x1080_12_light.jpg",
+          "mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/asir_break_free_landing_page_winter_campaign_1920x1080_12_light.jpg",
+          "s7mobileImageReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/asir_break_free_landing_page_winter_campaign_1920x1080_12_light.jpg"
+        }
+      },
+      "riyadh-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/shopping",
+          "sauditourism:destination/food",
+          "sauditourism:destination/culture",
+          "sauditourism:destination/art",
+          "sauditourism:destination/camping",
+          "sauditourism:destination/exploring",
+          "sauditourism:destination/golfing",
+          "sauditourism:destination/heritage",
+          "sauditourism:destination/hike",
+          "sauditourism:destination/history",
+          "sauditourism:destination/mountains",
+          "sauditourism:destination/nature",
+          "sauditourism:destination/sand-skiing",
+          "sauditourism:destination/urban"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/sightseeing",
+          "sauditourism:cityCategories/adventures",
+          "sauditourism:cityCategories/sport"
+        ],
+        "jcr:lastModified": "Sun Aug 28 2022 11:08:15 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "tabuk-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "categoryTags": [
+          "sauditourism:cityCategories/nature",
+          "sauditourism:cityCategories/food-and-drink",
+          "sauditourism:cityCategories/digital"
+        ],
+        "jcr:lastModified": "Thu Nov 26 2020 16:53:50 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "eastern-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/camping",
+          "sauditourism:destination/sand-skiing",
+          "sauditourism:destination/heritage"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/nature",
+          "sauditourism:cityCategories/digital",
+          "sauditourism:cityCategories/shopping-and-retail"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:15:46 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "makkah-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/mountains",
+          "sauditourism:destination/sea",
+          "sauditourism:destination/culture"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:16:06 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "al-jouf-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/history",
+          "sauditourism:destination/food",
+          "sauditourism:destination/culture"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 17:29:25 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "al-qassim-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "anas.afadar@mediamonks.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/exploring",
+          "sauditourism:destination/heritage",
+          "sauditourism:destination/agriculture"
+        ],
+        "jcr:lastModified": "Mon Jan 18 2021 18:31:08 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "jazan-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/water-activities",
+          "sauditourism:destination/food",
+          "sauditourism:destination/culture"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 21:39:35 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "asir-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/hike",
+          "sauditourism:destination/nature",
+          "sauditourism:destination/history"
+        ],
+        "jcr:lastModified": "Tue Dec 22 2020 21:40:03 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "hail-region": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "yerbol.balkenov@mediamonks.com",
+        "categoryTags": [
+          "sauditourism:cityCategories/shopping-and-retail"
+        ],
+        "jcr:lastModified": "Tue Dec 08 2020 09:29:56 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      },
+      "madinah": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "francesco.lo.bello@mediamonks.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/culture",
+          "sauditourism:destination/history",
+          "sauditourism:destination/heritage"
+        ],
+        "categoryTags": [
+          "sauditourism:cityCategories/culture-and-arts",
+          "sauditourism:cityCategories/shopping-and-retail"
+        ],
+        "jcr:lastModified": "Thu Jan 21 2021 11:10:45 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/no-dynamic-media-folder/manifest-batch3b/destination-page--medina-/destination_page_medina_hero_secondary.jpg",
+          "fileReference": "/content/dam/no-dynamic-media-folder/manifest-batch3b/destination-page--medina-/destination_page_medina_hero_secondary.jpg"
+        }
+      },
+      "makkah": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/culture",
+          "sauditourism:destination/history",
+          "sauditourism:destination/heritage"
+        ],
+        "jcr:lastModified": "Wed Mar 16 2022 14:35:43 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/no-dynamic-media-folder/manifest-batch3b/destination-page--mecca/destination_page_makkah_map__1.jpg",
+          "fileReference": "/content/dam/no-dynamic-media-folder/manifest-batch3b/destination-page--mecca/destination_page_makkah_map__1.jpg"
+        }
+      },
+      "al-wajh": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:lastModified": "Thu Jun 24 2021 01:36:12 GMT+0200",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/Wajh_1920x1080",
+          "fileReference": "/content/dam/saudi-tourism/media/red-sea-route-/rsr-landing-and-detail-pages/updated-imagery/1920x1080/Wajh_1920x1080.jpg"
+        }
+      },
+      "al-namas": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/exploring"
+        ],
+        "jcr:lastModified": "Wed Nov 17 2021 19:22:46 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/AlNamas_break_free_landing_page_winter_campaign_1920x1080.jpg.jpg",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/AlNamas_break_free_landing_page_winter_campaign_1920x1080.jpg.jpg"
+        }
+      },
+      "duba": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "destinationFeatureTags": [
+          "sauditourism:destination/exploring"
+        ],
+        "jcr:lastModified": "Wed Nov 17 2021 19:29:28 GMT+0100",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/Duba_break_free_landing_page_winter_campaign_1920x1080.jpg.png",
+          "fileReference": "/content/dam/saudi-tourism/media/new-hero-destinations-winter/Duba_break_free_landing_page_winter_campaign_1920x1080.jpg.png"
+        }
+      },
+      "tanomah": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "nsaleh@esensesoftware.com",
+        "destinationFeatureTags": [
+          "sauditourism:destination/exploring",
+          "sauditourism:destination/hike",
+          "sauditourism:destination/nature"
+        ],
+        "jcr:lastModified": "Wed Aug 31 2022 09:38:42 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/city",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "s7fileReference": "https://scth.scene7.com/is/image/scth/explore-tanomah",
+          "fileReference": "/content/dam/saudi-tourism/media/abha-/explore-tanomah.jpg"
+        }
+      }
+    }
+  }
+}

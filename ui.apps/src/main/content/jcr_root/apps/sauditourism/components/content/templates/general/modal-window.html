@@ -1,0 +1,157 @@
+<sly data-sly-template.modalWindow="${@ model, breakpoint, isOpenButton, iconName, iconClass, desktopProfile,
+mobileProfile, breakpointDesktop, breakpointMobile, previewProfile, breakpointPreview,
+photoGallery}"
+     data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"
+     data-sly-use.generalCardTemplate="/apps/sauditourism/components/content/templates/general/general-card.html"
+     data-sly-use.c05GalleryCard="/apps/sauditourism/components/content/templates/molecules/cards/c-05-gallery-card.html"
+     data-sly-use.sliderControlsTemplate="/apps/sauditourism/components/content/templates/general/slider-controls.html"
+     data-sly-use.imageTemplate="/apps/sauditourism/components/content/templates/general/picture.html"
+     data-sly-use.youtubeVideo="/apps/sauditourism/components/content/templates/general/youtube-video.html"
+     data-sly-use.videoTemplate="/apps/sauditourism/components/content/templates/general/inline-video.html"
+     data-sly-use.fullOverlayTemplate="/apps/sauditourism/components/content/templates/general/full-overlay.html"
+     data-sly-use.icon01SimpleTemplate="/apps/sauditourism/components/content/templates/atoms/icons/icon-01-simple.html"
+     data-sly-set.cards="${model.cards}">
+  <div class="modal-window" data-component="modal-window"
+       data-sly-set.videoSrc="${model.videoReference}"
+       data-sly-set.youtubeSrc="${model.youtubeReference}"
+       data-sly-set.isYoutube="${model.videoType == 'youtube'}"
+       data-sly-set.videoLink="${videoSrc || youtubeSrc}"
+  >
+
+    <div class="photo-gallery-wrapper"
+         data-images="${cardsAmount > model.GRID_PHOTOS_AMOUNT ? model.GRID_PHOTOS_AMOUNT : cardsAmount}-image"
+         data-sly-list.card="${cards}"
+         data-sly-set.additionalPhotosAmount="${model.additionalPhotosAmount}"
+         data-sly-test="${photoGallery && cards}"
+         data-sly-set.cardsAmount="${cards.size}">
+      <sly data-sly-call="${generalCardTemplate.generalCard @ card=card, imageIndex=cardList.index,
+              isModalWindow=true, isCarousel=true}"
+           data-sly-test="${cardList.index < model.GRID_PHOTOS_AMOUNT}"></sly>
+      <div class="image-quantity"
+           data-sly-test="${cardList.index == model.GRID_LAST_PHOTO_INDEX && additionalPhotosAmount > 0}">
+        <span class="heading-3 white-text">+ ${additionalPhotosAmount}</span>
+        <p class="copy-text white-text" data-sly-test="${additionalPhotosAmount > 1}">
+          ${'PHOTOS' @i18n}</p>
+        <p class="copy-text white-text" data-sly-test="${additionalPhotosAmount == 1}">
+          ${'PHOTO' @i18n}</p>
+      </div>
+    </div>
+    <sly data-sly-test="${!photoGallery}">
+      <sly data-sly-test="${videoLink}">
+        <div class="poster-image-wrapper">
+          <div data-sly-test="${model.title}"
+               class="title-and-overlay-wrapper">
+            <sly data-sly-call="${fullOverlayTemplate.fullOverlay @ noBottom=true}"></sly>
+            <h3 class="title ${model.layout == 'full-bleed' ? 'to-grid' : ''}">${model.title}</h3>
+          </div>
+          <sly data-sly-call="${imageTemplate.pictureObj @
+                  imageDesktop=model.s7imageReference || model.imageReference, imageMobile=model.s7mobileImageReference || model.mobileImageReference,
+                  altText=model.alt, breakpoint=breakpoint, desktopProfile=desktopProfile,
+                mobileProfile=mobileProfile, breakpointDesktop=breakpointDesktop, breakpointMobile=breakpointMobile}"></sly>
+          <div class="open-modal-button" data-open-modal
+               data-sly-test="${isOpenButton}">
+            <button class="open-modal-button-element">
+              <sly data-sly-call="${icon01SimpleTemplate.iconSimple @ name='play', desktopSize='18',
+                    mobileSize='22'}"></sly>
+            </button>
+          </div>
+        </div>
+      </sly>
+      <div class="carousel-wrapper cmp-carousel" data-carousel data-cmp-is="carousel"
+           data-sly-test="${model.cards}">
+        <ul class="carousel-list cmp-carousel__content" data-carousel-list
+            data-sly-list.card="${model.cards}">
+          <sly data-sly-call="${c05GalleryCard.galleryCard @ card=card, index=cardList.index}"></sly>
+        </ul>
+      </div>
+    </sly>
+
+    <div class="modal-window-popup" data-modal-is-active="false" data-modal-window-popup>
+      <button class="modal-background" data-modal-background></button>
+      <div class="component-wrapper modal-content-wrapper">
+        <button class="close-modal-button" data-close-modal>
+          <sly data-sly-call="${iconTemplate.icon @ iconName='close',
+              iconClass='close-icon'}"></sly>
+        </button>
+        <div class="media-wrapper offset-container" data-media-wrapper>
+
+          <sly data-sly-test="${isYoutube}">
+            <div data-single-video-element data-youtube-media-element="true"
+                   data-sly-test="${youtubeSrc}">
+              <sly data-sly-call="${youtubeVideo.youtubeVideo @
+                youtubeId=youtubeSrc}"></sly>
+            </div>
+          </sly>
+          <sly data-sly-test="${!isYoutube}">
+            <video controls data-single-video-element data-media-element data-youtube-media-element="false"
+                   data-sly-test="${videoSrc}">
+              <source src="${videoSrc @ context='uri'}" type="video/mp4">
+            </video>
+          </sly>
+          <div class="modal-element-wrapper" data-modal-element-wrapper
+               data-sly-test="${model.cards}">
+            <ul class="modal-element-list" data-modal-element-list
+                data-sly-list.card="${model.cards}">
+              <sly data-sly-set.isVideo="${card.videoPath || card.youtubeReference}"></sly>
+              <sly data-sly-test="${!isVideo}">
+                <li class="modal-element-item" data-modal-element-item
+                    data-index="${cardList.index}">
+                  <sly data-sly-call="${imageTemplate.pictureObj @
+                imageDesktop=card.image.s7fileReference||card.image.fileReference,
+                desktopProfile=previewProfile, isPreviewImage=true,
+                breakpointDesktop=breakpointPreview}"></sly>
+                </li>
+              </sly>
+              <sly data-sly-test="${isVideo}" data-sly-set.isYoutube="${card.videoType == 'youtube'}">
+                <sly data-sly-test="${!isYoutube}">
+                  <li data-sly-test="${card.videoPath}" class="modal-element-item" data-modal-element-item
+                      data-index="${cardList.index}" data-youtube-video-element="false">
+                    <video data-video-element data-media-element>
+                      <source src="${card.videoPath @ context='uri'}" type="video/mp4">
+                    </video>
+                  </li>
+                </sly>
+                <sly data-sly-test="${isYoutube}">
+                  <li data-sly-test="${card.youtubeReference}" class="modal-element-item"
+                      data-modal-element-item data-index="${cardList.index}">
+                    <sly data-sly-call="${youtubeVideo.youtubeVideo @
+                  youtubeId=card.youtubeReference}"></sly>
+                  </li>
+                </sly>
+              </sly>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-and-controls-wrapper offset-container"
+             data-sly-test="${model.cards}">
+          <div class="carousel-wrapper" data-modal-carousel>
+            <ul class="info-general-wrapper" data-items-container
+                data-sly-list.card="${model.cards}">
+              <li class="info-wrapper" data-item
+                  data-sly-test="${card.title || card.description || photoGallery}">
+                <span class="inner-wrapper">
+                  <span class="title heading-5 white-text"
+                        data-sly-test="${card.title}">${card.title}</span>
+                  <p class="description copy white-text"
+                        data-sly-test="${card.description}">${card.description}</p>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="controls-wrapper">
+            <sly data-sly-call="${sliderControlsTemplate.slideControlsObj}"></sly>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fullscreen-wrapper" data-transition-visual data-sly-test="${videoSrc}">
+      <ul class="visual-container">
+        <li class="visual">
+          <sly data-sly-call="${videoTemplate.video @ extraClass='full-screen fullscreen-video', firstVideo='true'}">
+          </sly>
+        </li>
+      </ul>
+    </div>
+  </div>
+</sly>

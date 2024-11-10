@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description="Types of accommodations."
+          jcr:primaryType="cq:Tag"
+          jcr:title="Accommodation"
+          jcr:title.ar="إقامة"
+          jcr:title.de="Unterkunft"
+          jcr:title.es="Alojamiento"
+          jcr:title.fr="Hébergement"
+          jcr:title.ja="宿泊施設"
+          jcr:title.ru="Проживание"
+          jcr:title.zh="住宿"
+          sling:resourceType="cq/tagging/components/tag">
+    <type/>
+</jcr:root>
+

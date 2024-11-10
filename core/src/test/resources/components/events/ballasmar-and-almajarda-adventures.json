@@ -1,0 +1,186 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Wed Nov 24 2021 07:45:56 GMT+0000",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:mixinTypes":[
+      "mix:versionable"
+    ],
+    "startTime":"Sun Aug 01 2021 09:00:00 GMT+0300",
+    "priceText":"Price",
+    "getDirectionCtaLink":"https://www.google.com.sa/maps/@24.6778394,46.6222821,15z",
+    "getDirectionCtaText":"Get direction on Map",
+    "jcr:createdBy":"admin",
+    "averageTime":"2",
+    "jcr:title":"Ballasmar and Almajarda Adventures",
+    "headingLocationDetailType":"h1",
+    "showOnMap":"true",
+    "locationLabel":"I am a label, edit me",
+    "locationTitle":"I am a location title, edit me",
+    "description":"I am a description, edit me",
+    "cq:lastReplicationAction":"Activate",
+    "endTime":"Sun Aug 01 2021 22:00:00 GMT+0300",
+    "noCacheHeaderCdn":"false",
+    "jcr:versionHistory":"7dc73e91-d3c6-4399-bdcd-7eb8ff75ffb0",
+    "freePaid":"paid",
+    "noCacheHeaderDispatcher":"false",
+    "isHalaYallaLink":"true",
+    "priceValue":"1000 SAR",
+    "latitude":"18.891699284377015",
+    "externalLink":"#",
+    "addressInfo":"Jeddah, 12345, test street",
+    "cq:template":"/conf/sauditourism/settings/wcm/templates/event-details",
+    "cq:lastReplicatedBy":"bdiafallah@sta.gov.sa",
+    "streetNumber":"4",
+    "showHoursTitle":"I am a show hours title, edit me",
+    "addressDetail":"I am an address detail, edit me",
+    "address":"I am an address, edit me",
+    "roundTheClock":"false",
+    "templateType":"new",
+    "region":"Western Province",
+    "season":"riyadh-season",
+    "street":"test",
+    "eventLink-url":"https://vs-test-web.halayalla.rocks/sa-en/sta/packages/60ce196e4f2e4d6ab33224c4/book",
+    "eventLink-copy":"Buy Tickets",
+    "calendarEndDate":"Thu May 18 2023 00:00:00 GMT+0300",
+    "venueTags":[
+      "sauditourism:events/shopping-retail"
+    ],
+    "jcr:predecessors":[
+      "256fec7b-5a46-4d4e-9608-e3e673e8ae3f"
+    ],
+    "jcr:created":"Wed Nov 24 2021 07:45:56 GMT+0000",
+    "featured":"false",
+    "cq:lastReplicated":"Tue Oct 04 2022 14:15:14 GMT+0000",
+    "cq:lastModified":"Tue Oct 04 2022 09:51:18 GMT+0000",
+    "eventLink-targetInNewWindow":"true",
+    "accessibilityText":"Accessibilty",
+    "locationName":"Jeddah",
+    "city":"riyadh",
+    "copy":"Ballasmer &amp; Almajarda Adventures have various events and activities for adventure lovers from hiking and mountain camping, to stargazing, yoga sessions, shooting and mountain biking.\r\n*Entry is for covid immune only.",
+    "zoom":"4",
+    "noSeasonTitle":"Ballasmar and Almajarda Adventures",
+    "s7featureEventImage":"https://scth.scene7.com/is/image/scth/event-slide-mobile-01-12",
+    "image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "phone":"I am a phone number, edit me",
+    "theme":"red",
+    "title":"Ballasmar & Almajarda Adventures",
+    "longitude":" 42.168671910934385",
+    "locationInDetailLabel":"I am a location label, edit me",
+    "headingType":"h1",
+    "categoryTags":[
+      "sauditourism:events/central",
+      "sauditourism:events/digital",
+      "sauditourism:events/dining",
+      "sauditourism:events/eastern"
+    ],
+    "locationDistance":"1",
+    "readMoreButton":"Read more",
+    "jcr:baseVersion":"256fec7b-5a46-4d4e-9608-e3e673e8ae3f",
+    "s7image":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/default-300x200.jpg",
+    "jcr:isCheckedOut":true,
+    "pageAuthor":"contentAuthors",
+    "imageListing":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/listing-630x358.jpg",
+    "mapType":"google",
+    "pageTitle":"Ballasmar & Almajarda Adventures | Visit Saudi Official Website",
+    "eventIntro":"I am an intro, edit me",
+    "eventTitle":"I am a title edit me",
+    "jcr:uuid":"68af2751-012b-496e-a959-5068333cde6f",
+    "ctaText":"CTA, edit me",
+    "addToCalendarText":"Add to Calendar",
+    "accessibiltyValue":"Ramps, etc",
+    "sling:resourceType":"sauditourism/components/structure/event-detail-page",
+    "headingshowHoursType":"h1",
+    "calendarStartDate":"Wed Jun 08 2022 00:00:00 GMT+0300",
+    "workingTimeText":"time",
+    "textIsRich":"true",
+    "hideInSiteMap":"false",
+    "featureEventImage":"/content/dam/saudi-tourism/media/homepage/760x570/event-slide-mobile-01.jpg",
+    "searchHighlight":"false",
+    "disableSecondaryNav":true,
+    "location":"I am a location, edit me",
+    "cq:lastModifiedBy":"bdiafallah@sta.gov.sa",
+    "imageMobile":"/etc/designs/sauditourism/us/redesign/default-images/t06-event-detail-page/small-140x140.jpg",
+    "activities":[
+      "sauditourism:events/Performing-Arts"
+    ],
+    "navTitle":"Ballasmar & Almajarda Adventures | Visit Saudi Official Website",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "header-block":{
+        "jcr:primaryType":"nt:unstructured",
+        "ctaTitle":"I am a title, edit me",
+        "title":"I am a title, edit me",
+        "ctaLink":"#",
+        "ctaText":"CTA, edit me",
+        "sling:resourceType":"sauditourism/components/content/headerblock",
+        "backTitle":"I am a title, edit me",
+        "backLink":"#",
+        "backText":"CTA, edit me",
+        "small":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/default-750x560.jpg"
+        },
+        "medium":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/medium-1366x660.jpg"
+        },
+        "large":{
+          "jcr:primaryType":"nt:unstructured",
+          "s7fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg",
+          "focalpoint":"left top",
+          "fileReference":"/etc/designs/sauditourism/us/redesign/default-images/cc44-header-block/large-1920x940.jpg"
+        }
+      },
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "detail-hero":{
+      "jcr:primaryType":"nt:unstructured",
+      "setSubtitleBelow":"false",
+      "subtitleWeight":"h1",
+      "jcr:lastModifiedBy":"ohasan-c@sta.gov.sa",
+      "interactiveVideo":"false",
+      "title":"Ballasmar and Almajarda Adventures",
+      "showFullHeight":"false",
+      "titleWeight":"h1",
+      "hideFav":"false",
+      "jcr:lastModified":"Tue Jun 07 2022 09:42:58 GMT+0000",
+      "sling:resourceType":"sauditourism/components/content/h03-detail-hero/v2/h03-detail-hero",
+      "textIsRich":"true",
+      "link":{
+        "jcr:primaryType":"nt:unstructured",
+        "url":[
+          "",
+          ""
+        ],
+        "copy":[
+          "",
+          ""
+        ],
+        "targetInNewWindow":"false"
+      },
+      "caption":{
+        "jcr:primaryType":"nt:unstructured"
+      },
+      "image":{
+        "jcr:primaryType":"nt:unstructured",
+        "s7fileReference":"https://scth.scene7.com/is/image/scth/event-slide-mobile-01-12",
+        "fileReference":"/content/dam/saudi-tourism/media/homepage/760x570/event-slide-mobile-01.jpg",
+        "mobileImageReference":"/content/dam/saudi-tourism/media/homepage/760x570/event-slide-mobile-01.jpg",
+        "s7mobileImageReference":"https://scth.scene7.com/is/image/scth/event-slide-mobile-01-12"
+      },
+      "video":{
+        "jcr:primaryType":"nt:unstructured"
+      }
+    }
+  }
+}

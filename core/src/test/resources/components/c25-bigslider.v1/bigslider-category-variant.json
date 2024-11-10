@@ -1,0 +1,28 @@
+{
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Wed Jun 29 2022 16:24:27 GMT+0200",
+  "path":[
+    "/content/sauditourism/en/do/adventure-activities/standing-on-the-edge-of-the-world",
+    "/content/sauditourism/en/do/adventure-activities/4-top-scuba-sites-near-jeddah"
+  ],
+  "variant":"category",
+  "jcr:lastModified":"Sun Jul 03 2022 10:02:41 GMT+0200",
+  "sling:resourceType":"sauditourism/components/content/c25-big-slider/v1/c25-big-slider",
+  "ornamentId":"07A",
+  "componentHeading":{
+    "jcr:primaryType":"nt:unstructured",
+    "heading":{
+      "jcr:primaryType":"nt:unstructured",
+      "weight":"h2",
+      "text":"Hello I'm a big slider"
+    },
+    "link":{
+      "jcr:primaryType":"nt:unstructured",
+      "url":"/content/sauditourism/en/about-e-visa",
+      "copy":"Open",
+      "targetInNewWindow":"true"
+    }
+  }
+}

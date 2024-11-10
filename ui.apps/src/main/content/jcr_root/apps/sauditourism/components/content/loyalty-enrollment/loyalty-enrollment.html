@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.saudi.tourism.core.models.components.loyalty.v1.LoyaltyEnrollmentModel"
+     data-sly-use.templates="/apps/sauditourism/components/content/templates/general/templates.html">
+    <sly data-sly-call="${templates.placeholder @ isEmpty = !title}"></sly>
+    <div data-component="LoyaltyEnrollment" data-props="${model.json @context='text'}"></div>
+</sly>

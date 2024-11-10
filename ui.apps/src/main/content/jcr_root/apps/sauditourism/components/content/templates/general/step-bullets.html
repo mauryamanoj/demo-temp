@@ -1,0 +1,14 @@
+<sly data-sly-template.stepBullets="${@ extraClass, slides, dataId}">
+  <sly
+      data-sly-use.iconTemplate="/apps/sauditourism/components/content/templates/general/icon.html"></sly>
+  <div class="step-bullets ${ extraClass ? extraClass : ''}" data-id="${dataId}"
+  data-component="step-bullets">
+  <ul class="step-list" data-cmp-hook-carousel="indicators">
+    <sly data-sly-list.slide="${slides}">
+    <li class="step" data-cmp-hook-carousel="indicator" data-step-bullet>
+      <sly data-sly-call="${iconTemplate.icon @ iconName='diamond-filled'}"></sly>
+    </li>
+    </sly>
+  </ul>
+  </div>
+</sly>

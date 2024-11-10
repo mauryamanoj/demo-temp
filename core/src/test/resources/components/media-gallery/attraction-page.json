@@ -1,0 +1,56 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Sun Nov 26 2023 23:01:59 GMT+0100",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Jedda Bob Attraction",
+    "cq:template": "/conf/sauditourism/settings/wcm/templates/attraction-page",
+    "searchCategories": [
+      "sauditourism:searchCategories/FestivalsEvents"
+    ],
+    "noLoginModal": "false",
+    "jcr:created": "Sun Nov 26 2023 23:01:59 GMT+0100",
+    "cq:lastModified": "Mon Dec 04 2023 09:48:19 GMT+0100",
+    "branding": "visitsaudi",
+    "theme": "red",
+    "referencedFragmentPath": "/content/dam/sauditourism/cf/en/attractions/jeddah-bobattraction",
+    "pageAuthor": "contentAuthors",
+    "sling:resourceType": "sauditourism/components/structure/attraction-page",
+    "hideInSiteMap": "false",
+    "searchHighlight": "false",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "gallery_section": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Mon Dec 04 2023 09:48:19 GMT+0100",
+          "jcr:lastModified": "Mon Dec 04 2023 09:48:19 GMT+0100",
+          "sling:resourceType": "sauditourism/components/content/gallery-section"
+        }
+      },
+      "promotion_banner": {
+        "jcr:primaryType": "nt:unstructured",
+        "height": "small",
+        "jcr:lastModifiedBy": "admin",
+        "showArrows": "false",
+        "jcr:lastModified": "Sun Nov 05 2023 16:22:50 GMT+0000",
+        "sling:resourceType": "sauditourism/components/content/promotional-banner",
+        "hideImageBrush": "false",
+        "logoSize": "small",
+        "logo": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:lastModified": "Sun Nov 05 2023 16:22:50 GMT+0000"
+        }
+      }
+    }
+  }
+}

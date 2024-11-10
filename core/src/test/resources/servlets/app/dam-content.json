@@ -1,0 +1,422 @@
+{
+  "jcr:primaryType": "sling:Folder",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Media",
+    "imageProfile": "/conf/global/settings/dam/adminui-extension/imageprofile/Test-IP",
+    "sourcing": "false",
+    "folderThumbnail": {
+      "jcr:primaryType": "nt:file",
+      "jcr:content": {
+        "jcr:primaryType": "nt:unstructured",
+        "dam:folderThumbnailPaths": [
+          "/content/dam/saudi-tourism/media/test.jpg"
+        ],
+        "height": 240,
+        "bgcolor": -1,
+        "width": 280,
+        ":jcr:data": 36274
+      }
+    }
+  },
+  "s7image.jpg" : {
+    "jcr:primaryType": "dam:Asset",
+    "jcr:mixinTypes": [
+      "mix:referenceable"
+    ],
+    "jcr:uuid": "128252c2-2f9e-4798-b776-2cf620beec5c",
+    "jcr:content": {
+      "jcr:primaryType": "dam:AssetContent",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "status": "Finished",
+      "ips-job-handle": [
+        "j|26268||CQ5_batch_upload_jason_1587032122080|148326084"
+      ],
+      "dam:imageServerAsset": true,
+      "dam:s7damType": "Image",
+      "dam:assetState": "processed",
+      "renditions": {
+        "jcr:primaryType": "nt:folder",
+        "cq5dam.thumbnail.48.48.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 2742
+          }
+        },
+        "cq5dam.thumbnail.140.100.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 9431
+          }
+        },
+        "cq5dam.web.1280.1280.jpeg": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 107923
+          }
+        },
+        "original": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 2330447
+          }
+        },
+        "cq5dam.thumbnail.319.319.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 64548
+          }
+        }
+      },
+      "related": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "metadata": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable"
+        ],
+        "dam:Physicalheightininches": "76.0",
+        "dam:Physicalwidthininches": "50.66666793823242",
+        "dam:Fileformat": "JPEG",
+        "dam:Progressive": "no",
+        "tiff:ImageLength": 5472,
+        "dam:scene7CompanyID": "c|26268",
+        "dam:extracted": "Thu Apr 16 2020 12:15:22 GMT+0200",
+        "dc:format": "image/jpeg",
+        "dam:Bitsperpixel": 24,
+        "dam:scene7ID": "a|443299050",
+        "dam:scene7CloudConfigPath": "/conf/global/settings/cloudconfigs/dmscene7",
+        "dam:MIMEtype": "image/jpeg",
+        "dam:Physicalwidthindpi": 72,
+        "dam:Physicalheightindpi": 72,
+        "dam:scene7FileStatus": "PublishComplete",
+        "dam:scene7File": "scth/woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Name": "woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Type": "Image",
+        "dam:Numberofimages": 1,
+        "dam:scene7UploadTimeStamp": "Thu Apr 16 2020 12:15:54 GMT+0200",
+        "dam:Numberoftextualcomments": 0,
+        "tiff:ImageWidth": 3648,
+        "dam:scene7Domain": "http://s7g10.scene7.com/",
+        "dam:scene7Folder": "scth/media/smart-crop-test/",
+        "dam:sha1": "617cc3b69df9c12c6bc7873ce3090bcdeee11909",
+        "dam:size": 2330447,
+        "dam:scene7APIServer": "https://s7sps3apissl.scene7.com",
+        "dam:scene7LastModified": 1587032154626
+      }
+    }
+  },
+  "s7image-non-published.jpg" : {
+    "jcr:primaryType": "dam:Asset",
+    "jcr:mixinTypes": [
+      "mix:referenceable"
+    ],
+    "jcr:uuid": "128252c2-2f9e-4798-b776-2cf620beec5c",
+    "jcr:content": {
+      "jcr:primaryType": "dam:AssetContent",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "status": "Finished",
+      "ips-job-handle": [
+        "j|26268||CQ5_batch_upload_jason_1587032122080|148326084"
+      ],
+      "dam:imageServerAsset": true,
+      "dam:s7damType": "Image",
+      "dam:assetState": "processed",
+      "renditions": {
+        "jcr:primaryType": "nt:folder",
+        "cq5dam.thumbnail.48.48.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 2742
+          }
+        },
+        "cq5dam.thumbnail.140.100.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 9431
+          }
+        },
+        "cq5dam.web.1280.1280.jpeg": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 107923
+          }
+        },
+        "original": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 2330447
+          }
+        },
+        "cq5dam.thumbnail.319.319.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 64548
+          }
+        }
+      },
+      "related": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "metadata": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable"
+        ],
+        "dam:Physicalheightininches": "76.0",
+        "dam:Physicalwidthininches": "50.66666793823242",
+        "dam:Fileformat": "JPEG",
+        "dam:Progressive": "no",
+        "tiff:ImageLength": 5472,
+        "dam:scene7CompanyID": "c|26268",
+        "dam:extracted": "Thu Apr 16 2020 12:15:22 GMT+0200",
+        "dc:format": "image/jpeg",
+        "dam:Bitsperpixel": 24,
+        "dam:scene7ID": "a|443299050",
+        "dam:scene7CloudConfigPath": "/conf/global/settings/cloudconfigs/dmscene7",
+        "dam:MIMEtype": "image/jpeg",
+        "dam:Physicalwidthindpi": 72,
+        "dam:Physicalheightindpi": 72,
+        "dam:scene7FileStatus": "PublishIncomplete",
+        "dam:scene7File": "scth/woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Name": "woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Type": "Image",
+        "dam:Numberofimages": 1,
+        "dam:scene7UploadTimeStamp": "Thu Apr 16 2020 12:15:54 GMT+0200",
+        "dam:Numberoftextualcomments": 0,
+        "tiff:ImageWidth": 3648,
+        "dam:scene7Domain": "http://s7g10.scene7.com/",
+        "dam:scene7Folder": "scth/media/smart-crop-test/",
+        "dam:sha1": "617cc3b69df9c12c6bc7873ce3090bcdeee11909",
+        "dam:size": 2330447,
+        "dam:scene7APIServer": "https://s7sps3apissl.scene7.com",
+        "dam:scene7LastModified": 1587032154626
+      }
+    }
+  },
+  "s7image-wo-domain-property.jpg" : {
+    "jcr:primaryType": "dam:Asset",
+    "jcr:mixinTypes": [
+      "mix:referenceable"
+    ],
+    "jcr:uuid": "128252c2-2f9e-4798-b776-2cf620beec5c",
+    "jcr:content": {
+      "jcr:primaryType": "dam:AssetContent",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "status": "Finished",
+      "ips-job-handle": [
+        "j|26268||CQ5_batch_upload_jason_1587032122080|148326084"
+      ],
+      "dam:imageServerAsset": true,
+      "dam:s7damType": "Image",
+      "dam:assetState": "processed",
+      "renditions": {
+        "jcr:primaryType": "nt:folder",
+        "cq5dam.thumbnail.48.48.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 2742
+          }
+        },
+        "cq5dam.thumbnail.140.100.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 9431
+          }
+        },
+        "cq5dam.web.1280.1280.jpeg": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 107923
+          }
+        },
+        "original": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 2330447
+          }
+        },
+        "cq5dam.thumbnail.319.319.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 64548
+          }
+        }
+      },
+      "related": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "metadata": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable"
+        ],
+        "dam:Physicalheightininches": "76.0",
+        "dam:Physicalwidthininches": "50.66666793823242",
+        "dam:Fileformat": "JPEG",
+        "dam:Progressive": "no",
+        "tiff:ImageLength": 5472,
+        "dam:scene7CompanyID": "c|26268",
+        "dam:extracted": "Thu Apr 16 2020 12:15:22 GMT+0200",
+        "dc:format": "image/jpeg",
+        "dam:Bitsperpixel": 24,
+        "dam:scene7ID": "a|443299050",
+        "dam:scene7CloudConfigPath": "/conf/global/settings/cloudconfigs/dmscene7",
+        "dam:MIMEtype": "image/jpeg",
+        "dam:Physicalwidthindpi": 72,
+        "dam:Physicalheightindpi": 72,
+        "dam:scene7FileStatus": "PublishIncomplete",
+        "dam:scene7File": "scth/woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Name": "woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Type": "Image",
+        "dam:Numberofimages": 1,
+        "dam:scene7UploadTimeStamp": "Thu Apr 16 2020 12:15:54 GMT+0200",
+        "dam:Numberoftextualcomments": 0,
+        "tiff:ImageWidth": 3648,
+        "dam:scene7Domain": "",
+        "dam:scene7Folder": "scth/media/smart-crop-test/",
+        "dam:sha1": "617cc3b69df9c12c6bc7873ce3090bcdeee11909",
+        "dam:size": 2330447,
+        "dam:scene7APIServer": "https://s7sps3apissl.scene7.com",
+        "dam:scene7LastModified": 1587032154626
+      }
+    }
+  },
+  "s7image-wo-file-property.jpg" : {
+    "jcr:primaryType": "dam:Asset",
+    "jcr:mixinTypes": [
+      "mix:referenceable"
+    ],
+    "jcr:uuid": "128252c2-2f9e-4798-b776-2cf620beec5c",
+    "jcr:content": {
+      "jcr:primaryType": "dam:AssetContent",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "status": "Finished",
+      "ips-job-handle": [
+        "j|26268||CQ5_batch_upload_jason_1587032122080|148326084"
+      ],
+      "dam:imageServerAsset": true,
+      "dam:s7damType": "Image",
+      "dam:assetState": "processed",
+      "renditions": {
+        "jcr:primaryType": "nt:folder",
+        "cq5dam.thumbnail.48.48.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 2742
+          }
+        },
+        "cq5dam.thumbnail.140.100.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 9431
+          }
+        },
+        "cq5dam.web.1280.1280.jpeg": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 107923
+          }
+        },
+        "original": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/jpeg",
+            ":jcr:data": 2330447
+          }
+        },
+        "cq5dam.thumbnail.319.319.png": {
+          "jcr:primaryType": "nt:file",
+          "jcr:content": {
+            "jcr:primaryType": "oak:Resource",
+            "jcr:mimeType": "image/png",
+            ":jcr:data": 64548
+          }
+        }
+      },
+      "related": {
+        "jcr:primaryType": "nt:unstructured"
+      },
+      "metadata": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable"
+        ],
+        "dam:Physicalheightininches": "76.0",
+        "dam:Physicalwidthininches": "50.66666793823242",
+        "dam:Fileformat": "JPEG",
+        "dam:Progressive": "no",
+        "tiff:ImageLength": 5472,
+        "dam:scene7CompanyID": "c|26268",
+        "dam:extracted": "Thu Apr 16 2020 12:15:22 GMT+0200",
+        "dc:format": "image/jpeg",
+        "dam:Bitsperpixel": 24,
+        "dam:scene7ID": "a|443299050",
+        "dam:scene7CloudConfigPath": "/conf/global/settings/cloudconfigs/dmscene7",
+        "dam:MIMEtype": "image/jpeg",
+        "dam:Physicalwidthindpi": 72,
+        "dam:Physicalheightindpi": 72,
+        "dam:scene7FileStatus": "PublishIncomplete",
+        "dam:scene7File": "",
+        "dam:scene7Name": "woman-in-black-hijab-taking-selfie-4029925",
+        "dam:scene7Type": "Image",
+        "dam:Numberofimages": 1,
+        "dam:scene7UploadTimeStamp": "Thu Apr 16 2020 12:15:54 GMT+0200",
+        "dam:Numberoftextualcomments": 0,
+        "tiff:ImageWidth": 3648,
+        "dam:scene7Domain": "http://s7g10.scene7.com/",
+        "dam:scene7Folder": "scth/media/smart-crop-test/",
+        "dam:sha1": "617cc3b69df9c12c6bc7873ce3090bcdeee11909",
+        "dam:size": 2330447,
+        "dam:scene7APIServer": "https://s7sps3apissl.scene7.com",
+        "dam:scene7LastModified": 1587032154626
+      }
+    }
+  }
+}

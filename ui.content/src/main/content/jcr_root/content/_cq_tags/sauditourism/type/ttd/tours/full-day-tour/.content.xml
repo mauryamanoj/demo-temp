@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Full Day Tour"
+          jcr:title.ar="جولة يوم كامل"
+          jcr:title.de="Tagesausflug"
+          jcr:title.es="Tour de día completo"
+          jcr:title.fr="Visite d'une journée complète"
+          jcr:title.ja="フルデイツアー"
+          jcr:title.ru="Полный дневной тур"
+          jcr:title.zh="全日游"
+          sling:resourceType="cq/tagging/components/tag"/>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Biggest city"
+          jcr:title.de="Größte Stadt"
+          jcr:title.es="La ciudad más grande"
+          jcr:title.ru="Самый большой город"
+          jcr:title.zh="最大的城市"
+          jcr:title.fr="La plus grande ville"
+          jcr:title.ar="أكبر مدينة"
+          jcr:title.ja="最大の都市"
+          sling:resourceType="cq/tagging/components/tag"/>

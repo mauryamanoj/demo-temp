@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Islands"
+          jcr:title.ar="جزر"
+          jcr:title.de="Inseln"
+          jcr:title.es="Islas"
+          jcr:title.fr="Îles"
+          jcr:title.ja="島々"
+          jcr:title.ru="Острова"
+          jcr:title.zh="岛屿"
+          sling:resourceType="cq/tagging/components/tag"/>

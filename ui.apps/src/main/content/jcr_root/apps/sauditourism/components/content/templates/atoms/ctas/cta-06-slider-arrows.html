@@ -1,0 +1,30 @@
+<template data-sly-template.cta06SliderArrows="${@ orientation, class, hasAnimation, nextOnly,
+            previousOnly, backgroundColor, variant}"
+          data-sly-use.cta13IconButton="/apps/sauditourism/components/content/templates/atoms/ctas/cta-13-icon-button.html">
+  <div class="cta-06-slider-arrows control-wrapper cmp-carousel__actions
+       orientation-${orientation} ${class} ${hasAnimation ? 'has-animation' : ''}"
+       data-component="cta-06-slider-arrows">
+    <div class="control-offset-wrapper">
+      <div data-sly-test="${!nextOnly}"
+           class="button-container"
+           data-sly-call="${cta13IconButton.cta13IconButtons @ icon='arrow-left-small',
+              dataButton='previous', background=backgroundColor, variant=variant,
+              class='previous carousel-control cmp-carousel__action cmp-carousel__action--previous'}">
+        <sly data-sly-test="${hasAnimation}"
+             data-sly-call="${cta13IconButton.cta13IconButtons @ icon='arrow-left-small',
+              background=backgroundColor, variant=variant,
+              class='previous-2'}"></sly>
+      </div>
+      <div data-sly-test="${!previousOnly}"
+           class="button-container"
+           data-sly-call="${cta13IconButton.cta13IconButtons @ icon='arrow-right-small',
+              dataButton='next', background=backgroundColor, variant=variant,
+              class='next carousel-control cmp-carousel__action cmp-carousel__action--next'}">
+        <sly data-sly-test="${hasAnimation}"
+             data-sly-call="${cta13IconButton.cta13IconButtons @ icon='arrow-right-small',
+              background=backgroundColor, variant=variant,
+              class='next-2'}"></sly>
+      </div>
+    </div>
+  </div>
+</template>

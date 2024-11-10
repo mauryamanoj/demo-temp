@@ -1,0 +1,121 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"3679f545-63a9-4abe-83ef-fe6cdd452492",
+  "jcr:predecessors":[
+    "96c81f80-f4e6-4732-8726-d429b922708f"
+  ],
+  "jcr:created":"Tue Nov 07 2023 22:00:45 GMT+0100",
+  "jcr:baseVersion":"96c81f80-f4e6-4732-8726-d429b922708f",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"a3265e62-baa5-4dd3-b1d3-87784ff17899",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:title":"Riyadh Season",
+    "jcr:lastModifiedBy":"admin",
+    "contentFragment":true,
+    "cq:name":"riyadh-season",
+    "jcr:lastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+    "lastFragmentSave":"Tue Nov 07 2023 22:01:47 GMT+0100",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/seasons",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Tue Nov 07 2023 22:00:45 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/season",
+        "@stringArray@variations":[
+
+        ],
+        "boolean@hideReadMore":false,
+        "string@title":"Riyadh Season",
+        "string@iconAlignement":"left",
+        "double@lat":24.774265,
+        "double@lng":46.738586,
+        "boolean@hideShare":false,
+        "boolean@hideFavorite":false,
+        "jcr:uuid":"7134b38c-cd6c-4909-87df-513219cf628d",
+        "string@alertColor":"Grey",
+        "stringArray@images":[
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/Holding image red wall.jpg\",\"s7image\":\"https://scth.scene7.com/is/image/scthacc/Holding image red wall\",\"alt\":\"\"}"
+        ]
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/season",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "title@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "hideReadMore@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "openingHoursLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "ticketDetails@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "openNowLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "aboutDescription@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "hideShare@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "lat@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "images":[
+          "{\"type\":\"image\",\"image\":\"/content/dam/sauditourism/Holding image red wall.jpg\",\"s7image\":\"https://scth.scene7.com/is/image/scthacc/Holding image red wall\",\"alt\":\"\"}"
+        ],
+        "hideFavorite@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "timings@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "tags@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "lng@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "readMoreLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "ticketDetails@ContentType":"text/html",
+        "ticketsPriceSuffix@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "placeholder@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "hideReadMore":false,
+        "ticketsCtaLink@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "lat":24.774265,
+        "lng":46.738586,
+        "tags":[
+          ""
+        ],
+        "title":"Riyadh Season",
+        "aboutTitle@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "s7image@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "iconAlignement@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "comingSoonLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "hideShare":false,
+        "closedNowLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "ticketType@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "ticketPrice@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "hideFavorite":false,
+        "expiredLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "ticketsCtaLabel@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "endDate@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "startDate@LastModified":"Tue Nov 07 2023 22:00:45 GMT+0100",
+        "images@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "iconAlignement":"left",
+        "alertColor@LastModified":"Tue Nov 07 2023 22:01:47 GMT+0100",
+        "alertColor":"Grey"
+      }
+    }
+  }
+}

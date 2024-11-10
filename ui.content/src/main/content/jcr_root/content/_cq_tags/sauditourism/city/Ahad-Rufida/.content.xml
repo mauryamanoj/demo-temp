@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description=""
+    jcr:primaryType="cq:Tag"
+    jcr:title="Ahad Rufida"
+    jcr:title.ar="أحد رفيدة"
+    jcr:title.de="Ahad Rafida"
+    jcr:title.es="Ahad Rufida"
+    jcr:title.fr="Ahad Rufida"
+    jcr:title.ja="アハド・ラフィダ"
+    jcr:title.ru="Ахад-Рафида"
+    jcr:title.zh="阿哈德鲁菲达"
+    sling:resourceType="cq/tagging/components/tag"
+    city="ahad-rufida"/>

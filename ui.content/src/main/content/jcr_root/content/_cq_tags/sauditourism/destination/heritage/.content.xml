@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Heritage"
+          jcr:title.ar="التراث"
+          jcr:title.de="Kulturelles Erbe"
+          jcr:title.es="Patrimonio"
+          jcr:title.fr="Patrimoine"
+          jcr:title.ja="遺産"
+          jcr:title.ru="Наследие"
+          jcr:title.zh="遗产"
+          sling:resourceType="cq/tagging/components/tag"/>

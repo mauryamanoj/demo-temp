@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>footer page</title>
+	<meta name="template" content="page-content" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="page basicpage" data-page-theme="purple">
+
+	<div data-component="MainMenu" data-props="{
+		&#34;userMenu&#34;: {
+		  &#34;registerLabel&#34;: &#34;Log In / Sign Up&#34;,
+		  &#34;signOutLabel&#34;: &#34;Sign Out&#34;,
+		  &#34;welcomeLabel&#34;: &#34;Welcome&#34;,
+		  &#34;userApi&#34;: {
+			&#34;ssidLoginUrl&#34;: &#34;/bin/api/v1/ssid/login-url&#34;,
+			&#34;domain&#34;: &#34;uat-ssid.visitsaudi.com&#34;,
+			&#34;clientId&#34;: &#34;114df34f05fdd859540c28704c6f7921dd162eb03c70c265516d634d080dcd38&#34;,
+			&#34;ssidUserInfo&#34;: &#34;https://qa-revamp.visitsaudi.com/bin/api/v1/ssid/userInfo&#34;,
+			&#34;ssidLogoutUrl&#34;: &#34;/bin/api/v1/ssid/logout&#34;,
+			&#34;getProfile&#34;: &#34;/bin/api/v2/user/get.profile&#34;,
+			&#34;getTripPlansEndpoint&#34;: &#34;/bin/api/v2/user/get.trips&#34;,
+			&#34;updateProfile&#34;: &#34;/bin/api/v2/user/update.profile&#34;,
+			&#34;getFavorites&#34;: &#34;/bin/api/v2/user/get.favorites&#34;
+		  },
+		  &#34;subMenu&#34;: [
+			{
+			  &#34;iconName&#34;: &#34;userCircle&#34;,
+			  &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+			  &#34;label&#34;: &#34;Personal info&#34;
+			},
+			{
+			  &#34;iconName&#34;: &#34;heartMenu&#34;,
+			  &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+			  &#34;label&#34;: &#34;Favorites&#34;
+			},
+			{
+			  &#34;iconName&#34;: &#34;bookingMenu&#34;,
+			  &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+			  &#34;label&#34;: &#34;Bookings&#34;
+			},
+			{
+			  &#34;iconName&#34;: &#34;tripsMenu&#34;,
+			  &#34;url&#34;: &#34;/content/sauditourism/en.html&#34;,
+			  &#34;label&#34;: &#34;Saved Trips&#34;
+			}
+		  ]
+		},
+		&#34;searchBox&#34;: {
+		&#34;suggestionsEndpoint&#34;: &#34;/bin/api/solr/search&#34;,
+		&#34;searchPagePath&#34;: &#34;/search-result.html&#34;,
+		&#34;cancelLabel&#34;: &#34;Cancel&#34;,
+		&#34;clearLabel&#34;: &#34;Clear&#34;,
+		&#34;clearHistoryLabel&#34;: &#34;Clear Hisyory&#34;,
+		&#34;trendingBlock&#34;: &#34;&#34;,
+		&#34;searchLabel&#34;: &#34;Search&#34;,
+		&#34;searchModalTitle&#34;: &#34;Search&#34;,
+		&#34;recentSearchLabel&#34;: &#34;Recent search&#34;,
+		&#34;trending&#34;: {
+		  &#34;title&#34;: &#34;Trending&#34;,
+		  &#34;items&#34;:[
+		  {
+			&#34;ctaLabel&#34;: &#34;Medina&#34;,
+			&#34;ctaLink&#34;: &#34;/en/see-do/destinations/medina&#34;
+		  },
+		  {
+			&#34;ctaLabel&#34;: &#34;Jeddah&#34;,
+			&#34;ctaLink&#34;: &#34;/en/see-do/destinations/medina&#34;
+		  }]
+		}
+		},
+		&#34;logo&#34;: {
+		  &#34;desktopImage&#34;: &#34;/content/dam/sauditourism/header/icon/logo1/logo1-en.svg&#34;,
+		  &#34;mobileImage&#34;: &#34;/content/dam/sauditourism/header/icon/logo1/logo1-mobile.svg&#34;
+		},
+		&#34;data&#34;: [
+		  {
+			&#34;title&#34;: &#34;Destinations &#34;,
+			&#34;ctaLink&#34;: &#34;https://qa-revamp.visitsaudi.com/en/revamp/destinations/saudi-destinations&#34;,
+			&#34;data&#34;: [
+			  {
+				&#34;image&#34;: {
+				  &#34;fileReference&#34;: &#34;/content/dam/travel-regulations/Travel_Regulations_Banner.jpg&#34;,
+				  &#34;mobileImageReference&#34;: &#34;/content/dam/travel-regulations/Travel_Regulations_Banner.jpg&#34;,
+				  &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner&#34;,
+				  &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner&#34;,
+				  &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-660x337?defaultImage\u003dTravel_Regulations_Banner&#34;,
+				  &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-600x600?defaultImage\u003dTravel_Regulations_Banner&#34;,
+				  &#34;breakpoints&#34;: [
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-660x337?defaultImage\u003dTravel_Regulations_Banner\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+					  &#34;media&#34;: &#34;(max-width: 768px)&#34;
+					},
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-600x600?defaultImage\u003dTravel_Regulations_Banner\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+					}
+				  ],
+				  &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/Travel_Regulations_Banner:crop-660x337?defaultImage\u003dTravel_Regulations_Banner\u0026wid\u003d375\u0026hei\u003d191&#34;
+				},
+				&#34;ctaLabel&#34;: &#34;Saudi&#34;,
+				&#34;ctaLink&#34;: &#34;/en/revamp/destinations/saudi-destinations&#34;
+			  }
+			]
+		  },
+		  {
+			&#34;title&#34;: &#34;Things To Do&#34;,
+			&#34;ctaLink&#34;: &#34;/en/revamp/see-do/nature&#34;,
+			&#34;viewAllLabel&#34;: &#34;View All&#34;,
+			&#34;viewAllLink&#34;: &#34;/en/revamp/Traveler-Destinations&#34;,
+			&#34;data&#34;: [
+			  {
+				&#34;image&#34;: {
+				  &#34;fileReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+				  &#34;mobileImageReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+				  &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+				  &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+				  &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+				  &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+				  &#34;breakpoints&#34;: [
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+					  &#34;media&#34;: &#34;(max-width: 768px)&#34;
+					},
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+					}
+				  ],
+				  &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191&#34;
+				},
+				&#34;ctaLabel&#34;: &#34;Nature&#34;,
+				&#34;ctaLink&#34;: &#34;/en/revamp/see-do/nature&#34;
+			  },
+			  {
+				&#34;image&#34;: {
+				  &#34;fileReference&#34;: &#34;/content/dam/shopping Rectangle (1).png&#34;,
+				  &#34;mobileImageReference&#34;: &#34;/content/dam/shopping Rectangle (1).png&#34;,
+				  &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/shopping Rectangle (1)&#34;,
+				  &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scthacc/shopping Rectangle (1)&#34;,
+				  &#34;desktopImage&#34;: &#34;&#34;,
+				  &#34;mobileImage&#34;: &#34;&#34;,
+				  &#34;breakpoints&#34;: [
+					{
+					  &#34;srcset&#34;: &#34;?wid\u003d375\u0026hei\u003d191 375w&#34;,
+					  &#34;media&#34;: &#34;(max-width: 768px)&#34;
+					},
+					{
+					  &#34;srcset&#34;: &#34;?wid\u003d375\u0026hei\u003d375 375w&#34;
+					}
+				  ],
+				  &#34;defaultImage&#34;: &#34;?wid\u003d375\u0026hei\u003d191&#34;
+				},
+				&#34;ctaLabel&#34;: &#34;Shopping&#34;,
+				&#34;ctaLink&#34;: &#34;/en/revamp/see-do/shopping&#34;
+			  },
+			  {
+				&#34;image&#34;: {
+				  &#34;fileReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+				  &#34;mobileImageReference&#34;: &#34;/content/dam/NEW-summer-campaign-app-960x1280.jpg&#34;,
+				  &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+				  &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280&#34;,
+				  &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+				  &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280&#34;,
+				  &#34;breakpoints&#34;: [
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+					  &#34;media&#34;: &#34;(max-width: 768px)&#34;
+					},
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-600x600?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+					}
+				  ],
+				  &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/NEW-summer-campaign-app-960x1280:crop-660x337?defaultImage\u003dNEW-summer-campaign-app-960x1280\u0026wid\u003d375\u0026hei\u003d191&#34;
+				},
+				&#34;ctaLabel&#34;: &#34;Nature&#34;,
+				&#34;ctaLink&#34;: &#34;/en/revamp/see-do/nature&#34;
+			  }
+			]
+		  },
+		  {
+			&#34;title&#34;: &#34;Plan your trip&#34;,
+			&#34;ctaLink&#34;: &#34;/en/test/sprint6/menu-demo/plan-your-trip&#34;,
+			&#34;viewAllLabel&#34;: &#34;View All&#34;,
+			&#34;viewAllLink&#34;: &#34;/en/test/sprint6/menu-demo/plan-your-trip&#34;,
+			&#34;data&#34;: [
+			  {
+				&#34;image&#34;: {
+				  &#34;fileReference&#34;: &#34;/content/dam/summer_season_banner.jpg&#34;,
+				  &#34;mobileImageReference&#34;: &#34;/content/dam/summer_season_banner.jpg&#34;,
+				  &#34;s7fileReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner&#34;,
+				  &#34;s7mobileImageReference&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner&#34;,
+				  &#34;desktopImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-660x337?defaultImage\u003dsummer_season_banner&#34;,
+				  &#34;mobileImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-600x600?defaultImage\u003dsummer_season_banner&#34;,
+				  &#34;breakpoints&#34;: [
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-660x337?defaultImage\u003dsummer_season_banner\u0026wid\u003d375\u0026hei\u003d191 375w&#34;,
+					  &#34;media&#34;: &#34;(max-width: 768px)&#34;
+					},
+					{
+					  &#34;srcset&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-600x600?defaultImage\u003dsummer_season_banner\u0026wid\u003d375\u0026hei\u003d375 375w&#34;
+					}
+				  ],
+				  &#34;defaultImage&#34;: &#34;https://s7e5a.scene7.com/is/image/scth/summer_season_banner:crop-660x337?defaultImage\u003dsummer_season_banner\u0026wid\u003d375\u0026hei\u003d191&#34;
+				},
+				&#34;ctaLabel&#34;: &#34;Visa regulation&#34;,
+				&#34;ctaLink&#34;: &#34;/en/test/sprint6/menu-demo/plan-your-trip/visa-regulation&#34;
+			  }
+			]
+		  },
+		  {
+			&#34;title&#34;: &#34;Saudi Calendar&#34;,
+			&#34;ctaLink&#34;: &#34;/en/calendar&#34;,
+			&#34;data&#34;: []
+		  },
+		  {
+			&#34;title&#34;: &#34;Saudi Map&#34;,
+			&#34;ctaLink&#34;: &#34;https://map.visitsaudi.com/en&#34;,
+			&#34;data&#34;: []
+		  }
+		],
+		&#34;languages&#34;: {
+		  &#34;label&#34;: &#34;Language&#34;,
+		  &#34;data&#34;: [
+			{
+			  &#34;ctaLabel&#34;: &#34;AR - العربية&#34;,
+			  &#34;ctaLink&#34;: &#34;/ar&#34;,
+			  &#34;isSelected&#34;: false
+			},
+			{
+			  &#34;ctaLabel&#34;: &#34;FR - FRANÇAIS&#34;,
+			  &#34;ctaLink&#34;: &#34;/fr&#34;,
+			  &#34;isSelected&#34;: false
+			},
+			{
+			  &#34;ctaLabel&#34;: &#34;EN - ENGLISH&#34;,
+			  &#34;ctaLink&#34;: &#34;/en&#34;,
+			  &#34;isSelected&#34;: true
+			},
+			{
+			  &#34;ctaLabel&#34;: &#34;DE - DEUTSCH&#34;,
+			  &#34;ctaLink&#34;: &#34;/de&#34;,
+			  &#34;isSelected&#34;: false
+			},
+			{
+			  &#34;ctaLabel&#34;: &#34;RU - РУССКИЙ&#34;,
+			  &#34;ctaLink&#34;: &#34;/ru&#34;,
+			  &#34;isSelected&#34;: false
+			},
+			{
+			  &#34;ctaLabel&#34;: &#34;ZH - 中文&#34;,
+			  &#34;ctaLink&#34;: &#34;/zh&#34;,
+			  &#34;isSelected&#34;: false
+			}
+		  ]
+		},
+		&#34;evisa&#34;: {
+		  &#34;title&#34;: &#34;Get your Visa &#34;,
+		  &#34;link&#34;: &#34;/en/travel-regulations&#34;
+		}
+	  }"></div>
+
+	<div data-component="Footer" data-props='
+	{
+		"fragmentNewsletter": {
+			"title": "SUBSCRIBE TO OUR NEWSLETTER",
+			"placeholder": "Your email address",
+			"ctaLabel": "Join",
+			"invalidEmailMessage": "Invalid Email Address.",
+			"successMessage": "Subscribed successfully.",
+			"failureMessage": "Something went wrong.",
+			"apiUrl": "https://middleware-qa.visitsaudi.com/v1/ssid/mailchimp/storeMail"
+		},
+		"fragmentDownloads": {
+			"title": "DOWNLOAD VISIT SAUDI APP",
+			"ctaImageList": [
+				{
+					"ctaImage": "/content/dam/footer-images/Button GooglePlay White.svg",
+					"ctaLink": "https://play.google.com/store/apps/details?id=sa.gov.apps.sauditourism&pli=1",
+					"isOpenInNewTab": false
+				},
+				{
+					"ctaImage": "/content/dam/footer-images/Button Appstore White.svg",
+					"ctaLink": "https://apps.apple.com/us/app/visit-saudi-%D8%B1%D9%88%D8%AD-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/id818179871",
+					"isOpenInNewTab": false
+				},
+				{
+					"ctaImage": "/content/dam/footer-images/Store Badges - Website.svg",
+					"ctaLink": "https://appgallery.huawei.com/app/C101699859?sharePrepath=ag&locale=en_US&source=appshare&subsource=C101699859&shareTo=com.Slack&shareFrom=appmarket&shareIds=71b67a2fd8684bdf933520b72c27743f_com.Slack&callType=SHARE",
+					"isOpenInNewTab": false
+				}
+			],
+			"joinCta": "CTA"
+		},
+		"fragmentGroup": {
+			"orientation": "Horizontal",
+			"patternType": "1"
+		},
+		"fragmentBranding": {
+			"visitSaudiLogo": "/content/dam/sauditourism/footer/icon/saudi.svg/en.svg",
+			"visitSaudiLogoLink": "/content/sauditourism/en",
+			"poweredBy": "Powered by ",
+			"staLogo": "https://qa-revamp.visitsaudi.com/content/dam/sauditourism/footer/icon/logo2/stalogo_purple.png",
+			"staLogoLink": "/content/sauditourism/en"
+		},
+		"fragmentInternalLinks": {
+			"titleLink": "DISCOVER SAUDI",
+			"ctaList": [
+				{
+					"ctaLabel": "Destinations",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/revamp/destinations/saudi-destinations.html",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Things To Do",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/revamp/see-do/nature",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Plan Your Trip",
+					"ctaLink": "/content/sauditourism/en/revamp/plan-your-trip",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Saudi Calendar",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/calendar",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Saudi Map",
+					"ctaLink": "https://map.visitsaudi.com/en?_gl=1*430qd2*_gcl_au*NTE0NzU5OTU5LjE2OTY4MzUwNDk.&_ga=2.29101820.1109682096.1701587050-387327049.1701179400",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Nusuk",
+					"ctaLink": "https://www.nusuk.sa/",
+					"isOpenInNewTab": true
+				}
+			]
+		},
+		"fragmentExternalLinks": {
+			"titleLink": "BUSINESS & PARTNERS",
+			"ctaList": [
+				{
+					"ctaLabel": "Saudi Expert",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Marketplace",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "STOCH",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Brand Portal",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "E-Learning",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Business Directory",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				}
+			]
+		},
+		"fragmentContact": {
+			"titleLink": "CALL CENTER",
+			"ctaList": [
+				{
+					"ctaLabel": "Help center",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/revamp/help-center",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Contact us",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/revamp/contact-us",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Start a Whatsapp chat",
+					"ctaLink": "/content/sauditourism/en",
+					"isOpenInNewTab": true
+				}
+			]
+		},
+		"ctaListIcon": [
+			{
+				"iconLabel": "Facebook",
+				"iconLink": "https://www.facebook.com/VisitSaudi",
+				"isOpenInNewTab": true
+			},
+			{
+				"iconLabel": "Instagram",
+				"iconLink": "https://www.instagram.com/visitsaudi/",
+				"isOpenInNewTab": true
+			},
+			{
+				"iconLabel": "Youtube",
+				"iconLink": "https://www.youtube.com/channel/UCmFRhhc6Gt8b4bSUmTzNIoA",
+				"isOpenInNewTab": true
+			},
+			{
+				"iconLabel": "Twitter",
+				"iconLink": "https://twitter.com/VisitSaudi",
+				"isOpenInNewTab": true
+			}
+		],
+		"fragmentContainer": {
+			"copyrights": "Copyrights ©2023 All rights reserved. Saudi Tourism Authority",
+			"upArrowCta": "CTA",
+			"ctaList": [
+				{
+					"ctaLabel": "Privacy policy",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/revamp/Privacy-Policy",
+					"isOpenInNewTab": true
+				},
+				{
+					"ctaLabel": "Cookies",
+					"ctaLink": "https://qa-revamp.visitsaudi.com/en/revamp/cookies",
+					"isOpenInNewTab": true
+				}
+			]
+		}
+	}
+	'></div>
+
+
+</body>
+
+</html>

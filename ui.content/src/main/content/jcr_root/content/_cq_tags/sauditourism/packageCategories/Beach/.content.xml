@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Beach"
+          jcr:title.ar="الشاطئ"
+          jcr:title.fr="Plage"
+          jcr:title.es="Playa"
+          jcr:title.ru="Пляж"
+          jcr:title.de="Strand"
+          jcr:title.zh="海滩"
+          jcr:title.ja="ビーチ"
+          sling:resourceType="cq/tagging/components/tag"/>

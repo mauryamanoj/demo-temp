@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Destination Guide Cards"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <cardsConfiguration
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Destination Cards Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <c-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                size="S"
+                                variant="warning"
+                                text="This component should be built with even number of cards. (no condition to be added on number of cards in a component)"/>
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <id
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Component ID"
+                                        name="./componentId"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Title to show in top of cards."
+                                        fieldLabel="Component Title"
+                                        name="./title"/>
+                                    <subtitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldDescription="Sub Title to show in top of cards."
+                                        fieldLabel="Component Sub Title"
+                                        required="{Boolean}false"
+                                        name="./subTitle"
+                                        useFixedInlineToolbar="{Boolean}true">
+                                        <rtePlugins
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                                        <uiSettings
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                                    </subtitle>
+                                    <have-background-image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check have background image"
+                                        name="./haveBackgroundImage"
+                                        text="Have Background Image"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <background-image
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                        allowUpload="{Boolean}false"
+                                        autoStart="{Boolean}false"
+                                        granite:class="cq-droptarget s7-image-listener"
+                                        fieldLabel="Background image"
+                                        fileNameParameter="./background/fileName"
+                                        fileReferenceParameter="./background/fileReference"
+                                        fieldDescription="Background Image size: 600 x 600 - Ratio 1:1. Select an image to be used for desktop view"
+                                        mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                        multiple="{Boolean}false"
+                                        name="./background/fileName"
+                                        title="Upload Logo Background Image Asset"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"/>
+                                    </background-image>
+                                    <background-s7fileReference
+                                        granite:class="s7-fileReference"
+                                        jcr:primaryType="nt:unstructured"
+                                        granite:id="s7-fileReference"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                        name="./background/s7fileReference"/>
+                                    <link-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="CTA Label"
+                                        name="./link/text"
+                                        required="{Boolean}false"/>
+                                    <link-url
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Link that will be opened when this is clicked"
+                                        rootPath="/content/sauditourism"
+                                        fieldLabel="CTA URL"
+                                        name="./link/url"
+                                        required="{Boolean}false"/>
+                                    <open-in-new-tab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Check this to open link in new tab"
+                                        name="./link/targetInNewWindow"
+                                        text="Open in New Tab"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true"/>
+                                    <cards
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add' to add a new card Data"
+                                        fieldLabel="Cards Data List">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./cards">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Card"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <card-type
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="js-dialog-showhide"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldDescription="Choose Type"
+                                                            fieldLabel="Type"
+                                                            name="./type">
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                metaType="dropdown"
+                                                                showhide-target=".card-type-showhide-target"/>
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <item
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Item"
+                                                                    value="item"/>
+                                                                <text
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Text"
+                                                                    value="text"/>
+                                                                <weather
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Weather"
+                                                                    value="weather"/>
+                                                            </items>
+                                                        </card-type>
+                                                        <card-title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Card Title"
+                                                            name="./title"/>
+                                                        <card-logo
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            granite:class="cq-droptarget s7-image-listener card-type-showhide-target"
+                                                            fieldLabel="Card Logo"
+                                                            fileNameParameter="./logo/fileName"
+                                                            fileReferenceParameter="./logo/fileReference"
+                                                            fieldDescription="Image size: 600 x 600 - Ratio 1:1. Select an image to be used for desktop view"
+                                                            mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./logo/fileName"
+                                                            title="Upload Logo Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true">
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="text"/>
+                                                        </card-logo>
+                                                        <transparency
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="card-type-showhide-target"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldDescription="Enable Logo transparency"
+                                                            fieldLabel="Enable Logo transparency"
+                                                            name="./logo/isTransparent"
+                                                            text="Enable Logo transparency"
+                                                            uncheckedValue="false"
+                                                            value="true">
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="text"/>
+                                                        </transparency>
+                                                        <card-s7fileReference
+                                                            granite:class="s7-fileReference"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:id="s7-fileReference"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./logo/s7fileReference"/>
+                                                        <card-description
+                                                            granite:class="card-type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldLabel="Card Description"
+                                                            required="{Boolean}false"
+                                                            name="./description"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/rtePlugins"/>
+                                                            <uiSettings
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="/apps/sauditourism/components/commons/editor/dialog/rte-config/uiSettings"/>
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="text"/>
+                                                        </card-description>
+                                                        <card-link-text
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Card CTA Label"
+                                                            name="./link/text"
+                                                            required="{Boolean}false"/>
+                                                        <card-link-url
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Link that will be opened when this is clicked"
+                                                            rootPath="/content/sauditourism"
+                                                            fieldLabel="Card CTA URL"
+                                                            name="./link/url"
+                                                            required="{Boolean}false"/>
+                                                        <card-open-in-new-tab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldDescription="Check this to open link in new tab"
+                                                            name="./link/targetInNewWindow"
+                                                            text="Card Open in New Tab"
+                                                            uncheckedValue="{Boolean}false"
+                                                            value="{Boolean}true"/>
+                                                        <card-items
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="card-type-showhide-target"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            fieldDescription="Click 'Add' to add a new card Data"
+                                                            fieldLabel="Items Data List"
+                                                            >
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                name="./items">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <column
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Item"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <item-title
+                                                                                granite:class="card-type-showhide-target"
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Item Title"
+                                                                                name="./itemTitle">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </item-title>
+                                                                            <item-subtitle
+                                                                                granite:class="card-type-showhide-target"
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Item Sub Title"
+                                                                                name="./subTitle">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </item-subtitle>
+                                                                            <item-logo
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                                allowUpload="{Boolean}false"
+                                                                                autoStart="{Boolean}false"
+                                                                                granite:class="cq-droptarget s7-image-listener card-type-showhide-target"
+                                                                                fieldLabel="Item Logo"
+                                                                                fileNameParameter="./logo/fileName"
+                                                                                fileReferenceParameter="./logo/fileReference"
+                                                                                fieldDescription="Image size: 600 x 600 - Ratio 1:1. Select an image to be used for desktop view"
+                                                                                mimeTypes="[image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                                                multiple="{Boolean}false"
+                                                                                name="./logo/fileName"
+                                                                                title="Upload Logo Image Asset"
+                                                                                uploadUrl="${suffix.path}"
+                                                                                useHTML5="{Boolean}true">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </item-logo>
+                                                                            <item-s7fileReference
+                                                                                granite:class="s7-fileReference"
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:id="s7-fileReference"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                name="./logo/s7fileReference"/>
+                                                                            <transparency
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                fieldDescription="Enable Logo transparency"
+                                                                                fieldLabel="Enable Logo transparency"
+                                                                                name="./logo/isTransparent"
+                                                                                text="Enable Logo transparency"
+                                                                                uncheckedValue="false"
+                                                                                value="true">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </transparency>
+                                                                            <item-text
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldLabel="Item Label Link"
+                                                                                name="./link/text"
+                                                                                required="{Boolean}false">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </item-text>
+                                                                            <item-link
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                fieldDescription="Link that will be opened when this is clicked"
+                                                                                rootPath="/content/sauditourism"
+                                                                                fieldLabel="Item URL Link"
+                                                                                name="./link/url"
+                                                                                required="{Boolean}false">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </item-link>
+                                                                            <item-open-in-new-tab
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                                fieldDescription="Check this to open link in new tab"
+                                                                                name="./link/targetInNewWindow"
+                                                                                text="Item Open in New Tab"
+                                                                                uncheckedValue="{Boolean}false"
+                                                                                value="{Boolean}true">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="item"/>
+                                                                            </item-open-in-new-tab>
+                                                                        </items>
+                                                                    </column>
+                                                                </items>
+                                                            </field>
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="item"/>
+                                                        </card-items>
+                                                        <card-weather-city-id
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="card-type-showhide-target"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Weather City ID"
+                                                            fieldLabel="Weather City ID"
+                                                            name="./cityId">
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="weather"/>
+                                                        </card-weather-city-id>
+                                                        <card-weather-items
+                                                            jcr:primaryType="nt:unstructured"
+                                                            granite:class="card-type-showhide-target"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            fieldDescription="Click 'Add' to add a new card Data"
+                                                            fieldLabel="Weather Items Data List">
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                name="./items">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <column
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        jcr:title="Weather Item"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <item-weather-title
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                fieldDescription="Item Weather Title."
+                                                                                fieldLabel="Item Weather Title"
+                                                                                name="./weatherTitle">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="weather"/>
+                                                                            </item-weather-title>
+                                                                            <item-weather-low-temp
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                                                fieldDescription="Item Weather Low Temp"
+                                                                                fieldLabel="Item Weather Low Temp"
+                                                                                min="0"
+                                                                                step="any"
+                                                                                name="./lowTemp">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="weather"/>
+                                                                            </item-weather-low-temp>
+                                                                            <item-weather-low-temp-icon
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                rootPath="/content/dam"
+                                                                                fieldDescription="Item Weather Low Temp Icon."
+                                                                                fieldLabel="Item Weather Low Temp Icon"
+                                                                                name="./lowTempIcon">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="weather"/>
+                                                                            </item-weather-low-temp-icon>
+                                                                            <item-weather-high-temp
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                                                fieldDescription="Item Weather High Temp"
+                                                                                fieldLabel="Item Weather High Temp"
+                                                                                min="0"
+                                                                                step="any"
+                                                                                name="./highTemp">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="weather"/>
+                                                                            </item-weather-high-temp>
+                                                                            <item-weather-high-temp-icon
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                granite:class="card-type-showhide-target"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                rootPath="/content/dam"
+                                                                                fieldDescription="Item Weather High Temp Icon"
+                                                                                fieldLabel="Item Weather High Temp Icon"
+                                                                                name="./highTempIcon">
+                                                                                <granite:data
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    showhide-target-value="weather"/>
+                                                                            </item-weather-high-temp-icon>
+                                                                        </items>
+                                                                    </column>
+                                                                </items>
+                                                            </field>
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhide-target-value="weather"/>
+                                                        </card-weather-items>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </cards>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </cardsConfiguration>
+        </items>
+    </content>
+</jcr:root>
+
+

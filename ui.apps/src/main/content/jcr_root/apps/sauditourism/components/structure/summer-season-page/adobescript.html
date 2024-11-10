@@ -1,0 +1,16 @@
+<sly data-sly-use.mode="com.saudi.tourism.core.models.app.page.ModeModel">
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'dev' @ context='scriptString'}">
+     	 window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-ea208b6d49a1-development.min.js";
+     </sly>
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'acc'  @ context='scriptString'}">
+     	 window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d1d2f74bada3-staging.min.js";
+     </sly>
+     <sly data-sly-test="${mode.saudiModeConfig.mode == 'prod'  @ context='scriptString'}">
+         <sly data-sly-test.publish="${mode.saudiModeConfig.publish  @ context='scriptString'}">
+           window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d7d511425437.min.js";
+         </sly>
+         <sly data-sly-test="${!publish  @ context='scriptString'}">
+           window.adobeSettingScript = "//assets.adobedtm.com/c68cd5f9e870/c1f9b98f49b1/launch-d1d2f74bada3-staging.min.js";
+         </sly>
+     </sly>
+</sly>

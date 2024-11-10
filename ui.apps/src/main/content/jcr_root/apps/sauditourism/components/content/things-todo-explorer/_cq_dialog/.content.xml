@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Filter Explorer"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,sauditourism.author]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <common-setup
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common Setup"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <textInfo
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                        size="S"
+                                        text="Filter type.&lt;/li&gt;&lt;li&gt;Things To Do : To Search things to do cards, need to step Things To Do Types Filter (next tab)&lt;/li&gt;&lt;li&gt;Stories : To Search stories cards"
+                                        variant="info"
+                                    />
+                                    <filterType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Select the filter type"
+                                        name="./filterType"
+                                        required="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            metaType="dropdown"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <thingsToDo
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Things To Do"
+                                                value="thingsToDo"/>
+                                            <stories
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Stories"
+                                                value="stories"/>
+                                        </items>
+                                    </filterType>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="title"
+                                        name="./title"
+                                        required="{Boolean}true">
+                                    </title>
+                                    <typeLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Type label"
+                                        name="./typeLabel"
+                                        required="{Boolean}true"/>
+                                    <filtersLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Filters label"
+                                        name="./filtersLabel"
+                                        required="{Boolean}true"/>
+                                    <selectLocationLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Select Location label"
+                                        name="./selectLocationLabel"
+                                        required="{Boolean}true"/>
+                                    <searchLimit
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        fieldLabel="Search Limit"
+                                        name="./searchLimit"
+                                        required="{Boolean}true"/>
+                                    <noResultsFoundLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="No Results Found Label"
+                                        fieldLabel="No Results Found"
+                                        required="{Boolean}true"
+                                        name="./noResultsFoundLabel" />
+                                    <noResultFoundDescriptionel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="No Result Found Description"
+                                        fieldLabel="No Result Found Description"
+                                        required="{Boolean}true"
+                                        name="./noResultFoundDescription" />
+                                    <modalFiltersTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Modal Filters Title"
+                                        fieldLabel="Modal Filters Title"
+                                        required="{Boolean}true"
+                                        name="./modalFiltersTitle" />
+                                    <searchPlaceholderLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Search Placeholder Label"
+                                        fieldLabel="Search Placeholder Label"
+                                        required="{Boolean}true"
+                                        name="./searchPlaceholderLabel" />
+                                    <clearAllButton
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Clear All Button"
+                                        fieldLabel="Clear All Button"
+                                        required="{Boolean}true"
+                                        name="./clearAllButton" />
+                                    <loadingLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Loading Label"
+                                        fieldLabel="Loading Label"
+                                        required="{Boolean}true"
+                                        name="./loadingLabel" />
+                                    <hideOrnament
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Hide Ornament"
+                                        fieldLabel="Hide Ornament"
+                                        text="Hide Ornament"
+                                        name="./hideOrnament"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true" />
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </common-setup>
+            <typesFilter
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Things To Do Types Filter Setup"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <textInfo
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                        size="S"
+                                        text="Used in case of Things To Do Filter type."
+                                        variant="info"
+                                    />
+                                    <types
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Click 'Add' to add a new Type Item"
+                                        fieldLabel="Type Items">
+                                        <field
+                                            granite:class="accordion-multifield-item"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            name="./types">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="New Filter item"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <typeLabel
+                                                            granite:class="accordion-multifield-item-title"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Type label"
+                                                            name="./label"
+                                                            required="{Boolean}true"/>
+                                                        <filter-cfm-type
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            fieldLabel="Filter CFM Type"
+                                                            name="./id">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <allThingsToDo
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="All Things ToDo"
+                                                                    value=""/>
+                                                                <attraction
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Attraction"
+                                                                    value="attraction"/>
+                                                                value=""/>
+                                                                <activity
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Activity"
+                                                                    value="activity"/>
+                                                                <tour
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Tour"
+                                                                    value="tour"/>
+                                                                <event
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Event"
+                                                                    value="event"/>
+                                                            </items>
+                                                        </filter-cfm-type>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </types>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </typesFilter>
+        </items>
+    </content>
+</jcr:root>
+
+

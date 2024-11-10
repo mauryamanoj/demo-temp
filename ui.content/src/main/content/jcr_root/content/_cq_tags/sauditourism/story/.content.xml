@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description="Story categories."
+          jcr:primaryType="cq:Tag"
+          jcr:title="Story"
+          jcr:title.ar="قصة"
+          jcr:title.de="Geschichte"
+          jcr:title.es="Historia"
+          jcr:title.fr="Histoire"
+          jcr:title.ja="話"
+          jcr:title.ru="История"
+          jcr:title.zh="故事"
+          sling:resourceType="cq/tagging/components/tag">
+    <nature/>
+</jcr:root>

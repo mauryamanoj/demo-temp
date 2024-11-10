@@ -1,0 +1,77 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":[
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"15eaf381-24b2-4d21-b952-0443e4b4cd18",
+  "jcr:predecessors":[
+    "f4142ca1-f787-4a62-8596-e2f310fc5bdd"
+  ],
+  "jcr:created":"Tue Sep 26 2023 14:47:49 GMT+0100",
+  "jcr:baseVersion":"f4142ca1-f787-4a62-8596-e2f310fc5bdd",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"23511775-8396-466b-8069-7f3e0f038f35",
+  "jcr:content":{
+    "jcr:primaryType":"dam:AssetContent",
+    "jcr:title":"Food",
+    "jcr:lastModifiedBy":"admin",
+    "contentFragment":true,
+    "cq:name":"food",
+    "jcr:lastModified":"Tue Sep 26 2023 14:48:08 GMT+0100",
+    "lastFragmentSave":"Tue Sep 26 2023 14:48:08 GMT+0100",
+    "cq:parentPath":"/content/dam/sauditourism/cf/en/categories",
+    "renditions":{
+      "jcr:primaryType":"nt:folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Tue Sep 26 2023 14:47:49 GMT+0100"
+    },
+    "related":{
+      "jcr:primaryType":"nt:unstructured"
+    },
+    "indexedData":{
+      "jcr:primaryType":"nt:unstructured",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:IndexedFragmentData"
+        ],
+        "@string@model":"/conf/sauditourism/settings/dam/cfm/models/category",
+        "@stringArray@variations":[
+
+        ],
+        "string@icon":"categories_xs_food",
+        "string@s7image":"https://scth.scene7.com/is/image/scthacc/Holding image red wall",
+        "string@title":"Food",
+        "jcr:uuid":"e5cfdf6d-fc53-4cac-9f2b-0739cb8450d7"
+      }
+    },
+    "metadata":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:mixinTypes":[
+        "cq:Taggable"
+      ]
+    },
+    "data":{
+      "jcr:primaryType":"nt:unstructured",
+      "_strucVersion":1,
+      "cq:model":"/conf/sauditourism/settings/dam/cfm/models/category",
+      "master":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:mixinTypes":[
+          "dam:cfVariationNode",
+          "cq:Taggable"
+        ],
+        "title@LastModified":"Tue Sep 26 2023 14:48:08 GMT+0100",
+        "image@LastModified":"Tue Sep 26 2023 14:48:08 GMT+0100",
+        "icon":"categories_xs_food",
+        "image":"/content/dam/sauditourism/Holding image red wall.jpg",
+        "title":"Food",
+        "s7image@LastModified":"Tue Sep 26 2023 14:48:08 GMT+0100",
+        "s7image":"https://scth.scene7.com/is/image/scthacc/Holding image red wall",
+        "icon@LastModified":"Tue Sep 26 2023 14:48:08 GMT+0100"
+      }
+    }
+  }
+}

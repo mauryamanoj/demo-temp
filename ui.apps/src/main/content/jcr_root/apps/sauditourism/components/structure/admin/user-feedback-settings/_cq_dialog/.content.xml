@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="User Feedback Config"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[sauditourism.author]">
+    <content
+            granite:class="dialog-container"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <page-settings
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            jcr:title="User Banner settings"
+                            jcr:description="User Banner settings">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Title to display"
+                                    fieldLabel="title"
+                                    required="{Boolean}false"
+                                    name="./title" />
+                            <yes
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Yes label"
+                                    fieldLabel="Yes"
+                                    required="{Boolean}false"
+                                    name="./yes" />
+                            <no
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="No label"
+                                    fieldLabel="No"
+                                    required="{Boolean}false"
+                                    name="./no" />
+                            <report-problem
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Report a problem"
+                                    fieldLabel="Report a problem"
+                                    required="{Boolean}false"
+                                    name="./reportProblem" />
+                            <thank-you-message
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Thank you message"
+                                    fieldLabel="Thank you message"
+                                    required="{Boolean}false"
+                                    name="./thankYouMessage" />
+
+
+                        </items>
+                    </page-settings>
+                    <modal-settings
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            jcr:title="Modal settings"
+                            jcr:description="Modal settings">
+                        <items jcr:primaryType="nt:unstructured">
+                            <modal-title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Modal Title"
+                                    fieldLabel="Modal title"
+                                    required="{Boolean}false"
+                                    name="./modalTitle" />
+                            <modal-description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Description"
+                                    fieldLabel="Description"
+                                    required="{Boolean}false"
+                                    name="./modalDescription" />
+                            <message-title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Message Title"
+                                    fieldLabel="Message title"
+                                    required="{Boolean}false"
+                                    name="./messageTitle" />
+                            <message-placeholder
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Message Placholder"
+                                    fieldLabel="Message Placholder"
+                                    required="{Boolean}false"
+                                    name="./placeholder" />
+                            <submit
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="CTA Submit label"
+                                    fieldLabel="CTA Submit Label"
+                                    required="{Boolean}false"
+                                    name="./submit" />
+                            <survey-link-title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Survey Link title"
+                                    fieldLabel="Survey link title"
+                                    required="{Boolean}false"
+                                    name="./surveyLinkTitle" />
+                            <survey-link-url
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldDescription="Survey Link url"
+                                    fieldLabel="Survey link url"
+                                    required="{Boolean}false"
+                                    name="./surveyLinkURL"
+                                    rootPath="/content/sauditourism"/>
+                            <openNewTab
+                                    cq:showOnCreate="{Boolean}true"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    fieldDescription="Open new tab if checked"
+                                    fieldLabel="Open New Tab"
+                                    name="./openNewTab"
+                                    text="Open New Tab"
+                                    uncheckedValue="false"
+                                    value="{Boolean}true"/>
+                            <modal-thank-you-message
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Modal Thank you text"
+                                    fieldLabel="Modal Thank you text"
+                                    required="{Boolean}false"
+                                    name="./modalThankYouMessage" />
+                            <close
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="CTA Close label"
+                                    fieldLabel="CTA Close Label"
+                                    required="{Boolean}false"
+                                    name="./close" />
+
+
+                        </items>
+                    </modal-settings>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

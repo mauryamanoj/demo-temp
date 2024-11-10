@@ -1,0 +1,8 @@
+<template data-sly-template.iconSimple="${@ name, desktopSize, mobileSize, class}">
+    <span data-component="icon-01-simple" data-name="${name}"
+          style="--icon-size-mobile:calc(${mobileSize @ context='styleToken'}rem / 10); --icon-size-desktop:calc(${desktopSize @ context='styleToken'}rem / 10)"
+          data-size-desktop="${desktopSize}"
+          data-size-mobile="${mobileSize}"
+          class="${class}">
+    </span>
+</template>

@@ -1,0 +1,39 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "sling:resourceType":"sauditourism/components/structure/app-page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "travel-essentials": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:lastModified": "Wed Dec 01 2021 00:12:27 GMT+0530",
+      "sling:resourceType": "sauditourism/components/app-content/app-generic-cards",
+      "cards": {
+        "jcr:primaryType":"nt:unstructured",
+        "item0": {
+          "jcr:primaryType":"nt:unstructured",
+          "title":"TravelEssential Title",
+          "description":"travel essential card 1",
+          "linkType":"external",
+          "link": "www.abc.cmo"
+        }
+      }
+    },
+    "flydeal": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "jcr:lastModified": "Tue Nov 30 2021 23:43:05 GMT+0530",
+      "sling:resourceType": "sauditourism/components/app-content/app-generic-cards",
+      "cards": {
+        "jcr:primaryType":"nt:unstructured",
+        "item0": {
+          "jcr:primaryType":"nt:unstructured",
+          "title":"Flydeal Title",
+          "imagePath":"/con/mad/flydeal/bigPic.jpg",
+          "ctaText":"click this",
+          "iconPath": "/con/mad/icon.png"
+        }
+      }
+    }
+  }
+}

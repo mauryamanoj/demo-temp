@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Tag"
+          jcr:title="Natural site"
+          jcr:title.ar="موقع طبيعي"
+          jcr:title.de="Naturstätte"
+          jcr:title.es="Sitio natural"
+          jcr:title.fr="Site naturel"
+          jcr:title.ja="自然地"
+          jcr:title.ru="Природное место"
+          jcr:title.zh="自然场所"
+          sling:resourceType="cq/tagging/components/tag"/>

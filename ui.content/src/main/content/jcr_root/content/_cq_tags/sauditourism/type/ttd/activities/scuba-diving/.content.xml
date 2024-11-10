@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description=""
+          jcr:primaryType="cq:Tag"
+          jcr:title="Scuba Diving"
+          jcr:title.ar="الغوص بالزعانف"
+          jcr:title.de="Tauchen"
+          jcr:title.es="Buceo"
+          jcr:title.fr="Plongée sous-marine"
+          jcr:title.ja="スキューバダイビング"
+          jcr:title.ru="Дайвинг"
+          jcr:title.zh="潜水"
+          sling:resourceType="cq/tagging/components/tag"/>
