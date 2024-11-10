@@ -1,11 +1,6 @@
 name: AEM Dev CI/CD Pipeline
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-      - develop-test
   workflow_dispatch:
     inputs:
       branch:
@@ -44,6 +39,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
+          distribution: 'temurin'
 
       - name: Upload package to AEM
         env:
