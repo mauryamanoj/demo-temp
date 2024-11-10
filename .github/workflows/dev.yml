@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - develop
+      - develop-test
   workflow_dispatch:
     inputs:
       branch:
