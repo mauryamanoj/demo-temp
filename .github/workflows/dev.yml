@@ -35,17 +35,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.inputs.branch }}
-
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-
       - name: Upload package to AEM
         env:
           AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
@@ -53,6 +42,7 @@ jobs:
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
           PACKAGE_FILE=$(find . -name "*all.zip" | head -n 1)
+          echo "PACKAGE_FILE NAME: $PACKAGE_FILE"
           curl -u $AEM_USERNAME:$AEM_PASSWORD -F package=@"$PACKAGE_FILE"  -F force=true "$AEM_HOST/crx/packmgr/service.jsp"
 
       - name: Install package on AEM
@@ -61,5 +51,5 @@ jobs:
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          PACKAGE_NAME=your_package_name
-          curl -u $AEM_USERNAME:$AEM_PASSWORD -F cmd=install "$AEM_HOST/crx/packmgr/service/.json/etc/packages/com.saudi.tourism/$PACKAGE_NAME"
+          PACKAGE_FILE=$(find . -name "*all.zip" | head -n 1)
+          curl -u $AEM_USERNAME:$AEM_PASSWORD -F cmd=install "$AEM_HOST/crx/packmgr/service/.json/etc/packages/com.saudi.tourism/$PACKAGE_FILE"
