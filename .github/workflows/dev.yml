@@ -1,11 +1,6 @@
 name: AEM Dev CI/CD Pipeline
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-      - develop-test
   workflow_dispatch:
     inputs:
       branch:
