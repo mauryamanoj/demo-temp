@@ -7,10 +7,16 @@ on:
         description: 'Branch to deploy from'
         required: true
         default: 'main'
+      artifact_version:
+        description: "Enter the artifact version to build"
+        required: true
+        default: "1.0.0"  # Default version if not specified
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      AEM_PACKAGE: "saudi-tourism.all-${{ github.event.inputs.artifact_version }}.zip"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,7 +32,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          mvn clean install -DskipTests -Dcheckstyle.skip
+          mvn clean install -DskipTests -Dcheckstyle.skip -DvsVersion=${{github.event.inputs.artifact_version }} 
 
       - name: Display structure of all jar/files
         run: find . -type f -name "*.zip"
@@ -56,7 +62,7 @@ jobs:
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          PACKAGE_FILE=saudi-tourism.all-1.0.1-SNAPSHOT.zip
+          PACKAGE_FILE=$AEM_PACKAGE
           echo "PACKAGE_FILE NAME: $PACKAGE_FILE"
           curl -u $AEM_USERNAME:$AEM_PASSWORD -F package=@"$PACKAGE_FILE" -F force=true "$AEM_HOST/crx/packmgr/service.jsp"
 
@@ -66,5 +72,5 @@ jobs:
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          PACKAGE_FILE=saudi-tourism.all-1.0.1-SNAPSHOT.zip
+          PACKAGE_FILE=$AEM_PACKAGE
           curl -u $AEM_USERNAME:$AEM_PASSWORD -F cmd=install "$AEM_HOST/crx/packmgr/service/.json/etc/packages/com.saudi.tourism/$PACKAGE_FILE"
