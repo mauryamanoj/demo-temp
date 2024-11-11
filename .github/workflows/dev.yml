@@ -61,4 +61,9 @@ jobs:
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
           AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          curl -u $AEM_USERNAME:$AEM_PASSWORD -F file=@"$AEM_PACKAGE" -F name="$AEM_PACKAGE" -F force=true -F install=true $AEM_HOST/crx/packmgr/service.jsp
+          curl -u "$AEM_USERNAME:$AEM_PASSWORD" \
+           -F file=@"$AEM_PACKAGE" \
+           -F name="$AEM_PACKAGE" \
+           -F force=true \
+           -F install=true \
+           "$AEM_HOST/crx/packmgr/service.jsp"
