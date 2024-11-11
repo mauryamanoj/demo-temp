@@ -15,7 +15,7 @@ env:
   AEM_PACKAGE: "saudi-tourism.all-${{ github.event.inputs.artifact_version }}.zip"
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -45,7 +45,7 @@ jobs:
             
   deploy_prodset1:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Download Build Package
         uses: actions/download-artifact@v4
@@ -70,7 +70,7 @@ jobs:
           
   deploy_prodset2:
     needs: deploy_prodset1
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: prodset1
     steps:
       - name: Download Build Package
@@ -95,7 +95,6 @@ jobs:
            "$AEM_HOST/crx/packmgr/service.jsp"
     
       - name: Checking Connectivity
-        if: false
         run: |
           curl -I "https://cms-dev-revamp.visitsaudi.com:65432"
 
