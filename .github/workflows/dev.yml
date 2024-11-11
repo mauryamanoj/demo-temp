@@ -67,3 +67,7 @@ jobs:
            -F force=true \
            -F install=true \
            "$AEM_HOST/crx/packmgr/service.jsp"
+           
+      - name: Checking Connectivity
+        run: |
+          curl -I "https://cms-dev-revamp.visitsaudi.com:65432"
