@@ -43,7 +43,7 @@ jobs:
           path: ./all/target/*.zip
           compression-level: 0
             
-  deploy:
+  deploy_prodset1:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -67,7 +67,37 @@ jobs:
            -F force=true \
            -F install=true \
            "$AEM_HOST/crx/packmgr/service.jsp"
-           
+          
+  deploy_prodset2:
+    needs: deploy_prodset1
+    runs-on: ubuntu-latest
+    environment: prodset1
+    steps:
+      - name: Download Build Package
+        uses: actions/download-artifact@v4
+        with:
+          name: sta-build-artifacts
+
+      - name: Display downloaded files
+        run: ls -R
+
+      - name: Upload and Install package to AEM
+        env:
+          AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
+          AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
+          AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
+        run: |
+          curl -u "$AEM_USERNAME:$AEM_PASSWORD" \
+           -F file=@"$AEM_PACKAGE" \
+           -F name="saudi-tourism.all" \
+           -F force=true \
+           -F install=true \
+           "$AEM_HOST/crx/packmgr/service.jsp"
+    
       - name: Checking Connectivity
+        if: false
         run: |
           curl -I "https://cms-dev-revamp.visitsaudi.com:65432"
+
+      
+
