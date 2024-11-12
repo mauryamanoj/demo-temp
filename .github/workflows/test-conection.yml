@@ -24,10 +24,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
     - name: List Files
       run: cd /home/runner/.ssh && ls -R && cat id_rsa
-    - name: Set up OpenSSH Client
-      run: |
-          sudo apt-get update
-          sudo apt-get install -y openssh-client
     - name: Check SSH Path
       run: which ssh
     - name: Azure CLI script
