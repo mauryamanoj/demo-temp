@@ -40,7 +40,7 @@ jobs:
         inlineScript: |
           pwd
           mkdir -p ~/.ssh
-          echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiH2UrJxGkagHmN65bLZqQgYm/EzqNpj3NGtZIQrWwg+J7QWW5Mb9m+SsIruHShuz+7Mxte+WP5tNRXNBilrbVCdFaLA931RpZeJwKl6aH8j6QXhxpwmwqY37JNMNDG9aE4jA7lst5q1M/X20Etht8C/arGtPkUHuju1j8iZFSkGfVPzMDInf6GMkqE19BV06eXb5KnVFoebGmOoRAzrrmvIQ/jiwvERs4as5ntiXZ5EzzQmWlAaPzAzFTquWQnu35zsgU4bmfy6mYWjwqR+7lFjMP9IkzoFG5J9s5Weo/l48QqK7g/Sa9ptyQI5Evk2DDmIfSjK/tv4UlQNsGWvf1" | tr -d '\r' | ssh-add - > ~/.ssh/id_rsa
+          echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiH2UrJxGkagHmN65bLZqQgYm/EzqNpj3NGtZIQrWwg+J7QWW5Mb9m+SsIruHShuz+7Mxte+WP5tNRXNBilrbVCdFaLA931RpZeJwKl6aH8j6QXhxpwmwqY37JNMNDG9aE4jA7lst5q1M/X20Etht8C/arGtPkUHuju1j8iZFSkGfVPzMDInf6GMkqE19BV06eXb5KnVFoebGmOoRAzrrmvIQ/jiwvERs4as5ntiXZ5EzzQmWlAaPzAzFTquWQnu35zsgU4bmfy6mYWjwqR+7lFjMP9IkzoFG5J9s5Weo/l48QqK7g/Sa9ptyQI5Evk2DDmIfSjK/tv4UlQNsGWvf1" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/root/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
