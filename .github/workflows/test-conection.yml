@@ -15,19 +15,11 @@ jobs:
       uses: azure/login@v2
       with:
         creds: ${{ secrets.DISP_AZURE_CRED }}
-    - name: Azure CLI script
-      uses: azure/cli@v2
-      with:
-        azcliversion: latest
-        inlineScript: |
-          az account show
-          az storage -h 
     - name: Install SSH Extension for Azure CLI
       run: |
           az extension add --name ssh
     - name: check current path
       run: pwd
-      
     - name: Setup SSH Key
       run: |
           mkdir -p ~/.ssh
@@ -35,9 +27,12 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
     - name: List Files
       run: cd /home/runner/.ssh && ls -R && cat id_rsa
-      
-    - name: SSH into Azure Arc-enabled machine and run a command
-      run: |
+    
+    - name: Azure CLI script
+      uses: azure/cli@v2
+      with:
+        azcliversion: latest
+        inlineScript: |
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/home/runner/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
 
       
