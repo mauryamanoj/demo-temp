@@ -30,10 +30,13 @@ jobs:
       run: cd /home/runner/.ssh && ls -R && cat id_rsa
     - name: Check SSH Path
       run: which ssh
+    - name: Set Azure CLI dynamic install
+      run: |
+          az config set extension.use_dynamic_install=yes_without_prompt
     - name: Azure CLI script
       uses: azure/cli@v2
       with:
-        azcliversion: latest
+        azcliversion: 2.30.0
         inlineScript: |
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/home/runner/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
 
