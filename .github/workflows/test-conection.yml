@@ -22,3 +22,11 @@ jobs:
         inlineScript: |
           az account show
           az storage -h 
+    - name: Install SSH Extension for Azure CLI
+      run: |
+          az extension add --name ssh
+
+    - name: SSH into Azure Arc-enabled machine and run a command
+      run: |
+          az ssh arc -n dev-dispatcher-r -g VisitSaudi_Arc_Servers --command "echo 'Hello from GitHub Actions on Azure Arc!'; uname -a; df -h"
+
