@@ -42,7 +42,6 @@ jobs:
           mkdir -p ~/.ssh
           echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiH2UrJxGkagHmN65bLZqQgYm/EzqNpj3NGtZIQrWwg+J7QWW5Mb9m+SsIruHShuz+7Mxte+WP5tNRXNBilrbVCdFaLA931RpZeJwKl6aH8j6QXhxpwmwqY37JNMNDG9aE4jA7lst5q1M/X20Etht8C/arGtPkUHuju1j8iZFSkGfVPzMDInf6GMkqE19BV06eXb5KnVFoebGmOoRAzrrmvIQ/jiwvERs4as5ntiXZ5EzzQmWlAaPzAzFTquWQnu35zsgU4bmfy6mYWjwqR+7lFjMP9IkzoFG5J9s5Weo/l48QqK7g/Sa9ptyQI5Evk2DDmIfSjK/tv4UlQNsGWvf1" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-
-          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher3-r" --local-user purgeuser --private-key-file "/root/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
+          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher3-r" --local-user purgeuser --private-key-file /root/.ssh/id_rsa -- -o StrictHostKeyChecking=no 'df -h'
 
       
