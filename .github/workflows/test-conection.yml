@@ -33,7 +33,7 @@ jobs:
     - name: Azure CLI script
       uses: azure/cli@v2
       with:
-        azcliversion: 2.30.0
+        azcliversion: latest
         inlineScript: |
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/home/runner/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
 
