@@ -25,15 +25,14 @@ jobs:
     - name: Install SSH Extension for Azure CLI
       run: |
           az extension add --name ssh
-    - name: Set up SSH private key
+    - name: check current path
+      run: pwd
+      
+    - name: Setup SSH Key
       run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          pwd
-          cat /home/runner/.ssh/id_rsa
-
-    - name: SSH into Azure Arc-enabled machine and run a command
-      run: |
-          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/home/runner/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
-
+    - name: List Files
+      run: cd /home/runner/.ssh && ls -R && cat id_rsa
+      
