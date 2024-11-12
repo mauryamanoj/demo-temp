@@ -36,9 +36,6 @@ jobs:
           mkdir -p ~/.ssh
           echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiH2UrJxGkagHmN65bLZqQgYm/EzqNpj3NGtZIQrWwg+J7QWW5Mb9m+SsIruHShuz+7Mxte+WP5tNRXNBilrbVCdFaLA931RpZeJwKl6aH8j6QXhxpwmwqY37JNMNDG9aE4jA7lst5q1M/X20Etht8C/arGtPkUHuju1j8iZFSkGfVPzMDInf6GMkqE19BV06eXb5KnVFoebGmOoRAzrrmvIQ/jiwvERs4as5ntiXZ5EzzQmWlAaPzAzFTquWQnu35zsgU4bmfy6mYWjwqR+7lFjMP9IkzoFG5J9s5Weo/l48QqK7g/Sa9ptyQI5Evk2DDmIfSjK/tv4UlQNsGWvf1" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-    - name: Verify SSH connection
-      run: |
-          ssh -o StrictHostKeyChecking=no purgeuser@acc-dispatcher1-r "echo 'SSH connected!'"
     - name: Azure CLI script
       uses: azure/cli@v2
       with:
