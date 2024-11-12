@@ -1,4 +1,4 @@
-name: AEM Dev CI/CD Pipeline
+name: Test Connection
 
 on:
   workflow_dispatch:
@@ -99,4 +99,3 @@ jobs:
           curl -I "https://cms-dev-revamp.visitsaudi.com:65432"
 
       
-

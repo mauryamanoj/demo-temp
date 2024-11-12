@@ -60,7 +60,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <componentGroupName>SaudiTourism Sites</componentGroupName>
-		<vsVersion>1.0.1-SNAPSHOT</vsVersion>
+        <version>${vsVersion}</version>
     </properties>
 
     <build>
