@@ -31,6 +31,7 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           pwd
+          cat /home/runner/.ssh/id_rsa
 
     - name: SSH into Azure Arc-enabled machine and run a command
       run: |
