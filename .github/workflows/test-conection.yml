@@ -38,8 +38,7 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          apt-get update
-          apt-get install -y openssh-client openssh-server
+          apt install openssh-client
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/home/runner/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
 
       
