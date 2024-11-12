@@ -27,11 +27,12 @@ jobs:
           az extension add --name ssh
     - name: Set up SSH private key
       run: |
-          mkdir -p .ssh
-          echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
-          chmod 600 .ssh/id_rsa
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          pwd
 
     - name: SSH into Azure Arc-enabled machine and run a command
       run: |
-          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
+          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "~/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
 
