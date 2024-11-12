@@ -17,6 +17,10 @@ jobs:
         creds: ${{ secrets.DISP_AZURE_CRED }}
     - name: check current path
       run: pwd
+    - name: Install OpenSSH client
+      run:  sudo apt-get install -y openssh-client
+    - name: Verify SSH availability
+      run: ssh -V
     - name: Setup SSH Key
       run: |
           mkdir -p ~/.ssh
