@@ -23,12 +23,35 @@ jobs:
       with:
         azcliversion: 2.45.0
         inlineScript: |
-          az account show
-          az storage -h
-          az resource list --resource-type "Microsoft.Compute/virtualMachines" --output table
           mkdir sta_keys
           echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiH2UrJxGkagHmN65bLZqQgYm/EzqNpj3NGtZIQrWwg+J7QWW5Mb9m+SsIruHShuz+7Mxte+WP5tNRXNBilrbVCdFaLA931RpZeJwKl6aH8j6QXhxpwmwqY37JNMNDG9aE4jA7lst5q1M/X20Etht8C/arGtPkUHuju1j8iZFSkGfVPzMDInf6GMkqE19BV06eXb5KnVFoebGmOoRAzrrmvIQ/jiwvERs4as5ntiXZ5EzzQmWlAaPzAzFTquWQnu35zsgU4bmfy6mYWjwqR+7lFjMP9IkzoFG5J9s5Weo/l48QqK7g/Sa9ptyQI5Evk2DDmIfSjK/tv4UlQNsGWvf1" > sta_keys/id_rsa
           chmod 400 sta_keys/id_rsa
-          cat sta_keys/id_rsa
-          pwd
           az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- -o StrictHostKeyChecking=no 'echo "Connection Success!"'
+          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- scp -o StrictHostKeyChecking=no sta_keys/id_rsa purgeuser@localhost:/tmp/test_upload
+
+
+
+
+
+
+
+
+          name: Copy ZIP File to Azure Arc Server
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+        run: |
+          # Define variables for the target server and file paths
+          REMOTE_USER="username"
+          ARC_SERVER="${{ secrets.ARC_MACHINE_NAME }}"
+          RESOURCE_GROUP="${{ secrets.ARC_RESOURCE_GROUP }}"
+          ZIP_FILE="myfile.zip"
+          REMOTE_PATH="/home/username/target_folder/"
+
+          # Copy the file to the Azure Arc server
+          az ssh arc --resource-group $RESOURCE_GROUP \
+            --vm-name $ARC_SERVER \
+            --local-user $REMOTE_USER \
+            --private-key-file <(echo "$SSH_KEY") \
+            -- scp -o StrictHostKeyChecking=no $ZIP_FILE ${REMOTE_USER}@localhost:$REMOTE_PATH$ZIP_FILE
+
+
