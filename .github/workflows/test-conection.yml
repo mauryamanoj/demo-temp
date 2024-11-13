@@ -26,6 +26,7 @@ jobs:
     - name: Install SSH Extension for Azure CLI
       run: |
           az extension add --name ssh
+          az ssh config --file ./config/ssh_config --resource-group VisitSaudi_Arc_Servers --vm-name Acc-Dispatcher1-R
     - name: Set up SSH private key
       run: |
           mkdir -p ~/.ssh
@@ -35,7 +36,11 @@ jobs:
     - name: SSH into Azure Arc-enabled machine and run a command
       run: |
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "~/.ssh/id_rsa" -- -o StrictHostKeyChecking=no   'df -h'
-          
-    - name: SSH into Azure Arc-enabled machine and run a command
+
+    - name: Copy file to Azure Arc server
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
       run: |
-          az ssh scp --resource-group VisitSaudi_Arc_Servers --vm-name Acc-Dispatcher1-R --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file "~/.ssh/id_rsa" -- -o StrictHostKeyChecking=no --local-path ~/.ssh/id_rsa --remote-path /tmp/test_upload/text.txt
+          echo "$SSH_PRIVATE_KEY" > ssh_key
+          chmod 600 ssh_key
+          scp -i ssh_key -F ./config/ssh_config ssh_key Acc-Dispatcher1-R:/tmp/test_upload
