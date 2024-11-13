@@ -4,98 +4,31 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Branch to deploy from'
+        description: 'Temporary Branch Selection'
         required: true
         default: 'develop-test'
-      artifact_version:
-        description: "Enter the artifact version to build"
-        required: true
-        default: "2.0.0"  # Default version if not specified
-env:
-  AEM_PACKAGE: "saudi-tourism.all-${{ github.event.inputs.artifact_version }}.zip"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.inputs.branch }}
-
-      - name: Set up JDK 11
-        uses: actions/setup-java@v4
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-          cache: maven
-
-      - name: Build with Maven
-        run: |
-          mvn clean install -DskipTests -Dcheckstyle.skip -DvsVersion=${{github.event.inputs.artifact_version }} 
-
-      - name: Display structure of all jar/files
-        run: find . -type f -name "*.zip"
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: sta-build-artifacts
-          path: ./all/target/*.zip
-          compression-level: 0
-            
-  deploy_prodset1:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download Build Package
-        uses: actions/download-artifact@v4
-        with:
-          name: sta-build-artifacts
-
-      - name: Display downloaded files
-        run: ls -R
-
-      - name: Upload and Install package to AEM
-        env:
-          AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
-          AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
-          AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
-        run: |
-          curl -u "$AEM_USERNAME:$AEM_PASSWORD" \
-           -F file=@"$AEM_PACKAGE" \
-           -F name="saudi-tourism.all" \
-           -F force=true \
-           -F install=true \
-           "$AEM_HOST/crx/packmgr/service.jsp"
-          
-  deploy_prodset2:
-    needs: deploy_prodset1
-    runs-on: ubuntu-latest
-    environment: prodset1
-    steps:
-      - name: Download Build Package
-        uses: actions/download-artifact@v4
-        with:
-          name: sta-build-artifacts
-
-      - name: Display downloaded files
-        run: ls -R
-
-      - name: Upload and Install package to AEM
-        env:
-          AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
-          AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
-          AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
-        run: |
-          curl -u "$AEM_USERNAME:$AEM_PASSWORD" \
-           -F file=@"$AEM_PACKAGE" \
-           -F name="saudi-tourism.all" \
-           -F force=true \
-           -F install=true \
-           "$AEM_HOST/crx/packmgr/service.jsp"
-    
-      - name: Checking Connectivity
-        run: |
-          curl -I "https://cms-dev-revamp.visitsaudi.com:65432"
-
-      
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.DISP_AZURE_CRED }}
+    - name: Set Azure CLI dynamic install
+      run: |
+          az config set extension.use_dynamic_install=yes_without_prompt
+    - name: Azure CLI script
+      uses: azure/cli@v2
+      with:
+        azcliversion: 2.45.0
+        inlineScript: |
+          az account show
+          az storage -h
+          az resource list --resource-type "Microsoft.Compute/virtualMachines" --output table
+          mkdir sta_keys
+          echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiH2UrJxGkagHmN65bLZqQgYm/EzqNpj3NGtZIQrWwg+J7QWW5Mb9m+SsIruHShuz+7Mxte+WP5tNRXNBilrbVCdFaLA931RpZeJwKl6aH8j6QXhxpwmwqY37JNMNDG9aE4jA7lst5q1M/X20Etht8C/arGtPkUHuju1j8iZFSkGfVPzMDInf6GMkqE19BV06eXb5KnVFoebGmOoRAzrrmvIQ/jiwvERs4as5ntiXZ5EzzQmWlAaPzAzFTquWQnu35zsgU4bmfy6mYWjwqR+7lFjMP9IkzoFG5J9s5Weo/l48QqK7g/Sa9ptyQI5Evk2DDmIfSjK/tv4UlQNsGWvf1" > sta_keys/id_rsa
+          chmod 400 sta_keys/id_rsa
+          cat sta_keys/id_rsa
+          pwd
+          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- -o StrictHostKeyChecking=no 'echo "Connection Success!"'
