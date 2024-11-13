@@ -31,4 +31,12 @@ jobs:
           chmod 400 sta_keys/id_rsa
           cat sta_keys/id_rsa
           pwd
-          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- -o StrictHostKeyChecking=no 'echo "Connection Success!"' 'sudo mkdir /tmp/test_upload' 'sudo cat > /tmp/test_upload/id_rsa < sta_keys/id_rsa'
+          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- -o StrictHostKeyChecking=no 'echo "Connection Success!"' 'sudo mkdir test_demo'
+
+    - name: Securely Copy ZIP File Using SCP
+      run: |
+          # Define local file and remote path
+          ZIP_FILE="sta_keys/id_rsa"
+          REMOTE_PATH="/tmp/test_demo/"
+          # Use SCP with the tunnel created
+          scp -o StrictHostKeyChecking=no -P 2222 $ZIP_FILE purgeuser@localhost:$REMOTE_PATH$ZIP_FILE
