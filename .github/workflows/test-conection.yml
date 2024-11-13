@@ -45,5 +45,5 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
           echo "before scp command"
-          scp -F ./ssh_config ssh_key Acc-Dispatcher1-R:~/tmp
+          scp -F ./ssh_config ssh_key 10.100.5.56:~/tmp
           
