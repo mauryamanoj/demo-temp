@@ -24,7 +24,7 @@ jobs:
         azcliversion: 2.45.0
         inlineScript: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCMQJZnm51y1WFevCZkgWwOxM0VbwhWfm2PBmpXRY4fC+IshDzSVYdjA+KtaTa+KX3rDJhTzWJxDHIq/jGM4gEuh5v8YgqynPTh8MsEmfsYraVchU748wFXsbKHrW1v+UwP4AUGL03DanZDJTVvWt+9BLEfHLQ+0ncPCSdM4NjWBdKZy+WKGE+YyLqnjH5sqEp0HlOXcZSW5HtQKU4JCA9wXCU6A4WSexMvJgB37MT2WLFNyBxKrXOSlJTgkb7+6VNxsdWJcoRQDumQWXiMETT8C0bF0ilcHhBqY1DTJCEY9OJrCeMdfEPipBgklwAfBvXLpr9YhpkgMAHjHZG4Tjmv" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher2-R" --local-user purgeuser --private-key-file /root/.ssh/id_rsa -- -o StrictHostKeyChecking=no 'echo "Connection Success!"'
 
