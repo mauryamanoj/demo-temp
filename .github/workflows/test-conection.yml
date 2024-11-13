@@ -27,4 +27,4 @@ jobs:
           echo "${{ secrets.SSH_KEY }}" > sta_keys/id_rsa
           chmod 400 sta_keys/id_rsa
           az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- -o StrictHostKeyChecking=no 'echo "Connection Success!"'
-          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- scp -o StrictHostKeyChecking=no sta_keys/id_rsa purgeuser@localhost:/tmp/test_upload
+          az ssh arc --subscription d39b9572-8709-43ac-bc38-bc3cd691475d --resource-group "VisitSaudi_Arc_Servers" --name "acc-dispatcher2-r" --local-user "purgeuser" --private-key-file sta_keys/id_rsa -- scp -o StrictHostKeyChecking=no sta_keys/id_rsa purgeuser@acc-dispatcher2-r:/tmp/test_upload
