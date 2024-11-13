@@ -32,7 +32,6 @@ jobs:
       run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/config
           chmod 600 ~/.ssh/id_rsa
 
     - name: SSH into Azure Arc-enabled machine and run a command
@@ -47,3 +46,4 @@ jobs:
           chmod 600 ssh_key
           echo "before scp command"
           scp ssh_key purgeuser@10.100.5.56:/home/purgeuser/test_upload
+          curl -I http://10.100.5.41:4503
