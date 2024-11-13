@@ -44,4 +44,5 @@ jobs:
       run: |
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
+          echo "before scp command"
           scp -i ssh_key -F ssh_config ssh_key VisitSaudi_Arc_Servers-Acc-Dispatcher1-R:/tmp/test_upload
