@@ -21,4 +21,4 @@ jobs:
           az account show
           az storage -h
           az resource list --resource-type "Microsoft.Compute/virtualMachines" --output table
-          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains qa-revamp.visitsaudi.com --content-paths '/*'
+          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name devrevamp --domains qa-revamp.visitsaudi.com --content-paths '/*'
