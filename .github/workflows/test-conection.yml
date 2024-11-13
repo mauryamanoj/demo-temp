@@ -14,7 +14,9 @@ jobs:
     - name: Azure Login
       uses: azure/login@v2
       with:
-        creds: ${{ secrets.DISP_AZURE_CRED }}
+          client-id: "c481b057-8cb2-4a14-8e85-eb81a86a36db"
+          tenant-id: "93801b16-0980-4321-9260-809f9ee36933"
+          subscription-id: "d39b9572-8709-43ac-bc38-bc3cd691475d"
     - name: Set Azure CLI dynamic install
       run: |
           az config set extension.use_dynamic_install=yes_without_prompt
