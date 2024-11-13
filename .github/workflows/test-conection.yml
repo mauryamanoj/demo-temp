@@ -45,5 +45,6 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
           echo "before scp command"
-          scp ssh_key purgeuser@10.100.5.56:/home/purgeuser/test_upload
           curl -I http://10.100.5.41:4503
+          scp ssh_key purgeuser@10.100.5.56:/home/purgeuser/test_upload
+          
