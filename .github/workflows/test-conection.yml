@@ -26,7 +26,8 @@ jobs:
     - name: Install SSH Extension for Azure CLI
       run: |
           az extension add --name ssh
-          az ssh config --file ./config/ssh_config --resource-group VisitSaudi_Arc_Servers --vm-name Acc-Dispatcher1-R
+          az ssh config --file ssh_config --resource-group VisitSaudi_Arc_Servers --vm-name Acc-Dispatcher1-R
+          cat ssh_config
     - name: Set up SSH private key
       run: |
           mkdir -p ~/.ssh
@@ -43,4 +44,4 @@ jobs:
       run: |
           echo "$SSH_PRIVATE_KEY" > ssh_key
           chmod 600 ssh_key
-          scp -i ssh_key -F ./config/ssh_config ssh_key Acc-Dispatcher1-R:/tmp/test_upload
+          scp -i ssh_key -F ssh_config ssh_key Acc-Dispatcher1-R:/tmp/test_upload
