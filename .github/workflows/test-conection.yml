@@ -46,6 +46,6 @@ jobs:
           chmod 600 ssh_key
           echo "before scp command"
           az ssh config --ip \* --file ./sshconfig
-          scp -F ./sshconfig purgeuser@10.100.5.56:~/home/purgeuser
+          scp sshconfig purgeuser@10.100.5.56:~/home/purgeuser
           
           
