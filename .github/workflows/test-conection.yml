@@ -38,3 +38,14 @@ jobs:
       run: |
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "test" > test.html'
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "Acc-Dispatcher1-R" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'mv /tmp/test.html /tmp/test/test.html'
+  
+    - name: Copy file to Azure Arc server
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+      run: |
+          echo "$SSH_PRIVATE_KEY" > ssh_key
+          chmod 600 ssh_key
+          echo "before scp command"
+          az ssh config --ip \* --file ./sshconfig
+          scp -F ./ssh_config ssh_key 10.100.5.56:~/tmp
+          
