@@ -55,7 +55,7 @@ jobs:
       - name: Display downloaded files
         run: ls -R
 
-      - name: Upload and Install package to AEM
+      - name: Deploying on Prod Author
         env:
           AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
           AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
@@ -67,6 +67,23 @@ jobs:
            -F force=true \
            -F install=true \
            "$AEM_HOST/crx/packmgr/service.jsp"
+
+      - name: Wait for AEM to be fully Up
+        run: |
+          MAX_RETRIES=30
+          RETRY_INTERVAL=10
+          for ((i=1; i<=$MAX_RETRIES; i++)); do
+            INACTIVE_BUNDLES=$(curl -u "$AEM_USERNAME:$AEM_PASSWORD" -s "$AEM_HOST/system/console/bundles.json" | jq '.data[] | select(.state != "Active" and .state != "Fragment")')
+            if [ -z "$INACTIVE_BUNDLES" ]; then
+              echo "All AEM bundles are active."
+              exit 0
+            else
+              echo "Some AEM bundles are still not active. Waiting..."
+              sleep $RETRY_INTERVAL
+            fi
+          done
+          echo "AEM bundles did not become active within the expected time."
+          exit 1
           
   deploy_prodset2:
     needs: deploy_prodset1
@@ -93,10 +110,5 @@ jobs:
            -F force=true \
            -F install=true \
            "$AEM_HOST/crx/packmgr/service.jsp"
-    
-      - name: Checking Connectivity
-        run: |
-          curl -I "https://cms-dev-revamp.visitsaudi.com:65432"
-
       
 
