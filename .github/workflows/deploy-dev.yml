@@ -59,7 +59,7 @@ jobs:
         run:  ls -R
       - name: Deploying on Prod Author
         run: |
-          @curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_DEV_AUTHOR_URL/crx/packmgr/service.jsp"
+          curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_DEV_AUTHOR_URL/crx/packmgr/service.jsp"
 
       # Start Azure Connectin
       - name: Azure Login
@@ -82,9 +82,9 @@ jobs:
             az ssh config --ip * --file ./ssh_config --keys-destination-folder ./azure-keys
       - name: Set up SSH private key
         run: |
-            @mkdir -p .ssh
-            @echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
-            @chmod 600 .ssh/id_rsa
+            mkdir -p .ssh
+            echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
+            chmod 600 .ssh/id_rsa
       
         # Start Dispatcher-1 Offloading
       - name: Initiate Dispatcher-1 Off Loading
@@ -99,7 +99,7 @@ jobs:
         #Start Package Upload and Installation to Dev Publisher    
       - name: Upload and Install package to AEM Publisher
         run: |
-          @curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_DEV_PUBLISH_URL/crx/packmgr/service.jsp"
+          curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_DEV_PUBLISH_URL/crx/packmgr/service.jsp"
 
       - name: Wait for AEM Publisher to be Up
         run: |
