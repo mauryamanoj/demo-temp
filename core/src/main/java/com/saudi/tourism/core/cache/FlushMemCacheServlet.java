@@ -49,6 +49,7 @@ public class FlushMemCacheServlet extends SlingAllMethodsServlet {
       response.getWriter().write("Memory Cache Flushed");
     } else {
       LOGGER.error("Memory Cache Flush not Authorized");
+      LOGGER.error("Memory Cache Flush not Authorized");
       CommonUtils.writeJSON(response, StatusEnum.SUCCESS.getValue(),
           new ResponseMessage(MessageType.ERROR.getType(), "Not Authorized"));
     }
