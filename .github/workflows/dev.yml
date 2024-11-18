@@ -65,9 +65,11 @@ jobs:
           curl -u "$AEM_USERNAME:$AEM_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_HOST_AUTHOR/crx/packmgr/service.jsp"
 
       # Start Azure Connectin
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Setup Azure Environment
         uses: ./.github/workflows/set-azure.yml
-        
+      
         # Start Dispatcher-1 Offloading
       - name: Initiate Dispatcher-1 Off Loading
         run: |
