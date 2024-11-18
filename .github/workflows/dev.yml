@@ -75,10 +75,9 @@ jobs:
           az storage -h
         #run: |
          # az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher2-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "<body>healthy</body>" > /home/domains/visitsaudi.com/htdocs/health.html'
+         
       - name: Wait for 2 minutes
-        uses: actions/wait@v1
-        with:
-          time: 120
+        run: sleep 120  
         # Assumming Offloading Completed
         
       - name: Upload and Install package to AEM Publisher 1
@@ -101,9 +100,13 @@ jobs:
           done
           echo "AEM bundles did not become active within the expected time."
           exit 1
-          
+      
       # For Publisher 2
       # dispatcher off loading code to be here
+      - name: Wait for 2 minutes post dispatcher off loading
+        run: sleep 120  
+        
+        # Assumming Offloading Completed
       - name: Upload and Install package to AEM Publisher 2
         run: |
           curl -u "$AEM_USERNAME:$AEM_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_HOST_PUB2/crx/packmgr/service.jsp"
