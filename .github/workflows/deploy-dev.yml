@@ -47,7 +47,7 @@ jobs:
           path: ./all/target/*.zip
           compression-level: 0
             
-  deploy_prodset1:
+  deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -56,10 +56,10 @@ jobs:
         with:
           name: sta-build-artifacts
       - name: Display downloaded files
-        run: ls -R
+        run:  ls -R
       - name: Deploying on Prod Author
         run: |
-          curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_DEV_AUTHOR_URL/crx/packmgr/service.jsp"
+          @curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_DEV_AUTHOR_URL/crx/packmgr/service.jsp"
 
       # Start Azure Connectin
       - name: Azure Login
@@ -82,16 +82,16 @@ jobs:
             az ssh config --ip * --file ./ssh_config --keys-destination-folder ./azure-keys
       - name: Set up SSH private key
         run: |
-            mkdir -p .ssh
-            echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
-            chmod 600 .ssh/id_rsa
+            @mkdir -p .ssh
+            @echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
+            @chmod 600 .ssh/id_rsa
       
         # Start Dispatcher-1 Offloading
       - name: Initiate Dispatcher-1 Off Loading
         run: |
           az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "dev-dispatcher-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "Connection Successfull"'
         #run: |
-         # az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "dev-dispatcher-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "<body>healthy</body>" > /home/domains/visitsaudi.com/htdocs/health.html'
+         # az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "dev-dispatcher-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "<body>unhealthy</body>" > /home/domains/visitsaudi.com/htdocs/health.html'
              
       - name: Wait for 2 minutes
         run: sleep 120  
@@ -99,7 +99,7 @@ jobs:
         #Start Package Upload and Installation to Dev Publisher    
       - name: Upload and Install package to AEM Publisher
         run: |
-          curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_DEV_PUBLISH_URL/crx/packmgr/service.jsp"
+          @curl -u "$AEM_DEV_USERNAME:$AEM_DEV_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_DEV_PUBLISH_URL/crx/packmgr/service.jsp"
 
       - name: Wait for AEM Publisher to be Up
         run: |
