@@ -68,14 +68,17 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
-          creds: ${{ secrets.AFD_AZURE_CRED }}
+          creds: ${{ secrets.DISP_AZURE_CRED }}
       - name: Set Azure CLI dynamic install
         run: |
             az config set extension.use_dynamic_install=yes_without_prompt
       - name: Azure CLI script
         uses: azure/cli@v2
         with:
-          azcliversion: 2.45.0
+          azcliversion: latest
+          inlineScript: |
+            az account show
+            az storage -h 
       - name: Install SSH Extension for Azure CLI
         run: |
             az extension add --name ssh
@@ -91,6 +94,7 @@ jobs:
         run: |
           az account show
           az storage -h
+          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher2-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "Connection Successfull"'
         #run: |
          # az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher2-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "<body>healthy</body>" > /home/domains/visitsaudi.com/htdocs/health.html'
          
