@@ -13,6 +13,13 @@ on:
         default: "2.0.0"  # Default version if not specified
 env:
   AEM_PACKAGE: "saudi-tourism.all-${{ github.event.inputs.artifact_version }}.zip"
+  AEM_HOST_PUB1: "https://157a-93-112-36-211.ngrok-free.app"
+  AEM_HOST_PUB2: "https://157a-93-112-36-211.ngrok-free.app"
+  AEM_HOST_PUB3: "https://157a-93-112-36-211.ngrok-free.app"
+  AEM_HOST_AUTHOR: "https://157a-93-112-36-211.ngrok-free.app"
+  AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
+  AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -51,29 +58,39 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: sta-build-artifacts
-
       - name: Display downloaded files
         run: ls -R
-
       - name: Deploying on Prod Author
-        env:
-          AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
-          AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
-          AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
         run: |
-          curl -u "$AEM_USERNAME:$AEM_PASSWORD" \
-           -F file=@"$AEM_PACKAGE" \
-           -F name="saudi-tourism.all" \
-           -F force=true \
-           -F install=true \
-           "$AEM_HOST/crx/packmgr/service.jsp"
+          curl -u "$AEM_USERNAME:$AEM_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_HOST_AUTHOR/crx/packmgr/service.jsp"
 
-      - name: Wait for AEM to be fully Up
+      # Start Azure Connectin
+      - name: Setup Azure Environment
+        uses: ./.github/workflows/deploy-reusable.yml
+        
+        # Start Dispatcher-1 Offloading
+      - name: Initiate Dispatcher-1 Off Loading
+        run: |
+          az account show
+          az storage -h
+        #run: |
+         # az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher2-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo echo "<body>healthy</body>" > /home/domains/visitsaudi.com/htdocs/health.html'
+      - name: Wait for 2 minutes
+        uses: actions/wait@v1
+        with:
+          time: 120
+        # Assumming Offloading Completed
+        
+      - name: Upload and Install package to AEM Publisher 1
+        run: |
+          curl -u "$AEM_USERNAME:$AEM_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_HOST_PUB1/crx/packmgr/service.jsp"
+
+      - name: Wait for AEM PUB-1 to be fully Up
         run: |
           MAX_RETRIES=30
           RETRY_INTERVAL=10
           for ((i=1; i<=$MAX_RETRIES; i++)); do
-            INACTIVE_BUNDLES=$(curl -u "$AEM_USERNAME:$AEM_PASSWORD" -s "$AEM_HOST/system/console/bundles.json" | jq '.data[] | select(.state != "Active" and .state != "Fragment")')
+            INACTIVE_BUNDLES=$(curl -u "$AEM_USERNAME:$AEM_PASSWORD" -s "$AEM_HOST_PUB1/system/console/bundles.json" | jq '.data[] | select(.state != "Active" and .state != "Fragment")')
             if [ -z "$INACTIVE_BUNDLES" ]; then
               echo "All AEM bundles are active."
               exit 0
@@ -85,30 +102,25 @@ jobs:
           echo "AEM bundles did not become active within the expected time."
           exit 1
           
-  deploy_prodset2:
-    needs: deploy_prodset1
-    runs-on: ubuntu-latest
-    environment: prodset1
-    steps:
-      - name: Download Build Package
-        uses: actions/download-artifact@v4
-        with:
-          name: sta-build-artifacts
-
-      - name: Display downloaded files
-        run: ls -R
-
-      - name: Upload and Install package to AEM
-        env:
-          AEM_USERNAME: ${{ secrets.AEM_USERNAME }}
-          AEM_PASSWORD: ${{ secrets.AEM_PASSWORD }}
-          AEM_HOST: 'https://3bf0-93-112-36-211.ngrok-free.app'
+      # For Publisher 2
+      # dispatcher off loading code to be here
+      - name: Upload and Install package to AEM Publisher 2
         run: |
-          curl -u "$AEM_USERNAME:$AEM_PASSWORD" \
-           -F file=@"$AEM_PACKAGE" \
-           -F name="saudi-tourism.all" \
-           -F force=true \
-           -F install=true \
-           "$AEM_HOST/crx/packmgr/service.jsp"
-      
+          curl -u "$AEM_USERNAME:$AEM_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true  "$AEM_HOST_PUB2/crx/packmgr/service.jsp"
 
+      - name: Wait for AEM PUB-2 to be fully Up
+        run: |
+          MAX_RETRIES=30
+          RETRY_INTERVAL=10
+          for ((i=1; i<=$MAX_RETRIES; i++)); do
+            INACTIVE_BUNDLES=$(curl -u "$AEM_USERNAME:$AEM_PASSWORD" -s "$AEM_HOST_PUB2/system/console/bundles.json" | jq '.data[] | select(.state != "Active" and .state != "Fragment")')
+            if [ -z "$INACTIVE_BUNDLES" ]; then
+              echo "All AEM bundles are active."
+              exit 0
+            else
+              echo "Some AEM bundles are still not active. Waiting..."
+              sleep $RETRY_INTERVAL
+            fi
+          done
+          echo "AEM bundles did not become active within the expected time."
+          exit 1
