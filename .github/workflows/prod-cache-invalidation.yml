@@ -1,1 +1,36 @@
-
+name: Invalidate visitsaudi.com Prod Cache (Dispatcher + CDN)
+on:
+  workflow_dispatch:
+  workflow_call:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AFD_AZURE_CRED }}
+    - name: Set Azure CLI dynamic install
+      run: |
+          az config set extension.use_dynamic_install=yes_without_prompt
+    - name: Azure CLI script
+      uses: azure/cli@v2
+      with:
+        azcliversion: 2.45.0
+    - name: Install SSH Extension for Azure CLI
+      run: |
+          az extension add --name ssh
+          az ssh config --ip * --file ./ssh_config --keys-destination-folder ./azure-keys
+    - name: Set up SSH private key
+      run: |
+          mkdir -p .ssh
+          echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
+          chmod 600 .ssh/id_rsa
+    - name: SSH into Azure Arc-enabled machine and run a command
+      run: |
+          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher2-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo rm -rf /home/domains/visitsaudi.com/htdocs/*'
+          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher3-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo rm -rf /home/domains/visitsaudi.com/htdocs/*'
+          az ssh arc --resource-group "VisitSaudi_Arc_Servers" --name "prod-dispatcher4-r" --local-user purgeuser --private-key-file ".ssh/id_rsa" -- -o StrictHostKeyChecking=no  'sudo rm -rf /home/domains/visitsaudi.com/htdocs/*'
+    - name: Invalidate CDN Cache
+      run: |
+          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains www.visitsaudi.com --content-paths '/*'
