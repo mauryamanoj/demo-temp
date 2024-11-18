@@ -65,10 +65,26 @@ jobs:
           curl -u "$AEM_USERNAME:$AEM_PASSWORD"  -F file=@"$AEM_PACKAGE" -F name="saudi-tourism.all" -F force=true -F install=true "$AEM_HOST_AUTHOR/crx/packmgr/service.jsp"
 
       # Start Azure Connectin
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Setup Azure Environment
-        uses: ./.github/workflows/set-azure.yml
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AFD_AZURE_CRED }}
+      - name: Set Azure CLI dynamic install
+        run: |
+            az config set extension.use_dynamic_install=yes_without_prompt
+      - name: Azure CLI script
+        uses: azure/cli@v2
+        with:
+          azcliversion: 2.45.0
+      - name: Install SSH Extension for Azure CLI
+        run: |
+            az extension add --name ssh
+            az ssh config --ip * --file ./ssh_config --keys-destination-folder ./azure-keys
+      - name: Set up SSH private key
+        run: |
+            mkdir -p .ssh
+            echo "${{ secrets.SSH_KEY }}" > .ssh/id_rsa
+            chmod 600 .ssh/id_rsa
       
         # Start Dispatcher-1 Offloading
       - name: Initiate Dispatcher-1 Off Loading
