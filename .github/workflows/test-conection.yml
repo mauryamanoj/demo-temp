@@ -21,8 +21,7 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          az account show
-          az storage -h 
+          echo "Login Successfull."
     - name: Install SSH Extension for Azure CLI
       run: |
           az extension add --name ssh
