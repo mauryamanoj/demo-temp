@@ -12,6 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Enable Debug Logs
+      run: echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV
     - name: Azure Login
       uses: azure/login@v2
       with:
