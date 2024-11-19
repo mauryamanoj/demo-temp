@@ -21,6 +21,10 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
+          az account show
+          az storage -h 
+    - name: Install SSH Extension for Azure CLI
+      run: |
           az extension add --name ssh
           az ssh config --ip * --file ./ssh_config --keys-destination-folder ./azure-keys
           cat ssh_config
