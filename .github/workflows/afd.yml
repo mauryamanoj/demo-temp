@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       invalidation_paths:
-        description: "Enter the invalidation paths(Comma separated start with slash)"
+        description: "Enter the invalidation paths:"
         required: true
+        default: /*
 env:
   INVALIDATE_PATHS: "${{ github.event.inputs.invalidation_paths }}"
 jobs:
@@ -22,6 +23,6 @@ jobs:
     - name: Azure CLI script
       uses: azure/cli@v2
       with:
-        azcliversion: 2.45.0
+        azcliversion: latest
         inlineScript: |
           az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains www.visitsaudi.com --content-paths $INVALIDATE_PATHS
