@@ -2,6 +2,12 @@ name: AFD Invalidation
 
 on:
   workflow_dispatch:
+    inputs:
+      invalidation_paths:
+        description: "Enter the invalidation paths(Comma separated start with slash)"
+        required: true
+env:
+  INVALIDATE_PATHS: "${{ github.event.inputs.invalidation_paths }}"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +24,4 @@ jobs:
       with:
         azcliversion: 2.45.0
         inlineScript: |
-          az account show
-          az storage -h
-          az resource list --resource-type "Microsoft.Compute/virtualMachines" --output table
-          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains www.visitsaudi.com --content-paths '/etest'
+          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains www.visitsaudi.com --content-paths "'$INVALIDATE_PATHS'"
