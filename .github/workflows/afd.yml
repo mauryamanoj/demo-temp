@@ -24,4 +24,4 @@ jobs:
       with:
         azcliversion: 2.45.0
         inlineScript: |
-          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains www.visitsaudi.com --content-paths "$INVALIDATE_PATHS"
+          az afd endpoint purge --resource-group VisitSaudi-FrontDoor --profile-name VisitSaudi-FrontDoor-Premium --endpoint-name VISITSAUDI --domains www.visitsaudi.com --content-paths '[ $INVALIDATE_PATHS ]'
