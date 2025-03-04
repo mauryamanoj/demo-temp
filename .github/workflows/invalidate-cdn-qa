@@ -1,0 +1,26 @@
+name: STA Site - QA CDN Invalidation
+on:
+  workflow_dispatch:
+    inputs:
+      invalidation_paths:
+        description: "Enter the invalidation path(/* INVALIDATES EVERYTHING):"
+        required: true
+env:
+  INVALIDATE_PATHS: "'${{ github.event.inputs.invalidation_paths }}'"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.STA_CDN_CREDS }}
+    - name: Set Azure CLI dynamic install
+      run: |
+          az config set extension.use_dynamic_install=yes_without_prompt
+    - name: Azure CLI script
+      uses: azure/cli@v2
+      with:
+        azcliversion: 2.45.0
+        inlineScript: |
+          az afd endpoint purge --resource-group STA-FrontDoor --profile-name STA-FrontDoor --endpoint-name staqa --domains qa.sta.gov.sa --content-paths ${{ env.INVALIDATE_PATHS }}
