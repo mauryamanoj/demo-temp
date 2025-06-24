@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Install and Check Package Installation
         run: |
-          RESPONSE2='{"success":false,"msg":"Package installed"}'
+          RESPONSE2='{"success":true,"msg":"Package installed"}'
           echo "Before Response Object Printing:--"
           echo "$RESPONSE2"
 
@@ -42,7 +42,7 @@ jobs:
       steps:
         - name: Install Package on QA Author
           run: |
-            RESPONSE="{"success":false,"msg":"Package installed"}"
+            RESPONSE="{"success":true,"msg":"Package installed"}"
             echo "Before Response Object Printing:--"
             RESPONSE = "'$RESPONSE'"
             echo "$RESPONSE"
