@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Install and Check Package Installation
         run: |
-          RESPONSE2='{"success":true,"msg":"Package installed"}'
+          RESPONSE2={"success":true,"msg":"Package installed"}
           echo "Before Response Object Printing:--"
           echo "$RESPONSE2"
           if [[ "$(echo "$RESPONSE2" | jq -r '.success')" == "true" ]]; then
