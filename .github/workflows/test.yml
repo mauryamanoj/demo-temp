@@ -27,7 +27,7 @@ jobs:
         run: |
           RESPONSE2='{"success":true,"msg":"Package installed"}'
           echo "Before Response Object Printing:--"
-          RESPONSE = "'$RESPONSE'"
+          RESPONSE2 = "'$RESPONSE2'"
           echo "$RESPONSE2"
           if [[ "$(echo "$RESPONSE2" | jq -r '.success')" == "true" ]]; then
             echo "Package installed successfully"
