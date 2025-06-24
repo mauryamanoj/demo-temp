@@ -1,0 +1,35 @@
+name: VS - Test Pipeline
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to deploy from'
+        required: true
+        default: 'develop'
+      artifact_version:
+        description: "Enter the artifact version to build"
+        required: true
+        default: "2.0.0"  # Default version if not specified
+env:
+  AEM_PACKAGE: "saudi-tourism.all-${{ github.event.inputs.artifact_version }}.zip"
+  AEM_DEV_AUTHOR_URL: "https://157a-93-112-36-211.ngrok-free.app"
+  AEM_DEV_PUBLISH_URL: "https://157a-93-112-36-211.ngrok-free.app"
+  AEM_DEV_USERNAME: ${{ secrets.AEM_USERNAME }}
+  AEM_DEV_PASSWORD: ${{ secrets.AEM_PASSWORD }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Package on QA Publisher
+        run: | 
+           RESPONSE2='{"success":true,"msg":"Package installed"}'
+           echo "Before Response Object Printing:--"
+           echo "$RESPONSE2"
+      - name: Check Installation Success
+        run: |
+           if [[ $(echo "$RESPONSE2" | jq -r '.success') == "true" ]]; then
+             echo "Package installed successfully"
+           else
+             echo "Package installation failed"
+           exit 1
