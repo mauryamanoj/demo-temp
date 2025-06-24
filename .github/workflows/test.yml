@@ -35,3 +35,22 @@ jobs:
             echo "Package installation failed"
             exit 1
           fi
+          
+  deploy:
+      needs: build
+      runs-on: self-hosted
+      steps:
+        - name: Install Package on QA Author
+          run: |
+            RESPONSE="{"success":false,"msg":"Package installed"}"
+            echo "Before Response Object Printing:--"
+            RESPONSE = "'$RESPONSE'"
+            echo "$RESPONSE"
+        - name: Check Installation Success
+          run: |
+            if [[ "$(echo "$RESPONSE2" | jq -r '.success')" == "true"  ]]; then
+              echo "Package installed successfully"
+            else
+              echo "Package installation failed"
+              exit 1
+            fi
